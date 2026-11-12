@@ -13,6 +13,8 @@ Self-hosted менеджер Telegram-аккаунтов: веб-консоль,
 
 <img src="docs/assets/screenshot-dark-ru.png" width="900" alt="Веб-консоль: русский интерфейс, тёмная тема">
 
+<img src="docs/assets/demo.gif" width="900" alt="Демо интерфейса: аккаунты, инструменты, AI-помощник, смена темы">
+
 ## Что это
 
 Форк [soulknight666/telegram-account-orchestrator](https://github.com/soulknight666/telegram-account-orchestrator)
