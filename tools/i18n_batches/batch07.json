@@ -1,0 +1,1002 @@
+[
+ {
+  "id": "b7_0",
+  "kind": "backend",
+  "zh": "(?im)(?:💰\\s*)?(?:CNY|人民币|RMB)\\s*[:：]\\s*(\\d+(?:\\.\\d+)?)"
+ },
+ {
+  "id": "b7_1",
+  "kind": "backend",
+  "zh": "(?im)(?:💰\\s*)?(?:TRX|波场|TRON)\\s*[:：]\\s*(\\d+(?:\\.\\d+)?)"
+ },
+ {
+  "id": "b7_2",
+  "kind": "backend",
+  "zh": "(?im)(?:💰\\s*)?(?:USDT|U币|Tether)\\s*[:：]\\s*(\\d+(?:\\.\\d+)?)"
+ },
+ {
+  "id": "b7_3",
+  "kind": "backend",
+  "zh": "(\\d+(?:\\.\\d+)?)\\s*([a-z秒分时天]*)"
+ },
+ {
+  "id": "b7_4",
+  "kind": "backend",
+  "zh": "(以上为更早对话的压缩摘要，请结合后续完整消息继续)"
+ },
+ {
+  "id": "b7_5",
+  "kind": "backend",
+  "zh": "- 工具 {name}: {body}"
+ },
+ {
+  "id": "b7_6",
+  "kind": "backend",
+  "zh": ".env 配置文件"
+ },
+ {
+  "id": "b7_7",
+  "kind": "backend",
+  "zh": "0=不限"
+ },
+ {
+  "id": "b7_8",
+  "kind": "backend",
+  "zh": "1h左右"
+ },
+ {
+  "id": "b7_9",
+  "kind": "backend",
+  "zh": "32.8 天前"
+ },
+ {
+  "id": "b7_10",
+  "kind": "backend",
+  "zh": "@username / 手机号 / chat id"
+ },
+ {
+  "id": "b7_11",
+  "kind": "backend",
+  "zh": "@username / 用户ID / 手机号"
+ },
+ {
+  "id": "b7_12",
+  "kind": "backend",
+  "zh": "@username 或 https://t.me/+xxx"
+ },
+ {
+  "id": "b7_13",
+  "kind": "backend",
+  "zh": "@用户名或邀请链接"
+ },
+ {
+  "id": "b7_14",
+  "kind": "backend",
+  "zh": "AI 控制层：把管理器的能力封装成一组带 JSON Schema 的工具。"
+ },
+ {
+  "id": "b7_15",
+  "kind": "backend",
+  "zh": "AI 面板未启用，请先在配置里打开开关"
+ },
+ {
+  "id": "b7_16",
+  "kind": "backend",
+  "zh": "API 服务"
+ },
+ {
+  "id": "b7_17",
+  "kind": "backend",
+  "zh": "Base 填到资源端点，模型名填部署名"
+ },
+ {
+  "id": "b7_18",
+  "kind": "backend",
+  "zh": "FastAPI 服务：REST 接口 + 内置 Web 控制台。"
+ },
+ {
+  "id": "b7_19",
+  "kind": "backend",
+  "zh": "LLM 请求失败：{exc}"
+ },
+ {
+  "id": "b7_20",
+  "kind": "backend",
+  "zh": "OKPay 查询失败：{exc}"
+ },
+ {
+  "id": "b7_21",
+  "kind": "backend",
+  "zh": "OP_SPECS 与 OPS 对不上：{set(_SPEC_BY_OP) ^ set(OPS)}"
+ },
+ {
+  "id": "b7_22",
+  "kind": "backend",
+  "zh": "OpenAI / DeepSeek / Grok / Moonshot / 通义 / 智谱 / Ollama / OneAPI / NewAPI 等"
+ },
+ {
+  "id": "b7_23",
+  "kind": "backend",
+  "zh": "OpenAI 兼容（Chat Completions）"
+ },
+ {
+  "id": "b7_24",
+  "kind": "backend",
+  "zh": "Python 版本"
+ },
+ {
+  "id": "b7_25",
+  "kind": "backend",
+  "zh": "Qt QDataStream 风格的大端读取器。"
+ },
+ {
+  "id": "b7_26",
+  "kind": "backend",
+  "zh": "StringSession → Telethon SQLite .session 文件（不联网）。"
+ },
+ {
+  "id": "b7_27",
+  "kind": "backend",
+  "zh": "StringSession 无效：没有 auth_key"
+ },
+ {
+  "id": "b7_28",
+  "kind": "backend",
+  "zh": "TAM_MASTER_KEY 过短({len(master_key)}字符,需≥32)。"
+ },
+ {
+  "id": "b7_29",
+  "kind": "backend",
+  "zh": "TDesktop 本地存储用的旧版 AES 密钥派生（x=8）。"
+ },
+ {
+  "id": "b7_30",
+  "kind": "backend",
+  "zh": "TGHao 动态监控"
+ },
+ {
+  "id": "b7_31",
+  "kind": "backend",
+  "zh": "Telegram 会暂时禁止再发登录验证码，通常需等待"
+ },
+ {
+  "id": "b7_32",
+  "kind": "backend",
+  "zh": "Telegram 拒绝注销：{type(exc).__name__}: {exc}"
+ },
+ {
+  "id": "b7_33",
+  "kind": "backend",
+  "zh": "Telegram 未返回扫码 URL"
+ },
+ {
+  "id": "b7_34",
+  "kind": "backend",
+  "zh": "Telethon 返回 datetime，统一转成 epoch 秒。"
+ },
+ {
+  "id": "b7_35",
+  "kind": "backend",
+  "zh": "U币"
+ },
+ {
+  "id": "b7_36",
+  "kind": "backend",
+  "zh": "Web 控制台文件"
+ },
+ {
+  "id": "b7_37",
+  "kind": "backend",
+  "zh": "[对话摘要·自动压缩]"
+ },
+ {
+  "id": "b7_38",
+  "kind": "backend",
+  "zh": "[点击 {lab} 失败: {type(exc).__name__}: {exc}]"
+ },
+ {
+  "id": "b7_39",
+  "kind": "backend",
+  "zh": "\\s*(?:至|到|~|—|–|-)\\s*\\d"
+ },
+ {
+  "id": "b7_40",
+  "kind": "backend",
+  "zh": "ai 拆包 {result.get('total')} -> {result.get('pack_count')}"
+ },
+ {
+  "id": "b7_41",
+  "kind": "backend",
+  "zh": "api_id 不是纯数字：{aid!r}"
+ },
+ {
+  "id": "b7_42",
+  "kind": "backend",
+  "zh": "api_id 是纯数字，api_hash 是 32 位字符串，别填反"
+ },
+ {
+  "id": "b7_43",
+  "kind": "backend",
+  "zh": "datetime / 时间戳 → unix 秒；无法解析则 None。"
+ },
+ {
+  "id": "b7_44",
+  "kind": "backend",
+  "zh": "job 不合法"
+ },
+ {
+  "id": "b7_45",
+  "kind": "backend",
+  "zh": "opentele 已不再使用；tdata 由内置纯 Python 解析器接管。"
+ },
+ {
+  "id": "b7_46",
+  "kind": "backend",
+  "zh": "session 无效或已失效"
+ },
+ {
+  "id": "b7_47",
+  "kind": "backend",
+  "zh": "socks5://user:pass@host:1080 -> Telethon python-socks 参数。"
+ },
+ {
+  "id": "b7_48",
+  "kind": "backend",
+  "zh": "tdata 未生成"
+ },
+ {
+  "id": "b7_49",
+  "kind": "backend",
+  "zh": "tdata 解析失败（消息为面向用户的人话）。"
+ },
+ {
+  "id": "b7_50",
+  "kind": "backend",
+  "zh": "tdata 解析（opentele 已弃用）"
+ },
+ {
+  "id": "b7_51",
+  "kind": "backend",
+  "zh": "tdata 里没有解析出任何已登录账号"
+ },
+ {
+  "id": "b7_52",
+  "kind": "backend",
+  "zh": "user_id={found.user_id} 主DC={found.main_dc} 密钥数={len(found.auth_keys)}"
+ },
+ {
+  "id": "b7_53",
+  "kind": "backend",
+  "zh": "values 必须是非空对象"
+ },
+ {
+  "id": "b7_54",
+  "kind": "backend",
+  "zh": "{'有密码' if now_has else '无密码'}），当前密码可能填错了"
+ },
+ {
+  "id": "b7_55",
+  "kind": "backend",
+  "zh": "{'有密码' if want else '无密码'}，实际"
+ },
+ {
+  "id": "b7_56",
+  "kind": "backend",
+  "zh": "{int(tmo)}s 内未扫码，可继续等待或刷新二维码"
+ },
+ {
+  "id": "b7_57",
+  "kind": "backend",
+  "zh": "{key} 已生成"
+ },
+ {
+  "id": "b7_58",
+  "kind": "backend",
+  "zh": "{len(result['failed'])} 项未通过："
+ },
+ {
+  "id": "b7_59",
+  "kind": "backend",
+  "zh": "{message}（约 {remaining} 秒后可重试）"
+ },
+ {
+  "id": "b7_60",
+  "kind": "backend",
+  "zh": "{meta.get('label') or name} 填的不是{kind}：{v!r}"
+ },
+ {
+  "id": "b7_61",
+  "kind": "backend",
+  "zh": "{meta.get('label') or name} 必填"
+ },
+ {
+  "id": "b7_62",
+  "kind": "backend",
+  "zh": "{op} 不接受参数 {k}"
+ },
+ {
+  "id": "b7_63",
+  "kind": "backend",
+  "zh": "{path.name} 不是 TDF 容器（缺少 TDF$ 头）"
+ },
+ {
+  "id": "b7_64",
+  "kind": "backend",
+  "zh": "{path.name} 校验和不匹配，文件已损坏"
+ },
+ {
+  "id": "b7_65",
+  "kind": "backend",
+  "zh": "{path} 里没有 key_datas 文件，不是有效的 tdata 目录"
+ },
+ {
+  "id": "b7_66",
+  "kind": "backend",
+  "zh": "{routes} 个接口可用"
+ },
+ {
+  "id": "b7_67",
+  "kind": "backend",
+  "zh": "{secs or '?'} 秒"
+ },
+ {
+  "id": "b7_68",
+  "kind": "backend",
+  "zh": "{timeout:.0f}s 内未从取码链接获得新验证码"
+ },
+ {
+  "id": "b7_69",
+  "kind": "backend",
+  "zh": "{timeout:g}s 内无响应"
+ },
+ {
+  "id": "b7_70",
+  "kind": "backend",
+  "zh": "{v}（tdata 导入依赖 opentele 在 3.13 需兼容补丁）"
+ },
+ {
+  "id": "b7_71",
+  "kind": "backend",
+  "zh": "{who}连接 Telegram 失败：{type(exc).__name__}: {exc}"
+ },
+ {
+  "id": "b7_72",
+  "kind": "backend",
+  "zh": "…(已截断)"
+ },
+ {
+  "id": "b7_73",
+  "kind": "backend",
+  "zh": "→ 账号 user_id={a.user_id} 主DC={a.main_dc} 已授权DC={sorted(a.auth_keys)}"
+ },
+ {
+  "id": "b7_74",
+  "kind": "backend",
+  "zh": "一次最多 100 条"
+ },
+ {
+  "id": "b7_75",
+  "kind": "backend",
+  "zh": "一次最多 200 个，收到 {len(targets)} 个"
+ },
+ {
+  "id": "b7_76",
+  "kind": "backend",
+  "zh": "一次最多查 500 个，收到 {len(phones)} 个"
+ },
+ {
+  "id": "b7_77",
+  "kind": "backend",
+  "zh": "一次最多转发 50 条"
+ },
+ {
+  "id": "b7_78",
+  "kind": "backend",
+  "zh": "一键体检与自动修复。"
+ },
+ {
+  "id": "b7_79",
+  "kind": "backend",
+  "zh": "上报在线状态（account.updateStatus offline=False）。"
+ },
+ {
+  "id": "b7_80",
+  "kind": "backend",
+  "zh": "下次约"
+ },
+ {
+  "id": "b7_81",
+  "kind": "backend",
+  "zh": "下载指定消息中的图片/文件到 data/downloads"
+ },
+ {
+  "id": "b7_82",
+  "kind": "backend",
+  "zh": "下载指定消息的媒体到 data/downloads"
+ },
+ {
+  "id": "b7_83",
+  "kind": "backend",
+  "zh": "下载某条消息中的媒体到 data 目录。"
+ },
+ {
+  "id": "b7_84",
+  "kind": "backend",
+  "zh": "下载消息媒体"
+ },
+ {
+  "id": "b7_85",
+  "kind": "backend",
+  "zh": "不存在"
+ },
+ {
+  "id": "b7_86",
+  "kind": "backend",
+  "zh": "不支持的 mode：{mode}"
+ },
+ {
+  "id": "b7_87",
+  "kind": "backend",
+  "zh": "不支持的代理协议: {scheme}"
+ },
+ {
+  "id": "b7_88",
+  "kind": "backend",
+  "zh": "不猜测会话密钥。简体中文。"
+ },
+ {
+  "id": "b7_89",
+  "kind": "backend",
+  "zh": "不认识的参数：{key}"
+ },
+ {
+  "id": "b7_90",
+  "kind": "backend",
+  "zh": "不认识的取值：{val}（只能是 everybody/contacts/nobody）"
+ },
+ {
+  "id": "b7_91",
+  "kind": "backend",
+  "zh": "不认识的操作：{op}"
+ },
+ {
+  "id": "b7_92",
+  "kind": "backend",
+  "zh": "不认识的隐私项：{name}"
+ },
+ {
+  "id": "b7_93",
+  "kind": "backend",
+  "zh": "与 @SpamBot 对话判定是否被限制（Telethon 官方 FAQ 推荐的做法）。"
+ },
+ {
+  "id": "b7_94",
+  "kind": "backend",
+  "zh": "与 @SpamBot 对话判定账号是否被限制（会发送 /start）"
+ },
+ {
+  "id": "b7_95",
+  "kind": "backend",
+  "zh": "与任意机器人交互：发消息并等待回复"
+ },
+ {
+  "id": "b7_96",
+  "kind": "backend",
+  "zh": "与机器人交互"
+ },
+ {
+  "id": "b7_97",
+  "kind": "backend",
+  "zh": "与机器人交互：发送文本并等待若干条回复。"
+ },
+ {
+  "id": "b7_98",
+  "kind": "backend",
+  "zh": "业务动作前置：账号存在且本地有会话密文，否则立刻失败（避免连 TG 空转超时）。"
+ },
+ {
+  "id": "b7_99",
+  "kind": "backend",
+  "zh": "两步验证密码错误"
+ },
+ {
+  "id": "b7_100",
+  "kind": "backend",
+  "zh": "两步验证密码错误或需要重新填写"
+ },
+ {
+  "id": "b7_101",
+  "kind": "backend",
+  "zh": "为单个账号创建一个临时客户端，自动限速、自动断开、自动回写 session。"
+ },
+ {
+  "id": "b7_102",
+  "kind": "backend",
+  "zh": "为空则检查全部"
+ },
+ {
+  "id": "b7_103",
+  "kind": "backend",
+  "zh": "主密钥 TAM_MASTER_KEY"
+ },
+ {
+  "id": "b7_104",
+  "kind": "backend",
+  "zh": "主密钥无效。若已有账号入库，换密钥会导致旧会话不可解"
+ },
+ {
+  "id": "b7_105",
+  "kind": "backend",
+  "zh": "主密钥能不能真的加解密。"
+ },
+ {
+  "id": "b7_106",
+  "kind": "backend",
+  "zh": "二维码已过期且刷新失败，请重新发起扫码：{type(exc).__name__}: {exc}"
+ },
+ {
+  "id": "b7_107",
+  "kind": "backend",
+  "zh": "二验已立即清除（ResetPasswordOk）"
+ },
+ {
+  "id": "b7_108",
+  "kind": "backend",
+  "zh": "二验状态（含辅助邮箱）"
+ },
+ {
+  "id": "b7_109",
+  "kind": "backend",
+  "zh": "人民币"
+ },
+ {
+  "id": "b7_110",
+  "kind": "backend",
+  "zh": "仅作废 session，Telegram 账号仍在"
+ },
+ {
+  "id": "b7_111",
+  "kind": "backend",
+  "zh": "仅作废当前登录，不解绑手机、不删除 Telegram 账号"
+ },
+ {
+  "id": "b7_112",
+  "kind": "backend",
+  "zh": "今天天气不错"
+ },
+ {
+  "id": "b7_113",
+  "kind": "backend",
+  "zh": "从 Telegram 拿当前会话的真实创建时间（date_created）并回写 login_at。"
+ },
+ {
+  "id": "b7_114",
+  "kind": "backend",
+  "zh": "从 account.Password 抽出可 JSON 序列化的二验状态。"
+ },
+ {
+  "id": "b7_115",
+  "kind": "backend",
+  "zh": "从发卡平台的取码链接（如 .../GetHTML）拉取 Telegram 登录验证码。"
+ },
+ {
+  "id": "b7_116",
+  "kind": "backend",
+  "zh": "从本地库删除账号条目（不会注销 Telegram 账号）"
+ },
+ {
+  "id": "b7_117",
+  "kind": "backend",
+  "zh": "从机器人回复里抽各币种金额。"
+ },
+ {
+  "id": "b7_118",
+  "kind": "backend",
+  "zh": "从源会话转发到目标会话"
+ },
+ {
+  "id": "b7_119",
+  "kind": "backend",
+  "zh": "从通讯录删除指定联系人"
+ },
+ {
+  "id": "b7_120",
+  "kind": "backend",
+  "zh": "从通讯录删除联系人"
+ },
+ {
+  "id": "b7_121",
+  "kind": "backend",
+  "zh": "从通讯录删除联系人。"
+ },
+ {
+  "id": "b7_122",
+  "kind": "backend",
+  "zh": "从页面文本中抽取验证码。若多个则取最前面的（平台通常最新在上）。"
+ },
+ {
+  "id": "b7_123",
+  "kind": "backend",
+  "zh": "代理体检：逐账号测连通性与出口 IP 去重（只读）"
+ },
+ {
+  "id": "b7_124",
+  "kind": "backend",
+  "zh": "以指定账号发送消息（受白名单与限速约束）"
+ },
+ {
+  "id": "b7_125",
+  "kind": "backend",
+  "zh": "任务 {task_id} 不存在"
+ },
+ {
+  "id": "b7_126",
+  "kind": "backend",
+  "zh": "任务不存在"
+ },
+ {
+  "id": "b7_127",
+  "kind": "backend",
+  "zh": "任务已停止"
+ },
+ {
+  "id": "b7_128",
+  "kind": "backend",
+  "zh": "任务持久化。"
+ },
+ {
+  "id": "b7_129",
+  "kind": "backend",
+  "zh": "任务系统：把“对一批目标逐个执行”的活变成可观测、可停止的任务。"
+ },
+ {
+  "id": "b7_130",
+  "kind": "backend",
+  "zh": "会话"
+ },
+ {
+  "id": "b7_131",
+  "kind": "backend",
+  "zh": "会话 @/ID"
+ },
+ {
+  "id": "b7_132",
+  "kind": "backend",
+  "zh": "会话加密"
+ },
+ {
+  "id": "b7_133",
+  "kind": "backend",
+  "zh": "会话接管落库：强制刷新 session + 接管计时 +（可选）设备指纹。"
+ },
+ {
+  "id": "b7_134",
+  "kind": "backend",
+  "zh": "会话未授权或已失效，请重新登录/导入"
+ },
+ {
+  "id": "b7_135",
+  "kind": "backend",
+  "zh": "会话未授权，无法导出 tdata"
+ },
+ {
+  "id": "b7_136",
+  "kind": "backend",
+  "zh": "余额"
+ },
+ {
+  "id": "b7_137",
+  "kind": "backend",
+  "zh": "余额|钱包|balance|资产|总览"
+ },
+ {
+  "id": "b7_138",
+  "kind": "backend",
+  "zh": "余额宝|理财|存款|基金"
+ },
+ {
+  "id": "b7_139",
+  "kind": "backend",
+  "zh": "作业 ID（unpack 下目录名）"
+ },
+ {
+  "id": "b7_140",
+  "kind": "backend",
+  "zh": "作业不存在：{job}"
+ },
+ {
+  "id": "b7_141",
+  "kind": "backend",
+  "zh": "作业里没有 src*.zip，请先在网页合并工具上传分包"
+ },
+ {
+  "id": "b7_142",
+  "kind": "backend",
+  "zh": "你是 TAM 运维助手。只用已授权工具查改本机托管号；禁止编造工具结果。"
+ },
+ {
+  "id": "b7_143",
+  "kind": "backend",
+  "zh": "你是只读顾问。仅用查询/检查类工具；不建议、不执行任何写入。"
+ },
+ {
+  "id": "b7_144",
+  "kind": "backend",
+  "zh": "你是批量操作助手。先 list/stats 摸清状态，再按用户范围执行已授权工具。"
+ },
+ {
+  "id": "b7_145",
+  "kind": "backend",
+  "zh": "你是排障助手。根据健康检查、日志、设备列表定位问题，给出可执行的下一步。"
+ },
+ {
+  "id": "b7_146",
+  "kind": "backend",
+  "zh": "保存重试间隔（支持 45s / 10m / 2h 写法）。传 None 或空字符串 = 恢复默认。"
+ },
+ {
+  "id": "b7_147",
+  "kind": "backend",
+  "zh": "修改参数面板中的配置项（写入 .env，热生效项立即生效）"
+ },
+ {
+  "id": "b7_148",
+  "kind": "backend",
+  "zh": "修改本账号 @username，空=清除"
+ },
+ {
+  "id": "b7_149",
+  "kind": "backend",
+  "zh": "修改账号元信息（代理/标签/设备指纹等）"
+ },
+ {
+  "id": "b7_150",
+  "kind": "backend",
+  "zh": "修改账号资料（对外可见）"
+ },
+ {
+  "id": "b7_151",
+  "kind": "backend",
+  "zh": "停止正在运行的任务（剩余目标标为已跳过）"
+ },
+ {
+  "id": "b7_152",
+  "kind": "backend",
+  "zh": "允许用户传 tdata 的父目录，自动下钻一层。"
+ },
+ {
+  "id": "b7_153",
+  "kind": "backend",
+  "zh": "元"
+ },
+ {
+  "id": "b7_154",
+  "kind": "backend",
+  "zh": "充值|提现|转账|收款|红包|闪兑|兑换"
+ },
+ {
+  "id": "b7_155",
+  "kind": "backend",
+  "zh": "先修好核心依赖，再重跑体检"
+ },
+ {
+  "id": "b7_156",
+  "kind": "backend",
+  "zh": "先查再改；危险操作先说明风险。简体中文，一两段说清。"
+ },
+ {
+  "id": "b7_157",
+  "kind": "backend",
+  "zh": "全自动登录：发码 -> 从发卡平台取码链接轮询新码 -> 完成登录。"
+ },
+ {
+  "id": "b7_158",
+  "kind": "backend",
+  "zh": "全部通过，可以直接启动：python -m tam.cli serve"
+ },
+ {
+  "id": "b7_159",
+  "kind": "backend",
+  "zh": "公开用户名（可选）"
+ },
+ {
+  "id": "b7_160",
+  "kind": "backend",
+  "zh": "共 {len(order)} 个账号位，序号 {order}"
+ },
+ {
+  "id": "b7_161",
+  "kind": "backend",
+  "zh": "共 {len(sessions)} 个 StringSession"
+ },
+ {
+  "id": "b7_162",
+  "kind": "backend",
+  "zh": "关键词"
+ },
+ {
+  "id": "b7_163",
+  "kind": "backend",
+  "zh": "关键词（可选）"
+ },
+ {
+  "id": "b7_164",
+  "kind": "backend",
+  "zh": "养号（warm-up）：让新导入的账号看起来像真人在用。"
+ },
+ {
+  "id": "b7_165",
+  "kind": "backend",
+  "zh": "养号：保活在线 / 随机已读 / 账号之间互聊"
+ },
+ {
+  "id": "b7_166",
+  "kind": "backend",
+  "zh": "内置的纯 Python tdata 解析器（不依赖 opentele）。"
+ },
+ {
+  "id": "b7_167",
+  "kind": "backend",
+  "zh": "写入/更新 .env，保留原有注释与顺序。"
+ },
+ {
+  "id": "b7_168",
+  "kind": "backend",
+  "zh": "写入采集到的原始发言。同一群的同一条消息重复采集不会重复入库。"
+ },
+ {
+  "id": "b7_169",
+  "kind": "backend",
+  "zh": "写出 .session 失败"
+ },
+ {
+  "id": "b7_170",
+  "kind": "backend",
+  "zh": "分"
+ },
+ {
+  "id": "b7_171",
+  "kind": "backend",
+  "zh": "分析 data 目录内某个号包 ZIP（只读，不拆包）"
+ },
+ {
+  "id": "b7_172",
+  "kind": "backend",
+  "zh": "分片里没有 MTP 授权块（该号可能未登录）"
+ },
+ {
+  "id": "b7_173",
+  "kind": "backend",
+  "zh": "列出 data/unpack 下的 ZIP 作业目录与主要文件"
+ },
+ {
+  "id": "b7_174",
+  "kind": "backend",
+  "zh": "列出可用于批量动作的健康账号（active 且不在 spam 封锁期）"
+ },
+ {
+  "id": "b7_175",
+  "kind": "backend",
+  "zh": "列出最近的任务及进度（群发 / 采集发言人）"
+ },
+ {
+  "id": "b7_176",
+  "kind": "backend",
+  "zh": "列出本号通讯录联系人"
+ },
+ {
+  "id": "b7_177",
+  "kind": "backend",
+  "zh": "列出某个 ZIP 作业目录内的文件（可下载路径供人工用）"
+ },
+ {
+  "id": "b7_178",
+  "kind": "backend",
+  "zh": "列出某账号已授权的登录设备"
+ },
+ {
+  "id": "b7_179",
+  "kind": "backend",
+  "zh": "列出某账号的会话"
+ },
+ {
+  "id": "b7_180",
+  "kind": "backend",
+  "zh": "列出该账号已登录的其他设备（安全审计用）。"
+ },
+ {
+  "id": "b7_181",
+  "kind": "backend",
+  "zh": "列出账号所在的群组/频道，给采集界面做可勾选清单。"
+ },
+ {
+  "id": "b7_182",
+  "kind": "backend",
+  "zh": "列出账号（不含任何会话凭证）"
+ },
+ {
+  "id": "b7_183",
+  "kind": "backend",
+  "zh": "列出通讯录联系人"
+ },
+ {
+  "id": "b7_184",
+  "kind": "backend",
+  "zh": "列出通讯录联系人。"
+ },
+ {
+  "id": "b7_185",
+  "kind": "backend",
+  "zh": "刚登录就踢掉其它设备"
+ },
+ {
+  "id": "b7_186",
+  "kind": "backend",
+  "zh": "刚看到消息"
+ },
+ {
+  "id": "b7_187",
+  "kind": "backend",
+  "zh": "创建 {ENV_PATH}"
+ },
+ {
+  "id": "b7_188",
+  "kind": "backend",
+  "zh": "创建公开/私有频道。"
+ },
+ {
+  "id": "b7_189",
+  "kind": "backend",
+  "zh": "创建广播频道（可选公开用户名）"
+ },
+ {
+  "id": "b7_190",
+  "kind": "backend",
+  "zh": "创建广播频道，可选设置公开用户名"
+ },
+ {
+  "id": "b7_191",
+  "kind": "backend",
+  "zh": "创建群组（超级群 megagroup）或基础群。"
+ },
+ {
+  "id": "b7_192",
+  "kind": "backend",
+  "zh": "创建群聊"
+ },
+ {
+  "id": "b7_193",
+  "kind": "backend",
+  "zh": "创建群聊（默认超级群）"
+ },
+ {
+  "id": "b7_194",
+  "kind": "backend",
+  "zh": "创建超级群（默认）或基础群"
+ },
+ {
+  "id": "b7_195",
+  "kind": "backend",
+  "zh": "创建频道"
+ },
+ {
+  "id": "b7_196",
+  "kind": "backend",
+  "zh": "初始成员@（可选）"
+ },
+ {
+  "id": "b7_197",
+  "kind": "backend",
+  "zh": "删了 {len(photos)} 张头像"
+ },
+ {
+  "id": "b7_198",
+  "kind": "backend",
+  "zh": "删头像"
+ },
+ {
+  "id": "b7_199",
+  "kind": "backend",
+  "zh": "删掉号上全部联系人，分批执行"
+ }
+]

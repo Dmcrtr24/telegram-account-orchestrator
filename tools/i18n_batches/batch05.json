@@ -1,0 +1,1002 @@
+[
+ {
+  "id": "b5_0",
+  "kind": "frontend",
+  "zh": "条 /"
+ },
+ {
+  "id": "b5_1",
+  "kind": "frontend",
+  "zh": "条对话"
+ },
+ {
+  "id": "b5_2",
+  "kind": "frontend",
+  "zh": "条本地记录（不影响 Telegram 账号本身，但本工具内会话密文会消失）。"
+ },
+ {
+  "id": "b5_3",
+  "kind": "frontend",
+  "zh": "条（仅此浏览器）</div>"
+ },
+ {
+  "id": "b5_4",
+  "kind": "frontend",
+  "zh": "来电"
+ },
+ {
+  "id": "b5_5",
+  "kind": "frontend",
+  "zh": "查询"
+ },
+ {
+  "id": "b5_6",
+  "kind": "frontend",
+  "zh": "柬埔寨 \\ud83c\\uddf0\\ud83c\\udded"
+ },
+ {
+  "id": "b5_7",
+  "kind": "frontend",
+  "zh": "标签"
+ },
+ {
+  "id": "b5_8",
+  "kind": "frontend",
+  "zh": "标签已更新 ·"
+ },
+ {
+  "id": "b5_9",
+  "kind": "frontend",
+  "zh": "标签（逗号分隔）"
+ },
+ {
+  "id": "b5_10",
+  "kind": "frontend",
+  "zh": "校验未通过：还剩"
+ },
+ {
+  "id": "b5_11",
+  "kind": "frontend",
+  "zh": "格式不对"
+ },
+ {
+  "id": "b5_12",
+  "kind": "frontend",
+  "zh": "格式互转"
+ },
+ {
+  "id": "b5_13",
+  "kind": "frontend",
+  "zh": "格式互转完成"
+ },
+ {
+  "id": "b5_14",
+  "kind": "frontend",
+  "zh": "格鲁吉亚 \\ud83c\\uddec\\ud83c\\uddea"
+ },
+ {
+  "id": "b5_15",
+  "kind": "frontend",
+  "zh": "检查完成"
+ },
+ {
+  "id": "b5_16",
+  "kind": "frontend",
+  "zh": "检测到 HTML 标签，是否按富文本发送（超链接可点击）？"
+ },
+ {
+  "id": "b5_17",
+  "kind": "frontend",
+  "zh": "概览"
+ },
+ {
+  "id": "b5_18",
+  "kind": "frontend",
+  "zh": "正在与 @SpamBot 对话…"
+ },
+ {
+  "id": "b5_19",
+  "kind": "frontend",
+  "zh": "正在体检并自动修复，可能需要一分钟…"
+ },
+ {
+  "id": "b5_20",
+  "kind": "frontend",
+  "zh": "正在只读探测…"
+ },
+ {
+  "id": "b5_21",
+  "kind": "frontend",
+  "zh": "正在启动取码监控、发送验证码并等待新码…"
+ },
+ {
+  "id": "b5_22",
+  "kind": "frontend",
+  "zh": "正在拉取群组…"
+ },
+ {
+  "id": "b5_23",
+  "kind": "frontend",
+  "zh": "正在探测各账号代理连通性…"
+ },
+ {
+  "id": "b5_24",
+  "kind": "frontend",
+  "zh": "正在获取二维码…"
+ },
+ {
+  "id": "b5_25",
+  "kind": "frontend",
+  "zh": "正在解析并验证 tdata（号多时较久）…"
+ },
+ {
+  "id": "b5_26",
+  "kind": "frontend",
+  "zh": "正在请求重启…"
+ },
+ {
+  "id": "b5_27",
+  "kind": "frontend",
+  "zh": "正在重启…"
+ },
+ {
+  "id": "b5_28",
+  "kind": "frontend",
+  "zh": "正常"
+ },
+ {
+  "id": "b5_29",
+  "kind": "frontend",
+  "zh": "正文"
+ },
+ {
+  "id": "b5_30",
+  "kind": "frontend",
+  "zh": "每个群最多存多少条"
+ },
+ {
+  "id": "b5_31",
+  "kind": "frontend",
+  "zh": "每群最多扫多少条消息"
+ },
+ {
+  "id": "b5_32",
+  "kind": "frontend",
+  "zh": "每群最多采多少人"
+ },
+ {
+  "id": "b5_33",
+  "kind": "frontend",
+  "zh": "每行"
+ },
+ {
+  "id": "b5_34",
+  "kind": "frontend",
+  "zh": "每行一个 StringSession；可用"
+ },
+ {
+  "id": "b5_35",
+  "kind": "frontend",
+  "zh": "比利时 \\ud83c\\udde7\\ud83c\\uddea"
+ },
+ {
+  "id": "b5_36",
+  "kind": "frontend",
+  "zh": "永久注销"
+ },
+ {
+  "id": "b5_37",
+  "kind": "frontend",
+  "zh": "永久限制"
+ },
+ {
+  "id": "b5_38",
+  "kind": "frontend",
+  "zh": "沙特 \\ud83c\\uddf8\\ud83c\\udde6"
+ },
+ {
+  "id": "b5_39",
+  "kind": "frontend",
+  "zh": "没有人"
+ },
+ {
+  "id": "b5_40",
+  "kind": "frontend",
+  "zh": "没有可诊断的目录"
+ },
+ {
+  "id": "b5_41",
+  "kind": "frontend",
+  "zh": "没有可调参数。"
+ },
+ {
+  "id": "b5_42",
+  "kind": "frontend",
+  "zh": "没有对话记录"
+ },
+ {
+  "id": "b5_43",
+  "kind": "frontend",
+  "zh": "没有符合条件的账号"
+ },
+ {
+  "id": "b5_44",
+  "kind": "frontend",
+  "zh": "没有符合条件的账号 <button class=\"sm\" onclick=\"clearFilters()\">清除筛选</button>"
+ },
+ {
+  "id": "b5_45",
+  "kind": "frontend",
+  "zh": "没有识别到取码链接"
+ },
+ {
+  "id": "b5_46",
+  "kind": "frontend",
+  "zh": "法国 \\ud83c\\uddeb\\ud83c\\uddf7"
+ },
+ {
+  "id": "b5_47",
+  "kind": "frontend",
+  "zh": "波兰 \\ud83c\\uddf5\\ud83c\\uddf1"
+ },
+ {
+  "id": "b5_48",
+  "kind": "frontend",
+  "zh": "注销"
+ },
+ {
+  "id": "b5_49",
+  "kind": "frontend",
+  "zh": "注销 Telegram 账号"
+ },
+ {
+  "id": "b5_50",
+  "kind": "frontend",
+  "zh": "注销TG账号"
+ },
+ {
+  "id": "b5_51",
+  "kind": "frontend",
+  "zh": "注销原因（可选）"
+ },
+ {
+  "id": "b5_52",
+  "kind": "frontend",
+  "zh": "注销失败："
+ },
+ {
+  "id": "b5_53",
+  "kind": "frontend",
+  "zh": "注销完成 · 成功"
+ },
+ {
+  "id": "b5_54",
+  "kind": "frontend",
+  "zh": "注销账号 ·"
+ },
+ {
+  "id": "b5_55",
+  "kind": "frontend",
+  "zh": "注销返回："
+ },
+ {
+  "id": "b5_56",
+  "kind": "frontend",
+  "zh": "泰国 \\ud83c\\uddf9\\ud83c\\udded"
+ },
+ {
+  "id": "b5_57",
+  "kind": "frontend",
+  "zh": "津巴布韦 \\ud83c\\uddff\\ud83c\\uddfc"
+ },
+ {
+  "id": "b5_58",
+  "kind": "frontend",
+  "zh": "测试取码链接"
+ },
+ {
+  "id": "b5_59",
+  "kind": "frontend",
+  "zh": "测试第一条取码链接"
+ },
+ {
+  "id": "b5_60",
+  "kind": "frontend",
+  "zh": "浏览器打开提示地址（本机默认"
+ },
+ {
+  "id": "b5_61",
+  "kind": "frontend",
+  "zh": "添加"
+ },
+ {
+  "id": "b5_62",
+  "kind": "frontend",
+  "zh": "添加账号"
+ },
+ {
+  "id": "b5_63",
+  "kind": "frontend",
+  "zh": "清理会话"
+ },
+ {
+  "id": "b5_64",
+  "kind": "frontend",
+  "zh": "清理其它设备"
+ },
+ {
+  "id": "b5_65",
+  "kind": "frontend",
+  "zh": "清空"
+ },
+ {
+  "id": "b5_66",
+  "kind": "frontend",
+  "zh": "清空失败："
+ },
+ {
+  "id": "b5_67",
+  "kind": "frontend",
+  "zh": "清空对话"
+ },
+ {
+  "id": "b5_68",
+  "kind": "frontend",
+  "zh": "清空当前 AI 对话历史？（仅本机浏览器）"
+ },
+ {
+  "id": "b5_69",
+  "kind": "frontend",
+  "zh": "清空当前对话与本地历史"
+ },
+ {
+  "id": "b5_70",
+  "kind": "frontend",
+  "zh": "清空通讯录"
+ },
+ {
+  "id": "b5_71",
+  "kind": "frontend",
+  "zh": "清空错误日志"
+ },
+ {
+  "id": "b5_72",
+  "kind": "frontend",
+  "zh": "清设备"
+ },
+ {
+  "id": "b5_73",
+  "kind": "frontend",
+  "zh": "清设备 / OKPay"
+ },
+ {
+  "id": "b5_74",
+  "kind": "frontend",
+  "zh": "清设备周期须为非负数字（小时）"
+ },
+ {
+  "id": "b5_75",
+  "kind": "frontend",
+  "zh": "演示模式"
+ },
+ {
+  "id": "b5_76",
+  "kind": "frontend",
+  "zh": "演示模式：已写入示例数据"
+ },
+ {
+  "id": "b5_77",
+  "kind": "frontend",
+  "zh": "演示模式：当前展示的是示例数据，未连接后端。启动"
+ },
+ {
+  "id": "b5_78",
+  "kind": "frontend",
+  "zh": "澳大利亚 \\ud83c\\udde6\\ud83c\\uddfa"
+ },
+ {
+  "id": "b5_79",
+  "kind": "frontend",
+  "zh": "点开一行"
+ },
+ {
+  "id": "b5_80",
+  "kind": "frontend",
+  "zh": "点选币种菜单并解析余额…"
+ },
+ {
+  "id": "b5_81",
+  "kind": "frontend",
+  "zh": "热重载"
+ },
+ {
+  "id": "b5_82",
+  "kind": "frontend",
+  "zh": "热重载与日志"
+ },
+ {
+  "id": "b5_83",
+  "kind": "frontend",
+  "zh": "热重载与错误日志"
+ },
+ {
+  "id": "b5_84",
+  "kind": "frontend",
+  "zh": "热重载（真实重启）"
+ },
+ {
+  "id": "b5_85",
+  "kind": "frontend",
+  "zh": "爱尔兰 \\ud83c\\uddee\\ud83c\\uddea"
+ },
+ {
+  "id": "b5_86",
+  "kind": "frontend",
+  "zh": "爱沙尼亚 \\ud83c\\uddea\\ud83c\\uddea"
+ },
+ {
+  "id": "b5_87",
+  "kind": "frontend",
+  "zh": "状态"
+ },
+ {
+  "id": "b5_88",
+  "kind": "frontend",
+  "zh": "状态：active 正常、restricted 受限、banned 封禁、unauthorized 未登录/失效等。"
+ },
+ {
+  "id": "b5_89",
+  "kind": "frontend",
+  "zh": "现在没有线索可导出"
+ },
+ {
+  "id": "b5_90",
+  "kind": "frontend",
+  "zh": "瑞典 \\ud83c\\uddf8\\ud83c\\uddea"
+ },
+ {
+  "id": "b5_91",
+  "kind": "frontend",
+  "zh": "瑞士 \\ud83c\\udde8\\ud83c\\udded"
+ },
+ {
+  "id": "b5_92",
+  "kind": "frontend",
+  "zh": "用哪个账号拉群"
+ },
+ {
+  "id": "b5_93",
+  "kind": "frontend",
+  "zh": "用户"
+ },
+ {
+  "id": "b5_94",
+  "kind": "frontend",
+  "zh": "用户名"
+ },
+ {
+  "id": "b5_95",
+  "kind": "frontend",
+  "zh": "用手机"
+ },
+ {
+  "id": "b5_96",
+  "kind": "frontend",
+  "zh": "登录后开始计时"
+ },
+ {
+  "id": "b5_97",
+  "kind": "frontend",
+  "zh": "登录成功"
+ },
+ {
+  "id": "b5_98",
+  "kind": "frontend",
+  "zh": "登录满设定时长后自动踢出其它设备"
+ },
+ {
+  "id": "b5_99",
+  "kind": "frontend",
+  "zh": "登录账号"
+ },
+ {
+  "id": "b5_100",
+  "kind": "frontend",
+  "zh": "白俄罗斯 \\ud83c\\udde7\\ud83c\\uddfe"
+ },
+ {
+  "id": "b5_101",
+  "kind": "frontend",
+  "zh": "的 Telegram 多账号管理器：会话加密存本地 SQLite，可通过"
+ },
+ {
+  "id": "b5_102",
+  "kind": "frontend",
+  "zh": "目录时递归扫描子目录"
+ },
+ {
+  "id": "b5_103",
+  "kind": "frontend",
+  "zh": "目录："
+ },
+ {
+  "id": "b5_104",
+  "kind": "frontend",
+  "zh": "目标"
+ },
+ {
+  "id": "b5_105",
+  "kind": "frontend",
+  "zh": "直接作用于库里选中的号"
+ },
+ {
+  "id": "b5_106",
+  "kind": "frontend",
+  "zh": "看了，第三节有点意思"
+ },
+ {
+  "id": "b5_107",
+  "kind": "frontend",
+  "zh": "真实进度"
+ },
+ {
+  "id": "b5_108",
+  "kind": "frontend",
+  "zh": "真实重启后端进程（热重载），进行中的任务会中断"
+ },
+ {
+  "id": "b5_109",
+  "kind": "frontend",
+  "zh": "短时间多次重生或多次错 2FA，Telegram 会返回"
+ },
+ {
+  "id": "b5_110",
+  "kind": "frontend",
+  "zh": "确定"
+ },
+ {
+  "id": "b5_111",
+  "kind": "frontend",
+  "zh": "确定停止任务 #"
+ },
+ {
+  "id": "b5_112",
+  "kind": "frontend",
+  "zh": "确定执行"
+ },
+ {
+  "id": "b5_113",
+  "kind": "frontend",
+  "zh": "确定清空全部错误记录？"
+ },
+ {
+  "id": "b5_114",
+  "kind": "frontend",
+  "zh": "确定继续？"
+ },
+ {
+  "id": "b5_115",
+  "kind": "frontend",
+  "zh": "确认"
+ },
+ {
+  "id": "b5_116",
+  "kind": "frontend",
+  "zh": "确认取消该账号进行中的 2FA 重置等待？"
+ },
+ {
+  "id": "b5_117",
+  "kind": "frontend",
+  "zh": "确认对该账号发起 2FA 重置？ 将进入官方等待期（通常约 7 天），到期后云密码失效。 若绑定了辅助邮箱，原持有人仍可能通过邮箱恢复。"
+ },
+ {
+  "id": "b5_118",
+  "kind": "frontend",
+  "zh": "确认登录"
+ },
+ {
+  "id": "b5_119",
+  "kind": "frontend",
+  "zh": "科威特 \\ud83c\\uddf0\\ud83c\\uddfc"
+ },
+ {
+  "id": "b5_120",
+  "kind": "frontend",
+  "zh": "秘鲁 \\ud83c\\uddf5\\ud83c\\uddea"
+ },
+ {
+  "id": "b5_121",
+  "kind": "frontend",
+  "zh": "突尼斯 \\ud83c\\uddf9\\ud83c\\uddf3"
+ },
+ {
+  "id": "b5_122",
+  "kind": "frontend",
+  "zh": "窄屏"
+ },
+ {
+  "id": "b5_123",
+  "kind": "frontend",
+  "zh": "立即执行"
+ },
+ {
+  "id": "b5_124",
+  "kind": "frontend",
+  "zh": "立陶宛 \\ud83c\\uddf1\\ud83c\\uddf9"
+ },
+ {
+  "id": "b5_125",
+  "kind": "frontend",
+  "zh": "等待中断："
+ },
+ {
+  "id": "b5_126",
+  "kind": "frontend",
+  "zh": "等待扫码…"
+ },
+ {
+  "id": "b5_127",
+  "kind": "frontend",
+  "zh": "等待新进程启动… ("
+ },
+ {
+  "id": "b5_128",
+  "kind": "frontend",
+  "zh": "等待至："
+ },
+ {
+  "id": "b5_129",
+  "kind": "frontend",
+  "zh": "等待超时：请手动刷新页面或检查进程是否拉起"
+ },
+ {
+  "id": "b5_130",
+  "kind": "frontend",
+  "zh": "筛活"
+ },
+ {
+  "id": "b5_131",
+  "kind": "frontend",
+  "zh": "类型"
+ },
+ {
+  "id": "b5_132",
+  "kind": "frontend",
+  "zh": "系统"
+ },
+ {
+  "id": "b5_133",
+  "kind": "frontend",
+  "zh": "约旦 \\ud83c\\uddef\\ud83c\\uddf4"
+ },
+ {
+  "id": "b5_134",
+  "kind": "frontend",
+  "zh": "纯文本"
+ },
+ {
+  "id": "b5_135",
+  "kind": "frontend",
+  "zh": "线索库"
+ },
+ {
+  "id": "b5_136",
+  "kind": "frontend",
+  "zh": "结果摘要："
+ },
+ {
+  "id": "b5_137",
+  "kind": "frontend",
+  "zh": "结果请下载后点「用完删除」。号包类移植自 GAFBot（MIT），见"
+ },
+ {
+  "id": "b5_138",
+  "kind": "frontend",
+  "zh": "给这批线索打标签（可空，逗号分隔）"
+ },
+ {
+  "id": "b5_139",
+  "kind": "frontend",
+  "zh": "给选中的"
+ },
+ {
+  "id": "b5_140",
+  "kind": "frontend",
+  "zh": "统一两步验证密码"
+ },
+ {
+  "id": "b5_141",
+  "kind": "frontend",
+  "zh": "统一代理（可选）"
+ },
+ {
+  "id": "b5_142",
+  "kind": "frontend",
+  "zh": "统一别名前缀（可选）"
+ },
+ {
+  "id": "b5_143",
+  "kind": "frontend",
+  "zh": "统计 ·"
+ },
+ {
+  "id": "b5_144",
+  "kind": "frontend",
+  "zh": "继续"
+ },
+ {
+  "id": "b5_145",
+  "kind": "frontend",
+  "zh": "继续？"
+ },
+ {
+  "id": "b5_146",
+  "kind": "frontend",
+  "zh": "缅甸 \\ud83c\\uddf2\\ud83c\\uddf2"
+ },
+ {
+  "id": "b5_147",
+  "kind": "frontend",
+  "zh": "编辑布局"
+ },
+ {
+  "id": "b5_148",
+  "kind": "frontend",
+  "zh": "编辑布局：拖动画板；可导出/导入布局 JSON。"
+ },
+ {
+  "id": "b5_149",
+  "kind": "frontend",
+  "zh": "编辑模式：拖中间移位（碰到的控件会被推开），拖右/下/右下角改大小，点 × 隐藏"
+ },
+ {
+  "id": "b5_150",
+  "kind": "frontend",
+  "zh": "网页"
+ },
+ {
+  "id": "b5_151",
+  "kind": "frontend",
+  "zh": "网页与机器人"
+ },
+ {
+  "id": "b5_152",
+  "kind": "frontend",
+  "zh": "罗马尼亚 \\ud83c\\uddf7\\ud83c\\uddf4"
+ },
+ {
+  "id": "b5_153",
+  "kind": "frontend",
+  "zh": "美国/加拿大 \\ud83c\\uddfa\\ud83c\\uddf8"
+ },
+ {
+  "id": "b5_154",
+  "kind": "frontend",
+  "zh": "群"
+ },
+ {
+  "id": "b5_155",
+  "kind": "frontend",
+  "zh": "群发 128 个目标"
+ },
+ {
+  "id": "b5_156",
+  "kind": "frontend",
+  "zh": "群发 40 个目标"
+ },
+ {
+  "id": "b5_157",
+  "kind": "frontend",
+  "zh": "群发、采集最近发言人等走任务中心；可看进度、停止。线索库可筛选后再用于群发。"
+ },
+ {
+  "id": "b5_158",
+  "kind": "frontend",
+  "zh": "群发任务已创建"
+ },
+ {
+  "id": "b5_159",
+  "kind": "frontend",
+  "zh": "群发消息"
+ },
+ {
+  "id": "b5_160",
+  "kind": "frontend",
+  "zh": "群成员"
+ },
+ {
+  "id": "b5_161",
+  "kind": "frontend",
+  "zh": "群组"
+ },
+ {
+  "id": "b5_162",
+  "kind": "frontend",
+  "zh": "老挝 \\ud83c\\uddf1\\ud83c\\udde6"
+ },
+ {
+  "id": "b5_163",
+  "kind": "frontend",
+  "zh": "老群（已冷）"
+ },
+ {
+  "id": "b5_164",
+  "kind": "frontend",
+  "zh": "联系人"
+ },
+ {
+  "id": "b5_165",
+  "kind": "frontend",
+  "zh": "肯尼亚 \\ud83c\\uddf0\\ud83c\\uddea"
+ },
+ {
+  "id": "b5_166",
+  "kind": "frontend",
+  "zh": "自动刷新"
+ },
+ {
+  "id": "b5_167",
+  "kind": "frontend",
+  "zh": "自动取码登录"
+ },
+ {
+  "id": "b5_168",
+  "kind": "frontend",
+  "zh": "自动接码失败，请查看错误日志后重试。"
+ },
+ {
+  "id": "b5_169",
+  "kind": "frontend",
+  "zh": "自动接码登录"
+ },
+ {
+  "id": "b5_170",
+  "kind": "frontend",
+  "zh": "自动接码登录完成"
+ },
+ {
+  "id": "b5_171",
+  "kind": "frontend",
+  "zh": "自动清设备"
+ },
+ {
+  "id": "b5_172",
+  "kind": "frontend",
+  "zh": "自动清设备提示条"
+ },
+ {
+  "id": "b5_173",
+  "kind": "frontend",
+  "zh": "自动清设备：按「本机接管时间」起算；详情可设是否参与、周期、循环。"
+ },
+ {
+  "id": "b5_174",
+  "kind": "frontend",
+  "zh": "自动清设备：本机接管满"
+ },
+ {
+  "id": "b5_175",
+  "kind": "frontend",
+  "zh": "自动登录"
+ },
+ {
+  "id": "b5_176",
+  "kind": "frontend",
+  "zh": "自动登录 · 成功"
+ },
+ {
+  "id": "b5_177",
+  "kind": "frontend",
+  "zh": "自托管"
+ },
+ {
+  "id": "b5_178",
+  "kind": "frontend",
+  "zh": "至少选一个群"
+ },
+ {
+  "id": "b5_179",
+  "kind": "frontend",
+  "zh": "芬兰 \\ud83c\\uddeb\\ud83c\\uddee"
+ },
+ {
+  "id": "b5_180",
+  "kind": "frontend",
+  "zh": "苏丹 \\ud83c\\uddf8\\ud83c\\udde9"
+ },
+ {
+  "id": "b5_181",
+  "kind": "frontend",
+  "zh": "若各号密码相同可在此填写；没有或各不相同请留空。"
+ },
+ {
+  "id": "b5_182",
+  "kind": "frontend",
+  "zh": "若该号开启了云密码请填写；没有可留空直接确定。"
+ },
+ {
+  "id": "b5_183",
+  "kind": "frontend",
+  "zh": "英国 \\ud83c\\uddec\\ud83c\\udde7"
+ },
+ {
+  "id": "b5_184",
+  "kind": "frontend",
+  "zh": "荷兰 \\ud83c\\uddf3\\ud83c\\uddf1"
+ },
+ {
+  "id": "b5_185",
+  "kind": "frontend",
+  "zh": "菲律宾 \\ud83c\\uddf5\\ud83c\\udded"
+ },
+ {
+  "id": "b5_186",
+  "kind": "frontend",
+  "zh": "葡萄牙 \\ud83c\\uddf5\\ud83c\\uddf9"
+ },
+ {
+  "id": "b5_187",
+  "kind": "frontend",
+  "zh": "蒙古 \\ud83c\\uddf2\\ud83c\\uddf3"
+ },
+ {
+  "id": "b5_188",
+  "kind": "frontend",
+  "zh": "补录二验密码"
+ },
+ {
+  "id": "b5_189",
+  "kind": "frontend",
+  "zh": "被拉进群"
+ },
+ {
+  "id": "b5_190",
+  "kind": "frontend",
+  "zh": "西班牙 \\ud83c\\uddea\\ud83c\\uddf8"
+ },
+ {
+  "id": "b5_191",
+  "kind": "frontend",
+  "zh": "解析中…"
+ },
+ {
+  "id": "b5_192",
+  "kind": "frontend",
+  "zh": "解析到："
+ },
+ {
+  "id": "b5_193",
+  "kind": "frontend",
+  "zh": "解析由内置纯 Python 解析器完成，"
+ },
+ {
+  "id": "b5_194",
+  "kind": "frontend",
+  "zh": "解析预览：等待输入"
+ },
+ {
+  "id": "b5_195",
+  "kind": "frontend",
+  "zh": "触发频率限制"
+ },
+ {
+  "id": "b5_196",
+  "kind": "frontend",
+  "zh": "计时"
+ },
+ {
+  "id": "b5_197",
+  "kind": "frontend",
+  "zh": "记录服务端未捕获异常、HTTP 5xx 与前端上报。可导出 JSON 发给维护者。"
+ },
+ {
+  "id": "b5_198",
+  "kind": "frontend",
+  "zh": "设用户名"
+ },
+ {
+  "id": "b5_199",
+  "kind": "frontend",
+  "zh": "访问令牌（免令牌模式留空）"
+ }
+]

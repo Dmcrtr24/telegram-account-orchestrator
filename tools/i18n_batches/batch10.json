@@ -1,0 +1,1002 @@
+[
+ {
+  "id": "b10_0",
+  "kind": "backend",
+  "zh": "筛出已经到期的账号 ID。"
+ },
+ {
+  "id": "b10_1",
+  "kind": "backend",
+  "zh": "筛料"
+ },
+ {
+  "id": "b10_2",
+  "kind": "backend",
+  "zh": "筛料：一批手机号里哪些注册过 Telegram。"
+ },
+ {
+  "id": "b10_3",
+  "kind": "backend",
+  "zh": "筛料：批量检测手机号是否已注册 Telegram"
+ },
+ {
+  "id": "b10_4",
+  "kind": "backend",
+  "zh": "筛活：号还能不能用。"
+ },
+ {
+  "id": "b10_5",
+  "kind": "backend",
+  "zh": "筛活：轻量探测号是否仍可用（不产生可见行为）"
+ },
+ {
+  "id": "b10_6",
+  "kind": "backend",
+  "zh": "简介"
+ },
+ {
+  "id": "b10_7",
+  "kind": "backend",
+  "zh": "简介: {exc!r}"
+ },
+ {
+  "id": "b10_8",
+  "kind": "backend",
+  "zh": "算出某个账号的自动清设备计划：状态 + 到期时间 + 原因。"
+ },
+ {
+  "id": "b10_9",
+  "kind": "backend",
+  "zh": "约 {secs // 3600} 小时"
+ },
+ {
+  "id": "b10_10",
+  "kind": "backend",
+  "zh": "约 {secs // 60} 分钟"
+ },
+ {
+  "id": "b10_11",
+  "kind": "backend",
+  "zh": "线索库：存放采集到的活跃发言人，供后续筛选与群发使用。"
+ },
+ {
+  "id": "b10_12",
+  "kind": "backend",
+  "zh": "线索来源统计（每个群采集到多少人）"
+ },
+ {
+  "id": "b10_13",
+  "kind": "backend",
+  "zh": "结论基于工具返回。简体中文，条目化。"
+ },
+ {
+  "id": "b10_14",
+  "kind": "backend",
+  "zh": "给 UI 看的概览：开关、周期、待处理数量、最近一个到期时间。"
+ },
+ {
+  "id": "b10_15",
+  "kind": "backend",
+  "zh": "统一入口。永远返回 {ok, tool, result|error} 结构，不抛异常。"
+ },
+ {
+  "id": "b10_16",
+  "kind": "backend",
+  "zh": "编辑本账号发送的消息"
+ },
+ {
+  "id": "b10_17",
+  "kind": "backend",
+  "zh": "编辑本账号已发送的消息"
+ },
+ {
+  "id": "b10_18",
+  "kind": "backend",
+  "zh": "编辑消息"
+ },
+ {
+  "id": "b10_19",
+  "kind": "backend",
+  "zh": "编辑自己发送的消息。"
+ },
+ {
+  "id": "b10_20",
+  "kind": "backend",
+  "zh": "缺失 {p}"
+ },
+ {
+  "id": "b10_21",
+  "kind": "backend",
+  "zh": "缺少 TAM_MASTER_KEY。请先运行: python -m tam.cli init-key"
+ },
+ {
+  "id": "b10_22",
+  "kind": "backend",
+  "zh": "缺少 qrcode 库，请 pip install qrcode pillow"
+ },
+ {
+  "id": "b10_23",
+  "kind": "backend",
+  "zh": "缺少必填参数：{sorted(missing)}"
+ },
+ {
+  "id": "b10_24",
+  "kind": "backend",
+  "zh": "缺少："
+ },
+ {
+  "id": "b10_25",
+  "kind": "backend",
+  "zh": "网页 AI 对话面板：策略、权限与 OpenAI 兼容对话（带工具调用）。"
+ },
+ {
+  "id": "b10_26",
+  "kind": "backend",
+  "zh": "群 @/ID"
+ },
+ {
+  "id": "b10_27",
+  "kind": "backend",
+  "zh": "群 @username 或 chat id"
+ },
+ {
+  "id": "b10_28",
+  "kind": "backend",
+  "zh": "群 @用户名或ID"
+ },
+ {
+  "id": "b10_29",
+  "kind": "backend",
+  "zh": "群/频道/用户"
+ },
+ {
+  "id": "b10_30",
+  "kind": "backend",
+  "zh": "群成员列表"
+ },
+ {
+  "id": "b10_31",
+  "kind": "backend",
+  "zh": "群标题"
+ },
+ {
+  "id": "b10_32",
+  "kind": "backend",
+  "zh": "自动登录：发验证码后从账号的取码链接轮询新码并完成登录"
+ },
+ {
+  "id": "b10_33",
+  "kind": "backend",
+  "zh": "自定义：按下方开关逐项配置"
+ },
+ {
+  "id": "b10_34",
+  "kind": "backend",
+  "zh": "若刚输错过多次 2FA，也算入此限流。"
+ },
+ {
+  "id": "b10_35",
+  "kind": "backend",
+  "zh": "若导入 tdata 持续报错，可改用 Python 3.12 重建 .venv"
+ },
+ {
+  "id": "b10_36",
+  "kind": "backend",
+  "zh": "若配置了 allow_account_ids，则限制工具只能操作这些账号。"
+ },
+ {
+  "id": "b10_37",
+  "kind": "backend",
+  "zh": "获取单个账号详情"
+ },
+ {
+  "id": "b10_38",
+  "kind": "backend",
+  "zh": "被回复消息ID"
+ },
+ {
+  "id": "b10_39",
+  "kind": "backend",
+  "zh": "要恢复令牌：把 .env 里的 TAM_NO_AUTH 改成 0，再重跑一次向导"
+ },
+ {
+  "id": "b10_40",
+  "kind": "backend",
+  "zh": "解出本地主密钥"
+ },
+ {
+  "id": "b10_41",
+  "kind": "backend",
+  "zh": "解密后长度字段异常，文件可能已损坏"
+ },
+ {
+  "id": "b10_42",
+  "kind": "backend",
+  "zh": "解密校验失败：本地密码（passcode）不正确，或文件已损坏"
+ },
+ {
+  "id": "b10_43",
+  "kind": "backend",
+  "zh": "解析 tdata 并直接产出 Telethon StringSession 列表。"
+ },
+ {
+  "id": "b10_44",
+  "kind": "backend",
+  "zh": "解析一个 tdata 目录，返回诊断报告（不抛异常）。"
+ },
+ {
+  "id": "b10_45",
+  "kind": "backend",
+  "zh": "设置"
+ },
+ {
+  "id": "b10_46",
+  "kind": "backend",
+  "zh": "设置/修改/移除二步验证密码（有密码时必须传 old）"
+ },
+ {
+  "id": "b10_47",
+  "kind": "backend",
+  "zh": "设置或移除二验密码。新密码留空 = 移除"
+ },
+ {
+  "id": "b10_48",
+  "kind": "backend",
+  "zh": "设置本账号 @用户名（空字符串=清除）。"
+ },
+ {
+  "id": "b10_49",
+  "kind": "backend",
+  "zh": "设置本账号公开用户名（空=清除）"
+ },
+ {
+  "id": "b10_50",
+  "kind": "backend",
+  "zh": "设置用户名"
+ },
+ {
+  "id": "b10_51",
+  "kind": "backend",
+  "zh": "访问令牌 TAM_WEB_TOKEN"
+ },
+ {
+  "id": "b10_52",
+  "kind": "backend",
+  "zh": "识别同源动态取码页，返回 latest/restart 两个端点。"
+ },
+ {
+  "id": "b10_53",
+  "kind": "backend",
+  "zh": "试试自动修复：python -m tam.cli doctor --fix"
+ },
+ {
+  "id": "b10_54",
+  "kind": "backend",
+  "zh": "该 tdata 设了本地密码（passcode），请在导入时填写"
+ },
+ {
+  "id": "b10_55",
+  "kind": "backend",
+  "zh": "该号实际使用的清设备周期（小时）。账号自定义优先，否则用全局。"
+ },
+ {
+  "id": "b10_56",
+  "kind": "backend",
+  "zh": "该消息没有媒体"
+ },
+ {
+  "id": "b10_57",
+  "kind": "backend",
+  "zh": "该账号尚未登录或会话已清除，请先登录/导入"
+ },
+ {
+  "id": "b10_58",
+  "kind": "backend",
+  "zh": "该账号开启了两步验证，请填写 2FA 密码后重试"
+ },
+ {
+  "id": "b10_59",
+  "kind": "backend",
+  "zh": "该账号开启了两步验证，请带 password 重试"
+ },
+ {
+  "id": "b10_60",
+  "kind": "backend",
+  "zh": "该账号未配置取码链接 code_url"
+ },
+ {
+  "id": "b10_61",
+  "kind": "backend",
+  "zh": "说明文字"
+ },
+ {
+  "id": "b10_62",
+  "kind": "backend",
+  "zh": "请删掉 .env 里的错误密钥行,重新运行 setup.py 生成。"
+ },
+ {
+  "id": "b10_63",
+  "kind": "backend",
+  "zh": "请填写 @用户名 / 链接 / 邀请 hash"
+ },
+ {
+  "id": "b10_64",
+  "kind": "backend",
+  "zh": "请填写对话 @用户名 / ID"
+ },
+ {
+  "id": "b10_65",
+  "kind": "backend",
+  "zh": "请填写搜索关键词"
+ },
+ {
+  "id": "b10_66",
+  "kind": "backend",
+  "zh": "请填写群 @用户名 / ID"
+ },
+ {
+  "id": "b10_67",
+  "kind": "backend",
+  "zh": "请填写要取消屏蔽的用户（@用户名 / ID / 手机号）"
+ },
+ {
+  "id": "b10_68",
+  "kind": "backend",
+  "zh": "请填写要屏蔽的用户（@用户名 / ID / 手机号）"
+ },
+ {
+  "id": "b10_69",
+  "kind": "backend",
+  "zh": "请求停止；已结束的任务返回 False。"
+ },
+ {
+  "id": "b10_70",
+  "kind": "backend",
+  "zh": "请用手机 Telegram：设置 → 设备 → 扫描二维码（或直接扫本页二维码）"
+ },
+ {
+  "id": "b10_71",
+  "kind": "backend",
+  "zh": "读一个带单位的时长环境变量，并抓住下限（避免写 1s 把自己打死）。"
+ },
+ {
+  "id": "b10_72",
+  "kind": "backend",
+  "zh": "读取 key_datas"
+ },
+ {
+  "id": "b10_73",
+  "kind": "backend",
+  "zh": "读取一个 TDF 容器文件，校验 md5 后返回内容体。"
+ },
+ {
+  "id": "b10_74",
+  "kind": "backend",
+  "zh": "读取单条消息"
+ },
+ {
+  "id": "b10_75",
+  "kind": "backend",
+  "zh": "读取单条消息完整内容。"
+ },
+ {
+  "id": "b10_76",
+  "kind": "backend",
+  "zh": "读取参数面板当前值（按分组，不含密钥明文）"
+ },
+ {
+  "id": "b10_77",
+  "kind": "backend",
+  "zh": "读取失败：{exc}"
+ },
+ {
+  "id": "b10_78",
+  "kind": "backend",
+  "zh": "读取官方验证码失败：{exc}"
+ },
+ {
+  "id": "b10_79",
+  "kind": "backend",
+  "zh": "读取审计日志"
+ },
+ {
+  "id": "b10_80",
+  "kind": "backend",
+  "zh": "读取对话最近消息文本（可关键词搜索）"
+ },
+ {
+  "id": "b10_81",
+  "kind": "backend",
+  "zh": "读取盐值"
+ },
+ {
+  "id": "b10_82",
+  "kind": "backend",
+  "zh": "读取群/频道/会话最近消息内容"
+ },
+ {
+  "id": "b10_83",
+  "kind": "backend",
+  "zh": "读取群/频道/私聊最近消息文本。"
+ },
+ {
+  "id": "b10_84",
+  "kind": "backend",
+  "zh": "读取群消息"
+ },
+ {
+  "id": "b10_85",
+  "kind": "backend",
+  "zh": "读取账号列表"
+ },
+ {
+  "id": "b10_86",
+  "kind": "backend",
+  "zh": "调用工具"
+ },
+ {
+  "id": "b10_87",
+  "kind": "backend",
+  "zh": "账号 #{index}"
+ },
+ {
+  "id": "b10_88",
+  "kind": "backend",
+  "zh": "账号 #{to_id} 不存在"
+ },
+ {
+  "id": "b10_89",
+  "kind": "backend",
+  "zh": "账号 #{to_id} 既无 username 也无手机号，无法互聊（先跑一次健康检查补全信息）"
+ },
+ {
+  "id": "b10_90",
+  "kind": "backend",
+  "zh": "账号 A 给账号 B 发一条随机短语（先确保能解析到对方实体）。"
+ },
+ {
+  "id": "b10_91",
+  "kind": "backend",
+  "zh": "账号 ID"
+ },
+ {
+  "id": "b10_92",
+  "kind": "backend",
+  "zh": "账号 {acc.label} 尚未授权"
+ },
+ {
+  "id": "b10_93",
+  "kind": "backend",
+  "zh": "账号 {account_id} 不存在"
+ },
+ {
+  "id": "b10_94",
+  "kind": "backend",
+  "zh": "账号 {i} 不在 AI 允许范围 {sorted(allow_set)}"
+ },
+ {
+  "id": "b10_95",
+  "kind": "backend",
+  "zh": "账号不存在"
+ },
+ {
+  "id": "b10_96",
+  "kind": "backend",
+  "zh": "账号不存在或未填写手机号"
+ },
+ {
+  "id": "b10_97",
+  "kind": "backend",
+  "zh": "账号正被其他操作占用（健康检查/导入等），请稍后重试重生"
+ },
+ {
+  "id": "b10_98",
+  "kind": "backend",
+  "zh": "账号状态统计"
+ },
+ {
+  "id": "b10_99",
+  "kind": "backend",
+  "zh": "账号管理核心：基于 Telethon (MTProto) 的多账号会话管理。"
+ },
+ {
+  "id": "b10_100",
+  "kind": "backend",
+  "zh": "超时（秒）"
+ },
+ {
+  "id": "b10_101",
+  "kind": "backend",
+  "zh": "距下次循环还剩"
+ },
+ {
+  "id": "b10_102",
+  "kind": "backend",
+  "zh": "路径不存在：{root}"
+ },
+ {
+  "id": "b10_103",
+  "kind": "backend",
+  "zh": "路径不能为空"
+ },
+ {
+  "id": "b10_104",
+  "kind": "backend",
+  "zh": "路径必须位于 data 目录内：{root}"
+ },
+ {
+  "id": "b10_105",
+  "kind": "backend",
+  "zh": "踢掉其它设备"
+ },
+ {
+  "id": "b10_106",
+  "kind": "backend",
+  "zh": "踢掉其它设备，只留本机。"
+ },
+ {
+  "id": "b10_107",
+  "kind": "backend",
+  "zh": "踢掉该账号除本会话外的所有登录"
+ },
+ {
+  "id": "b10_108",
+  "kind": "backend",
+  "zh": "踢掉除本机外的全部会话，并回拉一次会话列表确认真的踢掉了。"
+ },
+ {
+  "id": "b10_109",
+  "kind": "backend",
+  "zh": "转发消息"
+ },
+ {
+  "id": "b10_110",
+  "kind": "backend",
+  "zh": "转发消息到另一会话"
+ },
+ {
+  "id": "b10_111",
+  "kind": "backend",
+  "zh": "转发消息到另一会话。"
+ },
+ {
+  "id": "b10_112",
+  "kind": "backend",
+  "zh": "转成可直接群发的目标：有用户名用 @username，否则用数字 ID。"
+ },
+ {
+  "id": "b10_113",
+  "kind": "backend",
+  "zh": "轮询直到出现与 exclude 不同的新验证码。超时抛 TimeoutError。"
+ },
+ {
+  "id": "b10_114",
+  "kind": "backend",
+  "zh": "输出目录（可选）"
+ },
+ {
+  "id": "b10_115",
+  "kind": "backend",
+  "zh": "辛苦了"
+ },
+ {
+  "id": "b10_116",
+  "kind": "backend",
+  "zh": "运维（默认）"
+ },
+ {
+  "id": "b10_117",
+  "kind": "backend",
+  "zh": "运行配置。所有敏感项从环境变量或 .env 读取。"
+ },
+ {
+  "id": "b10_118",
+  "kind": "backend",
+  "zh": "返回 (assistant_text, tool_calls_as_openai_shape)."
+ },
+ {
+  "id": "b10_119",
+  "kind": "backend",
+  "zh": "返回可直接喂给 LLM / MCP 的工具清单。"
+ },
+ {
+  "id": "b10_120",
+  "kind": "backend",
+  "zh": "返回给前端：隐藏 api_key 明文。"
+ },
+ {
+  "id": "b10_121",
+  "kind": "backend",
+  "zh": "返回该账号下一次应该自动清设备的时间戳；None = 不参与。"
+ },
+ {
+  "id": "b10_122",
+  "kind": "backend",
+  "zh": "这个号已经设过二验，必须填当前密码"
+ },
+ {
+  "id": "b10_123",
+  "kind": "backend",
+  "zh": "这个号没有开启二步验证，无需重置"
+ },
+ {
+  "id": "b10_124",
+  "kind": "backend",
+  "zh": "这个号没有登录态（session 已失效）"
+ },
+ {
+  "id": "b10_125",
+  "kind": "backend",
+  "zh": "这个号还没有二验，当前密码要留空"
+ },
+ {
+  "id": "b10_126",
+  "kind": "backend",
+  "zh": "这是不可逆操作，必须勾选确认"
+ },
+ {
+  "id": "b10_127",
+  "kind": "backend",
+  "zh": "连接 Telegram 失败：{type(exc).__name__}: {exc}"
+ },
+ {
+  "id": "b10_128",
+  "kind": "backend",
+  "zh": "连私聊一起删（危险）"
+ },
+ {
+  "id": "b10_129",
+  "kind": "backend",
+  "zh": "退出登录（作废 session）"
+ },
+ {
+  "id": "b10_130",
+  "kind": "backend",
+  "zh": "退出登录：作废当前 session（不解绑手机、不删 Telegram 账号）"
+ },
+ {
+  "id": "b10_131",
+  "kind": "backend",
+  "zh": "退出登录：作废当前 session，不解绑手机号、不删除 Telegram 账号。"
+ },
+ {
+  "id": "b10_132",
+  "kind": "backend",
+  "zh": "退出登录：尽量向 Telegram 注销，无论远端是否成功都清除本地会话。"
+ },
+ {
+  "id": "b10_133",
+  "kind": "backend",
+  "zh": "退出群/频道"
+ },
+ {
+  "id": "b10_134",
+  "kind": "backend",
+  "zh": "退群退频道。默认不动私聊（里面可能有验证码）"
+ },
+ {
+  "id": "b10_135",
+  "kind": "backend",
+  "zh": "逐步骤诊断报告，调试模式直接展示给用户。"
+ },
+ {
+  "id": "b10_136",
+  "kind": "backend",
+  "zh": "通用直链"
+ },
+ {
+  "id": "b10_137",
+  "kind": "backend",
+  "zh": "通讯录列表"
+ },
+ {
+  "id": "b10_138",
+  "kind": "backend",
+  "zh": "邀请链接加入失败：{type(exc).__name__}: {exc}"
+ },
+ {
+  "id": "b10_139",
+  "kind": "backend",
+  "zh": "配置加载"
+ },
+ {
+  "id": "b10_140",
+  "kind": "backend",
+  "zh": "重新解压完整项目包"
+ },
+ {
+  "id": "b10_141",
+  "kind": "backend",
+  "zh": "重试间隔不能小于 %g 秒"
+ },
+ {
+  "id": "b10_142",
+  "kind": "backend",
+  "zh": "重试间隔恢复为配置/默认值"
+ },
+ {
+  "id": "b10_143",
+  "kind": "backend",
+  "zh": "重试间隔改为 %s"
+ },
+ {
+  "id": "b10_144",
+  "kind": "backend",
+  "zh": "键值对，键为 TAM_* 参数名，例如 {\"TAM_BATCH_CONCURRENCY\": \"5\"}"
+ },
+ {
+  "id": "b10_145",
+  "kind": "backend",
+  "zh": "长度 {len(body)}，校验通过"
+ },
+ {
+  "id": "b10_146",
+  "kind": "backend",
+  "zh": "问 @SpamBot 当前有没有被限制"
+ },
+ {
+  "id": "b10_147",
+  "kind": "backend",
+  "zh": "问 @SpamBot 有没有被限制。就是跟机器人发一句 /start 看它怎么回。"
+ },
+ {
+  "id": "b10_148",
+  "kind": "backend",
+  "zh": "防找回核心：用新设备指纹重新登录，使旧 session 失效，库内写入新会话。"
+ },
+ {
+  "id": "b10_149",
+  "kind": "backend",
+  "zh": "防找回清理：删头像/清简介/清用户名"
+ },
+ {
+  "id": "b10_150",
+  "kind": "backend",
+  "zh": "防找回：清掉能被前手认出来的痕迹（头像、简介、用户名）。"
+ },
+ {
+  "id": "b10_151",
+  "kind": "backend",
+  "zh": "除本机外的会话：hash -> 人读描述。"
+ },
+ {
+  "id": "b10_152",
+  "kind": "backend",
+  "zh": "随机挑几个会话标记已读，模拟真人翻消息。"
+ },
+ {
+  "id": "b10_153",
+  "kind": "backend",
+  "zh": "隐私项"
+ },
+ {
+  "id": "b10_154",
+  "kind": "backend",
+  "zh": "需要 bot（@Bot 用户名）"
+ },
+ {
+  "id": "b10_155",
+  "kind": "backend",
+  "zh": "需要 from_peer、to_peer、message_ids"
+ },
+ {
+  "id": "b10_156",
+  "kind": "backend",
+  "zh": "需要 path（服务端本地文件路径）"
+ },
+ {
+  "id": "b10_157",
+  "kind": "backend",
+  "zh": "需要 target"
+ },
+ {
+  "id": "b10_158",
+  "kind": "backend",
+  "zh": "需要 target 与 message_id"
+ },
+ {
+  "id": "b10_159",
+  "kind": "backend",
+  "zh": "需要 target 与 message_ids"
+ },
+ {
+  "id": "b10_160",
+  "kind": "backend",
+  "zh": "需要 target、message_id、text"
+ },
+ {
+  "id": "b10_161",
+  "kind": "backend",
+  "zh": "需要 target（@username / 用户ID / 手机号）"
+ },
+ {
+  "id": "b10_162",
+  "kind": "backend",
+  "zh": "需要 tdata / .session 文件请再用导出功能。"
+ },
+ {
+  "id": "b10_163",
+  "kind": "backend",
+  "zh": "需要 title"
+ },
+ {
+  "id": "b10_164",
+  "kind": "backend",
+  "zh": "需要 {MIN_PY[0]}.{MIN_PY[1]} 以上，到 python.org 下载新版重装"
+ },
+ {
+  "id": "b10_165",
+  "kind": "backend",
+  "zh": "需要时到 my.telegram.org 申请一对，全部账号共用一对即可"
+ },
+ {
+  "id": "b10_166",
+  "kind": "backend",
+  "zh": "需要群标题 title"
+ },
+ {
+  "id": "b10_167",
+  "kind": "backend",
+  "zh": "验证码已过期，请重试"
+ },
+ {
+  "id": "b10_168",
+  "kind": "backend",
+  "zh": "验证码错误或已失效，请重试"
+ },
+ {
+  "id": "b10_169",
+  "kind": "backend",
+  "zh": "高危动作必须为 true 才会真正执行"
+ },
+ {
+  "id": "b10_170",
+  "kind": "backend",
+  "zh": "（Telegram 限流，不是本机故障）"
+ },
+ {
+  "id": "b10_171",
+  "kind": "backend",
+  "zh": "（{len(result['warned'])} 项提醒，不影响使用）"
+ },
+ {
+  "id": "b10_172",
+  "kind": "backend",
+  "zh": "（仅检查，不修改）"
+ },
+ {
+  "id": "b10_173",
+  "kind": "backend",
+  "zh": "（当前：{type(exc).__name__}: {exc}）"
+ },
+ {
+  "id": "b10_174",
+  "kind": "backend",
+  "zh": "（无文本回复）"
+ },
+ {
+  "id": "b10_175",
+  "kind": "backend",
+  "zh": "（最后错误：{last_err!r}）"
+ },
+ {
+  "id": "b10_176",
+  "kind": "backend",
+  "zh": "（正确的目录里应包含 key_datas 与 D877F783D5D3EF8C）"
+ },
+ {
+  "id": "b10_177",
+  "kind": "backend",
+  "zh": "（自动修复模式）"
+ },
+ {
+  "id": "b10_178",
+  "kind": "backend",
+  "zh": "（达到最大工具轮次，已停止）"
+ },
+ {
+  "id": "b10_179",
+  "kind": "backend",
+  "zh": "）映射成 tdata 里的分片文件名（如 D877F783D5D3EF8C）。"
+ },
+ {
+  "id": "b10_180",
+  "kind": "backend",
+  "zh": "，其中有新出现的登录，对方可能持有密码或在自动重登"
+ },
+ {
+  "id": "b10_181",
+  "kind": "backend",
+  "zh": "；该号绑定了辅助邮箱，原持有人仍可能通过邮箱恢复二验"
+ },
+ {
+  "id": "b10_182",
+  "kind": "pattern",
+  "zh": "%s 个进行中 · 共 %s 个"
+ },
+ {
+  "id": "b10_183",
+  "kind": "pattern",
+  "zh": "%s 人"
+ },
+ {
+  "id": "b10_184",
+  "kind": "pattern",
+  "zh": "%s 项未通过，详情见下方日志区"
+ },
+ {
+  "id": "b10_185",
+  "kind": "pattern",
+  "zh": "OKPay 余额查询 · 机器人 @%s"
+ },
+ {
+  "id": "b10_186",
+  "kind": "pattern",
+  "zh": "SpamBot 回复： %s"
+ },
+ {
+  "id": "b10_187",
+  "kind": "pattern",
+  "zh": "· %s 个含二验文件，%s 个有二验但未保存密码"
+ },
+ {
+  "id": "b10_188",
+  "kind": "pattern",
+  "zh": "· 下次 %s"
+ },
+ {
+  "id": "b10_189",
+  "kind": "pattern",
+  "zh": "· 仍残留其它设备 %s"
+ },
+ {
+  "id": "b10_190",
+  "kind": "pattern",
+  "zh": "· 发现 tdata %s 处"
+ },
+ {
+  "id": "b10_191",
+  "kind": "pattern",
+  "zh": "· 失效 %s"
+ },
+ {
+  "id": "b10_192",
+  "kind": "pattern",
+  "zh": "· 待处理 %s 个 · 扫描间隔 %s 分钟"
+ },
+ {
+  "id": "b10_193",
+  "kind": "pattern",
+  "zh": "· 成功账号 %s"
+ },
+ {
+  "id": "b10_194",
+  "kind": "pattern",
+  "zh": "· 正常 %s"
+ },
+ {
+  "id": "b10_195",
+  "kind": "pattern",
+  "zh": "· 踢前共 %s 个授权"
+ },
+ {
+  "id": "b10_196",
+  "kind": "pattern",
+  "zh": "• %s：%s 个"
+ },
+ {
+  "id": "b10_197",
+  "kind": "pattern",
+  "zh": "…共 %s 条，仅显示前 60 条"
+ },
+ {
+  "id": "b10_198",
+  "kind": "pattern",
+  "zh": "…另有 %s 条"
+ },
+ {
+  "id": "b10_199",
+  "kind": "pattern",
+  "zh": "✓ %s 新设备 %s"
+ }
+]

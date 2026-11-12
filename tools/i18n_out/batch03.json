@@ -1,0 +1,802 @@
+{
+ "b3_0": {
+  "ru": "Вступить в группу",
+  "en": "Join group"
+ },
+ "b3_1": {
+  "ru": "Гана \\ud83c\\uddec\\ud83c\\udded",
+  "en": "Ghana \\ud83c\\uddec\\ud83c\\udded"
+ },
+ "b3_2": {
+  "ru": "Добавить контакт",
+  "en": "Add contact"
+ },
+ "b3_3": {
+  "ru": "Не удалось загрузить конфигурацию AI:",
+  "en": "Failed to load AI config:"
+ },
+ "b3_4": {
+  "ru": "Загрузка…",
+  "en": "Loading…"
+ },
+ "b3_5": {
+  "ru": "Ошибка загрузки:",
+  "en": "Failed to load:"
+ },
+ "b3_6": {
+  "ru": "Не удалось загрузить диалог:",
+  "en": "Failed to load dialog:"
+ },
+ "b3_7": {
+  "ru": "Флажки + панель пакетных операций",
+  "en": "Checkboxes + bulk bar"
+ },
+ "b3_8": {
+  "ru": "Венгрия \\ud83c\\udded\\ud83c\\uddfa",
+  "en": "Hungary \\ud83c\\udded\\ud83c\\uddfa"
+ },
+ "b3_9": {
+  "ru": "Разовая очистка других устройств выполнена (цикл не включён)",
+  "en": "One-time termination of other devices done (loop off)"
+ },
+ "b3_10": {
+  "ru": "ЮАР \\ud83c\\uddff\\ud83c\\udde6",
+  "en": "South Africa \\ud83c\\uddff\\ud83c\\udde6"
+ },
+ "b3_11": {
+  "ru": "Катар \\ud83c\\uddf6\\ud83c\\udde6",
+  "en": "Qatar \\ud83c\\uddf6\\ud83c\\udde6"
+ },
+ "b3_12": {
+  "ru": "Люксембург \\ud83c\\uddf1\\ud83c\\uddfa",
+  "en": "Luxembourg \\ud83c\\uddf1\\ud83c\\uddfa"
+ },
+ "b3_13": {
+  "ru": "Индия \\ud83c\\uddee\\ud83c\\uddf3",
+  "en": "India \\ud83c\\uddee\\ud83c\\uddf3"
+ },
+ "b3_14": {
+  "ru": "Индонезия \\ud83c\\uddee\\ud83c\\udde9",
+  "en": "Indonesia \\ud83c\\uddee\\ud83c\\udde9"
+ },
+ "b3_15": {
+  "ru": "Опасные инструменты (видны снаружи)",
+  "en": "Dangerous tools (externally visible)"
+ },
+ "b3_16": {
+  "ru": "Опасная операция",
+  "en": "Dangerous action"
+ },
+ "b3_17": {
+  "ru": "достаточно; или сначала запустите",
+  "en": "is enough; or first run"
+ },
+ "b3_18": {
+  "ru": "Эквадор \\ud83c\\uddea\\ud83c\\udde8",
+  "en": "Ecuador \\ud83c\\uddea\\ud83c\\udde8"
+ },
+ "b3_19": {
+  "ru": "Причина",
+  "en": "Reason"
+ },
+ "b3_20": {
+  "ru": "Параметры и раскладка",
+  "en": "Settings & layout"
+ },
+ "b3_21": {
+  "ru": "Параметры",
+  "en": "Settings"
+ },
+ "b3_22": {
+  "ru": "и историю выполнения?",
+  "en": "and its run history?"
+ },
+ "b3_23": {
+  "ru": "Двойной клик",
+  "en": "Double-click"
+ },
+ "b3_24": {
+  "ru": "Отправить файл",
+  "en": "Send file"
+ },
+ "b3_25": {
+  "ru": "Написать сообщение",
+  "en": "Send message"
+ },
+ "b3_26": {
+  "ru": "Запустить сброс 2FA",
+  "en": "Start 2FA reset"
+ },
+ "b3_27": {
+  "ru": "Запустить сброс 2FA",
+  "en": "Start 2FA reset"
+ },
+ "b3_28": {
+  "ru": "Отправить",
+  "en": "Send"
+ },
+ "b3_29": {
+  "ru": "Задача отправки выполнена",
+  "en": "Send task complete"
+ },
+ "b3_30": {
+  "ru": "Содержимое",
+  "en": "Content to send"
+ },
+ "b3_31": {
+  "ru": "Отправить сообщение",
+  "en": "Send message"
+ },
+ "b3_32": {
+  "ru": "Цель отправки",
+  "en": "Send target"
+ },
+ "b3_33": {
+  "ru": "Отправить код",
+  "en": "Send code"
+ },
+ "b3_34": {
+  "ru": "Отмена",
+  "en": "Cancel"
+ },
+ "b3_35": {
+  "ru": "Отменить сброс 2FA",
+  "en": "Cancel 2FA reset"
+ },
+ "b3_36": {
+  "ru": "Отменить сброс 2FA",
+  "en": "Cancel 2FA reset"
+ },
+ "b3_37": {
+  "ru": "Снять выбор",
+  "en": "Clear selection"
+ },
+ "b3_38": {
+  "ru": "Получить код",
+  "en": "Fetch code"
+ },
+ "b3_39": {
+  "ru": "Префикс получения кода по умолчанию берётся из переменных окружения <code>TAM_TOAPI_BASE</code> / <code>DM</code> / <code>SERVER_IP:API_PORT</code>.</div>",
+  "en": "The code prefix defaults to the environment variables <code>TAM_TOAPI_BASE</code> / <code>DM</code> / <code>SERVER_IP:API_PORT</code>.</div>"
+ },
+ "b3_40": {
+  "ru": "Ссылка для получения кода",
+  "en": "Code-retrieval link"
+ },
+ "b3_41": {
+  "ru": "Ссылка для получения кода доступна:",
+  "en": "Code-retrieval link is reachable:"
+ },
+ "b3_42": {
+  "ru": "Не удалось проверить ссылку для получения кода:",
+  "en": "Code-retrieval link check failed:"
+ },
+ "b3_43": {
+  "ru": "Ссылка для получения кода (необязательно)",
+  "en": "Code-retrieval link (optional)"
+ },
+ "b3_44": {
+  "ru": "Ограничен",
+  "en": "Restricted"
+ },
+ "b3_45": {
+  "ru": "Вариантов 1",
+  "en": "Variants 1"
+ },
+ "b3_46": {
+  "ru": "Сирия \\ud83c\\uddf8\\ud83c\\uddfe",
+  "en": "Syria \\ud83c\\uddf8\\ud83c\\uddfe"
+ },
+ "b3_47": {
+  "ru": "Куба \\ud83c\\udde8\\ud83c\\uddfa",
+  "en": "Cuba \\ud83c\\udde8\\ud83c\\uddfa"
+ },
+ "b3_48": {
+  "ru": "Сохраняется только в этом инструменте (в зашифрованной базе), облачный пароль Telegram не меняется. Пусто — отмена.",
+  "en": "Saved only in this tool (encrypted in the database); the Telegram cloud password is not changed. Leave empty to cancel."
+ },
+ "b3_49": {
+  "ru": "Только здоровые аккаунты",
+  "en": "Only healthy accounts"
+ },
+ "b3_50": {
+  "ru": "Отправлять только изменённые пункты",
+  "en": "Submit only changed items"
+ },
+ "b3_51": {
+  "ru": "Только с новыми сообщениями за 7 дней",
+  "en": "Only with new messages in 7 days"
+ },
+ "b3_52": {
+  "ru": "Только писавшие за последние N дней",
+  "en": "Only posters in the last N days"
+ },
+ "b3_53": {
+  "ru": "Токен только для чтения/Agent не может выполнять запись — импорт, вход и т. п.; горячая перезагрузка в режиме только чтения отключена.",
+  "en": "Read-only/Agent tokens cannot perform writes such as import or sign-in; hot reload is disabled in read-only mode."
+ },
+ "b3_54": {
+  "ru": "Инструменты только для чтения",
+  "en": "Read-only tools"
+ },
+ "b3_55": {
+  "ru": "Режим только чтения",
+  "en": "Read-only mode"
+ },
+ "b3_56": {
+  "ru": "Тест только для чтения, код Telegram не отправляется",
+  "en": "Read-only test; no Telegram code is sent"
+ },
+ "b3_57": {
+  "ru": "Повтор возможен в:",
+  "en": "Retry available at:"
+ },
+ "b3_58": {
+  "ru": "Справа вверху «Токен доступа»: если задан",
+  "en": "Top right “Access token”: if set"
+ },
+ "b3_59": {
+  "ru": "Откройте боковую панель кнопкой ✦ внизу справа или «AI-помощник» в верхней панели. Укажите провайдера (OpenAI-совместимый / Claude / Gemini / Azure) и Key, затем отметьте",
+  "en": "Open the sidebar with ✦ at bottom right or “AI assistant” in the top bar. Set the provider (OpenAI-compatible / Claude / Gemini / Azure) and Key, then check"
+ },
+ "b3_60": {
+  "ru": "zip-пакет аккаунтов",
+  "en": "Account pack zip"
+ },
+ "b3_61": {
+  "ru": "Пакеты аккаунтов — разбиение / объединение / время регистрации / перевод в API",
+  "en": "Account packs — split / merge / registration time / convert to API"
+ },
+ "b3_62": {
+  "ru": "Номер",
+  "en": "Number"
+ },
+ "b3_63": {
+  "ru": "Кыргызстан \\ud83c\\uddf0\\ud83c\\uddec",
+  "en": "Kyrgyzstan \\ud83c\\uddf0\\ud83c\\uddec"
+ },
+ "b3_64": {
+  "ru": "Аккаунты с одинаковым именем переименовываются автоматически, без молчаливой перезаписи.</div>",
+  "en": "Same-name accounts are renamed automatically, never silently overwritten.</div>"
+ },
+ "b3_65": {
+  "ru": "Согласен, на выходных соберу версию заметок",
+  "en": "Agreed, I will put together a version of the notes this weekend"
+ },
+ "b3_66": {
+  "ru": "Также сохранять историю диалога",
+  "en": "Also save chat history"
+ },
+ "b3_67": {
+  "ru": "Сколько аккаунтов перегенерировать одновременно",
+  "en": "How many accounts to regenerate at once"
+ },
+ "b3_68": {
+  "ru": "Синхронизировать время входа",
+  "en": "Sync sign-in time"
+ },
+ "b3_69": {
+  "ru": "спустя",
+  "en": "later"
+ },
+ "b3_70": {
+  "ru": "затем откройте http://127.0.0.1:8848 — это будут реальные данные.",
+  "en": "then open http://127.0.0.1:8848 to see real data."
+ },
+ "b3_71": {
+  "ru": "Отправить всем лидам «",
+  "en": "Send to all leads in “"
+ },
+ "b3_72": {
+  "ru": "Рассылка по лидам",
+  "en": "Broadcast to leads"
+ },
+ "b3_73": {
+  "ru": "Включить AI-помощника",
+  "en": "Enable AI assistant"
+ },
+ "b3_74": {
+  "ru": "Включить варианты",
+  "en": "Enable variants"
+ },
+ "b3_75": {
+  "ru": "Колумбия \\ud83c\\udde8\\ud83c\\uddf4",
+  "en": "Colombia \\ud83c\\udde8\\ud83c\\uddf4"
+ },
+ "b3_76": {
+  "ru": "Камерун \\ud83c\\udde8\\ud83c\\uddf2",
+  "en": "Cameroon \\ud83c\\udde8\\ud83c\\uddf2"
+ },
+ "b3_77": {
+  "ru": "Ответить",
+  "en": "Reply"
+ },
+ "b3_78": {
+  "ru": "Ответ:",
+  "en": "Reply:"
+ },
+ "b3_79": {
+  "ru": "Страна/регион",
+  "en": "Country/region"
+ },
+ "b3_80": {
+  "ru": "Туркменистан \\ud83c\\uddf9\\ud83c\\uddf2",
+  "en": "Turkmenistan \\ud83c\\uddf9\\ud83c\\uddf2"
+ },
+ "b3_81": {
+  "ru": "Турция \\ud83c\\uddf9\\ud83c\\uddf7",
+  "en": "Turkey \\ud83c\\uddf9\\ud83c\\uddf7"
+ },
+ "b3_82": {
+  "ru": "В разделе «Конфигурация и права» выберите формат провайдера, укажите эндпоинт и Key, задайте права и включите. Поддерживается вывод таблиц Markdown и блоков кода.",
+  "en": "In “Config & permissions”, choose the provider format, fill in the endpoint and Key, set permissions, then enable. Markdown tables and code blocks are supported."
+ },
+ "b3_83": {
+  "ru": "введите здесь; в локальном режиме без токена можно оставить пустым. В верхней панели также есть",
+  "en": "enter here; leave empty in local no-token mode. The top bar also has"
+ },
+ "b3_84": {
+  "ru": "Танзания \\ud83c\\uddf9\\ud83c\\uddff",
+  "en": "Tanzania \\ud83c\\uddf9\\ud83c\\uddff"
+ },
+ "b3_85": {
+  "ru": "Египет \\ud83c\\uddea\\ud83c\\uddec",
+  "en": "Egypt \\ud83c\\uddea\\ud83c\\uddec"
+ },
+ "b3_86": {
+  "ru": "Эфиопия \\ud83c\\uddea\\ud83c\\uddf9",
+  "en": "Ethiopia \\ud83c\\uddea\\ud83c\\uddf9"
+ },
+ "b3_87": {
+  "ru": "Таджикистан \\ud83c\\uddf9\\ud83c\\uddef",
+  "en": "Tajikistan \\ud83c\\uddf9\\ud83c\\uddef"
+ },
+ "b3_88": {
+  "ru": "Сенегал \\ud83c\\uddf8\\ud83c\\uddf3",
+  "en": "Senegal \\ud83c\\uddf8\\ud83c\\uddf3"
+ },
+ "b3_89": {
+  "ru": "Сербия \\ud83c\\uddf7\\ud83c\\uddf8",
+  "en": "Serbia \\ud83c\\uddf7\\ud83c\\uddf8"
+ },
+ "b3_90": {
+  "ru": "Укажите формат разбиения, например -9- или 5,5,5",
+  "en": "Enter the split format, e.g. -9- or 5,5,5"
+ },
+ "b3_91": {
+  "ru": "Введено не число:",
+  "en": "Not a number:"
+ },
+ "b3_92": {
+  "ru": "Мексика \\ud83c\\uddf2\\ud83c\\uddfd",
+  "en": "Mexico \\ud83c\\uddf2\\ud83c\\uddfd"
+ },
+ "b3_93": {
+  "ru": "Обработка",
+  "en": "Processing"
+ },
+ "b3_94": {
+  "ru": "дн.",
+  "en": "d"
+ },
+ "b3_95": {
+  "ru": "дн. без выполнения, проверьте журнал",
+  "en": "d since last run; check the log"
+ },
+ "b3_96": {
+  "ru": "Недействителен",
+  "en": "Invalid"
+ },
+ "b3_97": {
+  "ru": "Ошибка",
+  "en": "Failed"
+ },
+ "b3_98": {
+  "ru": "Причины сбоев:",
+  "en": "Failure reasons:"
+ },
+ "b3_99": {
+  "ru": "Сводка ошибок:",
+  "en": "Failure summary:"
+ },
+ "b3_100": {
+  "ru": "Повторить неудачные",
+  "en": "Retry failed"
+ },
+ "b3_101": {
+  "ru": "Ошибка:",
+  "en": "Failed:"
+ },
+ "b3_102": {
+  "ru": "Аватар виден",
+  "en": "Avatar visible"
+ },
+ "b3_103": {
+  "ru": "Австрия \\ud83c\\udde6\\ud83c\\uddf9",
+  "en": "Austria \\ud83c\\udde6\\ud83c\\uddf9"
+ },
+ "b3_104": {
+  "ru": "напр.: активные,крипто",
+  "en": "e.g.: high-activity,crypto"
+ },
+ "b3_105": {
+  "ru": "Венесуэла \\ud83c\\uddfb\\ud83c\\uddea",
+  "en": "Venezuela \\ud83c\\uddfb\\ud83c\\uddea"
+ },
+ "b3_106": {
+  "ru": "Жив",
+  "en": "Alive"
+ },
+ "b3_107": {
+  "ru": "Бангладеш \\ud83c\\udde7\\ud83c\\udde9",
+  "en": "Bangladesh \\ud83c\\udde7\\ud83c\\udde9"
+ },
+ "b3_108": {
+  "ru": "Безопасность",
+  "en": "Security notice"
+ },
+ "b3_109": {
+  "ru": "Ошибка установки:",
+  "en": "Install failed:"
+ },
+ "b3_110": {
+  "ru": "Установка завершена",
+  "en": "Installation complete"
+ },
+ "b3_111": {
+  "ru": "Установка выполнена",
+  "en": "Installed successfully"
+ },
+ "b3_112": {
+  "ru": "Готово",
+  "en": "Done"
+ },
+ "b3_113": {
+  "ru": "Готово 1/1",
+  "en": "Done 1/1"
+ },
+ "b3_114": {
+  "ru": "Готово:",
+  "en": "Done:"
+ },
+ "b3_115": {
+  "ru": "Готово: успешно",
+  "en": "Done: success"
+ },
+ "b3_116": {
+  "ru": "Полные права",
+  "en": "Full permissions"
+ },
+ "b3_117": {
+  "ru": "Широкий экран",
+  "en": "Wide"
+ },
+ "b3_118": {
+  "ru": "Неверный пароль",
+  "en": "Wrong password"
+ },
+ "b3_119": {
+  "ru": "Ключ",
+  "en": "Key"
+ },
+ "b3_120": {
+  "ru": "Форматированный текст",
+  "en": "Rich text"
+ },
+ "b3_121": {
+  "ru": "Отправка с форматированием",
+  "en": "Send rich text"
+ },
+ "b3_122": {
+  "ru": "Для",
+  "en": "For"
+ },
+ "b3_123": {
+  "ru": "Диалог",
+  "en": "Dialog"
+ },
+ "b3_124": {
+  "ru": "Диалог ·",
+  "en": "Dialog ·"
+ },
+ "b3_125": {
+  "ru": "История диалога",
+  "en": "Chat history"
+ },
+ "b3_126": {
+  "ru": "Импорт",
+  "en": "Import"
+ },
+ "b3_127": {
+  "ru": "Импорт StringSession",
+  "en": "Import StringSession"
+ },
+ "b3_128": {
+  "ru": "Импорт session",
+  "en": "Import session"
+ },
+ "b3_129": {
+  "ru": "Импорт файла session",
+  "en": "Import session file"
+ },
+ "b3_130": {
+  "ru": "Импорт…",
+  "en": "Importing"
+ },
+ "b3_131": {
+  "ru": "Импорт сессии",
+  "en": "Import session"
+ },
+ "b3_132": {
+  "ru": "Импорт файла сессии",
+  "en": "Import session file"
+ },
+ "b3_133": {
+  "ru": "Импорт передаёт прогресс потоком NDJSON — в окне показывается текущий номер/всего вместо зависшей фальшивой полосы. Тот же",
+  "en": "Import streams progress over NDJSON; the dialog shows current index/total instead of a stuck fake progress bar. The same"
+ },
+ "b3_134": {
+  "ru": "Ошибка импорта",
+  "en": "Import failed"
+ },
+ "b3_135": {
+  "ru": "Импорт не удался — 0 успешно, подробности в журнале",
+  "en": "Import failed, 0 succeeded; see the log"
+ },
+ "b3_136": {
+  "ru": "Ошибка импорта:",
+  "en": "Import failed:"
+ },
+ "b3_137": {
+  "ru": "Ошибка импорта: 0 аккаунтов, подробности в журнале ниже",
+  "en": "Import failed: 0 accounts, see the log below"
+ },
+ "b3_138": {
+  "ru": "Раскладка импорта",
+  "en": "Import layout"
+ },
+ "b3_139": {
+  "ru": "Импорт выполнен",
+  "en": "Import successful"
+ },
+ "b3_140": {
+  "ru": "Экспорт",
+  "en": "Export"
+ },
+ "b3_141": {
+  "ru": "Экспорт .session",
+  "en": "Export .session"
+ },
+ "b3_142": {
+  "ru": "Экспорт CSV",
+  "en": "Export CSV"
+ },
+ "b3_143": {
+  "ru": "Экспорт StringSession",
+  "en": "Export StringSession"
+ },
+ "b3_144": {
+  "ru": "Экспорт tdata",
+  "en": "Export tdata"
+ },
+ "b3_145": {
+  "ru": "Экспорт tdata требует opentele.",
+  "en": "tdata export depends on opentele."
+ },
+ "b3_146": {
+  "ru": "Для экспорта tdata на сервере должен быть установлен opentele, а сессия — действительна. Продолжить?",
+  "en": "Exporting tdata requires opentele installed on the server and a valid session. Continue?"
+ },
+ "b3_147": {
+  "ru": "Экспорт .session",
+  "en": "Export .session"
+ },
+ "b3_148": {
+  "ru": "Экспорт, перегенерация и перевод в API дают данные, равные правам на вход; не распространяйте публично.",
+  "en": "Export, regeneration and API conversion produce login-equivalent credentials; do not share publicly."
+ },
+ "b3_149": {
+  "ru": "Экспорт в JSON-файл, можно импортировать на другом компьютере/в другом браузере",
+  "en": "Export to a JSON file, importable on another computer/browser"
+ },
+ "b3_150": {
+  "ru": "Экспорт только конвертирует уже имеющиеся в базе сессии и не создаёт новых авторизаций. Данные равны правам на вход — не разглашайте.",
+  "en": "Export only converts sessions already in the store and opens no new authorization. Credentials equal login rights — do not leak."
+ },
+ "b3_151": {
+  "ru": "Экспорт пакета аккаунтов",
+  "en": "Export account pack"
+ },
+ "b3_152": {
+  "ru": "Ошибка экспорта:",
+  "en": "Export failed:"
+ },
+ "b3_153": {
+  "ru": "Раскладка экспорта",
+  "en": "Export layout"
+ },
+ "b3_154": {
+  "ru": "Экспорт отчёта",
+  "en": "Export report"
+ },
+ "b3_155": {
+  "ru": "Экспортировать новый пакет аккаунтов?",
+  "en": "Export new account pack?"
+ },
+ "b3_156": {
+  "ru": "Подтверждение экспорта",
+  "en": "Export confirmation"
+ },
+ "b3_157": {
+  "ru": "Заблокирован",
+  "en": "Banned"
+ },
+ "b3_158": {
+  "ru": "Будут удалены выбранные",
+  "en": "Will delete selected"
+ },
+ "b3_159": {
+  "ru": "В Telegram будет отправлен запрос на [безвозвратное удаление] аккаунта #",
+  "en": "Will request [permanent deletion] of account # from Telegram"
+ },
+ "b3_160": {
+  "ru": "Будет выполнено для",
+  "en": "Will run for"
+ },
+ "b3_161": {
+  "ru": "Будет выполнено для выбранных",
+  "en": "Will run for the selected"
+ },
+ "b3_162": {
+  "ru": "Для выбранных здоровых аккаунтов будет выполнен прогрев (поддержание онлайн + случайные прочтения + переписка между аккаунтами). Выполняется пакетно на сервере, результат возвращается после завершения.",
+  "en": "Warm-up will run for the selected healthy accounts (stay online + random reads + cross-account chat). Runs in bulk on the server; results are returned when done."
+ },
+ "b3_163": {
+  "ru": "Будет экспортирован zip-пакет аккаунтов session+json (конфиденциальные данные).",
+  "en": "Will export a session+json account pack zip (sensitive credentials)."
+ },
+ "b3_164": {
+  "ru": "Будет экспортирован файл сессии этого аккаунта (конфиденциальные данные). Продолжить?",
+  "en": "Will export this account session file (sensitive credentials). Continue?"
+ },
+ "b3_165": {
+  "ru": "Будут экспортированы выбранные",
+  "en": "Will export the selected"
+ },
+ "b3_166": {
+  "ru": "Причина, которая будет отправлена в Telegram; можно оставить пустым для значения по умолчанию.",
+  "en": "Reason submitted to Telegram; leave empty to use the default."
+ },
+ "b3_167": {
+  "ru": "Аккаунт будет перезаписан под новым отпечатком устройства: · старая session будет отозвана (прежнему владельцу сложно её использовать) · в базе появится новая сессия · нужен приём официального кода Telegram · не перегенерируйте сессию часто, иначе сработает ограничение входов (PhonePasswordFlood)",
+  "en": "The account will sign in again with a new device fingerprint: · the old session will be revoked (hard for a previous holder to reuse) · the store is switched to the new session · an official Telegram code must be receivable · do not regenerate repeatedly or login rate limiting (PhonePasswordFlood) triggers"
+ },
+ "b3_168": {
+  "ru": "Будет выполнен реальный перезапуск процесса бэкенда (os.execv), сервис будет недоступен около 1–3 секунд.\\ Текущие импорты/задачи прервутся.\\ Продолжить?",
+  "en": "This will really restart the backend process (os.execv); the service is unavailable for ~1–3 seconds.\\ Running imports/tasks will be interrupted.\\ Continue?"
+ },
+ "b3_169": {
+  "ru": "StringSession этого аккаунта будет расшифрован и показан. Сессия равна учётным данным для входа — не разглашайте. Продолжить?",
+  "en": "The account StringSession will be decrypted and shown. A session equals login credentials — do not disclose. Continue?"
+ },
+ "b3_170": {
+  "ru": "Все другие устройства входа этого аккаунта будут сброшены, останется только локальная сессия.",
+  "en": "All other signed-in devices of this account will be terminated, keeping only the local session."
+ },
+ "b3_171": {
+  "ru": "Будут сброшены другие устройства у выбранных",
+  "en": "Will terminate other devices for the selected"
+ },
+ "b3_172": {
+  "ru": "ч",
+  "en": "h"
+ },
+ "b3_173": {
+  "ru": "ч — сброс других устройств (с проверкой после) · мониторинг",
+  "en": "h — terminate other devices (verify afterwards) · monitoring"
+ },
+ "b3_174": {
+  "ru": "Время перехвата отсутствует",
+  "en": "No takeover time yet"
+ },
+ "b3_175": {
+  "ru": "Key ещё не сохранён",
+  "en": "Key not saved yet"
+ },
+ "b3_176": {
+  "ru": "Код ещё не отправлен. Можно отправить код вручную и ввести его или нажать автовход с приёмом кода.",
+  "en": "No code sent yet. You can send the code manually and enter it, or click auto code login."
+ },
+ "b3_177": {
+  "ru": "Код ещё не отправлен. Нажмите «Отправить код» и вручную введите полученный код.",
+  "en": "No code sent yet. Click “Send code” and enter the received code manually."
+ },
+ "b3_178": {
+  "ru": "Код ещё не отправлен. Выберите ручную отправку кода или автовход с приёмом кода.",
+  "en": "No code sent yet. Choose manual code sending or auto code login."
+ },
+ "b3_179": {
+  "ru": "Файл не выбран",
+  "en": "No file selected"
+ },
+ "b3_180": {
+  "ru": "Нигерия \\ud83c\\uddf3\\ud83c\\uddec",
+  "en": "Nigeria \\ud83c\\uddf3\\ud83c\\uddec"
+ },
+ "b3_181": {
+  "ru": "Непал \\ud83c\\uddf3\\ud83c\\uddf5",
+  "en": "Nepal \\ud83c\\uddf3\\ud83c\\uddf5"
+ },
+ "b3_182": {
+  "ru": "Блокировка/разблокировка пользователя",
+  "en": "Block/unblock user"
+ },
+ "b3_183": {
+  "ru": "Инструменты",
+  "en": "Toolbox"
+ },
+ "b3_184": {
+  "ru": "Инструменты ·",
+  "en": "Toolbox ·"
+ },
+ "b3_185": {
+  "ru": "Инструменты · пакетные операции",
+  "en": "Toolbox · bulk actions"
+ },
+ "b3_186": {
+  "ru": "Инструменты — один аккаунт",
+  "en": "Toolbox single account"
+ },
+ "b3_187": {
+  "ru": "Инструменты — пакетно",
+  "en": "Toolbox bulk"
+ },
+ "b3_188": {
+  "ru": "Скачано",
+  "en": "Downloaded"
+ },
+ "b3_189": {
+  "ru": "Отчёт об ошибках скачан",
+  "en": "Error report downloaded"
+ },
+ "b3_190": {
+  "ru": "Сохранено",
+  "en": "Saved"
+ },
+ "b3_191": {
+  "ru": "Остановлено",
+  "en": "Stopped"
+ },
+ "b3_192": {
+  "ru": "Выключено",
+  "en": "Off"
+ },
+ "b3_193": {
+  "ru": "Удалено",
+  "en": "Deleted"
+ },
+ "b3_194": {
+  "ru": "Удалено · успешно",
+  "en": "Deleted · success"
+ },
+ "b3_195": {
+  "ru": "срок истёк · ожидает выполнения",
+  "en": "expired · pending"
+ },
+ "b3_196": {
+  "ru": "срок истёк (ожидалось",
+  "en": "expired (was due at"
+ },
+ "b3_197": {
+  "ru": "Загружено",
+  "en": "Loaded"
+ },
+ "b3_198": {
+  "ru": "Сброс 2FA отменён",
+  "en": "2FA reset canceled"
+ },
+ "b3_199": {
+  "ru": "Сжато вверх, зазоры устранены",
+  "en": "Tightened upward, gaps removed"
+ }
+}

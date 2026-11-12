@@ -1,0 +1,622 @@
+{
+  "r3_0": {
+    "ru": "Нет доступных исправных аккаунтов; чтобы отправить принудительно, отключите healthy_only",
+    "en": "No healthy accounts available; turn off healthy_only to force sending"
+  },
+  "r3_1": {
+    "ru": "Нет доступных аккаунтов; чтобы выполнить принудительно, отключите healthy_only",
+    "en": "No accounts available; turn off healthy_only to force execution"
+  },
+  "r3_2": {
+    "ru": "Не удалось экспортировать ни один аккаунт",
+    "en": "No accounts were exported successfully"
+  },
+  "r3_3": {
+    "ru": "Нет параметров для сохранения",
+    "en": "No settings to save"
+  },
+  "r3_4": {
+    "ru": "Нет групп для сбора",
+    "en": "No groups to collect"
+  },
+  "r3_5": {
+    "ru": "Категория по времени регистрации",
+    "en": "Registration time category"
+  },
+  "r3_6": {
+    "ru": "Запрос времени регистрации",
+    "en": "Registration time query"
+  },
+  "r3_7": {
+    "ru": "Сообщение",
+    "en": "Message"
+  },
+  "r3_8": {
+    "ru": "Сообщение не найдено: ",
+    "en": "Message not found: "
+  },
+  "r3_9": {
+    "ru": "Добавить в задание объединения",
+    "en": "Add to merge job"
+  },
+  "r3_10": {
+    "ru": "Повтор сброса устройств=",
+    "en": "Device reset retries="
+  },
+  "r3_11": {
+    "ru": "Очистить сохранённый Key",
+    "en": "Clear saved Key"
+  },
+  "r3_12": {
+    "ru": "Температура",
+    "en": "Temperature"
+  },
+  "r3_13": {
+    "ru": "Не удалось создать изображение QR-кода: ",
+    "en": "Failed to generate QR code image: "
+  },
+  "r3_14": {
+    "ru": "Создание сессии #",
+    "en": "Generate session #"
+  },
+  "r3_15": {
+    "ru": "Какой интерфейс использовать?",
+    "en": "Which frontend to use?"
+  },
+  "r3_16": {
+    "ru": "Удалить после использования",
+    "en": "Delete after use"
+  },
+  "r3_17": {
+    "ru": "Имя пользователя:",
+    "en": "Username:"
+  },
+  "r3_18": {
+    "ru": "Пользователь запустил горячую перезагрузку (процесс скоро перезапустится)",
+    "en": "User triggered hot reload (the process is about to restart)"
+  },
+  "r3_19": {
+    "ru": "Пусто = использовать TAM_BATCH_CONCURRENCY из параметров",
+    "en": "Empty = use TAM_BATCH_CONCURRENCY from settings"
+  },
+  "r3_20": {
+    "ru": "Пусто = использовать TAM_WORKERS из параметров",
+    "en": "Empty = use TAM_WORKERS from settings"
+  },
+  "r3_21": {
+    "ru": "Пусто=полностью офлайн, данные аккаунтов не отправляются третьим лицам",
+    "en": "Empty = fully offline, no account data is sent to third parties"
+  },
+  "r3_22": {
+    "ru": "Вход",
+    "en": "Sign in"
+  },
+  "r3_23": {
+    "ru": "Время входа сдвигается назад на %.1f ч по серверному date_created (локально хранится время импорта, реальное время входа есть только на сервере), поэтому следующая очистка устройств наступит раньше",
+    "en": "Sign-in time is shifted back by %.1f hours per the server date_created (locally the import time is stored; the real sign-in time exists only on the server), so the next device reset will come earlier"
+  },
+  "r3_24": {
+    "ru": "ключ авторизации",
+    "en": "authorization key"
+  },
+  "r3_25": {
+    "ru": "Адрес прослушивания",
+    "en": "Listen address"
+  },
+  "r3_26": {
+    "ru": "Порт прослушивания",
+    "en": "Listen port"
+  },
+  "r3_27": {
+    "ru": "Сейчас веб-интерфейс поддерживает только mode=create (создание/инициализация)",
+    "en": "The web UI currently supports only mode=create (create/initialize)"
+  },
+  "r3_28": {
+    "ru": "Если точно понимаете, что делаете, добавьте --force, чтобы продолжить.",
+    "en": "If you know exactly what you are doing, add --force to continue."
+  },
+  "r3_29": {
+    "ru": "секунд — можно повторить)",
+    "en": "seconds — you can retry)"
+  },
+  "r3_30": {
+    "ru": "Порт",
+    "en": "Port"
+  },
+  "r3_31": {
+    "ru": "Порт должен быть в диапазоне 1-65535",
+    "en": "Port must be between 1-65535"
+  },
+  "r3_32": {
+    "ru": "Описание:",
+    "en": "Description:"
+  },
+  "r3_33": {
+    "ru": "Вставьте ключ, открытый текст не отображается",
+    "en": "Paste the key; plaintext is not echoed"
+  },
+  "r3_34": {
+    "ru": "Системный промпт",
+    "en": "System prompt"
+  },
+  "r3_35": {
+    "ru": "около",
+    "en": "about"
+  },
+  "r3_36": {
+    "ru": "Результат",
+    "en": "Result"
+  },
+  "r3_37": {
+    "ru": "Единый 2FA (только manual)",
+    "en": "Unified 2FA (manual only)"
+  },
+  "r3_38": {
+    "ru": "Единая точка вызова инструментов (всегда 200 + структурированный результат)",
+    "en": "Unified tool call endpoint (always returns 200 + structured result)"
+  },
+  "r3_39": {
+    "ru": "Единый ручной ввод 2FA",
+    "en": "Unified manual 2FA entry"
+  },
+  "r3_40": {
+    "ru": "Отсутствует",
+    "en": "Missing"
+  },
+  "r3_41": {
+    "ru": "Нет основного DC",
+    "en": "Main DC missing"
+  },
+  "r3_42": {
+    "ru": "Не хватает обязательных параметров: ",
+    "en": "Missing required parameters: "
+  },
+  "r3_43": {
+    "ru": "Веб / бот / оба",
+    "en": "Web / bot / both"
+  },
+  "r3_44": {
+    "ru": "Зависимости веб-интерфейса установлены не полностью: ",
+    "en": "Web frontend dependencies are not fully installed: "
+  },
+  "r3_45": {
+    "ru": "Веб-консоль",
+    "en": "Web console"
+  },
+  "r3_46": {
+    "ru": "Веб-консоль: http://",
+    "en": "Web console: http://"
+  },
+  "r3_47": {
+    "ru": "Рассылка",
+    "en": "Broadcast"
+  },
+  "r3_48": {
+    "ru": "Свой вариант",
+    "en": "Custom"
+  },
+  "r3_49": {
+    "ru": "Самостоятельно размещаемое управление мультиаккаунтами. Для интеграции агентов используйте прежде всего /api/tools и /api/tools/call; спецификация OpenAPI — в /openapi.json, страница отладки — в /docs.",
+    "en": "Self-hosted multi-account management. For agent integration prefer /api/tools and /api/tools/call; the OpenAPI spec is at /openapi.json and the debug page at /docs."
+  },
+  "r3_50": {
+    "ru": "Нужно число, получено",
+    "en": "A number is required, got"
+  },
+  "r3_51": {
+    "ru": "Нужно целое число, получено",
+    "en": "An integer is required, got"
+  },
+  "r3_52": {
+    "ru": "Лимит объёма после распаковки (MB)",
+    "en": "Unpacked size limit (MB)"
+  },
+  "r3_53": {
+    "ru": "Устройство=",
+    "en": "Device="
+  },
+  "r3_54": {
+    "ru": "Проверка сертификата, при отключении возникает риск MITM",
+    "en": "Certificate verification; disabling it risks a man-in-the-middle attack"
+  },
+  "r3_55": {
+    "ru": "Этот аккаунт ещё не авторизован, экспортировать нечего",
+    "en": "This account is not signed in, so there is no session to export"
+  },
+  "r3_56": {
+    "ru": "Загрузите файл .session или zip с файлами .session; текст StringSession вставляйте в режиме «Текст»",
+    "en": "Upload a .session file or a zip containing .session files; paste StringSession text in “Text” mode"
+  },
+  "r3_57": {
+    "ru": "Загрузите zip (сожмите папку tdata и загрузите её)",
+    "en": "Upload a zip (compress the tdata folder and upload it)"
+  },
+  "r3_58": {
+    "ru": "Загрузите ZIP с пакетом аккаунтов",
+    "en": "Upload an account pack ZIP"
+  },
+  "r3_59": {
+    "ru": "Отключайте только если полностью доверяете решениям модели.",
+    "en": "Disable only if you fully trust the model's judgment."
+  },
+  "r3_60": {
+    "ru": "Сначала включите панель в настройках AI",
+    "en": "Enable the panel in AI settings first"
+  },
+  "r3_61": {
+    "ru": "Тело запроса должно быть объектом",
+    "en": "Request body must be an object"
+  },
+  "r3_62": {
+    "ru": "Укажите confirm=true, чтобы подтвердить окончательное удаление аккаунта",
+    "en": "Set confirm=true to confirm permanent account deletion"
+  },
+  "r3_63": {
+    "ru": "Выберите 1-",
+    "en": "Choose 1-"
+  },
+  "r3_64": {
+    "ru": "Выберите аккаунты для экспорта",
+    "en": "Select accounts to export"
+  },
+  "r3_65": {
+    "ru": "Выберите аккаунт",
+    "en": "Select an account"
+  },
+  "r3_66": {
+    "ru": "Ошибка чтения: ",
+    "en": "Read failed: "
+  },
+  "r3_67": {
+    "ru": "Не удалось прочитать официальный код: ",
+    "en": "Failed to read the official verification code: "
+  },
+  "r3_68": {
+    "ru": "Аккаунт",
+    "en": "Account"
+  },
+  "r3_69": {
+    "ru": "Аккаунт #",
+    "en": "Account #"
+  },
+  "r3_70": {
+    "ru": "Аккаунт#",
+    "en": "Account#"
+  },
+  "r3_71": {
+    "ru": "При превышении лимита автоматически сжимать более ранние диалоги",
+    "en": "Automatically compress earlier dialogue when over the limit"
+  },
+  "r3_72": {
+    "ru": "Больше 512MB",
+    "en": "Over 512MB"
+  },
+  "r3_73": {
+    "ru": "Путь не существует: ",
+    "en": "Path does not exist: "
+  },
+  "r3_74": {
+    "ru": "Путь должен находиться внутри каталога data: ",
+    "en": "Path must be inside the data directory: "
+  },
+  "r3_75": {
+    "ru": "Пропустить диагностику перед запуском",
+    "en": "Skip the pre-startup doctor"
+  },
+  "r3_76": {
+    "ru": "Пропустить интерактивное меню при запуске",
+    "en": "Skip the interactive startup menu"
+  },
+  "r3_77": {
+    "ru": "Через сколько повторять после неудачного сброса устройств; можно 45s / 10m / 2h",
+    "en": "Retry delay after a failed device reset; accepts 45s / 10m / 2h"
+  },
+  "r3_78": {
+    "ru": "Преобразование…",
+    "en": "Converting…"
+  },
+  "r3_79": {
+    "ru": "Неверный ввод, введите 1-",
+    "en": "Invalid input, enter 1-"
+  },
+  "r3_80": {
+    "ru": "Это не zip-файл",
+    "en": "This is not a zip file"
+  },
+  "r3_81": {
+    "ru": "В это задание ещё не загружено ни одного пакета",
+    "en": "No packs have been uploaded to this job yet"
+  },
+  "r3_82": {
+    "ru": "Не удалось подключиться к Telegram: ",
+    "en": "Failed to connect to Telegram: "
+  },
+  "r3_83": {
+    "ru": "Выберите формат, соответствующий вашей документации API",
+    "en": "Choose the format that matches your API documentation"
+  },
+  "r3_84": {
+    "ru": "Выбрать пакет аккаунтов",
+    "en": "Select account pack"
+  },
+  "r3_85": {
+    "ru": "Выбрать ZIP с пакетом аккаунтов",
+    "en": "Select account pack ZIP"
+  },
+  "r3_86": {
+    "ru": "Выбрать пакеты аккаунтов (можно несколько)",
+    "en": "Select account packs (multiple allowed)"
+  },
+  "r3_87": {
+    "ru": "Не удалось войти по ссылке-приглашению: ",
+    "en": "Failed to join via invite link: "
+  },
+  "r3_88": {
+    "ru": "Идентификатор, нужный части сторонних API",
+    "en": "Identifier required by some third-party APIs"
+  },
+  "r3_89": {
+    "ru": "Развёртывание",
+    "en": "Deployment"
+  },
+  "r3_90": {
+    "ru": "Где развернуть?",
+    "en": "Where to deploy?"
+  },
+  "r3_91": {
+    "ru": "Конфигурация неполная, запуск остановлен.",
+    "en": "Configuration is incomplete; startup stopped."
+  },
+  "r3_92": {
+    "ru": "Конфигурация хранится в базе данных на сервере. Поддерживаются OpenAI-совместимый API, Anthropic Messages, Gemini, Azure OpenAI.",
+    "en": "Configuration is stored in the server database. Supports OpenAI-compatible, Anthropic Messages, Gemini and Azure OpenAI."
+  },
+  "r3_93": {
+    "ru": "Ошибка конфигурации: ",
+    "en": "Configuration error: "
+  },
+  "r3_94": {
+    "ru": "Собрать последние",
+    "en": "Collect the last"
+  },
+  "r3_95": {
+    "ru": "не содержит файла key_datas — это не корректный каталог tdata (в корректном каталоге должны быть key_datas и D877F783D5D3EF8C)",
+    "en": "has no key_datas file — this is not a valid tdata directory (a valid directory must contain key_datas and D877F783D5D3EF8C)"
+  },
+  "r3_96": {
+    "ru": "Перезапуск уже выполняется",
+    "en": "Restart already in progress"
+  },
+  "r3_97": {
+    "ru": "Перезагрузить",
+    "en": "Reload"
+  },
+  "r3_98": {
+    "ru": "Перегенерация сессии ·",
+    "en": "Session regeneration ·"
+  },
+  "r3_99": {
+    "ru": "Таймаут перегенерации (150s); проверьте прокси/сеть и повторите для этого аккаунта",
+    "en": "Regeneration timed out (150s); check the proxy/network and retry this account"
+  },
+  "r3_100": {
+    "ru": "Длина",
+    "en": "Length"
+  },
+  "r3_101": {
+    "ru": "Требуется",
+    "en": "Required"
+  },
+  "r3_102": {
+    "ru": "предупреждений, на работу не влияет)",
+    "en": "warnings; does not affect operation)"
+  },
+  "r3_103": {
+    "ru": "проверок не пройдено: ",
+    "en": "checks failed: "
+  },
+  "r3_104": {
+    "ru": "По умолчанию 14000 символов. Можно увеличить/уменьшить под контекст модели; изменения применяются сразу после сохранения. Сжатие влияет только на то, что отправляется модели, — в интерфейсе остаются все сообщения.",
+    "en": "Default is 14000 characters. Increase/decrease it to fit the model context; changes apply immediately after saving. Compression affects only what is sent to the model; the full bubbles remain visible in the UI."
+  },
+  "r3_105": {
+    "ru": "Прокси по умолчанию, например socks5://user:pass@host:1080",
+    "en": "Default proxy, e.g. socks5://user:pass@host:1080"
+  },
+  "r3_106": {
+    "ru": "Период по умолчанию (часы): через сколько после перехвата сбрасывать другие устройства (0=глобально выключено)",
+    "en": "Default period (hours): how long after takeover to terminate other devices (0 = disabled globally)"
+  },
+  "r3_107": {
+    "ru": "Повтор по умолчанию: после успешного сброса отсчёт периода начинается заново (можно менять для каждого аккаунта)",
+    "en": "Loop by default: after a successful reset the period timer restarts (can be changed per account)"
+  },
+  "r3_108": {
+    "ru": "По умолчанию читается TAM_DEPLOY, иначе local",
+    "en": "Reads TAM_DEPLOY by default, then falls back to local"
+  },
+  "r3_109": {
+    "ru": "По умолчанию читается TAM_FRONTEND, иначе web",
+    "en": "Reads TAM_FRONTEND by default, then falls back to web"
+  },
+  "r3_110": {
+    "ru": "(импорт tdata зависит от opentele, для 3.13 нужен патч совместимости)",
+    "en": "(tdata import relies on opentele, which needs a compatibility patch on 3.13)"
+  },
+  "r3_111": {
+    "ru": "(только everybody/contacts/nobody)",
+    "en": "(must be everybody/contacts/nobody)"
+  },
+  "r3_112": {
+    "ru": "(последняя ошибка: ",
+    "en": "(last error: "
+  },
+  "r3_113": {
+    "ru": "(Enter — использовать",
+    "en": "(press Enter to use"
+  },
+  "r3_114": {
+    "ru": "(ещё не распакован, только посмотреть)",
+    "en": "(not unpacked yet, just a preview)"
+  },
+  "r3_115": {
+    "ru": "(логическое имя",
+    "en": "(logical name"
+  },
+  "r3_116": {
+    "ru": "), пропущено",
+    "en": "), ignored"
+  },
+  "r3_117": {
+    "ru": "), возможно, текущий пароль введён неверно",
+    "en": "), the current password may be wrong"
+  },
+  "r3_118": {
+    "ru": ", больше попыток не будет",
+    "en": ", no further attempts"
+  },
+  "r3_119": {
+    "ru": ", фактически",
+    "en": ", actual"
+  },
+  "r3_120": {
+    "ru": ", должно быть вида 45s / 10m / 2h",
+    "en": ", should look like 45s / 10m / 2h"
+  },
+  "r3_121": {
+    "ru": ", получено: ",
+    "en": ", got: "
+  },
+  "r3_122": {
+    "ru": ", обновлено",
+    "en": ", updated"
+  },
+  "r3_123": {
+    "ru": ", проверка пройдена",
+    "en": ", verification passed"
+  },
+  "r3_124": {
+    "ru": ", можно выбрать и добавить ещё файлы, а когда всё готово — нажать «Начать объединение»",
+    "en": ", you can keep selecting and adding files, then click Start merge when ready"
+  },
+  "r3_125": {
+    "ru": "; в историю диалога добавлено",
+    "en": "; added to the dialogue history"
+  },
+  "r3_126": {
+    "ru": "; не удалось разобрать сумму, смотрите reply",
+    "en": "; could not parse the amount, see reply"
+  },
+  "r3_127": {
+    "ru": "; если в каталоге несколько пакетов аккаунтов, включите «Рекурсивный обход»",
+    "en": "; if the directory holds several account packs, enable “Recursive scan”"
+  },
+  "r3_128": {
+    "ru": "; разобрано",
+    "en": "; parsed"
+  },
+  "r3_129": {
+    "ru": "%s чел.·с именем пользователя %s",
+    "en": "%s people·with username %s"
+  },
+  "r3_130": {
+    "ru": ">%s · сообщений %s · %s",
+    "en": ">%s · messages %s · %s"
+  },
+  "r3_131": {
+    "ru": ">ошибка получения: %s",
+    "en": ">fetch failed: %s"
+  },
+  "r3_132": {
+    "ru": ">прогресс %s/%s (%s%) · успешно %s · ошибок %s · пропущено %s",
+    "en": ">progress %s/%s (%s%) · succeeded %s · failed %s · skipped %s"
+  },
+  "r3_133": {
+    "ru": "…всего %s записей, экспортируйте CSV, чтобы увидеть все",
+    "en": "…%s total, export CSV to see all"
+  },
+  "r3_134": {
+    "ru": "Автосброс устройств: через 24 часа после перехвата сбрасываются другие устройства (с последующей проверкой) · под наблюдением 0 аккаунтов · повтор через 1 час после ошибки",
+    "en": "Auto device reset: 24 hours after takeover other devices are terminated (verified afterwards) · 0 accounts monitored · retry 1 hour after failure"
+  },
+  "r3_135": {
+    "ru": "Аккаунтов пока нет",
+    "en": "No accounts yet"
+  },
+  "r3_136": {
+    "ru": "Импорт tdata",
+    "en": "Import tdata"
+  },
+  "r3_137": {
+    "ru": "Список номеров",
+    "en": "Phone list"
+  },
+  "r3_138": {
+    "ru": "Добавить вручную",
+    "en": "Add manually"
+  },
+  "r3_139": {
+    "ru": "После импорта сначала выполните «Проверку работоспособности», чтобы синхронизировать статус и 2FA, затем прогревайте или меняйте 2FA",
+    "en": "After import run “Health check” to sync status and 2FA, then warm up or change 2FA"
+  },
+  "r3_140": {
+    "ru": "Лидов пока нет. Сначала нажмите «Сбор активных участников» в центре задач.",
+    "en": "No leads yet. Start with “Collect active members” in the task center."
+  },
+  "r3_141": {
+    "ru": "Запись в /home/golden/Проекты/tgcrm/.env",
+    "en": "Writing to /home/golden/Проекты/tgcrm/.env"
+  },
+  "r3_142": {
+    "ru": "Эти три инструмента работают с загруженными вами файлами пакетов аккаунтов и не касаются аккаунтов, уже размещённых в базе. Забрав результат, нажмите «Удалить после использования» — пакеты аккаунтов чувствительны, не держите их на сервере долго.",
+    "en": "These three tools work on the account pack files you upload and never touch accounts already hosted in the database. Once you have the result, click “Delete after use” — account packs are sensitive, so do not leave them on the server for long."
+  },
+  "r3_143": {
+    "ru": "Можно выбрать несколько сразу или добавлять по частям (всё в одно задание). Одинаковые имена аккаунтов автоматически переименовываются, без тихой перезаписи.",
+    "en": "You can select several at once or add them in several passes (into the same job). Duplicate account names are renamed automatically instead of being silently overwritten."
+  },
+  "r3_144": {
+    "ru": ": используются только поля даты из json в пакете, ни байта наружу. Сетевой запрос выполняется только при заданном TAM_REGTIME_ENDPOINT.",
+    "en": ": uses only the date fields already present in the pack's json, sends nothing out. A network query runs only if TAM_REGTIME_ENDPOINT is set."
+  },
+  "r3_145": {
+    "ru": "Загрузка пакетов session / tdata, генерация переименованных session,",
+    "en": "Upload session / tdata account packs, generate renamed sessions,"
+  },
+  "r3_146": {
+    "ru": "и списка ссылок для получения кода (как «Перевод в API» у бота; на основе GAFBot MIT). Префикс для получения кода по умолчанию читается из переменной окружения",
+    "en": "and a code-retrieval link list (matching the bot's “Convert to API”; based on GAFBot MIT). The code prefix defaults to the environment variable"
+  },
+  "r3_147": {
+    "ru": "Не задано",
+    "en": "Not set"
+  },
+  "r3_148": {
+    "ru": "Задано, пустое поле — без изменений",
+    "en": "Set; leave empty to keep unchanged"
+  },
+  "r3_149": {
+    "ru": "По умолчанию 10",
+    "en": "Default 10"
+  },
+  "r3_150": {
+    "ru": "-9-  означает по 9 в пакете; 5,5,5 — по пакетам",
+    "en": "-9-  means 9 per pack; 5,5,5 specifies per pack"
+  },
+  "r3_151": {
+    "ru": "Введите сообщение: Enter — отправить, Shift+Enter — новая строка",
+    "en": "Type a message: Enter to send, Shift+Enter for a new line"
+  },
+  "r3_152": {
+    "ru": ", либо камерой телефона. После подтверждения инструмент получает новую сессию (шифруется и сохраняется). QR-код живёт около 30 секунд и обновляется автоматически.",
+    "en": ", or scan the code with your phone camera. After confirmation this tool gets a new session (encrypted and stored). The QR code lives about 30 seconds and refreshes automatically."
+  },
+  "r3_153": {
+    "ru": "Для безопасности открытый текст не отображается. Пусто=без изменений, перезапись только при заполнении.",
+    "en": "For security, plaintext is not echoed. Empty = no change; only a filled value overwrites."
+  },
+  "r3_154": {
+    "ru": "— не задано",
+    "en": "— not set"
+  }
+}

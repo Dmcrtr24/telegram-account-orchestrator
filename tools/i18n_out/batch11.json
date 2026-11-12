@@ -1,0 +1,270 @@
+{
+ "b11_0": {
+  "ru": "✓ %s сброс других устройств · остальных %s",
+  "en": "✓ %s terminate other devices · others remaining %s"
+ },
+ "b11_1": {
+  "ru": "✗ Ошибка: %s",
+  "en": "✗ Failed: %s"
+ },
+ "b11_2": {
+  "ru": "【%s】%s столб. × %s строк",
+  "en": "【%s】%s cols × %s rows"
+ },
+ "b11_3": {
+  "ru": "【%s】размещено: %s столб. / %s строк",
+  "en": "【%s】placed at %s col / %s row"
+ },
+ "b11_4": {
+  "ru": "Диагностика: %s",
+  "en": "Doctor: %s"
+ },
+ "b11_5": {
+  "ru": "Импорт из файла: %s",
+  "en": "Upload import: %s"
+ },
+ "b11_6": {
+  "ru": "Последняя проверка: %s",
+  "en": "Last check: %s"
+ },
+ "b11_7": {
+  "ru": "Последний сброс устройств: %s",
+  "en": "Last device cleanup: %s"
+ },
+ "b11_8": {
+  "ru": "Прокси: %s",
+  "en": "Proxy: %s"
+ },
+ "b11_9": {
+  "ru": "Задача #%s: %s Тип: %s",
+  "en": "Task #%s: %s Type: %s"
+ },
+ "b11_10": {
+  "ru": "Диагностика пройдена, автоматически исправлено: %s",
+  "en": "Doctor passed, auto-fixed %s items"
+ },
+ "b11_11": {
+  "ru": "Всего %s чел. · источников: %s",
+  "en": "Total %s people · %s sources"
+ },
+ "b11_12": {
+  "ru": "Ошибка: %s",
+  "en": "Error: %s"
+ },
+ "b11_13": {
+  "ru": "Список, записей: %s:",
+  "en": "List, %s entries:"
+ },
+ "b11_14": {
+  "ru": "Создано %s",
+  "en": "Created %s"
+ },
+ "b11_15": {
+  "ru": "Пакетов: %s",
+  "en": "Packs: %s"
+ },
+ "b11_16": {
+  "ru": "Фрагмент оригинала: %s",
+  "en": "Original excerpt: %s"
+ },
+ "b11_17": {
+  "ru": "Параметры сохранены: %s",
+  "en": "Settings saved: %s"
+ },
+ "b11_18": {
+  "ru": "Вариантов %s",
+  "en": "Variants %s"
+ },
+ "b11_19": {
+  "ru": "Примечание: %s",
+  "en": "Note: %s"
+ },
+ "b11_20": {
+  "ru": "Готово %s/%s",
+  "en": "Done %s/%s"
+ },
+ "b11_21": {
+  "ru": "Экспортировано лидов: %s",
+  "en": "Exported %s leads"
+ },
+ "b11_22": {
+  "ru": "Получено сессий: %s",
+  "en": "Fetched %s sessions"
+ },
+ "b11_23": {
+  "ru": "Выбрано: %s",
+  "en": "Selected: %s"
+ },
+ "b11_24": {
+  "ru": "Выбрано групп: %s · показано %s/%s",
+  "en": "Selected %s groups · showing %s/%s"
+ },
+ "b11_25": {
+  "ru": "Текущая точка останова: %s (%s столб.) · каждая точка сохраняется отдельно",
+  "en": "Current breakpoint: %s (%s col) · each breakpoint saved separately"
+ },
+ "b11_26": {
+  "ru": "Успешно %s / всего %s",
+  "en": "Success %s / total %s"
+ },
+ "b11_27": {
+  "ru": "Успешно %s · ошибок %s · пропущено %s",
+  "en": "Success %s · failed %s · skipped %s"
+ },
+ "b11_28": {
+  "ru": "Пакетно готово: успешно %s, ошибок %s",
+  "en": "Bulk complete: %s succeeded, %s failed"
+ },
+ "b11_29": {
+  "ru": "Результат пакета: всего аккаунтов %s, успешно %s, ошибок %s",
+  "en": "Bulk result: %s accounts total, %s succeeded, %s failed"
+ },
+ "b11_30": {
+  "ru": "Результат пакета: всего %s, примерно успешно %s, ошибок %s",
+  "en": "Bulk result: %s total, about %s succeeded, %s failed"
+ },
+ "b11_31": {
+  "ru": "Ошибка операции%s",
+  "en": "Operation failed%s"
+ },
+ "b11_32": {
+  "ru": "Журнал операций, записей: %s (от новых к старым)",
+  "en": "Operation log, %s entries (newest first)"
+ },
+ "b11_33": {
+  "ru": "Файл: %s",
+  "en": "File: %s"
+ },
+ "b11_34": {
+  "ru": "Отпечаток нового устройства: %s / %s / %s",
+  "en": "New device fingerprint: %s / %s / %s"
+ },
+ "b11_35": {
+  "ru": "Старая авторизация отозвана: %s",
+  "en": "Old authorization revoked: %s"
+ },
+ "b11_36": {
+  "ru": "Последние %s",
+  "en": "Latest %s"
+ },
+ "b11_37": {
+  "ru": "Последние сессии (%s):",
+  "en": "Recent sessions (%s):"
+ },
+ "b11_38": {
+  "ru": "Перехват на этом ПК: %s",
+  "en": "Local takeover: %s"
+ },
+ "b11_39": {
+  "ru": "Теги: %s",
+  "en": "Tags: %s"
+ },
+ "b11_40": {
+  "ru": "Результат проверки: %s",
+  "en": "Check result: %s"
+ },
+ "b11_41": {
+  "ru": "Очистка других устройств: %s",
+  "en": "Other devices cleanup: %s"
+ },
+ "b11_42": {
+  "ru": "Статус %s, больше не пробуем",
+  "en": "Status %s, no more retries"
+ },
+ "b11_43": {
+  "ru": "Статус: %s Прогресс: %s/%s (%s%)",
+  "en": "Status: %s Progress: %s/%s (%s%)"
+ },
+ "b11_44": {
+  "ru": "Статус: %s%s",
+  "en": "Status: %s%s"
+ },
+ "b11_45": {
+  "ru": "Имя пользователя: @%s",
+  "en": "Username: @%s"
+ },
+ "b11_46": {
+  "ru": "Время входа: %s",
+  "en": "Sign-in time: %s"
+ },
+ "b11_47": {
+  "ru": "Каталог: %s",
+  "en": "Directory: %s"
+ },
+ "b11_48": {
+  "ru": "Каталог: %s Успешно %s/%s",
+  "en": "Directory: %s Success %s/%s"
+ },
+ "b11_49": {
+  "ru": "Элемент %s / %s",
+  "en": "Item %s / %s"
+ },
+ "b11_50": {
+  "ru": "Завершено: %s",
+  "en": "Ended at %s"
+ },
+ "b11_51": {
+  "ru": "Статистика: всего аккаунтов %s",
+  "en": "Stats: %s accounts total"
+ },
+ "b11_52": {
+  "ru": "Автоочистка устройств: %s · интервал %s ч · под наблюдением %s аккаунтов",
+  "en": "Auto device cleanup: %s · every %s h · monitoring %s accounts"
+ },
+ "b11_53": {
+  "ru": "Автоочистка устройств: аккаунтов со входом от %s ч — %s, успешно %s, ошибок %s",
+  "en": "Auto device cleanup: signed in %s+ h accounts: %s, %s succeeded, %s failed"
+ },
+ "b11_54": {
+  "ru": "У этого аккаунта устройств во входе: %s:",
+  "en": "This account has %s devices signed in:"
+ },
+ "b11_55": {
+  "ru": "Аккаунт #%s",
+  "en": "Account #%s"
+ },
+ "b11_56": {
+  "ru": "Аккаунт: %s%s",
+  "en": "Account: %s%s"
+ },
+ "b11_57": {
+  "ru": "Путь: %s",
+  "en": "Path: %s"
+ },
+ "b11_58": {
+  "ru": "Авторизаций до сброса %s, остальных %s",
+  "en": "Authorizations before %s, others remaining %s"
+ },
+ "b11_59": {
+  "ru": "Вывод: %s",
+  "en": "Output: %s"
+ },
+ "b11_60": {
+  "ru": "Задача сбора создана (%s групп)",
+  "en": "Collection task created (%s groups)"
+ },
+ "b11_61": {
+  "ru": "Проверка ограничений: %s",
+  "en": "Restriction check: %s"
+ },
+ "b11_62": {
+  "ru": "Время снятия ограничения: %s",
+  "en": "Restriction lift time: %s"
+ },
+ "b11_63": {
+  "ru": "Ожидаемое время: %s",
+  "en": "Estimated time: %s"
+ },
+ "b11_64": {
+  "ru": ", всего %s",
+  "en": ", %s total"
+ },
+ "b11_65": {
+  "ru": ", ошибок %s",
+  "en": ", %s failed"
+ },
+ "b11_66": {
+  "ru": ", пропущено %s",
+  "en": ", %s skipped"
+ }
+}

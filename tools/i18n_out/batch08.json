@@ -1,0 +1,802 @@
+{
+  "b8_0": {
+    "ru": "Удалить каталог задания в data/unpack",
+    "en": "Delete a job directory under data/unpack"
+  },
+  "b8_1": {
+    "ru": "Удалить/отозвать сообщения",
+    "en": "Delete/revoke messages"
+  },
+  "b8_2": {
+    "ru": "Удалить/отозвать сообщения. revoke=True — отзыв для обеих сторон, насколько позволяет тип диалога.",
+    "en": "Delete/revoke messages. revoke=True revokes for both sides where the chat type allows."
+  },
+  "b8_3": {
+    "ru": "Удалить/отозвать сообщения (revoke по умолчанию двусторонний)",
+    "en": "Delete/revoke messages (revoke defaults to both sides)"
+  },
+  "b8_4": {
+    "ru": "Удалить сообщение; revoke включён по умолчанию (отзыв для обеих сторон)",
+    "en": "Delete a message; revoke is on by default (both sides)"
+  },
+  "b8_5": {
+    "ru": "Удалить контакт",
+    "en": "Delete contact"
+  },
+  "b8_6": {
+    "ru": "Метка {label} уже существует",
+    "en": "Label {label} already exists"
+  },
+  "b8_7": {
+    "ru": "Вступить в публичную @группу или по ссылке-приглашению t.me",
+    "en": "Join a public @group or a t.me invite link"
+  },
+  "b8_8": {
+    "ru": "Вступить в публичную группу/канал или по ссылке-приглашению",
+    "en": "Join a public group/channel or an invite link"
+  },
+  "b8_9": {
+    "ru": "Вступить в публичную группу/канал или по ссылке-приглашению.",
+    "en": "Join a public group/channel or an invite link."
+  },
+  "b8_10": {
+    "ru": "Не удалось вступить: {type(exc).__name__}: {exc}",
+    "en": "Failed to join: {type(exc).__name__}: {exc}"
+  },
+  "b8_11": {
+    "ru": "Не удалось вступить: {type(exc2).__name__}: {exc2}",
+    "en": "Failed to join: {type(exc2).__name__}: {exc2}"
+  },
+  "b8_12": {
+    "ru": "Вступить в группу/канал",
+    "en": "Join group/channel"
+  },
+  "b8_13": {
+    "ru": "Зашифрованный блок слишком короткий, файл, вероятно, повреждён",
+    "en": "Encrypted block is too short; the file may be corrupted"
+  },
+  "b8_14": {
+    "ru": "Шифрование и расшифровка проходят без ошибок",
+    "en": "Encrypt/decrypt round trip OK"
+  },
+  "b8_15": {
+    "ru": "Ассистент",
+    "en": "Assistant"
+  },
+  "b8_16": {
+    "ru": "Тайм-аут аккаунта ({int(tmo or 0)}s), пропущен. Проверьте прокси/сеть и повторите",
+    "en": "Account timed out ({int(tmo or 0)}s), skipped. Check proxy/network and retry"
+  },
+  "b8_17": {
+    "ru": "Отдельно запросить реальное время входа (создаёт одно подключение).",
+    "en": "Fetch the real sign-in time once (opens one connection)."
+  },
+  "b8_18": {
+    "ru": "Сжать контекст диалога: сохранить system + последние сообщения, более раннее свернуть в одну сводку.",
+    "en": "Compact dialog context: keep system + recent messages, fold earlier content into one summary."
+  },
+  "b8_19": {
+    "ru": "Проверка двусторонней связи/ограничений",
+    "en": "Two-way/restriction check"
+  },
+  "b8_20": {
+    "ru": "Двусторонний отзыв",
+    "en": "Revoke for both sides"
+  },
+  "b8_21": {
+    "ru": "Отправить сообщение.",
+    "en": "Send a message."
+  },
+  "b8_22": {
+    "ru": "Не удалось отправить код: {ename}: {exc}",
+    "en": "Failed to send code: {ename}: {exc}"
+  },
+  "b8_23": {
+    "ru": "В отправке кода отказано: слишком много входов/запросов кода для этого аккаунта",
+    "en": "Code request rejected: too many sign-ins/code requests for this account"
+  },
+  "b8_24": {
+    "ru": "Отправка кода вызвала FloodWait, повторите через {wait_txt}",
+    "en": "Code request hit FloodWait; retry after {wait_txt}"
+  },
+  "b8_25": {
+    "ru": "Тайм-аут отправки кода. Проверьте прокси и сеть",
+    "en": "Code request timed out. Check proxy and network"
+  },
+  "b8_26": {
+    "ru": "Сброс 2FA нельзя запускать бездумно — нужно поставить подтверждение",
+    "en": "A 2FA reset is not a casual click; confirmation must be checked"
+  },
+  "b8_27": {
+    "ru": "Запустить сброс 2FA (официальный период ожидания, обычно около 7 дней).",
+    "en": "Start a 2FA reset (official waiting period, usually about 7 days)."
+  },
+  "b8_28": {
+    "ru": "Запустить официальный сброс 2FA (нужны условия кулдауна Telegram)",
+    "en": "Start the official 2FA reset flow (Telegram cooldown conditions required)"
+  },
+  "b8_29": {
+    "ru": "Не удалось начать вход по QR: {ename}: {exc}",
+    "en": "Failed to start QR sign-in: {ename}: {exc}"
+  },
+  "b8_30": {
+    "ru": "Начать вход по QR: возвращает QR-код PNG (base64) и tg:// URL для показа на странице.",
+    "en": "Start QR sign-in: returns a QR PNG (base64) and a tg:// URL for display in the browser."
+  },
+  "b8_31": {
+    "ru": "Отправить фото/видео/файл (path должен быть внутри каталога data)",
+    "en": "Send a photo/video/file (path must be inside the data directory)"
+  },
+  "b8_32": {
+    "ru": "Отправить файл/фото/видео",
+    "en": "Send file/photo/video"
+  },
+  "b8_33": {
+    "ru": "Отправить локальный файл/фото/видео (путь должен быть доступен на сервере).",
+    "en": "Send a local file/photo/video (path must be reachable on the server)."
+  },
+  "b8_34": {
+    "ru": "Получить историю диалога. По умолчанию в прямом порядке — удобно читать как переписку.",
+    "en": "Fetch dialog history. Ascending order by default, so it reads like a chat log."
+  },
+  "b8_35": {
+    "ru": "Разблокировать",
+    "en": "Unblock"
+  },
+  "b8_36": {
+    "ru": "Разблокировать указанного пользователя",
+    "en": "Unblock the specified user"
+  },
+  "b8_37": {
+    "ru": "Разблокировать пользователя.",
+    "en": "Unblock a user."
+  },
+  "b8_38": {
+    "ru": "Отменить текущий сброс 2FA",
+    "en": "Cancel the 2FA reset in progress"
+  },
+  "b8_39": {
+    "ru": "Отменить ожидание сброса 2FA (account.declinePasswordReset).",
+    "en": "Cancel the pending 2FA reset wait (account.declinePasswordReset)."
+  },
+  "b8_40": {
+    "ru": "Отменить ожидание сброса 2FA (declinePasswordReset)",
+    "en": "Cancel the pending 2FA reset wait (declinePasswordReset)"
+  },
+  "b8_41": {
+    "ru": "Отменить текущий вход по QR и разорвать временное подключение.",
+    "en": "Cancel the QR sign-in in progress and drop the temporary connection."
+  },
+  "b8_42": {
+    "ru": "Для отмены сброса нужно поставить подтверждение",
+    "en": "Canceling a reset requires checking the confirmation"
+  },
+  "b8_43": {
+    "ru": "Не удалось запустить мониторинг платформы кодов: {message}",
+    "en": "Failed to start code platform monitoring: {message}"
+  },
+  "b8_44": {
+    "ru": "Не удалось запустить мониторинг платформы кодов: ответ не JSON",
+    "en": "Failed to start code platform monitoring: response is not JSON"
+  },
+  "b8_45": {
+    "ru": "Структура страницы сервиса кодов изменилась — интерфейс мониторинга не найден",
+    "en": "The code service page structure changed; cannot locate the monitoring endpoint"
+  },
+  "b8_46": {
+    "ru": "Ссылка для получения кода должна быть корректным HTTP/HTTPS URL",
+    "en": "The code-retrieval link must be a valid HTTP/HTTPS URL"
+  },
+  "b8_47": {
+    "ru": "Пакетный исполнитель с ограниченной параллельностью и случайными интервалами.",
+    "en": "Bulk executor with controlled concurrency and random intervals."
+  },
+  "b8_48": {
+    "ru": "Оставить только последние keep завершённых задач, незавершённые не трогать. Возвращает число удалённых.",
+    "en": "Keep only the last keep finished tasks; unfinished ones are always kept. Returns the number deleted."
+  },
+  "b8_49": {
+    "ru": "Брать только здоровые аккаунты: авторизованные, status=active, не в периоде блокировки за spam.",
+    "en": "Only healthy accounts: authorized, status=active, not in a spam block period."
+  },
+  "b8_50": {
+    "ru": "Влияет только на «вход по номеру телефона»; для импорта tdata не требуется.",
+    "en": "Affects only “sign-in by phone number”; tdata import does not need it."
+  },
+  "b8_51": {
+    "ru": "Оставить только вход на этом устройстве; после сброса выполняется повторная проверка",
+    "en": "Keep only this device signed in; re-checks after terminating to confirm it is clean"
+  },
+  "b8_52": {
+    "ru": "Только подсчёт, без удаления",
+    "en": "Count only, no deletion"
+  },
+  "b8_53": {
+    "ru": "Только разбор без записи — проверяет, распознаётся ли формат списка импорта",
+    "en": "Parse only, no writes — checks whether the import list format is recognized"
+  },
+  "b8_54": {
+    "ru": "Только чтение ссылки для получения кода: без запуска мониторинга, без отправки кода Telegram и без возврата кода.",
+    "en": "Read-only probe of the code-retrieval link: no monitoring, no Telegram code sent, no code returned."
+  },
+  "b8_55": {
+    "ru": "Консультант только для чтения",
+    "en": "Read-only advisor"
+  },
+  "b8_56": {
+    "ru": "Только чтение: лишь инструменты запросов/проверок",
+    "en": "Read-only: query/check tools only"
+  },
+  "b8_57": {
+    "ru": "Только чтение: есть ли облачный пароль, привязан ли резервный email, идёт ли ожидание сброса",
+    "en": "Read-only: whether a cloud password exists, whether a recovery email is linked, whether a reset wait is active"
+  },
+  "b8_58": {
+    "ru": "Можно менять: label/phone/proxy/tags/device_model/app_version/system_version/lang_code",
+    "en": "Editable: label/phone/proxy/tags/device_model/app_version/system_version/lang_code"
+  },
+  "b8_59": {
+    "ru": "Доступно",
+    "en": "Available"
+  },
+  "b8_60": {
+    "ru": "Возможно, ещё работает предыдущий экземпляр. Закройте старое окно или смените порт: serve --port 8849",
+    "en": "The previous instance may still be running. Close the old window or change the port: serve --port 8849"
+  },
+  "b8_61": {
+    "ru": "Чтение и запись, сейчас {n} аккаунтов",
+    "en": "Read-write, {n} accounts currently"
+  },
+  "b8_62": {
+    "ru": "Необязательный фильтр по ключевому слову",
+    "en": "Optional keyword filter"
+  },
+  "b8_63": {
+    "ru": "Необязательные начальные участники",
+    "en": "Optional initial members"
+  },
+  "b8_64": {
+    "ru": "Необязательно; вернуть только эту группу, например «Параллельность и скорость»",
+    "en": "Optional; return only that group, e.g. “Concurrency and rate”"
+  },
+  "b8_65": {
+    "ru": "Необязательно, должен быть внутри data",
+    "en": "Optional, must be inside data"
+  },
+  "b8_66": {
+    "ru": "Ты поел?",
+    "en": "Have you eaten?"
+  },
+  "b8_67": {
+    "ru": "Объединить несколько загруженных src*.zip в каталоге задания data/unpack/{job}/src",
+    "en": "Merge the uploaded src*.zip files under the job directory data/unpack/{job}/src"
+  },
+  "b8_68": {
+    "ru": "Имя",
+    "en": "First name"
+  },
+  "b8_69": {
+    "ru": "Исключение фоновой задачи: {type(exc).__name__}: {exc}",
+    "en": "Background task exception: {type(exc).__name__}: {exc}"
+  },
+  "b8_70": {
+    "ru": "Постоянный фоновый цикл. Любое исключение не должно его убивать.",
+    "en": "Long-running background loop. No exception may kill the loop."
+  },
+  "b8_71": {
+    "ru": "Запускает задачу в фоне и сразу возвращает управление. Исключение переводит задачу в статус ошибки и очищает live.",
+    "en": "Runs the task in the background and returns immediately. An exception sets the task to failed and clears live."
+  },
+  "b8_72": {
+    "ru": "Запросить удаление аккаунта в Telegram (account.deleteAccount), необратимо.",
+    "en": "Request account deletion from Telegram (account.deleteAccount), irreversible."
+  },
+  "b8_73": {
+    "ru": "Запросить удаление аккаунта в Telegram (необратимо, реальное удаление аккаунта)",
+    "en": "Request account deletion from Telegram (irreversible, actually deletes the account)"
+  },
+  "b8_74": {
+    "ru": "Запросить удаление аккаунта в Telegram (реальное удаление). Требуется подтверждение.",
+    "en": "Request account deletion from Telegram (actually deletes it). Confirmation required."
+  },
+  "b8_75": {
+    "ru": "Отправить в диалог локальный файл сервера (≤50MB)",
+    "en": "Send a server-local file to the chat (≤50MB)"
+  },
+  "b8_76": {
+    "ru": "Запросить удаление аккаунта у Telegram (необратимо). После успеха локальная сессия тоже аннулируется",
+    "en": "Request account deletion from Telegram (irreversible). On success the local session is invalidated too"
+  },
+  "b8_77": {
+    "ru": "Отправить сообщение боту и дождаться ответа (универсально, не только SpamBot)",
+    "en": "Message a bot and wait for a reply (generic, not limited to SpamBot)"
+  },
+  "b8_78": {
+    "ru": "Пункты с restart_required вступают в силу полностью после горячей перезагрузки/перезапуска процесса",
+    "en": "Items marked restart_required take full effect after a hot reload/process restart"
+  },
+  "b8_79": {
+    "ru": "Ха-ха",
+    "en": "Haha"
+  },
+  "b8_80": {
+    "ru": "Ага",
+    "en": "Yeah"
+  },
+  "b8_81": {
+    "ru": "Ответить/процитировать указанное сообщение",
+    "en": "Reply to/quote the specified message"
+  },
+  "b8_82": {
+    "ru": "Ответить/процитировать сообщение (reply_to).",
+    "en": "Reply to/quote a message (reply_to)."
+  },
+  "b8_83": {
+    "ru": "Ответить/процитировать сообщение",
+    "en": "Reply to/quote a message"
+  },
+  "b8_84": {
+    "ru": "Текст ответа",
+    "en": "Reply text"
+  },
+  "b8_85": {
+    "ru": "Ответить на указанный message_id",
+    "en": "Reply to the specified message_id"
+  },
+  "b8_86": {
+    "ru": "Поговорим позже",
+    "en": "Talk later"
+  },
+  "b8_87": {
+    "ru": "Укажите {key} в .env",
+    "en": "Set {key} in .env"
+  },
+  "b8_88": {
+    "ru": "Перед отправкой кода Telegram выполняет необходимую подготовку по provider.",
+    "en": "Runs the required preparation per provider before Telegram sends the code."
+  },
+  "b8_89": {
+    "ru": "Ты здесь?",
+    "en": "You there?"
+  },
+  "b8_90": {
+    "ru": "Найти в расшифрованном потоке все serialized-нагрузки блоков авторизации MTP (blockId=75).",
+    "en": "Find all serialized payloads of MTP authorization blocks (blockId=75) in the decrypted stream."
+  },
+  "b8_91": {
+    "ru": "Базовой группе нужен хотя бы один участник users, либо используйте megagroup=true",
+    "en": "A basic group needs at least one member in users, or use megagroup=true"
+  },
+  "b8_92": {
+    "ru": "Диалог с многошаговым вызовом инструментов; поддерживает OpenAI-совместимые / Anthropic / Gemini / Azure.",
+    "en": "Multi-turn tool-calling dialog; supports OpenAI-compatible / Anthropic / Gemini / Azure."
+  },
+  "b8_93": {
+    "ru": "Аватар: {exc!r}",
+    "en": "Avatar: {exc!r}"
+  },
+  "b8_94": {
+    "ru": "Хорошо",
+    "en": "OK"
+  },
+  "b8_95": {
+    "ru": "Например: {\"phone\":\"nobody\",\"last_seen\":\"nobody\",\"invite\":\"contacts\",\"avatar\":\"contacts\"}",
+    "en": "e.g. {\"phone\":\"nobody\",\"last_seen\":\"nobody\",\"invite\":\"contacts\",\"avatar\":\"contacts\"}"
+  },
+  "b8_96": {
+    "ru": "Фамилия",
+    "en": "Last name"
+  },
+  "b8_97": {
+    "ru": "Безопасный: только чтение + правка метаданных/предпросмотр импорта (без внешних эффектов)",
+    "en": "Safe: read-only plus metadata edits/import preview (no external side effects)"
+  },
+  "b8_98": {
+    "ru": "После установки всё ещё отсутствует: ",
+    "en": "Still missing after installation: "
+  },
+  "b8_99": {
+    "ru": "Полный: разрешены все зарегистрированные инструменты (HUMAN_ONLY по-прежнему исключены; включая удаление аккаунта/выход)",
+    "en": "Full: all registered tools allowed (HUMAN_ONLY still excluded; includes account deletion/sign out)"
+  },
+  "b8_100": {
+    "ru": "Официальный api.anthropic.com или прокси, совместимый с Claude Messages",
+    "en": "Official api.anthropic.com, or a relay compatible with Claude Messages"
+  },
+  "b8_101": {
+    "ru": "Официальный источник не ответил, повтор через зеркало Tsinghua",
+    "en": "Official source failed, retrying via the Tsinghua mirror"
+  },
+  "b8_102": {
+    "ru": "Определить каталог",
+    "en": "Locate directory"
+  },
+  "b8_103": {
+    "ru": "Мягкое чтение целочисленной переменной окружения: пустое значение / не число / кавычки → значение по умолчанию.",
+    "en": "Lenient integer env var read: empty / non-numeric / quoted values fall back to the default."
+  },
+  "b8_104": {
+    "ru": "Длина шифротекста не кратна 16 — файл, вероятно, повреждён",
+    "en": "Ciphertext length is not a multiple of 16; the file may be corrupted"
+  },
+  "b8_105": {
+    "ru": "Подсказка к паролю",
+    "en": "Password hint"
+  },
+  "b8_106": {
+    "ru": "Параметр-ключ {key} нельзя менять через AI — используйте панель параметров в веб-интерфейсе",
+    "en": "Key-type parameter {key} cannot be changed via AI; use the settings panel in the web UI"
+  },
+  "b8_107": {
+    "ru": "Проверка работоспособности одного или нескольких аккаунтов (только чтение удалённого статуса)",
+    "en": "Health check for one or more accounts (reads remote status only)"
+  },
+  "b8_108": {
+    "ru": "Выполнить один цикл прогрева для пакета аккаунтов. Возвращает результат по каждому аккаунту.",
+    "en": "Run one warm-up round over a batch of accounts. Returns per-account results."
+  },
+  "b8_109": {
+    "ru": "Выполнить одну операцию для одного аккаунта. Подключение/блокировки/лимиты/запись — на стороне manager.session.",
+    "en": "Run one operation on a single account. Connect/lock/rate-limit/write-back are all handled by manager.session."
+  },
+  "b8_110": {
+    "ru": "Для подключённого клиента Telethon: работа с OKPay и разбор мультивалютных балансов.",
+    "en": "For a connected Telethon client: interact with OKPay and parse multi-currency balances."
+  },
+  "b8_111": {
+    "ru": "Сравнить списки сессий до и после сброса и дать однозначный ответ, «отключилось ли на самом деле».",
+    "en": "Compare session lists before and after termination to give a hard answer on whether it really happened."
+  },
+  "b8_112": {
+    "ru": "Импорт каталога tdata от Telegram Desktop (может содержать несколько аккаунтов).",
+    "en": "Import a Telegram Desktop tdata directory (may contain multiple accounts)."
+  },
+  "b8_113": {
+    "ru": "Импорт существующей StringSession (перенос из других инструментов) с проверкой работоспособности.",
+    "en": "Import an existing StringSession (migrated from other tools) and verify it works."
+  },
+  "b8_114": {
+    "ru": "Экспорт tdata Telegram Desktop (нужен opentele; при ошибке — понятная причина).",
+    "en": "Export Telegram Desktop tdata (requires opentele; failures give a human-readable reason)."
+  },
+  "b8_115": {
+    "ru": "Для экспорта tdata нужен opentele. Установка: pip install opentele",
+    "en": "Exporting tdata requires opentele. Install: pip install opentele"
+  },
+  "b8_116": {
+    "ru": "Экспортировать один файл .session в out_path.",
+    "en": "Export a single .session file to out_path."
+  },
+  "b8_117": {
+    "ru": "Экспортировать каталог пакета аккаунтов: {label}.session + {label}.json (совместимо с ZIP-инструментами).",
+    "en": "Export an account pack directory: {label}.session + {label}.json (ZIP-tool compatible)."
+  },
+  "b8_118": {
+    "ru": "Экспорт StringSession в открытом виде (чувствительно, только вручную).",
+    "en": "Export a plaintext StringSession (sensitive, manual use only)."
+  },
+  "b8_119": {
+    "ru": "Отметить диалог прочитанным до указанного ID сообщения",
+    "en": "Mark the dialog read up to the specified message ID"
+  },
+  "b8_120": {
+    "ru": "Заблокировать пользователя",
+    "en": "Block user"
+  },
+  "b8_121": {
+    "ru": "Заблокировать пользователя. target принимает @имя, ID пользователя, номер телефона — по строкам или через запятую.",
+    "en": "Block a user. target accepts @username, user ID, or phone number, separated by newlines or commas."
+  },
+  "b8_122": {
+    "ru": "Инструмент не авторизован: {name}",
+    "en": "Tool not authorized: {name}"
+  },
+  "b8_123": {
+    "ru": "Инструмент не подтверждён, отменено: {name}",
+    "en": "Tool not confirmed, canceled: {name}"
+  },
+  "b8_124": {
+    "ru": "Ошибка параметров или выполнения в инструментах.",
+    "en": "Toolbox parameter or execution error."
+  },
+  "b8_125": {
+    "ru": "Инструменты: те же 12 функций бота GAF, но напрямую для аккаунтов из базы.",
+    "en": "Toolbox: the 12 GAF bot features, applied directly to accounts already in the library."
+  },
+  "b8_126": {
+    "ru": "Контекст выполнения инструментов и политика безопасности.",
+    "en": "Tool execution context and security policy."
+  },
+  "b8_127": {
+    "ru": "Сводка учтена; продолжаем по последним сообщениям.",
+    "en": "Earlier summary acknowledged; continuing from the latest messages."
+  },
+  "b8_128": {
+    "ru": "Всё установлено",
+    "en": "All installed"
+  },
+  "b8_129": {
+    "ru": "Новая сессия записана, время перехвата на этом устройстве сброшено; отзыв старой авторизации запрошен.",
+    "en": "New session written and local takeover time reset; revocation of the old authorization was attempted."
+  },
+  "b8_130": {
+    "ru": "Срок истёк, ждёт выполнения в текущем цикле сканирования",
+    "en": "Due, waiting for this scan round to run"
+  },
+  "b8_131": {
+    "ru": "Запрос на очистку отправлен (без проверки)",
+    "en": "Cleanup request sent (unverified)"
+  },
+  "b8_132": {
+    "ru": "Отменено",
+    "en": "Canceled"
+  },
+  "b8_133": {
+    "ru": "Ожидание сброса отменено",
+    "en": "Reset wait canceled"
+  },
+  "b8_134": {
+    "ru": "Удаление отправлено в Telegram; локальная сессия очищена",
+    "en": "Deletion submitted to Telegram; local session cleared"
+  },
+  "b8_135": {
+    "ru": "Удаление отправлено в Telegram; локальная запись не очищена",
+    "en": "Deletion submitted to Telegram; local record not cleared"
+  },
+  "b8_136": {
+    "ru": "Заполнено",
+    "en": "Filled"
+  },
+  "b8_137": {
+    "ru": "Ошибка",
+    "en": "Failed"
+  },
+  "b8_138": {
+    "ru": "Удаление отправлено; очистите локальную запись в веб-интерфейсе",
+    "en": "Deletion submitted; clear the local record in the web UI"
+  },
+  "b8_139": {
+    "ru": "Очищено и проверено: отключено %d (%s), осталось только это устройство",
+    "en": "Cleaned and verified: terminated %d (%s); only this device remains"
+  },
+  "b8_140": {
+    "ru": "Нажато: {clicked or 'нет кнопки'}; сумму разобрать не удалось — смотрите reply",
+    "en": "Clicked {clicked or 'no button'}; could not parse the amount, see reply"
+  },
+  "b8_141": {
+    "ru": "Нажато {clicked}; распознано {balances}",
+    "en": "Clicked {clicked}; parsed {balances}"
+  },
+  "b8_142": {
+    "ru": "Сброс запрошен, ждать до {snap.get('pending_reset_iso') or snap['pending_reset_date']}",
+    "en": "Reset requested, wait until {snap.get('pending_reset_iso') or snap['pending_reset_date']}"
+  },
+  "b8_143": {
+    "ru": "Сброс запрошен: 2FA перестанет действовать после {out['until_iso'] or until_ts}",
+    "en": "Reset requested; 2FA stops applying after {out['until_iso'] or until_ts}"
+  },
+  "b8_144": {
+    "ru": "Резервный email привязан (возможно восстановление по почте; прежний владелец всё ещё может вернуть аккаунт)",
+    "en": "Recovery email linked (email recovery possible; the previous owner may still recover it)"
+  },
+  "b8_145": {
+    "ru": "Исправлено автоматически",
+    "en": "Auto-fixed"
+  },
+  "b8_146": {
+    "ru": "Создано автоматически",
+    "en": "Auto-created"
+  },
+  "b8_147": {
+    "ru": "Установлено автоматически",
+    "en": "Auto-installed"
+  },
+  "b8_148": {
+    "ru": "Сгенерировано автоматически и записано в .env",
+    "en": "Auto-generated and written to .env"
+  },
+  "b8_149": {
+    "ru": "Уже занято",
+    "en": "Already in use"
+  },
+  "b8_150": {
+    "ru": "Установлено ({len(val)} симв.)",
+    "en": "Set ({len(val)} chars)"
+  },
+  "b8_151": {
+    "ru": "Отмена запрошена, но pending_reset_date всё ещё задан — проверьте позже",
+    "en": "Cancellation requested, but pending_reset_date is still set; check again later"
+  },
+  "b8_152": {
+    "ru": "Пропущено",
+    "en": "Skipped"
+  },
+  "b8_153": {
+    "ru": "Выбран режим без токена (только для локального 127.0.0.1)",
+    "en": "Tokenless mode selected (local 127.0.0.1 only)"
+  },
+  "b8_154": {
+    "ru": "ID задания merge, для которого части уже загружены через веб-интерфейс",
+    "en": "Merge job ID whose parts were already uploaded via the web UI"
+  },
+  "b8_155": {
+    "ru": "Для инструментов с confirm-гейтом на уровне инструмента перед выполнением подставляется confirm=True.",
+    "en": "Tools with a tool-level confirm gate get confirm=True filled in before execution."
+  },
+  "b8_156": {
+    "ru": "Платформа не вернула статус успеха",
+    "en": "The platform did not return a success status"
+  },
+  "b8_157": {
+    "ru": "Параллельность, необязательно",
+    "en": "Concurrency, optional"
+  },
+  "b8_158": {
+    "ru": "Рекомендуется удалить, чтобы не мешать Telethon: pip uninstall -y opentele",
+    "en": "Recommended to uninstall to avoid interfering with Telethon: pip uninstall -y opentele"
+  },
+  "b8_159": {
+    "ru": "Сейчас {v}",
+    "en": "Current {v}"
+  },
+  "b8_160": {
+    "ru": "Включён режим только для чтения — инструменты записи отклоняются",
+    "en": "Read-only mode is on; write tools are rejected"
+  },
+  "b8_161": {
+    "ru": "Текущий пароль 2FA (обязателен, если уже задан)",
+    "en": "Current 2FA password (required if one is set)"
+  },
+  "b8_162": {
+    "ru": "Текущая сессия не авторизована — перегенерация невозможна",
+    "en": "The current session is unauthorized; cannot regenerate"
+  },
+  "b8_163": {
+    "ru": "Текущий пароль (оставьте пустым, если не задан)",
+    "en": "Current password (leave empty if not set)"
+  },
+  "b8_164": {
+    "ru": "При текущих правах нет доступных инструментов — включите хотя бы один",
+    "en": "No tools are available under the current permissions; enable at least one"
+  },
+  "b8_165": {
+    "ru": "Сейчас нет активного запроса на сброс 2FA",
+    "en": "There is no 2FA reset request in progress"
+  },
+  "b8_166": {
+    "ru": "Действующий интервал повторов (в секундах) и его источник.",
+    "en": "The effective retry interval (seconds) and where it comes from."
+  },
+  "b8_167": {
+    "ru": "Чем занят?",
+    "en": "What are you up to?"
+  },
+  "b8_168": {
+    "ru": "Подтверждаю запуск сброса 2FA (вход в период ожидания)",
+    "en": "I confirm starting the 2FA reset (enters the waiting period)"
+  },
+  "b8_169": {
+    "ru": "Подтверждаю отмену ожидания сброса",
+    "en": "I confirm canceling the reset wait"
+  },
+  "b8_170": {
+    "ru": "Подтверждаю безвозвратное удаление этого аккаунта Telegram",
+    "en": "I confirm permanently deleting this Telegram account"
+  },
+  "b8_171": {
+    "ru": "Подтверждаю выход из аккаунта",
+    "en": "I confirm signing out"
+  },
+  "b8_172": {
+    "ru": "Я как раз освободился",
+    "en": "I just finished up"
+  },
+  "b8_173": {
+    "ru": "Список номеров телефонов через запятую или с новой строки",
+    "en": "List of phone numbers, comma or newline separated"
+  },
+  "b8_174": {
+    "ru": "Номер телефона (необязательно)",
+    "en": "Phone number (optional)"
+  },
+  "b8_175": {
+    "ru": "Номера телефонов (по одному в строке, до 500)",
+    "en": "Phone numbers (one per line, up to 500)"
+  },
+  "b8_176": {
+    "ru": "Открыть часть по имени name (сначала xxx, затем xxx1/xxx0 и варианты с суффиксом s).",
+    "en": "Open the shard for name (prefer xxx, then xxx1/xxx0 and s-suffixed variants)."
+  },
+  "b8_177": {
+    "ru": "Выполнить задачу. target_timeout: секунды на одну цель; по тайм-ауту — ошибка и переход дальше (защита от зависания).",
+    "en": "Run a task. target_timeout: seconds per target; on timeout mark failed and continue (prevents hangs)."
+  },
+  "b8_178": {
+    "ru": "Исполнитель прерван исключением",
+    "en": "Executor interrupted by an exception"
+  },
+  "b8_179": {
+    "ru": "Исполнитель: обрабатывает все ожидающие цели задачи, поддерживает параллельность, интервалы и остановку в любой момент.",
+    "en": "Executor: runs all pending targets of a task, with concurrency, intervals, and stop at any time."
+  },
+  "b8_180": {
+    "ru": "Ошибка выполнения: {exc}",
+    "en": "Execution failed: {exc}"
+  },
+  "b8_181": {
+    "ru": "Выполните: pip install -r requirements.txt",
+    "en": "Run: pip install -r requirements.txt"
+  },
+  "b8_182": {
+    "ru": "Один цикл: сброс других устройств для аккаунтов с истёкшим сроком и запись last_kick_at.",
+    "en": "One round: terminate other devices for due accounts and record last_kick_at."
+  },
+  "b8_183": {
+    "ru": "После сканирования авторизация так и не прошла — повторите",
+    "en": "Still unauthorized after scanning; try again"
+  },
+  "b8_184": {
+    "ru": "QR отсканирован, но на аккаунте включена 2FA — введите облачный пароль и продолжите",
+    "en": "QR scanned, but this account has 2FA enabled; enter the cloud password to continue"
+  },
+  "b8_185": {
+    "ru": "Ошибка входа по QR: {ename}: {exc}",
+    "en": "QR sign-in failed: {ename}: {exc}"
+  },
+  "b8_186": {
+    "ru": "Вход по QR выполнен, сессия зашифрована и сохранена",
+    "en": "QR sign-in succeeded; session encrypted and stored"
+  },
+  "b8_187": {
+    "ru": "Вход по QR вызвал ограничение: {ename}: {exc}. Повторите позже.",
+    "en": "QR sign-in hit a rate limit: {ename}: {exc}. Try again later."
+  },
+  "b8_188": {
+    "ru": "Ограничение входа по QR: {ename}: {exc}",
+    "en": "QR sign-in rate limited: {ename}: {exc}"
+  },
+  "b8_189": {
+    "ru": "Пакетный импорт файлов .session (один файл или целый каталог).",
+    "en": "Bulk import .session files (a single file or a whole directory)."
+  },
+  "b8_190": {
+    "ru": "Пакетный импорт текста StringSession, по одному в строке.",
+    "en": "Bulk import StringSession text, one per line."
+  },
+  "b8_191": {
+    "ru": "Пакетный импорт начального списка аккаунтов в формате `номер|ссылка для получения кода` (идемпотентно)",
+    "en": "Bulk import an initial account list in `phone|code-retrieval link` format (idempotent)"
+  },
+  "b8_192": {
+    "ru": "Пакетное выполнение",
+    "en": "Bulk run"
+  },
+  "b8_193": {
+    "ru": "Пакетное выполнение. Без указания параллельности берётся TAM_BATCH_CONCURRENCY (настраивается в панели).",
+    "en": "Bulk run. Without a concurrency value, TAM_BATCH_CONCURRENCY is used (adjustable in the panel)."
+  },
+  "b8_194": {
+    "ru": "Пакетно задать видимость телефона/последнего входа/вступления в группы/аватара; пустое значение — консервативный дефолт",
+    "en": "Bulk-set phone/last seen/group invite/avatar visibility; blank uses the conservative default"
+  },
+  "b8_195": {
+    "ru": "Пакетная настройка конфиденциальности (phone/last_seen/invite/avatar → everybody|contacts|nobody)",
+    "en": "Bulk privacy setup (phone/last_seen/invite/avatar → everybody|contacts|nobody)"
+  },
+  "b8_196": {
+    "ru": "Пакетная настройка конфиденциальности. Защита от спама и поиска — обязательна при прогреве.",
+    "en": "Bulk privacy setup. Anti-spam and anti-search — a must for warm-up."
+  },
+  "b8_197": {
+    "ru": "Файл части {part} не найден (логическое имя {name})",
+    "en": "Shard file {part} not found (logical name {name})"
+  },
+  "b8_198": {
+    "ru": "Скопируйте .env.example в .env",
+    "en": "Copy .env.example to .env"
+  },
+  "b8_199": {
+    "ru": "Преобразовать файл .session Telethon (SQLite) в строку StringSession.",
+    "en": "Convert a Telethon .session file (SQLite) into a StringSession string."
+  }
+}

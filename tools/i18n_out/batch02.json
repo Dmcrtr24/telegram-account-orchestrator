@@ -1,0 +1,802 @@
+{
+ "b2_0": {
+  "ru": "⚠️ <strong>Если выключить, ИИ сможет менять настройки аккаунта и отправлять сообщения без подтверждения.</strong> Рекомендуется оставить включённым.</div>",
+  "en": "⚠️ <strong>If disabled, AI can change account settings and send messages without manual confirmation.</strong> Keep it on.</div>"
+ },
+ "b2_1": {
+  "ru": "⚠️ <strong>Если выключить, ИИ сможет выполнять необратимые действия — удаление аккаунта и т.п. — без подтверждения.</strong> Выключайте, только если полностью доверяете модели.</div>",
+  "en": "⚠️ <strong>If disabled, AI can perform irreversible actions such as account deletion without manual confirmation.</strong> Disable only if you fully trust the model.</div>"
+ },
+ "b2_2": {
+  "ru": "✈️ Менеджер аккаунтов Telegram",
+  "en": "✈️ Telegram Account Manager"
+ },
+ "b2_3": {
+  "ru": ", или вставьте",
+  "en": ", or paste"
+ },
+ "b2_4": {
+  "ru": ", поиск публичных групп, вступление в группы, список участников, чтение сообщений группы, сброс других устройств и т.п. Опасные действия запрашивают подтверждение.",
+  "en": ", search public groups, join groups, member lists, read group messages, terminate other devices, etc. Dangerous actions ask for confirmation."
+ },
+ "b2_5": {
+  "ru": ", находится ли аккаунт в периоде ожидания сброса.",
+  "en": ", and whether it is in the reset waiting period."
+ },
+ "b2_6": {
+  "ru": ". Действие необратимо: TG-аккаунт, привязанный к номеру, будет удалён, а не просто выполнен выход. Введите «Удалить» для подтверждения.",
+  "en": ". This action is irreversible: the TG account linked to the phone number will be deleted, not just signed out. Type “Delete” to confirm."
+ },
+ "b2_7": {
+  "ru": ". После обновления новые инструменты получают переключатели по умолчанию согласно текущему пресету. Стандартный пресет не включает удаление аккаунта и выход; они есть только в полном. Вход и импорт-экспорт session никогда не открываются для ИИ.",
+  "en": ". After an upgrade, new tools get default toggles from the current preset. The standard preset excludes account deletion and sign-out; only the full preset includes them. Sign-in and session import/export are never exposed to AI."
+ },
+ "b2_8": {
+  "ru": ". Без ссылки войдите вручную, по QR или сразу импортируйте session/tdata.",
+  "en": ". Without a link, sign in manually, sign in by QR, or import session/tdata directly."
+ },
+ "b2_9": {
+  "ru": ". Бот по умолчанию работает с временными ZIP-пакетами аккаунтов и не пишет их в основную таблицу. Возможности пакетов (Passkey, конвертация форматов) доступны с обеих сторон; сброс устройств, вход и центр задач — только в веб-интерфейсе.",
+  "en": ". The bot handles temporary account-pack ZIPs by default and does not write them to the managed table. Pack features such as Passkey and format conversion are available on both sides; terminating devices, sign-in, and the task center are web-only."
+ },
+ "b2_10": {
+  "ru": "«Сначала диагностика» работает только с путями на сервере; для загрузки используйте импорт (при ошибке будет диагностика)",
+  "en": "“Doctor first” only supports server paths; for uploads, import directly (failures include diagnostics)"
+ },
+ "b2_11": {
+  "ru": "» и нажмите OK:",
+  "en": "” and press OK:"
+ },
+ "b2_12": {
+  "ru": "» — отправить все лиды (поддерживаются переменные {a|b} и {name}).",
+  "en": "” send all leads (supports {a|b} and {name} variables)."
+ },
+ "b2_13": {
+  "ru": "】: размер по умолчанию восстановлен",
+  "en": "】: default size restored"
+ },
+ "b2_14": {
+  "ru": "】 — необратимое действие, будет",
+  "en": "】 is irreversible; it will"
+ },
+ "b2_15": {
+  "ru": "Диагностика",
+  "en": "Doctor"
+ },
+ "b2_16": {
+  "ru": "Установить в один клик",
+  "en": "Install in one click"
+ },
+ "b2_17": {
+  "ru": "Упорядочить в один клик",
+  "en": "Tidy up in one click"
+ },
+ "b2_18": {
+  "ru": "Проверка окружения/зависимостей/ключа/базы данных/tdata с автоисправлением того, что можно починить",
+  "en": "Check environment/dependencies/key/database/tdata and auto-fix what it can"
+ },
+ "b2_19": {
+  "ru": "Три способа: с этого устройства",
+  "en": "Three ways: from this machine"
+ },
+ "b2_20": {
+  "ru": "Загрузить",
+  "en": "Upload"
+ },
+ "b2_21": {
+  "ru": "Загрузить zip",
+  "en": "Upload zip"
+ },
+ "b2_22": {
+  "ru": "Загрузите zip с tdata или укажите путь;",
+  "en": "Upload a zip with tdata or enter a path;"
+ },
+ "b2_23": {
+  "ru": "Ошибка загрузки",
+  "en": "Upload failed"
+ },
+ "b2_24": {
+  "ru": "Загрузить и импортировать session",
+  "en": "Upload & import session"
+ },
+ "b2_25": {
+  "ru": "Загрузить и импортировать tdata",
+  "en": "Upload & import tdata"
+ },
+ "b2_26": {
+  "ru": "Загрузить файл",
+  "en": "Upload file"
+ },
+ "b2_27": {
+  "ru": "Загрузить и разобрать",
+  "en": "Upload & parse"
+ },
+ "b2_28": {
+  "ru": "Последний раз",
+  "en": "Last"
+ },
+ "b2_29": {
+  "ru": "Повтор для тех, кого не удалось сбросить в прошлый раз",
+  "en": "Retry those not terminated last time"
+ },
+ "b2_30": {
+  "ru": "В прошлый раз сбросить не удалось, ждём повтора",
+  "en": "Not terminated last time, waiting to retry"
+ },
+ "b2_31": {
+  "ru": "Прошлый сброс устройств",
+  "en": "Last device reset"
+ },
+ "b2_32": {
+  "ru": "Проверка прошлого сброса устройств не пройдена, повтор",
+  "en": "Last device reset failed verification, retry at"
+ },
+ "b2_33": {
+  "ru": "Далее",
+  "en": "Next"
+ },
+ "b2_34": {
+  "ru": "Скачать медиа",
+  "en": "Download media"
+ },
+ "b2_35": {
+  "ru": "Следующий раз",
+  "en": "Next time"
+ },
+ "b2_36": {
+  "ru": "Скачать",
+  "en": "Download"
+ },
+ "b2_37": {
+  "ru": "Ошибка скачивания: ",
+  "en": "Download failed: "
+ },
+ "b2_38": {
+  "ru": "Бутан \\ud83c\\udde7\\ud83c\\uddf9",
+  "en": "Bhutan \\ud83c\\udde7\\ud83c\\uddf9"
+ },
+ "b2_39": {
+  "ru": "Не участвует",
+  "en": "Not participating"
+ },
+ "b2_40": {
+  "ru": "Без изменений",
+  "en": "No change"
+ },
+ "b2_41": {
+  "ru": "не трогает уже управляемые аккаунты в базе. Забрав результат, нажмите «Удалить после использования» — пакет аккаунтов чувствителен,",
+  "en": "does not touch accounts already managed in the database. Once you have the result, click “Delete when done” — account packs are sensitive,"
+ },
+ "b2_42": {
+  "ru": "Не ждать фонового таймера, сразу сбросить другие устройства у истёкших аккаунтов",
+  "en": "Run one other-device reset for due accounts now, without waiting for the background timer"
+ },
+ "b2_43": {
+  "ru": "не держите их долго на сервере.</div>",
+  "en": "don't leave them on the server long-term.</div>"
+ },
+ "b2_44": {
+  "ru": "и каталог данных, но",
+  "en": "and data directory, but"
+ },
+ "b2_45": {
+  "ru": "Аналог «защиты от восстановления» в боте: повторный вход с новым отпечатком устройства, старая session пытается выйти, в базе она заменяется новой сессией, время перехвата сбрасывается.",
+  "en": "Same as the bot's “anti-recovery”: sign in again with a new device fingerprint, the old session attempts sign-out, the database gets the new session, and the takeover time is reset."
+ },
+ "b2_46": {
+  "ru": "Пароль 2FA",
+  "en": "2FA password"
+ },
+ "b2_47": {
+  "ru": "Пароль 2FA (если есть)",
+  "en": "2FA password (if any)"
+ },
+ "b2_48": {
+  "ru": "Пароль 2FA; по умолчанию скрыт, нажмите на глаз, чтобы посмотреть",
+  "en": "2FA password; masked by default, click the eye to view"
+ },
+ "b2_49": {
+  "ru": "шт.",
+  "en": "items"
+ },
+ "b2_50": {
+  "ru": "шт.)</button>",
+  "en": "items)</button>"
+ },
+ "b2_51": {
+  "ru": "шт.</span>",
+  "en": "items</span>"
+ },
+ "b2_52": {
+  "ru": "шт.</span></div>",
+  "en": "items</span></div>"
+ },
+ "b2_53": {
+  "ru": "шт.…</span>",
+  "en": "items…</span>"
+ },
+ "b2_54": {
+  "ru": "пак.",
+  "en": "packs"
+ },
+ "b2_55": {
+  "ru": "пак. →",
+  "en": "packs →"
+ },
+ "b2_56": {
+  "ru": "пак.</span>",
+  "en": "packs</span>"
+ },
+ "b2_57": {
+  "ru": "пак.</span><span class=\"muted\">, можно выбрать ещё файлы и добавить их, а когда всё собрано — нажать «Начать объединение»</span>",
+  "en": "packs</span><span class=\"muted\">, you can keep picking files to add, then click Start merge once everything is collected</span>"
+ },
+ "b2_58": {
+  "ru": "пак. не удалось прочитать: ",
+  "en": "packs could not be read: "
+ },
+ "b2_59": {
+  "ru": "акк.",
+  "en": "accounts"
+ },
+ "b2_60": {
+  "ru": "акк. →",
+  "en": "accounts →"
+ },
+ "b2_61": {
+  "ru": "акк.</span>",
+  "en": "accounts</span>"
+ },
+ "b2_62": {
+  "ru": "аккаунтов — заявка в Telegram на 【безвозвратное удаление】. Необратимо. Введите «Пакетное удаление» для подтверждения.",
+  "en": "accounts. Irreversible. Type “Bulk deletion” to confirm."
+ },
+ "b2_63": {
+  "ru": "аккаунтов.",
+  "en": "accounts."
+ },
+ "b2_64": {
+  "ru": "аккаунтов — проверка баланса OKPay (отправка сообщения @Okpay и выбор валюты).",
+  "en": "accounts (sends a message to @Okpay and picks the currency)."
+ },
+ "b2_65": {
+  "ru": "аккаунтов — перегенерация сессии (старая авторизация аннулируется). Задача выполняется на сервере в фоне: закрытие браузера её не прерывает, прогресс и остановка — в «Центре задач». На следующем шаге выберите параллельность (1 = последовательно и надёжнее, 2–5 быстрее, но легко получить лимит).",
+  "en": "accounts (old authorizations become void). The task runs in the background on the server: closing the browser does not stop it, and you can track or stop it in the Task Center. Next you can pick parallelism (1 = serial and safer, 2–5 faster but more likely to hit rate limits)."
+ },
+ "b2_66": {
+  "ru": "акк., извлечено",
+  "en": "accounts, extracted"
+ },
+ "b2_67": {
+  "ru": "внешних сессий",
+  "en": "external sessions"
+ },
+ "b2_68": {
+  "ru": "в очереди",
+  "en": "pending"
+ },
+ "b2_69": {
+  "ru": "с неясной датой (перемещены в каталог unknown, не потеряны)</span>",
+  "en": "with unknown dates (moved to the unknown directory, nothing lost)</span>"
+ },
+ "b2_70": {
+  "ru": "каталогов доступно",
+  "en": "directories available"
+ },
+ "b2_71": {
+  "ru": "акк.",
+  "en": "accounts"
+ },
+ "b2_72": {
+  "ru": "аккаунтов последовательно выполняется «отправка кода → автополучение кода → вход».",
+  "en": "accounts, running serially: send code → auto-fetch code → sign in."
+ },
+ "b2_73": {
+  "ru": "аккаунтов — сессии (чувствительные данные) в zip.",
+  "en": "accounts (sensitive credentials) as a zip."
+ },
+ "b2_74": {
+  "ru": "аккаунтов 【все другие устройства】 — останется только сессия этого устройства.",
+  "en": "accounts, keeping only this session."
+ },
+ "b2_75": {
+  "ru": "аккаунтам, несколько через запятую.",
+  "en": "accounts, comma-separated for multiple."
+ },
+ "b2_76": {
+  "ru": "не удалось сбросить, ждут повтора",
+  "en": "failed to terminate, retry pending"
+ },
+ "b2_77": {
+  "ru": "с одинаковыми именами переименованы автоматически (никто не потерян)</span>",
+  "en": "with duplicate names were renamed automatically (no accounts lost)</span>"
+ },
+ "b2_78": {
+  "ru": "шт.)",
+  "en": "items)"
+ },
+ "b2_79": {
+  "ru": "шт., успешно",
+  "en": "items, succeeded"
+ },
+ "b2_80": {
+  "ru": "шт., осталось только это устройство",
+  "en": "items, only this device remains"
+ },
+ "b2_81": {
+  "ru": "шт.: ",
+  "en": "items: "
+ },
+ "b2_82": {
+  "ru": "Китай \\ud83c\\udde8\\ud83c\\uddf3",
+  "en": "China \\ud83c\\udde8\\ud83c\\uddf3"
+ },
+ "b2_83": {
+  "ru": "Тайвань (Китай) \\ud83c\\uddf9\\ud83c\\uddfc",
+  "en": "Taiwan (China) \\ud83c\\uddf9\\ud83c\\uddfc"
+ },
+ "b2_84": {
+  "ru": "Макао (Китай) \\ud83c\\uddf2\\ud83c\\uddf4",
+  "en": "Macao (China) \\ud83c\\uddf2\\ud83c\\uddf4"
+ },
+ "b2_85": {
+  "ru": "Гонконг (Китай) \\ud83c\\udded\\ud83c\\uddf0",
+  "en": "Hong Kong (China) \\ud83c\\udded\\ud83c\\uddf0"
+ },
+ "b2_86": {
+  "ru": "Средний экран",
+  "en": "Medium screen"
+ },
+ "b2_87": {
+  "ru": "Временное ограничение",
+  "en": "Temporary restriction"
+ },
+ "b2_88": {
+  "ru": "Дания \\ud83c\\udde9\\ud83c\\uddf0",
+  "en": "Denmark \\ud83c\\udde9\\ud83c\\uddf0"
+ },
+ "b2_89": {
+  "ru": "Основной аккаунт",
+  "en": "Main account"
+ },
+ "b2_90": {
+  "ru": "Сессии шифруются мастер-ключом; резервная копия",
+  "en": "Sessions encrypted with the master key; back up"
+ },
+ "b2_91": {
+  "ru": "Украина \\ud83c\\uddfa\\ud83c\\udde6",
+  "en": "Ukraine \\ud83c\\uddfa\\ud83c\\udde6"
+ },
+ "b2_92": {
+  "ru": "Узбекистан \\ud83c\\uddfa\\ud83c\\uddff",
+  "en": "Uzbekistan \\ud83c\\uddfa\\ud83c\\uddff"
+ },
+ "b2_93": {
+  "ru": "Уганда \\ud83c\\uddfa\\ud83c\\uddec",
+  "en": "Uganda \\ud83c\\uddfa\\ud83c\\uddec"
+ },
+ "b2_94": {
+  "ru": "Уругвай \\ud83c\\uddfa\\ud83c\\uddfe",
+  "en": "Uruguay \\ud83c\\uddfa\\ud83c\\uddfe"
+ },
+ "b2_95": {
+  "ru": "Йемен \\ud83c\\uddfe\\ud83c\\uddea",
+  "en": "Yemen \\ud83c\\uddfe\\ud83c\\uddea"
+ },
+ "b2_96": {
+  "ru": "QR-код истекает примерно через 30 секунд, страница предложит обновить; не запускайте несколько раз подряд, чтобы не попасть под лимит.",
+  "en": "The QR code expires in about 30 seconds and the page will prompt a refresh; don't start it repeatedly to avoid rate limits."
+ },
+ "b2_97": {
+  "ru": "2FA",
+  "en": "2FA"
+ },
+ "b2_98": {
+  "ru": "2FA и сброс",
+  "en": "2FA & reset"
+ },
+ "b2_99": {
+  "ru": "Пароль 2FA",
+  "en": "2FA password"
+ },
+ "b2_100": {
+  "ru": "Пароль 2FA сохранён в зашифрованном виде",
+  "en": "2FA password saved encrypted"
+ },
+ "b2_101": {
+  "ru": "Пароль 2FA (необязательно)",
+  "en": "2FA password (optional)"
+ },
+ "b2_102": {
+  "ru": "2FA не сохранён",
+  "en": "2FA not saved"
+ },
+ "b2_103": {
+  "ru": "Статус 2FA",
+  "en": "2FA status"
+ },
+ "b2_104": {
+  "ru": "Статус 2FA получен",
+  "en": "2FA status retrieved"
+ },
+ "b2_105": {
+  "ru": "Ошибка конвертации: ",
+  "en": "Conversion failed: "
+ },
+ "b2_106": {
+  "ru": "Армения \\ud83c\\udde6\\ud83c\\uddf2",
+  "en": "Armenia \\ud83c\\udde6\\ud83c\\uddf2"
+ },
+ "b2_107": {
+  "ru": "чел.",
+  "en": "people"
+ },
+ "b2_108": {
+  "ru": "Число участников неизвестно",
+  "en": "Member count unknown"
+ },
+ "b2_109": {
+  "ru": "Импорт из tdata Telegram Desktop",
+  "en": "Import from Telegram Desktop tdata"
+ },
+ "b2_110": {
+  "ru": "Прокси",
+  "en": "Proxy"
+ },
+ "b2_111": {
+  "ru": "Проверка прокси",
+  "en": "Proxy check"
+ },
+ "b2_112": {
+  "ru": "Проверка прокси завершена",
+  "en": "Proxy check complete"
+ },
+ "b2_113": {
+  "ru": "Прокси (необязательно, настоятельно советуем один прокси на аккаунт)",
+  "en": "Proxy (optional; one proxy per account strongly recommended)"
+ },
+ "b2_114": {
+  "ru": "Токен неверный или истёк — сначала укажите токен выше",
+  "en": "Token is wrong or expired; fill in the token above first"
+ },
+ "b2_115": {
+  "ru": "Токен принят, подключено",
+  "en": "Token accepted, connected"
+ },
+ "b2_116": {
+  "ru": "Неверный токен",
+  "en": "Invalid token"
+ },
+ "b2_117": {
+  "ru": "Неверный токен или сервис не запущен",
+  "en": "Invalid token or service not running"
+ },
+ "b2_118": {
+  "ru": "Неверный токен (401): проверьте TAM_WEB_TOKEN в .env",
+  "en": "Invalid token (401): check TAM_WEB_TOKEN in .env"
+ },
+ "b2_119": {
+  "ru": "Израиль \\ud83c\\uddee\\ud83c\\uddf1",
+  "en": "Israel \\ud83c\\uddee\\ud83c\\uddf1"
+ },
+ "b2_120": {
+  "ru": "Задачи и лиды",
+  "en": "Tasks & leads"
+ },
+ "b2_121": {
+  "ru": "Центр задач",
+  "en": "Task center"
+ },
+ "b2_122": {
+  "ru": "Не удалось загрузить список задач: ",
+  "en": "Failed to load task list: "
+ },
+ "b2_123": {
+  "ru": "Список задач обновлён",
+  "en": "Task list refreshed"
+ },
+ "b2_124": {
+  "ru": "Задача удалена",
+  "en": "Task deleted"
+ },
+ "b2_125": {
+  "ru": "Задача долго не продвигается, ожидание остановлено. Откройте центр задач или нажмите «Стоп» и повторите",
+  "en": "The task has made no progress for a long time, so waiting stopped. Open the Task Center, or click Stop and retry"
+ },
+ "b2_126": {
+  "ru": "Ирак \\ud83c\\uddee\\ud83c\\uddf6",
+  "en": "Iraq \\ud83c\\uddee\\ud83c\\uddf6"
+ },
+ "b2_127": {
+  "ru": "Иран \\ud83c\\uddee\\ud83c\\uddf7",
+  "en": "Iran \\ud83c\\uddee\\ud83c\\uddf7"
+ },
+ "b2_128": {
+  "ru": "будет объединено с существующей записью.",
+  "en": "will be merged into the existing record."
+ },
+ "b2_129": {
+  "ru": "Подписка: Telegram Premium",
+  "en": "Membership: Telegram Premium"
+ },
+ "b2_130": {
+  "ru": "Время создания сессии",
+  "en": "Session created"
+ },
+ "b2_131": {
+  "ru": "Сессия недействительна",
+  "en": "Session expired"
+ },
+ "b2_132": {
+  "ru": "Сессия перегенерирована",
+  "en": "Session regenerated"
+ },
+ "b2_133": {
+  "ru": "Все проверки пройдены",
+  "en": "All checks passed"
+ },
+ "b2_134": {
+  "ru": "Проверка не пройдена: ",
+  "en": "Check failed: "
+ },
+ "b2_135": {
+  "ru": "Проверка завершена: ",
+  "en": "Check complete: "
+ },
+ "b2_136": {
+  "ru": "Проверка не пройдена, подробности в логах",
+  "en": "Check failed; see the log area"
+ },
+ "b2_137": {
+  "ru": "Справка · Описание функций",
+  "en": "Help · Feature guide"
+ },
+ "b2_138": {
+  "ru": "Нужна привязанная к аккаунту",
+  "en": "Depends on the account's"
+ },
+ "b2_139": {
+  "ru": "Россия/Казахстан \\ud83c\\uddf7\\ud83c\\uddfa",
+  "en": "Russia/Kazakhstan \\ud83c\\uddf7\\ud83c\\uddfa"
+ },
+ "b2_140": {
+  "ru": "Болгария \\ud83c\\udde7\\ud83c\\uddec",
+  "en": "Bulgaria \\ud83c\\udde7\\ud83c\\uddec"
+ },
+ "b2_141": {
+  "ru": "Сохранить",
+  "en": "Save"
+ },
+ "b2_142": {
+  "ru": "Сохранить изменения",
+  "en": "Save changes"
+ },
+ "b2_143": {
+  "ru": "Сохранить параметры",
+  "en": "Save settings"
+ },
+ "b2_144": {
+  "ru": "Ошибка сохранения: ",
+  "en": "Save failed: "
+ },
+ "b2_145": {
+  "ru": "Сохранить интервал повтора (пусто — по умолчанию)",
+  "en": "Save retry interval (leave empty for default)"
+ },
+ "b2_146": {
+  "ru": "Изменить профиль",
+  "en": "Edit profile"
+ },
+ "b2_147": {
+  "ru": "Стоп",
+  "en": "Stop"
+ },
+ "b2_148": {
+  "ru": "Остановить задачу",
+  "en": "Stop task"
+ },
+ "b2_149": {
+  "ru": "Проверка работоспособности",
+  "en": "Health check"
+ },
+ "b2_150": {
+  "ru": "Проверка работоспособности · успешно",
+  "en": "Health check · success"
+ },
+ "b2_151": {
+  "ru": "Сначала проверка, без импорта",
+  "en": "Check first, don't import"
+ },
+ "b2_152": {
+  "ru": "Сначала отметьте аккаунты в списке",
+  "en": "First select the accounts to act on in the list"
+ },
+ "b2_153": {
+  "ru": "Сначала добавьте пакеты для объединения",
+  "en": "First add the packs to merge"
+ },
+ "b2_154": {
+  "ru": "Сначала нажмите «Диагностика», затем импортируйте аккаунты.",
+  "en": "Click “Doctor” first, then import accounts."
+ },
+ "b2_155": {
+  "ru": "Сначала выберите пакет аккаунтов",
+  "en": "Select an account pack first"
+ },
+ "b2_156": {
+  "ru": "Сначала выберите пакет",
+  "en": "Select a pack first"
+ },
+ "b2_157": {
+  "ru": "Хорватия \\ud83c\\udded\\ud83c\\uddf7",
+  "en": "Croatia \\ud83c\\udded\\ud83c\\uddf7"
+ },
+ "b2_158": {
+  "ru": "Точка входа",
+  "en": "Entry"
+ },
+ "b2_159": {
+  "ru": "Глобальный автосброс устройств выключен",
+  "en": "Global auto device reset is off"
+ },
+ "b2_160": {
+  "ru": "Полностью офлайн, данные никуда не отправлялись",
+  "en": "Fully offline; no data was sent anywhere"
+ },
+ "b2_161": {
+  "ru": "Выбрать все",
+  "en": "Select all"
+ },
+ "b2_162": {
+  "ru": "Все",
+  "en": "All"
+ },
+ "b2_163": {
+  "ru": "Сбросить всё",
+  "en": "Reset all"
+ },
+ "b2_164": {
+  "ru": "Всего",
+  "en": "Total"
+ },
+ "b2_165": {
+  "ru": "Выкл.",
+  "en": "Off"
+ },
+ "b2_166": {
+  "ru": "Закрыть",
+  "en": "Close"
+ },
+ "b2_167": {
+  "ru": "Прогрев аккаунта",
+  "en": "Warm-up"
+ },
+ "b2_168": {
+  "ru": "Прогрев аккаунта ·",
+  "en": "Warm-up ·"
+ },
+ "b2_169": {
+  "ru": "Прогрев: переписка между аккаунтами",
+  "en": "Warm-up cross-chat"
+ },
+ "b2_170": {
+  "ru": "Задача прогрева завершена",
+  "en": "Warm-up task complete"
+ },
+ "b2_171": {
+  "ru": "Содержимое",
+  "en": "Content"
+ },
+ "b2_172": {
+  "ru": "Содержимое (поддерживаются варианты {привет|ты тут})",
+  "en": "Content (supports variants {hi|you there})"
+ },
+ "b2_173": {
+  "ru": "Встроенный парсер, opentele не нужен",
+  "en": "Built-in parser, no opentele required"
+ },
+ "b2_174": {
+  "ru": "Гамбия \\ud83c\\uddec\\ud83c\\uddf2",
+  "en": "Gambia \\ud83c\\uddec\\ud83c\\uddf2"
+ },
+ "b2_175": {
+  "ru": "Инструменты записи",
+  "en": "Write tools"
+ },
+ "b2_176": {
+  "ru": "Запись в базу данных…",
+  "en": "Writing to database…"
+ },
+ "b2_177": {
+  "ru": "Исландия \\ud83c\\uddee\\ud83c\\uddf8",
+  "en": "Iceland \\ud83c\\uddee\\ud83c\\uddf8"
+ },
+ "b2_178": {
+  "ru": "Заморожен",
+  "en": "Frozen"
+ },
+ "b2_179": {
+  "ru": "Подготовка…",
+  "en": "Preparing…"
+ },
+ "b2_180": {
+  "ru": "мин — один цикл сканирования, дальше выполнится автоматически",
+  "en": "min per scan cycle, then it runs automatically"
+ },
+ "b2_181": {
+  "ru": "мин — один цикл сканирования, дальше выполнится автоматически",
+  "en": "min per scan cycle, then it runs automatically"
+ },
+ "b2_182": {
+  "ru": "Список групп",
+  "en": "List groups"
+ },
+ "b2_183": {
+  "ru": "Удалить контакт",
+  "en": "Delete contact"
+ },
+ "b2_184": {
+  "ru": "Удалить",
+  "en": "Delete"
+ },
+ "b2_185": {
+  "ru": "Удалить задачу",
+  "en": "Delete task"
+ },
+ "b2_186": {
+  "ru": "Удалить задачу #",
+  "en": "Delete task #"
+ },
+ "b2_187": {
+  "ru": "Удалить локально",
+  "en": "Delete local"
+ },
+ "b2_188": {
+  "ru": "Удалить локальную запись",
+  "en": "Delete local record"
+ },
+ "b2_189": {
+  "ru": "Удалить локальную запись (сам аккаунт Telegram не затрагивается), но сессия в этом инструменте станет невосстановимой.",
+  "en": "Delete the local record (the Telegram account itself is untouched), but the session in this tool cannot be recovered."
+ },
+ "b2_190": {
+  "ru": "Удалить аккаунт",
+  "en": "Delete account"
+ },
+ "b2_191": {
+  "ru": "Ливия \\ud83c\\uddf1\\ud83c\\uddfe",
+  "en": "Libya \\ud83c\\uddf1\\ud83c\\uddfe"
+ },
+ "b2_192": {
+  "ru": "Метка",
+  "en": "Label"
+ },
+ "b2_193": {
+  "ru": "Метка|session",
+  "en": "Label|session"
+ },
+ "b2_194": {
+  "ru": "Метка (работает для одного каталога)",
+  "en": "Label (applies with a single directory)"
+ },
+ "b2_195": {
+  "ru": "Обновить",
+  "en": "Refresh"
+ },
+ "b2_196": {
+  "ru": "Обновить QR-код",
+  "en": "Refresh QR code"
+ },
+ "b2_197": {
+  "ru": "Обновление QR-кода…",
+  "en": "Refreshing QR code…"
+ },
+ "b2_198": {
+  "ru": " назад",
+  "en": " ago"
+ },
+ "b2_199": {
+  "ru": "Описание функций и документация",
+  "en": "Feature guide & docs"
+ }
+}

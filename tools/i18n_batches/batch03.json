@@ -1,0 +1,1002 @@
+[
+ {
+  "id": "b3_0",
+  "kind": "frontend",
+  "zh": "加入群聊"
+ },
+ {
+  "id": "b3_1",
+  "kind": "frontend",
+  "zh": "加纳 \\ud83c\\uddec\\ud83c\\udded"
+ },
+ {
+  "id": "b3_2",
+  "kind": "frontend",
+  "zh": "加联系人"
+ },
+ {
+  "id": "b3_3",
+  "kind": "frontend",
+  "zh": "加载 AI 配置失败："
+ },
+ {
+  "id": "b3_4",
+  "kind": "frontend",
+  "zh": "加载中…"
+ },
+ {
+  "id": "b3_5",
+  "kind": "frontend",
+  "zh": "加载失败："
+ },
+ {
+  "id": "b3_6",
+  "kind": "frontend",
+  "zh": "加载对话失败："
+ },
+ {
+  "id": "b3_7",
+  "kind": "frontend",
+  "zh": "勾选 + 批量栏"
+ },
+ {
+  "id": "b3_8",
+  "kind": "frontend",
+  "zh": "匈牙利 \\ud83c\\udded\\ud83c\\uddfa"
+ },
+ {
+  "id": "b3_9",
+  "kind": "frontend",
+  "zh": "单次清设备已完成（未开启循环）"
+ },
+ {
+  "id": "b3_10",
+  "kind": "frontend",
+  "zh": "南非 \\ud83c\\uddff\\ud83c\\udde6"
+ },
+ {
+  "id": "b3_11",
+  "kind": "frontend",
+  "zh": "卡塔尔 \\ud83c\\uddf6\\ud83c\\udde6"
+ },
+ {
+  "id": "b3_12",
+  "kind": "frontend",
+  "zh": "卢森堡 \\ud83c\\uddf1\\ud83c\\uddfa"
+ },
+ {
+  "id": "b3_13",
+  "kind": "frontend",
+  "zh": "印度 \\ud83c\\uddee\\ud83c\\uddf3"
+ },
+ {
+  "id": "b3_14",
+  "kind": "frontend",
+  "zh": "印度尼西亚 \\ud83c\\uddee\\ud83c\\udde9"
+ },
+ {
+  "id": "b3_15",
+  "kind": "frontend",
+  "zh": "危险工具（对外可见）"
+ },
+ {
+  "id": "b3_16",
+  "kind": "frontend",
+  "zh": "危险操作"
+ },
+ {
+  "id": "b3_17",
+  "kind": "frontend",
+  "zh": "即可；或先运行"
+ },
+ {
+  "id": "b3_18",
+  "kind": "frontend",
+  "zh": "厄瓜多尔 \\ud83c\\uddea\\ud83c\\udde8"
+ },
+ {
+  "id": "b3_19",
+  "kind": "frontend",
+  "zh": "原因"
+ },
+ {
+  "id": "b3_20",
+  "kind": "frontend",
+  "zh": "参数与布局"
+ },
+ {
+  "id": "b3_21",
+  "kind": "frontend",
+  "zh": "参数面板"
+ },
+ {
+  "id": "b3_22",
+  "kind": "frontend",
+  "zh": "及其执行记录？"
+ },
+ {
+  "id": "b3_23",
+  "kind": "frontend",
+  "zh": "双击"
+ },
+ {
+  "id": "b3_24",
+  "kind": "frontend",
+  "zh": "发文件"
+ },
+ {
+  "id": "b3_25",
+  "kind": "frontend",
+  "zh": "发消息"
+ },
+ {
+  "id": "b3_26",
+  "kind": "frontend",
+  "zh": "发起 2FA 重置"
+ },
+ {
+  "id": "b3_27",
+  "kind": "frontend",
+  "zh": "发起2FA重置"
+ },
+ {
+  "id": "b3_28",
+  "kind": "frontend",
+  "zh": "发送"
+ },
+ {
+  "id": "b3_29",
+  "kind": "frontend",
+  "zh": "发送任务完成"
+ },
+ {
+  "id": "b3_30",
+  "kind": "frontend",
+  "zh": "发送内容"
+ },
+ {
+  "id": "b3_31",
+  "kind": "frontend",
+  "zh": "发送消息"
+ },
+ {
+  "id": "b3_32",
+  "kind": "frontend",
+  "zh": "发送目标"
+ },
+ {
+  "id": "b3_33",
+  "kind": "frontend",
+  "zh": "发送验证码"
+ },
+ {
+  "id": "b3_34",
+  "kind": "frontend",
+  "zh": "取消"
+ },
+ {
+  "id": "b3_35",
+  "kind": "frontend",
+  "zh": "取消 2FA 重置"
+ },
+ {
+  "id": "b3_36",
+  "kind": "frontend",
+  "zh": "取消2FA重置"
+ },
+ {
+  "id": "b3_37",
+  "kind": "frontend",
+  "zh": "取消选择"
+ },
+ {
+  "id": "b3_38",
+  "kind": "frontend",
+  "zh": "取码"
+ },
+ {
+  "id": "b3_39",
+  "kind": "frontend",
+  "zh": "取码前缀默认读环境变量 <code>TAM_TOAPI_BASE</code> / <code>DM</code> / <code>SERVER_IP:API_PORT</code>。</div>"
+ },
+ {
+  "id": "b3_40",
+  "kind": "frontend",
+  "zh": "取码链接"
+ },
+ {
+  "id": "b3_41",
+  "kind": "frontend",
+  "zh": "取码链接可访问："
+ },
+ {
+  "id": "b3_42",
+  "kind": "frontend",
+  "zh": "取码链接探测失败："
+ },
+ {
+  "id": "b3_43",
+  "kind": "frontend",
+  "zh": "取码链接（可选）"
+ },
+ {
+  "id": "b3_44",
+  "kind": "frontend",
+  "zh": "受限"
+ },
+ {
+  "id": "b3_45",
+  "kind": "frontend",
+  "zh": "变体数 1"
+ },
+ {
+  "id": "b3_46",
+  "kind": "frontend",
+  "zh": "叙利亚 \\ud83c\\uddf8\\ud83c\\uddfe"
+ },
+ {
+  "id": "b3_47",
+  "kind": "frontend",
+  "zh": "古巴 \\ud83c\\udde8\\ud83c\\uddfa"
+ },
+ {
+  "id": "b3_48",
+  "kind": "frontend",
+  "zh": "只保存到本工具（加密入库），不会修改 Telegram 上的云密码。留空取消。"
+ },
+ {
+  "id": "b3_49",
+  "kind": "frontend",
+  "zh": "只发健康号"
+ },
+ {
+  "id": "b3_50",
+  "kind": "frontend",
+  "zh": "只提交改动过的项"
+ },
+ {
+  "id": "b3_51",
+  "kind": "frontend",
+  "zh": "只看 7 天内有新消息的"
+ },
+ {
+  "id": "b3_52",
+  "kind": "frontend",
+  "zh": "只要最近多少天发言的"
+ },
+ {
+  "id": "b3_53",
+  "kind": "frontend",
+  "zh": "只读/Agent 令牌不能做导入登录等写操作；热重载在只读模式下禁用。"
+ },
+ {
+  "id": "b3_54",
+  "kind": "frontend",
+  "zh": "只读工具"
+ },
+ {
+  "id": "b3_55",
+  "kind": "frontend",
+  "zh": "只读模式"
+ },
+ {
+  "id": "b3_56",
+  "kind": "frontend",
+  "zh": "只读测试，不发送 Telegram 验证码"
+ },
+ {
+  "id": "b3_57",
+  "kind": "frontend",
+  "zh": "可重试时间："
+ },
+ {
+  "id": "b3_58",
+  "kind": "frontend",
+  "zh": "右上角「访问令牌」：若配置了"
+ },
+ {
+  "id": "b3_59",
+  "kind": "frontend",
+  "zh": "右下角 ✦ 或顶栏「AI 助手」打开侧栏。配置上游（OpenAI 兼容 / Claude / Gemini / Azure）与 Key 后，勾选"
+ },
+ {
+  "id": "b3_60",
+  "kind": "frontend",
+  "zh": "号包 zip"
+ },
+ {
+  "id": "b3_61",
+  "kind": "frontend",
+  "zh": "号包拆分 / 合并 / 注册时间 / 转 API"
+ },
+ {
+  "id": "b3_62",
+  "kind": "frontend",
+  "zh": "号码"
+ },
+ {
+  "id": "b3_63",
+  "kind": "frontend",
+  "zh": "吉尔吉斯斯坦 \\ud83c\\uddf0\\ud83c\\uddec"
+ },
+ {
+  "id": "b3_64",
+  "kind": "frontend",
+  "zh": "同名的号会自动改名，不会静默覆盖。</div>"
+ },
+ {
+  "id": "b3_65",
+  "kind": "frontend",
+  "zh": "同意，周末整理一版笔记"
+ },
+ {
+  "id": "b3_66",
+  "kind": "frontend",
+  "zh": "同时存对话记录"
+ },
+ {
+  "id": "b3_67",
+  "kind": "frontend",
+  "zh": "同时重生几个号"
+ },
+ {
+  "id": "b3_68",
+  "kind": "frontend",
+  "zh": "同步登录时间"
+ },
+ {
+  "id": "b3_69",
+  "kind": "frontend",
+  "zh": "后"
+ },
+ {
+  "id": "b3_70",
+  "kind": "frontend",
+  "zh": "后打开 http://127.0.0.1:8848 即为真实数据。"
+ },
+ {
+  "id": "b3_71",
+  "kind": "frontend",
+  "zh": "向「"
+ },
+ {
+  "id": "b3_72",
+  "kind": "frontend",
+  "zh": "向线索群发"
+ },
+ {
+  "id": "b3_73",
+  "kind": "frontend",
+  "zh": "启用 AI 助手"
+ },
+ {
+  "id": "b3_74",
+  "kind": "frontend",
+  "zh": "启用变体"
+ },
+ {
+  "id": "b3_75",
+  "kind": "frontend",
+  "zh": "哥伦比亚 \\ud83c\\udde8\\ud83c\\uddf4"
+ },
+ {
+  "id": "b3_76",
+  "kind": "frontend",
+  "zh": "喀麦隆 \\ud83c\\udde8\\ud83c\\uddf2"
+ },
+ {
+  "id": "b3_77",
+  "kind": "frontend",
+  "zh": "回复"
+ },
+ {
+  "id": "b3_78",
+  "kind": "frontend",
+  "zh": "回复："
+ },
+ {
+  "id": "b3_79",
+  "kind": "frontend",
+  "zh": "国家/地区"
+ },
+ {
+  "id": "b3_80",
+  "kind": "frontend",
+  "zh": "土库曼 \\ud83c\\uddf9\\ud83c\\uddf2"
+ },
+ {
+  "id": "b3_81",
+  "kind": "frontend",
+  "zh": "土耳其 \\ud83c\\uddf9\\ud83c\\uddf7"
+ },
+ {
+  "id": "b3_82",
+  "kind": "frontend",
+  "zh": "在「配置与权限」中选择上游格式、填写接口与 Key，设置权限后启用。支持 Markdown 表格与代码块展示。"
+ },
+ {
+  "id": "b3_83",
+  "kind": "frontend",
+  "zh": "在此填入；本机免令牌模式可留空。顶栏还有"
+ },
+ {
+  "id": "b3_84",
+  "kind": "frontend",
+  "zh": "坦桑尼亚 \\ud83c\\uddf9\\ud83c\\uddff"
+ },
+ {
+  "id": "b3_85",
+  "kind": "frontend",
+  "zh": "埃及 \\ud83c\\uddea\\ud83c\\uddec"
+ },
+ {
+  "id": "b3_86",
+  "kind": "frontend",
+  "zh": "埃塞俄比亚 \\ud83c\\uddea\\ud83c\\uddf9"
+ },
+ {
+  "id": "b3_87",
+  "kind": "frontend",
+  "zh": "塔吉克斯坦 \\ud83c\\uddf9\\ud83c\\uddef"
+ },
+ {
+  "id": "b3_88",
+  "kind": "frontend",
+  "zh": "塞内加尔 \\ud83c\\uddf8\\ud83c\\uddf3"
+ },
+ {
+  "id": "b3_89",
+  "kind": "frontend",
+  "zh": "塞尔维亚 \\ud83c\\uddf7\\ud83c\\uddf8"
+ },
+ {
+  "id": "b3_90",
+  "kind": "frontend",
+  "zh": "填下拆分格式，比如 -9- 或 5,5,5"
+ },
+ {
+  "id": "b3_91",
+  "kind": "frontend",
+  "zh": "填的不是数字："
+ },
+ {
+  "id": "b3_92",
+  "kind": "frontend",
+  "zh": "墨西哥 \\ud83c\\uddf2\\ud83c\\uddfd"
+ },
+ {
+  "id": "b3_93",
+  "kind": "frontend",
+  "zh": "处理中"
+ },
+ {
+  "id": "b3_94",
+  "kind": "frontend",
+  "zh": "天"
+ },
+ {
+  "id": "b3_95",
+  "kind": "frontend",
+  "zh": "天未执行，请看日志排查"
+ },
+ {
+  "id": "b3_96",
+  "kind": "frontend",
+  "zh": "失效"
+ },
+ {
+  "id": "b3_97",
+  "kind": "frontend",
+  "zh": "失败"
+ },
+ {
+  "id": "b3_98",
+  "kind": "frontend",
+  "zh": "失败原因归类："
+ },
+ {
+  "id": "b3_99",
+  "kind": "frontend",
+  "zh": "失败摘要："
+ },
+ {
+  "id": "b3_100",
+  "kind": "frontend",
+  "zh": "失败重试"
+ },
+ {
+  "id": "b3_101",
+  "kind": "frontend",
+  "zh": "失败："
+ },
+ {
+  "id": "b3_102",
+  "kind": "frontend",
+  "zh": "头像可见"
+ },
+ {
+  "id": "b3_103",
+  "kind": "frontend",
+  "zh": "奥地利 \\ud83c\\udde6\\ud83c\\uddf9"
+ },
+ {
+  "id": "b3_104",
+  "kind": "frontend",
+  "zh": "如：高活跃,币圈"
+ },
+ {
+  "id": "b3_105",
+  "kind": "frontend",
+  "zh": "委内瑞拉 \\ud83c\\uddfb\\ud83c\\uddea"
+ },
+ {
+  "id": "b3_106",
+  "kind": "frontend",
+  "zh": "存活"
+ },
+ {
+  "id": "b3_107",
+  "kind": "frontend",
+  "zh": "孟加拉国 \\ud83c\\udde7\\ud83c\\udde9"
+ },
+ {
+  "id": "b3_108",
+  "kind": "frontend",
+  "zh": "安全注意"
+ },
+ {
+  "id": "b3_109",
+  "kind": "frontend",
+  "zh": "安装失败："
+ },
+ {
+  "id": "b3_110",
+  "kind": "frontend",
+  "zh": "安装完成"
+ },
+ {
+  "id": "b3_111",
+  "kind": "frontend",
+  "zh": "安装成功"
+ },
+ {
+  "id": "b3_112",
+  "kind": "frontend",
+  "zh": "完成"
+ },
+ {
+  "id": "b3_113",
+  "kind": "frontend",
+  "zh": "完成 1/1"
+ },
+ {
+  "id": "b3_114",
+  "kind": "frontend",
+  "zh": "完成："
+ },
+ {
+  "id": "b3_115",
+  "kind": "frontend",
+  "zh": "完成：成功"
+ },
+ {
+  "id": "b3_116",
+  "kind": "frontend",
+  "zh": "完整权限"
+ },
+ {
+  "id": "b3_117",
+  "kind": "frontend",
+  "zh": "宽屏"
+ },
+ {
+  "id": "b3_118",
+  "kind": "frontend",
+  "zh": "密码错误"
+ },
+ {
+  "id": "b3_119",
+  "kind": "frontend",
+  "zh": "密钥"
+ },
+ {
+  "id": "b3_120",
+  "kind": "frontend",
+  "zh": "富文本"
+ },
+ {
+  "id": "b3_121",
+  "kind": "frontend",
+  "zh": "富文本发送"
+ },
+ {
+  "id": "b3_122",
+  "kind": "frontend",
+  "zh": "对"
+ },
+ {
+  "id": "b3_123",
+  "kind": "frontend",
+  "zh": "对话"
+ },
+ {
+  "id": "b3_124",
+  "kind": "frontend",
+  "zh": "对话 ·"
+ },
+ {
+  "id": "b3_125",
+  "kind": "frontend",
+  "zh": "对话记录"
+ },
+ {
+  "id": "b3_126",
+  "kind": "frontend",
+  "zh": "导入"
+ },
+ {
+  "id": "b3_127",
+  "kind": "frontend",
+  "zh": "导入 StringSession"
+ },
+ {
+  "id": "b3_128",
+  "kind": "frontend",
+  "zh": "导入 session"
+ },
+ {
+  "id": "b3_129",
+  "kind": "frontend",
+  "zh": "导入 session 文件"
+ },
+ {
+  "id": "b3_130",
+  "kind": "frontend",
+  "zh": "导入中"
+ },
+ {
+  "id": "b3_131",
+  "kind": "frontend",
+  "zh": "导入会话"
+ },
+ {
+  "id": "b3_132",
+  "kind": "frontend",
+  "zh": "导入会话文件"
+ },
+ {
+  "id": "b3_133",
+  "kind": "frontend",
+  "zh": "导入使用 NDJSON 流式进度，弹窗会显示当前序号/总数，不再是卡住的假进度条。同一"
+ },
+ {
+  "id": "b3_134",
+  "kind": "frontend",
+  "zh": "导入失败"
+ },
+ {
+  "id": "b3_135",
+  "kind": "frontend",
+  "zh": "导入失败 0 成功，详情见日志区"
+ },
+ {
+  "id": "b3_136",
+  "kind": "frontend",
+  "zh": "导入失败："
+ },
+ {
+  "id": "b3_137",
+  "kind": "frontend",
+  "zh": "导入失败：0 个账号，详情见下方日志区"
+ },
+ {
+  "id": "b3_138",
+  "kind": "frontend",
+  "zh": "导入布局"
+ },
+ {
+  "id": "b3_139",
+  "kind": "frontend",
+  "zh": "导入成功"
+ },
+ {
+  "id": "b3_140",
+  "kind": "frontend",
+  "zh": "导出"
+ },
+ {
+  "id": "b3_141",
+  "kind": "frontend",
+  "zh": "导出 .session"
+ },
+ {
+  "id": "b3_142",
+  "kind": "frontend",
+  "zh": "导出 CSV"
+ },
+ {
+  "id": "b3_143",
+  "kind": "frontend",
+  "zh": "导出 StringSession"
+ },
+ {
+  "id": "b3_144",
+  "kind": "frontend",
+  "zh": "导出 tdata"
+ },
+ {
+  "id": "b3_145",
+  "kind": "frontend",
+  "zh": "导出 tdata 依赖 opentele。"
+ },
+ {
+  "id": "b3_146",
+  "kind": "frontend",
+  "zh": "导出 tdata 需要服务器已安装 opentele，且会话有效。继续？"
+ },
+ {
+  "id": "b3_147",
+  "kind": "frontend",
+  "zh": "导出.session"
+ },
+ {
+  "id": "b3_148",
+  "kind": "frontend",
+  "zh": "导出、重生、转 API 产物等同登录凭证，勿公开传播。"
+ },
+ {
+  "id": "b3_149",
+  "kind": "frontend",
+  "zh": "导出为 JSON 文件，可在其它电脑/浏览器导入"
+ },
+ {
+  "id": "b3_150",
+  "kind": "frontend",
+  "zh": "导出只转换库内已有会话，不会新开授权。凭证等同登录权，勿外泄。"
+ },
+ {
+  "id": "b3_151",
+  "kind": "frontend",
+  "zh": "导出号包"
+ },
+ {
+  "id": "b3_152",
+  "kind": "frontend",
+  "zh": "导出失败："
+ },
+ {
+  "id": "b3_153",
+  "kind": "frontend",
+  "zh": "导出布局"
+ },
+ {
+  "id": "b3_154",
+  "kind": "frontend",
+  "zh": "导出报告"
+ },
+ {
+  "id": "b3_155",
+  "kind": "frontend",
+  "zh": "导出新号包？"
+ },
+ {
+  "id": "b3_156",
+  "kind": "frontend",
+  "zh": "导出确认"
+ },
+ {
+  "id": "b3_157",
+  "kind": "frontend",
+  "zh": "封禁"
+ },
+ {
+  "id": "b3_158",
+  "kind": "frontend",
+  "zh": "将删除选中的"
+ },
+ {
+  "id": "b3_159",
+  "kind": "frontend",
+  "zh": "将向 Telegram 官方申请【永久删除】账号 #"
+ },
+ {
+  "id": "b3_160",
+  "kind": "frontend",
+  "zh": "将对"
+ },
+ {
+  "id": "b3_161",
+  "kind": "frontend",
+  "zh": "将对选中的"
+ },
+ {
+  "id": "b3_162",
+  "kind": "frontend",
+  "zh": "将对选中的健康账号执行养号（保活在线 + 随机已读 + 账号互聊）。 服务端批量执行，完成后统一返回结果。"
+ },
+ {
+  "id": "b3_163",
+  "kind": "frontend",
+  "zh": "将导出 session+json 号包 zip（敏感凭证）。"
+ },
+ {
+  "id": "b3_164",
+  "kind": "frontend",
+  "zh": "将导出该账号会话文件（敏感凭证）。继续？"
+ },
+ {
+  "id": "b3_165",
+  "kind": "frontend",
+  "zh": "将导出选中的"
+ },
+ {
+  "id": "b3_166",
+  "kind": "frontend",
+  "zh": "将提交给 Telegram 的原因说明，可留空用默认。"
+ },
+ {
+  "id": "b3_167",
+  "kind": "frontend",
+  "zh": "将用新设备指纹重新登录该号： · 旧 session 会尝试注销（前手难再用） · 库内换成新会话 · 需要能收 Telegram 官方验证码 · 短时间不要反复重生，否则会触发登录限流（PhonePasswordFlood）"
+ },
+ {
+  "id": "b3_168",
+  "kind": "frontend",
+  "zh": "将真实重启后端进程（os.execv），约 1–3 秒服务不可用。\\ 进行中的导入/任务会中断。\\ 确认继续？"
+ },
+ {
+  "id": "b3_169",
+  "kind": "frontend",
+  "zh": "将解密并显示该账号的 StringSession。会话等同登录凭证，请勿泄露。继续？"
+ },
+ {
+  "id": "b3_170",
+  "kind": "frontend",
+  "zh": "将踢掉该账号的其他所有登录设备，只保留本机会话。"
+ },
+ {
+  "id": "b3_171",
+  "kind": "frontend",
+  "zh": "将踢掉选中"
+ },
+ {
+  "id": "b3_172",
+  "kind": "frontend",
+  "zh": "小时"
+ },
+ {
+  "id": "b3_173",
+  "kind": "frontend",
+  "zh": "小时踢出其它设备（踢完回查校验） · 监控"
+ },
+ {
+  "id": "b3_174",
+  "kind": "frontend",
+  "zh": "尚无接管时间"
+ },
+ {
+  "id": "b3_175",
+  "kind": "frontend",
+  "zh": "尚未保存 Key"
+ },
+ {
+  "id": "b3_176",
+  "kind": "frontend",
+  "zh": "尚未发送验证码。可手动发码后填写验证码，或点击自动接码登录。"
+ },
+ {
+  "id": "b3_177",
+  "kind": "frontend",
+  "zh": "尚未发送验证码。点击“发送验证码”后手动填写收到的验证码。"
+ },
+ {
+  "id": "b3_178",
+  "kind": "frontend",
+  "zh": "尚未发送验证码。请选择手动发码或自动接码登录。"
+ },
+ {
+  "id": "b3_179",
+  "kind": "frontend",
+  "zh": "尚未选择文件"
+ },
+ {
+  "id": "b3_180",
+  "kind": "frontend",
+  "zh": "尼日利亚 \\ud83c\\uddf3\\ud83c\\uddec"
+ },
+ {
+  "id": "b3_181",
+  "kind": "frontend",
+  "zh": "尼泊尔 \\ud83c\\uddf3\\ud83c\\uddf5"
+ },
+ {
+  "id": "b3_182",
+  "kind": "frontend",
+  "zh": "屏蔽/取消屏蔽用户"
+ },
+ {
+  "id": "b3_183",
+  "kind": "frontend",
+  "zh": "工具箱"
+ },
+ {
+  "id": "b3_184",
+  "kind": "frontend",
+  "zh": "工具箱 ·"
+ },
+ {
+  "id": "b3_185",
+  "kind": "frontend",
+  "zh": "工具箱 · 批量操作"
+ },
+ {
+  "id": "b3_186",
+  "kind": "frontend",
+  "zh": "工具箱单号"
+ },
+ {
+  "id": "b3_187",
+  "kind": "frontend",
+  "zh": "工具箱批量"
+ },
+ {
+  "id": "b3_188",
+  "kind": "frontend",
+  "zh": "已下载"
+ },
+ {
+  "id": "b3_189",
+  "kind": "frontend",
+  "zh": "已下载错误报告"
+ },
+ {
+  "id": "b3_190",
+  "kind": "frontend",
+  "zh": "已保存"
+ },
+ {
+  "id": "b3_191",
+  "kind": "frontend",
+  "zh": "已停止"
+ },
+ {
+  "id": "b3_192",
+  "kind": "frontend",
+  "zh": "已关闭"
+ },
+ {
+  "id": "b3_193",
+  "kind": "frontend",
+  "zh": "已删除"
+ },
+ {
+  "id": "b3_194",
+  "kind": "frontend",
+  "zh": "已删除 · 成功"
+ },
+ {
+  "id": "b3_195",
+  "kind": "frontend",
+  "zh": "已到期 · 待执行"
+ },
+ {
+  "id": "b3_196",
+  "kind": "frontend",
+  "zh": "已到期（应于"
+ },
+ {
+  "id": "b3_197",
+  "kind": "frontend",
+  "zh": "已加载"
+ },
+ {
+  "id": "b3_198",
+  "kind": "frontend",
+  "zh": "已取消 2FA 重置"
+ },
+ {
+  "id": "b3_199",
+  "kind": "frontend",
+  "zh": "已向上收紧，消除空隙"
+ }
+]

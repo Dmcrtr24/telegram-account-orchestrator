@@ -1,0 +1,1002 @@
+[
+ {
+  "id": "b1_0",
+  "kind": "frontend",
+  "zh": "\" placeholder=\"例如 1,2,5\" /></label>"
+ },
+ {
+  "id": "b1_1",
+  "kind": "frontend",
+  "zh": "\" rows=\"5\" placeholder=\"每行一个\"></textarea></label>"
+ },
+ {
+  "id": "b1_2",
+  "kind": "frontend",
+  "zh": "${s.set ? '✓ 已设置' : '— 未设置'}"
+ },
+ {
+  "id": "b1_3",
+  "kind": "frontend",
+  "zh": "${s.set ? '已设置，留空不改' : '未设置'}"
+ },
+ {
+  "id": "b1_4",
+  "kind": "frontend",
+  "zh": "')\">用完删除</button></div>"
+ },
+ {
+  "id": "b1_5",
+  "kind": "frontend",
+  "zh": "'; $('#setHint').textContent = d.env_path ? ('写入 ' + d.env_path) : ''; } catch (e) { box.innerHTML = `"
+ },
+ {
+  "id": "b1_6",
+  "kind": "frontend",
+  "zh": ".session / zip、填"
+ },
+ {
+  "id": "b1_7",
+  "kind": "frontend",
+  "zh": "/ zip，或服务端路径，或 StringSession 文本。"
+ },
+ {
+  "id": "b1_8",
+  "kind": "frontend",
+  "zh": "/ 主密钥，丢失无法解密旧会话。"
+ },
+ {
+  "id": "b1_9",
+  "kind": "frontend",
+  "zh": "/ 共"
+ },
+ {
+  "id": "b1_10",
+  "kind": "frontend",
+  "zh": "/ 失败"
+ },
+ {
+  "id": "b1_11",
+  "kind": "frontend",
+  "zh": "/ 属性里「解除锁定」。"
+ },
+ {
+  "id": "b1_12",
+  "kind": "frontend",
+  "zh": "/ 跳过"
+ },
+ {
+  "id": "b1_13",
+  "kind": "frontend",
+  "zh": "/home/me/sessions 或 /path/to/acc.session"
+ },
+ {
+  "id": "b1_14",
+  "kind": "frontend",
+  "zh": "/home/me/tdata 或 /path/to/号包父目录"
+ },
+ {
+  "id": "b1_15",
+  "kind": "frontend",
+  "zh": "1 = 串行（最稳） 2~5 = 并行加快，可能触发 FloodWait 最大 8 默认来自参数面板 TAM_REGEN_CONCURRENCY"
+ },
+ {
+  "id": "b1_16",
+  "kind": "frontend",
+  "zh": "1 小时"
+ },
+ {
+  "id": "b1_17",
+  "kind": "frontend",
+  "zh": "10 分钟"
+ },
+ {
+  "id": "b1_18",
+  "kind": "frontend",
+  "zh": "1BVtsOK4Bu...&#10;主号|1AAQ...&#10;# 注释行会被忽略"
+ },
+ {
+  "id": "b1_19",
+  "kind": "frontend",
+  "zh": "5 位数字"
+ },
+ {
+  "id": "b1_20",
+  "kind": "frontend",
+  "zh": "</b> 个号</span><span class=\"muted\">（还没拆，只是看一眼）</span>"
+ },
+ {
+  "id": "b1_21",
+  "kind": "frontend",
+  "zh": "<button class=\"fit\" onclick=\"openModal('mAdd')\">手动添加</button>"
+ },
+ {
+  "id": "b1_22",
+  "kind": "frontend",
+  "zh": "<button class=\"fit\" onclick=\"openModal('mImport')\">手机号清单</button>"
+ },
+ {
+  "id": "b1_23",
+  "kind": "frontend",
+  "zh": "<button class=\"fit\" onclick=\"openModal('mSession')\">导入 session</button>"
+ },
+ {
+  "id": "b1_24",
+  "kind": "frontend",
+  "zh": "<button class=\"fit\" onclick=\"openModal('mTdata')\">导入 tdata</button>"
+ },
+ {
+  "id": "b1_25",
+  "kind": "frontend",
+  "zh": "<button class=\"primary write\" onclick=\"saveAiConfig()\">保存配置</button>"
+ },
+ {
+  "id": "b1_26",
+  "kind": "frontend",
+  "zh": "<button class=\"sm write\" onclick=\"runTb()\">对选中的号执行</button>"
+ },
+ {
+  "id": "b1_27",
+  "kind": "frontend",
+  "zh": "<button class=\"sm write\" onclick=\"ztConvert()\">开始互转</button></div>"
+ },
+ {
+  "id": "b1_28",
+  "kind": "frontend",
+  "zh": "<button class=\"sm write\" onclick=\"ztMergeRun()\">开始合并</button>"
+ },
+ {
+  "id": "b1_29",
+  "kind": "frontend",
+  "zh": "<button class=\"sm write\" onclick=\"ztPasskey()\">创建 Passkey 凭证包</button></div>"
+ },
+ {
+  "id": "b1_30",
+  "kind": "frontend",
+  "zh": "<button class=\"sm write\" onclick=\"ztRegtime()\">开始分类</button></div>"
+ },
+ {
+  "id": "b1_31",
+  "kind": "frontend",
+  "zh": "<button class=\"sm write\" onclick=\"ztToapi()\">开始转 API</button></div>"
+ },
+ {
+  "id": "b1_32",
+  "kind": "frontend",
+  "zh": "<button class=\"sm write\" onclick=\"ztUnpack()\">拆包</button></div>"
+ },
+ {
+  "id": "b1_33",
+  "kind": "frontend",
+  "zh": "<button class=\"sm\" onclick=\"loadAiConfig()\">重新加载</button>"
+ },
+ {
+  "id": "b1_34",
+  "kind": "frontend",
+  "zh": "<button class=\"sm\" onclick=\"ztAnalyze()\">先看看有多少个号</button>"
+ },
+ {
+  "id": "b1_35",
+  "kind": "frontend",
+  "zh": "<button class=\"sm\" onclick=\"ztMergeAdd()\">添加到合并作业</button>"
+ },
+ {
+  "id": "b1_36",
+  "kind": "frontend",
+  "zh": "<button type=\"button\" class=\"sm write\" onclick=\"applyAiPresetOnly()\">套用预设到勾选</button>"
+ },
+ {
+  "id": "b1_37",
+  "kind": "frontend",
+  "zh": "<button type=\"button\" class=\"sm\" onclick=\"aiPermSetAll(false)\">全不选</button>"
+ },
+ {
+  "id": "b1_38",
+  "kind": "frontend",
+  "zh": "<button type=\"button\" class=\"sm\" onclick=\"aiPermSetAll(true)\">全选</button>"
+ },
+ {
+  "id": "b1_39",
+  "kind": "frontend",
+  "zh": "<button type=\"button\" class=\"sm\" onclick=\"aiPermSetDanger('read')\">仅只读</button>"
+ },
+ {
+  "id": "b1_40",
+  "kind": "frontend",
+  "zh": "<code>api.json</code> 与取码链接清单（对齐机器人「转 API」；源自 GAFBot MIT）。"
+ },
+ {
+  "id": "b1_41",
+  "kind": "frontend",
+  "zh": "<div class=\"ai-bubble sys\">已恢复本机历史"
+ },
+ {
+  "id": "b1_42",
+  "kind": "frontend",
+  "zh": "<div class=\"ai-hint\" id=\"aiProviderHint\">选择与你的 API 文档一致的格式</div>"
+ },
+ {
+  "id": "b1_43",
+  "kind": "frontend",
+  "zh": "<div class=\"ai-hint\">已开启 <strong id=\"aiPermCount\">"
+ },
+ {
+  "id": "b1_44",
+  "kind": "frontend",
+  "zh": "<div class=\"ai-hint\">默认 14000 字符。可按模型上下文改大/改小；保存后立即生效。压缩只影响发给模型的内容，界面仍可见完整气泡。</div>"
+ },
+ {
+  "id": "b1_45",
+  "kind": "frontend",
+  "zh": "<div class=\"ai-row sys\"><div class=\"ai-bubble sys\">暂无对话。在「配置与权限」启用 AI 后即可提问。历史保存在本机浏览器。</div></div>"
+ },
+ {
+  "id": "b1_46",
+  "kind": "frontend",
+  "zh": "<div class=\"ai-switch-sub\">关闭并保存后对话无法发送；权限与 Key 仍保留</div></div>"
+ },
+ {
+  "id": "b1_47",
+  "kind": "frontend",
+  "zh": "<div class=\"chat-empty\">没有对话记录。<br/>采集发言人时请勾选「同时存对话记录」。</div>"
+ },
+ {
+  "id": "b1_48",
+  "kind": "frontend",
+  "zh": "<div class=\"chat-stats\">本页"
+ },
+ {
+  "id": "b1_49",
+  "kind": "frontend",
+  "zh": "<div class=\"empty-hint\">导入后建议先「健康检查」同步状态与二验，再养号或改二验</div>"
+ },
+ {
+  "id": "b1_50",
+  "kind": "frontend",
+  "zh": "<div class=\"err\">有"
+ },
+ {
+  "id": "b1_51",
+  "kind": "frontend",
+  "zh": "<div class=\"muted\" style=\"margin-bottom:4px\">上传 session / tdata 号包，生成重命名 session、"
+ },
+ {
+  "id": "b1_52",
+  "kind": "frontend",
+  "zh": "<div class=\"muted\" style=\"margin-bottom:4px\">可一次多选，也可分多次添加（攒到同一个作业）。"
+ },
+ {
+  "id": "b1_53",
+  "kind": "frontend",
+  "zh": "<div class=\"muted\" style=\"margin-bottom:4px\">对齐机器人 /convert：Session → Tdata（需 opentele）或 Tdata → Session（内置解析）。</div>"
+ },
+ {
+  "id": "b1_54",
+  "kind": "frontend",
+  "zh": "<div class=\"muted\" style=\"margin-bottom:4px\">对齐机器人 /passkey 创建方向：上传 session 号包，初始化 Passkey 注册并下载凭证 JSON。</div>"
+ },
+ {
+  "id": "b1_55",
+  "kind": "frontend",
+  "zh": "<div class=\"muted\" style=\"margin-bottom:4px\">默认<b>完全离线</b>：只用包里 json 已有的"
+ },
+ {
+  "id": "b1_56",
+  "kind": "frontend",
+  "zh": "<div class=\"muted\" style=\"margin-bottom:6px\">共"
+ },
+ {
+  "id": "b1_57",
+  "kind": "frontend",
+  "zh": "<div class=\"muted\" style=\"margin-bottom:8px\">这三个工具处理的是你上传的号包文件，"
+ },
+ {
+  "id": "b1_58",
+  "kind": "frontend",
+  "zh": "<div class=\"muted\">取码前缀"
+ },
+ {
+  "id": "b1_59",
+  "kind": "frontend",
+  "zh": "<div class=\"muted\">并发度"
+ },
+ {
+  "id": "b1_60",
+  "kind": "frontend",
+  "zh": "<div style=\"font-size:12.5px;font-weight:650;margin-bottom:8px\">上下文上限（可自定义）</div>"
+ },
+ {
+  "id": "b1_61",
+  "kind": "frontend",
+  "zh": "<div><div class=\"ai-switch-label\">启用 AI 助手</div>"
+ },
+ {
+  "id": "b1_62",
+  "kind": "frontend",
+  "zh": "<div>还没有账号</div>"
+ },
+ {
+  "id": "b1_63",
+  "kind": "frontend",
+  "zh": "<h4 style=\"margin:10px 0 4px\">一、拆包</h4>"
+ },
+ {
+  "id": "b1_64",
+  "kind": "frontend",
+  "zh": "<h4 style=\"margin:10px 0 4px\">三、按注册时间分类</h4>"
+ },
+ {
+  "id": "b1_65",
+  "kind": "frontend",
+  "zh": "<h4 style=\"margin:10px 0 4px\">二、合并</h4>"
+ },
+ {
+  "id": "b1_66",
+  "kind": "frontend",
+  "zh": "<h4 style=\"margin:10px 0 4px\">六、Passkey</h4>"
+ },
+ {
+  "id": "b1_67",
+  "kind": "frontend",
+  "zh": "<h4 style=\"margin:14px 0 4px\">五、格式互转</h4>"
+ },
+ {
+  "id": "b1_68",
+  "kind": "frontend",
+  "zh": "<h4 style=\"margin:14px 0 4px\">四、转 API</h4>"
+ },
+ {
+  "id": "b1_69",
+  "kind": "frontend",
+  "zh": "<h4><span class=\"ai-step\">1</span>上游与密钥</h4>"
+ },
+ {
+  "id": "b1_70",
+  "kind": "frontend",
+  "zh": "<h4><span class=\"ai-step\">2</span>上下文与生成</h4>"
+ },
+ {
+  "id": "b1_71",
+  "kind": "frontend",
+  "zh": "<h4><span class=\"ai-step\">3</span>权限与范围</h4>"
+ },
+ {
+  "id": "b1_72",
+  "kind": "frontend",
+  "zh": "<input id=\"aiKey\" type=\"password\" placeholder=\"粘贴密钥，不会回显明文\" autocomplete=\"off\" /></label>"
+ },
+ {
+  "id": "b1_73",
+  "kind": "frontend",
+  "zh": "<input id=\"ztCvtPass\" type=\"password\" placeholder=\"有 passcode 才填\" autocomplete=\"off\" /></label>"
+ },
+ {
+  "id": "b1_74",
+  "kind": "frontend",
+  "zh": "<input id=\"ztFmt\" placeholder=\"-9- 表示每包 9 个；5,5,5 表示逐包指定\" /></label>"
+ },
+ {
+  "id": "b1_75",
+  "kind": "frontend",
+  "zh": "<input id=\"ztToapiBase\" placeholder=\"https://example.com 或 http://ip:port\" /></label>"
+ },
+ {
+  "id": "b1_76",
+  "kind": "frontend",
+  "zh": "<input id=\"ztToapiPass\" type=\"password\" placeholder=\"manual 模式必填\" autocomplete=\"off\" /></label>"
+ },
+ {
+  "id": "b1_77",
+  "kind": "frontend",
+  "zh": "<input id=\"ztToapiTdataPass\" type=\"password\" placeholder=\"桌面端设了本地密码才填\" autocomplete=\"off\" /></label>"
+ },
+ {
+  "id": "b1_78",
+  "kind": "frontend",
+  "zh": "<input type=\"checkbox\" id=\"aiClearKey\" /> 清除已保存的 Key</label>"
+ },
+ {
+  "id": "b1_79",
+  "kind": "frontend",
+  "zh": "<label class=\"f\" style=\"margin-top:12px\"><span>允许的账号 ID（逗号分隔，空=全部）</span>"
+ },
+ {
+  "id": "b1_80",
+  "kind": "frontend",
+  "zh": "<label class=\"f\"><span>2FA 处理</span>"
+ },
+ {
+  "id": "b1_81",
+  "kind": "frontend",
+  "zh": "<label class=\"f\"><span>session 号包 zip</span>"
+ },
+ {
+  "id": "b1_82",
+  "kind": "frontend",
+  "zh": "<label class=\"f\"><span>tdata 本地密码 passcode（可选）</span>"
+ },
+ {
+  "id": "b1_83",
+  "kind": "frontend",
+  "zh": "<label class=\"f\"><span>tdata 本地密码（仅 Tdata→Session 可选）</span>"
+ },
+ {
+  "id": "b1_84",
+  "kind": "frontend",
+  "zh": "<label class=\"f\"><span>保留最近消息条数</span>"
+ },
+ {
+  "id": "b1_85",
+  "kind": "frontend",
+  "zh": "<label class=\"f\"><span>取码 API 前缀（可选）</span>"
+ },
+ {
+  "id": "b1_86",
+  "kind": "frontend",
+  "zh": "<label class=\"f\"><span>号包 zip</span>"
+ },
+ {
+  "id": "b1_87",
+  "kind": "frontend",
+  "zh": "<label class=\"f\"><span>字符上限（约）</span>"
+ },
+ {
+  "id": "b1_88",
+  "kind": "frontend",
+  "zh": "<label class=\"f\"><span>工具轮次</span>"
+ },
+ {
+  "id": "b1_89",
+  "kind": "frontend",
+  "zh": "<label class=\"f\"><span>并发度</span>"
+ },
+ {
+  "id": "b1_90",
+  "kind": "frontend",
+  "zh": "<label class=\"f\"><span>拆分格式</span>"
+ },
+ {
+  "id": "b1_91",
+  "kind": "frontend",
+  "zh": "<label class=\"f\"><span>接口格式</span><select id=\"aiProvider\" onchange=\"aiProviderChange()\">"
+ },
+ {
+  "id": "b1_92",
+  "kind": "frontend",
+  "zh": "<label class=\"f\"><span>提示词预设</span><select id=\"aiPromptPreset\" onchange=\"aiApplyPromptPreset()\">"
+ },
+ {
+  "id": "b1_93",
+  "kind": "frontend",
+  "zh": "<label class=\"f\"><span>操作</span>"
+ },
+ {
+  "id": "b1_94",
+  "kind": "frontend",
+  "zh": "<label class=\"f\"><span>方向</span>"
+ },
+ {
+  "id": "b1_95",
+  "kind": "frontend",
+  "zh": "<label class=\"f\"><span>权限预设</span><select id=\"aiPreset\">"
+ },
+ {
+  "id": "b1_96",
+  "kind": "frontend",
+  "zh": "<label class=\"f\"><span>模型名</span>"
+ },
+ {
+  "id": "b1_97",
+  "kind": "frontend",
+  "zh": "<label class=\"f\"><span>温度</span>"
+ },
+ {
+  "id": "b1_98",
+  "kind": "frontend",
+  "zh": "<label class=\"f\"><span>系统提示</span><textarea id=\"aiSys\" rows=\"3\">"
+ },
+ {
+  "id": "b1_99",
+  "kind": "frontend",
+  "zh": "<label class=\"f\"><span>统一 2FA（仅 manual）</span>"
+ },
+ {
+  "id": "b1_100",
+  "kind": "frontend",
+  "zh": "<label class=\"f\"><span>选择号包 ZIP</span>"
+ },
+ {
+  "id": "b1_101",
+  "kind": "frontend",
+  "zh": "<label class=\"f\"><span>选择号包</span>"
+ },
+ {
+  "id": "b1_102",
+  "kind": "frontend",
+  "zh": "<label class=\"f\"><span>选择号包（可多选）</span>"
+ },
+ {
+  "id": "b1_103",
+  "kind": "frontend",
+  "zh": "<option value=\"from_json\">从 JSON / 2fa.txt 提取</option>"
+ },
+ {
+  "id": "b1_104",
+  "kind": "frontend",
+  "zh": "<option value=\"manual\">统一手动输入 2FA</option>"
+ },
+ {
+  "id": "b1_105",
+  "kind": "frontend",
+  "zh": "<option value=\"no_2fa\">无二验</option>"
+ },
+ {
+  "id": "b1_106",
+  "kind": "frontend",
+  "zh": "<p class=\"ai-footnote\">配置保存在服务端数据库。支持 OpenAI 兼容、Anthropic Messages、Gemini、Azure OpenAI。</p>"
+ },
+ {
+  "id": "b1_107",
+  "kind": "frontend",
+  "zh": "<span class=\"muted\" id=\"tbSel\">已选"
+ },
+ {
+  "id": "b1_108",
+  "kind": "frontend",
+  "zh": "<span class=\"muted\" id=\"ztMergeN\">已攒 0 个包</span></div>"
+ },
+ {
+  "id": "b1_109",
+  "kind": "frontend",
+  "zh": "<span class=\"muted\" title=\"尚未检查，点「检查」同步有无二验\">-</span>"
+ },
+ {
+  "id": "b1_110",
+  "kind": "frontend",
+  "zh": "<span class=\"muted\">上传中…</span>"
+ },
+ {
+  "id": "b1_111",
+  "kind": "frontend",
+  "zh": "<span class=\"muted\">互转中…</span>"
+ },
+ {
+  "id": "b1_112",
+  "kind": "frontend",
+  "zh": "<span class=\"muted\">分析中…</span>"
+ },
+ {
+  "id": "b1_113",
+  "kind": "frontend",
+  "zh": "<span class=\"muted\">分类中…</span>"
+ },
+ {
+  "id": "b1_114",
+  "kind": "frontend",
+  "zh": "<span class=\"muted\">加载失败："
+ },
+ {
+  "id": "b1_115",
+  "kind": "frontend",
+  "zh": "<span class=\"muted\">合并中…</span>"
+ },
+ {
+  "id": "b1_116",
+  "kind": "frontend",
+  "zh": "<span class=\"muted\">处理中…</span>"
+ },
+ {
+  "id": "b1_117",
+  "kind": "frontend",
+  "zh": "<span class=\"muted\">失败："
+ },
+ {
+  "id": "b1_118",
+  "kind": "frontend",
+  "zh": "<span class=\"muted\">已传"
+ },
+ {
+  "id": "b1_119",
+  "kind": "frontend",
+  "zh": "<span class=\"muted\">执行中…</span>"
+ },
+ {
+  "id": "b1_120",
+  "kind": "frontend",
+  "zh": "<span class=\"muted\">拆包中，包大的话会慢一点…</span>"
+ },
+ {
+  "id": "b1_121",
+  "kind": "frontend",
+  "zh": "<span class=\"muted\">无，当前全部显示</span>"
+ },
+ {
+  "id": "b1_122",
+  "kind": "frontend",
+  "zh": "<span class=\"muted\">正在拉取群组…群多时需等几秒</span>"
+ },
+ {
+  "id": "b1_123",
+  "kind": "frontend",
+  "zh": "<span class=\"muted\">没有匹配的群。可取消“只看 7 天内有新消息的”再看看。</span>"
+ },
+ {
+  "id": "b1_124",
+  "kind": "frontend",
+  "zh": "<span class=\"muted\">转换中…</span>"
+ },
+ {
+  "id": "b1_125",
+  "kind": "frontend",
+  "zh": "<span class=\"muted\">还没有任务。可以先采集发言人，再对采集结果群发。</span>"
+ },
+ {
+  "id": "b1_126",
+  "kind": "frontend",
+  "zh": "<span class=\"muted\">还没有采集到线索。先在任务中心点“采集发言人”。</span>"
+ },
+ {
+  "id": "b1_127",
+  "kind": "frontend",
+  "zh": "<span class=\"muted\">（并发度"
+ },
+ {
+  "id": "b1_128",
+  "kind": "frontend",
+  "zh": "<span class=\"muted\">，其中"
+ },
+ {
+  "id": "b1_129",
+  "kind": "frontend",
+  "zh": "<span class=\"muted\">，失败"
+ },
+ {
+  "id": "b1_130",
+  "kind": "frontend",
+  "zh": "<span class=\"ok\">包里共 <b>"
+ },
+ {
+  "id": "b1_131",
+  "kind": "frontend",
+  "zh": "<span class=\"ok\">已攒"
+ },
+ {
+  "id": "b1_132",
+  "kind": "frontend",
+  "zh": "<span class=\"ok\">成功"
+ },
+ {
+  "id": "b1_133",
+  "kind": "frontend",
+  "zh": "<span class=\"tag s-restricted\">必填</span>"
+ },
+ {
+  "id": "b1_134",
+  "kind": "frontend",
+  "zh": "<span>危险工具(注销/退出/删会话)执行前需确认</span></label>"
+ },
+ {
+  "id": "b1_135",
+  "kind": "frontend",
+  "zh": "<span>改动类工具(改二验/资料/隐私/发消息等)执行前需确认</span></label>"
+ },
+ {
+  "id": "b1_136",
+  "kind": "frontend",
+  "zh": "<span>超出上限时自动压缩更早对话</span></label>"
+ },
+ {
+  "id": "b1_137",
+  "kind": "frontend",
+  "zh": "<table><thead><tr><th>账号</th><th>结果</th><th>说明</th></tr></thead><tbody>"
+ },
+ {
+  "id": "b1_138",
+  "kind": "frontend",
+  "zh": ">自定义</option>"
+ },
+ {
+  "id": "b1_139",
+  "kind": "frontend",
+  "zh": "AI 助手"
+ },
+ {
+  "id": "b1_140",
+  "kind": "frontend",
+  "zh": "AI 助手（可拖动）"
+ },
+ {
+  "id": "b1_141",
+  "kind": "frontend",
+  "zh": "AI 对话与权限配置"
+ },
+ {
+  "id": "b1_142",
+  "kind": "frontend",
+  "zh": "AI 配置已保存（已关闭助手）"
+ },
+ {
+  "id": "b1_143",
+  "kind": "frontend",
+  "zh": "AI 配置已保存（已启用）"
+ },
+ {
+  "id": "b1_144",
+  "kind": "frontend",
+  "zh": "Agent 工具调用"
+ },
+ {
+  "id": "b1_145",
+  "kind": "frontend",
+  "zh": "Crypto Talk 中文群"
+ },
+ {
+  "id": "b1_146",
+  "kind": "frontend",
+  "zh": "NFT 二级市场交流"
+ },
+ {
+  "id": "b1_147",
+  "kind": "frontend",
+  "zh": "OKPay · 成功"
+ },
+ {
+  "id": "b1_148",
+  "kind": "frontend",
+  "zh": "OKPay 余额"
+ },
+ {
+  "id": "b1_149",
+  "kind": "frontend",
+  "zh": "OKPay 余额 ·"
+ },
+ {
+  "id": "b1_150",
+  "kind": "frontend",
+  "zh": "OKPay 余额查询完成"
+ },
+ {
+  "id": "b1_151",
+  "kind": "frontend",
+  "zh": "OKPay 余额：对已登录号查询（需对应业务配置）。"
+ },
+ {
+  "id": "b1_152",
+  "kind": "frontend",
+  "zh": "OKPay余额"
+ },
+ {
+  "id": "b1_153",
+  "kind": "frontend",
+  "zh": "OpenAI 兼容"
+ },
+ {
+  "id": "b1_154",
+  "kind": "frontend",
+  "zh": "Passkey 凭证包已生成"
+ },
+ {
+  "id": "b1_155",
+  "kind": "frontend",
+  "zh": "Passkey 失败："
+ },
+ {
+  "id": "b1_156",
+  "kind": "frontend",
+  "zh": "StringSession 导入"
+ },
+ {
+  "id": "b1_157",
+  "kind": "frontend",
+  "zh": "StringSession 已复制到剪贴板"
+ },
+ {
+  "id": "b1_158",
+  "kind": "frontend",
+  "zh": "StringSession 文本"
+ },
+ {
+  "id": "b1_159",
+  "kind": "frontend",
+  "zh": "Windows「无法验证发布者」属未签名脚本提示，点"
+ },
+ {
+  "id": "b1_160",
+  "kind": "frontend",
+  "zh": "ZIP 合并"
+ },
+ {
+  "id": "b1_161",
+  "kind": "frontend",
+  "zh": "ZIP 工具"
+ },
+ {
+  "id": "b1_162",
+  "kind": "frontend",
+  "zh": "ZIP 工具 · 拆包/合并/注册时间/转 API"
+ },
+ {
+  "id": "b1_163",
+  "kind": "frontend",
+  "zh": "ZIP 工具完成"
+ },
+ {
+  "id": "b1_164",
+  "kind": "frontend",
+  "zh": "ZIP 工具（不碰库内号）"
+ },
+ {
+  "id": "b1_165",
+  "kind": "frontend",
+  "zh": "ZIP 拆包"
+ },
+ {
+  "id": "b1_166",
+  "kind": "frontend",
+  "zh": "\\ \\ 是否一键安装 opentele？"
+ },
+ {
+  "id": "b1_167",
+  "kind": "frontend",
+  "zh": "` + `为安全起见不回显明文。留空=不改动，填了才会覆盖。"
+ },
+ {
+  "id": "b1_168",
+  "kind": "frontend",
+  "zh": "manual 模式请填写统一 2FA"
+ },
+ {
+  "id": "b1_169",
+  "kind": "frontend",
+  "zh": "placeholder=\"留空 = 用参数面板里的 TAM_BATCH_CONCURRENCY\" /></label>"
+ },
+ {
+  "id": "b1_170",
+  "kind": "frontend",
+  "zh": "placeholder=\"留空 = 用参数面板里的 TAM_WORKERS\" /></label>"
+ },
+ {
+  "id": "b1_171",
+  "kind": "frontend",
+  "zh": "s 内有效）"
+ },
+ {
+  "id": "b1_172",
+  "kind": "frontend",
+  "zh": "session 导入"
+ },
+ {
+  "id": "b1_173",
+  "kind": "frontend",
+  "zh": "session 导入 ·"
+ },
+ {
+  "id": "b1_174",
+  "kind": "frontend",
+  "zh": "session 导入 文件"
+ },
+ {
+  "id": "b1_175",
+  "kind": "frontend",
+  "zh": "session 导入完成：成功"
+ },
+ {
+  "id": "b1_176",
+  "kind": "frontend",
+  "zh": "session 路径导入"
+ },
+ {
+  "id": "b1_177",
+  "kind": "frontend",
+  "zh": "tdata 导入"
+ },
+ {
+  "id": "b1_178",
+  "kind": "frontend",
+  "zh": "tdata 路径导入"
+ },
+ {
+  "id": "b1_179",
+  "kind": "frontend",
+  "zh": "· ⚠ 最久一个已逾期"
+ },
+ {
+  "id": "b1_180",
+  "kind": "frontend",
+  "zh": "· 下次"
+ },
+ {
+  "id": "b1_181",
+  "kind": "frontend",
+  "zh": "· 任务 #"
+ },
+ {
+  "id": "b1_182",
+  "kind": "frontend",
+  "zh": "· 含已保存二验（2fa.txt）"
+ },
+ {
+  "id": "b1_183",
+  "kind": "frontend",
+  "zh": "· 回复 #"
+ },
+ {
+  "id": "b1_184",
+  "kind": "frontend",
+  "zh": "· 失败"
+ },
+ {
+  "id": "b1_185",
+  "kind": "frontend",
+  "zh": "· 失败后"
+ },
+ {
+  "id": "b1_186",
+  "kind": "frontend",
+  "zh": "· 已授权"
+ },
+ {
+  "id": "b1_187",
+  "kind": "frontend",
+  "zh": "· 库内共"
+ },
+ {
+  "id": "b1_188",
+  "kind": "frontend",
+  "zh": "· 当前号耗时较长…"
+ },
+ {
+  "id": "b1_189",
+  "kind": "frontend",
+  "zh": "· 成功"
+ },
+ {
+  "id": "b1_190",
+  "kind": "frontend",
+  "zh": "· 旧授权已注销"
+ },
+ {
+  "id": "b1_191",
+  "kind": "frontend",
+  "zh": "· 最近"
+ },
+ {
+  "id": "b1_192",
+  "kind": "frontend",
+  "zh": "· 有二验但未保存密码，包内无真实 2fa.txt"
+ },
+ {
+  "id": "b1_193",
+  "kind": "frontend",
+  "zh": "· 未授权"
+ },
+ {
+  "id": "b1_194",
+  "kind": "frontend",
+  "zh": "· 模式"
+ },
+ {
+  "id": "b1_195",
+  "kind": "frontend",
+  "zh": "· 登录时会先启动监控"
+ },
+ {
+  "id": "b1_196",
+  "kind": "frontend",
+  "zh": "· 至"
+ },
+ {
+  "id": "b1_197",
+  "kind": "frontend",
+  "zh": "·单次"
+ },
+ {
+  "id": "b1_198",
+  "kind": "frontend",
+  "zh": "• 直接填目标，逗号分隔（@name 或 user_id） • 或填 lead:线索来源名"
+ },
+ {
+  "id": "b1_199",
+  "kind": "frontend",
+  "zh": "⚠ 不可逆操作，执行前会再确认一次。建议先拿一个号试。</div>"
+ }
+]

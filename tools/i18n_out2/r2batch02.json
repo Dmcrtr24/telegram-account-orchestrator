@@ -1,0 +1,622 @@
+{
+ "r2_0": {
+  "ru": "Белый список получателей через запятую, пусто = без ограничений",
+  "en": "Recipient allowlist, comma-separated, empty = no restriction"
+ },
+ "r2_1": {
+  "ru": "Отменить всё",
+  "en": "Cancel all"
+ },
+ "r2_2": {
+  "ru": "Префикс API получения кода (необязательно)",
+  "en": "Code retrieval API prefix (optional)"
+ },
+ "r2_3": {
+  "ru": "Не удалось запустить мониторинг платформы получения кода:",
+  "en": "Failed to start code platform monitoring:"
+ },
+ "r2_4": {
+  "ru": "Только на этой машине, веб-интерфейс слушает 127.0.0.1",
+  "en": "Local only; the web UI listens on 127.0.0.1"
+ },
+ "r2_5": {
+  "ru": "Влияет только на «вход по номеру телефона»; для импорта tdata не требуется. При необходимости получите пару на my.telegram.org — одна пара подходит для всех аккаунтов.",
+  "en": "Affects only “sign-in by phone number”; tdata import does not need it. Get a pair at my.telegram.org if needed — one pair is enough for all accounts."
+ },
+ "r2_6": {
+  "ru": "может быть только",
+  "en": "must be one of"
+ },
+ "r2_7": {
+  "ru": "В режиме только чтения нельзя менять настройки AI",
+  "en": "Read-only mode cannot change AI settings"
+ },
+ "r2_8": {
+  "ru": "В режиме только чтения перезапуск запрещён",
+  "en": "Restart is disabled in read-only mode"
+ },
+ "r2_9": {
+  "ru": "В режиме только чтения диалог с AI отключён",
+  "en": "AI chat is disabled in read-only mode"
+ },
+ "r2_10": {
+  "ru": "Режим только чтения: все операции записи отклоняются",
+  "en": "Read-only mode: all write operations are rejected"
+ },
+ "r2_11": {
+  "ru": "Чтение и запись, сейчас",
+  "en": "Read-write, currently"
+ },
+ "r2_12": {
+  "ru": "Объединение",
+  "en": "Merge"
+ },
+ "r2_13": {
+  "ru": "Объединение…",
+  "en": "Merging…"
+ },
+ "r2_14": {
+  "ru": "после этого 2FA перестанет действовать",
+  "en": "then 2FA stops applying"
+ },
+ "r2_15": {
+  "ru": "затем повторите",
+  "en": "then retry"
+ },
+ "r2_16": {
+  "ru": "затем повторите (ограничение Telegram, не сбой локальной системы)",
+  "en": "then retry (Telegram rate limit, not a local failure)"
+ },
+ "r2_17": {
+  "ru": "Ошибка фоновой задачи:",
+  "en": "Background task error:"
+ },
+ "r2_18": {
+  "ru": "Проверка перед запуском (развёртывание=",
+  "en": "Pre-start check (deploy="
+ },
+ "r2_19": {
+  "ru": "4. Перевод в API",
+  "en": "4. Convert to API"
+ },
+ "r2_20": {
+  "ru": "В",
+  "en": "In"
+ },
+ "r2_21": {
+  "ru": "Укажите в .env",
+  "en": "Set in .env"
+ },
+ "r2_22": {
+  "ru": "не является числом",
+  "en": "is not a number"
+ },
+ "r2_23": {
+  "ru": "Обработка…",
+  "en": "Processing…"
+ },
+ "r2_24": {
+  "ru": "дней·",
+  "en": "-day speakers·"
+ },
+ "r2_25": {
+  "ru": "Ошибка:",
+  "en": "Failed:"
+ },
+ "r2_26": {
+  "ru": "Аватар:",
+  "en": "Avatar:"
+ },
+ "r2_27": {
+  "ru": "Применить пресет к выбранным",
+  "en": "Apply preset to selected"
+ },
+ "r2_28": {
+  "ru": "симв., нужно ≥32). Удалите ошибочную строку ключа в .env и заново запустите setup.py для генерации.",
+  "en": "chars, need ≥32). Delete the wrong key line in .env, then rerun setup.py to generate it."
+ },
+ "r2_29": {
+  "ru": "Лимит символов (примерно)",
+  "en": "Character limit (approx.)"
+ },
+ "r2_30": {
+  "ru": "Безопасность",
+  "en": "Security"
+ },
+ "r2_31": {
+  "ru": "Установка превысила таймаут (>300s), установите вручную на сервере: pip install opentele",
+  "en": "Installation timed out (>300s), run manually on the server: pip install opentele"
+ },
+ "r2_32": {
+  "ru": "Полностью офлайн",
+  "en": "Fully offline"
+ },
+ "r2_33": {
+  "ru": "ключей=",
+  "en": "keys="
+ },
+ "r2_34": {
+  "ru": "Параметр-ключ",
+  "en": "Key-type parameter"
+ },
+ "r2_35": {
+  "ru": "Выполнить для выбранных",
+  "en": "Run for selected accounts"
+ },
+ "r2_36": {
+  "ru": "Как /convert в боте: Session → Tdata (нужен opentele) или Tdata → Session (встроенный парсер).",
+  "en": "Matches the bot's /convert: Session → Tdata (needs opentele) or Tdata → Session (built-in parser)."
+ },
+ "r2_37": {
+  "ru": "Как направление «создание» в /passkey бота: загрузите пакет session, инициализируйте регистрацию Passkey и скачайте JSON с учётными данными.",
+  "en": "Matches the bot's /passkey creation flow: upload a session account pack, initialize Passkey registration and download the credential JSON."
+ },
+ "r2_38": {
+  "ru": "Для экспорта tdata нужен opentele. Установка: pip install opentele (сейчас:",
+  "en": "Exporting tdata requires opentele. Install: pip install opentele (current:"
+ },
+ "r2_39": {
+  "ru": "Ещё не авторизован",
+  "en": "Not authorized yet"
+ },
+ "r2_40": {
+  "ru": "Инструмент не авторизован:",
+  "en": "Tool not authorized:"
+ },
+ "r2_41": {
+  "ru": "Инструмент не подтверждён, отменено:",
+  "en": "Tool not confirmed, canceled:"
+ },
+ "r2_42": {
+  "ru": "Раунды инструментов",
+  "en": "Tool rounds"
+ },
+ "r2_43": {
+  "ru": "Остановлено.",
+  "en": "Stopped."
+ },
+ "r2_44": {
+  "ru": "Новая сессия записана, время перехвата на этом устройстве сброшено; отзыв старой авторизации запрошен. Если нужны файлы tdata / .session, используйте функцию экспорта.",
+  "en": "New session written and local takeover time reset; revocation of the old authorization was attempted. For tdata / .session files, use the export feature."
+ },
+ "r2_45": {
+  "ru": "отправлено message_id=",
+  "en": "sent message_id="
+ },
+ "r2_46": {
+  "ru": "уже существует",
+  "en": "already exists"
+ },
+ "r2_47": {
+  "ru": "Установлено, повторная установка не нужна",
+  "en": "Already installed, no need to install again"
+ },
+ "r2_48": {
+  "ru": "Включено",
+  "en": "Enabled"
+ },
+ "r2_49": {
+  "ru": "авторизованные DC=",
+  "en": "authorized DCs="
+ },
+ "r2_50": {
+  "ru": "Нажато",
+  "en": "Clicked"
+ },
+ "r2_51": {
+  "ru": "создан",
+  "en": "generated"
+ },
+ "r2_52": {
+  "ru": "Проблемы выше проигнорированы через --force, запуск продолжен. Риск на вас.",
+  "en": "Problems above ignored with --force, starting anyway. You're on your own."
+ },
+ "r2_53": {
+  "ru": "Сброс запрошен, ожидание до",
+  "en": "Reset requested, waiting until"
+ },
+ "r2_54": {
+  "ru": "Сброс запрошен, нужно дождаться",
+  "en": "Reset requested; must wait until"
+ },
+ "r2_55": {
+  "ru": "Установлено (",
+  "en": "Set ("
+ },
+ "r2_56": {
+  "ru": "Пробный режим: операции записи возвращают только предпросмотр",
+  "en": "Dry run mode: write operations return a preview only"
+ },
+ "r2_57": {
+  "ru": "Параллельность и скорость",
+  "en": "Concurrency and rate"
+ },
+ "r2_58": {
+  "ru": "Параллельность",
+  "en": "Concurrency"
+ },
+ "r2_59": {
+  "ru": "Параллельность: ZIP workers=",
+  "en": "Concurrency: ZIP workers="
+ },
+ "r2_60": {
+  "ru": "Рекомендуется оставить включённым.",
+  "en": "Keep this enabled."
+ },
+ "r2_61": {
+  "ru": "Начать конвертацию",
+  "en": "Start conversion"
+ },
+ "r2_62": {
+  "ru": "Начать классификацию",
+  "en": "Start sorting"
+ },
+ "r2_63": {
+  "ru": "Начать объединение",
+  "en": "Start merge"
+ },
+ "r2_64": {
+  "ru": "Начать перевод в API",
+  "en": "Start API conversion"
+ },
+ "r2_65": {
+  "ru": "аватарок",
+  "en": "profile photos"
+ },
+ "r2_66": {
+  "ru": "Принудительно показать меню выбора режима запуска",
+  "en": "Force the startup mode menu"
+ },
+ "r2_67": {
+  "ru": "Сейчас",
+  "en": "Current"
+ },
+ "r2_68": {
+  "ru": "Сейчас режим только чтения/пробный, операции инструментов не выполняются",
+  "en": "Read-only/dry run mode is on; toolbox operations are not executed"
+ },
+ "r2_69": {
+  "ru": "обязательно",
+  "en": "required"
+ },
+ "r2_70": {
+  "ru": "Требуется confirm=true",
+  "en": "confirm=true is required"
+ },
+ "r2_71": {
+  "ru": "Запустить принудительно, игнорируя фатальные ошибки проверки",
+  "en": "Start anyway, ignoring fatal doctor errors"
+ },
+ "r2_72": {
+  "ru": "Авторизация по QR в Telegram на телефоне",
+  "en": "Authorize by QR in Telegram on your phone"
+ },
+ "r2_73": {
+  "ru": "Выполняется…",
+  "en": "Running…"
+ },
+ "r2_74": {
+  "ru": "Выполнить отмеченное",
+  "en": "Run selected"
+ },
+ "r2_75": {
+  "ru": "Ошибка выполнения:",
+  "en": "Execution failed:"
+ },
+ "r2_76": {
+  "ru": "Просканировано",
+  "en": "Scanned"
+ },
+ "r2_77": {
+  "ru": "Вход по QR вызвал ограничение:",
+  "en": "QR sign-in hit a rate limit:"
+ },
+ "r2_78": {
+  "ru": "Ограничение входа по QR:",
+  "en": "QR sign-in rate limited:"
+ },
+ "r2_79": {
+  "ru": "Максимальный интервал пакетных действий (с)",
+  "en": "Max interval between bulk actions (s)"
+ },
+ "r2_80": {
+  "ru": "Минимальный интервал пакетных действий (с)",
+  "en": "Min interval between bulk actions (s)"
+ },
+ "r2_81": {
+  "ru": "Пакетный экспорт поддерживает только pack или session",
+  "en": "Bulk export supports only pack or session"
+ },
+ "r2_82": {
+  "ru": "Параллельность пакетных операций по умолчанию (1-32, общая для веб-пакета / инструментов)",
+  "en": "Default parallelism for bulk operations (1-32, shared by web bulk / toolbox)"
+ },
+ "r2_83": {
+  "ru": "пакетный прогон=",
+  "en": "bulk run="
+ },
+ "r2_84": {
+  "ru": "Параллельность пакетной перегенерации сессий по умолчанию (1-8, большие значения вызывают лимит на отправку кодов)",
+  "en": "Default parallelism for bulk session regeneration (1-8, higher values easily hit code-sending rate limits)"
+ },
+ "r2_85": {
+  "ru": "Файл части не найден",
+  "en": "Shard file not found"
+ },
+ "r2_86": {
+  "ru": "Формат разбиения",
+  "en": "Split format"
+ },
+ "r2_87": {
+  "ru": "Распаковка",
+  "en": "Unpack"
+ },
+ "r2_88": {
+  "ru": "Распаковка, большие пакеты обрабатываются дольше…",
+  "en": "Unpacking; large packs take a bit longer…"
+ },
+ "r2_89": {
+  "ru": "Формат API",
+  "en": "API format"
+ },
+ "r2_90": {
+  "ru": "Время перехвата сброшено",
+  "en": "Takeover time reset"
+ },
+ "r2_91": {
+  "ru": "Пресет промпта",
+  "en": "Prompt preset"
+ },
+ "r2_92": {
+  "ru": "Получен запрос горячей перезагрузки, перезапуск сервиса TAO…",
+  "en": "Hot reload requested, restarting the TAO service…"
+ },
+ "r2_93": {
+  "ru": "Изменяющие инструменты (2FA/профиль/приватность/отправка сообщений и т.п.) требуют подтверждения",
+  "en": "Modifying tools (2FA/profile/privacy/messaging etc.) need confirmation"
+ },
+ "r2_94": {
+  "ru": "На сервере, доступ снаружи (не забудьте токен и HTTPS)",
+  "en": "On a server, exposed externally (remember the token and HTTPS)"
+ },
+ "r2_95": {
+  "ru": "Каталог данных",
+  "en": "Data directory"
+ },
+ "r2_96": {
+  "ru": "Файл не существует или уже удалён",
+  "en": "File does not exist or has been cleaned up"
+ },
+ "r2_97": {
+  "ru": "Файл не найден:",
+  "en": "File not found:"
+ },
+ "r2_98": {
+  "ru": "Недопустимое имя файла",
+  "en": "Invalid file name"
+ },
+ "r2_99": {
+  "ru": "Файл превышает",
+  "en": "File exceeds"
+ },
+ "r2_100": {
+  "ru": "Файл превышает 256MB",
+  "en": "File exceeds 256MB"
+ },
+ "r2_101": {
+  "ru": "Файл превышает 512MB",
+  "en": "File exceeds 512MB"
+ },
+ "r2_102": {
+  "ru": "Файл слишком большой (",
+  "en": "File too large ("
+ },
+ "r2_103": {
+  "ru": "Направление",
+  "en": "Direction"
+ },
+ "r2_104": {
+  "ru": "пароля нет",
+  "en": "no password"
+ },
+ "r2_105": {
+  "ru": "нет кнопки",
+  "en": "no button"
+ },
+ "r2_106": {
+  "ru": "Не удалось написать @",
+  "en": "Can't message @"
+ },
+ "r2_107": {
+  "ru": "Нет ни username, ни номера телефона — общаться нельзя (сначала запустите проверку работоспособности, чтобы дополнить данные)",
+  "en": "Has neither username nor phone number, cannot chat (run a health check first to fill in details)"
+ },
+ "r2_108": {
+  "ru": "Старая авторизация отозвана",
+  "en": "Old authorization revoked"
+ },
+ "r2_109": {
+  "ru": "Отзыв старой авторизации не подтверждён",
+  "en": "Old authorization revocation unconfirmed"
+ },
+ "r2_110": {
+  "ru": "Пока нельзя подать заявку снова, дождитесь",
+  "en": "Can't re-apply yet; wait until"
+ },
+ "r2_111": {
+  "ru": "Диалогов пока нет. Включите AI в «Конфигурация и права», чтобы задавать вопросы. История хранится в этом браузере.",
+  "en": "No conversation yet. Enable AI in “Config and permissions” to start asking. History is stored in this browser."
+ },
+ "r2_112": {
+  "ru": "только если есть passcode",
+  "en": "only if a passcode is set"
+ },
+ "r2_113": {
+  "ru": "Есть·не сохранён",
+  "en": "Yes·not saved"
+ },
+ "r2_114": {
+  "ru": "2FA включена, пароль не сохранён в этом инструменте. Нажмите, чтобы добавить (запись только локально)",
+  "en": "2FA is on but the password isn't saved in this tool. Click to add it (local write only)"
+ },
+ "r2_115": {
+  "ru": "пароль задан",
+  "en": "password set"
+ },
+ "r2_116": {
+  "ru": "В режиме сервера прослушивается 0.0.0.0 (доступно из всей сети); поставьте перед ним HTTPS-обратный прокси.",
+  "en": "Server mode listens on 0.0.0.0 (reachable from anywhere); put an HTTPS reverse proxy in front."
+ },
+ "r2_117": {
+  "ru": "В режиме сервера не задан TAM_WEB_TOKEN — у консоли не будет защиты доступа. → выполните python -m tam.cli init-key и впишите значение в .env",
+  "en": "Server mode has no TAM_WEB_TOKEN set, so the console has no access barrier. → run python -m tam.cli init-key and put the value into .env"
+ },
+ "r2_118": {
+  "ru": "Сервис реально перезапустится примерно через 1 секунду, дождитесь автоматического восстановления",
+  "en": "The service will really restart in about 1 second; wait for it to come back automatically"
+ },
+ "r2_119": {
+  "ru": "Сервер вернул некорректное время входа (",
+  "en": "Server returned an invalid sign-in time ("
+ },
+ "r2_120": {
+  "ru": "Неизвестный mode:",
+  "en": "Unknown mode:"
+ },
+ "r2_121": {
+  "ru": "Неизвестные параметры:",
+  "en": "Unknown params:"
+ },
+ "r2_122": {
+  "ru": "Неизвестный инструмент:",
+  "en": "Unknown tool:"
+ },
+ "r2_123": {
+  "ru": "Неизвестный номер DC:",
+  "en": "Unknown DC number:"
+ },
+ "r2_124": {
+  "ru": "Неизвестный результат:",
+  "en": "Unknown return:"
+ },
+ "r2_125": {
+  "ru": "Не записано, нажмите «Устройства», чтобы получить данные из Telegram",
+  "en": "Not recorded; click “View devices” to fetch it from Telegram"
+ },
+ "r2_126": {
+  "ru": "TAM_BOT_ADMIN_ID не задан — команды /vip /unvip /gb не работают ни для кого (включая вас).",
+  "en": "TAM_BOT_ADMIN_ID is not set, so the /vip /unvip /gb admin commands fail for everyone (including you)."
+ },
+ "r2_127": {
+  "ru": "TAM_BOT_TOKEN не задан, бот не запустится. → получите его у @BotFather и впишите в .env или смените TAM_FRONTEND на web",
+  "en": "TAM_BOT_TOKEN is not set, the bot cannot start. → get one from @BotFather and put it into .env, or set TAM_FRONTEND to web"
+ },
+ "r2_128": {
+  "ru": "TAM_MASTER_KEY не задан — ключ шифрования сессий будет записан на диск. На сервере лучше использовать переменную окружения.",
+  "en": "TAM_MASTER_KEY is not set, so the session encryption key is written to disk. On a server, prefer an environment variable."
+ },
+ "r2_129": {
+  "ru": "Ничего не выбрано, используется по умолчанию:",
+  "en": "Nothing selected, using default:"
+ },
+ "r2_130": {
+  "ru": "Локально или сервер",
+  "en": "Local or server"
+ },
+ "r2_131": {
+  "ru": "Перехват на этом ПК",
+  "en": "Local takeover"
+ },
+ "r2_132": {
+  "ru": "Зависимости бот-фронтенда установлены не полностью:",
+  "en": "Bot frontend dependencies are incomplete:"
+ },
+ "r2_133": {
+  "ru": "Права и область действия",
+  "en": "Permissions and scope"
+ },
+ "r2_134": {
+  "ru": "Пресет прав",
+  "en": "Permission preset"
+ },
+ "r2_135": {
+  "ru": "сообщений, собрано",
+  "en": "messages, collected"
+ },
+ "r2_136": {
+  "ru": "Контрольная сумма не совпадает, файл повреждён",
+  "en": "Checksum mismatch, the file is corrupted"
+ },
+ "r2_137": {
+  "ru": "только если в десктопе задан локальный пароль",
+  "en": "only if a local password is set in Desktop"
+ },
+ "r2_138": {
+  "ru": "Проверить",
+  "en": "Check"
+ },
+ "r2_139": {
+  "ru": "Не удалось проверить авторизацию:",
+  "en": "Failed to check authorization:"
+ },
+ "r2_140": {
+  "ru": "Не удалось проверить авторизацию старой сессии:",
+  "en": "Failed to check old session authorization:"
+ },
+ "r2_141": {
+  "ru": "Ошибка при самопроверке:",
+  "en": "Error while checking itself:"
+ },
+ "r2_142": {
+  "ru": "Имя модели",
+  "en": "Model name"
+ },
+ "r2_143": {
+  "ru": "Думает и вызывает инструменты…",
+  "en": "Thinking and calling tools…"
+ },
+ "r2_144": {
+  "ru": "По одному в строке",
+  "en": "One per line"
+ },
+ "r2_145": {
+  "ru": "Максимум запросов в секунду на аккаунт",
+  "en": "Max requests per second per account"
+ },
+ "r2_146": {
+  "ru": "Файлы .session не найдены:",
+  "en": "No .session files found:"
+ },
+ "r2_147": {
+  "ru": "proxy.txt не найден — все аккаунты пойдут через прямой IP сервера, риск блокировки очень высок. → по одному в строке: IP:порт:логин:пароль:метка срока действия",
+  "en": "proxy.txt not found; every account will use the server's bare IP, a high risk of restrictions. → one per line: IP:port:user:password:expiry timestamp"
+ },
+ "r2_148": {
+  "ru": "Файл не получен",
+  "en": "No file received"
+ },
+ "r2_149": {
+  "ru": "Содержимое файла не получено",
+  "en": "No file content received"
+ },
+ "r2_150": {
+  "ru": "Содержимое файла не получено — загрузите zip прямо как тело запроса",
+  "en": "No file content received; upload the zip directly as the request body"
+ },
+ "r2_151": {
+  "ru": "Не найдено параметров для восстановления",
+  "en": "No settings matched for restore"
+ },
+ "r2_152": {
+  "ru": "Нет целей для отправки",
+  "en": "No send targets"
+ },
+ "r2_153": {
+  "ru": "Нет полей для изменения, допустимы:",
+  "en": "No editable fields; allowed:"
+ },
+ "r2_154": {
+  "ru": "Нет доступных здоровых аккаунтов (нужен status=active и отсутствие блокировки spam)",
+  "en": "No healthy accounts available (needs status=active and not in a spam block period)"
+ }
+}

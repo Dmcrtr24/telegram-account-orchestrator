@@ -430,3 +430,63 @@ tbody tr.sel{background:var(--blue-soft)}
   .ai-perm-desc{display:block;margin-top:3px;font-size:11.5px;color:var(--muted);line-height:1.4}
   .ai-footnote{font-size:11.5px;color:var(--muted);line-height:1.5;margin:0}
 
+
+/* ==========================================================================
+   Иконки (SVG-спрайт) — вместо эмодзи, чтобы не зависеть от шрифтов
+   ========================================================================== */
+.ico{width:16px;height:16px;flex:0 0 auto;vertical-align:-3px;
+  fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+header h1 .ico.logo{width:20px;height:20px;stroke-width:1.6;color:var(--blue)}
+.ico-btn{display:inline-flex;align-items:center;gap:6px}
+.ai-fab .ico{width:24px;height:24px;stroke-width:1.9}
+.twofa-eye{display:inline-flex;align-items:center;justify-content:center}
+.twofa-eye .ico{width:15px;height:15px;stroke-width:1.7}
+.langwrap{display:inline-flex;align-items:center;gap:4px;padding:0 6px;border:1px solid var(--border);
+  border-radius:8px;background:var(--canvas);color:var(--muted)}
+.langwrap .ico{width:15px;height:15px}
+select.langsel{width:auto;min-height:0;height:30px;padding:0 4px;border:0;background:transparent;
+  font-size:13px;font-weight:600;color:var(--text);cursor:pointer}
+select.langsel:focus{outline:2px solid var(--blue);outline-offset:1px}
+
+/* ==========================================================================
+   Тёмная тема
+   ========================================================================== */
+:root{color-scheme:light}
+[data-theme="dark"]{
+  color-scheme:dark;
+  --text:#E9E8E6; --muted:#9C9891; --canvas:#1C1C1B; --soft:#131312;
+  --surface:#262625; --border:#383734; --blue:#5AA2F0; --blue-soft:#17293d;
+  --green:#66C493; --green-soft:#16301F; --orange:#E3A063; --orange-soft:#3A2716;
+  --red:#F1837A; --red-soft:#3B201D;
+}
+[data-theme="dark"] body{background:var(--soft)}
+[data-theme="dark"] pre{background:#0E0E0E;color:#E6E6E6}
+[data-theme="dark"] .bulk{border-bottom-color:#24405c}
+[data-theme="dark"] .help-main .tip{border-color:#24405c}
+[data-theme="dark"] .modal{box-shadow:0 12px 40px rgba(0,0,0,.65)}
+[data-theme="dark"] .toast{box-shadow:0 6px 20px rgba(0,0,0,.55)}
+[data-theme="dark"] .ai-fab,
+[data-theme="dark"] .ai-send,
+[data-theme="dark"] .ai-panel .primary{background:linear-gradient(145deg,#3a7fd6,#245aa8)}
+[data-theme="dark"] .ai-fab{box-shadow:0 8px 24px rgba(10,30,60,.6)}
+[data-theme="dark"] .s-active{background:#17301f;color:#7FD6A6;border-color:#2b5c42}
+[data-theme="dark"] .s-restricted,
+[data-theme="dark"] .s-error,
+[data-theme="dark"] .s-flood_wait{background:#33220f;color:#EFB27C;border-color:#5a3d22}
+[data-theme="dark"] .s-banned,
+[data-theme="dark"] .s-unauthorized{background:#3a1d1a;color:#F2958C;border-color:#5c2f2a}
+[data-theme="dark"] button.danger{color:#F2958C;border-color:#5c2f2a;background:#3a1d1a}
+[data-theme="dark"] .ai-chip.ok{border-color:#2f6b45;background:#16301f;color:#7FD6A6}
+[data-theme="dark"] .ai-chip.err{border-color:#6b2f2f;background:#331a1a;color:#F2958C}
+[data-theme="dark"] .ai-hint.warn{background:#33220f;border-color:#5a3d22;color:#EFB27C}
+[data-theme="dark"] .ai-badge.d-read{color:#7FD6A6;background:#16301f;border-color:#2f6b45}
+[data-theme="dark"] .ai-badge.d-write{color:#EFB27C;background:#33220f;border-color:#5a3d22}
+[data-theme="dark"] .ai-badge.d-destructive{color:#F2958C;background:#331a1a;border-color:#6b2f2f}
+[data-theme="dark"] .ai-compose textarea:focus{outline-color:rgba(90,162,240,.35);border-color:#3d6b9e}
+[data-theme="dark"] .ai-cfg input:focus,
+[data-theme="dark"] .ai-cfg select:focus{outline-color:rgba(90,162,240,.35);border-color:#3d6b9e;background:var(--canvas)}
+[data-theme="dark"] input[type="checkbox"],
+[data-theme="dark"] input[type="radio"]{accent-color:#5AA2F0}
+[data-theme="dark"] ::-webkit-scrollbar{width:10px;height:10px}
+[data-theme="dark"] ::-webkit-scrollbar-thumb{background:#3a3936;border-radius:6px}
+[data-theme="dark"] ::-webkit-scrollbar-track{background:#141413}

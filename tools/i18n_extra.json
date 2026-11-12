@@ -1,0 +1,262 @@
+{
+ "分钟": {
+  "ru": "мин",
+  "en": "min"
+ },
+ "%s 分钟后": {
+  "ru": "через %s",
+  "en": "in %s"
+ },
+ "%s 分钟前": {
+  "ru": "%s назад",
+  "en": "%s ago"
+ },
+ "%s 小时后": {
+  "ru": "через %s",
+  "en": "in %s"
+ },
+ "%s 小时前": {
+  "ru": "%s назад",
+  "en": "%s ago"
+ },
+ "%s 天后": {
+  "ru": "через %s",
+  "en": "in %s"
+ },
+ "%s 天前": {
+  "ru": "%s назад",
+  "en": "%s ago"
+ },
+ "%s 分钟": {
+  "ru": "%s мин",
+  "en": "%s min"
+ },
+ "%s 小时": {
+  "ru": "%s ч",
+  "en": "%s h"
+ },
+ "%s 天": {
+  "ru": "%s дн.",
+  "en": "%s d"
+ },
+ "自动清设备：本机接管满 %s 小时踢出其它设备（踢完回查校验）": {
+  "ru": "Автосброс: перехват на этом ПК более %s ч — сброс других устройств (с проверкой)",
+  "en": "Auto device cleanup: %s+ h after local takeover, terminate other devices (with verification)"
+ },
+ "监控 %s 个号": {
+  "ru": "под наблюдением: %s акк.",
+  "en": "watching: %s accounts"
+ },
+ "%s 个待处理": {
+  "ru": "в очереди: %s",
+  "en": "%s pending"
+ },
+ "%s 个踢失败待重试": {
+  "ru": "к повтору: %s",
+  "en": "%s failed, retry pending"
+ },
+ "失败后 %s 重试": {
+  "ru": "повтор через %s",
+  "en": "retry after %s"
+ },
+ "下次 %s（%s）": {
+  "ru": "далее %s (%s)",
+  "en": "next %s (%s)"
+ },
+ "⚠ 最久一个已逾期 %s 天未执行，请看日志排查": {
+  "ru": "⚠ самый старый просрочен на %s дн. — смотрите журнал",
+  "en": "⚠ oldest overdue by %s d — check the log"
+ },
+ "写入 %s": {
+  "ru": "Запись в %s",
+  "en": "Writing to %s"
+ },
+ "%s 个号 → %s 个包": {
+  "ru": "%s акк. → %s пак.",
+  "en": "%s accounts → %s packs"
+ },
+ "%s 个包 → %s 个号": {
+  "ru": "%s пак. → %s акк.",
+  "en": "%s packs → %s accounts"
+ },
+ "，并发度 %s": {
+  "ru": ", параллельность %s",
+  "en": ", concurrency %s"
+ },
+ "直连": {
+  "ru": "Прямое подключение",
+  "en": "Direct"
+ },
+ "检查": {
+  "ru": "Проверить",
+  "en": "Check"
+ },
+ "Telegram 账号管理器": {
+  "ru": "Telegram — менеджер аккаунтов",
+  "en": "Telegram account manager"
+ },
+ "还没有账号": {
+  "ru": "Аккаунтов пока нет",
+  "en": "No accounts yet"
+ },
+ "导入后建议先「健康检查」同步状态与二验，再养号或改二验": {
+  "ru": "После импорта сначала выполните «Проверку работоспособности», чтобы синхронизировать статус и 2FA, затем прогревайте или меняйте 2FA",
+  "en": "After import run “Health check” to sync status and 2FA, then warm up or change 2FA"
+ },
+ "还没有采集到线索。先在任务中心点“采集发言人”。": {
+  "ru": "Лидов пока нет. Сначала нажмите «Сбор активных участников» в центре задач.",
+  "en": "No leads yet. Start with “Collect active members” in the task center."
+ },
+ "手机号清单": {
+  "ru": "Список номеров",
+  "en": "Phone list"
+ },
+ "手动添加": {
+  "ru": "Добавить вручную",
+  "en": "Add manually"
+ },
+ "导入 tdata": {
+  "ru": "Импорт tdata",
+  "en": "Import tdata"
+ },
+ "尚未检查，点「检查」同步有无二验": {
+  "ru": "Ещё не проверялось — нажмите «Проверить», чтобы узнать статус 2FA",
+  "en": "Not checked yet — press “Check” to sync 2FA status"
+ },
+ "手机 Telegram 扫码授权": {
+  "ru": "Авторизация по QR с телефона в Telegram",
+  "en": "Authorize by QR with the Telegram app"
+ },
+ "手机 Telegram 扫码授权，无需短信": {
+  "ru": "Авторизация по QR с телефона в Telegram, без SMS",
+  "en": "Authorize by QR with the Telegram app, no SMS"
+ },
+ "桌面端设了本地密码才填": {
+  "ru": "Только если в десктопе задан локальный пароль",
+  "en": "Only if the desktop app has a local passcode"
+ },
+ "有 passcode 才填": {
+  "ru": "Только при наличии passcode",
+  "en": "Only if a passcode is set"
+ },
+ "输入消息，Enter 发送，Shift+Enter 换行": {
+  "ru": "Введите сообщение: Enter — отправить, Shift+Enter — новая строка",
+  "en": "Type a message: Enter to send, Shift+Enter for a new line"
+ },
+ "，或系统相机扫本页二维码。 授权后本工具获得新会话（加密入库）。二维码约 30 秒有效，过期会自动刷新。": {
+  "ru": ", либо камерой телефона. После подтверждения инструмент получает новую сессию (шифруется и сохраняется). QR-код живёт около 30 секунд и обновляется автоматически.",
+  "en": ", or scan the code with your phone camera. After confirmation this tool gets a new session (encrypted and stored). The QR code lives about 30 seconds and refreshes automatically."
+ },
+ "点检查同步": {
+  "ru": "нажмите «Проверить», чтобы синхронизировать",
+  "en": "press “Check” to sync"
+ },
+ "本机接管": {
+  "ru": "Перехват на этом ПК",
+  "en": "Local takeover"
+ },
+ "未记录": {
+  "ru": "Нет данных",
+  "en": "Not recorded"
+ },
+ "会话创建": {
+  "ru": "Создание сессии",
+  "en": "Session created"
+ },
+ "未记录，点“查看设备”可从 Telegram 拉取": {
+  "ru": "Нет данных — нажмите «Устройства», чтобы запросить из Telegram",
+  "en": "Not recorded — press “Devices” to fetch from Telegram"
+ },
+ "参与自动踢其它设备": {
+  "ru": "участвует в автосбросе устройств",
+  "en": "participates in auto device reset"
+ },
+ "清设备周期（小时）": {
+  "ru": "Период автосброса (ч)",
+  "en": "Device reset period (h)"
+ },
+ "循环清设备": {
+  "ru": "Циклический автосброс",
+  "en": "Repeating device reset"
+ },
+ "开启后：踢成功再按周期计时；关闭则只踢一次": {
+  "ru": "Вкл.: после успешного сброса отсчёт начинается заново; выкл.: сброс один раз",
+  "en": "On: timer restarts after a successful reset; off: reset once"
+ },
+ "查看设备": {
+  "ru": "Устройства",
+  "en": "Devices"
+ },
+ "最近会话": {
+  "ru": "Последние диалоги",
+  "en": "Recent chats"
+ },
+ "导出号包 zip": {
+  "ru": "Экспорт пакета .zip",
+  "en": "Export account pack .zip"
+ },
+ "清理其他设备": {
+  "ru": "Сбросить другие устройства",
+  "en": "Terminate other devices"
+ },
+ "该账号日志": {
+  "ru": "Журнал этого аккаунта",
+  "en": "Account log"
+ },
+ "留空=用全局 %s 小时": {
+  "ru": "пусто = глобальные %s ч",
+  "en": "empty = global %s h"
+ },
+ "有无云密码、是否绑定辅助邮箱、重置等待期": {
+  "ru": "Наличие облачного пароля, привязанной почты и ожидания сброса",
+  "en": "Cloud password, recovery email, reset waiting period"
+ },
+ "发起官方二验重置（通常约7天等待期）": {
+  "ru": "Запустить официальный сброс 2FA (обычно ~7 дней ожидания)",
+  "en": "Start official 2FA reset (about 7 days waiting)"
+ },
+ "取消进行中的二验重置等待": {
+  "ru": "Отменить текущее ожидание сброса 2FA",
+  "en": "Cancel the pending 2FA reset"
+ },
+ "显示/复制 StringSession 文本": {
+  "ru": "Показать/скопировать StringSession",
+  "en": "Show/copy StringSession text"
+ },
+ "下载 Telethon .session 文件": {
+  "ru": "Скачать файл Telethon .session",
+  "en": "Download Telethon .session file"
+ },
+ "下载 session+json 号包 zip": {
+  "ru": "Скачать пакет session+json (.zip)",
+  "en": "Download session+json pack (.zip)"
+ },
+ "下载 Telegram Desktop tdata zip（需服务器已装 opentele）": {
+  "ru": "Скачать tdata для Telegram Desktop (.zip, нужен opentele на сервере)",
+  "en": "Download Telegram Desktop tdata (.zip, requires opentele on the server)"
+ },
+ "新设备指纹重新登录，旧 session 作废（防找回）": {
+  "ru": "Повторный вход с новым отпечатком, старая сессия аннулируется (защита от восстановления)",
+  "en": "Re-login with a new fingerprint, old session invalidated (anti-recovery)"
+ },
+ "隐藏【%s】": {
+  "ru": "Скрыть: %s",
+  "en": "Hide: %s"
+ },
+ "1BVtsOK4Bu... 主号|1AAQ... # 注释行会被忽略": {
+  "ru": "1BVtsOK4Bu...\nОсновной|1AAQ...\n# строки с # игнорируются",
+  "en": "1BVtsOK4Bu...\nmain|1AAQ...\n# lines starting with # are ignored"
+ },
+ "统计": {
+  "ru": "Статистика",
+  "en": "Statistics"
+ },
+ "无，当前全部显示": {
+  "ru": "Нет, всё отображается",
+  "en": "None, everything is shown"
+ },
+ "新建": {
+  "ru": "Новых",
+  "en": "New"
+ }
+}

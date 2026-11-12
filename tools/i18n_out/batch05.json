@@ -1,0 +1,802 @@
+{
+  "b5_0": {
+    "ru": "записей /",
+    "en": "records /"
+  },
+  "b5_1": {
+    "ru": "диалогов",
+    "en": "dialogs"
+  },
+  "b5_2": {
+    "ru": "локальных записей (не затрагивает сам аккаунт Telegram, но шифротекст сессии в этом инструменте исчезнет).",
+    "en": "local records (does not affect the Telegram account itself, but the session ciphertext inside this tool will be gone)."
+  },
+  "b5_3": {
+    "ru": "записей (только этот браузер)</div>",
+    "en": "records (this browser only)</div>"
+  },
+  "b5_4": {
+    "ru": "Входящие звонки",
+    "en": "Incoming calls"
+  },
+  "b5_5": {
+    "ru": "Запросить",
+    "en": "Query"
+  },
+  "b5_6": {
+    "ru": "Камбоджа 🇰🇭",
+    "en": "Cambodia 🇰🇭"
+  },
+  "b5_7": {
+    "ru": "Теги",
+    "en": "Tags"
+  },
+  "b5_8": {
+    "ru": "Теги обновлены ·",
+    "en": "Tags updated ·"
+  },
+  "b5_9": {
+    "ru": "Теги (через запятую)",
+    "en": "Tags (comma-separated)"
+  },
+  "b5_10": {
+    "ru": "Проверка не пройдена: осталось",
+    "en": "Check failed: remaining"
+  },
+  "b5_11": {
+    "ru": "Неверный формат",
+    "en": "Invalid format"
+  },
+  "b5_12": {
+    "ru": "Конвертация форматов",
+    "en": "Format conversion"
+  },
+  "b5_13": {
+    "ru": "Конвертация форматов выполнена",
+    "en": "Format conversion complete"
+  },
+  "b5_14": {
+    "ru": "Грузия 🇬🇪",
+    "en": "Georgia 🇬🇪"
+  },
+  "b5_15": {
+    "ru": "Проверка завершена",
+    "en": "Check complete"
+  },
+  "b5_16": {
+    "ru": "Обнаружены HTML-теги. Отправить как форматированный текст (ссылки будут кликабельными)?",
+    "en": "HTML tags detected. Send as rich text (links will be clickable)?"
+  },
+  "b5_17": {
+    "ru": "Обзор",
+    "en": "Overview"
+  },
+  "b5_18": {
+    "ru": "Идёт диалог с @SpamBot…",
+    "en": "Talking to @SpamBot…"
+  },
+  "b5_19": {
+    "ru": "Идёт диагностика с автопочинкой, может занять минуту…",
+    "en": "Running doctor with auto-repair, may take a minute…"
+  },
+  "b5_20": {
+    "ru": "Идёт проверка только на чтение…",
+    "en": "Running read-only probe…"
+  },
+  "b5_21": {
+    "ru": "Запуск отслеживания кода, отправка кода и ожидание нового…",
+    "en": "Starting code monitoring, sending the code and waiting for a new one…"
+  },
+  "b5_22": {
+    "ru": "Загрузка групп…",
+    "en": "Fetching groups…"
+  },
+  "b5_23": {
+    "ru": "Проверка связи прокси у каждого аккаунта…",
+    "en": "Probing proxy connectivity for each account…"
+  },
+  "b5_24": {
+    "ru": "Получение QR-кода…",
+    "en": "Getting QR code…"
+  },
+  "b5_25": {
+    "ru": "Разбор и проверка tdata (при большом числе аккаунтов дольше)…",
+    "en": "Parsing and validating tdata (slower with many accounts)…"
+  },
+  "b5_26": {
+    "ru": "Запрос перезапуска…",
+    "en": "Requesting restart…"
+  },
+  "b5_27": {
+    "ru": "Перезапуск…",
+    "en": "Restarting…"
+  },
+  "b5_28": {
+    "ru": "Активен",
+    "en": "Active"
+  },
+  "b5_29": {
+    "ru": "Текст",
+    "en": "Body"
+  },
+  "b5_30": {
+    "ru": "Сколько сообщений хранить на группу",
+    "en": "Messages to keep per group"
+  },
+  "b5_31": {
+    "ru": "Сколько сообщений сканировать на группу",
+    "en": "Messages to scan per group"
+  },
+  "b5_32": {
+    "ru": "Сколько участников собрать на группу",
+    "en": "Members to collect per group"
+  },
+  "b5_33": {
+    "ru": "По строке",
+    "en": "Per line"
+  },
+  "b5_34": {
+    "ru": "По одному StringSession в строке; можно использовать",
+    "en": "One StringSession per line; you can use"
+  },
+  "b5_35": {
+    "ru": "Бельгия 🇧🇪",
+    "en": "Belgium 🇧🇪"
+  },
+  "b5_36": {
+    "ru": "Удалить навсегда",
+    "en": "Delete permanently"
+  },
+  "b5_37": {
+    "ru": "Постоянное ограничение",
+    "en": "Permanent restriction"
+  },
+  "b5_38": {
+    "ru": "Саудовская Аравия 🇸🇦",
+    "en": "Saudi Arabia 🇸🇦"
+  },
+  "b5_39": {
+    "ru": "Никого",
+    "en": "Nobody"
+  },
+  "b5_40": {
+    "ru": "Нет каталогов для диагностики",
+    "en": "No directories to diagnose"
+  },
+  "b5_41": {
+    "ru": "Нет настраиваемых параметров.",
+    "en": "No tunable parameters."
+  },
+  "b5_42": {
+    "ru": "Нет истории диалогов",
+    "en": "No dialog history"
+  },
+  "b5_43": {
+    "ru": "Нет аккаунтов по фильтру",
+    "en": "No accounts match the filter"
+  },
+  "b5_44": {
+    "ru": "Нет аккаунтов по фильтру <button class=\"sm\" onclick=\"clearFilters()\">Сбросить фильтры</button>",
+    "en": "No accounts match the filter <button class=\"sm\" onclick=\"clearFilters()\">Clear filters</button>"
+  },
+  "b5_45": {
+    "ru": "Ссылка для получения кода не распознана",
+    "en": "No code-retrieval link found"
+  },
+  "b5_46": {
+    "ru": "Франция 🇫🇷",
+    "en": "France 🇫🇷"
+  },
+  "b5_47": {
+    "ru": "Польша 🇵🇱",
+    "en": "Poland 🇵🇱"
+  },
+  "b5_48": {
+    "ru": "Удалить",
+    "en": "Delete"
+  },
+  "b5_49": {
+    "ru": "Удалить аккаунт Telegram",
+    "en": "Delete Telegram account"
+  },
+  "b5_50": {
+    "ru": "Удалить аккаунт TG",
+    "en": "Delete TG account"
+  },
+  "b5_51": {
+    "ru": "Причина удаления (необязательно)",
+    "en": "Reason for deletion (optional)"
+  },
+  "b5_52": {
+    "ru": "Удаление не удалось: ",
+    "en": "Deletion failed: "
+  },
+  "b5_53": {
+    "ru": "Удаление завершено · успешно",
+    "en": "Deletion complete · success"
+  },
+  "b5_54": {
+    "ru": "Удалить аккаунт ·",
+    "en": "Delete account ·"
+  },
+  "b5_55": {
+    "ru": "Ответ на удаление: ",
+    "en": "Deletion response: "
+  },
+  "b5_56": {
+    "ru": "Таиланд 🇹🇭",
+    "en": "Thailand 🇹🇭"
+  },
+  "b5_57": {
+    "ru": "Зимбабве 🇿🇼",
+    "en": "Zimbabwe 🇿🇼"
+  },
+  "b5_58": {
+    "ru": "Проверить ссылку для получения кода",
+    "en": "Test code-retrieval link"
+  },
+  "b5_59": {
+    "ru": "Проверить первую ссылку для получения кода",
+    "en": "Test first code-retrieval link"
+  },
+  "b5_60": {
+    "ru": "Откройте в браузере указанный адрес (локально по умолчанию",
+    "en": "Open the prompted address in a browser (local default"
+  },
+  "b5_61": {
+    "ru": "Добавить",
+    "en": "Add"
+  },
+  "b5_62": {
+    "ru": "Добавить аккаунт",
+    "en": "Add account"
+  },
+  "b5_63": {
+    "ru": "Очистить сессии",
+    "en": "Clear sessions"
+  },
+  "b5_64": {
+    "ru": "Сбросить другие устройства",
+    "en": "Terminate other devices"
+  },
+  "b5_65": {
+    "ru": "Очистить",
+    "en": "Clear"
+  },
+  "b5_66": {
+    "ru": "Очистка не удалась: ",
+    "en": "Clear failed: "
+  },
+  "b5_67": {
+    "ru": "Очистить диалог",
+    "en": "Clear dialog"
+  },
+  "b5_68": {
+    "ru": "Очистить историю текущего диалога с AI? (только этот браузер)",
+    "en": "Clear the current AI dialog history? (this browser only)"
+  },
+  "b5_69": {
+    "ru": "Очистить текущий диалог и локальную историю",
+    "en": "Clear current dialog and local history"
+  },
+  "b5_70": {
+    "ru": "Очистить контакты",
+    "en": "Clear contacts"
+  },
+  "b5_71": {
+    "ru": "Очистить журнал ошибок",
+    "en": "Clear error log"
+  },
+  "b5_72": {
+    "ru": "Сбросить устройства",
+    "en": "Terminate devices"
+  },
+  "b5_73": {
+    "ru": "Сброс устройств / OKPay",
+    "en": "Terminate devices / OKPay"
+  },
+  "b5_74": {
+    "ru": "Период сброса устройств должен быть неотрицательным числом (часы)",
+    "en": "Device-reset interval must be a non-negative number (hours)"
+  },
+  "b5_75": {
+    "ru": "Демо-режим",
+    "en": "Demo mode"
+  },
+  "b5_76": {
+    "ru": "Демо-режим: записаны примерные данные",
+    "en": "Demo mode: sample data written"
+  },
+  "b5_77": {
+    "ru": "Демо-режим: показаны примерные данные, бэкенд не подключён. Запустите",
+    "en": "Demo mode: showing sample data, backend not connected. Start"
+  },
+  "b5_78": {
+    "ru": "Австралия 🇦🇺",
+    "en": "Australia 🇦🇺"
+  },
+  "b5_79": {
+    "ru": "Открыть строку",
+    "en": "Open a row"
+  },
+  "b5_80": {
+    "ru": "Выбор валюты в меню и разбор баланса…",
+    "en": "Selecting currency menu and parsing balance…"
+  },
+  "b5_81": {
+    "ru": "Горячая перезагрузка",
+    "en": "Hot reload"
+  },
+  "b5_82": {
+    "ru": "Горячая перезагрузка и журнал",
+    "en": "Hot reload and log"
+  },
+  "b5_83": {
+    "ru": "Горячая перезагрузка и журнал ошибок",
+    "en": "Hot reload and error log"
+  },
+  "b5_84": {
+    "ru": "Горячая перезагрузка (реальный перезапуск)",
+    "en": "Hot reload (real restart)"
+  },
+  "b5_85": {
+    "ru": "Ирландия 🇮🇪",
+    "en": "Ireland 🇮🇪"
+  },
+  "b5_86": {
+    "ru": "Эстония 🇪🇪",
+    "en": "Estonia 🇪🇪"
+  },
+  "b5_87": {
+    "ru": "Статус",
+    "en": "Status"
+  },
+  "b5_88": {
+    "ru": "Статус: active — активен, restricted — ограничен, banned — заблокирован, unauthorized — не авторизован/недействителен и т.п.",
+    "en": "Status: active — normal, restricted, banned, unauthorized — signed out/invalid, etc."
+  },
+  "b5_89": {
+    "ru": "Сейчас нет лидов для экспорта",
+    "en": "No leads to export right now"
+  },
+  "b5_90": {
+    "ru": "Швеция 🇸🇪",
+    "en": "Sweden 🇸🇪"
+  },
+  "b5_91": {
+    "ru": "Швейцария 🇨🇭",
+    "en": "Switzerland 🇨🇭"
+  },
+  "b5_92": {
+    "ru": "Каким аккаунтом собирать группы",
+    "en": "Which account to pull groups with"
+  },
+  "b5_93": {
+    "ru": "Пользователь",
+    "en": "User"
+  },
+  "b5_94": {
+    "ru": "Имя пользователя",
+    "en": "Username"
+  },
+  "b5_95": {
+    "ru": "С телефона",
+    "en": "On your phone"
+  },
+  "b5_96": {
+    "ru": "Отсчёт с момента входа",
+    "en": "Timer starts after sign-in"
+  },
+  "b5_97": {
+    "ru": "Вход выполнен",
+    "en": "Signed in"
+  },
+  "b5_98": {
+    "ru": "После заданного времени с момента входа автоматически сбрасывать другие устройства",
+    "en": "Automatically terminate other devices after the set time from sign-in"
+  },
+  "b5_99": {
+    "ru": "Войти в аккаунт",
+    "en": "Sign in account"
+  },
+  "b5_100": {
+    "ru": "Беларусь 🇧🇾",
+    "en": "Belarus 🇧🇾"
+  },
+  "b5_101": {
+    "ru": "менеджер нескольких аккаунтов Telegram: сессии шифруются в локальной SQLite, можно через",
+    "en": "Telegram multi-account manager: sessions are encrypted in local SQLite, and can be used via"
+  },
+  "b5_102": {
+    "ru": "Обходить подкаталоги рекурсивно",
+    "en": "Scan subdirectories recursively"
+  },
+  "b5_103": {
+    "ru": "Каталог: ",
+    "en": "Directory: "
+  },
+  "b5_104": {
+    "ru": "Цель",
+    "en": "Target"
+  },
+  "b5_105": {
+    "ru": "Действует на выбранные аккаунты в базе",
+    "en": "Applies directly to selected accounts in the library"
+  },
+  "b5_106": {
+    "ru": "Прочитал, третий раздел любопытный",
+    "en": "Read it, section three is interesting"
+  },
+  "b5_107": {
+    "ru": "Реальный прогресс",
+    "en": "Real progress"
+  },
+  "b5_108": {
+    "ru": "Реально перезапускает процесс бэкенда (горячая перезагрузка), текущие задачи прервутся",
+    "en": "Really restarts the backend process (hot reload); running tasks will be interrupted"
+  },
+  "b5_109": {
+    "ru": "При частой перегенерации или повторных ошибках 2FA Telegram вернёт",
+    "en": "Repeated session regeneration or wrong 2FA in a short time makes Telegram return"
+  },
+  "b5_110": {
+    "ru": "OK",
+    "en": "OK"
+  },
+  "b5_111": {
+    "ru": "Остановить задачу #",
+    "en": "Stop task #"
+  },
+  "b5_112": {
+    "ru": "Выполнить",
+    "en": "Run"
+  },
+  "b5_113": {
+    "ru": "Очистить все записи об ошибках?",
+    "en": "Clear all error records?"
+  },
+  "b5_114": {
+    "ru": "Продолжить?",
+    "en": "Continue?"
+  },
+  "b5_115": {
+    "ru": "Подтвердить",
+    "en": "Confirm"
+  },
+  "b5_116": {
+    "ru": "Отменить ожидание сброса 2FA для этого аккаунта?",
+    "en": "Cancel the pending 2FA reset wait for this account?"
+  },
+  "b5_117": {
+    "ru": "Начать сброс 2FA для этого аккаунта? Начнётся официальный период ожидания (обычно около 7 дней), после чего облачный пароль перестанет действовать. Если привязана резервная почта, прежний владелец всё ещё может восстановить доступ через неё.",
+    "en": "Start a 2FA reset for this account? An official waiting period begins (usually about 7 days), after which the cloud password becomes invalid. If a recovery email is linked, the previous owner may still recover it through that email."
+  },
+  "b5_118": {
+    "ru": "Подтвердить вход",
+    "en": "Confirm sign-in"
+  },
+  "b5_119": {
+    "ru": "Кувейт 🇰🇼",
+    "en": "Kuwait 🇰🇼"
+  },
+  "b5_120": {
+    "ru": "Перу 🇵🇪",
+    "en": "Peru 🇵🇪"
+  },
+  "b5_121": {
+    "ru": "Тунис 🇹🇳",
+    "en": "Tunisia 🇹🇳"
+  },
+  "b5_122": {
+    "ru": "Узкий экран",
+    "en": "Narrow screen"
+  },
+  "b5_123": {
+    "ru": "Выполнить сейчас",
+    "en": "Run now"
+  },
+  "b5_124": {
+    "ru": "Литва 🇱🇹",
+    "en": "Lithuania 🇱🇹"
+  },
+  "b5_125": {
+    "ru": "Ожидание прервано: ",
+    "en": "Wait interrupted: "
+  },
+  "b5_126": {
+    "ru": "Ожидание сканирования…",
+    "en": "Waiting for scan…"
+  },
+  "b5_127": {
+    "ru": "Ожидание запуска нового процесса… (",
+    "en": "Waiting for the new process to start… ("
+  },
+  "b5_128": {
+    "ru": "Ждать до: ",
+    "en": "Wait until: "
+  },
+  "b5_129": {
+    "ru": "Тайм-аут ожидания: обновите страницу вручную или проверьте, поднялся ли процесс",
+    "en": "Wait timed out: refresh the page manually or check whether the process started"
+  },
+  "b5_130": {
+    "ru": "Проверка активности",
+    "en": "Liveness check"
+  },
+  "b5_131": {
+    "ru": "Тип",
+    "en": "Type"
+  },
+  "b5_132": {
+    "ru": "Система",
+    "en": "System"
+  },
+  "b5_133": {
+    "ru": "Иордания 🇯🇴",
+    "en": "Jordan 🇯🇴"
+  },
+  "b5_134": {
+    "ru": "Простой текст",
+    "en": "Plain text"
+  },
+  "b5_135": {
+    "ru": "База лидов",
+    "en": "Leads"
+  },
+  "b5_136": {
+    "ru": "Итоги: ",
+    "en": "Summary: "
+  },
+  "b5_137": {
+    "ru": "Скачайте результат, затем нажмите «Удалить после использования». Пакеты аккаунтов портированы из GAFBot (MIT), см.",
+    "en": "Download the result, then click “Delete after use”. Account-pack features are ported from GAFBot (MIT), see"
+  },
+  "b5_138": {
+    "ru": "Теги для этих лидов (можно пусто, через запятую)",
+    "en": "Tag these leads (optional, comma-separated)"
+  },
+  "b5_139": {
+    "ru": "Выбранным",
+    "en": "Selected"
+  },
+  "b5_140": {
+    "ru": "Общий пароль 2FA",
+    "en": "Unified 2FA password"
+  },
+  "b5_141": {
+    "ru": "Общий прокси (необязательно)",
+    "en": "Unified proxy (optional)"
+  },
+  "b5_142": {
+    "ru": "Общий префикс меток (необязательно)",
+    "en": "Unified label prefix (optional)"
+  },
+  "b5_143": {
+    "ru": "Статистика ·",
+    "en": "Stats ·"
+  },
+  "b5_144": {
+    "ru": "Продолжить",
+    "en": "Continue"
+  },
+  "b5_145": {
+    "ru": "Продолжить?",
+    "en": "Continue?"
+  },
+  "b5_146": {
+    "ru": "Мьянма 🇲🇲",
+    "en": "Myanmar 🇲🇲"
+  },
+  "b5_147": {
+    "ru": "Правка раскладки",
+    "en": "Edit layout"
+  },
+  "b5_148": {
+    "ru": "Правка раскладки: перетаскивайте панели; раскладку можно экспортировать/импортировать как JSON.",
+    "en": "Edit layout: drag panels; you can export/import the layout as JSON."
+  },
+  "b5_149": {
+    "ru": "Режим правки: тяните за середину, чтобы сдвинуть (задетые виджеты отодвигаются), за правый/нижний/правый нижний край — чтобы изменить размер, × — скрыть",
+    "en": "Edit mode: drag the middle to move (touched widgets are pushed aside), drag right/bottom/bottom-right to resize, click × to hide"
+  },
+  "b5_150": {
+    "ru": "Веб",
+    "en": "Web"
+  },
+  "b5_151": {
+    "ru": "Веб и бот",
+    "en": "Web and bot"
+  },
+  "b5_152": {
+    "ru": "Румыния 🇷🇴",
+    "en": "Romania 🇷🇴"
+  },
+  "b5_153": {
+    "ru": "США/Канада 🇺🇸",
+    "en": "US/Canada 🇺🇸"
+  },
+  "b5_154": {
+    "ru": "Группа",
+    "en": "Group"
+  },
+  "b5_155": {
+    "ru": "Рассылка: 128 получателей",
+    "en": "Broadcast: 128 targets"
+  },
+  "b5_156": {
+    "ru": "Рассылка: 40 получателей",
+    "en": "Broadcast: 40 targets"
+  },
+  "b5_157": {
+    "ru": "Рассылка, сбор недавних активных участников и т.п. идут через центр задач: там виден прогресс и можно остановить. Базу лидов можно отфильтровать и затем использовать для рассылки.",
+    "en": "Broadcast, collecting recent active members and similar run through the task center: progress is visible and tasks can be stopped. Leads can be filtered and then used for a broadcast."
+  },
+  "b5_158": {
+    "ru": "Задача рассылки создана",
+    "en": "Broadcast task created"
+  },
+  "b5_159": {
+    "ru": "Рассылка сообщений",
+    "en": "Broadcast message"
+  },
+  "b5_160": {
+    "ru": "Участники группы",
+    "en": "Group members"
+  },
+  "b5_161": {
+    "ru": "Группы",
+    "en": "Groups"
+  },
+  "b5_162": {
+    "ru": "Лаос 🇱🇦",
+    "en": "Laos 🇱🇦"
+  },
+  "b5_163": {
+    "ru": "Старая группа (остыла)",
+    "en": "Old group (cold)"
+  },
+  "b5_164": {
+    "ru": "Контакты",
+    "en": "Contacts"
+  },
+  "b5_165": {
+    "ru": "Кения 🇰🇪",
+    "en": "Kenya 🇰🇪"
+  },
+  "b5_166": {
+    "ru": "Автообновление",
+    "en": "Auto-refresh"
+  },
+  "b5_167": {
+    "ru": "Автовход по коду",
+    "en": "Automatic code sign-in"
+  },
+  "b5_168": {
+    "ru": "Автоприём кода не удался: проверьте журнал ошибок и повторите.",
+    "en": "Automatic code retrieval failed; check the error log and retry."
+  },
+  "b5_169": {
+    "ru": "Автовход с автоприёмом кода",
+    "en": "Automatic code sign-in"
+  },
+  "b5_170": {
+    "ru": "Автовход с автоприёмом кода выполнен",
+    "en": "Automatic code sign-in complete"
+  },
+  "b5_171": {
+    "ru": "Автосброс устройств",
+    "en": "Auto device reset"
+  },
+  "b5_172": {
+    "ru": "Строка подсказки автосброса устройств",
+    "en": "Auto device reset hint bar"
+  },
+  "b5_173": {
+    "ru": "Автосброс устройств: отсчёт от «времени перехвата на этом устройстве»; в деталях можно задать участие, период и цикличность.",
+    "en": "Auto device reset: counts from “handover time on this device”; details let you set participation, interval and looping."
+  },
+  "b5_174": {
+    "ru": "Автосброс устройств: прошло с перехвата",
+    "en": "Auto device reset: once takeover reaches"
+  },
+  "b5_175": {
+    "ru": "Автовход",
+    "en": "Auto sign-in"
+  },
+  "b5_176": {
+    "ru": "Автовход · успешно",
+    "en": "Auto sign-in · success"
+  },
+  "b5_177": {
+    "ru": "Самостоятельный хостинг",
+    "en": "Self-hosted"
+  },
+  "b5_178": {
+    "ru": "Выберите хотя бы одну группу",
+    "en": "Select at least one group"
+  },
+  "b5_179": {
+    "ru": "Финляндия 🇫🇮",
+    "en": "Finland 🇫🇮"
+  },
+  "b5_180": {
+    "ru": "Судан 🇸🇩",
+    "en": "Sudan 🇸🇩"
+  },
+  "b5_181": {
+    "ru": "Если у всех аккаунтов один пароль, укажите его здесь; если пароля нет или они разные — оставьте пусто.",
+    "en": "If all accounts share a password, enter it here; if none or they differ, leave empty."
+  },
+  "b5_182": {
+    "ru": "Если у аккаунта включён облачный пароль, заполните; иначе оставьте пусто и нажмите OK.",
+    "en": "If this account has a cloud password, enter it; otherwise leave empty and click OK."
+  },
+  "b5_183": {
+    "ru": "Великобритания 🇬🇧",
+    "en": "United Kingdom 🇬🇧"
+  },
+  "b5_184": {
+    "ru": "Нидерланды 🇳🇱",
+    "en": "Netherlands 🇳🇱"
+  },
+  "b5_185": {
+    "ru": "Филиппины 🇵🇭",
+    "en": "Philippines 🇵🇭"
+  },
+  "b5_186": {
+    "ru": "Португалия 🇵🇹",
+    "en": "Portugal 🇵🇹"
+  },
+  "b5_187": {
+    "ru": "Монголия 🇲🇳",
+    "en": "Mongolia 🇲🇳"
+  },
+  "b5_188": {
+    "ru": "Дополнить пароль 2FA",
+    "en": "Add 2FA password"
+  },
+  "b5_189": {
+    "ru": "Добавление в группы",
+    "en": "Added to groups"
+  },
+  "b5_190": {
+    "ru": "Испания 🇪🇸",
+    "en": "Spain 🇪🇸"
+  },
+  "b5_191": {
+    "ru": "Разбор…",
+    "en": "Parsing…"
+  },
+  "b5_192": {
+    "ru": "Распознано: ",
+    "en": "Parsed: "
+  },
+  "b5_193": {
+    "ru": "Разбор выполняет встроенный парсер на чистом Python,",
+    "en": "Parsing is done by the built-in pure-Python parser,"
+  },
+  "b5_194": {
+    "ru": "Предпросмотр разбора: ожидание ввода",
+    "en": "Parse preview: waiting for input"
+  },
+  "b5_195": {
+    "ru": "Сработало ограничение частоты",
+    "en": "Rate limit triggered"
+  },
+  "b5_196": {
+    "ru": "Отсчёт",
+    "en": "Timer"
+  },
+  "b5_197": {
+    "ru": "Фиксирует необработанные исключения сервера, HTTP 5xx и отчёты фронтенда. Можно экспортировать JSON и отправить мейнтейнеру.",
+    "en": "Records uncaught server exceptions, HTTP 5xx and frontend reports. You can export JSON and send it to the maintainer."
+  },
+  "b5_198": {
+    "ru": "Задать имя пользователя",
+    "en": "Set username"
+  },
+  "b5_199": {
+    "ru": "Токен доступа (пусто в режиме без токена)",
+    "en": "Access token (empty in tokenless mode)"
+  }
+}

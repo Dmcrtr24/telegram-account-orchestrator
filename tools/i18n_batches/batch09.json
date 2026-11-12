@@ -1,0 +1,1002 @@
+[
+ {
+  "id": "b9_0",
+  "kind": "backend",
+  "zh": "把 tg://login?token=... 编成 PNG data URL（base64）。"
+ },
+ {
+  "id": "b9_1",
+  "kind": "backend",
+  "zh": "把 {name} 替换成个性化字段。不用 str.format，免与 spintax 花括号冲突。"
+ },
+ {
+  "id": "b9_2",
+  "kind": "backend",
+  "zh": "把人写的时长转成秒。看不懂就回退默认值，不抛异常。"
+ },
+ {
+  "id": "b9_3",
+  "kind": "backend",
+  "zh": "把服务端的 date_created 回写成 login_at，并挡掉明显不合理的值。"
+ },
+ {
+  "id": "b9_4",
+  "kind": "backend",
+  "zh": "把模型返回的参数（JSON 字符串或 dict）安全解析为 dict。"
+ },
+ {
+  "id": "b9_5",
+  "kind": "backend",
+  "zh": "把目标账号解析成可发送的实体。"
+ },
+ {
+  "id": "b9_6",
+  "kind": "backend",
+  "zh": "把秒数说成人话，写日志和 UI 用。"
+ },
+ {
+  "id": "b9_7",
+  "kind": "backend",
+  "zh": "把逻辑名（如"
+ },
+ {
+  "id": "b9_8",
+  "kind": "backend",
+  "zh": "拆分号包 ZIP：按 fmt（如 -9- 或 5,5,5）拆成多个小包"
+ },
+ {
+  "id": "b9_9",
+  "kind": "backend",
+  "zh": "拆分格式，如 -9- 或 5,5,5"
+ },
+ {
+  "id": "b9_10",
+  "kind": "backend",
+  "zh": "拉一次，返回当前页面上的验证码（可能是旧码）。"
+ },
+ {
+  "id": "b9_11",
+  "kind": "backend",
+  "zh": "按 ID 读取一条消息完整文本"
+ },
+ {
+  "id": "b9_12",
+  "kind": "backend",
+  "zh": "按 ID 读取单条消息内容"
+ },
+ {
+  "id": "b9_13",
+  "kind": "backend",
+  "zh": "按 spec 校验并归一入参。未知键直接拒掉，不让网页乱塞东西。"
+ },
+ {
+  "id": "b9_14",
+  "kind": "backend",
+  "zh": "按最近活跃情况采集群组发言人，避开长期不活跃成员的无效触达。"
+ },
+ {
+  "id": "b9_15",
+  "kind": "backend",
+  "zh": "按标签过滤"
+ },
+ {
+  "id": "b9_16",
+  "kind": "backend",
+  "zh": "按注册时间给号包 ZIP 分类（需已配置注册时间接口或离线模式）"
+ },
+ {
+  "id": "b9_17",
+  "kind": "backend",
+  "zh": "按状态过滤"
+ },
+ {
+  "id": "b9_18",
+  "kind": "backend",
+  "zh": "按预设决定某个工具默认是否开启。"
+ },
+ {
+  "id": "b9_19",
+  "kind": "backend",
+  "zh": "排队中"
+ },
+ {
+  "id": "b9_20",
+  "kind": "backend",
+  "zh": "排障"
+ },
+ {
+  "id": "b9_21",
+  "kind": "backend",
+  "zh": "探测号是否还能用，不产生任何可见行为"
+ },
+ {
+  "id": "b9_22",
+  "kind": "backend",
+  "zh": "接管写入后读回失败（session 为空）"
+ },
+ {
+  "id": "b9_23",
+  "kind": "backend",
+  "zh": "接管未满"
+ },
+ {
+  "id": "b9_24",
+  "kind": "backend",
+  "zh": "提示语"
+ },
+ {
+  "id": "b9_25",
+  "kind": "backend",
+  "zh": "搜索公开用户/群/频道（contacts.Search）。"
+ },
+ {
+  "id": "b9_26",
+  "kind": "backend",
+  "zh": "搜索公开用户/群/频道（关键词）"
+ },
+ {
+  "id": "b9_27",
+  "kind": "backend",
+  "zh": "搜索公开群/用户"
+ },
+ {
+  "id": "b9_28",
+  "kind": "backend",
+  "zh": "搜索关键词"
+ },
+ {
+  "id": "b9_29",
+  "kind": "backend",
+  "zh": "支持 {你好|在吗} 形式的 spintax 变体"
+ },
+ {
+  "id": "b9_30",
+  "kind": "backend",
+  "zh": "收到"
+ },
+ {
+  "id": "b9_31",
+  "kind": "backend",
+  "zh": "改二步验证密码。"
+ },
+ {
+  "id": "b9_32",
+  "kind": "backend",
+  "zh": "改完之后状态不对（期望"
+ },
+ {
+  "id": "b9_33",
+  "kind": "backend",
+  "zh": "数小时到 24 小时后再试；期间请勿反复点「重生」。"
+ },
+ {
+  "id": "b9_34",
+  "kind": "backend",
+  "zh": "数据库"
+ },
+ {
+  "id": "b9_35",
+  "kind": "backend",
+  "zh": "数据提前结束（文件被截断或格式不符）"
+ },
+ {
+  "id": "b9_36",
+  "kind": "backend",
+  "zh": "数据目录 {s.data_dir}"
+ },
+ {
+  "id": "b9_37",
+  "kind": "backend",
+  "zh": "文件不存在：{fp}"
+ },
+ {
+  "id": "b9_38",
+  "kind": "backend",
+  "zh": "文件不存在：{zp}"
+ },
+ {
+  "id": "b9_39",
+  "kind": "backend",
+  "zh": "文件路径"
+ },
+ {
+  "id": "b9_40",
+  "kind": "backend",
+  "zh": "文件过大（{size} bytes），上限 50MB"
+ },
+ {
+  "id": "b9_41",
+  "kind": "backend",
+  "zh": "文件里没有 auth_key，不是已登录的会话"
+ },
+ {
+  "id": "b9_42",
+  "kind": "backend",
+  "zh": "新会话为空，未写入"
+ },
+ {
+  "id": "b9_43",
+  "kind": "backend",
+  "zh": "新会话登录失败"
+ },
+ {
+  "id": "b9_44",
+  "kind": "backend",
+  "zh": "新增账号条目（不含登录）"
+ },
+ {
+  "id": "b9_45",
+  "kind": "backend",
+  "zh": "新密码和当前密码不能都为空"
+ },
+ {
+  "id": "b9_46",
+  "kind": "backend",
+  "zh": "新密码（留空 = 移除二验）"
+ },
+ {
+  "id": "b9_47",
+  "kind": "backend",
+  "zh": "新密码；空字符串=移除二验"
+ },
+ {
+  "id": "b9_48",
+  "kind": "backend",
+  "zh": "新文本"
+ },
+ {
+  "id": "b9_49",
+  "kind": "backend",
+  "zh": "新文本不能为空"
+ },
+ {
+  "id": "b9_50",
+  "kind": "backend",
+  "zh": "无2FA密码。"
+ },
+ {
+  "id": "b9_51",
+  "kind": "backend",
+  "zh": "无本地密码"
+ },
+ {
+  "id": "b9_52",
+  "kind": "backend",
+  "zh": "无法向 @{bot} 发消息：{exc}"
+ },
+ {
+  "id": "b9_53",
+  "kind": "backend",
+  "zh": "无法获取账号信息"
+ },
+ {
+  "id": "b9_54",
+  "kind": "backend",
+  "zh": "无法解析的邀请链接"
+ },
+ {
+  "id": "b9_55",
+  "kind": "backend",
+  "zh": "旧会话"
+ },
+ {
+  "id": "b9_56",
+  "kind": "backend",
+  "zh": "时"
+ },
+ {
+  "id": "b9_57",
+  "kind": "backend",
+  "zh": "时长格式看不懂，请写成 45s / 10m / 2h 这样"
+ },
+ {
+  "id": "b9_58",
+  "kind": "backend",
+  "zh": "晚点聊"
+ },
+ {
+  "id": "b9_59",
+  "kind": "backend",
+  "zh": "暂不可再次申请，请等到 {out['retry_iso'] or retry_ts} 后再试"
+ },
+ {
+  "id": "b9_60",
+  "kind": "backend",
+  "zh": "最多人数"
+ },
+ {
+  "id": "b9_61",
+  "kind": "backend",
+  "zh": "最多处理几个（0=不限）"
+ },
+ {
+  "id": "b9_62",
+  "kind": "backend",
+  "zh": "最多收几条回复"
+ },
+ {
+  "id": "b9_63",
+  "kind": "backend",
+  "zh": "最多条数"
+ },
+ {
+  "id": "b9_64",
+  "kind": "backend",
+  "zh": "最多返回"
+ },
+ {
+  "id": "b9_65",
+  "kind": "backend",
+  "zh": "最近怎么样"
+ },
+ {
+  "id": "b9_66",
+  "kind": "backend",
+  "zh": "有本地密码"
+ },
+ {
+  "id": "b9_67",
+  "kind": "backend",
+  "zh": "服务端才是真实登录时间），下次清设备时间会随之提前"
+ },
+ {
+  "id": "b9_68",
+  "kind": "backend",
+  "zh": "服务端返回的登录时间不合理（{real}），已忽略"
+ },
+ {
+  "id": "b9_69",
+  "kind": "backend",
+  "zh": "未在 777000 读到验证码。可加大等待或确认旧会话仍能收服务通知"
+ },
+ {
+  "id": "b9_70",
+  "kind": "backend",
+  "zh": "未填写"
+ },
+ {
+  "id": "b9_71",
+  "kind": "backend",
+  "zh": "未安装 opentele，正合适：tdata 由内置解析器处理"
+ },
+ {
+  "id": "b9_72",
+  "kind": "backend",
+  "zh": "未授权（session 已失效）"
+ },
+ {
+  "id": "b9_73",
+  "kind": "backend",
+  "zh": "未知参数：{sorted(unknown)}"
+ },
+ {
+  "id": "b9_74",
+  "kind": "backend",
+  "zh": "未知客户端"
+ },
+ {
+  "id": "b9_75",
+  "kind": "backend",
+  "zh": "未知工具：{name}"
+ },
+ {
+  "id": "b9_76",
+  "kind": "backend",
+  "zh": "未知返回：{type(result).__name__}"
+ },
+ {
+  "id": "b9_77",
+  "kind": "backend",
+  "zh": "未绑定辅助邮箱"
+ },
+ {
+  "id": "b9_78",
+  "kind": "backend",
+  "zh": "未设置或仍为示例占位值"
+ },
+ {
+  "id": "b9_79",
+  "kind": "backend",
+  "zh": "未配置 API Key"
+ },
+ {
+  "id": "b9_80",
+  "kind": "backend",
+  "zh": "本地压缩：不额外请求 LLM，提取角色与要点。"
+ },
+ {
+  "id": "b9_81",
+  "kind": "backend",
+  "zh": "本地密码不正确"
+ },
+ {
+  "id": "b9_82",
+  "kind": "backend",
+  "zh": "本来就只有本机一个会话"
+ },
+ {
+  "id": "b9_83",
+  "kind": "backend",
+  "zh": "本次重试间隔（秒）：调用方临时传的优先，否则用已保存的设置。"
+ },
+ {
+  "id": "b9_84",
+  "kind": "backend",
+  "zh": "本轮跳过：%s"
+ },
+ {
+  "id": "b9_85",
+  "kind": "backend",
+  "zh": "机器人 @用户名"
+ },
+ {
+  "id": "b9_86",
+  "kind": "backend",
+  "zh": "机器人用户名"
+ },
+ {
+  "id": "b9_87",
+  "kind": "backend",
+  "zh": "条数"
+ },
+ {
+  "id": "b9_88",
+  "kind": "backend",
+  "zh": "来源会话"
+ },
+ {
+  "id": "b9_89",
+  "kind": "backend",
+  "zh": "查一批手机号哪些注册过 Telegram，查完自动清理通讯录"
+ },
+ {
+  "id": "b9_90",
+  "kind": "backend",
+  "zh": "查二验状态：有无云密码、有无辅助邮箱、是否已在重置等待期。"
+ },
+ {
+  "id": "b9_91",
+  "kind": "backend",
+  "zh": "查看单个任务的逐目标结果与失败原因"
+ },
+ {
+  "id": "b9_92",
+  "kind": "backend",
+  "zh": "查看登录满 N 小时自动踢出其它设备的开关、周期与待处理数量"
+ },
+ {
+  "id": "b9_93",
+  "kind": "backend",
+  "zh": "查线索库（采集到的活跃发言人）"
+ },
+ {
+  "id": "b9_94",
+  "kind": "backend",
+  "zh": "查询 @Okpay 钱包余额"
+ },
+ {
+  "id": "b9_95",
+  "kind": "backend",
+  "zh": "查询账号二步验证状态（是否设密码、是否绑恢复邮箱、是否有重置中）"
+ },
+ {
+  "id": "b9_96",
+  "kind": "backend",
+  "zh": "标准：多数运维能力（发消息/踢设备/改二验等），不含注销账号与退出登录"
+ },
+ {
+  "id": "b9_97",
+  "kind": "backend",
+  "zh": "标签|session"
+ },
+ {
+  "id": "b9_98",
+  "kind": "backend",
+  "zh": "标记会话已读到指定消息"
+ },
+ {
+  "id": "b9_99",
+  "kind": "backend",
+  "zh": "标记对话已读到指定 message_id（含该条）。"
+ },
+ {
+  "id": "b9_100",
+  "kind": "backend",
+  "zh": "标记已读"
+ },
+ {
+  "id": "b9_101",
+  "kind": "backend",
+  "zh": "标题"
+ },
+ {
+  "id": "b9_102",
+  "kind": "backend",
+  "zh": "校验 {a|b} 文案并预览变体（不发送）"
+ },
+ {
+  "id": "b9_103",
+  "kind": "backend",
+  "zh": "校验未通过，还剩 %d 个外部会话"
+ },
+ {
+  "id": "b9_104",
+  "kind": "backend",
+  "zh": "校验未通过：还剩 %d 个外部会话（%s）%s"
+ },
+ {
+  "id": "b9_105",
+  "kind": "backend",
+  "zh": "核心依赖"
+ },
+ {
+  "id": "b9_106",
+  "kind": "backend",
+  "zh": "格式互转：session ZIP ↔ tdata ZIP（文件须在 data 内）"
+ },
+ {
+  "id": "b9_107",
+  "kind": "backend",
+  "zh": "检查 .env 格式：每行 KEY=value，值里不要带引号/中文引号"
+ },
+ {
+  "id": "b9_108",
+  "kind": "backend",
+  "zh": "检查授权状态、限制状态与基本信息。"
+ },
+ {
+  "id": "b9_109",
+  "kind": "backend",
+  "zh": "检查授权状态失败：{type(exc).__name__}: {exc}"
+ },
+ {
+  "id": "b9_110",
+  "kind": "backend",
+  "zh": "检查旧会话授权失败：{type(exc).__name__}: {exc}"
+ },
+ {
+  "id": "b9_111",
+  "kind": "backend",
+  "zh": "检查自身出错：{type(exc).__name__}: {exc}"
+ },
+ {
+  "id": "b9_112",
+  "kind": "backend",
+  "zh": "检测到环境里装了 opentele（本程序不再使用它）"
+ },
+ {
+  "id": "b9_113",
+  "kind": "backend",
+  "zh": "正在停止"
+ },
+ {
+  "id": "b9_114",
+  "kind": "backend",
+  "zh": "每行一个，如 +10000000000|https://tgapi.example.com/@u/<uuid>/GetHTML"
+ },
+ {
+  "id": "b9_115",
+  "kind": "backend",
+  "zh": "汇报：成功数/失败数/失败原因。简体中文，短句。"
+ },
+ {
+  "id": "b9_116",
+  "kind": "backend",
+  "zh": "没匹配上不一定是没注册，也可能是对方限制了手机号搜索"
+ },
+ {
+  "id": "b9_117",
+  "kind": "backend",
+  "zh": "没找到 .session 文件：{root}"
+ },
+ {
+  "id": "b9_118",
+  "kind": "backend",
+  "zh": "没有可修改字段，允许：{sorted(allowed)}"
+ },
+ {
+  "id": "b9_119",
+  "kind": "backend",
+  "zh": "没有可导入的 session"
+ },
+ {
+  "id": "b9_120",
+  "kind": "backend",
+  "zh": "没有可用的健康账号"
+ },
+ {
+  "id": "b9_121",
+  "kind": "backend",
+  "zh": "没有待完成的登录，请先发送验证码"
+ },
+ {
+  "id": "b9_122",
+  "kind": "backend",
+  "zh": "没有手机号，无法向本机发送验证码完成转移"
+ },
+ {
+  "id": "b9_123",
+  "kind": "backend",
+  "zh": "没有要查的手机号"
+ },
+ {
+  "id": "b9_124",
+  "kind": "backend",
+  "zh": "没有进行中的扫码登录，请先获取二维码"
+ },
+ {
+  "id": "b9_125",
+  "kind": "backend",
+  "zh": "没有选中任何账号"
+ },
+ {
+  "id": "b9_126",
+  "kind": "backend",
+  "zh": "没有限制"
+ },
+ {
+  "id": "b9_127",
+  "kind": "backend",
+  "zh": "没问题"
+ },
+ {
+  "id": "b9_128",
+  "kind": "backend",
+  "zh": "波场"
+ },
+ {
+  "id": "b9_129",
+  "kind": "backend",
+  "zh": "注销 Telegram 账号不可逆，必须勾选确认"
+ },
+ {
+  "id": "b9_130",
+  "kind": "backend",
+  "zh": "注销失败：{type(exc).__name__}: {exc}"
+ },
+ {
+  "id": "b9_131",
+  "kind": "backend",
+  "zh": "注销需要两步验证密码，请在参数里填写 password 后重试"
+ },
+ {
+  "id": "b9_132",
+  "kind": "backend",
+  "zh": "浏览群/频道成员列表"
+ },
+ {
+  "id": "b9_133",
+  "kind": "backend",
+  "zh": "浏览群/频道成员（受账号权限与群设置限制）"
+ },
+ {
+  "id": "b9_134",
+  "kind": "backend",
+  "zh": "浏览群/频道成员（需有权限；大群可能受限制）。"
+ },
+ {
+  "id": "b9_135",
+  "kind": "backend",
+  "zh": "消息 ID"
+ },
+ {
+  "id": "b9_136",
+  "kind": "backend",
+  "zh": "消息 {mid} 不存在或不可见"
+ },
+ {
+  "id": "b9_137",
+  "kind": "backend",
+  "zh": "消息ID"
+ },
+ {
+  "id": "b9_138",
+  "kind": "backend",
+  "zh": "消息ID(max_id)"
+ },
+ {
+  "id": "b9_139",
+  "kind": "backend",
+  "zh": "消息ID（空格/逗号分隔）"
+ },
+ {
+  "id": "b9_140",
+  "kind": "backend",
+  "zh": "消息不存在：{mid}"
+ },
+ {
+  "id": "b9_141",
+  "kind": "backend",
+  "zh": "添加 @用户名 / 用户ID / 手机号到通讯录"
+ },
+ {
+  "id": "b9_142",
+  "kind": "backend",
+  "zh": "添加联系人"
+ },
+ {
+  "id": "b9_143",
+  "kind": "backend",
+  "zh": "添加联系人到通讯录"
+ },
+ {
+  "id": "b9_144",
+  "kind": "backend",
+  "zh": "添加联系人（@username / 用户ID / 手机号）。"
+ },
+ {
+  "id": "b9_145",
+  "kind": "backend",
+  "zh": "清会话列表。默认只退群/频道，不碰私聊——私聊里可能有验证码和找回信息。"
+ },
+ {
+  "id": "b9_146",
+  "kind": "backend",
+  "zh": "清掉头像、简介、用户名等可被前手认出的痕迹"
+ },
+ {
+  "id": "b9_147",
+  "kind": "backend",
+  "zh": "清理会话列表（默认只退群/频道，不动私聊）"
+ },
+ {
+  "id": "b9_148",
+  "kind": "backend",
+  "zh": "清用户名"
+ },
+ {
+  "id": "b9_149",
+  "kind": "backend",
+  "zh": "清空用户名"
+ },
+ {
+  "id": "b9_150",
+  "kind": "backend",
+  "zh": "清空简介"
+ },
+ {
+  "id": "b9_151",
+  "kind": "backend",
+  "zh": "清空通讯录。号是二手来的时候，前手的联系人必须清掉。"
+ },
+ {
+  "id": "b9_152",
+  "kind": "backend",
+  "zh": "清空通讯录（二手号防关联常用）"
+ },
+ {
+  "id": "b9_153",
+  "kind": "backend",
+  "zh": "清简介"
+ },
+ {
+  "id": "b9_154",
+  "kind": "backend",
+  "zh": "清线索时连带清掉它的对话记录，不然会留一堆孤儿消息。"
+ },
+ {
+  "id": "b9_155",
+  "kind": "backend",
+  "zh": "清设备周期无效"
+ },
+ {
+  "id": "b9_156",
+  "kind": "backend",
+  "zh": "清设备未成功（%s），%s后重试"
+ },
+ {
+  "id": "b9_157",
+  "kind": "backend",
+  "zh": "源 ZIP"
+ },
+ {
+  "id": "b9_158",
+  "kind": "backend",
+  "zh": "源 ZIP，须在 data 目录内"
+ },
+ {
+  "id": "b9_159",
+  "kind": "backend",
+  "zh": "源号包 ZIP，data 目录内"
+ },
+ {
+  "id": "b9_160",
+  "kind": "backend",
+  "zh": "满 %g 小时自动清设备，已校验：踢掉 %d 个，现只剩本机"
+ },
+ {
+  "id": "b9_161",
+  "kind": "backend",
+  "zh": "状态 {acc.status}，不再尝试"
+ },
+ {
+  "id": "b9_162",
+  "kind": "backend",
+  "zh": "生成一套新的桌面端设备指纹（尽量避开 linux 字样）。"
+ },
+ {
+  "id": "b9_163",
+  "kind": "backend",
+  "zh": "生成二维码图片失败：{exc}"
+ },
+ {
+  "id": "b9_164",
+  "kind": "backend",
+  "zh": "生成互聊配对：每个账号最多跟 MAX_PEERS 个不同的同池账号说话。"
+ },
+ {
+  "id": "b9_165",
+  "kind": "backend",
+  "zh": "生成会话"
+ },
+ {
+  "id": "b9_166",
+  "kind": "backend",
+  "zh": "生成会话 #{acc.index}"
+ },
+ {
+  "id": "b9_167",
+  "kind": "backend",
+  "zh": "用当前账号屏蔽指定用户（@用户名 / 用户ID / 手机号，每行一个）"
+ },
+ {
+  "id": "b9_168",
+  "kind": "backend",
+  "zh": "用当前账号搜索公开用户名/群/频道"
+ },
+ {
+  "id": "b9_169",
+  "kind": "backend",
+  "zh": "用户名: {exc!r}"
+ },
+ {
+  "id": "b9_170",
+  "kind": "backend",
+  "zh": "用户在向导里选了“本机免令牌”。"
+ },
+ {
+  "id": "b9_171",
+  "kind": "backend",
+  "zh": "用指定托管账号取消屏蔽一个用户"
+ },
+ {
+  "id": "b9_172",
+  "kind": "backend",
+  "zh": "用指定托管账号屏蔽一个用户（@用户名 / 用户ID / 手机号）"
+ },
+ {
+  "id": "b9_173",
+  "kind": "backend",
+  "zh": "用该号私聊 OKPay 钱包机器人查余额。"
+ },
+ {
+  "id": "b9_174",
+  "kind": "backend",
+  "zh": "由盐值与本地密码推导 256 字节本地主密钥。"
+ },
+ {
+  "id": "b9_175",
+  "kind": "backend",
+  "zh": "申请官方重置等待期（通常约7天）。有辅助邮箱也会照常申请，但原持有人仍可能邮箱恢复"
+ },
+ {
+  "id": "b9_176",
+  "kind": "backend",
+  "zh": "登录后定时自动踢出其它设备。"
+ },
+ {
+  "id": "b9_177",
+  "kind": "backend",
+  "zh": "登录时间按服务端 date_created 回拨 %.1f 小时（本地存的是导入时间，"
+ },
+ {
+  "id": "b9_178",
+  "kind": "backend",
+  "zh": "目标 {peer} 不在 TAM_PEER_ALLOWLIST 白名单中，拒绝发送"
+ },
+ {
+  "id": "b9_179",
+  "kind": "backend",
+  "zh": "目标不能为空"
+ },
+ {
+  "id": "b9_180",
+  "kind": "backend",
+  "zh": "目标会话"
+ },
+ {
+  "id": "b9_181",
+  "kind": "backend",
+  "zh": "目标用户（每行一个）"
+ },
+ {
+  "id": "b9_182",
+  "kind": "backend",
+  "zh": "相对 data 或 data 内绝对路径"
+ },
+ {
+  "id": "b9_183",
+  "kind": "backend",
+  "zh": "相对于 data 或绝对路径（须在 data 内）"
+ },
+ {
+  "id": "b9_184",
+  "kind": "backend",
+  "zh": "看到了"
+ },
+ {
+  "id": "b9_185",
+  "kind": "backend",
+  "zh": "确认 data/ 目录可写，或删除 data/tam.db 重建（会丢失已存账号）"
+ },
+ {
+  "id": "b9_186",
+  "kind": "backend",
+  "zh": "离开群/频道"
+ },
+ {
+  "id": "b9_187",
+  "kind": "backend",
+  "zh": "离开群/频道。"
+ },
+ {
+  "id": "b9_188",
+  "kind": "backend",
+  "zh": "离开群聊"
+ },
+ {
+  "id": "b9_189",
+  "kind": "backend",
+  "zh": "私聊 @Okpay 查询钱包余额（自动解析 USDT/TRX 等）"
+ },
+ {
+  "id": "b9_190",
+  "kind": "backend",
+  "zh": "私聊 OKPay 钱包机器人查余额：自动点选 USDT/TRX/CNY 等菜单。"
+ },
+ {
+  "id": "b9_191",
+  "kind": "backend",
+  "zh": "秒"
+ },
+ {
+  "id": "b9_192",
+  "kind": "backend",
+  "zh": "秒钟"
+ },
+ {
+  "id": "b9_193",
+  "kind": "backend",
+  "zh": "移除"
+ },
+ {
+  "id": "b9_194",
+  "kind": "backend",
+  "zh": "稍等一下"
+ },
+ {
+  "id": "b9_195",
+  "kind": "backend",
+  "zh": "立即对到期账号执行一次自动清设备"
+ },
+ {
+  "id": "b9_196",
+  "kind": "backend",
+  "zh": "端口 {port}"
+ },
+ {
+  "id": "b9_197",
+  "kind": "backend",
+  "zh": "等回复（秒）"
+ },
+ {
+  "id": "b9_198",
+  "kind": "backend",
+  "zh": "等待用户扫码完成。超时可再次调用；过期需重新 start。"
+ },
+ {
+  "id": "b9_199",
+  "kind": "backend",
+  "zh": "等待秒数"
+ }
+]

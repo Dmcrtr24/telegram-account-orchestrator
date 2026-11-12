@@ -1,0 +1,802 @@
+{
+  "b9_0": {
+    "ru": "Кодировать tg://login?token=... в PNG data URL (base64).",
+    "en": "Encode tg://login?token=... into a PNG data URL (base64)."
+  },
+  "b9_1": {
+    "ru": "Заменить {name} на поле персонализации. Без str.format, чтобы не конфликтовать с фигурными скобками spintax.",
+    "en": "Replace {name} with a personalization field. No str.format, to avoid clashing with spintax braces."
+  },
+  "b9_2": {
+    "ru": "Преобразовать человекочитаемую длительность в секунды. При непонятном формате вернуть значение по умолчанию, без исключения.",
+    "en": "Convert a human-written duration to seconds. Fall back to the default if unparsable; no exception."
+  },
+  "b9_3": {
+    "ru": "Перезаписать серверный date_created в login_at и отсечь явно неверные значения.",
+    "en": "Write the server's date_created back into login_at, filtering out clearly invalid values."
+  },
+  "b9_4": {
+    "ru": "Безопасно разобрать параметры от модели (строка JSON или dict) в dict.",
+    "en": "Safely parse the model's returned params (JSON string or dict) into a dict."
+  },
+  "b9_5": {
+    "ru": "Разобрать целевой аккаунт в сущность, пригодную для отправки.",
+    "en": "Resolve the target account into a sendable entity."
+  },
+  "b9_6": {
+    "ru": "Превратить секунды в человекочитаемый вид для логов и UI.",
+    "en": "Render seconds in human-readable form for logs and UI."
+  },
+  "b9_7": {
+    "ru": "Логическое имя (например",
+    "en": "Logical name (e.g."
+  },
+  "b9_8": {
+    "ru": "Разбить ZIP пакета аккаунтов: по fmt (например -9- или 5,5,5) на несколько частей",
+    "en": "Split account pack ZIP: by fmt (e.g. -9- or 5,5,5) into several smaller packs"
+  },
+  "b9_9": {
+    "ru": "Формат разбиения, например -9- или 5,5,5",
+    "en": "Split format, e.g. -9- or 5,5,5"
+  },
+  "b9_10": {
+    "ru": "Запросить один раз и вернуть код с текущей страницы (может быть устаревшим).",
+    "en": "Fetch once and return the code on the current page (may be stale)."
+  },
+  "b9_11": {
+    "ru": "Прочитать полный текст сообщения по ID",
+    "en": "Read the full text of one message by ID"
+  },
+  "b9_12": {
+    "ru": "Прочитать содержимое одного сообщения по ID",
+    "en": "Read one message's content by ID"
+  },
+  "b9_13": {
+    "ru": "Проверить и нормализовать входные параметры по spec. Неизвестные ключи отбрасываются, чтобы веб не подсовывал лишнее.",
+    "en": "Validate and normalize inputs against spec. Reject unknown keys so the web UI can't stuff in extras."
+  },
+  "b9_14": {
+    "ru": "Собирать участников группы по недавней активности, избегая бесполезных касаний давно неактивных.",
+    "en": "Collect group senders by recent activity, avoiding wasted outreach to long-inactive members."
+  },
+  "b9_15": {
+    "ru": "Фильтр по тегам",
+    "en": "Filter by tags"
+  },
+  "b9_16": {
+    "ru": "Разложить ZIP пакета аккаунтов по времени регистрации (нужен настроенный API времени регистрации или офлайн-режим)",
+    "en": "Sort an account pack ZIP by registration time (requires a configured registration-time API or offline mode)"
+  },
+  "b9_17": {
+    "ru": "Фильтр по статусу",
+    "en": "Filter by status"
+  },
+  "b9_18": {
+    "ru": "Определить по пресету, включён ли инструмент по умолчанию.",
+    "en": "Decide from the preset whether a tool is on by default."
+  },
+  "b9_19": {
+    "ru": "В очереди",
+    "en": "Queued"
+  },
+  "b9_20": {
+    "ru": "Диагностика",
+    "en": "Troubleshooting"
+  },
+  "b9_21": {
+    "ru": "Проверить, жив ли аккаунт, без каких-либо видимых действий",
+    "en": "Probe whether the account still works, with no visible side effects"
+  },
+  "b9_22": {
+    "ru": "Ошибка чтения после перехвата записи (session пуст)",
+    "en": "Read-back failed after takeover write (session is empty)"
+  },
+  "b9_23": {
+    "ru": "Перехват не завершён",
+    "en": "Takeover incomplete"
+  },
+  "b9_24": {
+    "ru": "Подсказка",
+    "en": "Prompt"
+  },
+  "b9_25": {
+    "ru": "Поиск публичных пользователей/групп/каналов (contacts.Search).",
+    "en": "Search public users/groups/channels (contacts.Search)."
+  },
+  "b9_26": {
+    "ru": "Поиск публичных пользователей/групп/каналов (по ключевому слову)",
+    "en": "Search public users/groups/channels (by keyword)"
+  },
+  "b9_27": {
+    "ru": "Поиск публичных групп/пользователей",
+    "en": "Search public groups/users"
+  },
+  "b9_28": {
+    "ru": "Ключевое слово для поиска",
+    "en": "Search keyword"
+  },
+  "b9_29": {
+    "ru": "Поддерживает spintax-варианты вида {你好|在吗}",
+    "en": "Supports spintax variants like {你好|在吗}"
+  },
+  "b9_30": {
+    "ru": "Принято",
+    "en": "Got it"
+  },
+  "b9_31": {
+    "ru": "Сменить пароль 2FA.",
+    "en": "Change the 2FA password."
+  },
+  "b9_32": {
+    "ru": "После смены статус неверный (ожидался",
+    "en": "State is wrong after the change (expected"
+  },
+  "b9_33": {
+    "ru": "Повторите через несколько часов — до 24 часов; всё это время не жмите «Перегенерацию» многократно.",
+    "en": "Retry in a few hours up to 24 hours; don't keep clicking “Regenerate” in the meantime."
+  },
+  "b9_34": {
+    "ru": "База данных",
+    "en": "Database"
+  },
+  "b9_35": {
+    "ru": "Данные закончились раньше времени (файл обрезан или формат не тот)",
+    "en": "Data ended prematurely (file truncated or wrong format)"
+  },
+  "b9_36": {
+    "ru": "Каталог данных {s.data_dir}",
+    "en": "Data directory {s.data_dir}"
+  },
+  "b9_37": {
+    "ru": "Файл не найден: {fp}",
+    "en": "File not found: {fp}"
+  },
+  "b9_38": {
+    "ru": "Файл не найден: {zp}",
+    "en": "File not found: {zp}"
+  },
+  "b9_39": {
+    "ru": "Путь к файлу",
+    "en": "File path"
+  },
+  "b9_40": {
+    "ru": "Файл слишком большой ({size} bytes), лимит 50MB",
+    "en": "File too large ({size} bytes), limit 50MB"
+  },
+  "b9_41": {
+    "ru": "В файле нет auth_key — сессия не авторизована",
+    "en": "No auth_key in the file — not a signed-in session"
+  },
+  "b9_42": {
+    "ru": "Новая сессия пуста, не записана",
+    "en": "New session is empty, not written"
+  },
+  "b9_43": {
+    "ru": "Не удалось войти в новую сессию",
+    "en": "New session sign-in failed"
+  },
+  "b9_44": {
+    "ru": "Добавить запись аккаунта (без входа)",
+    "en": "Add account entry (without sign-in)"
+  },
+  "b9_45": {
+    "ru": "Новый и текущий пароль не могут быть оба пустыми",
+    "en": "New and current password can't both be empty"
+  },
+  "b9_46": {
+    "ru": "Новый пароль (пусто = убрать 2FA)",
+    "en": "New password (empty = remove 2FA)"
+  },
+  "b9_47": {
+    "ru": "Новый пароль; пустая строка = убрать 2FA",
+    "en": "New password; empty string = remove 2FA"
+  },
+  "b9_48": {
+    "ru": "Новый текст",
+    "en": "New text"
+  },
+  "b9_49": {
+    "ru": "Новый текст не может быть пустым",
+    "en": "New text can't be empty"
+  },
+  "b9_50": {
+    "ru": "Нет пароля 2FA.",
+    "en": "No 2FA password."
+  },
+  "b9_51": {
+    "ru": "Нет локального пароля",
+    "en": "No local password"
+  },
+  "b9_52": {
+    "ru": "Не удалось написать @{bot}: {exc}",
+    "en": "Can't message @{bot}: {exc}"
+  },
+  "b9_53": {
+    "ru": "Не удалось получить данные аккаунта",
+    "en": "Can't fetch account info"
+  },
+  "b9_54": {
+    "ru": "Не удалось разобрать ссылку-приглашение",
+    "en": "Unparsable invite link"
+  },
+  "b9_55": {
+    "ru": "Старая сессия",
+    "en": "Old session"
+  },
+  "b9_56": {
+    "ru": "ч",
+    "en": "h"
+  },
+  "b9_57": {
+    "ru": "Непонятный формат длительности, пишите как 45s / 10m / 2h",
+    "en": "Can't parse the duration format; write it like 45s / 10m / 2h"
+  },
+  "b9_58": {
+    "ru": "Поговорим позже",
+    "en": "Talk later"
+  },
+  "b9_59": {
+    "ru": "Повторная заявка пока недоступна, попробуйте после {out['retry_iso'] or retry_ts}",
+    "en": "Can't re-apply yet; retry after {out['retry_iso'] or retry_ts}"
+  },
+  "b9_60": {
+    "ru": "Макс. участников",
+    "en": "Max members"
+  },
+  "b9_61": {
+    "ru": "Сколько обрабатывать (0 = без лимита)",
+    "en": "How many to process (0 = unlimited)"
+  },
+  "b9_62": {
+    "ru": "Сколько ответов собирать",
+    "en": "Max replies to collect"
+  },
+  "b9_63": {
+    "ru": "Макс. количество",
+    "en": "Max count"
+  },
+  "b9_64": {
+    "ru": "Макс. в выдаче",
+    "en": "Max returned"
+  },
+  "b9_65": {
+    "ru": "Как дела",
+    "en": "How's it going"
+  },
+  "b9_66": {
+    "ru": "Есть локальный пароль",
+    "en": "Local password set"
+  },
+  "b9_67": {
+    "ru": "реальное время входа — только серверное), поэтому следующий сброс устройств сдвинется на более ранний срок",
+    "en": "only the server time is the real sign-in time), so the next device reset moves earlier"
+  },
+  "b9_68": {
+    "ru": "Сервер вернул неверное время входа ({real}), проигнорировано",
+    "en": "Server returned an invalid sign-in time ({real}); ignored"
+  },
+  "b9_69": {
+    "ru": "Код не найден в 777000. Увеличьте ожидание или проверьте, что старая сессия ещё получает сервисные уведомления",
+    "en": "No code read from 777000. Increase the wait or confirm the old session still receives service notifications"
+  },
+  "b9_70": {
+    "ru": "Не заполнено",
+    "en": "Not set"
+  },
+  "b9_71": {
+    "ru": "opentele не установлен — и хорошо: tdata обрабатывает встроенный парсер",
+    "en": "opentele is not installed — just as well: tdata is handled by the built-in parser"
+  },
+  "b9_72": {
+    "ru": "Не авторизован (session недействителен)",
+    "en": "Unauthorized (session expired)"
+  },
+  "b9_73": {
+    "ru": "Неизвестные параметры: {sorted(unknown)}",
+    "en": "Unknown params: {sorted(unknown)}"
+  },
+  "b9_74": {
+    "ru": "Неизвестный клиент",
+    "en": "Unknown client"
+  },
+  "b9_75": {
+    "ru": "Неизвестный инструмент: {name}",
+    "en": "Unknown tool: {name}"
+  },
+  "b9_76": {
+    "ru": "Неизвестный возврат: {type(result).__name__}",
+    "en": "Unknown return: {type(result).__name__}"
+  },
+  "b9_77": {
+    "ru": "Резервная почта не привязана",
+    "en": "No recovery email linked"
+  },
+  "b9_78": {
+    "ru": "Не задано или осталось примером-заглушкой",
+    "en": "Not set or still the sample placeholder"
+  },
+  "b9_79": {
+    "ru": "API Key не настроен",
+    "en": "API Key not configured"
+  },
+  "b9_80": {
+    "ru": "Локальное сжатие: без запросов к LLM, извлекаются роли и ключевые пункты.",
+    "en": "Local compression: no extra LLM calls; extracts roles and key points."
+  },
+  "b9_81": {
+    "ru": "Неверный локальный пароль",
+    "en": "Incorrect local password"
+  },
+  "b9_82": {
+    "ru": "И так была только одна сессия — эта машина",
+    "en": "There was only this machine's session to begin with"
+  },
+  "b9_83": {
+    "ru": "Интервал повтора (сек): приоритет у переданного вызывающим, иначе сохранённая настройка.",
+    "en": "Retry interval for this run (sec): a caller-supplied value wins, otherwise the saved setting."
+  },
+  "b9_84": {
+    "ru": "Пропущено в этом раунде: %s",
+    "en": "Skipped this round: %s"
+  },
+  "b9_85": {
+    "ru": "Бот @username",
+    "en": "Bot @username"
+  },
+  "b9_86": {
+    "ru": "Username бота",
+    "en": "Bot username"
+  },
+  "b9_87": {
+    "ru": "Количество",
+    "en": "Count"
+  },
+  "b9_88": {
+    "ru": "Исходная сессия",
+    "en": "Source session"
+  },
+  "b9_89": {
+    "ru": "Проверить, какие из номеров зарегистрированы в Telegram, с автоочисткой контактов",
+    "en": "Check which phone numbers are registered on Telegram, clearing contacts afterwards"
+  },
+  "b9_90": {
+    "ru": "Проверить статус 2FA: есть ли облачный пароль, резервная почта, идёт ли период ожидания сброса.",
+    "en": "Check 2FA status: whether a cloud password or recovery email exists, and whether a reset cooldown is active."
+  },
+  "b9_91": {
+    "ru": "Посмотреть результаты по каждой цели одной задачи и причины ошибок",
+    "en": "View per-target results and failure reasons for one task"
+  },
+  "b9_92": {
+    "ru": "Посмотреть переключатель, период и число ожидающих для автосброса других устройств через N часов после входа",
+    "en": "View the switch, period and pending count for auto-terminating other devices N hours after sign-in"
+  },
+  "b9_93": {
+    "ru": "Открыть базу лидов (собранные активные участники)",
+    "en": "Open the leads base (collected active senders)"
+  },
+  "b9_94": {
+    "ru": "Проверить баланс кошелька @Okpay",
+    "en": "Check @Okpay wallet balance"
+  },
+  "b9_95": {
+    "ru": "Проверить статус 2FA аккаунта (пароль, резервная почта, идёт ли сброс)",
+    "en": "Check account 2FA status (password set, recovery email linked, reset in progress)"
+  },
+  "b9_96": {
+    "ru": "Стандарт: большинство операций (отправка сообщений/сброс устройств/смена 2FA и т.п.), без удаления аккаунта и выхода",
+    "en": "Standard: most ops (send messages/terminate devices/change 2FA etc.), excluding account deletion and sign-out"
+  },
+  "b9_97": {
+    "ru": "Теги|session",
+    "en": "Tags|session"
+  },
+  "b9_98": {
+    "ru": "Отметить сессию прочитанной до указанного сообщения",
+    "en": "Mark the session as read up to a given message"
+  },
+  "b9_99": {
+    "ru": "Отметить диалог прочитанным до указанного message_id (включительно).",
+    "en": "Mark the chat as read up to the given message_id (inclusive)."
+  },
+  "b9_100": {
+    "ru": "Отметить прочитанным",
+    "en": "Mark as read"
+  },
+  "b9_101": {
+    "ru": "Заголовок",
+    "en": "Title"
+  },
+  "b9_102": {
+    "ru": "Проверить текст {a|b} и посмотреть варианты (без отправки)",
+    "en": "Validate {a|b} text and preview variants (without sending)"
+  },
+  "b9_103": {
+    "ru": "Проверка не пройдена, осталось %d внешних сессий",
+    "en": "Check failed, %d other sessions remain"
+  },
+  "b9_104": {
+    "ru": "Проверка не пройдена: осталось %d внешних сессий (%s)%s",
+    "en": "Check failed: %d other sessions remain (%s)%s"
+  },
+  "b9_105": {
+    "ru": "Ключевые зависимости",
+    "en": "Core dependencies"
+  },
+  "b9_106": {
+    "ru": "Конвертация форматов: session ZIP ↔ tdata ZIP (файлы должны быть внутри data)",
+    "en": "Format conversion: session ZIP ↔ tdata ZIP (files must be inside data)"
+  },
+  "b9_107": {
+    "ru": "Проверить формат .env: по строке KEY=value, без кавычек и китайских кавычек в значениях",
+    "en": "Check .env format: one KEY=value per line, no quotes or CJK quotes in values"
+  },
+  "b9_108": {
+    "ru": "Проверить авторизацию, ограничения и базовые данные.",
+    "en": "Check authorization, restriction status and basic info."
+  },
+  "b9_109": {
+    "ru": "Не удалось проверить авторизацию: {type(exc).__name__}: {exc}",
+    "en": "Failed to check authorization: {type(exc).__name__}: {exc}"
+  },
+  "b9_110": {
+    "ru": "Не удалось проверить авторизацию старой сессии: {type(exc).__name__}: {exc}",
+    "en": "Failed to check old session authorization: {type(exc).__name__}: {exc}"
+  },
+  "b9_111": {
+    "ru": "Ошибка при самопроверке: {type(exc).__name__}: {exc}",
+    "en": "Error while checking itself: {type(exc).__name__}: {exc}"
+  },
+  "b9_112": {
+    "ru": "В окружении найден opentele (программа его больше не использует)",
+    "en": "opentele detected in the environment (no longer used by this app)"
+  },
+  "b9_113": {
+    "ru": "Остановка",
+    "en": "Stopping"
+  },
+  "b9_114": {
+    "ru": "По одному в строке, например +10000000000|https://tgapi.example.com/@u/<uuid>/GetHTML",
+    "en": "One per line, e.g. +10000000000|https://tgapi.example.com/@u/<uuid>/GetHTML"
+  },
+  "b9_115": {
+    "ru": "Отчёт: число успехов/ошибок/причины ошибок. Упрощённый китайский, короткие фразы.",
+    "en": "Report: successes/failures/failure reasons. Simplified Chinese, short sentences."
+  },
+  "b9_116": {
+    "ru": "Нет совпадения — не значит, что номер не зарегистрирован: возможно, у владельца запрещён поиск по номеру",
+    "en": "No match doesn't mean unregistered — the person may have phone-number search disabled"
+  },
+  "b9_117": {
+    "ru": "Файлы .session не найдены: {root}",
+    "en": "No .session files found: {root}"
+  },
+  "b9_118": {
+    "ru": "Нет полей для изменения, допустимы: {sorted(allowed)}",
+    "en": "No editable fields; allowed: {sorted(allowed)}"
+  },
+  "b9_119": {
+    "ru": "Нет session для импорта",
+    "en": "No session to import"
+  },
+  "b9_120": {
+    "ru": "Нет доступных рабочих аккаунтов",
+    "en": "No healthy accounts available"
+  },
+  "b9_121": {
+    "ru": "Нет незавершённого входа — сначала отправьте код",
+    "en": "No pending sign-in; send a code first"
+  },
+  "b9_122": {
+    "ru": "Нет номера телефона — нельзя отправить код на эту машину для переноса",
+    "en": "No phone number; can't send a code to this machine to complete the transfer"
+  },
+  "b9_123": {
+    "ru": "Нет номеров для проверки",
+    "en": "No phone numbers to check"
+  },
+  "b9_124": {
+    "ru": "Нет активного входа по QR — сначала получите QR-код",
+    "en": "No QR sign-in in progress; get a QR code first"
+  },
+  "b9_125": {
+    "ru": "Аккаунты не выбраны",
+    "en": "No accounts selected"
+  },
+  "b9_126": {
+    "ru": "Без ограничений",
+    "en": "No restrictions"
+  },
+  "b9_127": {
+    "ru": "Всё в порядке",
+    "en": "All good"
+  },
+  "b9_128": {
+    "ru": "TRON",
+    "en": "TRON"
+  },
+  "b9_129": {
+    "ru": "Удаление аккаунта Telegram необратимо — нужно поставить галочку",
+    "en": "Deleting the Telegram account is irreversible; you must tick the confirmation"
+  },
+  "b9_130": {
+    "ru": "Не удалось удалить аккаунт: {type(exc).__name__}: {exc}",
+    "en": "Account deletion failed: {type(exc).__name__}: {exc}"
+  },
+  "b9_131": {
+    "ru": "Для удаления нужен пароль 2FA: укажите password в параметрах и повторите",
+    "en": "Deletion needs the 2FA password; fill in password in the params and retry"
+  },
+  "b9_132": {
+    "ru": "Просмотреть список участников группы/канала",
+    "en": "Browse group/channel member list"
+  },
+  "b9_133": {
+    "ru": "Просмотр участников группы/канала (ограничен правами аккаунта и настройками группы)",
+    "en": "Browse group/channel members (limited by account rights and group settings)"
+  },
+  "b9_134": {
+    "ru": "Просмотр участников группы/канала (нужны права; в больших группах возможны ограничения).",
+    "en": "Browse group/channel members (rights required; large groups may be limited)."
+  },
+  "b9_135": {
+    "ru": "ID сообщения",
+    "en": "Message ID"
+  },
+  "b9_136": {
+    "ru": "Сообщение {mid} не существует или не видно",
+    "en": "Message {mid} doesn't exist or isn't visible"
+  },
+  "b9_137": {
+    "ru": "ID сообщения",
+    "en": "Message ID"
+  },
+  "b9_138": {
+    "ru": "ID сообщения (max_id)",
+    "en": "Message ID (max_id)"
+  },
+  "b9_139": {
+    "ru": "ID сообщений (через пробел/запятую)",
+    "en": "Message IDs (space/comma separated)"
+  },
+  "b9_140": {
+    "ru": "Сообщение не существует: {mid}",
+    "en": "Message doesn't exist: {mid}"
+  },
+  "b9_141": {
+    "ru": "Добавить @username / ID пользователя / номер телефона в контакты",
+    "en": "Add @username / user ID / phone number to contacts"
+  },
+  "b9_142": {
+    "ru": "Добавить контакт",
+    "en": "Add contact"
+  },
+  "b9_143": {
+    "ru": "Добавить контакт в список контактов",
+    "en": "Add contact to contact list"
+  },
+  "b9_144": {
+    "ru": "Добавить контакт (@username / ID пользователя / номер телефона).",
+    "en": "Add contact (@username / user ID / phone number)."
+  },
+  "b9_145": {
+    "ru": "Очистить список диалогов. По умолчанию выход только из групп/каналов, личные чаты не трогаются — там могут быть коды и данные восстановления.",
+    "en": "Clear the chat list. By default only leaves groups/channels; private chats are left alone — they may hold codes and recovery info."
+  },
+  "b9_146": {
+    "ru": "Стереть аватар, описание, username и прочие следы, по которым узнают прежнего владельца",
+    "en": "Wipe the avatar, bio, username and other traces of the previous owner"
+  },
+  "b9_147": {
+    "ru": "Очистить список диалогов (по умолчанию только выход из групп/каналов, личные чаты не трогаются)",
+    "en": "Clear the chat list (by default only leaves groups/channels, private chats untouched)"
+  },
+  "b9_148": {
+    "ru": "Очистить username",
+    "en": "Clear username"
+  },
+  "b9_149": {
+    "ru": "Очистить username",
+    "en": "Clear username"
+  },
+  "b9_150": {
+    "ru": "Очистить описание",
+    "en": "Clear bio"
+  },
+  "b9_151": {
+    "ru": "Очистить контакты. Если аккаунт куплен, контакты прежнего владельца обязательно удалить.",
+    "en": "Clear contacts. For a second-hand account, the previous owner's contacts must be removed."
+  },
+  "b9_152": {
+    "ru": "Очистить контакты (часто нужно для защиты от связи с прежним владельцем)",
+    "en": "Clear contacts (common for unlinking second-hand accounts)"
+  },
+  "b9_153": {
+    "ru": "Очистить описание",
+    "en": "Clear bio"
+  },
+  "b9_154": {
+    "ru": "При удалении лида удалять и его переписку, иначе останутся осиротевшие сообщения.",
+    "en": "When clearing a lead, clear its chat history too, or orphan messages pile up."
+  },
+  "b9_155": {
+    "ru": "Неверный период сброса устройств",
+    "en": "Invalid device reset period"
+  },
+  "b9_156": {
+    "ru": "Сброс устройств не удался (%s), повтор через %s",
+    "en": "Device reset failed (%s), retry in %s"
+  },
+  "b9_157": {
+    "ru": "Исходный ZIP",
+    "en": "Source ZIP"
+  },
+  "b9_158": {
+    "ru": "Исходный ZIP, должен быть в каталоге data",
+    "en": "Source ZIP, must be inside the data directory"
+  },
+  "b9_159": {
+    "ru": "Исходный ZIP пакета аккаунтов в каталоге data",
+    "en": "Source account pack ZIP inside the data directory"
+  },
+  "b9_160": {
+    "ru": "Автосброс устройств через %g ч: проверено — отключено %d, осталась только эта машина",
+    "en": "Auto device reset after %g hours; verified: %d terminated, only this machine left"
+  },
+  "b9_161": {
+    "ru": "Статус {acc.status}, попытки прекращены",
+    "en": "Status {acc.status}, no more retries"
+  },
+  "b9_162": {
+    "ru": "Сгенерировать новый набор отпечатков десктопного устройства (по возможности без упоминания linux).",
+    "en": "Generate a new desktop device fingerprint (avoiding the word linux where possible)."
+  },
+  "b9_163": {
+    "ru": "Не удалось создать изображение QR-кода: {exc}",
+    "en": "Failed to generate the QR code image: {exc}"
+  },
+  "b9_164": {
+    "ru": "Построить пары для переписки: каждый аккаунт общается максимум с MAX_PEERS разными аккаунтами из пула.",
+    "en": "Build chat pairs: each account talks to at most MAX_PEERS different accounts in the pool."
+  },
+  "b9_165": {
+    "ru": "Создать сессию",
+    "en": "Create session"
+  },
+  "b9_166": {
+    "ru": "Создание сессии #{acc.index}",
+    "en": "Creating session #{acc.index}"
+  },
+  "b9_167": {
+    "ru": "Заблокировать пользователей с текущего аккаунта (@username / ID пользователя / номер, по одному в строке)",
+    "en": "Block given users from the current account (@username / user ID / phone number, one per line)"
+  },
+  "b9_168": {
+    "ru": "Искать публичные username/группы/каналы с текущего аккаунта",
+    "en": "Search public usernames/groups/channels from the current account"
+  },
+  "b9_169": {
+    "ru": "Username: {exc!r}",
+    "en": "Username: {exc!r}"
+  },
+  "b9_170": {
+    "ru": "Пользователь выбрал в мастере «эта машина без токена».",
+    "en": "The user chose “this machine without a token” in the wizard."
+  },
+  "b9_171": {
+    "ru": "Разблокировать пользователя с указанного управляемого аккаунта",
+    "en": "Unblock a user from the given managed account"
+  },
+  "b9_172": {
+    "ru": "Заблокировать пользователя с указанного управляемого аккаунта (@username / ID пользователя / номер)",
+    "en": "Block a user from the given managed account (@username / user ID / phone number)"
+  },
+  "b9_173": {
+    "ru": "Проверить баланс в личном чате с ботом кошелька OKPay с этого аккаунта.",
+    "en": "Check the balance by messaging the OKPay wallet bot from this account."
+  },
+  "b9_174": {
+    "ru": "Вывести 256-байтовый локальный мастер-ключ из соли и локального пароля.",
+    "en": "Derive the 256-byte local master key from the salt and local password."
+  },
+  "b9_175": {
+    "ru": "Запросить официальный период ожидания сброса (обычно около 7 дней). При наличии резервной почты заявка тоже подаётся, но прежний владелец всё равно может восстановить через почту",
+    "en": "Request the official reset waiting period (usually about 7 days). With a recovery email the request still goes through, but the previous owner may still recover via email"
+  },
+  "b9_176": {
+    "ru": "Автоматически сбрасывать другие устройства по расписанию после входа.",
+    "en": "Automatically terminate other devices on a schedule after sign-in."
+  },
+  "b9_177": {
+    "ru": "Время входа сдвинуто назад на %.1f ч по серверному date_created (локально хранится время импорта,",
+    "en": "Sign-in time moved back by %.1f hours per the server's date_created (locally the import time is stored,"
+  },
+  "b9_178": {
+    "ru": "Цель {peer} отсутствует в белом списке TAM_PEER_ALLOWLIST, отправка отклонена",
+    "en": "Target {peer} is not in the TAM_PEER_ALLOWLIST allowlist; send refused"
+  },
+  "b9_179": {
+    "ru": "Цель не может быть пустой",
+    "en": "Target can't be empty"
+  },
+  "b9_180": {
+    "ru": "Целевая сессия",
+    "en": "Target session"
+  },
+  "b9_181": {
+    "ru": "Целевые пользователи (по одному в строке)",
+    "en": "Target users (one per line)"
+  },
+  "b9_182": {
+    "ru": "Относительно data или абсолютный путь внутри data",
+    "en": "Relative to data or an absolute path inside data"
+  },
+  "b9_183": {
+    "ru": "Относительно data или абсолютный путь (внутри data)",
+    "en": "Relative to data or absolute path (must be inside data)"
+  },
+  "b9_184": {
+    "ru": "Увидел",
+    "en": "Seen"
+  },
+  "b9_185": {
+    "ru": "Проверьте, что каталог data/ доступен для записи, или удалите data/tam.db для пересоздания (сохранённые аккаунты пропадут)",
+    "en": "Make sure data/ is writable, or delete data/tam.db to recreate it (saved accounts will be lost)"
+  },
+  "b9_186": {
+    "ru": "Покинуть группу/канал",
+    "en": "Leave group/channel"
+  },
+  "b9_187": {
+    "ru": "Покинуть группу/канал.",
+    "en": "Leave group/channel."
+  },
+  "b9_188": {
+    "ru": "Покинуть группу",
+    "en": "Leave group"
+  },
+  "b9_189": {
+    "ru": "Личный чат с @Okpay для проверки баланса (авторазбор USDT/TRX и др.)",
+    "en": "Message @Okpay to check the wallet balance (auto-parses USDT/TRX etc.)"
+  },
+  "b9_190": {
+    "ru": "Проверка баланса в личном чате с ботом кошелька OKPay: автоматически выбирает меню USDT/TRX/CNY и т.п.",
+    "en": "Check the balance in the OKPay wallet bot chat: automatically picks USDT/TRX/CNY menus."
+  },
+  "b9_191": {
+    "ru": "с",
+    "en": "s"
+  },
+  "b9_192": {
+    "ru": "сек",
+    "en": "sec"
+  },
+  "b9_193": {
+    "ru": "Убрать",
+    "en": "Remove"
+  },
+  "b9_194": {
+    "ru": "Подождите немного",
+    "en": "One moment"
+  },
+  "b9_195": {
+    "ru": "Сразу выполнить автосброс устройств для аккаунтов с истёкшим сроком",
+    "en": "Run the auto device reset now for due accounts"
+  },
+  "b9_196": {
+    "ru": "Порт {port}",
+    "en": "Port {port}"
+  },
+  "b9_197": {
+    "ru": "Ожидание ответа (сек)",
+    "en": "Wait for reply (sec)"
+  },
+  "b9_198": {
+    "ru": "Ожидание сканирования QR. При таймауте можно вызвать снова; после истечения нужен новый start.",
+    "en": "Wait for the user to scan. On timeout you can call again; after expiry a new start is required."
+  },
+  "b9_199": {
+    "ru": "Секунд ожидания",
+    "en": "Wait seconds"
+  }
+}

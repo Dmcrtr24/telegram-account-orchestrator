@@ -1,0 +1,802 @@
+{
+ "b1_0": {
+  "ru": "\" placeholder=\"например 1,2,5\" /></label>",
+  "en": "\" placeholder=\"e.g. 1,2,5\" /></label>"
+ },
+ "b1_1": {
+  "ru": "\" rows=\"5\" placeholder=\"по одному в строке\"></textarea></label>",
+  "en": "\" rows=\"5\" placeholder=\"one per line\"></textarea></label>"
+ },
+ "b1_2": {
+  "ru": "${s.set ? '✓ Задано' : '— Не задано'}",
+  "en": "${s.set ? '✓ Set' : '— Not set'}"
+ },
+ "b1_3": {
+  "ru": "${s.set ? 'Задано, пустое поле — без изменений' : 'Не задано'}",
+  "en": "${s.set ? 'Set, leave blank to keep' : 'Not set'}"
+ },
+ "b1_4": {
+  "ru": "')\\\">Удалить после использования</button></div>",
+  "en": "')\\\">Delete after use</button></div>"
+ },
+ "b1_5": {
+  "ru": "'; $('#setHint').textContent = d.env_path ? ('Запись в ' + d.env_path) : ''; } catch (e) { box.innerHTML = `",
+  "en": "'; $('#setHint').textContent = d.env_path ? ('Write to ' + d.env_path) : ''; } catch (e) { box.innerHTML = `"
+ },
+ "b1_6": {
+  "ru": ".session / zip, укажите",
+  "en": ".session / zip, enter"
+ },
+ "b1_7": {
+  "ru": "/ zip, или путь на сервере, или текст StringSession.",
+  "en": "/ zip, or a server path, or StringSession text."
+ },
+ "b1_8": {
+  "ru": "/ мастер-ключ, при потере старые сессии не расшифровать.",
+  "en": "/ master key; if lost, old sessions cannot be decrypted."
+ },
+ "b1_9": {
+  "ru": "/ всего",
+  "en": "/ of"
+ },
+ "b1_10": {
+  "ru": "/ ошибок",
+  "en": "/ failed"
+ },
+ "b1_11": {
+  "ru": "/ свойствах «Снять блокировку».",
+  "en": "/ Properties, “Unblock”."
+ },
+ "b1_12": {
+  "ru": "/ пропущено",
+  "en": "/ skipped"
+ },
+ "b1_13": {
+  "ru": "/home/me/sessions или /path/to/acc.session",
+  "en": "/home/me/sessions or /path/to/acc.session"
+ },
+ "b1_14": {
+  "ru": "/home/me/tdata или /path/to/папка-с-пакетами",
+  "en": "/home/me/tdata or /path/to/account-packs-dir"
+ },
+ "b1_15": {
+  "ru": "1 = последовательно (надёжнее всего) 2~5 = параллельно, быстрее, возможен FloodWait максимум 8 по умолчанию из параметров TAM_REGEN_CONCURRENCY",
+  "en": "1 = serial (most reliable) 2~5 = parallel for speed, may trigger FloodWait max 8 default from settings TAM_REGEN_CONCURRENCY"
+ },
+ "b1_16": {
+  "ru": "1 час",
+  "en": "1 hour"
+ },
+ "b1_17": {
+  "ru": "10 минут",
+  "en": "10 minutes"
+ },
+ "b1_18": {
+  "ru": "1BVtsOK4Bu...&#10;главный|1AAQ...&#10;# строки-комментарии игнорируются",
+  "en": "1BVtsOK4Bu...&#10;main|1AAQ...&#10;# comment lines are ignored"
+ },
+ "b1_19": {
+  "ru": "5 цифр",
+  "en": "5 digits"
+ },
+ "b1_20": {
+  "ru": "</b> аккаунтов</span><span class=\"muted\">(ещё не распаковано, только просмотр)</span>",
+  "en": "</b> accounts</span><span class=\"muted\">(not unpacked yet, just a preview)</span>"
+ },
+ "b1_21": {
+  "ru": "<button class=\"fit\" onclick=\"openModal('mAdd')\">Добавить вручную</button>",
+  "en": "<button class=\"fit\" onclick=\"openModal('mAdd')\">Add manually</button>"
+ },
+ "b1_22": {
+  "ru": "<button class=\"fit\" onclick=\"openModal('mImport')\">Список телефонов</button>",
+  "en": "<button class=\"fit\" onclick=\"openModal('mImport')\">Phone list</button>"
+ },
+ "b1_23": {
+  "ru": "<button class=\"fit\" onclick=\"openModal('mSession')\">Импорт session</button>",
+  "en": "<button class=\"fit\" onclick=\"openModal('mSession')\">Import session</button>"
+ },
+ "b1_24": {
+  "ru": "<button class=\"fit\" onclick=\"openModal('mTdata')\">Импорт tdata</button>",
+  "en": "<button class=\"fit\" onclick=\"openModal('mTdata')\">Import tdata</button>"
+ },
+ "b1_25": {
+  "ru": "<button class=\"primary write\" onclick=\"saveAiConfig()\">Сохранить конфигурацию</button>",
+  "en": "<button class=\"primary write\" onclick=\"saveAiConfig()\">Save configuration</button>"
+ },
+ "b1_26": {
+  "ru": "<button class=\"sm write\" onclick=\"runTb()\">Выполнить для выбранных аккаунтов</button>",
+  "en": "<button class=\"sm write\" onclick=\"runTb()\">Run on selected accounts</button>"
+ },
+ "b1_27": {
+  "ru": "<button class=\"sm write\" onclick=\"ztConvert()\">Начать конвертацию</button></div>",
+  "en": "<button class=\"sm write\" onclick=\"ztConvert()\">Start conversion</button></div>"
+ },
+ "b1_28": {
+  "ru": "<button class=\"sm write\" onclick=\"ztMergeRun()\">Начать объединение</button>",
+  "en": "<button class=\"sm write\" onclick=\"ztMergeRun()\">Start merge</button>"
+ },
+ "b1_29": {
+  "ru": "<button class=\"sm write\" onclick=\"ztPasskey()\">Создать пакет Passkey</button></div>",
+  "en": "<button class=\"sm write\" onclick=\"ztPasskey()\">Create Passkey credential pack</button></div>"
+ },
+ "b1_30": {
+  "ru": "<button class=\"sm write\" onclick=\"ztRegtime()\">Начать классификацию</button></div>",
+  "en": "<button class=\"sm write\" onclick=\"ztRegtime()\">Start classification</button></div>"
+ },
+ "b1_31": {
+  "ru": "<button class=\"sm write\" onclick=\"ztToapi()\">Начать перевод в API</button></div>",
+  "en": "<button class=\"sm write\" onclick=\"ztToapi()\">Start API conversion</button></div>"
+ },
+ "b1_32": {
+  "ru": "<button class=\"sm write\" onclick=\"ztUnpack()\">Распаковать</button></div>",
+  "en": "<button class=\"sm write\" onclick=\"ztUnpack()\">Unpack</button></div>"
+ },
+ "b1_33": {
+  "ru": "<button class=\"sm\" onclick=\"loadAiConfig()\">Перезагрузить</button>",
+  "en": "<button class=\"sm\" onclick=\"loadAiConfig()\">Reload</button>"
+ },
+ "b1_34": {
+  "ru": "<button class=\"sm\" onclick=\"ztAnalyze()\">Сначала посмотреть, сколько аккаунтов</button>",
+  "en": "<button class=\"sm\" onclick=\"ztAnalyze()\">Preview how many accounts</button>"
+ },
+ "b1_35": {
+  "ru": "<button class=\"sm\" onclick=\"ztMergeAdd()\">Добавить в задание объединения</button>",
+  "en": "<button class=\"sm\" onclick=\"ztMergeAdd()\">Add to merge job</button>"
+ },
+ "b1_36": {
+  "ru": "<button type=\"button\" class=\"sm write\" onclick=\"applyAiPresetOnly()\">Применить пресет к отмеченным</button>",
+  "en": "<button type=\"button\" class=\"sm write\" onclick=\"applyAiPresetOnly()\">Apply preset to selected</button>"
+ },
+ "b1_37": {
+  "ru": "<button type=\"button\" class=\"sm\" onclick=\"aiPermSetAll(false)\">Снять все</button>",
+  "en": "<button type=\"button\" class=\"sm\" onclick=\"aiPermSetAll(false)\">Clear all</button>"
+ },
+ "b1_38": {
+  "ru": "<button type=\"button\" class=\"sm\" onclick=\"aiPermSetAll(true)\">Выбрать все</button>",
+  "en": "<button type=\"button\" class=\"sm\" onclick=\"aiPermSetAll(true)\">Select all</button>"
+ },
+ "b1_39": {
+  "ru": "<button type=\"button\" class=\"sm\" onclick=\"aiPermSetDanger('read')\">Только чтение</button>",
+  "en": "<button type=\"button\" class=\"sm\" onclick=\"aiPermSetDanger('read')\">Read-only</button>"
+ },
+ "b1_40": {
+  "ru": "<code>api.json</code> и список ссылок для получения кода (как «Перевод в API» в боте; из GAFBot MIT).",
+  "en": "<code>api.json</code> and a code-retrieval link list (matches bot “API conversion”; from GAFBot MIT)."
+ },
+ "b1_41": {
+  "ru": "<div class=\"ai-bubble sys\">История восстановлена локально",
+  "en": "<div class=\"ai-bubble sys\">Local history restored"
+ },
+ "b1_42": {
+  "ru": "<div class=\"ai-hint\" id=\"aiProviderHint\">Выберите формат, совпадающий с вашей документацией API</div>",
+  "en": "<div class=\"ai-hint\" id=\"aiProviderHint\">Choose the format matching your API docs</div>"
+ },
+ "b1_43": {
+  "ru": "<div class=\"ai-hint\">Включено <strong id=\"aiPermCount\">",
+  "en": "<div class=\"ai-hint\">Enabled <strong id=\"aiPermCount\">"
+ },
+ "b1_44": {
+  "ru": "<div class=\"ai-hint\">По умолчанию 14 000 символов. Можно увеличить/уменьшить под контекст модели; применяется сразу после сохранения. Сжатие влияет только на отправляемое модели, в интерфейсе видны полные сообщения.</div>",
+  "en": "<div class=\"ai-hint\">Default 14000 characters. Adjust up or down for the model context; takes effect right after saving. Compression only affects what is sent to the model; the UI still shows full bubbles.</div>"
+ },
+ "b1_45": {
+  "ru": "<div class=\"ai-row sys\"><div class=\"ai-bubble sys\">Пока нет диалога. Включите AI в «Конфигурация и права», чтобы задавать вопросы. История хранится в локальном браузере.</div></div>",
+  "en": "<div class=\"ai-row sys\"><div class=\"ai-bubble sys\">No conversation yet. Enable AI in “Config & permissions” to ask questions. History is stored in your local browser.</div></div>"
+ },
+ "b1_46": {
+  "ru": "<div class=\"ai-switch-sub\">После выключения и сохранения отправка недоступна; права и Key сохраняются</div></div>",
+  "en": "<div class=\"ai-switch-sub\">After turning off and saving, messages cannot be sent; permissions and Key are kept</div></div>"
+ },
+ "b1_47": {
+  "ru": "<div class=\"chat-empty\">Нет записей диалога.<br/>При сборе активных участников отметьте «Сохранять историю диалогов».</div>",
+  "en": "<div class=\"chat-empty\">No chat records.<br/>When collecting active members, check “Also save chat history”.</div>"
+ },
+ "b1_48": {
+  "ru": "<div class=\"chat-stats\">На странице",
+  "en": "<div class=\"chat-stats\">On this page"
+ },
+ "b1_49": {
+  "ru": "<div class=\"empty-hint\">После импорта советуем сначала «Проверка работоспособности», чтобы синхронизировать статус и 2FA, затем прогрев или смена 2FA</div>",
+  "en": "<div class=\"empty-hint\">After import, run “Health check” first to sync status and 2FA, then warm up or change 2FA</div>"
+ },
+ "b1_50": {
+  "ru": "<div class=\"err\">Есть",
+  "en": "<div class=\"err\">There are"
+ },
+ "b1_51": {
+  "ru": "<div class=\"muted\" style=\"margin-bottom:4px\">Загрузите пакеты session / tdata, создайте переименованные session,",
+  "en": "<div class=\"muted\" style=\"margin-bottom:4px\">Upload session / tdata packs to generate renamed sessions,"
+ },
+ "b1_52": {
+  "ru": "<div class=\"muted\" style=\"margin-bottom:4px\">Можно выбрать сразу несколько или добавлять по частям (в одно задание).",
+  "en": "<div class=\"muted\" style=\"margin-bottom:4px\">Select several at once, or add in several steps (into the same job)."
+ },
+ "b1_53": {
+  "ru": "<div class=\"muted\" style=\"margin-bottom:4px\">Как /convert в боте: Session → Tdata (нужен opentele) или Tdata → Session (встроенный парсер).</div>",
+  "en": "<div class=\"muted\" style=\"margin-bottom:4px\">Matches bot /convert: Session → Tdata (needs opentele) or Tdata → Session (built-in parser).</div>"
+ },
+ "b1_54": {
+  "ru": "<div class=\"muted\" style=\"margin-bottom:4px\">Как /passkey в боте: загрузите пакет session, инициализируйте регистрацию Passkey и скачайте JSON учётных данных.</div>",
+  "en": "<div class=\"muted\" style=\"margin-bottom:4px\">Matches bot /passkey flow: upload a session pack, initialize Passkey registration and download the credential JSON.</div>"
+ },
+ "b1_55": {
+  "ru": "<div class=\"muted\" style=\"margin-bottom:4px\">По умолчанию<b>полностью офлайн</b>: используются только данные из json в пакете",
+  "en": "<div class=\"muted\" style=\"margin-bottom:4px\">By default<b>fully offline</b>: only the data already in the pack json"
+ },
+ "b1_56": {
+  "ru": "<div class=\"muted\" style=\"margin-bottom:6px\">Всего",
+  "en": "<div class=\"muted\" style=\"margin-bottom:6px\">Total"
+ },
+ "b1_57": {
+  "ru": "<div class=\"muted\" style=\"margin-bottom:8px\">Эти три инструмента работают с загруженными файлами пакетов,",
+  "en": "<div class=\"muted\" style=\"margin-bottom:8px\">These three tools work on the account-pack files you upload,"
+ },
+ "b1_58": {
+  "ru": "<div class=\"muted\">Префикс получения кода",
+  "en": "<div class=\"muted\">Code-retrieval prefix"
+ },
+ "b1_59": {
+  "ru": "<div class=\"muted\">Параллельность",
+  "en": "<div class=\"muted\">Concurrency"
+ },
+ "b1_60": {
+  "ru": "<div style=\"font-size:12.5px;font-weight:650;margin-bottom:8px\">Лимит контекста (настраивается)</div>",
+  "en": "<div style=\"font-size:12.5px;font-weight:650;margin-bottom:8px\">Context limit (customizable)</div>"
+ },
+ "b1_61": {
+  "ru": "<div><div class=\"ai-switch-label\">Включить AI-помощника</div>",
+  "en": "<div><div class=\"ai-switch-label\">Enable AI assistant</div>"
+ },
+ "b1_62": {
+  "ru": "<div>Аккаунтов пока нет</div>",
+  "en": "<div>No accounts yet</div>"
+ },
+ "b1_63": {
+  "ru": "<h4 style=\"margin:10px 0 4px\">1. Распаковка</h4>",
+  "en": "<h4 style=\"margin:10px 0 4px\">1. Unpack</h4>"
+ },
+ "b1_64": {
+  "ru": "<h4 style=\"margin:10px 0 4px\">3. Классификация по дате регистрации</h4>",
+  "en": "<h4 style=\"margin:10px 0 4px\">3. Classify by registration date</h4>"
+ },
+ "b1_65": {
+  "ru": "<h4 style=\"margin:10px 0 4px\">2. Объединение</h4>",
+  "en": "<h4 style=\"margin:10px 0 4px\">2. Merge</h4>"
+ },
+ "b1_66": {
+  "ru": "<h4 style=\"margin:10px 0 4px\">6. Passkey</h4>",
+  "en": "<h4 style=\"margin:10px 0 4px\">6. Passkey</h4>"
+ },
+ "b1_67": {
+  "ru": "<h4 style=\"margin:14px 0 4px\">5. Конвертация форматов</h4>",
+  "en": "<h4 style=\"margin:14px 0 4px\">5. Format conversion</h4>"
+ },
+ "b1_68": {
+  "ru": "<h4 style=\"margin:14px 0 4px\">4. Перевод в API</h4>",
+  "en": "<h4 style=\"margin:14px 0 4px\">4. API conversion</h4>"
+ },
+ "b1_69": {
+  "ru": "<h4><span class=\"ai-step\">1</span>Провайдер и ключ</h4>",
+  "en": "<h4><span class=\"ai-step\">1</span>Provider and key</h4>"
+ },
+ "b1_70": {
+  "ru": "<h4><span class=\"ai-step\">2</span>Контекст и генерация</h4>",
+  "en": "<h4><span class=\"ai-step\">2</span>Context and generation</h4>"
+ },
+ "b1_71": {
+  "ru": "<h4><span class=\"ai-step\">3</span>Права и область</h4>",
+  "en": "<h4><span class=\"ai-step\">3</span>Permissions and scope</h4>"
+ },
+ "b1_72": {
+  "ru": "<input id=\"aiKey\" type=\"password\" placeholder=\"Вставьте ключ, открытый текст не отображается\" autocomplete=\"off\" /></label>",
+  "en": "<input id=\"aiKey\" type=\"password\" placeholder=\"Paste the key; plaintext is never shown\" autocomplete=\"off\" /></label>"
+ },
+ "b1_73": {
+  "ru": "<input id=\"ztCvtPass\" type=\"password\" placeholder=\"только если есть passcode\" autocomplete=\"off\" /></label>",
+  "en": "<input id=\"ztCvtPass\" type=\"password\" placeholder=\"only if a passcode is set\" autocomplete=\"off\" /></label>"
+ },
+ "b1_74": {
+  "ru": "<input id=\"ztFmt\" placeholder=\"-9- — по 9 штук в пакете; 5,5,5 — для каждого пакета отдельно\" /></label>",
+  "en": "<input id=\"ztFmt\" placeholder=\"-9- means 9 per pack; 5,5,5 means per-pack sizes\" /></label>"
+ },
+ "b1_75": {
+  "ru": "<input id=\"ztToapiBase\" placeholder=\"https://example.com или http://ip:port\" /></label>",
+  "en": "<input id=\"ztToapiBase\" placeholder=\"https://example.com or http://ip:port\" /></label>"
+ },
+ "b1_76": {
+  "ru": "<input id=\"ztToapiPass\" type=\"password\" placeholder=\"обязательно в режиме manual\" autocomplete=\"off\" /></label>",
+  "en": "<input id=\"ztToapiPass\" type=\"password\" placeholder=\"required in manual mode\" autocomplete=\"off\" /></label>"
+ },
+ "b1_77": {
+  "ru": "<input id=\"ztToapiTdataPass\" type=\"password\" placeholder=\"только если в десктопе задан локальный пароль\" autocomplete=\"off\" /></label>",
+  "en": "<input id=\"ztToapiTdataPass\" type=\"password\" placeholder=\"only if a local password is set in Desktop\" autocomplete=\"off\" /></label>"
+ },
+ "b1_78": {
+  "ru": "<input type=\"checkbox\" id=\"aiClearKey\" /> Удалить сохранённый Key</label>",
+  "en": "<input type=\"checkbox\" id=\"aiClearKey\" /> Clear saved Key</label>"
+ },
+ "b1_79": {
+  "ru": "<label class=\"f\" style=\"margin-top:12px\"><span>Разрешённые ID аккаунтов (через запятую, пусто = все)</span>",
+  "en": "<label class=\"f\" style=\"margin-top:12px\"><span>Allowed account IDs (comma-separated, empty = all)</span>"
+ },
+ "b1_80": {
+  "ru": "<label class=\"f\"><span>Обработка 2FA</span>",
+  "en": "<label class=\"f\"><span>2FA handling</span>"
+ },
+ "b1_81": {
+  "ru": "<label class=\"f\"><span>zip-пакет session</span>",
+  "en": "<label class=\"f\"><span>session pack zip</span>"
+ },
+ "b1_82": {
+  "ru": "<label class=\"f\"><span>локальный пароль tdata passcode (необязательно)</span>",
+  "en": "<label class=\"f\"><span>tdata local password passcode (optional)</span>"
+ },
+ "b1_83": {
+  "ru": "<label class=\"f\"><span>локальный пароль tdata (необязательно, только Tdata→Session)</span>",
+  "en": "<label class=\"f\"><span>tdata local password (optional, Tdata→Session only)</span>"
+ },
+ "b1_84": {
+  "ru": "<label class=\"f\"><span>Сколько последних сообщений хранить</span>",
+  "en": "<label class=\"f\"><span>Recent messages to keep</span>"
+ },
+ "b1_85": {
+  "ru": "<label class=\"f\"><span>Префикс API получения кода (необязательно)</span>",
+  "en": "<label class=\"f\"><span>Code-retrieval API prefix (optional)</span>"
+ },
+ "b1_86": {
+  "ru": "<label class=\"f\"><span>zip-пакет аккаунтов</span>",
+  "en": "<label class=\"f\"><span>account pack zip</span>"
+ },
+ "b1_87": {
+  "ru": "<label class=\"f\"><span>Лимит символов (примерно)</span>",
+  "en": "<label class=\"f\"><span>Character limit (approx.)</span>"
+ },
+ "b1_88": {
+  "ru": "<label class=\"f\"><span>Раунды инструментов</span>",
+  "en": "<label class=\"f\"><span>Tool rounds</span>"
+ },
+ "b1_89": {
+  "ru": "<label class=\"f\"><span>Параллельность</span>",
+  "en": "<label class=\"f\"><span>Concurrency</span>"
+ },
+ "b1_90": {
+  "ru": "<label class=\"f\"><span>Формат разбиения</span>",
+  "en": "<label class=\"f\"><span>Split format</span>"
+ },
+ "b1_91": {
+  "ru": "<label class=\"f\"><span>Формат интерфейса</span><select id=\"aiProvider\" onchange=\"aiProviderChange()\">",
+  "en": "<label class=\"f\"><span>API format</span><select id=\"aiProvider\" onchange=\"aiProviderChange()\">"
+ },
+ "b1_92": {
+  "ru": "<label class=\"f\"><span>Пресет промпта</span><select id=\"aiPromptPreset\" onchange=\"aiApplyPromptPreset()\">",
+  "en": "<label class=\"f\"><span>Prompt preset</span><select id=\"aiPromptPreset\" onchange=\"aiApplyPromptPreset()\">"
+ },
+ "b1_93": {
+  "ru": "<label class=\"f\"><span>Операция</span>",
+  "en": "<label class=\"f\"><span>Action</span>"
+ },
+ "b1_94": {
+  "ru": "<label class=\"f\"><span>Направление</span>",
+  "en": "<label class=\"f\"><span>Direction</span>"
+ },
+ "b1_95": {
+  "ru": "<label class=\"f\"><span>Пресет прав</span><select id=\"aiPreset\">",
+  "en": "<label class=\"f\"><span>Permission preset</span><select id=\"aiPreset\">"
+ },
+ "b1_96": {
+  "ru": "<label class=\"f\"><span>Имя модели</span>",
+  "en": "<label class=\"f\"><span>Model name</span>"
+ },
+ "b1_97": {
+  "ru": "<label class=\"f\"><span>Температура</span>",
+  "en": "<label class=\"f\"><span>Temperature</span>"
+ },
+ "b1_98": {
+  "ru": "<label class=\"f\"><span>Системный промпт</span><textarea id=\"aiSys\" rows=\"3\">",
+  "en": "<label class=\"f\"><span>System prompt</span><textarea id=\"aiSys\" rows=\"3\">"
+ },
+ "b1_99": {
+  "ru": "<label class=\"f\"><span>Единый 2FA (только manual)</span>",
+  "en": "<label class=\"f\"><span>Unified 2FA (manual only)</span>"
+ },
+ "b1_100": {
+  "ru": "<label class=\"f\"><span>Выбрать ZIP-пакет</span>",
+  "en": "<label class=\"f\"><span>Choose account pack ZIP</span>"
+ },
+ "b1_101": {
+  "ru": "<label class=\"f\"><span>Выбрать пакет</span>",
+  "en": "<label class=\"f\"><span>Choose account pack</span>"
+ },
+ "b1_102": {
+  "ru": "<label class=\"f\"><span>Выбрать пакеты (можно несколько)</span>",
+  "en": "<label class=\"f\"><span>Choose account packs (multiple allowed)</span>"
+ },
+ "b1_103": {
+  "ru": "<option value=\"from_json\">Извлечь из JSON / 2fa.txt</option>",
+  "en": "<option value=\"from_json\">Extract from JSON / 2fa.txt</option>"
+ },
+ "b1_104": {
+  "ru": "<option value=\"manual\">Единый 2FA вручную</option>",
+  "en": "<option value=\"manual\">Unified manual 2FA</option>"
+ },
+ "b1_105": {
+  "ru": "<option value=\"no_2fa\">Без 2FA</option>",
+  "en": "<option value=\"no_2fa\">No 2FA</option>"
+ },
+ "b1_106": {
+  "ru": "<p class=\"ai-footnote\">Конфигурация хранится в базе на сервере. Поддерживаются OpenAI-совместимый формат, Anthropic Messages, Gemini, Azure OpenAI.</p>",
+  "en": "<p class=\"ai-footnote\">Configuration is stored in the server database. Supports OpenAI-compatible, Anthropic Messages, Gemini, Azure OpenAI.</p>"
+ },
+ "b1_107": {
+  "ru": "<span class=\"muted\" id=\"tbSel\">Выбрано",
+  "en": "<span class=\"muted\" id=\"tbSel\">Selected"
+ },
+ "b1_108": {
+  "ru": "<span class=\"muted\" id=\"ztMergeN\">Накоплено пакетов: 0</span></div>",
+  "en": "<span class=\"muted\" id=\"ztMergeN\">0 packs queued</span></div>"
+ },
+ "b1_109": {
+  "ru": "<span class=\"muted\" title=\"ещё не проверено, нажмите «Проверить», чтобы узнать наличие 2FA\">-</span>",
+  "en": "<span class=\"muted\" title=\"not checked yet; click “Check” to sync 2FA status\">-</span>"
+ },
+ "b1_110": {
+  "ru": "<span class=\"muted\">Загрузка…</span>",
+  "en": "<span class=\"muted\">Uploading…</span>"
+ },
+ "b1_111": {
+  "ru": "<span class=\"muted\">Конвертация…</span>",
+  "en": "<span class=\"muted\">Converting…</span>"
+ },
+ "b1_112": {
+  "ru": "<span class=\"muted\">Анализ…</span>",
+  "en": "<span class=\"muted\">Analyzing…</span>"
+ },
+ "b1_113": {
+  "ru": "<span class=\"muted\">Классификация…</span>",
+  "en": "<span class=\"muted\">Classifying…</span>"
+ },
+ "b1_114": {
+  "ru": "<span class=\"muted\">Ошибка загрузки: ",
+  "en": "<span class=\"muted\">Load failed: "
+ },
+ "b1_115": {
+  "ru": "<span class=\"muted\">Объединение…</span>",
+  "en": "<span class=\"muted\">Merging…</span>"
+ },
+ "b1_116": {
+  "ru": "<span class=\"muted\">Обработка…</span>",
+  "en": "<span class=\"muted\">Processing…</span>"
+ },
+ "b1_117": {
+  "ru": "<span class=\"muted\">Ошибка: ",
+  "en": "<span class=\"muted\">Failed: "
+ },
+ "b1_118": {
+  "ru": "<span class=\"muted\">Передано",
+  "en": "<span class=\"muted\">Sent"
+ },
+ "b1_119": {
+  "ru": "<span class=\"muted\">Выполнение…</span>",
+  "en": "<span class=\"muted\">Running…</span>"
+ },
+ "b1_120": {
+  "ru": "<span class=\"muted\">Распаковка, большие пакеты обрабатываются дольше…</span>",
+  "en": "<span class=\"muted\">Unpacking; large packs take a bit longer…</span>"
+ },
+ "b1_121": {
+  "ru": "<span class=\"muted\">Нет, показаны все</span>",
+  "en": "<span class=\"muted\">None, showing all</span>"
+ },
+ "b1_122": {
+  "ru": "<span class=\"muted\">Загрузка групп… при большом числе может занять несколько секунд</span>",
+  "en": "<span class=\"muted\">Loading groups… may take a few seconds with many groups</span>"
+ },
+ "b1_123": {
+  "ru": "<span class=\"muted\">Подходящих групп нет. Попробуйте снять «Только с новыми сообщениями за 7 дней».</span>",
+  "en": "<span class=\"muted\">No matching groups. Try unchecking “Only with new messages in 7 days”.</span>"
+ },
+ "b1_124": {
+  "ru": "<span class=\"muted\">Конвертация…</span>",
+  "en": "<span class=\"muted\">Converting…</span>"
+ },
+ "b1_125": {
+  "ru": "<span class=\"muted\">Задач пока нет. Сначала соберите активных участников, затем сделайте рассылку по результату.</span>",
+  "en": "<span class=\"muted\">No tasks yet. Collect active members first, then broadcast to the results.</span>"
+ },
+ "b1_126": {
+  "ru": "<span class=\"muted\">Лиды ещё не собраны. Сначала нажмите «Сбор активных участников» в центре задач.</span>",
+  "en": "<span class=\"muted\">No leads collected yet. Click “Collect active members” in the task center first.</span>"
+ },
+ "b1_127": {
+  "ru": "<span class=\"muted\">(параллельность",
+  "en": "<span class=\"muted\">(concurrency"
+ },
+ "b1_128": {
+  "ru": "<span class=\"muted\">, из них",
+  "en": "<span class=\"muted\">, of which"
+ },
+ "b1_129": {
+  "ru": "<span class=\"muted\">, ошибок",
+  "en": "<span class=\"muted\">, failed"
+ },
+ "b1_130": {
+  "ru": "<span class=\"ok\">В пакете всего <b>",
+  "en": "<span class=\"ok\">Total in pack <b>"
+ },
+ "b1_131": {
+  "ru": "<span class=\"ok\">Накоплено",
+  "en": "<span class=\"ok\">Queued"
+ },
+ "b1_132": {
+  "ru": "<span class=\"ok\">Успешно",
+  "en": "<span class=\"ok\">Success"
+ },
+ "b1_133": {
+  "ru": "<span class=\"tag s-restricted\">Обязательно</span>",
+  "en": "<span class=\"tag s-restricted\">Required</span>"
+ },
+ "b1_134": {
+  "ru": "<span>Опасные инструменты (удаление аккаунта/выход/удаление сессии) требуют подтверждения</span></label>",
+  "en": "<span>Dangerous tools (delete account/sign out/delete session) need confirmation</span></label>"
+ },
+ "b1_135": {
+  "ru": "<span>Изменяющие инструменты (2FA/профиль/приватность/отправка сообщений и т.п.) требуют подтверждения</span></label>",
+  "en": "<span>Modifying tools (2FA/profile/privacy/messaging etc.) need confirmation</span></label>"
+ },
+ "b1_136": {
+  "ru": "<span>При превышении лимита автоматически сжимать более ранний диалог</span></label>",
+  "en": "<span>Auto-compress earlier conversation when over the limit</span></label>"
+ },
+ "b1_137": {
+  "ru": "<table><thead><tr><th>Аккаунт</th><th>Результат</th><th>Описание</th></tr></thead><tbody>",
+  "en": "<table><thead><tr><th>Account</th><th>Result</th><th>Details</th></tr></thead><tbody>"
+ },
+ "b1_138": {
+  "ru": ">Другой</option>",
+  "en": ">Custom</option>"
+ },
+ "b1_139": {
+  "ru": "AI-помощник",
+  "en": "AI assistant"
+ },
+ "b1_140": {
+  "ru": "AI-помощник (перетаскивается)",
+  "en": "AI assistant (draggable)"
+ },
+ "b1_141": {
+  "ru": "Диалог с AI и настройка прав",
+  "en": "AI chat and permissions"
+ },
+ "b1_142": {
+  "ru": "Конфигурация AI сохранена (помощник выключен)",
+  "en": "AI configuration saved (assistant off)"
+ },
+ "b1_143": {
+  "ru": "Конфигурация AI сохранена (включена)",
+  "en": "AI configuration saved (enabled)"
+ },
+ "b1_144": {
+  "ru": "Вызов инструментов агентом",
+  "en": "Agent tool calls"
+ },
+ "b1_145": {
+  "ru": "Crypto Talk (китайская группа)",
+  "en": "Crypto Talk Chinese group"
+ },
+ "b1_146": {
+  "ru": "NFT: обсуждение вторичного рынка",
+  "en": "NFT secondary market talk"
+ },
+ "b1_147": {
+  "ru": "OKPay · успешно",
+  "en": "OKPay · success"
+ },
+ "b1_148": {
+  "ru": "Баланс OKPay",
+  "en": "OKPay balance"
+ },
+ "b1_149": {
+  "ru": "Баланс OKPay ·",
+  "en": "OKPay balance ·"
+ },
+ "b1_150": {
+  "ru": "Проверка баланса OKPay завершена",
+  "en": "OKPay balance check complete"
+ },
+ "b1_151": {
+  "ru": "Баланс OKPay: запрос для авторизованных аккаунтов (нужна соответствующая конфигурация).",
+  "en": "OKPay balance: query for signed-in accounts (requires matching business config)."
+ },
+ "b1_152": {
+  "ru": "Баланс OKPay",
+  "en": "OKPay balance"
+ },
+ "b1_153": {
+  "ru": "Совместимо с OpenAI",
+  "en": "OpenAI-compatible"
+ },
+ "b1_154": {
+  "ru": "Пакет учётных данных Passkey создан",
+  "en": "Passkey credential pack generated"
+ },
+ "b1_155": {
+  "ru": "Ошибка Passkey: ",
+  "en": "Passkey failed: "
+ },
+ "b1_156": {
+  "ru": "Импорт StringSession",
+  "en": "StringSession import"
+ },
+ "b1_157": {
+  "ru": "StringSession скопирован в буфер обмена",
+  "en": "StringSession copied to clipboard"
+ },
+ "b1_158": {
+  "ru": "Текст StringSession",
+  "en": "StringSession text"
+ },
+ "b1_159": {
+  "ru": "Windows «Не удалось проверить издателя» — предупреждение о неподписанном скрипте, нажмите",
+  "en": "Windows “Unknown publisher” is an unsigned-script warning, click"
+ },
+ "b1_160": {
+  "ru": "Объединение ZIP",
+  "en": "ZIP merge"
+ },
+ "b1_161": {
+  "ru": "Инструменты ZIP",
+  "en": "ZIP tools"
+ },
+ "b1_162": {
+  "ru": "Инструменты ZIP · распаковка/объединение/дата регистрации/перевод в API",
+  "en": "ZIP tools · unpack/merge/registration date/API conversion"
+ },
+ "b1_163": {
+  "ru": "Инструменты ZIP: готово",
+  "en": "ZIP tools complete"
+ },
+ "b1_164": {
+  "ru": "Инструменты ZIP (без аккаунтов из базы)",
+  "en": "ZIP tools (no DB accounts touched)"
+ },
+ "b1_165": {
+  "ru": "Распаковка ZIP",
+  "en": "ZIP unpack"
+ },
+ "b1_166": {
+  "ru": "\\ \\ Установить opentele в один клик?",
+  "en": "\\ \\ Install opentele in one click?"
+ },
+ "b1_167": {
+  "ru": "` + `В целях безопасности открытый текст не отображается. Пусто = без изменений, перезапись только при вводе.",
+  "en": "` + `Plaintext is not shown for security. Blank = keep, fill in to overwrite."
+ },
+ "b1_168": {
+  "ru": "В режиме manual укажите единый 2FA",
+  "en": "Enter unified 2FA in manual mode"
+ },
+ "b1_169": {
+  "ru": "placeholder=\"пусто = использовать TAM_BATCH_CONCURRENCY из параметров\" /></label>",
+  "en": "placeholder=\"blank = use TAM_BATCH_CONCURRENCY from settings\" /></label>"
+ },
+ "b1_170": {
+  "ru": "placeholder=\"пусто = использовать TAM_WORKERS из параметров\" /></label>",
+  "en": "placeholder=\"blank = use TAM_WORKERS from settings\" /></label>"
+ },
+ "b1_171": {
+  "ru": "с)",
+  "en": "s)"
+ },
+ "b1_172": {
+  "ru": "Импорт session",
+  "en": "session import"
+ },
+ "b1_173": {
+  "ru": "Импорт session ·",
+  "en": "session import ·"
+ },
+ "b1_174": {
+  "ru": "Импорт session, файл",
+  "en": "session import, file"
+ },
+ "b1_175": {
+  "ru": "Импорт session завершён: успешно",
+  "en": "session import complete: success"
+ },
+ "b1_176": {
+  "ru": "Импорт session по пути",
+  "en": "session path import"
+ },
+ "b1_177": {
+  "ru": "Импорт tdata",
+  "en": "tdata import"
+ },
+ "b1_178": {
+  "ru": "Импорт tdata по пути",
+  "en": "tdata path import"
+ },
+ "b1_179": {
+  "ru": "· ⚠ самый старый просрочен",
+  "en": "· ⚠ oldest is overdue"
+ },
+ "b1_180": {
+  "ru": "· далее",
+  "en": "· next"
+ },
+ "b1_181": {
+  "ru": "· задача #",
+  "en": "· task #"
+ },
+ "b1_182": {
+  "ru": "· с сохранённым 2FA (2fa.txt)",
+  "en": "· includes saved 2FA (2fa.txt)"
+ },
+ "b1_183": {
+  "ru": "· ответ #",
+  "en": "· reply #"
+ },
+ "b1_184": {
+  "ru": "· ошибок",
+  "en": "· failed"
+ },
+ "b1_185": {
+  "ru": "· после ошибки",
+  "en": "· after failure"
+ },
+ "b1_186": {
+  "ru": "· авторизовано",
+  "en": "· authorized"
+ },
+ "b1_187": {
+  "ru": "· всего в базе",
+  "en": "· total in DB"
+ },
+ "b1_188": {
+  "ru": "· текущий аккаунт обрабатывается долго…",
+  "en": "· current account is taking a while…"
+ },
+ "b1_189": {
+  "ru": "· успешно",
+  "en": "· success"
+ },
+ "b1_190": {
+  "ru": "· старая авторизация отозвана",
+  "en": "· old authorization revoked"
+ },
+ "b1_191": {
+  "ru": "· последние",
+  "en": "· recent"
+ },
+ "b1_192": {
+  "ru": "· 2FA есть, но пароль не сохранён; в пакете нет настоящего 2fa.txt",
+  "en": "· 2FA present but no saved password; no real 2fa.txt in pack"
+ },
+ "b1_193": {
+  "ru": "· не авторизовано",
+  "en": "· unauthorized"
+ },
+ "b1_194": {
+  "ru": "· режим",
+  "en": "· mode"
+ },
+ "b1_195": {
+  "ru": "· при входе сначала запускается мониторинг",
+  "en": "· monitoring starts on sign-in"
+ },
+ "b1_196": {
+  "ru": "· до",
+  "en": "· to"
+ },
+ "b1_197": {
+  "ru": "·за один раз",
+  "en": "·per run"
+ },
+ "b1_198": {
+  "ru": "• Укажите цель напрямую, через запятую (@name или user_id) • Или укажите lead:имя-источника-лидов",
+  "en": "• Enter the target directly, comma-separated (@name or user_id) • Or enter lead:SOURCE_NAME"
+ },
+ "b1_199": {
+  "ru": "⚠ Необратимая операция, перед выполнением будет ещё одно подтверждение. Советуем сначала попробовать на одном аккаунте.</div>",
+  "en": "⚠ Irreversible operation; you will be asked to confirm again. Try it on one account first.</div>"
+ }
+}

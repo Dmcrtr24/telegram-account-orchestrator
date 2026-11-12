@@ -1,0 +1,1002 @@
+[
+ {
+  "id": "b6_0",
+  "kind": "frontend",
+  "zh": "试运行"
+ },
+ {
+  "id": "b6_1",
+  "kind": "frontend",
+  "zh": "试运行完成，结果见日志区"
+ },
+ {
+  "id": "b6_2",
+  "kind": "frontend",
+  "zh": "试运行导入清单"
+ },
+ {
+  "id": "b6_3",
+  "kind": "frontend",
+  "zh": "该号开启了两步验证，请填写密码"
+ },
+ {
+  "id": "b6_4",
+  "kind": "frontend",
+  "zh": "该账号已单独关闭"
+ },
+ {
+  "id": "b6_5",
+  "kind": "frontend",
+  "zh": "语法错误"
+ },
+ {
+  "id": "b6_6",
+  "kind": "frontend",
+  "zh": "说明"
+ },
+ {
+  "id": "b6_7",
+  "kind": "frontend",
+  "zh": "请先勾选账号"
+ },
+ {
+  "id": "b6_8",
+  "kind": "frontend",
+  "zh": "请先填写取码链接"
+ },
+ {
+  "id": "b6_9",
+  "kind": "frontend",
+  "zh": "请先打开「配置」页再保存"
+ },
+ {
+  "id": "b6_10",
+  "kind": "frontend",
+  "zh": "请在下方输入「"
+ },
+ {
+  "id": "b6_11",
+  "kind": "frontend",
+  "zh": "请填写两步验证密码"
+ },
+ {
+  "id": "b6_12",
+  "kind": "frontend",
+  "zh": "请填写服务端本地路径"
+ },
+ {
+  "id": "b6_13",
+  "kind": "frontend",
+  "zh": "请扫码…"
+ },
+ {
+  "id": "b6_14",
+  "kind": "frontend",
+  "zh": "请求进行中，请稍候…"
+ },
+ {
+  "id": "b6_15",
+  "kind": "frontend",
+  "zh": "请确认"
+ },
+ {
+  "id": "b6_16",
+  "kind": "frontend",
+  "zh": "请稍候，不要关闭页面…"
+ },
+ {
+  "id": "b6_17",
+  "kind": "frontend",
+  "zh": "请粘贴 StringSession 文本"
+ },
+ {
+  "id": "b6_18",
+  "kind": "frontend",
+  "zh": "请输入"
+ },
+ {
+  "id": "b6_19",
+  "kind": "frontend",
+  "zh": "请选择 session 号包 zip"
+ },
+ {
+  "id": "b6_20",
+  "kind": "frontend",
+  "zh": "请选择只读/安全/标准/完整等预设"
+ },
+ {
+  "id": "b6_21",
+  "kind": "frontend",
+  "zh": "请选择号包 zip"
+ },
+ {
+  "id": "b6_22",
+  "kind": "frontend",
+  "zh": "请选择要上传的 .session 或 zip"
+ },
+ {
+  "id": "b6_23",
+  "kind": "frontend",
+  "zh": "请选择要上传的 tdata zip"
+ },
+ {
+  "id": "b6_24",
+  "kind": "frontend",
+  "zh": "读取任务失败："
+ },
+ {
+  "id": "b6_25",
+  "kind": "frontend",
+  "zh": "读取失败：${esc(e.message)}"
+ },
+ {
+  "id": "b6_26",
+  "kind": "frontend",
+  "zh": "读群消息"
+ },
+ {
+  "id": "b6_27",
+  "kind": "frontend",
+  "zh": "调试模式：输出逐步骤诊断（导入失败时自动开启）"
+ },
+ {
+  "id": "b6_28",
+  "kind": "frontend",
+  "zh": "账号#2 已发送 message_id=8812"
+ },
+ {
+  "id": "b6_29",
+  "kind": "frontend",
+  "zh": "账号列表"
+ },
+ {
+  "id": "b6_30",
+  "kind": "frontend",
+  "zh": "账号已添加"
+ },
+ {
+  "id": "b6_31",
+  "kind": "frontend",
+  "zh": "账号库只由网页/API 使用"
+ },
+ {
+  "id": "b6_32",
+  "kind": "frontend",
+  "zh": "账号总数"
+ },
+ {
+  "id": "b6_33",
+  "kind": "frontend",
+  "zh": "账号管理"
+ },
+ {
+  "id": "b6_34",
+  "kind": "frontend",
+  "zh": "账号详情"
+ },
+ {
+  "id": "b6_35",
+  "kind": "frontend",
+  "zh": "账号详情里点「扫码登录」：网页显示二维码，用手机已登录的官方 Telegram 扫描授权，会话加密入库。无需短信验证码；若开启云密码，扫码后需再填一次。"
+ },
+ {
+  "id": "b6_36",
+  "kind": "frontend",
+  "zh": "赞比亚 \\ud83c\\uddff\\ud83c\\uddf2"
+ },
+ {
+  "id": "b6_37",
+  "kind": "frontend",
+  "zh": "超时自动跳过（"
+ },
+ {
+  "id": "b6_38",
+  "kind": "frontend",
+  "zh": "超级群"
+ },
+ {
+  "id": "b6_39",
+  "kind": "frontend",
+  "zh": "越南 \\ud83c\\uddfb\\ud83c\\uddf3"
+ },
+ {
+  "id": "b6_40",
+  "kind": "frontend",
+  "zh": "跳过 Premium 用户"
+ },
+ {
+  "id": "b6_41",
+  "kind": "frontend",
+  "zh": "跳过机器人"
+ },
+ {
+  "id": "b6_42",
+  "kind": "frontend",
+  "zh": "踢其它设备会校验是否踢干净，失败按重试间隔再试。"
+ },
+ {
+  "id": "b6_43",
+  "kind": "frontend",
+  "zh": "踢出"
+ },
+ {
+  "id": "b6_44",
+  "kind": "frontend",
+  "zh": "踢出其他设备"
+ },
+ {
+  "id": "b6_45",
+  "kind": "frontend",
+  "zh": "踢出设备"
+ },
+ {
+  "id": "b6_46",
+  "kind": "frontend",
+  "zh": "踢失败或校验未通过后隔多久重试。写法：45s / 10m / 2h / 1h30m"
+ },
+ {
+  "id": "b6_47",
+  "kind": "frontend",
+  "zh": "踢设备完成 · 成功"
+ },
+ {
+  "id": "b6_48",
+  "kind": "frontend",
+  "zh": "转发时署名"
+ },
+ {
+  "id": "b6_49",
+  "kind": "frontend",
+  "zh": "辅助邮箱：已绑定"
+ },
+ {
+  "id": "b6_50",
+  "kind": "frontend",
+  "zh": "辅助邮箱：未绑定"
+ },
+ {
+  "id": "b6_51",
+  "kind": "frontend",
+  "zh": "输入"
+ },
+ {
+  "id": "b6_52",
+  "kind": "frontend",
+  "zh": "输入当前云密码以便导出号包"
+ },
+ {
+  "id": "b6_53",
+  "kind": "frontend",
+  "zh": "输入问题，例如：列出所有 active 账号"
+ },
+ {
+  "id": "b6_54",
+  "kind": "frontend",
+  "zh": "运行"
+ },
+ {
+  "id": "b6_55",
+  "kind": "frontend",
+  "zh": "运行中"
+ },
+ {
+  "id": "b6_56",
+  "kind": "frontend",
+  "zh": "还没有任务。可以先采集发言人，再对采集结果群发。"
+ },
+ {
+  "id": "b6_57",
+  "kind": "frontend",
+  "zh": "还没有可用账号，先导入并登录"
+ },
+ {
+  "id": "b6_58",
+  "kind": "frontend",
+  "zh": "还没有采集到线索。"
+ },
+ {
+  "id": "b6_59",
+  "kind": "frontend",
+  "zh": "这项启动时就读进去了，改完要重启才生效"
+ },
+ {
+  "id": "b6_60",
+  "kind": "frontend",
+  "zh": "进行中"
+ },
+ {
+  "id": "b6_61",
+  "kind": "frontend",
+  "zh": "进行中（限"
+ },
+ {
+  "id": "b6_62",
+  "kind": "frontend",
+  "zh": "连接中…"
+ },
+ {
+  "id": "b6_63",
+  "kind": "frontend",
+  "zh": "连接中断，正在等待重启…"
+ },
+ {
+  "id": "b6_64",
+  "kind": "frontend",
+  "zh": "追加标签"
+ },
+ {
+  "id": "b6_65",
+  "kind": "frontend",
+  "zh": "退出"
+ },
+ {
+  "id": "b6_66",
+  "kind": "frontend",
+  "zh": "退出后需要重新验证码登录，确定？"
+ },
+ {
+  "id": "b6_67",
+  "kind": "frontend",
+  "zh": "退出未确认"
+ },
+ {
+  "id": "b6_68",
+  "kind": "frontend",
+  "zh": "退出登录"
+ },
+ {
+  "id": "b6_69",
+  "kind": "frontend",
+  "zh": "适合无取码链接、或想快速接管已在手机上的号。"
+ },
+ {
+  "id": "b6_70",
+  "kind": "frontend",
+  "zh": "选择 .session 或含多个 session 的 zip（可多选）"
+ },
+ {
+  "id": "b6_71",
+  "kind": "frontend",
+  "zh": "选择含 tdata 的 zip（可多选）"
+ },
+ {
+  "id": "b6_72",
+  "kind": "frontend",
+  "zh": "逐目标明细："
+ },
+ {
+  "id": "b6_73",
+  "kind": "frontend",
+  "zh": "逐项勾选工具"
+ },
+ {
+  "id": "b6_74",
+  "kind": "frontend",
+  "zh": "递归扫描子目录中的多份 tdata"
+ },
+ {
+  "id": "b6_75",
+  "kind": "frontend",
+  "zh": "通讯录"
+ },
+ {
+  "id": "b6_76",
+  "kind": "frontend",
+  "zh": "配置与权限"
+ },
+ {
+  "id": "b6_77",
+  "kind": "frontend",
+  "zh": "采集发言人"
+ },
+ {
+  "id": "b6_78",
+  "kind": "frontend",
+  "zh": "采集只读历史消息，不会在群里留下任何痕迹；群越大扫得越久，建议先小范围试试。"
+ },
+ {
+  "id": "b6_79",
+  "kind": "frontend",
+  "zh": "采集最近 7 天发言人·2 个群"
+ },
+ {
+  "id": "b6_80",
+  "kind": "frontend",
+  "zh": "采集最近发言人 · 选群"
+ },
+ {
+  "id": "b6_81",
+  "kind": "frontend",
+  "zh": "重启"
+ },
+ {
+  "id": "b6_82",
+  "kind": "frontend",
+  "zh": "重启可能失败："
+ },
+ {
+  "id": "b6_83",
+  "kind": "frontend",
+  "zh": "重新发送验证码"
+ },
+ {
+  "id": "b6_84",
+  "kind": "frontend",
+  "zh": "重新导出"
+ },
+ {
+  "id": "b6_85",
+  "kind": "frontend",
+  "zh": "重新拉取"
+ },
+ {
+  "id": "b6_86",
+  "kind": "frontend",
+  "zh": "重生会话"
+ },
+ {
+  "id": "b6_87",
+  "kind": "frontend",
+  "zh": "重生会话（网页防找回）"
+ },
+ {
+  "id": "b6_88",
+  "kind": "frontend",
+  "zh": "重生失败"
+ },
+ {
+  "id": "b6_89",
+  "kind": "frontend",
+  "zh": "重生失败："
+ },
+ {
+  "id": "b6_90",
+  "kind": "frontend",
+  "zh": "重生结束：成功"
+ },
+ {
+  "id": "b6_91",
+  "kind": "frontend",
+  "zh": "重生被限流："
+ },
+ {
+  "id": "b6_92",
+  "kind": "frontend",
+  "zh": "重置参数"
+ },
+ {
+  "id": "b6_93",
+  "kind": "frontend",
+  "zh": "重置控件尺寸"
+ },
+ {
+  "id": "b6_94",
+  "kind": "frontend",
+  "zh": "重置等待中"
+ },
+ {
+  "id": "b6_95",
+  "kind": "frontend",
+  "zh": "重置结果："
+ },
+ {
+  "id": "b6_96",
+  "kind": "frontend",
+  "zh": "重试"
+ },
+ {
+  "id": "b6_97",
+  "kind": "frontend",
+  "zh": "重试间隔已保存"
+ },
+ {
+  "id": "b6_98",
+  "kind": "frontend",
+  "zh": "链接"
+ },
+ {
+  "id": "b6_99",
+  "kind": "frontend",
+  "zh": "错误"
+ },
+ {
+  "id": "b6_100",
+  "kind": "frontend",
+  "zh": "错误报告"
+ },
+ {
+  "id": "b6_101",
+  "kind": "frontend",
+  "zh": "错误日志"
+ },
+ {
+  "id": "b6_102",
+  "kind": "frontend",
+  "zh": "问题："
+ },
+ {
+  "id": "b6_103",
+  "kind": "frontend",
+  "zh": "防找回清理"
+ },
+ {
+  "id": "b6_104",
+  "kind": "frontend",
+  "zh": "阿塞拜疆 \\ud83c\\udde6\\ud83c\\uddff"
+ },
+ {
+  "id": "b6_105",
+  "kind": "frontend",
+  "zh": "阿富汗 \\ud83c\\udde6\\ud83c\\uddeb"
+ },
+ {
+  "id": "b6_106",
+  "kind": "frontend",
+  "zh": "阿尔及利亚 \\ud83c\\udde9\\ud83c\\uddff"
+ },
+ {
+  "id": "b6_107",
+  "kind": "frontend",
+  "zh": "阿尔巴尼亚 \\ud83c\\udde6\\ud83c\\uddf1"
+ },
+ {
+  "id": "b6_108",
+  "kind": "frontend",
+  "zh": "阿曼 \\ud83c\\uddf4\\ud83c\\uddf2"
+ },
+ {
+  "id": "b6_109",
+  "kind": "frontend",
+  "zh": "阿根廷 \\ud83c\\udde6\\ud83c\\uddf7"
+ },
+ {
+  "id": "b6_110",
+  "kind": "frontend",
+  "zh": "阿联酋 \\ud83c\\udde6\\ud83c\\uddea"
+ },
+ {
+  "id": "b6_111",
+  "kind": "frontend",
+  "zh": "限制中"
+ },
+ {
+  "id": "b6_112",
+  "kind": "frontend",
+  "zh": "限制检测"
+ },
+ {
+  "id": "b6_113",
+  "kind": "frontend",
+  "zh": "限制检测 ·"
+ },
+ {
+  "id": "b6_114",
+  "kind": "frontend",
+  "zh": "限制检测完成"
+ },
+ {
+  "id": "b6_115",
+  "kind": "frontend",
+  "zh": "限流等待"
+ },
+ {
+  "id": "b6_116",
+  "kind": "frontend",
+  "zh": "限流："
+ },
+ {
+  "id": "b6_117",
+  "kind": "frontend",
+  "zh": "隐私设置"
+ },
+ {
+  "id": "b6_118",
+  "kind": "frontend",
+  "zh": "隐藏【"
+ },
+ {
+  "id": "b6_119",
+  "kind": "frontend",
+  "zh": "隐藏密码"
+ },
+ {
+  "id": "b6_120",
+  "kind": "frontend",
+  "zh": "需要 opentele"
+ },
+ {
+  "id": "b6_121",
+  "kind": "frontend",
+  "zh": "需要两步验证密码"
+ },
+ {
+  "id": "b6_122",
+  "kind": "frontend",
+  "zh": "需要安装 opentele"
+ },
+ {
+  "id": "b6_123",
+  "kind": "frontend",
+  "zh": "需要手机号；有 2FA 须填密码（已保存在本工具的二验会自动使用；批量可统一密码）。"
+ },
+ {
+  "id": "b6_124",
+  "kind": "frontend",
+  "zh": "韩国 \\ud83c\\uddf0\\ud83c\\uddf7"
+ },
+ {
+  "id": "b6_125",
+  "kind": "frontend",
+  "zh": "项工具。改勾选后点「保存」生效；登录/导入导出 session 永不开放。</div>"
+ },
+ {
+  "id": "b6_126",
+  "kind": "frontend",
+  "zh": "预览失败"
+ },
+ {
+  "id": "b6_127",
+  "kind": "frontend",
+  "zh": "频道"
+ },
+ {
+  "id": "b6_128",
+  "kind": "frontend",
+  "zh": "马尔代夫 \\ud83c\\uddf2\\ud83c\\uddfb"
+ },
+ {
+  "id": "b6_129",
+  "kind": "frontend",
+  "zh": "马来西亚 \\ud83c\\uddf2\\ud83c\\uddfe"
+ },
+ {
+  "id": "b6_130",
+  "kind": "frontend",
+  "zh": "验证码"
+ },
+ {
+  "id": "b6_131",
+  "kind": "frontend",
+  "zh": "验证码已发送"
+ },
+ {
+  "id": "b6_132",
+  "kind": "frontend",
+  "zh": "验证码已发送，请填写收到的验证码后确认登录。"
+ },
+ {
+  "id": "b6_133",
+  "kind": "frontend",
+  "zh": "验证码登录"
+ },
+ {
+  "id": "b6_134",
+  "kind": "frontend",
+  "zh": "高活跃"
+ },
+ {
+  "id": "b6_135",
+  "kind": "frontend",
+  "zh": "黎巴嫩 \\ud83c\\uddf1\\ud83c\\udde7"
+ },
+ {
+  "id": "b6_136",
+  "kind": "frontend",
+  "zh": "默认"
+ },
+ {
+  "id": "b6_137",
+  "kind": "frontend",
+  "zh": "（DB 异常时仍可留痕）。"
+ },
+ {
+  "id": "b6_138",
+  "kind": "frontend",
+  "zh": "（Windows）或运行"
+ },
+ {
+  "id": "b6_139",
+  "kind": "frontend",
+  "zh": "（任务 #"
+ },
+ {
+  "id": "b6_140",
+  "kind": "frontend",
+  "zh": "（剩余约"
+ },
+ {
+  "id": "b6_141",
+  "kind": "frontend",
+  "zh": "（助手已启用）"
+ },
+ {
+  "id": "b6_142",
+  "kind": "frontend",
+  "zh": "（助手未启用）"
+ },
+ {
+  "id": "b6_143",
+  "kind": "frontend",
+  "zh": "（可点刷新）"
+ },
+ {
+  "id": "b6_144",
+  "kind": "frontend",
+  "zh": "（完成数/成功/失败/当前号）；并行与超时见参数面板。"
+ },
+ {
+  "id": "b6_145",
+  "kind": "frontend",
+  "zh": "（完整字符串见右侧原始数据，请勿泄露）"
+ },
+ {
+  "id": "b6_146",
+  "kind": "frontend",
+  "zh": "（已自动修复）"
+ },
+ {
+  "id": "b6_147",
+  "kind": "frontend",
+  "zh": "（成功"
+ },
+ {
+  "id": "b6_148",
+  "kind": "frontend",
+  "zh": "（无文本）"
+ },
+ {
+  "id": "b6_149",
+  "kind": "frontend",
+  "zh": "（无账号明细）"
+ },
+ {
+  "id": "b6_150",
+  "kind": "frontend",
+  "zh": "（旧授权注销未确认）"
+ },
+ {
+  "id": "b6_151",
+  "kind": "frontend",
+  "zh": "（留「不改动」的项不会被碰）</div>"
+ },
+ {
+  "id": "b6_152",
+  "kind": "frontend",
+  "zh": "（登录次数过多）。需等待数小时～24 小时，期间不要反复点重生。"
+ },
+ {
+  "id": "b6_153",
+  "kind": "frontend",
+  "zh": "（空列表）"
+ },
+ {
+  "id": "b6_154",
+  "kind": "frontend",
+  "zh": "（约"
+ },
+ {
+  "id": "b6_155",
+  "kind": "frontend",
+  "zh": "（试运行，未真正写库）"
+ },
+ {
+  "id": "b6_156",
+  "kind": "frontend",
+  "zh": "（限"
+ },
+ {
+  "id": "b6_157",
+  "kind": "frontend",
+  "zh": "）。缺失时弹窗可"
+ },
+ {
+  "id": "b6_158",
+  "kind": "frontend",
+  "zh": "）重试，详情看日志"
+ },
+ {
+  "id": "b6_159",
+  "kind": "frontend",
+  "zh": "），不是刷新页面。进行中任务会中断；约 1–3 秒后前端自动探测恢复。"
+ },
+ {
+  "id": "b6_160",
+  "kind": "frontend",
+  "zh": "），后台每"
+ },
+ {
+  "id": "b6_161",
+  "kind": "frontend",
+  "zh": "，兼容 TDesktop 6.x。上传请把整个"
+ },
+ {
+  "id": "b6_162",
+  "kind": "frontend",
+  "zh": "，可试运行。"
+ },
+ {
+  "id": "b6_163",
+  "kind": "frontend",
+  "zh": "，后台执行中"
+ },
+ {
+  "id": "b6_164",
+  "kind": "frontend",
+  "zh": "，失败"
+ },
+ {
+  "id": "b6_165",
+  "kind": "frontend",
+  "zh": "，并发度"
+ },
+ {
+  "id": "b6_166",
+  "kind": "frontend",
+  "zh": "，或系统相机扫本页二维码。 授权后本工具获得新会话（加密入库）。二维码约 30 秒有效，过期会自动刷新。"
+ },
+ {
+  "id": "b6_167",
+  "kind": "frontend",
+  "zh": "，按"
+ },
+ {
+  "id": "b6_168",
+  "kind": "frontend",
+  "zh": "，旧授权已注销"
+ },
+ {
+  "id": "b6_169",
+  "kind": "frontend",
+  "zh": "，有设备踢完又重登"
+ },
+ {
+  "id": "b6_170",
+  "kind": "frontend",
+  "zh": "，源包已删</div>"
+ },
+ {
+  "id": "b6_171",
+  "kind": "frontend",
+  "zh": "，留空则保持不变"
+ },
+ {
+  "id": "b6_172",
+  "kind": "frontend",
+  "zh": "，选择本机/服务器、网页/机器人/两者。"
+ },
+ {
+  "id": "b6_173",
+  "kind": "frontend",
+  "zh": "：Session→Tdata（需 opentele）或 Tdata→Session（内置解析）。"
+ },
+ {
+  "id": "b6_174",
+  "kind": "frontend",
+  "zh": "：上传 session 号包，初始化 Passkey 注册并下载凭证 zip（创建方向）。"
+ },
+ {
+  "id": "b6_175",
+  "kind": "frontend",
+  "zh": "：与机器人号包能力对齐。"
+ },
+ {
+  "id": "b6_176",
+  "kind": "frontend",
+  "zh": "：健康检查、自动登录、发消息、养号、代理体检、OKPay 余额、踢设备、打标签、导出、重生会话、删除等。"
+ },
+ {
+  "id": "b6_177",
+  "kind": "frontend",
+  "zh": "：别名、手机号、代理、标签、取码链接等。"
+ },
+ {
+  "id": "b6_178",
+  "kind": "frontend",
+  "zh": "：单号超时秒数，超时跳过避免卡死。"
+ },
+ {
+  "id": "b6_179",
+  "kind": "frontend",
+  "zh": "：取消进行中的等待。"
+ },
+ {
+  "id": "b6_180",
+  "kind": "frontend",
+  "zh": "：工具箱 / 详情，可选把新密码加密存库。"
+ },
+ {
+  "id": "b6_181",
+  "kind": "frontend",
+  "zh": "：成功"
+ },
+ {
+  "id": "b6_182",
+  "kind": "frontend",
+  "zh": "：批量并行（1–32）。"
+ },
+ {
+  "id": "b6_183",
+  "kind": "frontend",
+  "zh": "：是否开启 2FA、"
+ },
+ {
+  "id": "b6_184",
+  "kind": "frontend",
+  "zh": "：真 Desktop 目录结构（需服务器安装"
+ },
+ {
+  "id": "b6_185",
+  "kind": "frontend",
+  "zh": "：真实重启后端进程（"
+ },
+ {
+  "id": "b6_186",
+  "kind": "frontend",
+  "zh": "：记录服务端未捕获异常、HTTP 5xx、前端脚本错误。可列表查看、导出 JSON 上报、清空。"
+ },
+ {
+  "id": "b6_187",
+  "kind": "frontend",
+  "zh": "：设置 → 设备 →"
+ },
+ {
+  "id": "b6_188",
+  "kind": "frontend",
+  "zh": "：资料、健康检查、限制检测、设备/会话、登录、清设备、导出、重生、二验状态/重置、退出、删除。"
+ },
+ {
+  "id": "b6_189",
+  "kind": "frontend",
+  "zh": "：走官方流程，通常约 7 天等待；到期后云密码失效。有辅助邮箱时原持有人仍可能用邮箱恢复——重置前请先查状态。"
+ },
+ {
+  "id": "b6_190",
+  "kind": "frontend",
+  "zh": "：重生并行（1–8）。"
+ },
+ {
+  "id": "b6_191",
+  "kind": "frontend",
+  "zh": "？已发出的不会撤回，剩余目标会标为已跳过。"
+ },
+ {
+  "id": "b6_192",
+  "kind": "backend",
+  "zh": "%g 分钟"
+ },
+ {
+  "id": "b6_193",
+  "kind": "backend",
+  "zh": "%g 小时"
+ },
+ {
+  "id": "b6_194",
+  "kind": "backend",
+  "zh": "%g 秒"
+ },
+ {
+  "id": "b6_195",
+  "kind": "backend",
+  "zh": "(?:\\d+(?:\\.\\d+)?[a-z秒分时天]*)+"
+ },
+ {
+  "id": "b6_196",
+  "kind": "backend",
+  "zh": "(?:login\\s*code|code|验证码|登录码|コード)\\D{0,20}?(\\d{5,6})"
+ },
+ {
+  "id": "b6_197",
+  "kind": "backend",
+  "zh": "(?i)(?:CNY|人民币|RMB|￥)[^\\d%]{0,12}(\\d+(?:\\.\\d+)?)(?!\\s*%)"
+ },
+ {
+  "id": "b6_198",
+  "kind": "backend",
+  "zh": "(?i)(?:TRX|波场|TRON)[^\\d%]{0,12}(\\d+(?:\\.\\d+)?)(?!\\s*%)"
+ },
+ {
+  "id": "b6_199",
+  "kind": "backend",
+  "zh": "(?i)(?:USDT|U币|Tether)[^\\d%]{0,12}(\\d+(?:\\.\\d+)?)(?!\\s*%)"
+ }
+]

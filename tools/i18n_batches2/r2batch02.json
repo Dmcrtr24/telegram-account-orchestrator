@@ -1,0 +1,777 @@
+[
+ {
+  "id": "r2_0",
+  "kind": "exact",
+  "zh": "发送对象白名单，逗号分隔，留空=不限制"
+ },
+ {
+  "id": "r2_1",
+  "kind": "exact",
+  "zh": "取消全部"
+ },
+ {
+  "id": "r2_2",
+  "kind": "exact",
+  "zh": "取码 API 前缀（可选）"
+ },
+ {
+  "id": "r2_3",
+  "kind": "exact",
+  "zh": "取码平台启动监控失败："
+ },
+ {
+  "id": "r2_4",
+  "kind": "exact",
+  "zh": "只在本机跑，网页只监听 127.0.0.1"
+ },
+ {
+  "id": "r2_5",
+  "kind": "exact",
+  "zh": "只影响“手机号登录”；tdata 导入不需要。需要时到 my.telegram.org 申请一对，全部账号共用一对即可"
+ },
+ {
+  "id": "r2_6",
+  "kind": "exact",
+  "zh": "只能是"
+ },
+ {
+  "id": "r2_7",
+  "kind": "exact",
+  "zh": "只读模式不能改 AI 配置"
+ },
+ {
+  "id": "r2_8",
+  "kind": "exact",
+  "zh": "只读模式禁止重启"
+ },
+ {
+  "id": "r2_9",
+  "kind": "exact",
+  "zh": "只读模式禁用 AI 对话"
+ },
+ {
+  "id": "r2_10",
+  "kind": "exact",
+  "zh": "只读模式：拒绝一切写入类操作"
+ },
+ {
+  "id": "r2_11",
+  "kind": "exact",
+  "zh": "可读写，现有"
+ },
+ {
+  "id": "r2_12",
+  "kind": "exact",
+  "zh": "合并"
+ },
+ {
+  "id": "r2_13",
+  "kind": "exact",
+  "zh": "合并中…"
+ },
+ {
+  "id": "r2_14",
+  "kind": "exact",
+  "zh": "后二验才会失效"
+ },
+ {
+  "id": "r2_15",
+  "kind": "exact",
+  "zh": "后再试"
+ },
+ {
+  "id": "r2_16",
+  "kind": "exact",
+  "zh": "后再试（Telegram 限流，不是本机故障）"
+ },
+ {
+  "id": "r2_17",
+  "kind": "exact",
+  "zh": "后台任务异常:"
+ },
+ {
+  "id": "r2_18",
+  "kind": "exact",
+  "zh": "启动前体检（部署="
+ },
+ {
+  "id": "r2_19",
+  "kind": "exact",
+  "zh": "四、转 API"
+ },
+ {
+  "id": "r2_20",
+  "kind": "exact",
+  "zh": "在"
+ },
+ {
+  "id": "r2_21",
+  "kind": "exact",
+  "zh": "在 .env 里填写"
+ },
+ {
+  "id": "r2_22",
+  "kind": "exact",
+  "zh": "填的不是"
+ },
+ {
+  "id": "r2_23",
+  "kind": "exact",
+  "zh": "处理中…"
+ },
+ {
+  "id": "r2_24",
+  "kind": "exact",
+  "zh": "天发言人·"
+ },
+ {
+  "id": "r2_25",
+  "kind": "exact",
+  "zh": "失败:"
+ },
+ {
+  "id": "r2_26",
+  "kind": "exact",
+  "zh": "头像:"
+ },
+ {
+  "id": "r2_27",
+  "kind": "exact",
+  "zh": "套用预设到勾选"
+ },
+ {
+  "id": "r2_28",
+  "kind": "exact",
+  "zh": "字符,需≥32)。请删掉 .env 里的错误密钥行,重新运行 setup.py 生成。"
+ },
+ {
+  "id": "r2_29",
+  "kind": "exact",
+  "zh": "字符上限（约）"
+ },
+ {
+  "id": "r2_30",
+  "kind": "exact",
+  "zh": "安全"
+ },
+ {
+  "id": "r2_31",
+  "kind": "exact",
+  "zh": "安装超时（>300s），请在服务器上手动: pip install opentele"
+ },
+ {
+  "id": "r2_32",
+  "kind": "exact",
+  "zh": "完全离线"
+ },
+ {
+  "id": "r2_33",
+  "kind": "exact",
+  "zh": "密钥数="
+ },
+ {
+  "id": "r2_34",
+  "kind": "exact",
+  "zh": "密钥类参数"
+ },
+ {
+  "id": "r2_35",
+  "kind": "exact",
+  "zh": "对选中的号执行"
+ },
+ {
+  "id": "r2_36",
+  "kind": "exact",
+  "zh": "对齐机器人 /convert：Session → Tdata（需 opentele）或 Tdata → Session（内置解析）。"
+ },
+ {
+  "id": "r2_37",
+  "kind": "exact",
+  "zh": "对齐机器人 /passkey 创建方向：上传 session 号包，初始化 Passkey 注册并下载凭证 JSON。"
+ },
+ {
+  "id": "r2_38",
+  "kind": "exact",
+  "zh": "导出 tdata 需要 opentele。安装：pip install opentele（当前："
+ },
+ {
+  "id": "r2_39",
+  "kind": "exact",
+  "zh": "尚未授权"
+ },
+ {
+  "id": "r2_40",
+  "kind": "exact",
+  "zh": "工具未授权："
+ },
+ {
+  "id": "r2_41",
+  "kind": "exact",
+  "zh": "工具未获确认，已取消："
+ },
+ {
+  "id": "r2_42",
+  "kind": "exact",
+  "zh": "工具轮次"
+ },
+ {
+  "id": "r2_43",
+  "kind": "exact",
+  "zh": "已停止。"
+ },
+ {
+  "id": "r2_44",
+  "kind": "exact",
+  "zh": "已写入新会话并重置本机接管时间；旧授权已尝试注销。需要 tdata / .session 文件请再用导出功能。"
+ },
+ {
+  "id": "r2_45",
+  "kind": "exact",
+  "zh": "已发送 message_id="
+ },
+ {
+  "id": "r2_46",
+  "kind": "exact",
+  "zh": "已存在"
+ },
+ {
+  "id": "r2_47",
+  "kind": "exact",
+  "zh": "已安装，无需重复安装"
+ },
+ {
+  "id": "r2_48",
+  "kind": "exact",
+  "zh": "已开启"
+ },
+ {
+  "id": "r2_49",
+  "kind": "exact",
+  "zh": "已授权DC="
+ },
+ {
+  "id": "r2_50",
+  "kind": "exact",
+  "zh": "已点选"
+ },
+ {
+  "id": "r2_51",
+  "kind": "exact",
+  "zh": "已生成"
+ },
+ {
+  "id": "r2_52",
+  "kind": "exact",
+  "zh": "已用 --force 忽略上述问题，继续启动。出事自负。"
+ },
+ {
+  "id": "r2_53",
+  "kind": "exact",
+  "zh": "已申请重置，等待至"
+ },
+ {
+  "id": "r2_54",
+  "kind": "exact",
+  "zh": "已申请重置，需等待至"
+ },
+ {
+  "id": "r2_55",
+  "kind": "exact",
+  "zh": "已设置（"
+ },
+ {
+  "id": "r2_56",
+  "kind": "exact",
+  "zh": "干跑模式：写操作只返回预览"
+ },
+ {
+  "id": "r2_57",
+  "kind": "exact",
+  "zh": "并发与速率"
+ },
+ {
+  "id": "r2_58",
+  "kind": "exact",
+  "zh": "并发度"
+ },
+ {
+  "id": "r2_59",
+  "kind": "exact",
+  "zh": "并发：ZIP workers="
+ },
+ {
+  "id": "r2_60",
+  "kind": "exact",
+  "zh": "建议保持开启。"
+ },
+ {
+  "id": "r2_61",
+  "kind": "exact",
+  "zh": "开始互转"
+ },
+ {
+  "id": "r2_62",
+  "kind": "exact",
+  "zh": "开始分类"
+ },
+ {
+  "id": "r2_63",
+  "kind": "exact",
+  "zh": "开始合并"
+ },
+ {
+  "id": "r2_64",
+  "kind": "exact",
+  "zh": "开始转 API"
+ },
+ {
+  "id": "r2_65",
+  "kind": "exact",
+  "zh": "张头像"
+ },
+ {
+  "id": "r2_66",
+  "kind": "exact",
+  "zh": "强制弹启动模式选择菜单"
+ },
+ {
+  "id": "r2_67",
+  "kind": "exact",
+  "zh": "当前"
+ },
+ {
+  "id": "r2_68",
+  "kind": "exact",
+  "zh": "当前是只读/干跑模式，不执行工具箱操作"
+ },
+ {
+  "id": "r2_69",
+  "kind": "exact",
+  "zh": "必填"
+ },
+ {
+  "id": "r2_70",
+  "kind": "exact",
+  "zh": "必须 confirm=true"
+ },
+ {
+  "id": "r2_71",
+  "kind": "exact",
+  "zh": "忽略体检的致命错误强行启动"
+ },
+ {
+  "id": "r2_72",
+  "kind": "exact",
+  "zh": "手机 Telegram 扫码授权"
+ },
+ {
+  "id": "r2_73",
+  "kind": "exact",
+  "zh": "执行中…"
+ },
+ {
+  "id": "r2_74",
+  "kind": "exact",
+  "zh": "执行勾选项"
+ },
+ {
+  "id": "r2_75",
+  "kind": "exact",
+  "zh": "执行失败："
+ },
+ {
+  "id": "r2_76",
+  "kind": "exact",
+  "zh": "扫"
+ },
+ {
+  "id": "r2_77",
+  "kind": "exact",
+  "zh": "扫码登录触发限流："
+ },
+ {
+  "id": "r2_78",
+  "kind": "exact",
+  "zh": "扫码登录限流："
+ },
+ {
+  "id": "r2_79",
+  "kind": "exact",
+  "zh": "批量动作最大间隔（秒）"
+ },
+ {
+  "id": "r2_80",
+  "kind": "exact",
+  "zh": "批量动作最小间隔（秒）"
+ },
+ {
+  "id": "r2_81",
+  "kind": "exact",
+  "zh": "批量导出只支持 pack 或 session"
+ },
+ {
+  "id": "r2_82",
+  "kind": "exact",
+  "zh": "批量操作默认并行数（1-32，网页批量/工具箱共用）"
+ },
+ {
+  "id": "r2_83",
+  "kind": "exact",
+  "zh": "批量跑号="
+ },
+ {
+  "id": "r2_84",
+  "kind": "exact",
+  "zh": "批量重生会话默认并行数（1-8，过大易触发发码限流）"
+ },
+ {
+  "id": "r2_85",
+  "kind": "exact",
+  "zh": "找不到分片文件"
+ },
+ {
+  "id": "r2_86",
+  "kind": "exact",
+  "zh": "拆分格式"
+ },
+ {
+  "id": "r2_87",
+  "kind": "exact",
+  "zh": "拆包"
+ },
+ {
+  "id": "r2_88",
+  "kind": "exact",
+  "zh": "拆包中，包大的话会慢一点…"
+ },
+ {
+  "id": "r2_89",
+  "kind": "exact",
+  "zh": "接口格式"
+ },
+ {
+  "id": "r2_90",
+  "kind": "exact",
+  "zh": "接管时间已重置"
+ },
+ {
+  "id": "r2_91",
+  "kind": "exact",
+  "zh": "提示词预设"
+ },
+ {
+  "id": "r2_92",
+  "kind": "exact",
+  "zh": "收到热重载请求，正在重新启动 TAO 服务…"
+ },
+ {
+  "id": "r2_93",
+  "kind": "exact",
+  "zh": "改动类工具(改二验/资料/隐私/发消息等)执行前需确认"
+ },
+ {
+  "id": "r2_94",
+  "kind": "exact",
+  "zh": "放服务器，对外提供访问（记得配令牌和 HTTPS）"
+ },
+ {
+  "id": "r2_95",
+  "kind": "exact",
+  "zh": "数据目录"
+ },
+ {
+  "id": "r2_96",
+  "kind": "exact",
+  "zh": "文件不存在或已被清理"
+ },
+ {
+  "id": "r2_97",
+  "kind": "exact",
+  "zh": "文件不存在："
+ },
+ {
+  "id": "r2_98",
+  "kind": "exact",
+  "zh": "文件名不合法"
+ },
+ {
+  "id": "r2_99",
+  "kind": "exact",
+  "zh": "文件超过"
+ },
+ {
+  "id": "r2_100",
+  "kind": "exact",
+  "zh": "文件超过 256MB"
+ },
+ {
+  "id": "r2_101",
+  "kind": "exact",
+  "zh": "文件超过 512MB"
+ },
+ {
+  "id": "r2_102",
+  "kind": "exact",
+  "zh": "文件过大（"
+ },
+ {
+  "id": "r2_103",
+  "kind": "exact",
+  "zh": "方向"
+ },
+ {
+  "id": "r2_104",
+  "kind": "exact",
+  "zh": "无密码"
+ },
+ {
+  "id": "r2_105",
+  "kind": "exact",
+  "zh": "无按钮"
+ },
+ {
+  "id": "r2_106",
+  "kind": "exact",
+  "zh": "无法向 @"
+ },
+ {
+  "id": "r2_107",
+  "kind": "exact",
+  "zh": "既无 username 也无手机号，无法互聊（先跑一次健康检查补全信息）"
+ },
+ {
+  "id": "r2_108",
+  "kind": "exact",
+  "zh": "旧授权已注销"
+ },
+ {
+  "id": "r2_109",
+  "kind": "exact",
+  "zh": "旧授权注销未确认"
+ },
+ {
+  "id": "r2_110",
+  "kind": "exact",
+  "zh": "暂不可再次申请，请等到"
+ },
+ {
+  "id": "r2_111",
+  "kind": "exact",
+  "zh": "暂无对话。在「配置与权限」启用 AI 后即可提问。历史保存在本机浏览器。"
+ },
+ {
+  "id": "r2_112",
+  "kind": "exact",
+  "zh": "有 passcode 才填"
+ },
+ {
+  "id": "r2_113",
+  "kind": "exact",
+  "zh": "有·未存"
+ },
+ {
+  "id": "r2_114",
+  "kind": "exact",
+  "zh": "有二验，密码未保存在本工具。点击补录（只写本地）"
+ },
+ {
+  "id": "r2_115",
+  "kind": "exact",
+  "zh": "有密码"
+ },
+ {
+  "id": "r2_116",
+  "kind": "exact",
+  "zh": "服务器模式会监听 0.0.0.0（全网可达），请在前面套一层 HTTPS 反代。"
+ },
+ {
+  "id": "r2_117",
+  "kind": "exact",
+  "zh": "服务器模式未设 TAM_WEB_TOKEN，控制台会没有访问门槛。 → python -m tam.cli init-key 生成一个填进 .env"
+ },
+ {
+  "id": "r2_118",
+  "kind": "exact",
+  "zh": "服务将在约 1 秒后真实重启，请稍候自动恢复"
+ },
+ {
+  "id": "r2_119",
+  "kind": "exact",
+  "zh": "服务端返回的登录时间不合理（"
+ },
+ {
+  "id": "r2_120",
+  "kind": "exact",
+  "zh": "未知 mode："
+ },
+ {
+  "id": "r2_121",
+  "kind": "exact",
+  "zh": "未知参数："
+ },
+ {
+  "id": "r2_122",
+  "kind": "exact",
+  "zh": "未知工具："
+ },
+ {
+  "id": "r2_123",
+  "kind": "exact",
+  "zh": "未知的 DC 编号："
+ },
+ {
+  "id": "r2_124",
+  "kind": "exact",
+  "zh": "未知返回："
+ },
+ {
+  "id": "r2_125",
+  "kind": "exact",
+  "zh": "未记录，点“查看设备”可从 Telegram 拉取"
+ },
+ {
+  "id": "r2_126",
+  "kind": "exact",
+  "zh": "未设 TAM_BOT_ADMIN_ID，/vip /unvip /gb 管理命令对所有人失效（含你自己）。"
+ },
+ {
+  "id": "r2_127",
+  "kind": "exact",
+  "zh": "未设 TAM_BOT_TOKEN，机器人启不了。 → 到 @BotFather 领一个填进 .env，或把 TAM_FRONTEND 改成 web"
+ },
+ {
+  "id": "r2_128",
+  "kind": "exact",
+  "zh": "未设 TAM_MASTER_KEY，会话加密密钥会落盘。服务器上建议走环境变量。"
+ },
+ {
+  "id": "r2_129",
+  "kind": "exact",
+  "zh": "未选择，用默认："
+ },
+ {
+  "id": "r2_130",
+  "kind": "exact",
+  "zh": "本地还是服务器"
+ },
+ {
+  "id": "r2_131",
+  "kind": "exact",
+  "zh": "本机接管"
+ },
+ {
+  "id": "r2_132",
+  "kind": "exact",
+  "zh": "机器人前端的依赖没装齐："
+ },
+ {
+  "id": "r2_133",
+  "kind": "exact",
+  "zh": "权限与范围"
+ },
+ {
+  "id": "r2_134",
+  "kind": "exact",
+  "zh": "权限预设"
+ },
+ {
+  "id": "r2_135",
+  "kind": "exact",
+  "zh": "条消息，采集到"
+ },
+ {
+  "id": "r2_136",
+  "kind": "exact",
+  "zh": "校验和不匹配，文件已损坏"
+ },
+ {
+  "id": "r2_137",
+  "kind": "exact",
+  "zh": "桌面端设了本地密码才填"
+ },
+ {
+  "id": "r2_138",
+  "kind": "exact",
+  "zh": "检查"
+ },
+ {
+  "id": "r2_139",
+  "kind": "exact",
+  "zh": "检查授权状态失败："
+ },
+ {
+  "id": "r2_140",
+  "kind": "exact",
+  "zh": "检查旧会话授权失败："
+ },
+ {
+  "id": "r2_141",
+  "kind": "exact",
+  "zh": "检查自身出错："
+ },
+ {
+  "id": "r2_142",
+  "kind": "exact",
+  "zh": "模型名"
+ },
+ {
+  "id": "r2_143",
+  "kind": "exact",
+  "zh": "正在思考与调用工具…"
+ },
+ {
+  "id": "r2_144",
+  "kind": "exact",
+  "zh": "每行一个"
+ },
+ {
+  "id": "r2_145",
+  "kind": "exact",
+  "zh": "每账号每秒最大请求数"
+ },
+ {
+  "id": "r2_146",
+  "kind": "exact",
+  "zh": "没找到 .session 文件："
+ },
+ {
+  "id": "r2_147",
+  "kind": "exact",
+  "zh": "没找到 proxy.txt，所有号会走服务器裸 IP，风控风险很高。 → 每行一个：IP:端口:账户:密码:过期时间戳"
+ },
+ {
+  "id": "r2_148",
+  "kind": "exact",
+  "zh": "没收到文件"
+ },
+ {
+  "id": "r2_149",
+  "kind": "exact",
+  "zh": "没收到文件内容"
+ },
+ {
+  "id": "r2_150",
+  "kind": "exact",
+  "zh": "没收到文件内容，请直接把 zip 作为请求体上传"
+ },
+ {
+  "id": "r2_151",
+  "kind": "exact",
+  "zh": "没有匹配到要恢复的参数"
+ },
+ {
+  "id": "r2_152",
+  "kind": "exact",
+  "zh": "没有发送目标"
+ },
+ {
+  "id": "r2_153",
+  "kind": "exact",
+  "zh": "没有可修改字段，允许："
+ },
+ {
+  "id": "r2_154",
+  "kind": "exact",
+  "zh": "没有可用的健康账号（需 status=active 且不在 spam 封锁期）"
+ }
+]

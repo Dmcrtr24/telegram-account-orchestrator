@@ -516,7 +516,7 @@ async function viewLeadMsgs(userId, source) {
       + (st.total != null ? ' · 库内共 ' + st.total + ' 条 / ' + (st.speakers || '?') + ' 人' : '')
       + '</div>';
     const rows = msgs.map(function (m) {
-      const t = m.date ? new Date(m.date * 1000).toLocaleString() : '';
+      const t = m.date ? new Date(m.date * 1000).toLocaleString(uiLocale()) : '';
       const who = m.username ? ('@' + m.username) : (m.name || ('#' + (m.user_id || '')));
       const reply = m.reply_to ? (' · 回复 #' + m.reply_to) : '';
       return '<div class="msg-row">'
@@ -1084,8 +1084,10 @@ function countryOf(phone) {
   const hit = dialOf(phone);
   return hit ? hit.country : '未识别';
 }
+function icon(name, cls) { return '<svg class="ico' + (cls ? ' ' + cls : '') + '" aria-hidden="true"><use href="#' + name + '"/></svg>'; }
 function esc(s) { return String(s ?? '').replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c])); }
-function fmt(ts) { return ts ? new Date(ts * 1000).toLocaleString('zh-CN', {hour12:false}) : '—'; }
+function fmt(ts) { return ts ? new Date(ts * 1000).toLocaleString(uiLocale(), {hour12:false}) : '—'; }
+function uiLocale() { try { return (window.tamI18n && tamI18n.getLang() === 'en') ? 'en-GB' : 'ru-RU'; } catch (e) { return undefined; } }
 /* 服务端与本机的时钟差（毫秒）。本机时间不准时，相对时间会算出很离谱的值，所以统一以服务端为准 */
 let skewMs = 0;
 const nowMs = () => Date.now() + skewMs;
@@ -2176,7 +2178,7 @@ function twofaCell(a) {
   const pwd = a.twofa || '';
   const shown = twofaShown.has(a.id) && pwd;
   const text = shown ? esc(pwd) : twofaMask(pwd || '******');
-  const eye = shown ? '🙈' : '👁';
+  const eye = icon(shown ? 'i-eye-off' : 'i-eye');
   const tip = shown ? '隐藏密码' : '显示密码';
   return `<span class="twofa-wrap">` +
     `<code class="twofa-text" id="t2fa_${a.id}">${text}</code>` +
@@ -2192,7 +2194,7 @@ async function toggleTwofa(id, ev) {
   if (twofaShown.has(id) && a.twofa) {
     twofaShown.delete(id);
     el.textContent = twofaMask(a.twofa);
-    if (btn) { btn.textContent = '👁'; btn.title = '显示密码'; }
+    if (btn) { btn.innerHTML = icon('i-eye'); btn.title = '显示密码'; }
     return;
   }
   // 按需向后端揭密（列表接口不再下发明文）
@@ -2216,7 +2218,7 @@ async function toggleTwofa(id, ev) {
   }
   twofaShown.add(id);
   el.textContent = a.twofa;
-  if (btn) { btn.textContent = '🙈'; btn.title = '隐藏密码'; }
+  if (btn) { btn.innerHTML = icon('i-eye-off'); btn.title = '隐藏密码'; }
 }
 async function promptSaveTwofa(id, ev) {
   if (ev) { ev.preventDefault(); ev.stopPropagation(); }

@@ -1,0 +1,802 @@
+{
+  "b4_0": {
+    "ru": "Включено ·",
+    "en": "Enabled ·"
+  },
+  "b4_1": {
+    "ru": "Установлено",
+    "en": "Installed"
+  },
+  "b4_2": {
+    "ru": "Выполнено",
+    "en": "Completed"
+  },
+  "b4_3": {
+    "ru": "Выполнено·однократно",
+    "en": "Completed·one-shot"
+  },
+  "b4_4": {
+    "ru": "StringSession экспортирован",
+    "en": "StringSession exported"
+  },
+  "b4_5": {
+    "ru": "StringSession экспортирован (см. лог ниже)",
+    "en": "StringSession exported (see log below)"
+  },
+  "b4_6": {
+    "ru": "StringSession экспортирован (см. лог ниже; если копирование не удалось, выберите вручную)",
+    "en": "StringSession exported (see log below; if copying fails, select manually)"
+  },
+  "b4_7": {
+    "ru": "Экспортирован tam-layout.json",
+    "en": "Exported tam-layout.json"
+  },
+  "b4_8": {
+    "ru": "Заблокирован",
+    "en": "Banned"
+  },
+  "b4_9": {
+    "ru": "Применён пресет: ",
+    "en": "Preset applied: "
+  },
+  "b4_10": {
+    "ru": "2FA включена",
+    "en": "2FA enabled"
+  },
+  "b4_11": {
+    "ru": "Размеры всех элементов восстановлены по умолчанию",
+    "en": "All widget sizes restored to default"
+  },
+  "b4_12": {
+    "ru": "Очистка выполнена",
+    "en": "Cleanup done"
+  },
+  "b4_13": {
+    "ru": "Выполнен один проход сканирования",
+    "en": "One scan pass completed"
+  },
+  "b4_14": {
+    "ru": "Сброс 2FA отправлен",
+    "en": "2FA reset submitted"
+  },
+  "b4_15": {
+    "ru": "Удаление аккаунта отправлено, локальная сессия очищена",
+    "en": "Account deletion submitted, local session cleared"
+  },
+  "b4_16": {
+    "ru": "Задача перегенерации отправлена #",
+    "en": "Regeneration task submitted #"
+  },
+  "b4_17": {
+    "ru": "Накоплено",
+    "en": "Collected"
+  },
+  "b4_18": {
+    "ru": "Накоплено пакетов: 0",
+    "en": "Packs collected: 0"
+  },
+  "b4_19": {
+    "ru": "Проверено: сброшено",
+    "en": "Verified: terminated"
+  },
+  "b4_20": {
+    "ru": "История диалогов очищена",
+    "en": "Chat history cleared"
+  },
+  "b4_21": {
+    "ru": "Авторизован",
+    "en": "Signed in"
+  },
+  "b4_22": {
+    "ru": "Результат записан. Структурированные поля — в исходных данных справа; если повторяется часто, можно добавить шаблон.",
+    "en": "Result recorded. Structured fields are in the raw data on the right; if this happens often, add a template."
+  },
+  "b4_23": {
+    "ru": "2FA установлена",
+    "en": "2FA set"
+  },
+  "b4_24": {
+    "ru": "Запрошена остановка",
+    "en": "Stop requested"
+  },
+  "b4_25": {
+    "ru": "Выполнен выход",
+    "en": "Signed out"
+  },
+  "b4_26": {
+    "ru": "Выполнен выход",
+    "en": "Signed out"
+  },
+  "b4_27": {
+    "ru": "Выбрано",
+    "en": "Selected"
+  },
+  "b4_28": {
+    "ru": "Выбрано: 0",
+    "en": "Selected: 0"
+  },
+  "b4_29": {
+    "ru": "Выбрано групп: 0",
+    "en": "Groups selected: 0"
+  },
+  "b4_30": {
+    "ru": "Результат операции зафиксирован",
+    "en": "Operation result locked"
+  },
+  "b4_31": {
+    "ru": "Скрыто【",
+    "en": "Hidden【"
+  },
+  "b4_32": {
+    "ru": "Скрытые элементы: ",
+    "en": "Hidden widgets: "
+  },
+  "b4_33": {
+    "ru": "Пакистан 🇵🇰",
+    "en": "Pakistan 🇵🇰"
+  },
+  "b4_34": {
+    "ru": "Парагвай 🇵🇾",
+    "en": "Paraguay 🇵🇾"
+  },
+  "b4_35": {
+    "ru": "Бахрейн 🇧🇭",
+    "en": "Bahrain 🇧🇭"
+  },
+  "b4_36": {
+    "ru": "Бразилия 🇧🇷",
+    "en": "Brazil 🇧🇷"
+  },
+  "b4_37": {
+    "ru": "Раскладка импортирована",
+    "en": "Layout imported"
+  },
+  "b4_38": {
+    "ru": "Греция 🇬🇷",
+    "en": "Greece 🇬🇷"
+  },
+  "b4_39": {
+    "ru": "Справка",
+    "en": "Help"
+  },
+  "b4_40": {
+    "ru": "Пробный режим",
+    "en": "Dry run mode"
+  },
+  "b4_41": {
+    "ru": "и нажмите «Сохранить конфигурацию», чтобы применить; после отключения переключателя тоже нужно нажать «Сохранить», иначе не применится. Права можно задать пресетом (только чтение/безопасный/стандартный/полный) — нажмите «Применить пресет к выбранным», или",
+    "en": "and click “Save config” to apply; after turning the enable switch off you also need to click Save, otherwise it won't apply. Permissions can be set with presets (read-only/safe/standard/full) by clicking “Apply preset to selected”, or"
+  },
+  "b4_42": {
+    "ru": "Параллельно",
+    "en": "Concurrency"
+  },
+  "b4_43": {
+    "ru": "Выбранные аккаунты в базе",
+    "en": "Selected accounts in library"
+  },
+  "b4_44": {
+    "ru": "В базе нет сохранённого пароля 2FA — нажмите «Есть·не сохранён», чтобы добавить, или смените 2FA через инструменты",
+    "en": "No saved 2FA password in library — click “Yes·not saved” to add it, or change 2FA via toolbox"
+  },
+  "b4_45": {
+    "ru": "Ошибка применения: ",
+    "en": "Apply failed: "
+  },
+  "b4_46": {
+    "ru": "Дата создания аккаунта",
+    "en": "Account creation date"
+  },
+  "b4_47": {
+    "ru": "Создать канал",
+    "en": "Create channel"
+  },
+  "b4_48": {
+    "ru": "Начать",
+    "en": "Start"
+  },
+  "b4_49": {
+    "ru": "Начать 0/",
+    "en": "Start 0/"
+  },
+  "b4_50": {
+    "ru": "Начать удаление",
+    "en": "Start deletion"
+  },
+  "b4_51": {
+    "ru": "Начать сброс",
+    "en": "Start termination"
+  },
+  "b4_52": {
+    "ru": "Начать сбор",
+    "en": "Start collection"
+  },
+  "b4_53": {
+    "ru": "Ошибка",
+    "en": "Error"
+  },
+  "b4_54": {
+    "ru": "Текущие параметры: ",
+    "en": "Current settings: "
+  },
+  "b4_55": {
+    "ru": "В очереди",
+    "en": "Pending"
+  },
+  "b4_56": {
+    "ru": "Ожидает перехвата",
+    "en": "Pending takeover"
+  },
+  "b4_57": {
+    "ru": "Ожидает входа",
+    "en": "Awaiting sign-in"
+  },
+  "b4_58": {
+    "ru": "Ожидает повтора",
+    "en": "Awaiting retry"
+  },
+  "b4_59": {
+    "ru": "Германия 🇩🇪",
+    "en": "Germany 🇩🇪"
+  },
+  "b4_60": {
+    "ru": "Быстрый старт",
+    "en": "Quick start"
+  },
+  "b4_61": {
+    "ru": "Вернуть авто-логи",
+    "en": "Restore auto logs"
+  },
+  "b4_62": {
+    "ru": "Восстановить по умолчанию",
+    "en": "Restore defaults"
+  },
+  "b4_63": {
+    "ru": "Италия 🇮🇹",
+    "en": "Italy 🇮🇹"
+  },
+  "b4_64": {
+    "ru": "Успешно",
+    "en": "Success"
+  },
+  "b4_65": {
+    "ru": "экспортируйте после успеха; tdata не создаётся автоматически при перегенерации.",
+    "en": "export after success; tdata is not generated automatically on regeneration."
+  },
+  "b4_66": {
+    "ru": "или",
+    "en": "or"
+  },
+  "b4_67": {
+    "ru": "Все",
+    "en": "Everyone"
+  },
+  "b4_68": {
+    "ru": "Номер телефона",
+    "en": "Phone number"
+  },
+  "b4_69": {
+    "ru": "Номер телефона|Ссылка для получения кода",
+    "en": "Phone number|Code-retrieval link"
+  },
+  "b4_70": {
+    "ru": "Номер телефона виден",
+    "en": "Phone number visible"
+  },
+  "b4_71": {
+    "ru": "Проставить теги",
+    "en": "Tag"
+  },
+  "b4_72": {
+    "ru": "Сканировать QR-код",
+    "en": "Scan QR code"
+  },
+  "b4_73": {
+    "ru": "Если после сканирования запросят облачный пароль, введите его",
+    "en": "If prompted for the cloud password after scanning, enter it"
+  },
+  "b4_74": {
+    "ru": "Вход по QR",
+    "en": "Sign in by QR"
+  },
+  "b4_75": {
+    "ru": "Запуск входа по QR",
+    "en": "QR sign-in started"
+  },
+  "b4_76": {
+    "ru": "Ошибка входа по QR: ",
+    "en": "QR sign-in failed: "
+  },
+  "b4_77": {
+    "ru": "Вход по QR выполнен",
+    "en": "QR sign-in successful"
+  },
+  "b4_78": {
+    "ru": "Удалить пакетно",
+    "en": "Bulk delete"
+  },
+  "b4_79": {
+    "ru": "Пакетная отправка идёт последовательно + со случайными интервалами. Не спамьте: аккаунт легко заблокировать.",
+    "en": "Bulk sending runs serially + with random delays. Don't spam — accounts get banned easily."
+  },
+  "b4_80": {
+    "ru": "Пакетная обработка",
+    "en": "Bulk processing"
+  },
+  "b4_81": {
+    "ru": "Импорт пакетом",
+    "en": "Bulk import"
+  },
+  "b4_82": {
+    "ru": "Импорт пакетом · Номер телефона|Ссылка для получения кода",
+    "en": "Bulk import · Phone number|Code-retrieval link"
+  },
+  "b4_83": {
+    "ru": "Импорт аккаунтов пакетом",
+    "en": "Bulk import accounts"
+  },
+  "b4_84": {
+    "ru": "Экспорт пакетом",
+    "en": "Bulk export"
+  },
+  "b4_85": {
+    "ru": "Ошибка пакетного экспорта: ",
+    "en": "Bulk export failed: "
+  },
+  "b4_86": {
+    "ru": "Проставить теги пакетно",
+    "en": "Bulk tag"
+  },
+  "b4_87": {
+    "ru": "Пакетно: проверка активности, проверка ограничений, конфиденциальность, отбор лидов, смена 2FA, статус/сброс 2FA, очистка контактов/сессий, очистка защиты от восстановления,",
+    "en": "Bulk run: liveness check, restriction check, privacy, lead filtering, change 2FA, 2FA status/reset, clear contacts/sessions, anti-recovery cleanup,"
+  },
+  "b4_88": {
+    "ru": "Пакетных операций:",
+    "en": "Bulk operations:"
+  },
+  "b4_89": {
+    "ru": "Пакетное удаление",
+    "en": "Bulk deletion"
+  },
+  "b4_90": {
+    "ru": "Пакетное удаление аккаунтов Telegram",
+    "en": "Bulk delete Telegram accounts"
+  },
+  "b4_91": {
+    "ru": "Автовход пакетом",
+    "en": "Bulk auto sign-in"
+  },
+  "b4_92": {
+    "ru": "Сброс устройств пакетно",
+    "en": "Bulk terminate devices"
+  },
+  "b4_93": {
+    "ru": "Перегенерация сессий пакетом",
+    "en": "Bulk session regeneration"
+  },
+  "b4_94": {
+    "ru": "Перегенерация сессий пакетом ×",
+    "en": "Bulk session regeneration ×"
+  },
+  "b4_95": {
+    "ru": "Ошибка пакетной перегенерации: ",
+    "en": "Bulk regeneration failed: "
+  },
+  "b4_96": {
+    "ru": "Сбросить все параметры по умолчанию (ключ не трогать)",
+    "en": "Reset all settings to defaults (key untouched)"
+  },
+  "b4_97": {
+    "ru": "Уплотнить все элементы вверх, убрать зазоры",
+    "en": "Tighten all widgets upward, remove gaps"
+  },
+  "b4_98": {
+    "ru": "Получить код",
+    "en": "Fetch code"
+  },
+  "b4_99": {
+    "ru": "Разбивка / объединение / классификация по дате регистрации / конвертация в API",
+    "en": "Split / merge / group by registration date / convert to API"
+  },
+  "b4_100": {
+    "ru": "Латвия 🇱🇻",
+    "en": "Latvia 🇱🇻"
+  },
+  "b4_101": {
+    "ru": "Перетаскивайте для перемещения, тяните за край для размера, × справа сверху — скрыть",
+    "en": "Drag to move, drag the edge to resize, click × at top right to hide"
+  },
+  "b4_102": {
+    "ru": "Тяните для размера, двойной клик — по умолчанию",
+    "en": "Drag to resize, double-click to reset"
+  },
+  "b4_103": {
+    "ru": "Тяните для ширины (привязка к колонкам)",
+    "en": "Drag to adjust width (snap to columns)"
+  },
+  "b4_104": {
+    "ru": "Тяните, чтобы изменить ширину",
+    "en": "Drag to adjust width"
+  },
+  "b4_105": {
+    "ru": "Тяните для высоты (привязка к строкам)",
+    "en": "Drag to adjust height (snap to rows)"
+  },
+  "b4_106": {
+    "ru": "Собирать активных участников групп по недавней активности",
+    "en": "Collect group active members by recent activity"
+  },
+  "b4_107": {
+    "ru": "Классифицировать по дате регистрации",
+    "en": "Group by registration date"
+  },
+  "b4_108": {
+    "ru": "Норвегия 🇳🇴",
+    "en": "Norway 🇳🇴"
+  },
+  "b4_109": {
+    "ru": "Чехия 🇨🇿",
+    "en": "Czechia 🇨🇿"
+  },
+  "b4_110": {
+    "ru": "Ошибка проверки: ",
+    "en": "Probe failed: "
+  },
+  "b4_111": {
+    "ru": "Получатель (@username / номер телефона / chat id)",
+    "en": "Recipient (@username / phone number / chat id)"
+  },
+  "b4_112": {
+    "ru": "Отправка…",
+    "en": "Submitting…"
+  },
+  "b4_113": {
+    "ru": "Отправка задачи…",
+    "en": "Submitting task…"
+  },
+  "b4_114": {
+    "ru": "Ошибка отправки: ",
+    "en": "Submit failed: "
+  },
+  "b4_115": {
+    "ru": "Отправить пароль",
+    "en": "Submit password"
+  },
+  "b4_116": {
+    "ru": "Подсказка",
+    "en": "Hint"
+  },
+  "b4_117": {
+    "ru": "Подсказка: ",
+    "en": "Hint text: "
+  },
+  "b4_118": {
+    "ru": "Подсказка: сбросьте другие входы через «Очистить другие устройства / Сбросить устройства пакетно».",
+    "en": "Hint: use “Clean other devices / Bulk terminate devices” to sign out all but this machine."
+  },
+  "b4_119": {
+    "ru": "Поиск публичных",
+    "en": "Search public"
+  },
+  "b4_120": {
+    "ru": "Поиск по метке / номеру телефона / username / тегам",
+    "en": "Search label / phone number / username / tags"
+  },
+  "b4_121": {
+    "ru": "Поиск по названию группы / @username",
+    "en": "Search group name / @username"
+  },
+  "b4_122": {
+    "ru": "Молдова 🇲🇩",
+    "en": "Moldova 🇲🇩"
+  },
+  "b4_123": {
+    "ru": "Марокко 🇲🇦",
+    "en": "Morocco 🇲🇦"
+  },
+  "b4_124": {
+    "ru": "Отменить",
+    "en": "Undo"
+  },
+  "b4_125": {
+    "ru": "Действие",
+    "en": "Action"
+  },
+  "b4_126": {
+    "ru": "операции. Подходит для пакетного импорта, проверки работоспособности, сброса устройств, рассылки, сбора лидов, инструментов ZIP-пакетов аккаунтов и т.п.",
+    "en": "operations. Suits bulk import, health check, device reset, broadcast, lead collection, account pack ZIP tools, etc."
+  },
+  "b4_127": {
+    "ru": "Операция выполнена",
+    "en": "Operation succeeded"
+  },
+  "b4_128": {
+    "ru": "Журнал операций · сводка",
+    "en": "Operation log · summary"
+  },
+  "b4_129": {
+    "ru": "Журнал операций · исходный JSON",
+    "en": "Operation log · raw JSON"
+  },
+  "b4_130": {
+    "ru": "Журнал операций · исходные данные (JSON)",
+    "en": "Operation log · raw data (JSON)"
+  },
+  "b4_131": {
+    "ru": "Поддерживает варианты {a|b}, переменные {name}, HTML-ссылки.",
+    "en": "Supports {a|b} variants, {name} variables, HTML hyperlinks."
+  },
+  "b4_132": {
+    "ru": "Поддерживает номер телефона|ссылку для получения кода, таблицы Markdown, колонку номера и обратные кавычки; третий столбец-примечание становится меткой",
+    "en": "Supports phone number|code-retrieval link, Markdown tables, index column and backticks; the third remark column becomes the label"
+  },
+  "b4_133": {
+    "ru": "Поддерживает один аккаунт и пакетный выбор нескольких.",
+    "en": "Supports single account and multi-select bulk."
+  },
+  "b4_134": {
+    "ru": "Поддерживает форматированный текст и кликабельные ссылки",
+    "en": "Supports rich text and clickable hyperlinks"
+  },
+  "b4_135": {
+    "ru": "Сменить 2FA",
+    "en": "Change 2FA"
+  },
+  "b4_136": {
+    "ru": "Вся пачка задач",
+    "en": "Whole batch of tasks"
+  },
+  "b4_137": {
+    "ru": "Копия файла: в каталоге данных",
+    "en": "File copy: in the data directory"
+  },
+  "b4_138": {
+    "ru": "папка упаковывается в zip.",
+    "en": "folder is packed into a zip."
+  },
+  "b4_139": {
+    "ru": "Файл создан",
+    "en": "File generated"
+  },
+  "b4_140": {
+    "ru": "текст. После импорта выполняется онлайн-проверка и шифрованное сохранение в базу.",
+    "en": "text. After import it is verified online and stored encrypted."
+  },
+  "b4_141": {
+    "ru": "Словакия 🇸🇰",
+    "en": "Slovakia 🇸🇰"
+  },
+  "b4_142": {
+    "ru": "Словения 🇸🇮",
+    "en": "Slovenia 🇸🇮"
+  },
+  "b4_143": {
+    "ru": "Шри-Ланка 🇱🇰",
+    "en": "Sri Lanka 🇱🇰"
+  },
+  "b4_144": {
+    "ru": "Новая сессия",
+    "en": "New session"
+  },
+  "b4_145": {
+    "ru": "Сингапур 🇸🇬",
+    "en": "Singapore 🇸🇬"
+  },
+  "b4_146": {
+    "ru": "Создать",
+    "en": "New"
+  },
+  "b4_147": {
+    "ru": "Новая рассылка",
+    "en": "New broadcast"
+  },
+  "b4_148": {
+    "ru": "Новая Зеландия 🇳🇿",
+    "en": "New Zealand 🇳🇿"
+  },
+  "b4_149": {
+    "ru": "Новое устройство",
+    "en": "New device"
+  },
+  "b4_150": {
+    "ru": "Нет",
+    "en": "None"
+  },
+  "b4_151": {
+    "ru": "Без 2FA",
+    "en": "No 2FA"
+  },
+  "b4_152": {
+    "ru": "Без прокси",
+    "en": "No proxy"
+  },
+  "b4_153": {
+    "ru": "Не удалось прочитать 2FA: ",
+    "en": "Cannot read 2FA: "
+  },
+  "b4_154": {
+    "ru": "opentele не требуется",
+    "en": "opentele not required"
+  },
+  "b4_155": {
+    "ru": "поле даты, ни байта наружу. Онлайн-запрос только при заданном TAM_REGTIME_ENDPOINT.</div>",
+    "en": "date field, not a byte leaves the machine. Online lookup only when TAM_REGTIME_ENDPOINT is set.</div>"
+  },
+  "b4_156": {
+    "ru": "Япония 🇯🇵",
+    "en": "Japan 🇯🇵"
+  },
+  "b4_157": {
+    "ru": "в одном процессе веб-интерфейс + бот, общий",
+    "en": "same process runs web + bot, sharing"
+  },
+  "b4_158": {
+    "ru": "Установить сейчас в один клик? (pip install opentele, может занять 1–2 минуты)",
+    "en": "Install now in one click? (pip install opentele, may take 1–2 minutes)"
+  },
+  "b4_159": {
+    "ru": "Переэкспортировать tdata сейчас?",
+    "en": "Re-export tdata now?"
+  },
+  "b4_160": {
+    "ru": "Привязать резервную почту",
+    "en": "Bind recovery email"
+  },
+  "b4_161": {
+    "ru": "Продолжить экспорт нового zip-пакета аккаунтов?",
+    "en": "Continue exporting a new account pack zip?"
+  },
+  "b4_162": {
+    "ru": "Показать пароль",
+    "en": "Show password"
+  },
+  "b4_163": {
+    "ru": "Чили 🇨🇱",
+    "en": "Chile 🇨🇱"
+  },
+  "b4_164": {
+    "ru": "Задач нет",
+    "en": "No tasks"
+  },
+  "b4_165": {
+    "ru": "Логов нет",
+    "en": "No logs"
+  },
+  "b4_166": {
+    "ru": "Записей об ошибках нет.",
+    "en": "No error records."
+  },
+  "b4_167": {
+    "ru": "Последний онлайн",
+    "en": "Last seen online"
+  },
+  "b4_168": {
+    "ru": "Последние 20 записей",
+    "en": "Latest 20 entries"
+  },
+  "b4_169": {
+    "ru": "С 2FA",
+    "en": "Has 2FA"
+  },
+  "b4_170": {
+    "ru": "Кто-нибудь смотрел новый whitepaper?",
+    "en": "Has anyone seen the latest whitepaper?"
+  },
+  "b4_171": {
+    "ru": "Временные файлы на сервере удалены полностью",
+    "en": "Temp files on the server deleted completely"
+  },
+  "b4_172": {
+    "ru": "На сервере используйте сильный токен и HTTPS; по умолчанию — локально 127.0.0.1.",
+    "en": "On a server use a strong token and prefer HTTPS; default is local 127.0.0.1."
+  },
+  "b4_173": {
+    "ru": "Сервис восстановлен",
+    "en": "Service restored"
+  },
+  "b4_174": {
+    "ru": "Логи ошибок сервера и фронтенда, можно экспортировать для отчёта",
+    "en": "Server and frontend error logs, exportable for reporting"
+  },
+  "b4_175": {
+    "ru": "Сервер выполняет (онлайн/прочитано/взаимные чаты), подождите…",
+    "en": "Server is running (online/read/mutual chats), please wait…"
+  },
+  "b4_176": {
+    "ru": "Локальный путь на сервере (каталог tdata или родительский каталог пакетов аккаунтов)",
+    "en": "Server local path (tdata directory or account pack parent directory)"
+  },
+  "b4_177": {
+    "ru": "Локальный путь на сервере (файл или каталог)",
+    "en": "Server local path (file or directory)"
+  },
+  "b4_178": {
+    "ru": "Путь на сервере",
+    "en": "Server path"
+  },
+  "b4_179": {
+    "ru": "Не включено",
+    "en": "Disabled"
+  },
+  "b4_180": {
+    "ru": "Не выполнено",
+    "en": "Not completed"
+  },
+  "b4_181": {
+    "ru": "2FA не включена",
+    "en": "2FA not enabled"
+  },
+  "b4_182": {
+    "ru": "Не авторизован",
+    "en": "Unauthorized"
+  },
+  "b4_183": {
+    "ru": "Не авторизован, пока не участвует",
+    "en": "Unauthorized, skipped for now"
+  },
+  "b4_184": {
+    "ru": "Не авторизован, пока не участвует",
+    "en": "Not signed in, skipped for now"
+  },
+  "b4_185": {
+    "ru": "Неизвестно",
+    "en": "Unknown"
+  },
+  "b4_186": {
+    "ru": "Неизвестная ошибка",
+    "en": "Unknown error"
+  },
+  "b4_187": {
+    "ru": "Не удалось автоматически распознать сумму",
+    "en": "Could not parse amount automatically"
+  },
+  "b4_188": {
+    "ru": "Не распознано",
+    "en": "Unrecognized"
+  },
+  "b4_189": {
+    "ru": "Неверное слово подтверждения, отменено",
+    "en": "Incorrect confirmation word, cancelled"
+  },
+  "b4_190": {
+    "ru": "Сервер не вернул id задачи",
+    "en": "No task id returned"
+  },
+  "b4_191": {
+    "ru": "Не подключено",
+    "en": "Not connected"
+  },
+  "b4_192": {
+    "ru": "Локальный пароль passcode (если есть)",
+    "en": "Local passcode password (if any)"
+  },
+  "b4_193": {
+    "ru": "Этот инструмент —",
+    "en": "This tool is"
+  },
+  "b4_194": {
+    "ru": "Время перехвата на этом устройстве",
+    "en": "Local takeover time"
+  },
+  "b4_195": {
+    "ru": "Онлайн проверено:",
+    "en": "Checked online:"
+  },
+  "b4_196": {
+    "ru": "В этом раунде нет аккаунтов со сроком",
+    "en": "No accounts due this round"
+  },
+  "b4_197": {
+    "ru": "Бот",
+    "en": "Bot"
+  },
+  "b4_198": {
+    "ru": "Взаимодействие с ботом",
+    "en": "Bot interaction"
+  },
+  "b4_199": {
+    "ru": "зап.",
+    "en": "items"
+  }
+}

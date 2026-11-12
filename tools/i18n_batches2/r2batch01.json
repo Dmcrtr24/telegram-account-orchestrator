@@ -1,0 +1,777 @@
+[
+ {
+  "id": "r1_0",
+  "kind": "exact",
+  "zh": "(监听"
+ },
+ {
+  "id": "r1_1",
+  "kind": "exact",
+  "zh": ")\">对话"
+ },
+ {
+  "id": "r1_2",
+  "kind": "exact",
+  "zh": ")\\\">导入 session"
+ },
+ {
+  "id": "r1_3",
+  "kind": "exact",
+  "zh": ")\\\">导入 tdata"
+ },
+ {
+  "id": "r1_4",
+  "kind": "exact",
+  "zh": ")\\\">手动添加"
+ },
+ {
+  "id": "r1_5",
+  "kind": "exact",
+  "zh": ")\\\">手机号清单"
+ },
+ {
+  "id": "r1_6",
+  "kind": "exact",
+  "zh": "- 工具"
+ },
+ {
+  "id": "r1_7",
+  "kind": "exact",
+  "zh": "-9- 表示每包 9 个；5,5,5 表示逐包指定"
+ },
+ {
+  "id": "r1_8",
+  "kind": "exact",
+  "zh": "2FA 处理"
+ },
+ {
+  "id": "r1_9",
+  "kind": "exact",
+  "zh": ">停止"
+ },
+ {
+  "id": "r1_10",
+  "kind": "exact",
+  "zh": ">删除"
+ },
+ {
+  "id": "r1_11",
+  "kind": "exact",
+  "zh": ">向它群发"
+ },
+ {
+  "id": "r1_12",
+  "kind": "exact",
+  "zh": ">明细"
+ },
+ {
+  "id": "r1_13",
+  "kind": "exact",
+  "zh": ">正在拉取群组…群多时需等几秒"
+ },
+ {
+  "id": "r1_14",
+  "kind": "exact",
+  "zh": ">没有匹配的群。可取消“只看 7 天内有新消息的”再看看。"
+ },
+ {
+  "id": "r1_15",
+  "kind": "exact",
+  "zh": ">还没有任务。可以先采集发言人，再对采集结果群发。"
+ },
+ {
+  "id": "r1_16",
+  "kind": "exact",
+  "zh": "AI 请求执行以下操作，请勾选后再执行"
+ },
+ {
+  "id": "r1_17",
+  "kind": "exact",
+  "zh": "AI 调用失败"
+ },
+ {
+  "id": "r1_18",
+  "kind": "exact",
+  "zh": "LLM 请求失败："
+ },
+ {
+  "id": "r1_19",
+  "kind": "exact",
+  "zh": "OKPAY_COST 留空 = 不收费，任何人发 /start 都直接是 VIP。 → 自用无所谓；对外开放请配 OKPAY_ID / OKPAY_TOKEN / OKPAY_COST"
+ },
+ {
+  "id": "r1_20",
+  "kind": "exact",
+  "zh": "OKPay 查询失败："
+ },
+ {
+  "id": "r1_21",
+  "kind": "exact",
+  "zh": "OP_SPECS 与 OPS 对不上："
+ },
+ {
+  "id": "r1_22",
+  "kind": "exact",
+  "zh": "TAM 启动选项"
+ },
+ {
+  "id": "r1_23",
+  "kind": "exact",
+  "zh": "TAM 启动：部署="
+ },
+ {
+  "id": "r1_24",
+  "kind": "exact",
+  "zh": "TAM 统一启动（本地/服务器 × 网页/机器人）"
+ },
+ {
+  "id": "r1_25",
+  "kind": "exact",
+  "zh": "TAM_DEPLOY 只能是"
+ },
+ {
+  "id": "r1_26",
+  "kind": "exact",
+  "zh": "TAM_DEPLOY=local 却把 TAM_HOST 设成了 0.0.0.0，实际对外暴露了。 → 真要对外请改用 --deploy server，会多一层安全检查"
+ },
+ {
+  "id": "r1_27",
+  "kind": "exact",
+  "zh": "TAM_FRONTEND 只能是"
+ },
+ {
+  "id": "r1_28",
+  "kind": "exact",
+  "zh": "TAM_MASTER_KEY 过短("
+ },
+ {
+  "id": "r1_29",
+  "kind": "exact",
+  "zh": "Telegram 拒绝注销："
+ },
+ {
+  "id": "r1_30",
+  "kind": "exact",
+  "zh": "Telegram 机器人"
+ },
+ {
+  "id": "r1_31",
+  "kind": "exact",
+  "zh": "Telegram 机器人：polling 中，对机器人发 /start"
+ },
+ {
+  "id": "r1_32",
+  "kind": "exact",
+  "zh": "Telegram 账号管理器"
+ },
+ {
+  "id": "r1_33",
+  "kind": "exact",
+  "zh": "ZIP 处理并发数（1-32）"
+ },
+ {
+  "id": "r1_34",
+  "kind": "exact",
+  "zh": "ZIP 超过 80MB 上限"
+ },
+ {
+  "id": "r1_35",
+  "kind": "exact",
+  "zh": "[点击"
+ },
+ {
+  "id": "r1_36",
+  "kind": "exact",
+  "zh": "ai 拆包"
+ },
+ {
+  "id": "r1_37",
+  "kind": "exact",
+  "zh": "api_id 不是纯数字："
+ },
+ {
+  "id": "r1_38",
+  "kind": "exact",
+  "zh": "auto_kick_hours 须为数字（小时）"
+ },
+ {
+  "id": "r1_39",
+  "kind": "exact",
+  "zh": "bytes），上限 50MB"
+ },
+ {
+  "id": "r1_40",
+  "kind": "exact",
+  "zh": "execv 失败，改为退出："
+ },
+ {
+  "id": "r1_41",
+  "kind": "exact",
+  "zh": "https://example.com 或 http://ip:port"
+ },
+ {
+  "id": "r1_42",
+  "kind": "exact",
+  "zh": "manual 模式必填"
+ },
+ {
+  "id": "r1_43",
+  "kind": "exact",
+  "zh": "muted\\'>未记录"
+ },
+ {
+  "id": "r1_44",
+  "kind": "exact",
+  "zh": "opentele 已安装，可重新导出 tdata"
+ },
+ {
+  "id": "r1_45",
+  "kind": "exact",
+  "zh": "pip 成功但 import 失败："
+ },
+ {
+  "id": "r1_46",
+  "kind": "exact",
+  "zh": "s 内无响应"
+ },
+ {
+  "id": "r1_47",
+  "kind": "exact",
+  "zh": "s 内未从取码链接获得新验证码"
+ },
+ {
+  "id": "r1_48",
+  "kind": "exact",
+  "zh": "s 内未扫码，可继续等待或刷新二维码"
+ },
+ {
+  "id": "r1_49",
+  "kind": "exact",
+  "zh": "session 号包 zip"
+ },
+ {
+  "id": "r1_50",
+  "kind": "exact",
+  "zh": "s）已跳过，请检查代理/网络后重试"
+ },
+ {
+  "id": "r1_51",
+  "kind": "exact",
+  "zh": "tdata 本地密码 passcode（可选）"
+ },
+ {
+  "id": "r1_52",
+  "kind": "exact",
+  "zh": "tdata 本地密码（仅 Tdata→Session 可选）"
+ },
+ {
+  "id": "r1_53",
+  "kind": "exact",
+  "zh": "urls 为空"
+ },
+ {
+  "id": "r1_54",
+  "kind": "exact",
+  "zh": "zip 里没有找到 .session 文件"
+ },
+ {
+  "id": "r1_55",
+  "kind": "exact",
+  "zh": "zip 里没有找到 tdata 目录（需含 key_datas）。请把整个 tdata 文件夹压缩后再上传。"
+ },
+ {
+  "id": "r1_56",
+  "kind": "exact",
+  "zh": "· 危险操作"
+ },
+ {
+  "id": "r1_57",
+  "kind": "exact",
+  "zh": "· 改动类"
+ },
+ {
+  "id": "r1_58",
+  "kind": "exact",
+  "zh": "· 服务端 date_created，仅供参考"
+ },
+ {
+  "id": "r1_59",
+  "kind": "exact",
+  "zh": "← 默认"
+ },
+ {
+  "id": "r1_60",
+  "kind": "exact",
+  "zh": "→ pip install -r requirements.txt → 只想用网页的话这些不用装，把 TAM_FRONTEND 改成 web 即可"
+ },
+ {
+  "id": "r1_61",
+  "kind": "exact",
+  "zh": "→ 账号 user_id="
+ },
+ {
+  "id": "r1_62",
+  "kind": "exact",
+  "zh": "✗ 失败："
+ },
+ {
+  "id": "r1_63",
+  "kind": "exact",
+  "zh": "。请稍后再试。"
+ },
+ {
+  "id": "r1_64",
+  "kind": "exact",
+  "zh": "一、拆包"
+ },
+ {
+  "id": "r1_65",
+  "kind": "exact",
+  "zh": "一次最多 200 个，收到"
+ },
+ {
+  "id": "r1_66",
+  "kind": "exact",
+  "zh": "一次最多合并"
+ },
+ {
+  "id": "r1_67",
+  "kind": "exact",
+  "zh": "一次最多查 500 个，收到"
+ },
+ {
+  "id": "r1_68",
+  "kind": "exact",
+  "zh": "三、按注册时间分类"
+ },
+ {
+  "id": "r1_69",
+  "kind": "exact",
+  "zh": "上下文上限（可自定义）"
+ },
+ {
+  "id": "r1_70",
+  "kind": "exact",
+  "zh": "上下文与生成"
+ },
+ {
+  "id": "r1_71",
+  "kind": "exact",
+  "zh": "上传中…"
+ },
+ {
+  "id": "r1_72",
+  "kind": "exact",
+  "zh": "上游与密钥"
+ },
+ {
+  "id": "r1_73",
+  "kind": "exact",
+  "zh": "上面的问题会直接影响运行或安全，已停止启动。"
+ },
+ {
+  "id": "r1_74",
+  "kind": "exact",
+  "zh": "下（最多 3 层）没有找到任何 tdata 目录"
+ },
+ {
+  "id": "r1_75",
+  "kind": "exact",
+  "zh": "不允许通过 AI 修改，请在网页参数面板操作"
+ },
+ {
+  "id": "r1_76",
+  "kind": "exact",
+  "zh": "不在 AI 允许范围"
+ },
+ {
+  "id": "r1_77",
+  "kind": "exact",
+  "zh": "不在 TAM_PEER_ALLOWLIST 白名单中，拒绝发送"
+ },
+ {
+  "id": "r1_78",
+  "kind": "exact",
+  "zh": "不存在或不可见"
+ },
+ {
+  "id": "r1_79",
+  "kind": "exact",
+  "zh": "不存在或未登录"
+ },
+ {
+  "id": "r1_80",
+  "kind": "exact",
+  "zh": "不弹菜单，直接用环境变量/默认值（守护进程用这个）"
+ },
+ {
+  "id": "r1_81",
+  "kind": "exact",
+  "zh": "不接受参数"
+ },
+ {
+  "id": "r1_82",
+  "kind": "exact",
+  "zh": "不支持的 mode："
+ },
+ {
+  "id": "r1_83",
+  "kind": "exact",
+  "zh": "不支持的代理协议:"
+ },
+ {
+  "id": "r1_84",
+  "kind": "exact",
+  "zh": "不支持的格式："
+ },
+ {
+  "id": "r1_85",
+  "kind": "exact",
+  "zh": "不是 TDF 容器（缺少 TDF$ 头）"
+ },
+ {
+  "id": "r1_86",
+  "kind": "exact",
+  "zh": "不是有效的 tdata 目录（应含 key_datas 文件）："
+ },
+ {
+  "id": "r1_87",
+  "kind": "exact",
+  "zh": "不是有效的 zip："
+ },
+ {
+  "id": "r1_88",
+  "kind": "exact",
+  "zh": "不是目录："
+ },
+ {
+  "id": "r1_89",
+  "kind": "exact",
+  "zh": "不能是负数"
+ },
+ {
+  "id": "r1_90",
+  "kind": "exact",
+  "zh": "不认识的参数："
+ },
+ {
+  "id": "r1_91",
+  "kind": "exact",
+  "zh": "不认识的取值："
+ },
+ {
+  "id": "r1_92",
+  "kind": "exact",
+  "zh": "不认识的操作："
+ },
+ {
+  "id": "r1_93",
+  "kind": "exact",
+  "zh": "不认识的隐私项："
+ },
+ {
+  "id": "r1_94",
+  "kind": "exact",
+  "zh": "两个一起开"
+ },
+ {
+  "id": "r1_95",
+  "kind": "exact",
+  "zh": "个 StringSession"
+ },
+ {
+  "id": "r1_96",
+  "kind": "exact",
+  "zh": "个包 ->"
+ },
+ {
+  "id": "r1_97",
+  "kind": "exact",
+  "zh": "个号 ->"
+ },
+ {
+  "id": "r1_98",
+  "kind": "exact",
+  "zh": "个号，改名"
+ },
+ {
+  "id": "r1_99",
+  "kind": "exact",
+  "zh": "个接口可用"
+ },
+ {
+  "id": "r1_100",
+  "kind": "exact",
+  "zh": "个目标"
+ },
+ {
+  "id": "r1_101",
+  "kind": "exact",
+  "zh": "个群"
+ },
+ {
+  "id": "r1_102",
+  "kind": "exact",
+  "zh": "个账号位，序号"
+ },
+ {
+  "id": "r1_103",
+  "kind": "exact",
+  "zh": "主DC="
+ },
+ {
+  "id": "r1_104",
+  "kind": "exact",
+  "zh": "之一"
+ },
+ {
+  "id": "r1_105",
+  "kind": "exact",
+  "zh": "二、合并"
+ },
+ {
+  "id": "r1_106",
+  "kind": "exact",
+  "zh": "二维码已过期且刷新失败，请重新发起扫码："
+ },
+ {
+  "id": "r1_107",
+  "kind": "exact",
+  "zh": "二验密码解密失败："
+ },
+ {
+  "id": "r1_108",
+  "kind": "exact",
+  "zh": "互转中…"
+ },
+ {
+  "id": "r1_109",
+  "kind": "exact",
+  "zh": "五、格式互转"
+ },
+ {
+  "id": "r1_110",
+  "kind": "exact",
+  "zh": "人（入库新增"
+ },
+ {
+  "id": "r1_111",
+  "kind": "exact",
+  "zh": "仅只读"
+ },
+ {
+  "id": "r1_112",
+  "kind": "exact",
+  "zh": "从 JSON / 2fa.txt 提取"
+ },
+ {
+  "id": "r1_113",
+  "kind": "exact",
+  "zh": "以上，到 python.org 下载新版重装"
+ },
+ {
+  "id": "r1_114",
+  "kind": "exact",
+  "zh": "任务"
+ },
+ {
+  "id": "r1_115",
+  "kind": "exact",
+  "zh": "任务号不合法"
+ },
+ {
+  "id": "r1_116",
+  "kind": "exact",
+  "zh": "任务还在跑，请先停止"
+ },
+ {
+  "id": "r1_117",
+  "kind": "exact",
+  "zh": "位）"
+ },
+ {
+  "id": "r1_118",
+  "kind": "exact",
+  "zh": "作业不存在或已被清理"
+ },
+ {
+  "id": "r1_119",
+  "kind": "exact",
+  "zh": "作业不存在："
+ },
+ {
+  "id": "r1_120",
+  "kind": "exact",
+  "zh": "你是 TAM 运维助手。只用已授权工具查改本机托管号；禁止编造工具结果。先查再改；危险操作先说明风险。简体中文，一两段说清。"
+ },
+ {
+  "id": "r1_121",
+  "kind": "exact",
+  "zh": "你是只读顾问。仅用查询/检查类工具；不建议、不执行任何写入。结论基于工具返回。简体中文，条目化。"
+ },
+ {
+  "id": "r1_122",
+  "kind": "exact",
+  "zh": "你是批量操作助手。先 list/stats 摸清状态，再按用户范围执行已授权工具。汇报：成功数/失败数/失败原因。简体中文，短句。"
+ },
+ {
+  "id": "r1_123",
+  "kind": "exact",
+  "zh": "你是排障助手。根据健康检查、日志、设备列表定位问题，给出可执行的下一步。不猜测会话密钥。简体中文。"
+ },
+ {
+  "id": "r1_124",
+  "kind": "exact",
+  "zh": "例如 1,2,5"
+ },
+ {
+  "id": "r1_125",
+  "kind": "exact",
+  "zh": "保存配置"
+ },
+ {
+  "id": "r1_126",
+  "kind": "exact",
+  "zh": "保留最近消息条数"
+ },
+ {
+  "id": "r1_127",
+  "kind": "exact",
+  "zh": "允许的账号 ID（逗号分隔，空=全部）"
+ },
+ {
+  "id": "r1_128",
+  "kind": "exact",
+  "zh": "先看看有多少个号"
+ },
+ {
+  "id": "r1_129",
+  "kind": "exact",
+  "zh": "全不选"
+ },
+ {
+  "id": "r1_130",
+  "kind": "exact",
+  "zh": "六、Passkey"
+ },
+ {
+  "id": "r1_131",
+  "kind": "exact",
+  "zh": "关闭并保存后对话无法发送；权限与 Key 仍保留"
+ },
+ {
+  "id": "r1_132",
+  "kind": "exact",
+  "zh": "关闭此项后,AI 可直接修改账号设置、发送消息,无需人工确认。"
+ },
+ {
+  "id": "r1_133",
+  "kind": "exact",
+  "zh": "关闭此项后,AI 可直接执行注销、删号等不可逆操作,无需人工确认。"
+ },
+ {
+  "id": "r1_134",
+  "kind": "exact",
+  "zh": "写法不对："
+ },
+ {
+  "id": "r1_135",
+  "kind": "exact",
+  "zh": "分析中…"
+ },
+ {
+  "id": "r1_136",
+  "kind": "exact",
+  "zh": "分类中…"
+ },
+ {
+  "id": "r1_137",
+  "kind": "exact",
+  "zh": "列出可供 Agent 调用的工具及 JSON Schema"
+ },
+ {
+  "id": "r1_138",
+  "kind": "exact",
+  "zh": "创建"
+ },
+ {
+  "id": "r1_139",
+  "kind": "exact",
+  "zh": "创建 Passkey 凭证包"
+ },
+ {
+  "id": "r1_140",
+  "kind": "exact",
+  "zh": "删了"
+ },
+ {
+  "id": "r1_141",
+  "kind": "exact",
+  "zh": "别名已存在"
+ },
+ {
+  "id": "r1_142",
+  "kind": "exact",
+  "zh": "前端="
+ },
+ {
+  "id": "r1_143",
+  "kind": "exact",
+  "zh": "加入失败："
+ },
+ {
+  "id": "r1_144",
+  "kind": "exact",
+  "zh": "包里共"
+ },
+ {
+  "id": "r1_145",
+  "kind": "exact",
+  "zh": "单个账号操作超时秒数，超时自动跳过继续下一个（15-600）"
+ },
+ {
+  "id": "r1_146",
+  "kind": "exact",
+  "zh": "单号超时（"
+ },
+ {
+  "id": "r1_147",
+  "kind": "exact",
+  "zh": "单次查询超时（秒）"
+ },
+ {
+  "id": "r1_148",
+  "kind": "exact",
+  "zh": "危险工具(注销/退出/删会话)执行前需确认"
+ },
+ {
+  "id": "r1_149",
+  "kind": "exact",
+  "zh": "危险：服务器模式下开了 TAM_NO_AUTH=1，等于把所有账号裸奉给公网。 → 改成 TAM_NO_AUTH=0 并设好 TAM_WEB_TOKEN（免令牌只能本机用）"
+ },
+ {
+  "id": "r1_150",
+  "kind": "exact",
+  "zh": "发消息："
+ },
+ {
+  "id": "r1_151",
+  "kind": "exact",
+  "zh": "发码失败："
+ },
+ {
+  "id": "r1_152",
+  "kind": "exact",
+  "zh": "发码被拒绝：该号登录/要码次数过多（PhonePasswordFlood）。Telegram 会暂时禁止再发登录验证码，通常需等待数小时到 24 小时后再试；期间请勿反复点「重生」。若刚输错过多次 2FA，也算入此限流。"
+ },
+ {
+  "id": "r1_153",
+  "kind": "exact",
+  "zh": "发码触发 FloodWait，需等待"
+ },
+ {
+  "id": "r1_154",
+  "kind": "exact",
+  "zh": "发起扫码失败："
+ }
+]

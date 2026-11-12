@@ -1,0 +1,802 @@
+{
+  "b6_0": {
+    "ru": "Пробный запуск",
+    "en": "Dry run"
+  },
+  "b6_1": {
+    "ru": "Пробный запуск завершён, результат в журнале",
+    "en": "Dry run complete, see the log area"
+  },
+  "b6_2": {
+    "ru": "Пробный импорт списка",
+    "en": "Dry-run import list"
+  },
+  "b6_3": {
+    "ru": "На этом аккаунте включена 2FA, введите пароль",
+    "en": "2FA is enabled on this account, enter the password"
+  },
+  "b6_4": {
+    "ru": "Этот аккаунт отключён отдельно",
+    "en": "This account is disabled individually"
+  },
+  "b6_5": {
+    "ru": "Синтаксическая ошибка",
+    "en": "Syntax error"
+  },
+  "b6_6": {
+    "ru": "Описание",
+    "en": "Description"
+  },
+  "b6_7": {
+    "ru": "Сначала выберите аккаунты",
+    "en": "Select accounts first"
+  },
+  "b6_8": {
+    "ru": "Сначала укажите ссылку для получения кода",
+    "en": "Enter the code-retrieval link first"
+  },
+  "b6_9": {
+    "ru": "Сначала откройте страницу «Конфигурация», затем сохраните",
+    "en": "Open the “Configuration” page first, then save"
+  },
+  "b6_10": {
+    "ru": "Введите ниже «",
+    "en": "Enter below “"
+  },
+  "b6_11": {
+    "ru": "Введите пароль 2FA",
+    "en": "Enter the 2FA password"
+  },
+  "b6_12": {
+    "ru": "Укажите локальный путь на сервере",
+    "en": "Enter the server local path"
+  },
+  "b6_13": {
+    "ru": "Отсканируйте QR-код…",
+    "en": "Scan the QR code…"
+  },
+  "b6_14": {
+    "ru": "Запрос выполняется, подождите…",
+    "en": "Request in progress, please wait…"
+  },
+  "b6_15": {
+    "ru": "Подтвердите",
+    "en": "Confirm"
+  },
+  "b6_16": {
+    "ru": "Подождите, не закрывайте страницу…",
+    "en": "Please wait, do not close the page…"
+  },
+  "b6_17": {
+    "ru": "Вставьте текст StringSession",
+    "en": "Paste the StringSession text"
+  },
+  "b6_18": {
+    "ru": "Введите",
+    "en": "Enter"
+  },
+  "b6_19": {
+    "ru": "Выберите zip-пакет session",
+    "en": "Select a session pack zip"
+  },
+  "b6_20": {
+    "ru": "Выберите пресет: только чтение / безопасный / стандартный / полный",
+    "en": "Select a preset: read-only / safe / standard / full"
+  },
+  "b6_21": {
+    "ru": "Выберите zip-пакет аккаунтов",
+    "en": "Select an account pack zip"
+  },
+  "b6_22": {
+    "ru": "Выберите .session или zip для загрузки",
+    "en": "Select a .session or zip to upload"
+  },
+  "b6_23": {
+    "ru": "Выберите tdata zip для загрузки",
+    "en": "Select a tdata zip to upload"
+  },
+  "b6_24": {
+    "ru": "Не удалось прочитать задачи: ",
+    "en": "Failed to read tasks: "
+  },
+  "b6_25": {
+    "ru": "Ошибка чтения: ${esc(e.message)}",
+    "en": "Read failed: ${esc(e.message)}"
+  },
+  "b6_26": {
+    "ru": "Чтение сообщений группы",
+    "en": "Read group messages"
+  },
+  "b6_27": {
+    "ru": "Режим отладки: пошаговая диагностика (включается автоматически при сбое импорта)",
+    "en": "Debug mode: step-by-step diagnostics (auto-enabled on import failure)"
+  },
+  "b6_28": {
+    "ru": "Аккаунт #2 отправил message_id=8812",
+    "en": "Account #2 sent message_id=8812"
+  },
+  "b6_29": {
+    "ru": "Список аккаунтов",
+    "en": "Account list"
+  },
+  "b6_30": {
+    "ru": "Аккаунт добавлен",
+    "en": "Account added"
+  },
+  "b6_31": {
+    "ru": "Хранилище аккаунтов используется только веб-интерфейсом и API",
+    "en": "Account store is used only by the web UI and API"
+  },
+  "b6_32": {
+    "ru": "Всего аккаунтов",
+    "en": "Total accounts"
+  },
+  "b6_33": {
+    "ru": "Управление аккаунтами",
+    "en": "Account management"
+  },
+  "b6_34": {
+    "ru": "Детали аккаунта",
+    "en": "Account details"
+  },
+  "b6_35": {
+    "ru": "В деталях аккаунта нажмите «Вход по QR»: на странице появится QR-код, отсканируйте его в официальном Telegram на телефоне и подтвердите — сессия сохранится в базе в зашифрованном виде. SMS-код не нужен; если включён облачный пароль, после сканирования его нужно ввести ещё раз.",
+    "en": "In account details, click “Sign in by QR”: the page shows a QR code, scan it with the official Telegram app already signed in on your phone to authorize, and the session is stored encrypted. No SMS code needed; if a cloud password is enabled, you must enter it once more after scanning."
+  },
+  "b6_36": {
+    "ru": "Замбия 🇿🇲",
+    "en": "Zambia 🇿🇲"
+  },
+  "b6_37": {
+    "ru": "По таймауту пропускается автоматически (",
+    "en": "Skipped automatically on timeout ("
+  },
+  "b6_38": {
+    "ru": "Супергруппа",
+    "en": "Supergroup"
+  },
+  "b6_39": {
+    "ru": "Вьетнам 🇻🇳",
+    "en": "Vietnam 🇻🇳"
+  },
+  "b6_40": {
+    "ru": "Пропускать Premium-пользователей",
+    "en": "Skip Premium users"
+  },
+  "b6_41": {
+    "ru": "Пропускать ботов",
+    "en": "Skip bots"
+  },
+  "b6_42": {
+    "ru": "При сбросе других устройств проверяется, что они действительно отключены; при неудаче повтор по интервалу.",
+    "en": "Terminating other devices verifies they are fully removed; on failure it retries after the retry interval."
+  },
+  "b6_43": {
+    "ru": "Сбросить",
+    "en": "Terminate"
+  },
+  "b6_44": {
+    "ru": "Сбросить другие устройства",
+    "en": "Terminate other devices"
+  },
+  "b6_45": {
+    "ru": "Сбросить устройства",
+    "en": "Terminate devices"
+  },
+  "b6_46": {
+    "ru": "Через сколько повторять при неудаче или непройденной проверке. Формат: 45s / 10m / 2h / 1h30m",
+    "en": "How long to wait before retrying after a failure or failed check. Format: 45s / 10m / 2h / 1h30m"
+  },
+  "b6_47": {
+    "ru": "Сброс устройств завершён · успешно",
+    "en": "Device reset complete · success"
+  },
+  "b6_48": {
+    "ru": "Подпись при пересылке",
+    "en": "Sign when forwarding"
+  },
+  "b6_49": {
+    "ru": "Резервная почта: привязана",
+    "en": "Recovery email: linked"
+  },
+  "b6_50": {
+    "ru": "Резервная почта: не привязана",
+    "en": "Recovery email: not linked"
+  },
+  "b6_51": {
+    "ru": "Ввод",
+    "en": "Input"
+  },
+  "b6_52": {
+    "ru": "Введите текущий облачный пароль для экспорта пакета аккаунтов",
+    "en": "Enter the current cloud password to export the account pack"
+  },
+  "b6_53": {
+    "ru": "Введите вопрос, например: перечисли все active аккаунты",
+    "en": "Enter a question, e.g. list all active accounts"
+  },
+  "b6_54": {
+    "ru": "Запустить",
+    "en": "Run"
+  },
+  "b6_55": {
+    "ru": "Выполняется",
+    "en": "Running"
+  },
+  "b6_56": {
+    "ru": "Задач пока нет. Сначала соберите активных участников, затем разошлите им сообщения.",
+    "en": "No tasks yet. Collect active members first, then broadcast to the results."
+  },
+  "b6_57": {
+    "ru": "Нет доступных аккаунтов — сначала импортируйте и войдите",
+    "en": "No accounts available — import and sign in first"
+  },
+  "b6_58": {
+    "ru": "Лиды ещё не собраны.",
+    "en": "No leads collected yet."
+  },
+  "b6_59": {
+    "ru": "Этот параметр читается при запуске; изменения вступят в силу после перезапуска",
+    "en": "This setting is read at startup; changes take effect after a restart"
+  },
+  "b6_60": {
+    "ru": "В процессе",
+    "en": "In progress"
+  },
+  "b6_61": {
+    "ru": "в процессе (лимит ",
+    "en": "in progress (limit "
+  },
+  "b6_62": {
+    "ru": "Подключение…",
+    "en": "Connecting…"
+  },
+  "b6_63": {
+    "ru": "Соединение прервано, ожидание перезапуска…",
+    "en": "Connection lost, waiting for restart…"
+  },
+  "b6_64": {
+    "ru": "Добавить теги",
+    "en": "Append tags"
+  },
+  "b6_65": {
+    "ru": "Выйти",
+    "en": "Sign out"
+  },
+  "b6_66": {
+    "ru": "После выхода потребуется снова войти по коду. Продолжить?",
+    "en": "You will need to sign in again with a code after signing out. Continue?"
+  },
+  "b6_67": {
+    "ru": "Выход не подтверждён",
+    "en": "Sign-out not confirmed"
+  },
+  "b6_68": {
+    "ru": "Выйти из аккаунта",
+    "en": "Sign out"
+  },
+  "b6_69": {
+    "ru": "Подходит, если нет ссылки для получения кода или нужно быстро перехватить аккаунт, уже открытый на телефоне.",
+    "en": "Suitable when there is no code-retrieval link, or to quickly take over an account already on your phone."
+  },
+  "b6_70": {
+    "ru": "Выберите .session или zip с несколькими session (можно несколько)",
+    "en": "Select a .session or a zip with multiple sessions (multi-select)"
+  },
+  "b6_71": {
+    "ru": "Выберите zip с tdata (можно несколько)",
+    "en": "Select a zip containing tdata (multi-select)"
+  },
+  "b6_72": {
+    "ru": "Детали по каждому получателю: ",
+    "en": "Per-target details: "
+  },
+  "b6_73": {
+    "ru": "Отмечать инструменты по одному",
+    "en": "Check tools one by one"
+  },
+  "b6_74": {
+    "ru": "Рекурсивно сканировать подкаталоги на несколько tdata",
+    "en": "Recursively scan subdirectories for multiple tdata"
+  },
+  "b6_75": {
+    "ru": "Контакты",
+    "en": "Contacts"
+  },
+  "b6_76": {
+    "ru": "Конфигурация и права",
+    "en": "Configuration and permissions"
+  },
+  "b6_77": {
+    "ru": "Сбор активных участников",
+    "en": "Collect active members"
+  },
+  "b6_78": {
+    "ru": "Собирает историю сообщений только на чтение и не оставляет следов в группе; чем больше группа, тем дольше сканирование — начните с малого.",
+    "en": "Reads message history read-only and leaves no trace in the group; the larger the group, the longer the scan — start small."
+  },
+  "b6_79": {
+    "ru": "Сбор участников за 7 дней·2 группы",
+    "en": "Collect speakers for 7 days·2 groups"
+  },
+  "b6_80": {
+    "ru": "Сбор активных участников · выбор групп",
+    "en": "Collect active members · select groups"
+  },
+  "b6_81": {
+    "ru": "Перезапустить",
+    "en": "Restart"
+  },
+  "b6_82": {
+    "ru": "Перезапуск может не удаться: ",
+    "en": "Restart may fail: "
+  },
+  "b6_83": {
+    "ru": "Отправить код повторно",
+    "en": "Resend code"
+  },
+  "b6_84": {
+    "ru": "Экспортировать заново",
+    "en": "Re-export"
+  },
+  "b6_85": {
+    "ru": "Загрузить заново",
+    "en": "Refetch"
+  },
+  "b6_86": {
+    "ru": "Перегенерация сессии",
+    "en": "Regenerate session"
+  },
+  "b6_87": {
+    "ru": "Перегенерация сессии (веб, защита от восстановления)",
+    "en": "Regenerate session (web anti-recovery)"
+  },
+  "b6_88": {
+    "ru": "Перегенерация не удалась",
+    "en": "Regeneration failed"
+  },
+  "b6_89": {
+    "ru": "Перегенерация не удалась: ",
+    "en": "Regeneration failed: "
+  },
+  "b6_90": {
+    "ru": "Перегенерация завершена: успешно",
+    "en": "Regeneration finished: success"
+  },
+  "b6_91": {
+    "ru": "Перегенерация под лимитом частоты: ",
+    "en": "Regeneration rate-limited: "
+  },
+  "b6_92": {
+    "ru": "Сбросить параметры",
+    "en": "Reset settings"
+  },
+  "b6_93": {
+    "ru": "Сбросить размеры элементов",
+    "en": "Reset control sizes"
+  },
+  "b6_94": {
+    "ru": "Ожидание сброса",
+    "en": "Reset pending"
+  },
+  "b6_95": {
+    "ru": "Результат сброса: ",
+    "en": "Reset result: "
+  },
+  "b6_96": {
+    "ru": "Повторить",
+    "en": "Retry"
+  },
+  "b6_97": {
+    "ru": "Интервал повтора сохранён",
+    "en": "Retry interval saved"
+  },
+  "b6_98": {
+    "ru": "Ссылка",
+    "en": "Link"
+  },
+  "b6_99": {
+    "ru": "Ошибка",
+    "en": "Error"
+  },
+  "b6_100": {
+    "ru": "Отчёт об ошибках",
+    "en": "Error report"
+  },
+  "b6_101": {
+    "ru": "Журнал ошибок",
+    "en": "Error log"
+  },
+  "b6_102": {
+    "ru": "Вопрос: ",
+    "en": "Question: "
+  },
+  "b6_103": {
+    "ru": "Очистка защиты от восстановления",
+    "en": "Anti-recovery cleanup"
+  },
+  "b6_104": {
+    "ru": "Азербайджан 🇦🇿",
+    "en": "Azerbaijan 🇦🇿"
+  },
+  "b6_105": {
+    "ru": "Афганистан 🇦🇫",
+    "en": "Afghanistan 🇦🇫"
+  },
+  "b6_106": {
+    "ru": "Алжир 🇩🇿",
+    "en": "Algeria 🇩🇿"
+  },
+  "b6_107": {
+    "ru": "Албания 🇦🇱",
+    "en": "Albania 🇦🇱"
+  },
+  "b6_108": {
+    "ru": "Оман 🇴🇲",
+    "en": "Oman 🇴🇲"
+  },
+  "b6_109": {
+    "ru": "Аргентина 🇦🇷",
+    "en": "Argentina 🇦🇷"
+  },
+  "b6_110": {
+    "ru": "ОАЭ 🇦🇪",
+    "en": "UAE 🇦🇪"
+  },
+  "b6_111": {
+    "ru": "Ограничен",
+    "en": "Restricted"
+  },
+  "b6_112": {
+    "ru": "Проверка ограничений",
+    "en": "Restriction check"
+  },
+  "b6_113": {
+    "ru": "Проверка ограничений ·",
+    "en": "Restriction check ·"
+  },
+  "b6_114": {
+    "ru": "Проверка ограничений завершена",
+    "en": "Restriction check complete"
+  },
+  "b6_115": {
+    "ru": "Ожидание снятия лимита",
+    "en": "Rate-limit wait"
+  },
+  "b6_116": {
+    "ru": "Лимит частоты: ",
+    "en": "Rate limit: "
+  },
+  "b6_117": {
+    "ru": "Настройки конфиденциальности",
+    "en": "Privacy settings"
+  },
+  "b6_118": {
+    "ru": "Скрыть 【",
+    "en": "Hide 【"
+  },
+  "b6_119": {
+    "ru": "Скрыть пароль",
+    "en": "Hide password"
+  },
+  "b6_120": {
+    "ru": "Требуется opentele",
+    "en": "opentele required"
+  },
+  "b6_121": {
+    "ru": "Требуется пароль 2FA",
+    "en": "2FA password required"
+  },
+  "b6_122": {
+    "ru": "Нужно установить opentele",
+    "en": "opentele must be installed"
+  },
+  "b6_123": {
+    "ru": "Нужен номер телефона; при 2FA укажите пароль (сохранённый в этом инструменте 2FA используется автоматически; при пакетной обработке пароль может быть общим).",
+    "en": "A phone number is required; with 2FA enter the password (2FA saved in this tool is used automatically; bulk runs can share one password)."
+  },
+  "b6_124": {
+    "ru": "Южная Корея 🇰🇷",
+    "en": "South Korea 🇰🇷"
+  },
+  "b6_125": {
+    "ru": " инструментов. Изменения вступают в силу после нажатия «Сохранить»; вход и импорт/экспорт session никогда не открываются.</div>",
+    "en": " tools. Changes take effect after clicking “Save”; sign-in and session import/export are never exposed.</div>"
+  },
+  "b6_126": {
+    "ru": "Ошибка предпросмотра",
+    "en": "Preview failed"
+  },
+  "b6_127": {
+    "ru": "Канал",
+    "en": "Channel"
+  },
+  "b6_128": {
+    "ru": "Мальдивы 🇲🇻",
+    "en": "Maldives 🇲🇻"
+  },
+  "b6_129": {
+    "ru": "Малайзия 🇲🇾",
+    "en": "Malaysia 🇲🇾"
+  },
+  "b6_130": {
+    "ru": "Код подтверждения",
+    "en": "Verification code"
+  },
+  "b6_131": {
+    "ru": "Код отправлен",
+    "en": "Code sent"
+  },
+  "b6_132": {
+    "ru": "Код отправлен: введите полученный код и подтвердите вход.",
+    "en": "The code has been sent; enter it and confirm sign-in."
+  },
+  "b6_133": {
+    "ru": "Вход по коду",
+    "en": "Sign in with code"
+  },
+  "b6_134": {
+    "ru": "Высокая активность",
+    "en": "High activity"
+  },
+  "b6_135": {
+    "ru": "Ливан 🇱🇧",
+    "en": "Lebanon 🇱🇧"
+  },
+  "b6_136": {
+    "ru": "По умолчанию",
+    "en": "Default"
+  },
+  "b6_137": {
+    "ru": " (при сбое DB запись всё равно сохраняется).",
+    "en": " (still recorded when the DB fails)."
+  },
+  "b6_138": {
+    "ru": " (Windows) или запустите ",
+    "en": " (Windows) or run "
+  },
+  "b6_139": {
+    "ru": " (задача #",
+    "en": " (task #"
+  },
+  "b6_140": {
+    "ru": " (осталось около ",
+    "en": " (about "
+  },
+  "b6_141": {
+    "ru": " (помощник включён)",
+    "en": " (assistant enabled)"
+  },
+  "b6_142": {
+    "ru": " (помощник отключён)",
+    "en": " (assistant disabled)"
+  },
+  "b6_143": {
+    "ru": " (можно обновить)",
+    "en": " (can refresh)"
+  },
+  "b6_144": {
+    "ru": " (выполнено/успешно/ошибок/текущий аккаунт); параллельность и таймауты — в параметрах.",
+    "en": " (done/success/failed/current account); see settings for concurrency and timeouts."
+  },
+  "b6_145": {
+    "ru": " (полная строка — в исходных данных справа, не разглашайте)",
+    "en": " (full string is in the raw data on the right; do not disclose it)"
+  },
+  "b6_146": {
+    "ru": " (исправлено автоматически)",
+    "en": " (auto-fixed)"
+  },
+  "b6_147": {
+    "ru": " (успешно ",
+    "en": " (success "
+  },
+  "b6_148": {
+    "ru": " (без текста)",
+    "en": " (no text)"
+  },
+  "b6_149": {
+    "ru": " (нет данных по аккаунтам)",
+    "en": " (no account details)"
+  },
+  "b6_150": {
+    "ru": " (отзыв старой авторизации не подтверждён)",
+    "en": " (old authorization revocation unconfirmed)"
+  },
+  "b6_151": {
+    "ru": " (пункты со значением «Не изменять» не затрагиваются)</div>",
+    "en": " (items left as “No change” are untouched)</div>"
+  },
+  "b6_152": {
+    "ru": " (слишком много попыток входа). Подождите от нескольких часов до 24 часов и не нажимайте перегенерацию повторно.",
+    "en": " (too many sign-in attempts). Wait several hours to 24 hours and do not keep clicking regenerate."
+  },
+  "b6_153": {
+    "ru": " (пустой список)",
+    "en": " (empty list)"
+  },
+  "b6_154": {
+    "ru": " (около ",
+    "en": " (about "
+  },
+  "b6_155": {
+    "ru": " (пробный запуск, в базу ничего не записано)",
+    "en": " (dry run, nothing written to the DB)"
+  },
+  "b6_156": {
+    "ru": " (лимит ",
+    "en": " (limit "
+  },
+  "b6_157": {
+    "ru": "). Если его нет, в окне можно ",
+    "en": "). If missing, the dialog offers "
+  },
+  "b6_158": {
+    "ru": ") повторить, подробности в журнале",
+    "en": ") retry, see the log for details"
+  },
+  "b6_159": {
+    "ru": "), а не обновление страницы. Текущие задачи прервутся; через 1–3 секунды интерфейс восстановится автоматически.",
+    "en": "), not a page refresh. Running tasks are interrupted; the UI recovers automatically in about 1–3 seconds."
+  },
+  "b6_160": {
+    "ru": "), в фоне каждые ",
+    "en": "), in the background every "
+  },
+  "b6_161": {
+    "ru": ", совместимо с TDesktop 6.x. Для загрузки упакуйте всю папку ",
+    "en": ", compatible with TDesktop 6.x. To upload, zip the entire "
+  },
+  "b6_162": {
+    "ru": ", можно выполнить пробный запуск.",
+    "en": ", a dry run is available."
+  },
+  "b6_163": {
+    "ru": ", выполняется в фоне",
+    "en": ", running in background"
+  },
+  "b6_164": {
+    "ru": ", ошибок ",
+    "en": ", failed "
+  },
+  "b6_165": {
+    "ru": ", параллельность ",
+    "en": ", concurrency "
+  },
+  "b6_166": {
+    "ru": ", либо отсканируйте QR-код этой страницы камерой системы. После авторизации инструмент получает новую сессию (сохраняется в базе в зашифрованном виде). QR-код действует около 30 секунд и обновляется автоматически.",
+    "en": ", or scan this page's QR code with the system camera. After authorization the tool receives a new session (stored encrypted). The QR code is valid for about 30 seconds and refreshes automatically."
+  },
+  "b6_167": {
+    "ru": ", отсчёт от ",
+    "en": ", counted from "
+  },
+  "b6_168": {
+    "ru": ", старая авторизация отозвана",
+    "en": ", old authorization revoked"
+  },
+  "b6_169": {
+    "ru": ", есть устройства, которые после сброса снова вошли",
+    "en": ", some devices signed in again after termination"
+  },
+  "b6_170": {
+    "ru": ", исходный пакет удалён</div>",
+    "en": ", source pack deleted</div>"
+  },
+  "b6_171": {
+    "ru": ", пустое поле — без изменений",
+    "en": ", leave blank to keep unchanged"
+  },
+  "b6_172": {
+    "ru": ", выберите локально/сервер, веб/бот/оба.",
+    "en": ", choose local/server, web/bot/both."
+  },
+  "b6_173": {
+    "ru": ": Session→Tdata (требуется opentele) или Tdata→Session (встроенный парсер).",
+    "en": ": Session→Tdata (requires opentele) or Tdata→Session (built-in parser)."
+  },
+  "b6_174": {
+    "ru": ": загрузите пакет session, запустите регистрацию Passkey и скачайте zip с учётными данными (направление создания).",
+    "en": ": upload a session pack, initialize Passkey registration and download the credential zip (create direction)."
+  },
+  "b6_175": {
+    "ru": ": паритет с пакетом аккаунтов бота.",
+    "en": ": on par with the bot account pack."
+  },
+  "b6_176": {
+    "ru": ": проверка работоспособности, автовход, отправка сообщений, прогрев аккаунта, проверка прокси, баланс OKPay, сброс устройств, теги, экспорт, перегенерация сессии, удаление и т. д.",
+    "en": ": health check, auto sign-in, send messages, warm-up, proxy check, OKPay balance, terminate devices, tagging, export, regenerate session, delete, etc."
+  },
+  "b6_177": {
+    "ru": ": метка, номер телефона, прокси, теги, ссылка для получения кода и т. д.",
+    "en": ": label, phone number, proxy, tags, code-retrieval link, etc."
+  },
+  "b6_178": {
+    "ru": ": таймаут на аккаунт в секундах; по таймауту аккаунт пропускается, чтобы не зависнуть.",
+    "en": ": per-account timeout in seconds; accounts are skipped on timeout to avoid hanging."
+  },
+  "b6_179": {
+    "ru": ": отменить текущее ожидание.",
+    "en": ": cancel the pending wait."
+  },
+  "b6_180": {
+    "ru": ": инструменты / детали; новый пароль можно сохранить в базе в зашифрованном виде.",
+    "en": ": toolbox / details; optionally store the new password encrypted in the DB."
+  },
+  "b6_181": {
+    "ru": ": успешно ",
+    "en": ": success "
+  },
+  "b6_182": {
+    "ru": ": пакетная параллельность (1–32).",
+    "en": ": bulk concurrency (1–32)."
+  },
+  "b6_183": {
+    "ru": ": включена ли 2FA, ",
+    "en": ": whether 2FA is enabled, "
+  },
+  "b6_184": {
+    "ru": ": реальная структура каталога Desktop (нужна установка на сервере ",
+    "en": ": real Desktop directory structure (requires server install of "
+  },
+  "b6_185": {
+    "ru": ": реальный перезапуск процесса бэкенда (",
+    "en": ": actually restarts the backend process ("
+  },
+  "b6_186": {
+    "ru": ": записывает необработанные исключения сервера, HTTP 5xx и ошибки скриптов фронтенда. Можно смотреть списком, экспортировать в JSON и очищать.",
+    "en": ": records uncaught server exceptions, HTTP 5xx and frontend script errors. View as a list, export JSON reports, clear."
+  },
+  "b6_187": {
+    "ru": ": Настройки → Устройства → ",
+    "en": ": Settings → Devices → "
+  },
+  "b6_188": {
+    "ru": ": профиль, проверка работоспособности, проверка ограничений, устройства/сессии, вход, сброс устройств, экспорт, перегенерация, статус/сброс 2FA, выход, удаление.",
+    "en": ": profile, health check, restriction check, devices/sessions, sign in, reset devices, export, regenerate, 2FA status/reset, sign out, delete."
+  },
+  "b6_189": {
+    "ru": ": официальный процесс, обычно около 7 дней ожидания; после этого облачный пароль перестаёт действовать. При наличии резервной почты прежний владелец всё ещё может восстановить аккаунт по почте — перед сбросом проверьте статус.",
+    "en": ": official flow, usually about 7 days of waiting; after that the cloud password stops working. With a recovery email the previous owner may still recover via email — check the status before resetting."
+  },
+  "b6_190": {
+    "ru": ": параллельных перегенераций (1–8).",
+    "en": ": parallel regenerations (1–8)."
+  },
+  "b6_191": {
+    "ru": "? Отправленное не отзывается, оставшиеся цели будут помечены как пропущенные.",
+    "en": "? Sent messages cannot be recalled; remaining targets will be marked as skipped."
+  },
+  "b6_192": {
+    "ru": "%g мин",
+    "en": "%g min"
+  },
+  "b6_193": {
+    "ru": "%g ч",
+    "en": "%g h"
+  },
+  "b6_194": {
+    "ru": "%g с",
+    "en": "%g s"
+  },
+  "b6_195": {
+    "ru": "(?:\\d+(?:\\.\\d+)?[a-zа-я]*)+",
+    "en": "(?:\\d+(?:\\.\\d+)?[a-z]*)+"
+  },
+  "b6_196": {
+    "ru": "(?:login\\s*code|code|код|код входа)\\D{0,20}?(\\d{5,6})",
+    "en": "(?:login\\s*code|code|verification code|login code)\\D{0,20}?(\\d{5,6})"
+  },
+  "b6_197": {
+    "ru": "(?i)(?:CNY|юань|RMB|￥)[^\\d%]{0,12}(\\d+(?:\\.\\d+)?)(?!\\s*%)",
+    "en": "(?i)(?:CNY|yuan|RMB|￥)[^\\d%]{0,12}(\\d+(?:\\.\\d+)?)(?!\\s*%)"
+  },
+  "b6_198": {
+    "ru": "(?i)(?:TRX|Трон|TRON)[^\\d%]{0,12}(\\d+(?:\\.\\d+)?)(?!\\s*%)",
+    "en": "(?i)(?:TRX|Tron|TRON)[^\\d%]{0,12}(\\d+(?:\\.\\d+)?)(?!\\s*%)"
+  },
+  "b6_199": {
+    "ru": "(?i)(?:USDT|U-монета|Tether)[^\\d%]{0,12}(\\d+(?:\\.\\d+)?)(?!\\s*%)",
+    "en": "(?i)(?:USDT|U-coin|Tether)[^\\d%]{0,12}(\\d+(?:\\.\\d+)?)(?!\\s*%)"
+  }
+}

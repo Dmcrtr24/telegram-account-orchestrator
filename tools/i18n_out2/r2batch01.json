@@ -1,0 +1,622 @@
+{
+  "r1_0": {
+    "ru": "(прослушивание",
+    "en": "(listening"
+  },
+  "r1_1": {
+    "ru": ")\">Диалог",
+    "en": ")\">Chat"
+  },
+  "r1_2": {
+    "ru": ")\\\">Импорт session",
+    "en": ")\\\">Import session"
+  },
+  "r1_3": {
+    "ru": ")\\\">Импорт tdata",
+    "en": ")\\\">Import tdata"
+  },
+  "r1_4": {
+    "ru": ")\\\">Добавить вручную",
+    "en": ")\\\">Add manually"
+  },
+  "r1_5": {
+    "ru": ")\\\">Список номеров",
+    "en": ")\\\">Phone list"
+  },
+  "r1_6": {
+    "ru": "- Инструменты",
+    "en": "- Tools"
+  },
+  "r1_7": {
+    "ru": "-9- — по 9 аккаунтов в пакете; 5,5,5 — размер задаётся для каждого пакета",
+    "en": "-9- means 9 accounts per pack; 5,5,5 sets each pack size individually"
+  },
+  "r1_8": {
+    "ru": "Обработка 2FA",
+    "en": "2FA handling"
+  },
+  "r1_9": {
+    "ru": ">Остановить",
+    "en": ">Stop"
+  },
+  "r1_10": {
+    "ru": ">Удалить",
+    "en": ">Delete"
+  },
+  "r1_11": {
+    "ru": ">Рассылка в него",
+    "en": ">Broadcast to it"
+  },
+  "r1_12": {
+    "ru": ">Детали",
+    "en": ">Details"
+  },
+  "r1_13": {
+    "ru": ">Загрузка групп… при большом числе групп подождите несколько секунд",
+    "en": ">Loading groups… may take a few seconds with many groups"
+  },
+  "r1_14": {
+    "ru": ">Нет подходящих групп. Можно снять «только с новыми сообщениями за 7 дней» и посмотреть снова.",
+    "en": ">No matching groups. Try clearing “only with new messages in the last 7 days” and look again."
+  },
+  "r1_15": {
+    "ru": ">Задач пока нет. Сначала соберите активных участников, затем сделайте рассылку по результатам.",
+    "en": ">No tasks yet. Collect active members first, then broadcast to the collected results."
+  },
+  "r1_16": {
+    "ru": "AI запрашивает выполнение следующих операций — отметьте нужные и выполните",
+    "en": "AI requests the following operations; select them before running"
+  },
+  "r1_17": {
+    "ru": "Сбой вызова AI",
+    "en": "AI call failed"
+  },
+  "r1_18": {
+    "ru": "Сбой запроса к LLM:",
+    "en": "LLM request failed:"
+  },
+  "r1_19": {
+    "ru": "OKPAY_COST пусто = без оплаты, любой, кто отправит /start, сразу получает VIP. → Для личного использования неважно; для открытого доступа задайте OKPAY_ID / OKPAY_TOKEN / OKPAY_COST",
+    "en": "OKPAY_COST empty = free, anyone sending /start gets VIP right away. → Fine for personal use; for public access configure OKPAY_ID / OKPAY_TOKEN / OKPAY_COST"
+  },
+  "r1_20": {
+    "ru": "Сбой запроса OKPay:",
+    "en": "OKPay query failed:"
+  },
+  "r1_21": {
+    "ru": "OP_SPECS не соответствует OPS:",
+    "en": "OP_SPECS does not match OPS:"
+  },
+  "r1_22": {
+    "ru": "Параметры запуска TAM",
+    "en": "TAM launch options"
+  },
+  "r1_23": {
+    "ru": "Запуск TAM: деплой=",
+    "en": "TAM launch: deploy="
+  },
+  "r1_24": {
+    "ru": "Единый запуск TAM (локально/сервер × веб/бот)",
+    "en": "Unified TAM launch (local/server × web/bot)"
+  },
+  "r1_25": {
+    "ru": "TAM_DEPLOY может быть только",
+    "en": "TAM_DEPLOY must be"
+  },
+  "r1_26": {
+    "ru": "TAM_DEPLOY=local, но TAM_HOST задан как 0.0.0.0 — порт реально открыт наружу. → Если нужен внешний доступ, используйте --deploy server, добавится дополнительная проверка безопасности",
+    "en": "TAM_DEPLOY=local but TAM_HOST is set to 0.0.0.0, so it is actually exposed externally. → For real external access use --deploy server, which adds an extra security check"
+  },
+  "r1_27": {
+    "ru": "TAM_FRONTEND может быть только",
+    "en": "TAM_FRONTEND must be"
+  },
+  "r1_28": {
+    "ru": "TAM_MASTER_KEY слишком короткий(",
+    "en": "TAM_MASTER_KEY too short("
+  },
+  "r1_29": {
+    "ru": "Telegram отклонил удаление аккаунта:",
+    "en": "Telegram refused account deletion:"
+  },
+  "r1_30": {
+    "ru": "Telegram-бот",
+    "en": "Telegram bot"
+  },
+  "r1_31": {
+    "ru": "Telegram-бот: polling, отправьте боту /start",
+    "en": "Telegram bot: polling, send /start to the bot"
+  },
+  "r1_32": {
+    "ru": "Менеджер аккаунтов Telegram",
+    "en": "Telegram account manager"
+  },
+  "r1_33": {
+    "ru": "Параллельных обработок ZIP (1-32)",
+    "en": "ZIP processing concurrency (1-32)"
+  },
+  "r1_34": {
+    "ru": "ZIP превышает лимит 80MB",
+    "en": "ZIP exceeds the 80MB limit"
+  },
+  "r1_35": {
+    "ru": "[нажмите",
+    "en": "[click"
+  },
+  "r1_36": {
+    "ru": "ai разбивка пакетов",
+    "en": "ai pack splitting"
+  },
+  "r1_37": {
+    "ru": "api_id не является числом:",
+    "en": "api_id is not numeric:"
+  },
+  "r1_38": {
+    "ru": "auto_kick_hours должен быть числом (часы)",
+    "en": "auto_kick_hours must be a number (hours)"
+  },
+  "r1_39": {
+    "ru": "bytes), лимит 50MB",
+    "en": "bytes), limit 50MB"
+  },
+  "r1_40": {
+    "ru": "Сбой execv, завершаем работу:",
+    "en": "execv failed, exiting:"
+  },
+  "r1_41": {
+    "ru": "https://example.com или http://ip:port",
+    "en": "https://example.com or http://ip:port"
+  },
+  "r1_42": {
+    "ru": "обязательно в режиме manual",
+    "en": "required in manual mode"
+  },
+  "r1_43": {
+    "ru": "muted\\'>не записано",
+    "en": "muted\\'>not recorded"
+  },
+  "r1_44": {
+    "ru": "opentele установлен, можно заново экспортировать tdata",
+    "en": "opentele is installed, tdata can be re-exported"
+  },
+  "r1_45": {
+    "ru": "pip успешно, но import не удался:",
+    "en": "pip succeeded but import failed:"
+  },
+  "r1_46": {
+    "ru": "s — нет ответа",
+    "en": "s — no response"
+  },
+  "r1_47": {
+    "ru": "s — из ссылки для получения кода не пришёл новый код",
+    "en": "s — no new code received from the code-retrieval link"
+  },
+  "r1_48": {
+    "ru": "s — QR-код не отсканирован, можно подождать или обновить QR-код",
+    "en": "s — QR not scanned, keep waiting or refresh the QR code"
+  },
+  "r1_49": {
+    "ru": "zip пакета аккаунтов session",
+    "en": "session account pack zip"
+  },
+  "r1_50": {
+    "ru": "s) пропущено, проверьте прокси/сеть и повторите",
+    "en": "s) skipped, check proxy/network and retry"
+  },
+  "r1_51": {
+    "ru": "локальный пароль tdata passcode (необязательно)",
+    "en": "tdata local passcode (optional)"
+  },
+  "r1_52": {
+    "ru": "локальный пароль tdata (необязательно, только Tdata→Session)",
+    "en": "tdata local passcode (optional, Tdata→Session only)"
+  },
+  "r1_53": {
+    "ru": "urls пуст",
+    "en": "urls is empty"
+  },
+  "r1_54": {
+    "ru": "в zip не найдены файлы .session",
+    "en": "no .session files found in the zip"
+  },
+  "r1_55": {
+    "ru": "в zip не найдена папка tdata (нужен key_datas). Заархивируйте всю папку tdata и загрузите снова.",
+    "en": "no tdata directory found in the zip (must contain key_datas). Archive the whole tdata folder and upload it again."
+  },
+  "r1_56": {
+    "ru": "· Опасные операции",
+    "en": "· Dangerous operations"
+  },
+  "r1_57": {
+    "ru": "· Изменяющие",
+    "en": "· Modifying"
+  },
+  "r1_58": {
+    "ru": "· серверный date_created, только для справки",
+    "en": "· server-side date_created, for reference only"
+  },
+  "r1_59": {
+    "ru": "← по умолчанию",
+    "en": "← default"
+  },
+  "r1_60": {
+    "ru": "→ pip install -r requirements.txt → если нужен только веб, это ставить не обязательно — достаточно указать TAM_FRONTEND=web",
+    "en": "→ pip install -r requirements.txt → for web-only use these are not needed; just set TAM_FRONTEND to web"
+  },
+  "r1_61": {
+    "ru": "→ аккаунт user_id=",
+    "en": "→ account user_id="
+  },
+  "r1_62": {
+    "ru": "✗ Ошибка:",
+    "en": "✗ Failed:"
+  },
+  "r1_63": {
+    "ru": ". Повторите позже.",
+    "en": ". Please try again later."
+  },
+  "r1_64": {
+    "ru": "I. Разбивка пакетов",
+    "en": "1. Pack splitting"
+  },
+  "r1_65": {
+    "ru": "не более 200 за раз, получено",
+    "en": "at most 200 per run, received"
+  },
+  "r1_66": {
+    "ru": "максимум за одно объединение",
+    "en": "maximum per merge"
+  },
+  "r1_67": {
+    "ru": "не более 500 за раз, получено",
+    "en": "at most 500 per query, received"
+  },
+  "r1_68": {
+    "ru": "III. Классификация по дате регистрации",
+    "en": "3. Classify by registration date"
+  },
+  "r1_69": {
+    "ru": "Лимит контекста (можно изменить)",
+    "en": "Context limit (customizable)"
+  },
+  "r1_70": {
+    "ru": "Контекст и генерация",
+    "en": "Context and generation"
+  },
+  "r1_71": {
+    "ru": "Загрузка…",
+    "en": "Uploading…"
+  },
+  "r1_72": {
+    "ru": "Провайдеры и ключи",
+    "en": "Providers and keys"
+  },
+  "r1_73": {
+    "ru": "Указанные проблемы напрямую влияют на работу или безопасность — запуск остановлен.",
+    "en": "The issues above directly affect operation or security, so startup was stopped."
+  },
+  "r1_74": {
+    "ru": "уровней (до 3) не найдено ни одной папки tdata",
+    "en": "levels (up to 3) — no tdata directory found"
+  },
+  "r1_75": {
+    "ru": "Изменение через AI запрещено; используйте панель параметров в веб-интерфейсе",
+    "en": "Changes via AI are not allowed; use the web settings panel"
+  },
+  "r1_76": {
+    "ru": "вне разрешённого для AI",
+    "en": "outside the AI-allowed scope"
+  },
+  "r1_77": {
+    "ru": "нет в белом списке TAM_PEER_ALLOWLIST, отправка отклонена",
+    "en": "not in the TAM_PEER_ALLOWLIST allowlist, sending refused"
+  },
+  "r1_78": {
+    "ru": "не существует или не виден",
+    "en": "does not exist or is not visible"
+  },
+  "r1_79": {
+    "ru": "не существует или не авторизован",
+    "en": "does not exist or is not signed in"
+  },
+  "r1_80": {
+    "ru": "Без меню, сразу переменные окружения/значения по умолчанию (для демона)",
+    "en": "No menu, use env vars/defaults directly (for the daemon)"
+  },
+  "r1_81": {
+    "ru": "не принимает аргументы",
+    "en": "takes no arguments"
+  },
+  "r1_82": {
+    "ru": "неподдерживаемый mode:",
+    "en": "unsupported mode:"
+  },
+  "r1_83": {
+    "ru": "неподдерживаемый протокол прокси:",
+    "en": "unsupported proxy protocol:"
+  },
+  "r1_84": {
+    "ru": "неподдерживаемый формат:",
+    "en": "unsupported format:"
+  },
+  "r1_85": {
+    "ru": "не TDF-контейнер (отсутствует заголовок TDF$)",
+    "en": "not a TDF container (missing TDF$ header)"
+  },
+  "r1_86": {
+    "ru": "не является корректной папкой tdata (должна содержать файл key_datas):",
+    "en": "not a valid tdata directory (must contain a key_datas file):"
+  },
+  "r1_87": {
+    "ru": "некорректный zip:",
+    "en": "not a valid zip:"
+  },
+  "r1_88": {
+    "ru": "не папка:",
+    "en": "not a directory:"
+  },
+  "r1_89": {
+    "ru": "не может быть отрицательным",
+    "en": "cannot be negative"
+  },
+  "r1_90": {
+    "ru": "неизвестный аргумент:",
+    "en": "unknown argument:"
+  },
+  "r1_91": {
+    "ru": "неизвестное значение:",
+    "en": "unknown value:"
+  },
+  "r1_92": {
+    "ru": "неизвестная операция:",
+    "en": "unknown operation:"
+  },
+  "r1_93": {
+    "ru": "неизвестный параметр конфиденциальности:",
+    "en": "unknown privacy setting:"
+  },
+  "r1_94": {
+    "ru": "включить оба",
+    "en": "enable both"
+  },
+  "r1_95": {
+    "ru": "StringSession",
+    "en": "StringSession"
+  },
+  "r1_96": {
+    "ru": "пакетов ->",
+    "en": "packs ->"
+  },
+  "r1_97": {
+    "ru": "аккаунтов ->",
+    "en": "accounts ->"
+  },
+  "r1_98": {
+    "ru": "аккаунтов, переименовать",
+    "en": "accounts, rename"
+  },
+  "r1_99": {
+    "ru": "эндпоинтов доступно",
+    "en": "endpoints available"
+  },
+  "r1_100": {
+    "ru": "целей",
+    "en": "targets"
+  },
+  "r1_101": {
+    "ru": "групп",
+    "en": "groups"
+  },
+  "r1_102": {
+    "ru": "мест для аккаунтов, номер",
+    "en": "account slots, index"
+  },
+  "r1_103": {
+    "ru": "осн. DC=",
+    "en": "main DC="
+  },
+  "r1_104": {
+    "ru": "один из",
+    "en": "one of"
+  },
+  "r1_105": {
+    "ru": "II. Объединение",
+    "en": "2. Merge"
+  },
+  "r1_106": {
+    "ru": "QR-код истёк, обновить не удалось — запустите сканирование заново:",
+    "en": "QR code expired and refresh failed; start QR sign-in again:"
+  },
+  "r1_107": {
+    "ru": "не удалось расшифровать пароль 2FA:",
+    "en": "failed to decrypt the 2FA password:"
+  },
+  "r1_108": {
+    "ru": "Конвертация…",
+    "en": "Converting…"
+  },
+  "r1_109": {
+    "ru": "V. Конвертация форматов",
+    "en": "5. Format conversion"
+  },
+  "r1_110": {
+    "ru": "чел. (добавлено в базу",
+    "en": "people (added to the database"
+  },
+  "r1_111": {
+    "ru": "только чтение",
+    "en": "read-only"
+  },
+  "r1_112": {
+    "ru": "Извлечь из JSON / 2fa.txt",
+    "en": "Extract from JSON / 2fa.txt"
+  },
+  "r1_113": {
+    "ru": "или выше — скачайте новую версию с python.org и переустановите",
+    "en": "or later; download a newer version from python.org and reinstall"
+  },
+  "r1_114": {
+    "ru": "Задача",
+    "en": "Task"
+  },
+  "r1_115": {
+    "ru": "некорректный номер задачи",
+    "en": "invalid task number"
+  },
+  "r1_116": {
+    "ru": "задача ещё выполняется, сначала остановите её",
+    "en": "the task is still running, stop it first"
+  },
+  "r1_117": {
+    "ru": "мест)",
+    "en": "slots)"
+  },
+  "r1_118": {
+    "ru": "задание не существует или удалено",
+    "en": "job does not exist or was cleaned up"
+  },
+  "r1_119": {
+    "ru": "задание не существует:",
+    "en": "job does not exist:"
+  },
+  "r1_120": {
+    "ru": "Ты помощник по эксплуатации TAM. Используй только авторизованные инструменты для просмотра и изменения локально размещённых аккаунтов; не выдумывай результаты инструментов. Сначала проверь, потом меняй; об опасных операциях предупреждай заранее. Отвечай по-русски, одним-двумя абзацами.",
+    "en": "You are the TAM operations assistant. Use only authorized tools to inspect and change locally hosted accounts; never invent tool results. Check before changing; state the risks of dangerous operations first. Answer in English in one or two paragraphs."
+  },
+  "r1_121": {
+    "ru": "Ты консультант только для чтения. Используй только инструменты запросов/проверок; ничего не советуй и не выполняй никаких записей. Выводы — на основе ответов инструментов. По-русски, списком.",
+    "en": "You are a read-only advisor. Use query/check tools only; do not suggest or perform any writes. Base conclusions on tool output. English, as bullet points."
+  },
+  "r1_122": {
+    "ru": "Ты помощник по массовым операциям. Сначала выясни состояние через list/stats, затем выполни авторизованные инструменты в рамках, указанных пользователем. Отчёт: число успехов/число неудач/причины неудач. По-русски, короткими фразами.",
+    "en": "You are a bulk-operations assistant. First check state with list/stats, then run authorized tools within the user's scope. Report: success count/failure count/failure reasons. English, short sentences."
+  },
+  "r1_123": {
+    "ru": "Ты помощник по диагностике. По проверке работоспособности, логам и списку устройств найди проблему и предложи выполнимый следующий шаг. Не угадывай ключи сессии. По-русски.",
+    "en": "You are a troubleshooting assistant. Use the health check, logs, and device list to locate the problem and give an actionable next step. Do not guess session keys. English."
+  },
+  "r1_124": {
+    "ru": "например 1,2,5",
+    "en": "e.g. 1,2,5"
+  },
+  "r1_125": {
+    "ru": "Сохранить конфигурацию",
+    "en": "Save configuration"
+  },
+  "r1_126": {
+    "ru": "Сколько последних сообщений хранить",
+    "en": "Number of recent messages to keep"
+  },
+  "r1_127": {
+    "ru": "Разрешённые ID аккаунтов (через запятую, пусто = все)",
+    "en": "Allowed account IDs (comma-separated, empty = all)"
+  },
+  "r1_128": {
+    "ru": "Сначала посмотреть, сколько аккаунтов",
+    "en": "First check how many accounts there are"
+  },
+  "r1_129": {
+    "ru": "Снять все",
+    "en": "Deselect all"
+  },
+  "r1_130": {
+    "ru": "VI. Passkey",
+    "en": "6. Passkey"
+  },
+  "r1_131": {
+    "ru": "После отключения и сохранения диалог не сможет отправлять; права и Key сохраняются",
+    "en": "After turning this off and saving, dialogs cannot send; permissions and Key are kept"
+  },
+  "r1_132": {
+    "ru": "Если отключить этот пункт, AI сможет менять настройки аккаунтов и отправлять сообщения без подтверждения.",
+    "en": "With this off, AI can change account settings and send messages without manual confirmation."
+  },
+  "r1_133": {
+    "ru": "Если отключить этот пункт, AI сможет без подтверждения выполнять необратимые операции — удаление аккаунта и т. п.",
+    "en": "With this off, AI can perform irreversible operations such as account deletion without manual confirmation."
+  },
+  "r1_134": {
+    "ru": "неверный формат:",
+    "en": "wrong format:"
+  },
+  "r1_135": {
+    "ru": "Анализ…",
+    "en": "Analyzing…"
+  },
+  "r1_136": {
+    "ru": "Классификация…",
+    "en": "Classifying…"
+  },
+  "r1_137": {
+    "ru": "Показать инструменты, доступные Agent, и их JSON Schema",
+    "en": "List the tools available to the Agent with their JSON Schema"
+  },
+  "r1_138": {
+    "ru": "Создать",
+    "en": "Create"
+  },
+  "r1_139": {
+    "ru": "Создать пакет учётных данных Passkey",
+    "en": "Create a Passkey credential pack"
+  },
+  "r1_140": {
+    "ru": "удалено",
+    "en": "deleted"
+  },
+  "r1_141": {
+    "ru": "метка уже существует",
+    "en": "label already exists"
+  },
+  "r1_142": {
+    "ru": "фронтенд=",
+    "en": "frontend="
+  },
+  "r1_143": {
+    "ru": "не удалось добавить:",
+    "en": "failed to join:"
+  },
+  "r1_144": {
+    "ru": "в пакете всего",
+    "en": "total in pack"
+  },
+  "r1_145": {
+    "ru": "Таймаут операции на один аккаунт в секундах; при таймауте аккаунт пропускается и берётся следующий (15-600)",
+    "en": "Per-account operation timeout in seconds; on timeout the account is skipped and the next one starts (15-600)"
+  },
+  "r1_146": {
+    "ru": "таймаут на аккаунт (",
+    "en": "per-account timeout ("
+  },
+  "r1_147": {
+    "ru": "Таймаут одного запроса (с)",
+    "en": "Single query timeout (s)"
+  },
+  "r1_148": {
+    "ru": "Опасные инструменты (удаление аккаунта/выход/удаление сессии) требуют подтверждения",
+    "en": "Dangerous tools (account deletion/sign out/session deletion) require confirmation"
+  },
+  "r1_149": {
+    "ru": "Опасно: в режиме сервера включён TAM_NO_AUTH=1 — это выставляет все аккаунты в открытый интернет. → Поставьте TAM_NO_AUTH=0 и задайте TAM_WEB_TOKEN (без токена — только локально)",
+    "en": "Danger: server mode has TAM_NO_AUTH=1, which exposes all accounts to the public internet. → Set TAM_NO_AUTH=0 and configure TAM_WEB_TOKEN (token-free access is local-only)"
+  },
+  "r1_150": {
+    "ru": "Отправить сообщение:",
+    "en": "Send message:"
+  },
+  "r1_151": {
+    "ru": "не удалось отправить код:",
+    "en": "failed to send the code:"
+  },
+  "r1_152": {
+    "ru": "Отправка кода отклонена: у аккаунта слишком много попыток входа/запросов кода (PhonePasswordFlood). Telegram временно запрещает отправку кодов входа — обычно нужно подождать от нескольких часов до 24 часов. В это время не нажимайте «Перегенерация» повторно. Недавние ошибки ввода 2FA тоже учитываются в этом лимите.",
+    "en": "Code sending refused: too many sign-in/code requests for this account (PhonePasswordFlood). Telegram temporarily blocks sending sign-in codes; usually you must wait several hours up to 24 hours. During that time do not press “Regenerate” repeatedly. Recent 2FA entry mistakes also count toward this limit."
+  },
+  "r1_153": {
+    "ru": "отправка кода вызвала FloodWait, нужно подождать",
+    "en": "code sending hit FloodWait, wait required"
+  },
+  "r1_154": {
+    "ru": "не удалось запустить сканирование QR:",
+    "en": "failed to start QR sign-in:"
+  }
+}

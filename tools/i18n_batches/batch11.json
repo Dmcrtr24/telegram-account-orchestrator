@@ -1,0 +1,337 @@
+[
+ {
+  "id": "b11_0",
+  "kind": "pattern",
+  "zh": "✓ %s 踢设备 · 剩余其它 %s"
+ },
+ {
+  "id": "b11_1",
+  "kind": "pattern",
+  "zh": "✗ 失败：%s"
+ },
+ {
+  "id": "b11_2",
+  "kind": "pattern",
+  "zh": "【%s】%s列 × %s行"
+ },
+ {
+  "id": "b11_3",
+  "kind": "pattern",
+  "zh": "【%s】已放到 %s 列 / %s 行"
+ },
+ {
+  "id": "b11_4",
+  "kind": "pattern",
+  "zh": "一键体检：%s"
+ },
+ {
+  "id": "b11_5",
+  "kind": "pattern",
+  "zh": "上传导入：%s"
+ },
+ {
+  "id": "b11_6",
+  "kind": "pattern",
+  "zh": "上次检查：%s"
+ },
+ {
+  "id": "b11_7",
+  "kind": "pattern",
+  "zh": "上次清设备：%s"
+ },
+ {
+  "id": "b11_8",
+  "kind": "pattern",
+  "zh": "代理：%s"
+ },
+ {
+  "id": "b11_9",
+  "kind": "pattern",
+  "zh": "任务 #%s：%s 类型：%s"
+ },
+ {
+  "id": "b11_10",
+  "kind": "pattern",
+  "zh": "体检通过，已自动修复 %s 项"
+ },
+ {
+  "id": "b11_11",
+  "kind": "pattern",
+  "zh": "共 %s 人 · %s 个来源"
+ },
+ {
+  "id": "b11_12",
+  "kind": "pattern",
+  "zh": "出错了：%s"
+ },
+ {
+  "id": "b11_13",
+  "kind": "pattern",
+  "zh": "列表 %s 条："
+ },
+ {
+  "id": "b11_14",
+  "kind": "pattern",
+  "zh": "创建于 %s"
+ },
+ {
+  "id": "b11_15",
+  "kind": "pattern",
+  "zh": "包数：%s"
+ },
+ {
+  "id": "b11_16",
+  "kind": "pattern",
+  "zh": "原文摘录： %s"
+ },
+ {
+  "id": "b11_17",
+  "kind": "pattern",
+  "zh": "参数已保存：%s"
+ },
+ {
+  "id": "b11_18",
+  "kind": "pattern",
+  "zh": "变体数 %s"
+ },
+ {
+  "id": "b11_19",
+  "kind": "pattern",
+  "zh": "备注：%s"
+ },
+ {
+  "id": "b11_20",
+  "kind": "pattern",
+  "zh": "完成 %s/%s"
+ },
+ {
+  "id": "b11_21",
+  "kind": "pattern",
+  "zh": "已导出 %s 条线索"
+ },
+ {
+  "id": "b11_22",
+  "kind": "pattern",
+  "zh": "已拉到 %s 个会话"
+ },
+ {
+  "id": "b11_23",
+  "kind": "pattern",
+  "zh": "已选 %s 个"
+ },
+ {
+  "id": "b11_24",
+  "kind": "pattern",
+  "zh": "已选 %s 个群 · 当前显示 %s/%s"
+ },
+ {
+  "id": "b11_25",
+  "kind": "pattern",
+  "zh": "当前断点：%s（%s 列）· 各断点分开保存"
+ },
+ {
+  "id": "b11_26",
+  "kind": "pattern",
+  "zh": "成功 %s / 共 %s"
+ },
+ {
+  "id": "b11_27",
+  "kind": "pattern",
+  "zh": "成功 %s · 失败 %s · 已跳过 %s"
+ },
+ {
+  "id": "b11_28",
+  "kind": "pattern",
+  "zh": "批量完成：成功 %s，失败 %s"
+ },
+ {
+  "id": "b11_29",
+  "kind": "pattern",
+  "zh": "批量结果：共 %s 个账号，成功 %s，失败 %s"
+ },
+ {
+  "id": "b11_30",
+  "kind": "pattern",
+  "zh": "批量结果：共 %s 个，约成功 %s，失败 %s"
+ },
+ {
+  "id": "b11_31",
+  "kind": "pattern",
+  "zh": "操作失败%s"
+ },
+ {
+  "id": "b11_32",
+  "kind": "pattern",
+  "zh": "操作日志 %s 条（自新到旧）"
+ },
+ {
+  "id": "b11_33",
+  "kind": "pattern",
+  "zh": "文件：%s"
+ },
+ {
+  "id": "b11_34",
+  "kind": "pattern",
+  "zh": "新设备指纹：%s / %s / %s"
+ },
+ {
+  "id": "b11_35",
+  "kind": "pattern",
+  "zh": "旧授权注销：%s"
+ },
+ {
+  "id": "b11_36",
+  "kind": "pattern",
+  "zh": "最近 %s 个"
+ },
+ {
+  "id": "b11_37",
+  "kind": "pattern",
+  "zh": "最近会话 %s 个："
+ },
+ {
+  "id": "b11_38",
+  "kind": "pattern",
+  "zh": "本机接管：%s"
+ },
+ {
+  "id": "b11_39",
+  "kind": "pattern",
+  "zh": "标签：%s"
+ },
+ {
+  "id": "b11_40",
+  "kind": "pattern",
+  "zh": "检查结果：%s"
+ },
+ {
+  "id": "b11_41",
+  "kind": "pattern",
+  "zh": "清理其它设备：%s"
+ },
+ {
+  "id": "b11_42",
+  "kind": "pattern",
+  "zh": "状态 %s，不再尝试"
+ },
+ {
+  "id": "b11_43",
+  "kind": "pattern",
+  "zh": "状态：%s 进度：%s/%s（%s%）"
+ },
+ {
+  "id": "b11_44",
+  "kind": "pattern",
+  "zh": "状态：%s%s"
+ },
+ {
+  "id": "b11_45",
+  "kind": "pattern",
+  "zh": "用户名：@%s"
+ },
+ {
+  "id": "b11_46",
+  "kind": "pattern",
+  "zh": "登录时间：%s"
+ },
+ {
+  "id": "b11_47",
+  "kind": "pattern",
+  "zh": "目录：%s"
+ },
+ {
+  "id": "b11_48",
+  "kind": "pattern",
+  "zh": "目录：%s 成功 %s/%s"
+ },
+ {
+  "id": "b11_49",
+  "kind": "pattern",
+  "zh": "第 %s / %s 个"
+ },
+ {
+  "id": "b11_50",
+  "kind": "pattern",
+  "zh": "结束于 %s"
+ },
+ {
+  "id": "b11_51",
+  "kind": "pattern",
+  "zh": "统计：共 %s 个账号"
+ },
+ {
+  "id": "b11_52",
+  "kind": "pattern",
+  "zh": "自动清设备：%s · 周期 %s 小时 · 监控 %s 个号"
+ },
+ {
+  "id": "b11_53",
+  "kind": "pattern",
+  "zh": "自动清设备：登录满 %s 小时的账号共 %s 个，成功 %s，失败 %s"
+ },
+ {
+  "id": "b11_54",
+  "kind": "pattern",
+  "zh": "该账号当前登录设备 %s 台："
+ },
+ {
+  "id": "b11_55",
+  "kind": "pattern",
+  "zh": "账号 #%s"
+ },
+ {
+  "id": "b11_56",
+  "kind": "pattern",
+  "zh": "账号：%s%s"
+ },
+ {
+  "id": "b11_57",
+  "kind": "pattern",
+  "zh": "路径：%s"
+ },
+ {
+  "id": "b11_58",
+  "kind": "pattern",
+  "zh": "踢前授权 %s，剩余其它 %s"
+ },
+ {
+  "id": "b11_59",
+  "kind": "pattern",
+  "zh": "输出：%s"
+ },
+ {
+  "id": "b11_60",
+  "kind": "pattern",
+  "zh": "采集任务已创建（%s 个群）"
+ },
+ {
+  "id": "b11_61",
+  "kind": "pattern",
+  "zh": "限制检测：%s"
+ },
+ {
+  "id": "b11_62",
+  "kind": "pattern",
+  "zh": "限制解除时间：%s"
+ },
+ {
+  "id": "b11_63",
+  "kind": "pattern",
+  "zh": "预计相关时间：%s"
+ },
+ {
+  "id": "b11_64",
+  "kind": "pattern",
+  "zh": "，共 %s"
+ },
+ {
+  "id": "b11_65",
+  "kind": "pattern",
+  "zh": "，失败 %s"
+ },
+ {
+  "id": "b11_66",
+  "kind": "pattern",
+  "zh": "，跳过 %s 个"
+ }
+]

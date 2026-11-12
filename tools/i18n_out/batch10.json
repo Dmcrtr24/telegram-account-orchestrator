@@ -1,0 +1,802 @@
+{
+ "b10_0": {
+  "ru": "Отобрать ID аккаунтов с истёкшим сроком.",
+  "en": "Select IDs of expired accounts."
+ },
+ "b10_1": {
+  "ru": "Проверка номеров",
+  "en": "Number screening"
+ },
+ "b10_2": {
+  "ru": "Проверка номеров: какие из списка телефонов зарегистрированы в Telegram.",
+  "en": "Number screening: which phone numbers in a batch are registered on Telegram."
+ },
+ "b10_3": {
+  "ru": "Проверка номеров: пакетная проверка регистрации телефонов в Telegram",
+  "en": "Number screening: bulk-check whether phone numbers are registered on Telegram"
+ },
+ "b10_4": {
+  "ru": "Проверка активности: работает ли ещё аккаунт.",
+  "en": "Liveness check: whether the account still works."
+ },
+ "b10_5": {
+  "ru": "Проверка активности: лёгкая проверка доступности аккаунта (без видимых действий)",
+  "en": "Liveness check: lightweight probe of account availability (no visible actions)"
+ },
+ "b10_6": {
+  "ru": "Описание",
+  "en": "Bio"
+ },
+ "b10_7": {
+  "ru": "Описание: {exc!r}",
+  "en": "Description: {exc!r}"
+ },
+ "b10_8": {
+  "ru": "Рассчитать план автосброса устройств для аккаунта: статус + срок + причина.",
+  "en": "Compute an account's auto device-reset schedule: status + due time + reason."
+ },
+ "b10_9": {
+  "ru": "около {secs // 3600} ч",
+  "en": "about {secs // 3600} h"
+ },
+ "b10_10": {
+  "ru": "около {secs // 60} мин",
+  "en": "about {secs // 60} min"
+ },
+ "b10_11": {
+  "ru": "База лидов: собранные активные участники для фильтрации и рассылки.",
+  "en": "Lead base: collected active members for later filtering and broadcast."
+ },
+ "b10_12": {
+  "ru": "Статистика источников лидов (сколько собрано из каждой группы)",
+  "en": "Lead source stats (how many collected per group)"
+ },
+ "b10_13": {
+  "ru": "Вывод на основе ответа инструмента. Упрощённый китайский, по пунктам.",
+  "en": "Conclusion based on tool output. Simplified Chinese, itemized."
+ },
+ "b10_14": {
+  "ru": "Обзор для UI: переключатель, период, число в очереди, ближайший срок.",
+  "en": "UI overview: toggle, period, pending count, next due time."
+ },
+ "b10_15": {
+  "ru": "Единая точка входа. Всегда возвращает структуру {ok, tool, result|error}, без исключений.",
+  "en": "Single entry point. Always returns {ok, tool, result|error}, never raises."
+ },
+ "b10_16": {
+  "ru": "Изменить сообщение, отправленное этим аккаунтом",
+  "en": "Edit a message sent by this account"
+ },
+ "b10_17": {
+  "ru": "Изменить ранее отправленное сообщение этого аккаунта",
+  "en": "Edit a message already sent by this account"
+ },
+ "b10_18": {
+  "ru": "Изменить сообщение",
+  "en": "Edit message"
+ },
+ "b10_19": {
+  "ru": "Изменить собственное отправленное сообщение.",
+  "en": "Edit your own sent message."
+ },
+ "b10_20": {
+  "ru": "Отсутствует {p}",
+  "en": "Missing {p}"
+ },
+ "b10_21": {
+  "ru": "Нет TAM_MASTER_KEY. Сначала выполните: python -m tam.cli init-key",
+  "en": "TAM_MASTER_KEY is missing. Run first: python -m tam.cli init-key"
+ },
+ "b10_22": {
+  "ru": "Нет библиотеки qrcode, выполните pip install qrcode pillow",
+  "en": "qrcode library missing, run pip install qrcode pillow"
+ },
+ "b10_23": {
+  "ru": "Не хватает обязательных параметров: {sorted(missing)}",
+  "en": "Missing required parameters: {sorted(missing)}"
+ },
+ "b10_24": {
+  "ru": "Не хватает:",
+  "en": "Missing:"
+ },
+ "b10_25": {
+  "ru": "Панель веб-диалога с AI: политика, права и диалог, совместимый с OpenAI (с вызовом инструментов).",
+  "en": "Web AI chat panel: policy, permissions and OpenAI-compatible chat (with tool calls)."
+ },
+ "b10_26": {
+  "ru": "Группа @/ID",
+  "en": "Group @/ID"
+ },
+ "b10_27": {
+  "ru": "группа @username или chat id",
+  "en": "group @username or chat id"
+ },
+ "b10_28": {
+  "ru": "группа @username или ID",
+  "en": "group @username or ID"
+ },
+ "b10_29": {
+  "ru": "группа/канал/пользователь",
+  "en": "group/channel/user"
+ },
+ "b10_30": {
+  "ru": "Список участников группы",
+  "en": "Group members list"
+ },
+ "b10_31": {
+  "ru": "Название группы",
+  "en": "Group title"
+ },
+ "b10_32": {
+  "ru": "Автовход: после отправки кода опрашивать ссылку для получения кода и завершить вход",
+  "en": "Auto sign-in: after requesting a code, poll the account's code-retrieval link and finish signing in"
+ },
+ "b10_33": {
+  "ru": "Вручную: настройте по переключателям ниже",
+  "en": "Custom: configure per the toggles below"
+ },
+ "b10_34": {
+  "ru": "Если 2FA недавно вводили неверно много раз, это тоже входит в лимит.",
+  "en": "Recent repeated wrong 2FA entries also count toward this rate limit."
+ },
+ "b10_35": {
+  "ru": "Если импорт tdata постоянно падает, пересоздайте .venv на Python 3.12",
+  "en": "If tdata import keeps failing, rebuild .venv with Python 3.12"
+ },
+ "b10_36": {
+  "ru": "Если задан allow_account_ids, инструменты работают только с этими аккаунтами.",
+  "en": "If allow_account_ids is set, tools may only operate on those accounts."
+ },
+ "b10_37": {
+  "ru": "Получить данные аккаунта",
+  "en": "Get single account details"
+ },
+ "b10_38": {
+  "ru": "ID сообщения, на которое отвечают",
+  "en": "Replied-to message ID"
+ },
+ "b10_39": {
+  "ru": "Чтобы вернуть токен: поставьте TAM_NO_AUTH=0 в .env и перезапустите мастер",
+  "en": "To restore the token: set TAM_NO_AUTH to 0 in .env and rerun the wizard"
+ },
+ "b10_40": {
+  "ru": "Получить локальный мастер-ключ",
+  "en": "Derive the local master key"
+ },
+ "b10_41": {
+  "ru": "После расшифровки длина не совпадает — файл, вероятно, повреждён",
+  "en": "Length field invalid after decryption — file may be corrupted"
+ },
+ "b10_42": {
+  "ru": "Проверка расшифровки не удалась: неверный локальный passcode или файл повреждён",
+  "en": "Decryption check failed: wrong local passcode or corrupted file"
+ },
+ "b10_43": {
+  "ru": "Разобрать tdata и сразу получить список Telethon StringSession.",
+  "en": "Parse tdata and return a list of Telethon StringSession."
+ },
+ "b10_44": {
+  "ru": "Разобрать каталог tdata и вернуть отчёт диагностики (без исключений).",
+  "en": "Parse a tdata directory and return a diagnostic report (never raises)."
+ },
+ "b10_45": {
+  "ru": "Настройки",
+  "en": "Settings"
+ },
+ "b10_46": {
+  "ru": "Задать/изменить/снять пароль 2FA (если пароль есть, нужен old)",
+  "en": "Set/change/remove the 2FA password (old required when a password exists)"
+ },
+ "b10_47": {
+  "ru": "Задать или снять пароль 2FA. Пустой новый пароль = снять",
+  "en": "Set or remove the 2FA password. Empty new password = remove"
+ },
+ "b10_48": {
+  "ru": "Задать @username этого аккаунта (пустая строка = очистить).",
+  "en": "Set this account's @username (empty string = clear)."
+ },
+ "b10_49": {
+  "ru": "Задать публичный username аккаунта (пусто = очистить)",
+  "en": "Set the account's public username (empty = clear)"
+ },
+ "b10_50": {
+  "ru": "Задать username",
+  "en": "Set username"
+ },
+ "b10_51": {
+  "ru": "Токен доступа TAM_WEB_TOKEN",
+  "en": "Access token TAM_WEB_TOKEN"
+ },
+ "b10_52": {
+  "ru": "Определить динамическую страницу получения кода того же источника, вернуть эндпоинты latest/restart.",
+  "en": "Detect the same-origin dynamic code page and return the latest/restart endpoints."
+ },
+ "b10_53": {
+  "ru": "Попробуйте автопочинку: python -m tam.cli doctor --fix",
+  "en": "Try auto-fix: python -m tam.cli doctor --fix"
+ },
+ "b10_54": {
+  "ru": "У этого tdata задан локальный passcode, укажите его при импорте",
+  "en": "This tdata has a local passcode, enter it when importing"
+ },
+ "b10_55": {
+  "ru": "Фактический период сброса устройств для аккаунта (часы). Приоритет у настройки аккаунта, иначе глобальная.",
+  "en": "Effective device-reset period for the account (hours). Per-account setting wins, else global."
+ },
+ "b10_56": {
+  "ru": "В сообщении нет медиа",
+  "en": "The message has no media"
+ },
+ "b10_57": {
+  "ru": "Аккаунт не авторизован или сессия очищена, сначала вход/импорт",
+  "en": "Account is not signed in or its session was cleared, sign in/import first"
+ },
+ "b10_58": {
+  "ru": "На аккаунте включена 2FA, введите пароль 2FA и повторите",
+  "en": "2FA is enabled on this account, enter the 2FA password and retry"
+ },
+ "b10_59": {
+  "ru": "На аккаунте включена 2FA, повторите с password",
+  "en": "2FA is enabled on this account, retry with password"
+ },
+ "b10_60": {
+  "ru": "У аккаунта не задана ссылка для получения кода code_url",
+  "en": "The account has no code-retrieval link code_url"
+ },
+ "b10_61": {
+  "ru": "Пояснительный текст",
+  "en": "Explanatory text"
+ },
+ "b10_62": {
+  "ru": "Удалите в .env строку с неверным ключом, затем заново запустите setup.py.",
+  "en": "Delete the wrong key line in .env, then rerun setup.py to generate it."
+ },
+ "b10_63": {
+  "ru": "Укажите @username / ссылку / invite hash",
+  "en": "Enter @username / link / invite hash"
+ },
+ "b10_64": {
+  "ru": "Укажите @username / ID диалога",
+  "en": "Enter chat @username / ID"
+ },
+ "b10_65": {
+  "ru": "Укажите поисковый запрос",
+  "en": "Enter search keywords"
+ },
+ "b10_66": {
+  "ru": "Укажите группу @username / ID",
+  "en": "Enter group @username / ID"
+ },
+ "b10_67": {
+  "ru": "Укажите пользователя для разблокировки (@username / ID / телефон)",
+  "en": "Enter the user to unblock (@username / ID / phone)"
+ },
+ "b10_68": {
+  "ru": "Укажите пользователя для блокировки (@username / ID / телефон)",
+  "en": "Enter the user to block (@username / ID / phone)"
+ },
+ "b10_69": {
+  "ru": "Запросить остановку; для завершённой задачи вернёт False.",
+  "en": "Request stop; returns False for a finished task."
+ },
+ "b10_70": {
+  "ru": "В Telegram на телефоне: Настройки → Устройства → Сканировать QR-код (или отсканируйте QR-код на этой странице)",
+  "en": "In Telegram on your phone: Settings → Devices → Scan QR code (or scan the QR code on this page)"
+ },
+ "b10_71": {
+  "ru": "Прочитать переменную окружения с длительностью и единицей, с нижней границей (чтобы 1s не убило процесс).",
+  "en": "Read a duration env var with a unit, enforcing a floor (so 1s doesn't kill the process)."
+ },
+ "b10_72": {
+  "ru": "Читать key_datas",
+  "en": "Read key_datas"
+ },
+ "b10_73": {
+  "ru": "Прочитать файл-контейнер TDF, проверить md5 и вернуть тело.",
+  "en": "Read a TDF container file, verify md5 and return the body."
+ },
+ "b10_74": {
+  "ru": "Прочитать одно сообщение",
+  "en": "Read a single message"
+ },
+ "b10_75": {
+  "ru": "Прочитать полное содержимое одного сообщения.",
+  "en": "Read the full content of a single message."
+ },
+ "b10_76": {
+  "ru": "Прочитать текущие значения параметров (по группам, без секретов в открытом виде)",
+  "en": "Read current settings values (grouped, no plaintext secrets)"
+ },
+ "b10_77": {
+  "ru": "Ошибка чтения: {exc}",
+  "en": "Read failed: {exc}"
+ },
+ "b10_78": {
+  "ru": "Не удалось прочитать официальный код: {exc}",
+  "en": "Failed to read the official verification code: {exc}"
+ },
+ "b10_79": {
+  "ru": "Читать журнал аудита",
+  "en": "Read audit log"
+ },
+ "b10_80": {
+  "ru": "Прочитать текст последних сообщений диалога (с поиском по ключевым словам)",
+  "en": "Read recent chat message text (keyword search supported)"
+ },
+ "b10_81": {
+  "ru": "Прочитать соль",
+  "en": "Read salt"
+ },
+ "b10_82": {
+  "ru": "Прочитать последние сообщения группы/канала/диалога",
+  "en": "Read recent messages of a group/channel/chat"
+ },
+ "b10_83": {
+  "ru": "Прочитать текст последних сообщений группы/канала/личного чата.",
+  "en": "Read recent message text of a group/channel/private chat."
+ },
+ "b10_84": {
+  "ru": "Читать сообщения группы",
+  "en": "Read group messages"
+ },
+ "b10_85": {
+  "ru": "Прочитать список аккаунтов",
+  "en": "Read account list"
+ },
+ "b10_86": {
+  "ru": "Вызвать инструмент",
+  "en": "Call tool"
+ },
+ "b10_87": {
+  "ru": "Аккаунт #{index}",
+  "en": "Account #{index}"
+ },
+ "b10_88": {
+  "ru": "Аккаунт #{to_id} не существует",
+  "en": "Account #{to_id} not found"
+ },
+ "b10_89": {
+  "ru": "У аккаунта #{to_id} нет ни username, ни телефона, обмен сообщениями невозможен (сначала проверка работоспособности, чтобы дополнить данные)",
+  "en": "Account #{to_id} has neither username nor phone, cannot chat (run a health check first to fill in details)"
+ },
+ "b10_90": {
+  "ru": "Аккаунт A отправляет аккаунту B случайную фразу (сначала убедитесь, что сущность получателя резолвится).",
+  "en": "Account A sends account B a random phrase (first make sure the peer entity resolves)."
+ },
+ "b10_91": {
+  "ru": "ID аккаунта",
+  "en": "Account ID"
+ },
+ "b10_92": {
+  "ru": "Аккаунт {acc.label} не авторизован",
+  "en": "Account {acc.label} is not authorized"
+ },
+ "b10_93": {
+  "ru": "Аккаунт {account_id} не существует",
+  "en": "Account {account_id} not found"
+ },
+ "b10_94": {
+  "ru": "Аккаунт {i} вне разрешённого для AI набора {sorted(allow_set)}",
+  "en": "Account {i} is outside the AI-allowed set {sorted(allow_set)}"
+ },
+ "b10_95": {
+  "ru": "Аккаунт не существует",
+  "en": "Account not found"
+ },
+ "b10_96": {
+  "ru": "Аккаунт не существует или не указан телефон",
+  "en": "Account not found or phone number missing"
+ },
+ "b10_97": {
+  "ru": "Аккаунт занят другой операцией (проверка работоспособности/импорт и т.п.), повторите перегенерацию позже",
+  "en": "Account is busy with another operation (health check/import etc.), retry regeneration later"
+ },
+ "b10_98": {
+  "ru": "Статистика статусов аккаунтов",
+  "en": "Account status stats"
+ },
+ "b10_99": {
+  "ru": "Ядро управления аккаунтами: мультиаккаунтные сессии на Telethon (MTProto).",
+  "en": "Account management core: multi-account session management on Telethon (MTProto)."
+ },
+ "b10_100": {
+  "ru": "Таймаут (с)",
+  "en": "Timeout (s)"
+ },
+ "b10_101": {
+  "ru": "До следующего цикла осталось",
+  "en": "Time until next cycle"
+ },
+ "b10_102": {
+  "ru": "Путь не существует: {root}",
+  "en": "Path does not exist: {root}"
+ },
+ "b10_103": {
+  "ru": "Путь не может быть пустым",
+  "en": "Path cannot be empty"
+ },
+ "b10_104": {
+  "ru": "Путь должен быть внутри каталога data: {root}",
+  "en": "Path must be inside the data directory: {root}"
+ },
+ "b10_105": {
+  "ru": "Сбросить другие устройства",
+  "en": "Terminate other devices"
+ },
+ "b10_106": {
+  "ru": "Сбросить другие устройства, оставить только текущее.",
+  "en": "Terminate other devices, keep only this one."
+ },
+ "b10_107": {
+  "ru": "Сбросить все входы аккаунта, кроме текущей сессии",
+  "en": "Terminate all sign-ins of the account except this session"
+ },
+ "b10_108": {
+  "ru": "Сбросить все сессии, кроме текущей, и заново запросить список для подтверждения.",
+  "en": "Terminate every session except this one, then re-fetch the list to confirm."
+ },
+ "b10_109": {
+  "ru": "Переслать сообщение",
+  "en": "Forward message"
+ },
+ "b10_110": {
+  "ru": "Переслать сообщение в другой диалог",
+  "en": "Forward a message to another chat"
+ },
+ "b10_111": {
+  "ru": "Переслать сообщение в другой диалог.",
+  "en": "Forward a message to another chat."
+ },
+ "b10_112": {
+  "ru": "Привести к цели для рассылки: если есть username, то @username, иначе числовой ID.",
+  "en": "Normalize to a broadcast-ready target: @username if available, else numeric ID."
+ },
+ "b10_113": {
+  "ru": "Опрашивать до появления нового кода, отличного от exclude. По таймауту TimeoutError.",
+  "en": "Poll until a new code different from exclude appears. Raises TimeoutError on timeout."
+ },
+ "b10_114": {
+  "ru": "Каталог вывода (необязательно)",
+  "en": "Output directory (optional)"
+ },
+ "b10_115": {
+  "ru": "Спасибо за работу",
+  "en": "Thanks for your hard work"
+ },
+ "b10_116": {
+  "ru": "Эксплуатация (по умолчанию)",
+  "en": "Ops (default)"
+ },
+ "b10_117": {
+  "ru": "Конфигурация запуска. Все чувствительные значения берутся из переменных окружения или .env.",
+  "en": "Runtime config. All sensitive values come from env vars or .env."
+ },
+ "b10_118": {
+  "ru": "Возвращает (assistant_text, tool_calls_as_openai_shape).",
+  "en": "Returns (assistant_text, tool_calls_as_openai_shape)."
+ },
+ "b10_119": {
+  "ru": "Вернуть список инструментов, готовый для LLM / MCP.",
+  "en": "Return a tool list ready to feed to LLM / MCP."
+ },
+ "b10_120": {
+  "ru": "Вернуть для фронтенда: api_key без открытого текста.",
+  "en": "Return to the frontend: api_key plaintext hidden."
+ },
+ "b10_121": {
+  "ru": "Вернуть метку времени следующего автосброса устройств для аккаунта; None = не участвует.",
+  "en": "Return the next auto device-reset timestamp for the account; None = not participating."
+ },
+ "b10_122": {
+  "ru": "У аккаунта уже задан 2FA, нужно указать текущий пароль",
+  "en": "This account already has 2FA, current password required"
+ },
+ "b10_123": {
+  "ru": "На аккаунте не включена 2FA, сбрасывать нечего",
+  "en": "This account has no 2FA, nothing to reset"
+ },
+ "b10_124": {
+  "ru": "Аккаунт не авторизован (session истекла)",
+  "en": "This account is not signed in (session expired)"
+ },
+ "b10_125": {
+  "ru": "У аккаунта ещё нет 2FA, текущий пароль оставьте пустым",
+  "en": "This account has no 2FA yet, leave the current password empty"
+ },
+ "b10_126": {
+  "ru": "Операция необратима, нужно поставить галочку подтверждения",
+  "en": "This is irreversible, the confirmation box must be checked"
+ },
+ "b10_127": {
+  "ru": "Не удалось подключиться к Telegram: {type(exc).__name__}: {exc}",
+  "en": "Failed to connect to Telegram: {type(exc).__name__}: {exc}"
+ },
+ "b10_128": {
+  "ru": "Удалять вместе с личными чатами (опасно)",
+  "en": "Delete private chats too (dangerous)"
+ },
+ "b10_129": {
+  "ru": "Выйти (аннулировать session)",
+  "en": "Sign out (invalidate session)"
+ },
+ "b10_130": {
+  "ru": "Выход: аннулировать текущую session (телефон остаётся привязан, аккаунт Telegram не удаляется)",
+  "en": "Sign out: invalidate the current session (phone stays linked, Telegram account is not deleted)"
+ },
+ "b10_131": {
+  "ru": "Выход: аннулировать текущую session, не отвязывать телефон и не удалять аккаунт Telegram.",
+  "en": "Sign out: invalidate the current session without unlinking the phone or deleting the Telegram account."
+ },
+ "b10_132": {
+  "ru": "Выход: по возможности отозвать вход в Telegram и в любом случае очистить локальную сессию.",
+  "en": "Sign out: try to log out on Telegram and clear the local session regardless of the remote result."
+ },
+ "b10_133": {
+  "ru": "Выйти из группы/канала",
+  "en": "Leave group/channel"
+ },
+ "b10_134": {
+  "ru": "Выйти из групп и каналов. Личные чаты по умолчанию не трогаются (там могут быть коды)",
+  "en": "Leave groups and channels. Private chats are left untouched by default (codes may be there)"
+ },
+ "b10_135": {
+  "ru": "Пошаговый отчёт диагностики, в режиме отладки показывается пользователю напрямую.",
+  "en": "Step-by-step diagnostic report, shown to the user directly in debug mode."
+ },
+ "b10_136": {
+  "ru": "Универсальная прямая ссылка",
+  "en": "Generic direct link"
+ },
+ "b10_137": {
+  "ru": "Список контактов",
+  "en": "Contacts list"
+ },
+ "b10_138": {
+  "ru": "Не удалось войти по ссылке-приглашению: {type(exc).__name__}: {exc}",
+  "en": "Failed to join via invite link: {type(exc).__name__}: {exc}"
+ },
+ "b10_139": {
+  "ru": "Загрузка конфигурации",
+  "en": "Config loading"
+ },
+ "b10_140": {
+  "ru": "Распаковать полный пакет проекта заново",
+  "en": "Re-extract the full project archive"
+ },
+ "b10_141": {
+  "ru": "Интервал повтора не меньше %g с",
+  "en": "Retry interval cannot be less than %g s"
+ },
+ "b10_142": {
+  "ru": "Интервал повтора сброшен к конфигу/значению по умолчанию",
+  "en": "Retry interval reset to config/default"
+ },
+ "b10_143": {
+  "ru": "Интервал повтора изменён на %s",
+  "en": "Retry interval set to %s"
+ },
+ "b10_144": {
+  "ru": "Пары ключ-значение, ключ — имя параметра TAM_*, например {\"TAM_BATCH_CONCURRENCY\": \"5\"}",
+  "en": "Key-value pairs, keys are TAM_* parameter names, e.g. {\"TAM_BATCH_CONCURRENCY\": \"5\"}"
+ },
+ "b10_145": {
+  "ru": "Длина {len(body)}, проверка пройдена",
+  "en": "Length {len(body)}, check passed"
+ },
+ "b10_146": {
+  "ru": "Спросить @SpamBot, есть ли ограничения",
+  "en": "Ask @SpamBot whether the account is restricted"
+ },
+ "b10_147": {
+  "ru": "Спросить @SpamBot об ограничениях. Просто отправить боту /start и посмотреть на ответ.",
+  "en": "Ask @SpamBot whether the account is restricted. Just send /start to the bot and see its reply."
+ },
+ "b10_148": {
+  "ru": "Ядро защиты от восстановления: войти заново с новым отпечатком устройства, старую session аннулировать, в базу записать новую сессию.",
+  "en": "Anti-recovery core: sign in again with a new device fingerprint, invalidate the old session and write the new one to the DB."
+ },
+ "b10_149": {
+  "ru": "Очистка защиты от восстановления: удалить аватар/описание/username",
+  "en": "Anti-recovery cleanup: remove avatar/bio/username"
+ },
+ "b10_150": {
+  "ru": "Защита от восстановления: стереть следы, по которым прежний владелец узнает аккаунт (аватар, описание, username).",
+  "en": "Anti-recovery: wipe traces the previous owner could recognize (avatar, bio, username)."
+ },
+ "b10_151": {
+  "ru": "Сессии кроме текущей: hash -> читаемое описание.",
+  "en": "Sessions other than this one: hash -> human-readable description."
+ },
+ "b10_152": {
+  "ru": "Случайно отметить несколько диалогов прочитанными, имитируя живого пользователя.",
+  "en": "Mark a few random chats as read, imitating a real person browsing."
+ },
+ "b10_153": {
+  "ru": "Пункт конфиденциальности",
+  "en": "Privacy item"
+ },
+ "b10_154": {
+  "ru": "Нужен bot (@username бота)",
+  "en": "bot required (@Bot username)"
+ },
+ "b10_155": {
+  "ru": "Нужны from_peer, to_peer, message_ids",
+  "en": "from_peer, to_peer, message_ids required"
+ },
+ "b10_156": {
+  "ru": "Нужен path (локальный путь к файлу на сервере)",
+  "en": "path required (local file path on the server)"
+ },
+ "b10_157": {
+  "ru": "Нужен target",
+  "en": "target required"
+ },
+ "b10_158": {
+  "ru": "Нужны target и message_id",
+  "en": "target and message_id required"
+ },
+ "b10_159": {
+  "ru": "Нужны target и message_ids",
+  "en": "target and message_ids required"
+ },
+ "b10_160": {
+  "ru": "Нужны target, message_id, text",
+  "en": "target, message_id, text required"
+ },
+ "b10_161": {
+  "ru": "Нужен target (@username / ID пользователя / телефон)",
+  "en": "target required (@username / user ID / phone)"
+ },
+ "b10_162": {
+  "ru": "Нужны файлы tdata / .session, воспользуйтесь функцией экспорта.",
+  "en": "Need tdata / .session files, use the export feature."
+ },
+ "b10_163": {
+  "ru": "Нужен title",
+  "en": "title required"
+ },
+ "b10_164": {
+  "ru": "Требуется {MIN_PY[0]}.{MIN_PY[1]} или новее, скачайте новую версию на python.org и переустановите",
+  "en": "Requires {MIN_PY[0]}.{MIN_PY[1]} or newer, download a new build from python.org and reinstall"
+ },
+ "b10_165": {
+  "ru": "При необходимости получите пару на my.telegram.org, одна пара на все аккаунты.",
+  "en": "Get a pair at my.telegram.org if needed, one pair is shared by all accounts."
+ },
+ "b10_166": {
+  "ru": "Нужно название группы title",
+  "en": "Group title (title) required"
+ },
+ "b10_167": {
+  "ru": "Код истёк, повторите",
+  "en": "The code has expired, please retry"
+ },
+ "b10_168": {
+  "ru": "Код неверный или уже недействителен, повторите",
+  "en": "The code is wrong or no longer valid, please retry"
+ },
+ "b10_169": {
+  "ru": "Опасное действие выполняется только при true",
+  "en": "High-risk actions only run when set to true"
+ },
+ "b10_170": {
+  "ru": "(ограничение Telegram, не сбой локальной системы)",
+  "en": "(Telegram rate limit, not a local failure)"
+ },
+ "b10_171": {
+  "ru": "({len(result['warned'])} предупреждений, работе не мешает)",
+  "en": "({len(result['warned'])} warnings, does not affect use)"
+ },
+ "b10_172": {
+  "ru": "(только проверка, без изменений)",
+  "en": "(check only, no changes)"
+ },
+ "b10_173": {
+  "ru": "(сейчас: {type(exc).__name__}: {exc})",
+  "en": "(current: {type(exc).__name__}: {exc})"
+ },
+ "b10_174": {
+  "ru": "(нет текстового ответа)",
+  "en": "(no text reply)"
+ },
+ "b10_175": {
+  "ru": "(последняя ошибка: {last_err!r})",
+  "en": "(last error: {last_err!r})"
+ },
+ "b10_176": {
+  "ru": "(в правильном каталоге должны быть key_datas и D877F783D5D3EF8C)",
+  "en": "(a correct directory should contain key_datas and D877F783D5D3EF8C)"
+ },
+ "b10_177": {
+  "ru": "(режим автопочинки)",
+  "en": "(auto-fix mode)"
+ },
+ "b10_178": {
+  "ru": "(достигнут лимит раундов инструментов, остановлено)",
+  "en": "(max tool rounds reached, stopped)"
+ },
+ "b10_179": {
+  "ru": ") сопоставляется с именем файла-шарда в tdata (например D877F783D5D3EF8C).",
+  "en": ") maps to the shard file name inside tdata (e.g. D877F783D5D3EF8C)."
+ },
+ "b10_180": {
+  "ru": ", среди них есть новый вход, возможно, у другой стороны есть пароль или идёт автоперевход",
+  "en": ", including a new sign-in, the other party may hold the password or be auto-relogging"
+ },
+ "b10_181": {
+  "ru": "; к аккаунту привязан резервный email, прежний владелец всё ещё может восстановить 2FA через почту",
+  "en": "; the account has a backup email, so the previous owner may still recover 2FA via email"
+ },
+ "b10_182": {
+  "ru": "%s в работе · всего %s",
+  "en": "%s in progress · %s total"
+ },
+ "b10_183": {
+  "ru": "%s чел.",
+  "en": "%s people"
+ },
+ "b10_184": {
+  "ru": "%s пунктов не пройдено, подробности в журнале ниже",
+  "en": "%s checks failed, details in the log below"
+ },
+ "b10_185": {
+  "ru": "Проверка баланса OKPay · бот @%s",
+  "en": "OKPay balance check · bot @%s"
+ },
+ "b10_186": {
+  "ru": "Ответ SpamBot: %s",
+  "en": "SpamBot reply: %s"
+ },
+ "b10_187": {
+  "ru": "· %s с файлом 2FA, %s с 2FA без сохранённого пароля",
+  "en": "· %s with 2FA files, %s with 2FA but no saved password"
+ },
+ "b10_188": {
+  "ru": "· далее %s",
+  "en": "· next %s"
+ },
+ "b10_189": {
+  "ru": "· остались другие устройства %s",
+  "en": "· other devices still present %s"
+ },
+ "b10_190": {
+  "ru": "· найдено tdata — %s",
+  "en": "· found tdata — %s"
+ },
+ "b10_191": {
+  "ru": "· недействительных %s",
+  "en": "· expired %s"
+ },
+ "b10_192": {
+  "ru": "· в очереди %s · интервал сканирования %s мин",
+  "en": "· pending %s · scan interval %s min"
+ },
+ "b10_193": {
+  "ru": "· успешных аккаунтов %s",
+  "en": "· successful accounts %s"
+ },
+ "b10_194": {
+  "ru": "· активных %s",
+  "en": "· active %s"
+ },
+ "b10_195": {
+  "ru": "· до сброса всего %s авторизаций",
+  "en": "· %s authorizations before reset"
+ },
+ "b10_196": {
+  "ru": "• %s: %s",
+  "en": "• %s: %s"
+ },
+ "b10_197": {
+  "ru": "…всего %s записей, показаны первые 60",
+  "en": "…%s entries total, showing first 60"
+ },
+ "b10_198": {
+  "ru": "…ещё %s записей",
+  "en": "…%s more entries"
+ },
+ "b10_199": {
+  "ru": "✓ %s новое устройство %s",
+  "en": "✓ %s new device %s"
+ }
+}
