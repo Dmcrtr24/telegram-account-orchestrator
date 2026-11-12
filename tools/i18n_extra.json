@@ -4,28 +4,28 @@
   "en": "min"
  },
  "%s 分钟后": {
-  "ru": "через %s",
-  "en": "in %s"
+  "ru": "через %s мин",
+  "en": "in %s min"
  },
  "%s 分钟前": {
-  "ru": "%s назад",
-  "en": "%s ago"
+  "ru": "%s мин назад",
+  "en": "%s min ago"
  },
  "%s 小时后": {
-  "ru": "через %s",
-  "en": "in %s"
+  "ru": "через %s ч",
+  "en": "in %s h"
  },
  "%s 小时前": {
-  "ru": "%s назад",
-  "en": "%s ago"
+  "ru": "%s ч назад",
+  "en": "%s h ago"
  },
  "%s 天后": {
-  "ru": "через %s",
-  "en": "in %s"
+  "ru": "через %s дн.",
+  "en": "in %s d"
  },
  "%s 天前": {
-  "ru": "%s назад",
-  "en": "%s ago"
+  "ru": "%s дн. назад",
+  "en": "%s d ago"
  },
  "%s 分钟": {
   "ru": "%s мин",
@@ -602,5 +602,1729 @@
  "冻结 %s": {
   "ru": "Замороженных %s",
   "en": "Frozen %s"
+ },
+ "刚刚": {
+  "ru": "только что",
+  "en": "just now"
+ },
+ "通过": {
+  "ru": "пройдена",
+  "en": "passed"
+ },
+ "通过，但账号受限": {
+  "ru": "пройдена, но аккаунт ограничен",
+  "en": "passed, but account is restricted"
+ },
+ "本地有会话": {
+  "ru": "сессия сохранена локально",
+  "en": "session stored locally"
+ },
+ "本地无会话": {
+  "ru": "сессии локально нет",
+  "en": "no local session"
+ },
+ "本地仍保留会话": {
+  "ru": "локальная сессия сохранена",
+  "en": "local session still stored"
+ },
+ "资料": {
+  "ru": "Профиль",
+  "en": "Profile"
+ },
+ "概览": {
+  "ru": "Обзор",
+  "en": "Overview"
+ },
+ "检测与查看": {
+  "ru": "Проверки и просмотр",
+  "en": "Checks and view"
+ },
+ "导出与安全": {
+  "ru": "Экспорт и безопасность",
+  "en": "Export and security"
+ },
+ "官方验证码": {
+  "ru": "Официальный код",
+  "en": "Official code"
+ },
+ "更多": {
+  "ru": "Ещё",
+  "en": "More"
+ },
+ "下次": {
+  "ru": "Далее",
+  "en": "Next"
+ },
+ "，按本机接管时间计时": {
+  "ru": ", отсчёт от времени перехвата",
+  "en": ", counted from local takeover"
+ },
+ "下次 %s（%s）%s": {
+  "ru": "Далее %s (%s)%s",
+  "en": "Next %s (%s)%s"
+ },
+ "上次 %s，%s": {
+  "ru": "Прошлый раз %s, %s",
+  "en": "Last time %s, %s"
+ },
+ "上次检查：%s": {
+  "ru": "Последняя проверка: %s",
+  "en": "Last check: %s"
+ },
+ "还没检查过": {
+  "ru": "ещё не проверялся",
+  "en": "never checked"
+ },
+ "检查出错：%s": {
+  "ru": "Ошибка проверки: %s",
+  "en": "Check error: %s"
+ },
+ "原因：%s": {
+  "ru": "Причина: %s",
+  "en": "Reason: %s"
+ },
+ "（%s 分钟前）": {
+  "ru": "( %s мин назад)",
+  "en": "(%s min ago)"
+ },
+ "（%s 小时前）": {
+  "ru": "( %s ч назад)",
+  "en": "(%s h ago)"
+ },
+ "（%s 天前）": {
+  "ru": "( %s дн. назад)",
+  "en": "(%s d ago)"
+ },
+ "用户 ID=%s": {
+  "ru": "ID пользователя=%s",
+  "en": "user ID=%s"
+ },
+ "账号 ID=%s": {
+  "ru": "ID аккаунта=%s",
+  "en": "account ID=%s"
+ },
+ "健康检查": {
+  "ru": "Проверка работоспособности",
+  "en": "Health check"
+ },
+ "正常": {
+  "ru": "активен",
+  "en": "active"
+ },
+ "操作": {
+  "ru": "Действие",
+  "en": "Action"
+ },
+ "重新分析": {
+  "ru": "Проанализировать заново",
+  "en": "Re-analyze"
+ },
+ "重新检查": {
+  "ru": "Проверить заново",
+  "en": "Re-check"
+ },
+ "不满足条件": {
+  "ru": "не подходит под условие",
+  "en": "does not match"
+ },
+ "等": {
+  "ru": "и др.",
+  "en": "etc."
+ },
+ "· 可多选": {
+  "ru": " · можно несколько",
+  "en": " · multiple"
+ },
+ "上次检查：": {
+  "ru": "Последняя проверка: ",
+  "en": "Last check: "
+ },
+ "任意文件": {
+  "ru": "любой файл",
+  "en": "any file"
+ },
+ "分钟前": {
+  "ru": "мин назад",
+  "en": "min ago"
+ },
+ "天前": {
+  "ru": "дн. назад",
+  "en": "d ago"
+ },
+ "小时前": {
+  "ru": "ч назад",
+  "en": "h ago"
+ },
+ "已导入": {
+  "ru": "Импортировано",
+  "en": "Imported"
+ },
+ "已跳过：": {
+  "ru": "Пропущено: ",
+  "en": "Skipped: "
+ },
+ "开": {
+  "ru": "Вкл.",
+  "en": "On"
+ },
+ "支持": {
+  "ru": "поддерживается",
+  "en": "supported"
+ },
+ "未知地区": {
+  "ru": "Регион неизвестен",
+  "en": "Unknown region"
+ },
+ "未选": {
+  "ru": "не выбрано",
+  "en": "none"
+ },
+ "行": {
+  "ru": "стр.",
+  "en": "rows"
+ },
+ "重新登录": {
+  "ru": "Войти заново",
+  "en": "Sign in again"
+ },
+ "0 表示不限": {
+  "ru": "0 = без ограничений",
+  "en": "0 = unlimited"
+ },
+ "StringSession：把登录会话压成一长串文本，粘贴就能导入，不需要文件。": {
+  "ru": "StringSession: сессия входа одной строкой — вставьте текст, файл не нужен.",
+  "en": "StringSession: the login session as one string — paste it, no file needed."
+ },
+ "TAO 向你问好 ✦": {
+  "ru": "TAO приветствует вас ✦",
+  "en": "TAO says hello ✦"
+ },
+ "[取码链接已隐藏]": {
+  "ru": "[ссылка для кода скрыта]",
+  "en": "[code link hidden]"
+ },
+ "\\n\\n继续处理其余": {
+  "ru": "\\n\\nПродолжить обработку остальных",
+  "en": "\\n\\nContinue with the rest"
+ },
+ "\\n\\n请在下方输入「": {
+  "ru": "\\n\\nВведите ниже «",
+  "en": "\\n\\nEnter below “"
+ },
+ "\\n失败摘要：": {
+  "ru": "\\nСводка ошибок: ",
+  "en": "\\nFailure summary: "
+ },
+ "banned frozen 封禁 冻结 清理 删除": {
+  "ru": "banned frozen забанен заморожен очистка удалить",
+  "en": "banned frozen banned frozen cleanup delete"
+ },
+ "check all 检查 体检 健康 全部": {
+  "ru": "check all проверить диагностика здоровье все",
+  "en": "check all check doctor health all"
+ },
+ "focus calm 专注 简洁 动效 关闭特效": {
+  "ru": "focus calm фокус простой анимации выключить эффекты",
+  "en": "focus calm focus simple animation turn off effects"
+ },
+ "import 导入 批量 手机号": {
+  "ru": "import импорт пакетно телефон",
+  "en": "import import bulk phone"
+ },
+ "login all 登录 全部 未授权 未登录 失效": {
+  "ru": "login all вход все неавторизован истёк",
+  "en": "login all sign in all unauthorized expired"
+ },
+ "session：登录凭证文件。有它就不用重新收验证码。": {
+  "ru": "session: файл учётных данных входа. С ним не нужно заново принимать код.",
+  "en": "session: the login credential file. With it you don't need a new code."
+ },
+ "tdata 体检明细": {
+  "ru": "Диагностика tdata",
+  "en": "tdata diagnostics"
+ },
+ "tdata 压缩包": {
+  "ru": "Архив tdata",
+  "en": "tdata archive"
+ },
+ "tdata：电脑版 Telegram 的数据文件夹，里面保存着已登录的账号。打成 zip 上传即可。": {
+  "ru": "tdata: папка данных Telegram Desktop с уже авторизованными аккаунтами. Загрузите её архивом.",
+  "en": "tdata: the Telegram Desktop data folder with signed-in accounts. Upload it as a zip."
+ },
+ "· 将跳过": {
+  "ru": " · будет пропущено",
+  "en": " · will be skipped"
+ },
+ "· 服务端执行中…": {
+  "ru": " · выполняется на сервере…",
+  "en": " · running on the server…"
+ },
+ "· 约剩": {
+  "ru": " · осталось ~",
+  "en": " · ~ left"
+ },
+ "一键完成：登录 → 检查 → 导出可用账号": {
+  "ru": "В один клик: вход → проверка → экспорт рабочих аккаунтов",
+  "en": "One-click: sign in → check → export working accounts"
+ },
+ "专注模式已关闭": {
+  "ru": "Режим фокуса выключен",
+  "en": "Focus mode off"
+ },
+ "专注模式已开启：装饰动效已关闭": {
+  "ru": "Режим фокуса включён: декоративные эффекты отключены",
+  "en": "Focus mode on: decorative effects disabled"
+ },
+ "两步验证（二验）：Telegram 的第二层密码，登录时除了验证码还要输入它。": {
+  "ru": "2FA (второй фактор): второй пароль Telegram, вводится при входе вместе с кодом.",
+  "en": "2FA: Telegram's second password, entered together with the code."
+ },
+ "个已封禁/冻结，建议移除": {
+  "ru": "забанено/заморожено — лучше удалить",
+  "en": "banned/frozen — better remove"
+ },
+ "个文件": {
+  "ru": "файлов",
+  "en": "files"
+ },
+ "个星座（": {
+  "ru": "созвездий (",
+  "en": "constellations ("
+ },
+ "个未登录，可先自动登录": {
+  "ru": "не авторизованы — можно сначала войти автоматически",
+  "en": "unauthorized — auto sign-in first"
+ },
+ "个账号都不满足条件：": {
+  "ru": "аккаунтов не подходят под условие:",
+  "en": "accounts do not match the condition:"
+ },
+ "个，可在底部操作栏处理": {
+  "ru": ", можно обработать в нижней панели",
+  "en": ", can be handled in the bottom bar"
+ },
+ "个？": {
+  "ru": "?",
+  "en": "?"
+ },
+ "临时被限制发消息，通常过几天自动解除。": {
+  "ru": "Временно ограничена отправка сообщений — обычно снимается само через несколько дней.",
+  "en": "Sending is temporarily restricted — usually lifts by itself in a few days."
+ },
+ "代理池设置（可选）": {
+  "ru": "Настройки пула прокси (необязательно)",
+  "en": "Proxy pool settings (optional)"
+ },
+ "以下账号会被跳过：\\n": {
+  "ru": "Эти аккаунты будут пропущены:\\n",
+  "en": "These accounts will be skipped:\\n"
+ },
+ "任务明细": {
+  "ru": "Детали задачи",
+  "en": "Task details"
+ },
+ "会话已失效，需要重新登录。": {
+  "ru": "Сессия недействительна, нужен повторный вход.",
+  "en": "Session expired, sign in again."
+ },
+ "先处理第一组": {
+  "ru": "Сначала обработайте первую группу",
+  "en": "Handle the first group first"
+ },
+ "具体原因还没记录，点「重新检查」获取最新原因": {
+  "ru": "Причина не записана — нажмите «Проверить заново»",
+  "en": "Reason not recorded — press “Re-check”"
+ },
+ "出错": {
+  "ru": "Ошибка",
+  "en": "Error"
+ },
+ "分组）": {
+  "ru": "групп)",
+  "en": "groups)"
+ },
+ "刚导入，还没登录过。点「登录」开始。": {
+  "ru": "Только импортирован, входа ещё не было. Нажмите «Войти».",
+  "en": "Just imported, never signed in. Press “Sign in”."
+ },
+ "单个手机号": {
+  "ru": "Один номер",
+  "en": "Single phone"
+ },
+ "原因：": {
+  "ru": "Причина: ",
+  "en": "Reason: "
+ },
+ "取码链接：接码平台提供的网址，打开能看到发给这个手机号的验证码，用于自动登录。": {
+  "ru": "Ссылка для кода: адрес сервиса приёма кодов — по нему виден код, пришедший на номер, для автовхода.",
+  "en": "Code link: a URL from a code-receiving service that shows the code sent to this number, used for auto sign-in."
+ },
+ "变体：用 {你好|在吗} 这样的写法，每条消息随机挑一个，避免内容完全一样被判为群发。": {
+  "ru": "Варианты: запись вида {привет|ты тут} — в каждое сообщение подставляется случайный вариант, чтобы тексты не совпадали.",
+  "en": "Variants: {hi|you there} picks a random option per message so texts never match exactly."
+ },
+ "后端未返回结果": {
+  "ru": "Бэкенд не вернул результат",
+  "en": "Backend returned no result"
+ },
+ "后端还不支持混合导入，请更新后端；或先用「工具 → ZIP 拆包」分成两个压缩包": {
+  "ru": "Бэкенд не поддерживает смешанный импорт — обновите его или разбейте архив через «Инструменты → Распаковка».",
+  "en": "Backend does not support mixed import — update it or split the archive via “Tools → Unpack”."
+ },
+ "完成 · 成功": {
+  "ru": "Готово · успешно",
+  "en": "Done · success"
+ },
+ "容量需要非负整数": {
+  "ru": "Ёмкость должна быть целым неотрицательным числом",
+  "en": "Capacity must be a non-negative integer"
+ },
+ "导入中…": {
+  "ru": "Импорт…",
+  "en": "Importing…"
+ },
+ "将真实重启后端进程（os.execv），约 1–3 秒服务不可用。\\n进行中的导入/任务会中断。\\n确认继续？": {
+  "ru": "Бэкенд будет перезапущен (os.execv), 1–3 секунды недоступности.\\nТекущие импорты и задачи прервутся.\\nПродолжить?",
+  "en": "The backend will restart (os.execv), 1–3 seconds of downtime.\\nRunning imports and tasks will be interrupted.\\nContinue?"
+ },
+ "将迁移 %s 个账号，跳过登录中 %s 个。\\n%s\\n\\n确认更换？": {
+  "ru": "Будет перенесено аккаунтов: %s, пропущено (идёт вход): %s.\\n%s\\n\\nСменить?",
+  "en": "Accounts to migrate: %s, skipped (signing in): %s.\\n%s\\n\\nSwitch?"
+ },
+ "尚未检查": {
+  "ru": "не проверялся",
+  "en": "not checked"
+ },
+ "已复制结果": {
+  "ru": "Результат скопирован",
+  "en": "Result copied"
+ },
+ "已更换 %s 个账号；登录中跳过 %s 个": {
+  "ru": "Заменено аккаунтов: %s; пропущено (идёт вход): %s",
+  "en": "Accounts replaced: %s; skipped (signing in): %s"
+ },
+ "已用": {
+  "ru": "занято",
+  "en": "in use"
+ },
+ "已选中": {
+  "ru": "выбрано",
+  "en": "selected"
+ },
+ "已配置": {
+  "ru": "настроено",
+  "en": "configured"
+ },
+ "已隐藏上手指南，可在「更多」菜单重新打开": {
+  "ru": "Руководство скрыто — вернуть можно в меню «Ещё»",
+  "en": "Guide hidden — reopen it from the “More” menu"
+ },
+ "当前：": {
+  "ru": "Текущий: ",
+  "en": "Current: "
+ },
+ "待导入": {
+  "ru": "к импорту",
+  "en": "to import"
+ },
+ "忽略": {
+  "ru": "Игнорировать",
+  "en": "Ignore"
+ },
+ "打开详情": {
+  "ru": "Открыть детали",
+  "en": "Open details"
+ },
+ "批量预热": {
+  "ru": "Прогрев пакетом",
+  "en": "Bulk warm-up"
+ },
+ "按第一个标签": {
+  "ru": "по первому тегу",
+  "en": "by first tag"
+ },
+ "排队": {
+  "ru": "в очереди",
+  "en": "queued"
+ },
+ "操作太频繁，被要求等待一段时间。": {
+  "ru": "Слишком частые действия — нужно подождать.",
+  "en": "Too many actions — please wait."
+ },
+ "操作结果 · 有失败": {
+  "ru": "Результат · есть ошибки",
+  "en": "Result · with failures"
+ },
+ "收起": {
+  "ru": "Свернуть",
+  "en": "Collapse"
+ },
+ "文件太大，超过后端上限；可调大 TAM_MIXED_MAX_UPLOAD_MB 后重试": {
+  "ru": "Файл больше лимита бэкенда; увеличьте TAM_MIXED_MAX_UPLOAD_MB и повторите",
+  "en": "File exceeds the backend limit; raise TAM_MIXED_MAX_UPLOAD_MB and retry"
+ },
+ "无法识别": {
+  "ru": "не распознано",
+  "en": "unrecognized"
+ },
+ "是": {
+  "ru": "Да",
+  "en": "Yes"
+ },
+ "最近一次操作出错，点开查看详情。": {
+  "ru": "Последняя операция завершилась ошибкой — откройте детали.",
+  "en": "The last operation failed — open details."
+ },
+ "最近活跃的发言人": {
+  "ru": "Недавно активные авторы",
+  "en": "Recently active posters"
+ },
+ "有": {
+  "ru": "есть",
+  "en": "yes"
+ },
+ "有 · 已保存": {
+  "ru": "есть · сохранён",
+  "en": "yes · saved"
+ },
+ "有 · 未保存": {
+  "ru": "есть · не сохранён",
+  "en": "yes · not saved"
+ },
+ "服务端执行失败": {
+  "ru": "Ошибка выполнения на сервере",
+  "en": "Server-side execution failed"
+ },
+ "未分组": {
+  "ru": "без группы",
+  "en": "ungrouped"
+ },
+ "未检查": {
+  "ru": "не проверен",
+  "en": "not checked"
+ },
+ "本地密码：电脑版 Telegram 设置的锁屏密码，不是账号密码。没设置就留空。": {
+  "ru": "Локальный пароль: код блокировки Telegram Desktop, не пароль аккаунта. Если не задан — оставьте пусто.",
+  "en": "Local passcode: the Telegram Desktop lock code, not the account password. Leave empty if unset."
+ },
+ "本地有会话，最近一次检查正常。注意：这不等于此刻一定在线，久未检查可以再查一次。": {
+  "ru": "Сессия сохранена локально, последняя проверка успешна. Это не значит, что аккаунт точно онлайн — при сомнении проверьте ещё раз.",
+  "en": "The session is stored locally and the last check passed. That does not guarantee the account is online now — re-check if unsure."
+ },
+ "查看": {
+  "ru": "Открыть",
+  "en": "Open"
+ },
+ "查看原因": {
+  "ru": "Показать причину",
+  "en": "Show reason"
+ },
+ "查看详情": {
+  "ru": "Подробнее",
+  "en": "Details"
+ },
+ "检查中": {
+  "ru": "проверяется",
+  "en": "checking"
+ },
+ "检查出错：": {
+  "ru": "Ошибка проверки: ",
+  "en": "Check error: "
+ },
+ "检查账号": {
+  "ru": "Проверить аккаунт",
+  "en": "Check account"
+ },
+ "每节点全局容量": {
+  "ru": "Общая ёмкость на узел",
+  "en": "Global capacity per node"
+ },
+ "永久限制发消息给陌生人。": {
+  "ru": "Навсегда ограничена отправка незнакомцам.",
+  "en": "Permanently restricted from messaging strangers."
+ },
+ "没有封禁或冻结的账号": {
+  "ru": "Нет забаненных или замороженных аккаунтов",
+  "en": "No banned or frozen accounts"
+ },
+ "没有已登录的账号": {
+  "ru": "Нет авторизованных аккаунтов",
+  "en": "No signed-in accounts"
+ },
+ "没有未登录的账号": {
+  "ru": "Нет неавторизованных аккаунтов",
+  "en": "No unauthorized accounts"
+ },
+ "混合导入 · 成功": {
+  "ru": "Смешанный импорт · успешно",
+  "en": "Mixed import · success"
+ },
+ "演示 · 批量检查": {
+  "ru": "Демо · пакетная проверка",
+  "en": "Demo · bulk check"
+ },
+ "用时": {
+  "ru": "время",
+  "en": "elapsed"
+ },
+ "确认对该账号发起 2FA 重置？\\n将进入官方等待期（通常约 7 天），到期后云密码失效。\\n若绑定了辅助邮箱，原持有人仍可能通过邮箱恢复。": {
+  "ru": "Запустить сброс 2FA для этого аккаунта?\\nНачнётся официальный период ожидания (обычно ~7 дней), после него облачный пароль перестанет действовать.\\nЕсли привязана почта, прежний владелец всё ещё может восстановить доступ через неё.",
+  "en": "Start a 2FA reset for this account?\\nAn official waiting period begins (usually ~7 days), after which the cloud password stops working.\\nIf a recovery email is linked, the previous owner may still recover access through it."
+ },
+ "确认更换": {
+  "ru": "Подтвердить замену",
+  "en": "Confirm replacement"
+ },
+ "确认更换代理": {
+  "ru": "Подтвердить смену прокси",
+  "en": "Confirm proxy change"
+ },
+ "稍后重新检查": {
+  "ru": "Проверить позже",
+  "en": "Check later"
+ },
+ "等待": {
+  "ru": "Ожидание",
+  "en": "Waiting"
+ },
+ "约剩": {
+  "ru": "осталось ~",
+  "en": "~ left"
+ },
+ "继续：确认导入设置": {
+  "ru": "Далее: подтвердите настройки импорта",
+  "en": "Next: confirm import settings"
+ },
+ "节点 %s：分配后 %s 个": {
+  "ru": "Узел %s: после распределения %s",
+  "en": "Node %s: %s after distribution"
+ },
+ "被 Telegram 限制了部分功能，点开查看原因。": {
+  "ru": "Часть функций ограничена Telegram — откройте причину.",
+  "en": "Some features are restricted by Telegram — open the reason."
+ },
+ "账号已在 Telegram 注销，只保留本地记录。": {
+  "ru": "Аккаунт удалён в Telegram, осталась только локальная запись.",
+  "en": "The account was deleted in Telegram; only the local record remains."
+ },
+ "账号已被封禁，无法再使用。": {
+  "ru": "Аккаунт забанен, использовать нельзя.",
+  "en": "The account is banned and cannot be used."
+ },
+ "账号被冻结，需要在官方客户端申诉。": {
+  "ru": "Аккаунт заморожен — нужна апелляция в официальном клиенте.",
+  "en": "The account is frozen — appeal in the official client."
+ },
+ "这片天空还没有星星。先添加几个账号吧。": {
+  "ru": "На этом небе пока нет звёзд. Добавьте аккаунты.",
+  "en": "No stars in this sky yet. Add some accounts."
+ },
+ "选中的": {
+  "ru": "выбранные",
+  "en": "selected"
+ },
+ "都已登录 → 建议先健康检查": {
+  "ru": "все авторизованы → сначала проверка работоспособности",
+  "en": "all signed in → run a health check first"
+ },
+ "都未登录 → 建议自动登录": {
+  "ru": "все не авторизованы → сначала автовход",
+  "en": "none signed in → auto sign-in first"
+ },
+ "重试导入": {
+  "ru": "Повторить импорт",
+  "en": "Retry import"
+ },
+ "项": {
+  "ru": "пунктов",
+  "en": "items"
+ },
+ "项参数未保存": {
+  "ru": "параметров не сохранено",
+  "en": "options not saved"
+ },
+ "颗": {
+  "ru": "шт.",
+  "en": "pcs"
+ },
+ "颗星 ·": {
+  "ru": "звёзд ·",
+  "en": "stars ·"
+ },
+ "高级选项 · 等待与轮询（一般不用改）": {
+  "ru": "Дополнительно · ожидание и опрос (обычно менять не нужно)",
+  "en": "Advanced · waiting and polling (usually no need to change)"
+ },
+ "，上传失败": {
+  "ru": ", загрузка не удалась",
+  "en": ", upload failed"
+ },
+ "，已存在": {
+  "ru": ", уже есть",
+  "en": ", already exists"
+ },
+ "，约": {
+  "ru": ", ~",
+  "en": ", ~"
+ },
+ "操作日志 %s 条": {
+  "ru": "Журнал операций: %s",
+  "en": "Operation log: %s"
+ },
+ "自新到旧": {
+  "ru": "от новых к старым",
+  "en": "newest first"
+ },
+ "操作日志": {
+  "ru": "Журнал операций",
+  "en": "Operation log"
+ },
+ "OKPay 余额=%s": {
+  "ru": "Баланс OKPay=%s",
+  "en": "OKPay balance=%s"
+ },
+ "Telegram 接口错误=%s": {
+  "ru": "Ошибка API Telegram=%s",
+  "en": "Telegram API error=%s"
+ },
+ "tdata 导入=%s": {
+  "ru": "Импорт tdata=%s",
+  "en": "tdata import=%s"
+ },
+ "tdata 目录数=%s": {
+  "ru": "Каталогов tdata=%s",
+  "en": "tdata directories=%s"
+ },
+ "一条龙任务编号=%s": {
+  "ru": "Номер комплексной задачи=%s",
+  "en": "One-stop task ID=%s"
+ },
+ "上传导入 session=%s": {
+  "ru": "Загрузить и импортировать session=%s",
+  "en": "Upload & import session=%s"
+ },
+ "上传导入 tdata=%s": {
+  "ru": "Загрузить и импортировать tdata=%s",
+  "en": "Upload & import tdata=%s"
+ },
+ "下媒体=%s": {
+  "ru": "Скачать медиа=%s",
+  "en": "Download media=%s"
+ },
+ "下次时间=%s": {
+  "ru": "Следующее время=%s",
+  "en": "Next time=%s"
+ },
+ "不可用=%s": {
+  "ru": "Недоступно=%s",
+  "en": "Unavailable=%s"
+ },
+ "临时限制=%s": {
+  "ru": "Временное ограничение=%s",
+  "en": "Temporary restriction=%s"
+ },
+ "二步验证密码为空=%s": {
+  "ru": "Пароль 2FA пуст=%s",
+  "en": "2FA password is empty=%s"
+ },
+ "二验密码=%s": {
+  "ru": "Пароль 2FA=%s",
+  "en": "2FA password=%s"
+ },
+ "二验密码不匹配=%s": {
+  "ru": "Пароль 2FA не совпадает=%s",
+  "en": "2FA password mismatch=%s"
+ },
+ "二验状态=%s": {
+  "ru": "Статус 2FA=%s",
+  "en": "2FA status=%s"
+ },
+ "代理=%s": {
+  "ru": "Прокси=%s",
+  "en": "Proxy=%s"
+ },
+ "代理连接失败=%s": {
+  "ru": "Не удалось подключиться к прокси=%s",
+  "en": "Proxy connection failed=%s"
+ },
+ "代理连接超时=%s": {
+  "ru": "Тайм-аут подключения к прокси=%s",
+  "en": "Proxy connection timed out=%s"
+ },
+ "令牌=%s": {
+  "ru": "Токен=%s",
+  "en": "Token=%s"
+ },
+ "任务类型=%s": {
+  "ru": "Тип задачи=%s",
+  "en": "Task type=%s"
+ },
+ "任务编号=%s": {
+  "ru": "Номер задачи=%s",
+  "en": "Task ID=%s"
+ },
+ "会话失效=%s": {
+  "ru": "Сессия недействительна=%s",
+  "en": "Session expired=%s"
+ },
+ "会话密钥无效=%s": {
+  "ru": "Неверный ключ сессии=%s",
+  "en": "Invalid session key=%s"
+ },
+ "会话密钥被重复使用=%s": {
+  "ru": "Ключ сессии использован повторно=%s",
+  "en": "Session key reused=%s"
+ },
+ "会话已失效（授权密钥未注册）=%s": {
+  "ru": "Сессия недействительна (ключ авторизации не зарегистрирован)=%s",
+  "en": "Session expired (authorization key not registered)=%s"
+ },
+ "会话已授权=%s": {
+  "ru": "Сессия авторизована=%s",
+  "en": "Session authorized=%s"
+ },
+ "会话已被撤销=%s": {
+  "ru": "Сессия отозвана=%s",
+  "en": "Session revoked=%s"
+ },
+ "会话已过期=%s": {
+  "ru": "Сессия истекла=%s",
+  "en": "Session expired=%s"
+ },
+ "余额=%s": {
+  "ru": "Баланс=%s",
+  "en": "Balance=%s"
+ },
+ "作业编号=%s": {
+  "ru": "Номер задания=%s",
+  "en": "Job ID=%s"
+ },
+ "修改二验=%s": {
+  "ru": "Изменить 2FA=%s",
+  "en": "Change 2FA=%s"
+ },
+ "修改二验中=%s": {
+  "ru": "Изменение 2FA=%s",
+  "en": "Changing 2FA=%s"
+ },
+ "修改资料=%s": {
+  "ru": "Изменить профиль=%s",
+  "en": "Edit profile=%s"
+ },
+ "健康检查=%s": {
+  "ru": "Проверка работоспособности=%s",
+  "en": "Health check=%s"
+ },
+ "养号=%s": {
+  "ru": "Прогрев аккаунта=%s",
+  "en": "Warm-up=%s"
+ },
+ "养号互聊=%s": {
+  "ru": "Прогрев: переписка между аккаунтами=%s",
+  "en": "Warm-up cross-chat=%s"
+ },
+ "冻结=%s": {
+  "ru": "Заморожен=%s",
+  "en": "Frozen=%s"
+ },
+ "列出群组=%s": {
+  "ru": "Список групп=%s",
+  "en": "List groups=%s"
+ },
+ "创建时间=%s": {
+  "ru": "Время создания=%s",
+  "en": "Created at=%s"
+ },
+ "创建群聊=%s": {
+  "ru": "Создать групповой чат=%s",
+  "en": "Create a group chat=%s"
+ },
+ "删联系人=%s": {
+  "ru": "Удалить контакт=%s",
+  "en": "Delete contact=%s"
+ },
+ "删除或撤回消息=%s": {
+  "ru": "Удалить или отозвать сообщение=%s",
+  "en": "Delete or recall messages=%s"
+ },
+ "删除账号=%s": {
+  "ru": "Удалить аккаунт=%s",
+  "en": "Delete account=%s"
+ },
+ "别名=%s": {
+  "ru": "Метка=%s",
+  "en": "Label=%s"
+ },
+ "到期待处理=%s": {
+  "ru": "Пора обрабатывать=%s",
+  "en": "Due now=%s"
+ },
+ "剩余其他设备=%s": {
+  "ru": "Осталось других устройств=%s",
+  "en": "Other devices remaining=%s"
+ },
+ "加入群聊=%s": {
+  "ru": "Вступить в группу=%s",
+  "en": "Join group=%s"
+ },
+ "加联系人=%s": {
+  "ru": "Добавить контакт=%s",
+  "en": "Add contact=%s"
+ },
+ "动作=%s": {
+  "ru": "Действие=%s",
+  "en": "Action=%s"
+ },
+ "原因=%s": {
+  "ru": "Причина=%s",
+  "en": "Reason=%s"
+ },
+ "原已开启二验=%s": {
+  "ru": "2FA уже была включена=%s",
+  "en": "2FA was already enabled=%s"
+ },
+ "参数格式错误=%s": {
+  "ru": "Неверный формат параметров=%s",
+  "en": "Invalid parameter format=%s"
+ },
+ "发文件=%s": {
+  "ru": "Отправить файл=%s",
+  "en": "Send file=%s"
+ },
+ "发码后等待秒数=%s": {
+  "ru": "Ожидание после отправки кода, с=%s",
+  "en": "Wait seconds after code sent=%s"
+ },
+ "发起2FA重置=%s": {
+  "ru": "Запустить сброс 2FA=%s",
+  "en": "Start 2FA reset=%s"
+ },
+ "发送消息=%s": {
+  "ru": "Отправить сообщение=%s",
+  "en": "Send message=%s"
+ },
+ "发送验证码=%s": {
+  "ru": "Отправить код=%s",
+  "en": "Send code=%s"
+ },
+ "取消2FA重置=%s": {
+  "ru": "Отменить сброс 2FA=%s",
+  "en": "Cancel 2FA reset=%s"
+ },
+ "取消屏蔽用户=%s": {
+  "ru": "Разблокировать пользователя=%s",
+  "en": "Unblock user=%s"
+ },
+ "取码链接=%s": {
+  "ru": "Ссылка для получения кода=%s",
+  "en": "Code-retrieval link=%s"
+ },
+ "受限=%s": {
+  "ru": "Ограничен=%s",
+  "en": "Restricted=%s"
+ },
+ "可导出=%s": {
+  "ru": "Можно экспортировать=%s",
+  "en": "Exportable=%s"
+ },
+ "可用=%s": {
+  "ru": "Доступно=%s",
+  "en": "Available=%s"
+ },
+ "可重试=%s": {
+  "ru": "Можно повторить=%s",
+  "en": "Retryable=%s"
+ },
+ "号包数量=%s": {
+  "ru": "Количество пакетов аккаунтов=%s",
+  "en": "Number of account packs=%s"
+ },
+ "同步登录时间=%s": {
+  "ru": "Синхронизировать время входа=%s",
+  "en": "Sync sign-in time=%s"
+ },
+ "名称=%s": {
+  "ru": "Название=%s",
+  "en": "Name=%s"
+ },
+ "后台仍在运行=%s": {
+  "ru": "Выполняется в фоне=%s",
+  "en": "Still running in background=%s"
+ },
+ "回复=%s": {
+  "ru": "Ответить=%s",
+  "en": "Reply=%s"
+ },
+ "回复消息=%s": {
+  "ru": "Ответить на сообщение=%s",
+  "en": "Reply to message=%s"
+ },
+ "回查通过=%s": {
+  "ru": "Повторная проверка пройдена=%s",
+  "en": "Recheck passed=%s"
+ },
+ "处理中=%s": {
+  "ru": "Обработка=%s",
+  "en": "Processing=%s"
+ },
+ "备注=%s": {
+  "ru": "Примечание=%s",
+  "en": "Note=%s"
+ },
+ "失败=%s": {
+  "ru": "Ошибка=%s",
+  "en": "Failed=%s"
+ },
+ "失败数=%s": {
+  "ru": "Неудачно=%s",
+  "en": "Failed=%s"
+ },
+ "失败账号=%s": {
+  "ru": "Аккаунты с ошибкой=%s",
+  "en": "Failed accounts=%s"
+ },
+ "完成时间=%s": {
+  "ru": "Время завершения=%s",
+  "en": "Completed at=%s"
+ },
+ "客户端版本=%s": {
+  "ru": "Версия клиента=%s",
+  "en": "Client version=%s"
+ },
+ "容量不足=%s": {
+  "ru": "Недостаточно ёмкости=%s",
+  "en": "Not enough capacity=%s"
+ },
+ "密码=%s": {
+  "ru": "Пароль=%s",
+  "en": "Password=%s"
+ },
+ "密码设置过于频繁=%s": {
+  "ru": "Слишком частая смена пароля=%s",
+  "en": "Password changes too frequent=%s"
+ },
+ "对方隐私设置限制此操作=%s": {
+  "ru": "Конфиденциальность собеседника ограничивает это действие=%s",
+  "en": "The other party's privacy settings restrict this action=%s"
+ },
+ "导入 StringSession=%s": {
+  "ru": "Импорт StringSession=%s",
+  "en": "Import StringSession=%s"
+ },
+ "导入 session 文件=%s": {
+  "ru": "Импорт файла session=%s",
+  "en": "Import session file=%s"
+ },
+ "导入会话=%s": {
+  "ru": "Импорт сессии=%s",
+  "en": "Import session=%s"
+ },
+ "导入会话文件=%s": {
+  "ru": "Импорт файла сессии=%s",
+  "en": "Import session file=%s"
+ },
+ "导出 .session=%s": {
+  "ru": "Экспорт .session=%s",
+  "en": "Export .session=%s"
+ },
+ "导出 StringSession=%s": {
+  "ru": "Экспорт StringSession=%s",
+  "en": "Export StringSession=%s"
+ },
+ "导出 tdata=%s": {
+  "ru": "Экспорт tdata=%s",
+  "en": "Export tdata=%s"
+ },
+ "导出号包=%s": {
+  "ru": "Экспорт пакета аккаунтов=%s",
+  "en": "Export account pack=%s"
+ },
+ "尚未设置二步验证密码=%s": {
+  "ru": "Пароль 2FA не задан=%s",
+  "en": "No 2FA password set=%s"
+ },
+ "屏蔽用户=%s": {
+  "ru": "Заблокировать пользователя=%s",
+  "en": "Block user=%s"
+ },
+ "工具调用次数=%s": {
+  "ru": "Число вызовов инструментов=%s",
+  "en": "Tool call count=%s"
+ },
+ "已从接码页面读取二验=%s": {
+  "ru": "2FA считана со страницы получения кода=%s",
+  "en": "2FA read from the code page=%s"
+ },
+ "已保存=%s": {
+  "ru": "Сохранено=%s",
+  "en": "Saved=%s"
+ },
+ "已保存二验=%s": {
+  "ru": "2FA сохранена=%s",
+  "en": "2FA saved=%s"
+ },
+ "已保存到本地=%s": {
+  "ru": "Сохранено локально=%s",
+  "en": "Saved locally=%s"
+ },
+ "已停止=%s": {
+  "ru": "Остановлено=%s",
+  "en": "Stopped=%s"
+ },
+ "已分配=%s": {
+  "ru": "Назначено=%s",
+  "en": "Assigned=%s"
+ },
+ "已删除=%s": {
+  "ru": "Удалено=%s",
+  "en": "Deleted=%s"
+ },
+ "已启动动态取码监控=%s": {
+  "ru": "Запущен мониторинг динамических кодов=%s",
+  "en": "Dynamic code monitoring started=%s"
+ },
+ "已启用=%s": {
+  "ru": "Включено=%s",
+  "en": "Enabled=%s"
+ },
+ "已处理=%s": {
+  "ru": "Обработано=%s",
+  "en": "Processed=%s"
+ },
+ "已存在=%s": {
+  "ru": "уже существует=%s",
+  "en": "already exists=%s"
+ },
+ "已完成=%s": {
+  "ru": "Выполнено=%s",
+  "en": "Completed=%s"
+ },
+ "已封禁=%s": {
+  "ru": "Заблокирован=%s",
+  "en": "Banned=%s"
+ },
+ "已开启二验=%s": {
+  "ru": "2FA включена=%s",
+  "en": "2FA enabled=%s"
+ },
+ "已扫描=%s": {
+  "ru": "Отсканировано=%s",
+  "en": "Scanned=%s"
+ },
+ "已授权=%s": {
+  "ru": "Авторизовано=%s",
+  "en": "Authorized=%s"
+ },
+ "已新增=%s": {
+  "ru": "Добавлено=%s",
+  "en": "Added=%s"
+ },
+ "已更新=%s": {
+  "ru": "Обновлено=%s",
+  "en": "Updated=%s"
+ },
+ "已登录=%s": {
+  "ru": "Авторизован=%s",
+  "en": "Signed in=%s"
+ },
+ "已绑定辅助邮箱=%s": {
+  "ru": "Привязана резервная почта=%s",
+  "en": "Recovery email linked=%s"
+ },
+ "已跳过=%s": {
+  "ru": "Пропущено=%s",
+  "en": "Skipped=%s"
+ },
+ "已退出=%s": {
+  "ru": "Выполнен выход=%s",
+  "en": "Signed out=%s"
+ },
+ "已退出登录=%s": {
+  "ru": "Выполнен выход=%s",
+  "en": "Signed out=%s"
+ },
+ "已锁定=%s": {
+  "ru": "Заблокировано=%s",
+  "en": "Locked=%s"
+ },
+ "并发数=%s": {
+  "ru": "Число потоков=%s",
+  "en": "Concurrency=%s"
+ },
+ "建频道=%s": {
+  "ru": "Создать канал=%s",
+  "en": "Create channel=%s"
+ },
+ "开始时间=%s": {
+  "ru": "Время начала=%s",
+  "en": "Started at=%s"
+ },
+ "异常=%s": {
+  "ru": "Ошибка=%s",
+  "en": "Error=%s"
+ },
+ "当前会话没有发送权限=%s": {
+  "ru": "У текущей сессии нет права на отправку=%s",
+  "en": "The current session has no send permission=%s"
+ },
+ "当前会话登录时间不足，暂时禁止清理其他设备=%s": {
+  "ru": "Текущая сессия авторизована слишком недавно, сброс других устройств пока запрещён=%s",
+  "en": "The current session signed in too recently; terminating other devices is temporarily blocked=%s"
+ },
+ "待处理=%s": {
+  "ru": "В очереди=%s",
+  "en": "Pending=%s"
+ },
+ "待核对=%s": {
+  "ru": "К сверке=%s",
+  "en": "To verify=%s"
+ },
+ "待登录=%s": {
+  "ru": "Ожидает входа=%s",
+  "en": "Awaiting sign-in=%s"
+ },
+ "快速验活=%s": {
+  "ru": "Быстрая проверка активности=%s",
+  "en": "Quick liveness check=%s"
+ },
+ "总数=%s": {
+  "ru": "Всего=%s",
+  "en": "Total=%s"
+ },
+ "成功=%s": {
+  "ru": "Успешно=%s",
+  "en": "Success=%s"
+ },
+ "成功数=%s": {
+  "ru": "Успешно=%s",
+  "en": "Succeeded=%s"
+ },
+ "成功账号=%s": {
+  "ru": "Успешные аккаунты=%s",
+  "en": "Successful accounts=%s"
+ },
+ "手机号已被限制=%s": {
+  "ru": "Номер ограничен=%s",
+  "en": "Phone number restricted=%s"
+ },
+ "手机号无效=%s": {
+  "ru": "Недействительный номер=%s",
+  "en": "Invalid phone number=%s"
+ },
+ "手机号检测=%s": {
+  "ru": "Проверка номеров=%s",
+  "en": "Phone number check=%s"
+ },
+ "扫码登录=%s": {
+  "ru": "Вход по QR=%s",
+  "en": "Sign in by QR=%s"
+ },
+ "扫码登录发起=%s": {
+  "ru": "Запуск входа по QR=%s",
+  "en": "QR sign-in started=%s"
+ },
+ "批量导入账号=%s": {
+  "ru": "Импорт аккаунтов пакетом=%s",
+  "en": "Bulk import accounts=%s"
+ },
+ "抓取验证码=%s": {
+  "ru": "Получить код=%s",
+  "en": "Fetch code=%s"
+ },
+ "接口不支持此方法=%s": {
+  "ru": "API не поддерживает этот метод=%s",
+  "en": "The API does not support this method=%s"
+ },
+ "提示=%s": {
+  "ru": "Подсказка=%s",
+  "en": "Hint=%s"
+ },
+ "提醒=%s": {
+  "ru": "Напоминание=%s",
+  "en": "Reminder=%s"
+ },
+ "搜索公开=%s": {
+  "ru": "Поиск публичных=%s",
+  "en": "Search public=%s"
+ },
+ "操作=%s": {
+  "ru": "Действие=%s",
+  "en": "Action=%s"
+ },
+ "操作前数量=%s": {
+  "ru": "Количество до операции=%s",
+  "en": "Count before operation=%s"
+ },
+ "操作后状态=%s": {
+  "ru": "Статус после операции=%s",
+  "en": "Status after operation=%s"
+ },
+ "改二步验证=%s": {
+  "ru": "Сменить 2FA=%s",
+  "en": "Change 2FA=%s"
+ },
+ "数据库操作异常=%s": {
+  "ru": "Исключение при работе с базой данных=%s",
+  "en": "Database operation exception=%s"
+ },
+ "数据类型异常=%s": {
+  "ru": "Исключение типа данных=%s",
+  "en": "Data type exception=%s"
+ },
+ "数量=%s": {
+  "ru": "Количество=%s",
+  "en": "Count=%s"
+ },
+ "文件=%s": {
+  "ru": "Файл=%s",
+  "en": "File=%s"
+ },
+ "文件不存在=%s": {
+  "ru": "Файл не найден=%s",
+  "en": "File not found=%s"
+ },
+ "文件名=%s": {
+  "ru": "Имя файла=%s",
+  "en": "File name=%s"
+ },
+ "无会话=%s": {
+  "ru": "Нет сессии=%s",
+  "en": "No session=%s"
+ },
+ "旧授权已退出=%s": {
+  "ru": "Старая авторизация завершена=%s",
+  "en": "Old authorization signed out=%s"
+ },
+ "服务商=%s": {
+  "ru": "Провайдер=%s",
+  "en": "Provider=%s"
+ },
+ "未确认=%s": {
+  "ru": "Не подтверждено=%s",
+  "en": "Unconfirmed=%s"
+ },
+ "机器人=%s": {
+  "ru": "Бот=%s",
+  "en": "Bot=%s"
+ },
+ "机器人交互=%s": {
+  "ru": "Взаимодействие с ботом=%s",
+  "en": "Bot interaction=%s"
+ },
+ "条目=%s": {
+  "ru": "Запись=%s",
+  "en": "Entry=%s"
+ },
+ "来源=%s": {
+  "ru": "Источник=%s",
+  "en": "Source=%s"
+ },
+ "来源类型=%s": {
+  "ru": "Тип источника=%s",
+  "en": "Source type=%s"
+ },
+ "查询间隔秒数=%s": {
+  "ru": "Интервал запроса, с=%s",
+  "en": "Query interval (seconds)=%s"
+ },
+ "标记已读=%s": {
+  "ru": "Отметить прочитанным=%s",
+  "en": "Mark as read=%s"
+ },
+ "模式=%s": {
+  "ru": "Режим=%s",
+  "en": "Mode=%s"
+ },
+ "正在停止=%s": {
+  "ru": "Остановка=%s",
+  "en": "Stopping=%s"
+ },
+ "正常=%s": {
+  "ru": "активен=%s",
+  "en": "active=%s"
+ },
+ "永久限制=%s": {
+  "ru": "Постоянное ограничение=%s",
+  "en": "Permanent restriction=%s"
+ },
+ "没有文件权限=%s": {
+  "ru": "Нет прав на файл=%s",
+  "en": "No file permission=%s"
+ },
+ "注销TG账号=%s": {
+  "ru": "Удалить аккаунт TG=%s",
+  "en": "Delete TG account=%s"
+ },
+ "清理会话=%s": {
+  "ru": "Очистить сессии=%s",
+  "en": "Clear sessions=%s"
+ },
+ "清理其他设备=%s": {
+  "ru": "Сбросить другие устройства=%s",
+  "en": "Terminate other devices=%s"
+ },
+ "清理其它设备=%s": {
+  "ru": "Сбросить другие устройства=%s",
+  "en": "Terminate other devices=%s"
+ },
+ "清空通讯录=%s": {
+  "ru": "Очистить контакты=%s",
+  "en": "Clear contacts=%s"
+ },
+ "状态=%s": {
+  "ru": "Статус=%s",
+  "en": "Status=%s"
+ },
+ "状态说明=%s": {
+  "ru": "Описание статуса=%s",
+  "en": "Status description=%s"
+ },
+ "登录中=%s": {
+  "ru": "Вход выполняется=%s",
+  "en": "Signing in=%s"
+ },
+ "监控账号数=%s": {
+  "ru": "Аккаунтов на мониторинге=%s",
+  "en": "Monitored accounts=%s"
+ },
+ "目标明细=%s": {
+  "ru": "Детали цели=%s",
+  "en": "Target details=%s"
+ },
+ "离开群聊=%s": {
+  "ru": "Покинуть группу=%s",
+  "en": "Leave group=%s"
+ },
+ "程序字段错误=%s": {
+  "ru": "Ошибка поля программы=%s",
+  "en": "Program field error=%s"
+ },
+ "等待中=%s": {
+  "ru": "Ожидание=%s",
+  "en": "Waiting=%s"
+ },
+ "等待后重试=%s": {
+  "ru": "Повторить после ожидания=%s",
+  "en": "Retry after waiting=%s"
+ },
+ "等待重置=%s": {
+  "ru": "Ожидание сброса=%s",
+  "en": "Waiting for reset=%s"
+ },
+ "等待重试=%s": {
+  "ru": "Ожидание повтора=%s",
+  "en": "Waiting to retry=%s"
+ },
+ "筛活=%s": {
+  "ru": "Проверка активности=%s",
+  "en": "Liveness check=%s"
+ },
+ "系统 I/O 异常=%s": {
+  "ru": "Системное исключение ввода-вывода=%s",
+  "en": "System I/O exception=%s"
+ },
+ "系统版本=%s": {
+  "ru": "Версия системы=%s",
+  "en": "System version=%s"
+ },
+ "结果=%s": {
+  "ru": "Результат=%s",
+  "en": "Result=%s"
+ },
+ "结果明细=%s": {
+  "ru": "Детали результата=%s",
+  "en": "Result details=%s"
+ },
+ "编号=%s": {
+  "ru": "Номер=%s",
+  "en": "No.=%s"
+ },
+ "编辑消息=%s": {
+  "ru": "Изменить сообщение=%s",
+  "en": "Edit message=%s"
+ },
+ "网络地址访问失败=%s": {
+  "ru": "Не удалось обратиться по сетевому адресу=%s",
+  "en": "Network address access failed=%s"
+ },
+ "网络连接失败=%s": {
+  "ru": "Не удалось подключиться к сети=%s",
+  "en": "Network connection failed=%s"
+ },
+ "网络错误=%s": {
+  "ru": "Сетевая ошибка=%s",
+  "en": "Network error=%s"
+ },
+ "群成员=%s": {
+  "ru": "Участники группы=%s",
+  "en": "Group members=%s"
+ },
+ "群组或频道访问受限=%s": {
+  "ru": "Доступ к группе или каналу ограничен=%s",
+  "en": "Group or channel access restricted=%s"
+ },
+ "耗时=%s": {
+  "ru": "Длительность=%s",
+  "en": "Duration=%s"
+ },
+ "耗时秒数=%s": {
+  "ru": "Длительность, с=%s",
+  "en": "Duration (seconds)=%s"
+ },
+ "自动取码登录=%s": {
+  "ru": "Автовход по коду=%s",
+  "en": "Automatic code sign-in=%s"
+ },
+ "自动清设备=%s": {
+  "ru": "Автосброс устройств=%s",
+  "en": "Auto device reset=%s"
+ },
+ "节点容量=%s": {
+  "ru": "Ёмкость узла=%s",
+  "en": "Node capacity=%s"
+ },
+ "解析数=%s": {
+  "ru": "Разобрано=%s",
+  "en": "Parsed=%s"
+ },
+ "触发 Telegram 操作限制=%s": {
+  "ru": "Сработало ограничение операций Telegram=%s",
+  "en": "Telegram operation limit triggered=%s"
+ },
+ "触发慢速模式限制=%s": {
+  "ru": "Сработало ограничение медленного режима=%s",
+  "en": "Slow mode limit triggered=%s"
+ },
+ "触发频率限制=%s": {
+  "ru": "Сработало ограничение частоты=%s",
+  "en": "Rate limit triggered=%s"
+ },
+ "设备型号=%s": {
+  "ru": "Модель устройства=%s",
+  "en": "Device model=%s"
+ },
+ "设用户名=%s": {
+  "ru": "Задать имя пользователя=%s",
+  "en": "Set username=%s"
+ },
+ "试运行=%s": {
+  "ru": "Пробный запуск=%s",
+  "en": "Dry run=%s"
+ },
+ "详情=%s": {
+  "ru": "Подробности=%s",
+  "en": "Details=%s"
+ },
+ "说明=%s": {
+  "ru": "Описание=%s",
+  "en": "Description=%s"
+ },
+ "读取单条消息=%s": {
+  "ru": "Прочитать одно сообщение=%s",
+  "en": "Read a single message=%s"
+ },
+ "读群消息=%s": {
+  "ru": "Чтение сообщений группы=%s",
+  "en": "Read group messages=%s"
+ },
+ "账号尚未加入该会话=%s": {
+  "ru": "Аккаунт ещё не вступил в этот чат=%s",
+  "en": "Account has not joined this chat=%s"
+ },
+ "账号已停用=%s": {
+  "ru": "Аккаунт отключён=%s",
+  "en": "Account disabled=%s"
+ },
+ "账号已停用或封禁=%s": {
+  "ru": "Аккаунт отключён или забанен=%s",
+  "en": "Account disabled or banned=%s"
+ },
+ "账号已加入该会话=%s": {
+  "ru": "Аккаунт уже вступил в этот чат=%s",
+  "en": "Account has already joined this chat=%s"
+ },
+ "账号已登录=%s": {
+  "ru": "Аккаунт авторизован=%s",
+  "en": "Account signed in=%s"
+ },
+ "账号总数=%s": {
+  "ru": "Всего аккаунтов=%s",
+  "en": "Total accounts=%s"
+ },
+ "资源不存在=%s": {
+  "ru": "Ресурс не найден=%s",
+  "en": "Resource not found=%s"
+ },
+ "超时秒数=%s": {
+  "ru": "Таймаут, с=%s",
+  "en": "Timeout, sec=%s"
+ },
+ "路径=%s": {
+  "ru": "Путь=%s",
+  "en": "Path=%s"
+ },
+ "跳过原因=%s": {
+  "ru": "Причина пропуска=%s",
+  "en": "Skip reason=%s"
+ },
+ "跳过数=%s": {
+  "ru": "Пропущено=%s",
+  "en": "Skipped=%s"
+ },
+ "转发消息=%s": {
+  "ru": "Переслать сообщение=%s",
+  "en": "Forward message=%s"
+ },
+ "辅助邮箱尚未确认=%s": {
+  "ru": "Резервная почта не подтверждена=%s",
+  "en": "Recovery email not confirmed=%s"
+ },
+ "输入=%s": {
+  "ru": "Ввод=%s",
+  "en": "Input=%s"
+ },
+ "输入条数=%s": {
+  "ru": "Строк на входе=%s",
+  "en": "Input rows=%s"
+ },
+ "输出=%s": {
+  "ru": "Вывод=%s",
+  "en": "Output=%s"
+ },
+ "输出目录=%s": {
+  "ru": "Каталог вывода=%s",
+  "en": "Output directory=%s"
+ },
+ "过期时间=%s": {
+  "ru": "Срок действия=%s",
+  "en": "Expires at=%s"
+ },
+ "运行中=%s": {
+  "ru": "Выполняется=%s",
+  "en": "Running=%s"
+ },
+ "运行时错误=%s": {
+  "ru": "Ошибка выполнения=%s",
+  "en": "Runtime error=%s"
+ },
+ "进度百分比=%s": {
+  "ru": "Процент выполнения=%s",
+  "en": "Progress percentage=%s"
+ },
+ "连接被拒绝=%s": {
+  "ru": "В соединении отказано=%s",
+  "en": "Connection refused=%s"
+ },
+ "连接被重置=%s": {
+  "ru": "Соединение сброшено=%s",
+  "en": "Connection reset=%s"
+ },
+ "连接超时=%s": {
+  "ru": "Таймаут соединения=%s",
+  "en": "Connection timed out=%s"
+ },
+ "退出登录=%s": {
+  "ru": "Выйти из аккаунта=%s",
+  "en": "Sign out=%s"
+ },
+ "通讯录=%s": {
+  "ru": "Контакты=%s",
+  "en": "Contacts=%s"
+ },
+ "邮箱格式无效=%s": {
+  "ru": "Неверный формат почты=%s",
+  "en": "Invalid email format=%s"
+ },
+ "配置值=%s": {
+  "ru": "Значение конфигурации=%s",
+  "en": "Config value=%s"
+ },
+ "配置预设=%s": {
+  "ru": "Пресет конфигурации=%s",
+  "en": "Config preset=%s"
+ },
+ "采集发言人=%s": {
+  "ru": "Сбор активных участников=%s",
+  "en": "Collect active members=%s"
+ },
+ "重复项=%s": {
+  "ru": "Дубликаты=%s",
+  "en": "Duplicates=%s"
+ },
+ "重生会话=%s": {
+  "ru": "Перегенерация сессии=%s",
+  "en": "Regenerate session=%s"
+ },
+ "重试等待=%s": {
+  "ru": "Ожидание перед повтором=%s",
+  "en": "Retry wait=%s"
+ },
+ "重试等待秒数=%s": {
+  "ru": "Ожидание повтора, с=%s",
+  "en": "Retry wait, sec=%s"
+ },
+ "错误=%s": {
+  "ru": "Ошибка=%s",
+  "en": "Error=%s"
+ },
+ "错误码=%s": {
+  "ru": "Код ошибки=%s",
+  "en": "Error code=%s"
+ },
+ "错误记录=%s": {
+  "ru": "Записи ошибок=%s",
+  "en": "Error log=%s"
+ },
+ "防找回清理=%s": {
+  "ru": "Очистка защиты от восстановления=%s",
+  "en": "Anti-recovery cleanup=%s"
+ },
+ "阶段=%s": {
+  "ru": "Этап=%s",
+  "en": "Stage=%s"
+ },
+ "阶段统计=%s": {
+  "ru": "Статистика по этапам=%s",
+  "en": "Stage stats=%s"
+ },
+ "限制检测=%s": {
+  "ru": "Проверка ограничений=%s",
+  "en": "Restriction check=%s"
+ },
+ "隐私设置=%s": {
+  "ru": "Настройки конфиденциальности=%s",
+  "en": "Privacy settings=%s"
+ },
+ "需要二步验证密码=%s": {
+  "ru": "Требуется пароль 2FA=%s",
+  "en": "2FA password required=%s"
+ },
+ "验活通过=%s": {
+  "ru": "Проверка активности пройдена=%s",
+  "en": "Liveness check passed=%s"
+ },
+ "验证码为空=%s": {
+  "ru": "Код не указан=%s",
+  "en": "Code is empty=%s"
+ },
+ "验证码已过期=%s": {
+  "ru": "Код истёк=%s",
+  "en": "Code expired=%s"
+ },
+ "验证码登录=%s": {
+  "ru": "Вход по коду=%s",
+  "en": "Sign in with code=%s"
+ },
+ "验证码错误=%s": {
+  "ru": "Неверный код=%s",
+  "en": "Invalid code=%s"
+ },
+ "验证码长度=%s": {
+  "ru": "Длина кода=%s",
+  "en": "Code length=%s"
+ },
+ "API ID 或 API Hash 无效": {
+  "ru": "неверный API ID или API Hash",
+  "en": "invalid API ID or API Hash"
  }
 }

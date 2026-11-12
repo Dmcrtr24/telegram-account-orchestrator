@@ -50,6 +50,10 @@ def put(exact: dict, pats: list, zh: str, tr: dict) -> None:
             dec = decode_js(zh)
             if dec != zh:
                 exact[dec] = val
+            # «孟加拉国 🇧🇩» и «孟加拉国» — один и тот же перевод
+            bare = re.sub("[\U0001F1E6-\U0001F1FF]", "", dec or zh).strip()
+            if bare and bare != (dec or zh):
+                exact.setdefault(bare, val)
 
 
 def main() -> int:
@@ -90,6 +94,13 @@ def main() -> int:
             put(exact["ru"], pats["ru"], zh, {"ru": tr.get("ru")})
             put(exact["en"], pats["en"], zh, {"en": tr.get("en")})
         stats["extra"] = len(extra)
+
+    # дубликаты шаблонов: побеждает последний (i18n_extra.json применяется поверх батчей)
+    for lang in ("ru", "en"):
+        seen = {}
+        for k, v in pats[lang]:
+            seen[k] = v
+        pats[lang] = [[k, v] for k, v in seen.items()]
 
     payload = {"ru": exact["ru"], "en": exact["en"], "pat": pats}
     DEST.write_text(

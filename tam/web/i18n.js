@@ -82,15 +82,48 @@
         return cap == null ? '' : tr(cap, depth + 1);
       });
     }
-    if (s.indexOf(' · ') >= 0) {
-      var parts = s.split(' · ');
+    // иконка в начале («✓ 健康检查») не должна мешать поиску перевода
+    var mi = /^([\u2713\u2717\u21b7\u2026!?\u2022]\s*)([\s\S]+)$/.exec(s);
+    if (mi) {
+      var rest = tr(mi[2], depth + 1);
+      if (rest !== mi[2]) return mi[1] + rest;
+    }
+    var seps = [' · ', '  '];   // ' · ' — склейка, '  ' — разделитель полей в логах
+    for (var si = 0; si < seps.length; si++) {
+      var sep = seps[si];
+      if (s.indexOf(sep) < 0) continue;
+      var parts = s.split(sep);
       var changed = false;
       var mapped = parts.map(function (p) {
         var t = tr(p, depth + 1);
         if (t !== p) changed = true;
         return t;
       });
-      if (changed) return mapped.join(' · ');
+      if (changed) return mapped.join(sep);
+    }
+
+    // «下次 …（23.8 小时后）» — переводим то, что внутри скобок, сами скобки меняем на латинские
+    if (/[（(]/.test(s) && /[）)]/.test(s)) {
+      var parts = s.split(/([（）()])/);
+      var changed = false;
+      for (var pi = 0; pi < parts.length; pi++) {
+        if (parts[pi] === '（') { parts[pi] = '('; changed = true; continue; }
+        if (parts[pi] === '）') { parts[pi] = ')'; changed = true; continue; }
+        var tp = tr(parts[pi], depth + 1);
+        if (tp !== parts[pi]) { parts[pi] = tp; changed = true; }
+      }
+      if (changed) return parts.join('');
+    }
+    // последняя попытка: по словам («Тип задачи=group 数量=2», «…  正常»)
+    if (/\s/.test(s)) {
+      var toks = s.split(/(\s+)/);
+      var hit = false;
+      for (var ti = 0; ti < toks.length; ti++) {
+        if (!toks[ti] || /^\s+$/.test(toks[ti])) continue;
+        var tt = tr(toks[ti], depth + 1);
+        if (tt !== toks[ti]) { toks[ti] = tt; hit = true; }
+      }
+      if (hit) return toks.join('');
     }
     return s;
   }

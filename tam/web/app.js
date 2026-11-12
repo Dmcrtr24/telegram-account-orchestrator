@@ -1533,7 +1533,8 @@ function countryOf(phone) {
   return hit ? hit.country : '未识别';
 }
 function esc(s) { return String(s ?? '').replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c])); }
-function fmt(ts) { return ts ? new Date(ts * 1000).toLocaleString('zh-CN', {hour12:false}) : '—'; }
+function uiLocale() { try { return (window.tamI18n && tamI18n.getLang() === 'en') ? 'en-GB' : 'ru-RU'; } catch (e) { return 'ru-RU'; } }
+function fmt(ts) { return ts ? new Date(ts * 1000).toLocaleString(uiLocale(), {hour12:false}) : '—'; }
 /* 服务端与本机的时钟差（毫秒）。本机时间不准时，相对时间会算出很离谱的值，所以统一以服务端为准 */
 let skewMs = 0;
 const nowMs = () => Date.now() + skewMs;
