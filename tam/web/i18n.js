@@ -253,53 +253,21 @@
     }
   }
 
-  /* ---------------- theme ---------------- */
-  function systemTheme() {
-    try {
-      return window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
-    } catch (e) { return 'light'; }
-  }
-  function currentTheme() {
-    try {
-      var t = localStorage.getItem(THEME_KEY);
-      if (t === 'dark' || t === 'light') return t;
-    } catch (e) {}
-    return systemTheme();
-  }
-  function applyTheme(theme, silent) {
-    var t = theme === 'dark' ? 'dark' : 'light';
-    document.documentElement.setAttribute('data-theme', t);
-    try { localStorage.setItem(THEME_KEY, t); } catch (e) {}
-    var btn = document.getElementById('themeBtn');
-    if (btn) {
-      btn.setAttribute('aria-pressed', t === 'dark' ? 'true' : 'false');
-      var use = btn.querySelector('use');
-      if (use) use.setAttribute('href', t === 'dark' ? '#i-sun' : '#i-moon');
-    }
-    if (!silent) document.dispatchEvent(new CustomEvent('tam:theme', { detail: { theme: t } }));
-  }
-  function toggleTheme() { applyTheme(currentTheme() === 'dark' ? 'light' : 'dark'); }
-
   /* ---------------- boot ---------------- */
   function boot() {
-    document.documentElement.setAttribute('data-theme', currentTheme());
     document.documentElement.setAttribute('lang', LANG === 'ru' ? 'ru' : 'en');
     document.documentElement.setAttribute('data-lang', LANG);
     var sel = document.getElementById('langSel');
     if (sel) { sel.value = LANG; sel.addEventListener('change', function () { setLang(sel.value); }); }
-    var btn = document.getElementById('themeBtn');
-    if (btn) btn.addEventListener('click', toggleTheme);
-    applyTheme(currentTheme(), true);
     applyAll();
     startObserver();
-    // late renders (fonts, async panels) still land on translated text
+    // поздние рендеры (асинхронные панели) тоже попадают под перевод
     setTimeout(applyAll, 60);
     setTimeout(applyAll, 400);
   }
 
   window.tamI18n = {
     t: tr, apply: applyAll, setLang: setLang, getLang: function () { return LANG; },
-    setTheme: applyTheme, toggleTheme: toggleTheme, getTheme: currentTheme,
     has: function (s) { return !!(DICT[LANG] || {})[s]; }
   };
 

@@ -4,70 +4,12 @@
   <img src="docs/assets/tao-icon.png" alt="Telegram Account Orchestrator (TAO) icon" width="220">
 </p>
 
-## 🇷🇺 Русская раскладка и тёмная тема
-
-Этот форк добавляет к веб-консоли TAO полноценную локализацию и темы оформления.
-
-<p align="center">
-  <img src="docs/assets/screenshot-dark-ru.png" alt="Веб-консоль TAO: русский интерфейс, тёмная тема" width="900">
-</p>
-
-**Что добавлено**
-
-- **Русский и английский интерфейс.** Переключатель `RU / EN` в шапке, выбор запоминается
-  в браузере. Переведено всё, что видно в консоли: панели, таблицы, модальные окна, справка
-  целиком, подсказки (`title`/`placeholder`), описания инструментов и параметров, тексты ошибок
-  API — 2585 строк и 112 шаблонов. По умолчанию — русский.
-- **Светлая и тёмная тема.** Кнопка ☀/🌙 рядом с переключателем языка; по умолчанию берётся
-  системная тема (`prefers-color-scheme`), выбор запоминается. Тёмная палитра задана
-  CSS-переменными, включая статусы, бейджи, модалки и скроллбары.
-- **Иконки в SVG.** Эмодзи заменены инлайн-спрайтом (`#i-*`): на машинах без CJK/emoji-шрифтов
-  они превращались в «тофу». Иконки наследуют цвет текста и тему.
-- **Перевод не ломает апстрим.** Строки исходников остаются китайскими (msgid), перевод живёт
-  отдельным словарём и применяется на уровне DOM (`tam/web/i18n.js` + генерируемый
-  `i18n.data.js`), поэтому `app.js` не переписан и обновления апстрима переносятся легче.
-- **AI-помощник отвечает по-русски** (промпты в `tam/ai_panel.py`).
-
-**Как запустить.** Собирать ничего не нужно — `index.html` в репозитории уже собран.
-
-```bash
-python3 -m venv .venv && .venv/bin/python -m pip install -r requirements.txt
-.venv/bin/python -m pip uninstall -y opentele      # важно: ломает Telethon
-.venv/bin/python setup.py --auto --deploy local --frontend web --token
-```
-
-Открыть `http://127.0.0.1:8848`, вставить токен из вывода `setup.py` в поле «Токен доступа»,
-переключить язык и тему в шапке.
-
-**Пайплайн перевода** (если нужно добавить строки): `tools/i18n_extract.py` →
-батчи `tools/i18n_out/*.json` по `tools/i18n_glossary.md` → `tools/i18n_build.py` →
-`cd tam/web && python3 build.py`. Подробности — [`docs/I18N.md`](docs/I18N.md).
-
-> Ветка `main` — публичная версия с локализацией и темами. Серверная конфигурация и реальные
-> аккаунты живут отдельно, в приватном репозитории (ветка `dmcrtr`), в публичный код они не попадают.
-
----
-
 <p align="center">
   <a href="https://soulknight666.github.io/telegram-account-orchestrator/">项目主页</a> ·
   <a href="https://github.com/soulknight666/telegram-account-orchestrator/releases">下载 Release</a>
 </p>
 
 > Telegram 分享建议使用固定预览入口：`https://soulknight666.github.io/telegram-account-orchestrator/`
-## Latest release · v0.3.2
-
-[Windows 安装版](https://github.com/soulknight666/telegram-account-orchestrator/releases/download/v0.3.2/TAO-Windows-x64-Setup.exe) · [Windows Portable](https://github.com/soulknight666/telegram-account-orchestrator/releases/download/v0.3.2/TAO-Windows-x64-Portable.zip) · [Linux x64](https://github.com/soulknight666/telegram-account-orchestrator/releases/download/v0.3.2/TAO-Linux-x64.tar.gz) · [SHA256SUMS](https://github.com/soulknight666/telegram-account-orchestrator/releases/download/v0.3.2/SHA256SUMS.txt)
-
-v0.3.2 highlights:
-
-- 混合 ZIP 智能导入与 tdata 上传体检，支持 dry-run 预览、重复账号识别和失败项明细。
-- 一条龙批处理：自动登录、二验更新、Session 制作与按需导出；批量预览会先列出跳过原因。
-- 大批量账号管理优化：增量刷新、并发参数导航、结构化错误码和更清晰的任务状态反馈。
-- 发布包提供 Windows 安装版、Portable 版和 Linux x64 包，并附带校验文件。
-
-### 最新主页面
-
-![TAO 最新主页面预览](docs/assets/tao-main-screen.jpg)
 
 **Self-hosted Telegram multi-account management with Web UI, CLI, Bot, MCP, Telethon, and Telegram Desktop tdata import.**
 
@@ -185,7 +127,7 @@ python -m tam.cli doctor --json # 机器可读输出（给脚本 / Agent）
 
 ## 卡商初始账号批量导入
 
-支持 `手机号|取码链接` 行格式，例：
+支持 `手机号|取码链接 或 手机号----取码链接` 行格式，例：
 
 ```
 +10000000000|https://example.invalid/code/primary/GetHTML
@@ -206,7 +148,7 @@ python -m tam.cli auto-login --tag batch1      # 批量（默认串行 + 随机�
 - 分隔符支持 `|`、`\|`、`｜`、制表符、逗号、分号；两段顺序可以颠倒；手机号缺 `+` 自动补。
 - 第三段作为备注/别名；`#` 开头与空行忽略；单行出错不中断整批，错误行集中返回。
 - 幂等：手机号已存在只补写取码链接，不重复建号。
-- 取码：`codefetch.py` 只用标准库拉取该链接（支持代理），先记录发码前的旧码作基线，再轮询直到出现不同的新码（默认 120s 超时、5s 一次），避免拿错上一次的验证码。
+- 取码：`codefetch.py` 只用标准库拉取该链接（支持代理），先记录发码前的旧码作基线，再轮询直到出现不同的新码（默认 120s 超时、1.5s 一次），避免拿错上一次的验证码。
 - 旧库自动迁移：启动时缺 `code_url` 列则自动补列。
 - 开了两步验证的号需传 `--password`（取码链接只能拿到短信码）。
 
@@ -232,6 +174,8 @@ cat sessions.txt | python -m tam.cli import-session-strings -
 - Web 支持三种方式：本机上传 `.session`/zip、服务端路径、粘贴 StringSession。
 
 API：`POST /api/accounts/import-sessions`、`POST /api/accounts/import-session-strings`、`POST /api/accounts/import-session-upload`。
+
+混合号包可使用新增的 `POST /api/import/mixed`（`multipart/form-data`，字段 `file`、`dry_run`、`label`、`proxy`、`tags`、tdata 密码与二验密码）。默认只分析，传 `dry_run=false` 才写入；同一 ZIP 中的 tdata、`.session` 会逐项处理，失败项不会中止其它账号。
 
 ## 从 Telegram Desktop tdata 导入
 
@@ -260,7 +204,7 @@ tam/
 ├── config.py     环境配置（.env）
 ├── crypto.py     scrypt + Fernet：session 静态加密
 ├── db.py         SQLite：accounts / audit_log（含 code_url 取码链接）
-├── importer.py   批量解析导入 手机号|取码链接 清单
+├── importer.py   批量解析导入 手机号|取码链接 或 手机号----取码链接 清单
 ├── codefetch.py  从取码链接抽取登录验证码（标准库，支持代理与轮询）
 ├── tdata.py / tdata_native.py   tdata 扫描与内置解析（无需 opentele）
 ├── ratelimit.py  令牌桶限速 + 人性化随机延迟
@@ -306,6 +250,7 @@ tam/
 | POST | /api/accounts/import-session-strings | 批量导入 StringSession 文本 |
 | POST | /api/accounts/import-session-upload | 浏览器上传 `.session` / zip（原始请求体） |
 | POST | /api/accounts/import-tdata | 从 tdata 目录导入（可递归扫描） |
+| POST | /api/import/mixed | 混合 ZIP 分析/导入（同步，默认 dry-run） |
 | POST | /api/batch/check、/api/batch/message、/api/batch/auto-login | 批量操作 |
 | GET | /api/logs、/api/stats | 日志与统计 |
 | GET | /api/autokick | 自动清设备的开关、周期、待处理数量 |
@@ -516,6 +461,9 @@ Web 页面右上角的令牌要和 `.env` 里的 `TAM_WEB_TOKEN` 一致，输完
 | `TAM_TOAPI_BASE` | （空） | 网页/机器人转 API 的取码链接前缀，如 `https://api.example.com` |
 | `TAM_BATCH_CONCURRENCY` | `3` | 工具箱、批量任务同时开几个号；调大易触频控 |
 | `TAM_MAX_EXTRACT_MB` | `512` | 解压后总大小上限，防 zip 炸弹 |
+| `TAM_MIXED_MAX_UPLOAD_MB` | `1024` | `/api/import/mixed` 上传体积上限 |
+| `TAM_MIXED_MAX_EXTRACT_MB` | `2048` | `/api/import/mixed` 解压总大小上限 |
+| `TAM_MIXED_MAX_FILES` | `20000` | `/api/import/mixed` 解压文件数上限 |
 | `TAM_KICK_RETRY` | `1h` | 清设备失败后的重试间隔：`45s` / `10m` / `2h` / `1h30m` |
 | `TAM_AUTO_KICK_HOURS` | `24` | 本机接管满多少小时自动踢其它设备；`0` = 关 |
 | `TAM_REGTIME_ENDPOINT` | 空 | 留空 = 注册时间分类完全离线，不外发任何号信息 |

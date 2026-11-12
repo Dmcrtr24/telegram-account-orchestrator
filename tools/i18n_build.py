@@ -1,13 +1,12 @@
 #!/usr/bin/env python3
-"""Build tam/web/i18n.data.js from the translation batches.
+"""Собирает tam/web/i18n.data.js из seed-словаря, батчей перевода и ручных оверрайдов.
 
-Inputs
-  tools/i18n_batches/batch*.json   [{id, kind, zh}]      (source strings)
-  tools/i18n_out/batch*.json       {id: {ru, en}}        (translations)
-  tools/i18n_extra.json            {zh: {ru, en}}        (hand-written additions/overrides)
+Источники (в порядке возрастания приоритета):
+  1. tools/i18n_seed.json        — словарь, унаследованный от предыдущей версии UI
+  2. tools/i18n_batches3/*.json  + tools/i18n_out3/*.json — новые строки v0.3.2
+  3. tools/i18n_extra.json       — ручные правки (перекрывают всё)
 
-Output
-  tam/web/i18n.data.js  ->  window.__TAM_I18N__ = {ru:{}, en:{}, pat:{ru:[], en:[]}}
+Ключ с %s становится шаблоном, иначе — точным совпадением.
 """
 from __future__ import annotations
 import json
@@ -16,25 +15,21 @@ import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
-BATCHES = ROOT / "tools" / "i18n_batches"
-OUT = ROOT / "tools" / "i18n_out"
-BATCHES2 = ROOT / "tools" / "i18n_batches2"
-OUT2 = ROOT / "tools" / "i18n_out2"
+SEED = ROOT / "tools" / "i18n_seed.json"
+BATCHES = ROOT / "tools" / "i18n_batches3"
+OUT = ROOT / "tools" / "i18n_out3"
 EXTRA = ROOT / "tools" / "i18n_extra.json"
 DEST = ROOT / "tam" / "web" / "i18n.data.js"
 
+_ESC = {"n": "\n", "r": "\r", "t": "\t"}
+
 
 def decode_js(s: str) -> str:
-    """Decode JS string escapes so dictionary keys match the rendered DOM.
-
-    app.js keeps some literals escaped (emoji flags written as u-escapes);
-    at runtime the DOM holds the real emoji, so the key must be decoded.
-    """
+    """Разворачивает \\uXXXX-эскейпы: в DOM попадают настоящие символы, а не литералы."""
     s = re.sub(r"\\u([0-9a-fA-F]{4})", lambda m: chr(int(m.group(1), 16)), s)
     s = re.sub(r"\\x([0-9a-fA-F]{2})", lambda m: chr(int(m.group(1), 16)), s)
-    s = s.replace("\\n", "\n").replace("\\t", "\t").replace("\\r", "\r")
-    s = s.replace("\\'", "'").replace('\\"', '"')
-    # merge UTF-16 surrogate pairs produced by \uXXXX escapes (emoji flags etc.)
+    for k, v in _ESC.items():
+        s = s.replace("\\" + k, v)
     try:
         s = s.encode("utf-16", "surrogatepass").decode("utf-16")
     except (UnicodeEncodeError, UnicodeDecodeError):
@@ -42,87 +37,73 @@ def decode_js(s: str) -> str:
     return s
 
 
-def load_items() -> dict[str, dict]:
-    items: dict[str, dict] = {}
-    for folder in (BATCHES, BATCHES2):
-        if not folder.exists():
+def put(exact: dict, pats: list, zh: str, tr: dict) -> None:
+    for lang in ("ru", "en"):
+        val = (tr or {}).get(lang, "")
+        if not val:
             continue
-        for p in sorted(folder.glob("*.json")):
-            for it in json.loads(p.read_text(encoding="utf-8")):
-                items[it["id"]] = it
-    return items
+        val = decode_js(val)
+        if "%s" in zh:
+            pats.append([zh, val])
+        else:
+            exact[zh] = val
+            dec = decode_js(zh)
+            if dec != zh:
+                exact[dec] = val
 
 
 def main() -> int:
-    items = load_items()
     exact = {"ru": {}, "en": {}}
     pats = {"ru": [], "en": []}
-    missing, empty = [], []
+    stats = {}
 
-    out_files = sorted(OUT.glob("*.json")) + (sorted(OUT2.glob("*.json")) if OUT2.exists() else [])
-    for p in out_files:
+    if SEED.exists():
+        seed = json.loads(SEED.read_text(encoding="utf-8"))
+        for zh, tr in seed.items():
+            put(exact["ru"], pats["ru"], zh, {"ru": tr.get("ru")})
+            put(exact["en"], pats["en"], zh, {"en": tr.get("en")})
+        stats["seed"] = len(seed)
+
+    items: dict[str, dict] = {}
+    for p in sorted(BATCHES.glob("*.json")):
+        for it in json.loads(p.read_text(encoding="utf-8")):
+            items[it["id"]] = it
+
+    done, missing = 0, []
+    for p in sorted(OUT.glob("*.json")):
         data = json.loads(p.read_text(encoding="utf-8"))
         for iid, tr in data.items():
             it = items.get(iid)
             if not it:
                 continue
-            zh = it["zh"]
-            for lang in ("ru", "en"):
-                val = (tr or {}).get(lang, "")
-                if not val:
-                    empty.append((lang, zh))
-                    continue
-                val = decode_js(val)
-                if it["kind"] == "pattern":
-                    pats[lang].append([zh, val])
-                else:
-                    exact[lang][zh] = val
-                    dec = decode_js(zh)
-                    if dec != zh:
-                        exact[lang][dec] = val
+            put(exact["ru"], pats["ru"], it["zh"], {"ru": (tr or {}).get("ru")})
+            put(exact["en"], pats["en"], it["zh"], {"en": (tr or {}).get("en")})
+            done += 1
+    for iid, it in items.items():
+        if not any(it["zh"] in exact[l] or any(it["zh"] == p[0] for p in pats[l]) for l in ("ru", "en")):
+            missing.append(it["zh"])
+    stats["batches"] = done
 
     if EXTRA.exists():
         extra = json.loads(EXTRA.read_text(encoding="utf-8"))
         for zh, tr in extra.items():
-            for lang in ("ru", "en"):
-                val = (tr or {}).get(lang, "")
-                if not val:
-                    continue
-                if "%s" in zh:
-                    pats[lang].append([zh, val])
-                else:
-                    exact[lang][zh] = val
-                    dec = decode_js(zh)
-                    if dec != zh:
-                        exact[lang][dec] = val
-
-    for iid, it in items.items():
-        if not any(it["zh"] in exact[l] or any(it["zh"] == p[0] for p in pats[l]) for l in ("ru", "en")):
-            missing.append(it["zh"])
-
-    # флаги стран в подписи не нужны: на машинах без emoji-шрифта это «тофу»
-    flag = re.compile("[\U0001F1E6-\U0001F1FF]")
-    for lang in ("ru", "en"):
-        exact[lang] = {k: flag.sub("", v).strip() for k, v in exact[lang].items()}
-        pats[lang] = [[k, flag.sub("", v).strip()] for k, v in pats[lang]]
+            put(exact["ru"], pats["ru"], zh, {"ru": tr.get("ru")})
+            put(exact["en"], pats["en"], zh, {"en": tr.get("en")})
+        stats["extra"] = len(extra)
 
     payload = {"ru": exact["ru"], "en": exact["en"], "pat": pats}
-    body = json.dumps(payload, ensure_ascii=False, separators=(",", ":"))
     DEST.write_text(
         "/* generated by tools/i18n_build.py — do not edit by hand */\n"
-        f"window.__TAM_I18N__ = {body};\n",
+        f"window.__TAM_I18N__ = {json.dumps(payload, ensure_ascii=False, separators=(',', ':'))};\n",
         encoding="utf-8",
     )
     print(f"ru={len(exact['ru'])} en={len(exact['en'])} "
           f"pat_ru={len(pats['ru'])} pat_en={len(pats['en'])} -> {DEST.relative_to(ROOT)}")
-    if empty:
-        print(f"empty translations: {len(empty)}")
-        for lang, zh in empty[:8]:
-            print(f"  [{lang}] {zh[:70]}")
+    print("источники:", stats)
     if missing:
-        print(f"missing ids: {len(missing)}")
-        for zh in missing[:8]:
-            print(f"  {zh[:70]}")
+        print(f"без перевода: {len(missing)}")
+        for zh in missing[:6]:
+            print("  ", zh[:80])
     return 0
 
 

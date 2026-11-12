@@ -1,0 +1,762 @@
+{
+  "v3_2_0": {
+    "ru": "2FA уже была включена",
+    "en": "2FA was already enabled"
+  },
+  "v3_2_1": {
+    "ru": "Перейти в настройки",
+    "en": "Go to settings"
+  },
+  "v3_2_2": {
+    "ru": "Параметры ещё не загружены",
+    "en": "Parameters not loaded yet"
+  },
+  "v3_2_3": {
+    "ru": "Ошибка в параметрах",
+    "en": "Invalid parameters"
+  },
+  "v3_2_4": {
+    "ru": "Неверный формат параметров",
+    "en": "Invalid parameter format"
+  },
+  "v3_2_5": {
+    "ru": "Ожидание после отправки кода, с",
+    "en": "Wait seconds after code sent"
+  },
+  "v3_2_6": {
+    "ru": "Ожидание после отправки кода (с)",
+    "en": "Wait after code sent (seconds)"
+  },
+  "v3_2_7": {
+    "ru": "Ожидание перед первым запросом после отправки кода",
+    "en": "Wait before the first poll after code sent"
+  },
+  "v3_2_8": {
+    "ru": "Ожидание после отправки кода, с (первый раз)",
+    "en": "First wait seconds after code sent"
+  },
+  "v3_2_9": {
+    "ru": "Разблокировать пользователя",
+    "en": "Unblock user"
+  },
+  "v3_2_10": {
+    "ru": "Не удалось запустить мониторинг платформы кодов: проверьте состояние платформы и срок действия ссылки",
+    "en": "Failed to start code platform monitoring; check the platform status and link validity"
+  },
+  "v3_2_11": {
+    "ru": "Платформа кодов вернула HTTP",
+    "en": "Code platform returned HTTP"
+  },
+  "v3_2_12": {
+    "ru": "Проверка источника кодов",
+    "en": "Code source probe"
+  },
+  "v3_2_13": {
+    "ru": "Сетевой запрос за кодом не удался: проверьте прокси и подключение к платформе",
+    "en": "Code retrieval request failed; check the proxy and platform connection"
+  },
+  "v3_2_14": {
+    "ru": "По ссылке для получения кода код не пришёл в срок",
+    "en": "No verification code arrived via the code-retrieval link within the time limit"
+  },
+  "v3_2_15": {
+    "ru": "Страница получения кода на паузе, пожалуйста",
+    "en": "Code page is cooling down, please"
+  },
+  "v3_2_16": {
+    "ru": "Поддерживается только каталог tdata",
+    "en": "Only tdata directories are supported"
+  },
+  "v3_2_17": {
+    "ru": "Показаны только первые 300 записей, полный результат сохранён в логе.",
+    "en": "Showing only the first 300 entries; full results are kept in the log."
+  },
+  "v3_2_18": {
+    "ru": "Повторить можно только завершённые задачи автовхода",
+    "en": "Only finished auto sign-in tasks can be retried"
+  },
+  "v3_2_19": {
+    "ru": "Только чтение",
+    "en": "Read-only"
+  },
+  "v3_2_20": {
+    "ru": "Инструменты только для чтения доступны по умолчанию; запись и опасные операции потребуют вашего подтверждения.",
+    "en": "Read-only tools are available by default; write and dangerous operations ask for your confirmation first."
+  },
+  "v3_2_21": {
+    "ru": "Недоступно в режиме только чтения",
+    "en": "Unavailable in read-only mode"
+  },
+  "v3_2_22": {
+    "ru": "В режиме только чтения нельзя остановить сервис",
+    "en": "The service cannot be stopped in read-only mode"
+  },
+  "v3_2_23": {
+    "ru": "Только с успешной сменой пароля",
+    "en": "Only successful password changes"
+  },
+  "v3_2_24": {
+    "ru": "Только аккаунты с успешной сменой пароля",
+    "en": "Only accounts with a successful password change"
+  },
+  "v3_2_25": {
+    "ru": "Можно импортировать",
+    "en": "Importable"
+  },
+  "v3_2_26": {
+    "ru": "Можно экспортировать",
+    "en": "Exportable"
+  },
+  "v3_2_27": {
+    "ru": "Можно повторить",
+    "en": "Retryable"
+  },
+  "v3_2_28": {
+    "ru": "Количество пакетов аккаунтов",
+    "en": "Number of account packs"
+  },
+  "v3_2_29": {
+    "ru": "Заполните, если пароли у всех аккаунтов одинаковые; пустое поле — для каждого аккаунта будет использован сохранённый зашифрованный пароль 2FA.",
+    "en": "Fill in if all accounts share the same password; if left empty, each account's stored encrypted 2FA password is used."
+  },
+  "v3_2_30": {
+    "ru": "Объединяет частые обновления прогресса, записывая не чаще раза в 500ms.",
+    "en": "Coalesces high-frequency progress updates, writing at most once per 500ms."
+  },
+  "v3_2_31": {
+    "ru": "В одном архиве есть и tdata, и session, а бэкенд за раз импортирует только одним способом. Сначала распакуйте через «Инструменты → Распаковка ZIP» или разделите на два архива.",
+    "en": "The archive contains both tdata and session, but the backend can import only one way at a time. Unpack it first with “Tools → Unpack ZIP”, or split it into two archives."
+  },
+  "v3_2_32": {
+    "ru": "Название",
+    "en": "Name"
+  },
+  "v3_2_33": {
+    "ru": "позже можно повторить",
+    "en": "can be retried later"
+  },
+  "v3_2_34": {
+    "ru": "Выполняется в фоне",
+    "en": "Still running in background"
+  },
+  "v3_2_35": {
+    "ru": "Фоновые задачи",
+    "en": "Background tasks"
+  },
+  "v3_2_36": {
+    "ru": "Бэкенд пока не поддерживает диагностику загрузки, обновите бэкенд; сейчас можно импортировать напрямую (при сбое будет диагностика)",
+    "en": "The backend does not support upload doctor yet; update the backend. You can import directly now (failures come with diagnostics)"
+  },
+  "v3_2_37": {
+    "ru": "Интервал последующих запросов (с)",
+    "en": "Subsequent poll interval (seconds)"
+  },
+  "v3_2_38": {
+    "ru": "База джиттера запуска (с, 0 — выкл.)",
+    "en": "Startup jitter base (seconds, 0 disables)"
+  },
+  "v3_2_39": {
+    "ru": "Не удалось запустить мониторинг",
+    "en": "Failed to start monitoring"
+  },
+  "v3_2_40": {
+    "ru": "Ответить на сообщение",
+    "en": "Reply to message"
+  },
+  "v3_2_41": {
+    "ru": "Повторная проверка пройдена",
+    "en": "Recheck passed"
+  },
+  "v3_2_42": {
+    "ru": "Отметьте аккаунты на странице аккаунтов и нажмите «Обработка в один проход» — задача сохранится здесь и продолжится после обновления страницы.",
+    "en": "Select accounts on the Accounts page and click “One-pass processing”; the task is saved here and continues after a page refresh."
+  },
+  "v3_2_43": {
+    "ru": "После ввода узлов показывается общая занятая/свободная ёмкость",
+    "en": "Global used/remaining capacity appears after you enter nodes"
+  },
+  "v3_2_44": {
+    "ru": "Ввести код подтверждения",
+    "en": "Enter verification code"
+  },
+  "v3_2_45": {
+    "ru": "Действует ограничение Spam",
+    "en": "Under Spam restriction"
+  },
+  "v3_2_46": {
+    "ru": "Примечание",
+    "en": "Note"
+  },
+  "v3_2_47": {
+    "ru": "Копировать",
+    "en": "Copy"
+  },
+  "v3_2_48": {
+    "ru": "Копировать код",
+    "en": "Copy code"
+  },
+  "v3_2_49": {
+    "ru": "Переиспользует предварительный фильтр пакетного набора инструментов — общий для исполнителя и API предпросмотра.",
+    "en": "Reuses the bulk toolbox pre-filter, shared by the executor and the preview API."
+  },
+  "v3_2_50": {
+    "ru": "Несколько узлов построчно или файл CSV",
+    "en": "Multiple nodes or a CSV file"
+  },
+  "v3_2_51": {
+    "ru": "Неудачно",
+    "en": "Failed"
+  },
+  "v3_2_52": {
+    "ru": "Аккаунты с ошибкой",
+    "en": "Failed accounts"
+  },
+  "v3_2_53": {
+    "ru": "Время завершения",
+    "en": "Completed at"
+  },
+  "v3_2_54": {
+    "ru": "Завершить вход",
+    "en": "Finish sign-in"
+  },
+  "v3_2_55": {
+    "ru": "Версия клиента",
+    "en": "Client version"
+  },
+  "v3_2_56": {
+    "ru": "Недостаточно ёмкости",
+    "en": "Not enough capacity"
+  },
+  "v3_2_57": {
+    "ru": "Предпросмотр ёмкости недоступен, но при отправке глобальная проверка всё равно выполнится",
+    "en": "Capacity preview is unavailable; global validation still runs on submit"
+  },
+  "v3_2_58": {
+    "ru": "Пароль",
+    "en": "Password"
+  },
+  "v3_2_59": {
+    "ru": "Слишком частая смена пароля",
+    "en": "Password changes too frequent"
+  },
+  "v3_2_60": {
+    "ru": "ключ api",
+    "en": "api key"
+  },
+  "v3_2_61": {
+    "ru": "Не позволяет конфиденциальность собеседника",
+    "en": "Not allowed by the other party's privacy settings"
+  },
+  "v3_2_62": {
+    "ru": "Конфиденциальность собеседника ограничивает это действие",
+    "en": "The other party's privacy settings restrict this action"
+  },
+  "v3_2_63": {
+    "ru": "Импорт · Диагностика · Замена",
+    "en": "Import · Doctor · Replace"
+  },
+  "v3_2_64": {
+    "ru": "Импорт прокси",
+    "en": "Import proxy"
+  },
+  "v3_2_65": {
+    "ru": "При импорте задайте пул узлов и ёмкость; диагностика и замена применяются к выбранным аккаунтам.",
+    "en": "Set the node pool and capacity on import; doctor and replace apply to the selected accounts."
+  },
+  "v3_2_66": {
+    "ru": "Подтверждение результата импорта",
+    "en": "Confirm import results"
+  },
+  "v3_2_67": {
+    "ru": "Статистика импорта расходится, дальнейшие операции остановлены. Проверьте результат импорта",
+    "en": "Import statistics are inconsistent; further operations stopped. Check the import results"
+  },
+  "v3_2_68": {
+    "ru": "Импорт аккаунтов и прокси",
+    "en": "Import accounts and proxies"
+  },
+  "v3_2_69": {
+    "ru": "Параметры импорта изменились, проанализируйте заново.",
+    "en": "Import options changed; analyze again."
+  },
+  "v3_2_70": {
+    "ru": "Экспорт ссылок для получения кода",
+    "en": "Export code-retrieval links"
+  },
+  "v3_2_71": {
+    "ru": "Не удалось экспортировать ссылки для получения кода: ",
+    "en": "Failed to export code-retrieval links: "
+  },
+  "v3_2_72": {
+    "ru": "Формат экспорта",
+    "en": "Export format"
+  },
+  "v3_2_73": {
+    "ru": "В формате экспорта укажите pack или session",
+    "en": "Export format must be pack or session"
+  },
+  "v3_2_74": {
+    "ru": "Экспорт лидов в CSV",
+    "en": "Export leads CSV"
+  },
+  "v3_2_75": {
+    "ru": "Сервис бэкенда TAO будет остановлен, текущая страница потеряет соединение; автоматического перезапуска не будет. Подтвердить?",
+    "en": "This stops the TAO backend service and this page will lose its connection; it will not restart automatically. Confirm?"
+  },
+  "v3_2_76": {
+    "ru": "Выделение будет снято",
+    "en": "Selection will be cleared"
+  },
+  "v3_2_77": {
+    "ru": "Пароль 2FA не задан",
+    "en": "No 2FA password set"
+  },
+  "v3_2_78": {
+    "ru": "Аккаунты не выбраны, отметьте их в списке аккаунтов",
+    "en": "No accounts selected; select them in the account list first"
+  },
+  "v3_2_79": {
+    "ru": "Развернуть все",
+    "en": "Expand all"
+  },
+  "v3_2_80": {
+    "ru": "Инструменты",
+    "en": "Tools"
+  },
+  "v3_2_81": {
+    "ru": "Инструменты загружаются, обновите страницу позже",
+    "en": "Tools are loading; refresh later"
+  },
+  "v3_2_82": {
+    "ru": "Смена 2FA в наборе инструментов",
+    "en": "Toolbox 2FA change"
+  },
+  "v3_2_83": {
+    "ru": "Число вызовов инструментов",
+    "en": "Tool call count"
+  },
+  "v3_2_84": {
+    "ru": "Смахивайте влево или вправо либо используйте стрелки для просмотра обзора аккаунта",
+    "en": "Swipe left or right, or use the arrow keys, to browse the account overview"
+  },
+  "v3_2_85": {
+    "ru": "2FA считана со страницы получения кода",
+    "en": "2FA read from the code page"
+  },
+  "v3_2_86": {
+    "ru": "Не удалось расшифровать сохранённую 2FA: проверьте мастер-ключ или сохраните текущий пароль заново",
+    "en": "Failed to decrypt the saved 2FA: check the master key or save the current password again"
+  },
+  "v3_2_87": {
+    "ru": "2FA сохранена",
+    "en": "2FA saved"
+  },
+  "v3_2_88": {
+    "ru": "Сохранено локально",
+    "en": "Saved locally"
+  },
+  "v3_2_89": {
+    "ru": "Очередь остановлена; аккаунт в работе доработает, контрольная точка сохранится",
+    "en": "Queue stopped; the account in progress will finish and keep its checkpoint"
+  },
+  "v3_2_90": {
+    "ru": "Назначено",
+    "en": "Assigned"
+  },
+  "v3_2_91": {
+    "ru": "Добавлено в очередь входа",
+    "en": "Added to sign-in queue"
+  },
+  "v3_2_92": {
+    "ru": "Код получен, выполняется вход",
+    "en": "Code received, signing in"
+  },
+  "v3_2_93": {
+    "ru": "Запущен мониторинг динамических кодов",
+    "en": "Dynamic code monitoring started"
+  },
+  "v3_2_94": {
+    "ru": "Включено",
+    "en": "Enabled"
+  },
+  "v3_2_95": {
+    "ru": "Уже в очереди входа",
+    "en": "Already in the sign-in queue"
+  },
+  "v3_2_96": {
+    "ru": "Уже в запущенной задаче",
+    "en": "Already in a running task"
+  },
+  "v3_2_97": {
+    "ru": "Обработано",
+    "en": "Processed"
+  },
+  "v3_2_98": {
+    "ru": "Экспортировано",
+    "en": "Exported"
+  },
+  "v3_2_99": {
+    "ru": "2FA включена",
+    "en": "2FA enabled"
+  },
+  "v3_2_100": {
+    "ru": "Отсканировано",
+    "en": "Scanned"
+  },
+  "v3_2_101": {
+    "ru": "Авторизовано",
+    "en": "Authorized"
+  },
+  "v3_2_102": {
+    "ru": "Добавлено",
+    "en": "Added"
+  },
+  "v3_2_103": {
+    "ru": "Обновлено",
+    "en": "Updated"
+  },
+  "v3_2_104": {
+    "ru": "Существующая сессия действительна, повторный код не отправлялся",
+    "en": "Existing session verified as valid; no duplicate code sent"
+  },
+  "v3_2_105": {
+    "ru": "Пакетный экспорт уже формируется, повторите позже",
+    "en": "A bulk export is already being generated; try again later"
+  },
+  "v3_2_106": {
+    "ru": "Сброс запрошен",
+    "en": "Reset requested"
+  },
+  "v3_2_107": {
+    "ru": "Доля авторизованных",
+    "en": "Signed-in share"
+  },
+  "v3_2_108": {
+    "ru": "Привязана резервная почта",
+    "en": "Recovery email linked"
+  },
+  "v3_2_109": {
+    "ru": "Завершено",
+    "en": "Finished"
+  },
+  "v3_2_110": {
+    "ru": "Разблокировано",
+    "en": "Unlocked"
+  },
+  "v3_2_111": {
+    "ru": "Результат записан, подробности — в исходных данных.",
+    "en": "Result recorded; see the raw data for details."
+  },
+  "v3_2_112": {
+    "ru": "Задано",
+    "en": "Set"
+  },
+  "v3_2_113": {
+    "ru": "Выбрано",
+    "en": "Selected"
+  },
+  "v3_2_114": {
+    "ru": "Выбранные аккаунты",
+    "en": "Selected accounts"
+  },
+  "v3_2_115": {
+    "ru": "Заблокировано",
+    "en": "Locked"
+  },
+  "v3_2_116": {
+    "ru": "Недопустимое значение логического параметра: ",
+    "en": "Invalid boolean parameter value: "
+  },
+  "v3_2_117": {
+    "ru": "Частые",
+    "en": "Frequent"
+  },
+  "v3_2_118": {
+    "ru": "Частые задачи",
+    "en": "Frequent tasks"
+  },
+  "v3_2_119": {
+    "ru": "Пробный запуск",
+    "en": "Dry run"
+  },
+  "v3_2_120": {
+    "ru": "параллельно одновременно",
+    "en": "concurrent parallel"
+  },
+  "v3_2_121": {
+    "ru": "Число потоков",
+    "en": "Concurrency"
+  },
+  "v3_2_122": {
+    "ru": "и заполнит всё за вас, проверьте теги и прокси, затем нажмите «Импорт»",
+    "en": "and fills it in for you; check the tags and proxy, then click Import"
+  },
+  "v3_2_123": {
+    "ru": "Параллельных потоков (рекомендуется 8)",
+    "en": "Parallel workers (8 recommended)"
+  },
+  "v3_2_124": {
+    "ru": "Нижняя навигация",
+    "en": "Bottom navigation"
+  },
+  "v3_2_125": {
+    "ru": "Совет: ",
+    "en": "Tip: "
+  },
+  "v3_2_126": {
+    "ru": "Начать ·",
+    "en": "Start ·"
+  },
+  "v3_2_127": {
+    "ru": "Запустить задачу",
+    "en": "Start task"
+  },
+  "v3_2_128": {
+    "ru": "Время начала",
+    "en": "Started at"
+  },
+  "v3_2_129": {
+    "ru": "Сервис TAO запущен (нормально слушает)",
+    "en": "TAO service is running (listening normally)"
+  },
+  "v3_2_130": {
+    "ru": "Текущий пароль 2FA неверен, изменение не выполнено",
+    "en": "Current 2FA password is wrong; change failed"
+  },
+  "v3_2_131": {
+    "ru": "Сейчас режим только чтения",
+    "en": "Read-only mode is active"
+  },
+  "v3_2_132": {
+    "ru": "У текущей сессии нет права на отправку",
+    "en": "The current session has no send permission"
+  },
+  "v3_2_133": {
+    "ru": "Текущая сессия авторизована слишком недавно, сброс других устройств пока запрещён",
+    "en": "The current session signed in too recently; terminating other devices is temporarily blocked"
+  },
+  "v3_2_134": {
+    "ru": "Сейчас режим только чтения, изменяющие операции недоступны",
+    "en": "Read-only mode: changes cannot be made"
+  },
+  "v3_2_135": {
+    "ru": "Сейчас режим только чтения, операция недоступна",
+    "en": "Read-only mode: this operation is unavailable"
+  },
+  "v3_2_136": {
+    "ru": "Сейчас это демо-данные; после подключения бэкенда здесь будут отметки по вашему реальному прогрессу.",
+    "en": "This is demo data; once the backend is connected, progress here reflects your real state."
+  },
+  "v3_2_137": {
+    "ru": "В текущем режиме изменение прокси запрещено",
+    "en": "Changing the proxy is not allowed in this mode"
+  },
+  "v3_2_138": {
+    "ru": "В текущем окружении не установлен opentele. Установить одной кнопкой и продолжить экспорт?",
+    "en": "opentele is not installed in this environment. Install it with one click and continue exporting?"
+  },
+  "v3_2_139": {
+    "ru": "К сверке",
+    "en": "To verify"
+  },
+  "v3_2_140": {
+    "ru": "Быстрые фильтры",
+    "en": "Quick filters"
+  },
+  "v3_2_141": {
+    "ru": "Быстрый фильтр",
+    "en": "Quick filter"
+  },
+  "v3_2_142": {
+    "ru": "Быстрая проверка активности",
+    "en": "Quick liveness check"
+  },
+  "v3_2_143": {
+    "ru": "Пропущенные файлы",
+    "en": "Ignored files"
+  },
+  "v3_2_144": {
+    "ru": "Всего",
+    "en": "Total"
+  },
+  "v3_2_145": {
+    "ru": "Успешно",
+    "en": "Succeeded"
+  },
+  "v3_2_146": {
+    "ru": "Успешные аккаунты",
+    "en": "Successful accounts"
+  },
+  "v3_2_147": {
+    "ru": "Я знаю формат, использовать прежний вход",
+    "en": "I know the format; use the old entry point"
+  },
+  "v3_2_148": {
+    "ru": "Или вставьте текст",
+    "en": "Or paste text"
+  },
+  "v3_2_149": {
+    "ru": "Добавить один вручную",
+    "en": "Add one manually"
+  },
+  "v3_2_150": {
+    "ru": "Ввести вручную",
+    "en": "Enter manually"
+  },
+  "v3_2_151": {
+    "ru": "Телефон/файл",
+    "en": "Phone/file"
+  },
+  "v3_2_152": {
+    "ru": "Номер ограничен",
+    "en": "Phone number restricted"
+  },
+  "v3_2_153": {
+    "ru": "Недействительный номер",
+    "en": "Invalid phone number"
+  },
+  "v3_2_154": {
+    "ru": "Проверка номеров",
+    "en": "Phone number check"
+  },
+  "v3_2_155": {
+    "ru": "Открыть AI-помощника",
+    "en": "Open AI assistant"
+  },
+  "v3_2_156": {
+    "ru": "Выполнить",
+    "en": "Run"
+  },
+  "v3_2_157": {
+    "ru": "Ошибка выполнения",
+    "en": "Execution failed"
+  },
+  "v3_2_158": {
+    "ru": "Пакетное удаление · Успешно",
+    "en": "Bulk delete · Succeeded"
+  },
+  "v3_2_159": {
+    "ru": "Пакетный импорт списка номеров",
+    "en": "Bulk import phone number list"
+  },
+  "v3_2_160": {
+    "ru": "Пакетный экспорт ссылок для получения кода",
+    "en": "Bulk export code-retrieval links"
+  },
+  "v3_2_161": {
+    "ru": "Пакетные операции",
+    "en": "Bulk operations"
+  },
+  "v3_2_162": {
+    "ru": "Пакетная разблокировка",
+    "en": "Bulk unlock"
+  },
+  "v3_2_163": {
+    "ru": "Пакетная разблокировка аккаунтов",
+    "en": "Bulk unlock accounts"
+  },
+  "v3_2_164": {
+    "ru": "Пакетный выход и повторный вход",
+    "en": "Bulk sign out and sign in again"
+  },
+  "v3_2_165": {
+    "ru": "Пакетная настройка прокси",
+    "en": "Bulk configure proxies"
+  },
+  "v3_2_166": {
+    "ru": "Пакетная блокировка",
+    "en": "Bulk lock"
+  },
+  "v3_2_167": {
+    "ru": "Пакетная блокировка не удалась: ",
+    "en": "Bulk lock failed: "
+  },
+  "v3_2_168": {
+    "ru": "Пакетная блокировка аккаунтов",
+    "en": "Bulk lock accounts"
+  },
+  "v3_2_169": {
+    "ru": "Найдите звезду: метка / телефон / @username",
+    "en": "Find a star: label / phone / @username"
+  },
+  "v3_2_170": {
+    "ru": "Аккаунт или ресурс не найден, возможно, он удалён",
+    "en": "This account or resource was not found; it may have been deleted"
+  },
+  "v3_2_171": {
+    "ru": "Перетащите файл или вставьте текст, формат определится автоматически",
+    "en": "Drop a file or paste text; the format is detected automatically"
+  },
+  "v3_2_172": {
+    "ru": "Перетащите файл или нажмите для выбора",
+    "en": "Drop a file, or click to choose"
+  },
+  "v3_2_173": {
+    "ru": "Перетаскивание — поворот · колесо — масштаб · клик по названию созвездия — перелёт · клик по звезде — подробности · Esc — назад",
+    "en": "Drag to rotate · scroll to zoom · click a constellation name to fly there · click a star for details · Esc to go back"
+  },
+  "v3_2_174": {
+    "ru": "Выберите по задаче, с настройками по умолчанию уже можно начинать",
+    "en": "Pick by task; the defaults are enough to start"
+  },
+  "v3_2_175": {
+    "ru": "По стране",
+    "en": "By country"
+  },
+  "v3_2_176": {
+    "ru": "По тегам",
+    "en": "By tags"
+  },
+  "v3_2_177": {
+    "ru": "Импорт по формату",
+    "en": "Import by format"
+  },
+  "v3_2_178": {
+    "ru": "По статусу",
+    "en": "By status"
+  },
+  "v3_2_179": {
+    "ru": "API не поддерживает этот метод",
+    "en": "The API does not support this method"
+  },
+  "v3_2_180": {
+    "ru": "Статус API $1",
+    "en": "API status $1"
+  },
+  "v3_2_181": {
+    "ru": "Опрос сервиса кодов",
+    "en": "Code polling"
+  },
+  "v3_2_182": {
+    "ru": "Рекомендуется",
+    "en": "Recommended"
+  },
+  "v3_2_183": {
+    "ru": "Отправить задачу",
+    "en": "Submit task"
+  },
+  "v3_2_184": {
+    "ru": "Извлекает явно помеченные поля 2FA со страницы.",
+    "en": "Extracts the explicitly labeled 2FA fields from the page."
+  },
+  "v3_2_185": {
+    "ru": "Напоминание",
+    "en": "Reminder"
+  },
+  "v3_2_186": {
+    "ru": "Поиск по метке, телефону, имени пользователя или тегу",
+    "en": "Search label, phone, username, or tags"
+  },
+  "v3_2_187": {
+    "ru": "Поиск параметров",
+    "en": "Search parameters"
+  },
+  "v3_2_188": {
+    "ru": "Поиск параметров, например «параллельно», «прокси», «повтор»",
+    "en": "Search parameters, e.g. “concurrency”, “proxy”, “retry”"
+  },
+  "v3_2_189": {
+    "ru": "Поиск аккаунтов",
+    "en": "Search accounts"
+  }
+}

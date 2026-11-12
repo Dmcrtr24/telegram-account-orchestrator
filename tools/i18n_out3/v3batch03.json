@@ -1,0 +1,762 @@
+{
+ "v3_3_0": {
+  "ru": "Поиск аккаунтов или операций",
+  "en": "Search accounts or actions"
+ },
+ "v3_3_1": {
+  "ru": "Поиск аккаунтов или операций…",
+  "en": "Search accounts or actions…"
+ },
+ "v3_3_2": {
+  "ru": "Поиск аккаунтов или операций, например «прокси», «экспорт», «+86»",
+  "en": "Search accounts or actions, e.g. “proxy”, “export”, “+86”"
+ },
+ "v3_3_3": {
+  "ru": "Количество до операции",
+  "en": "Count before operation"
+ },
+ "v3_3_4": {
+  "ru": "Статус после операции",
+  "en": "Status after operation"
+ },
+ "v3_3_5": {
+  "ru": "Журнал операций",
+  "en": "Operation log"
+ },
+ "v3_3_6": {
+  "ru": "Результат операции",
+  "en": "Operation result"
+ },
+ "v3_3_7": {
+  "ru": "Смена пароля выполняется",
+  "en": "Changing password"
+ },
+ "v3_3_8": {
+  "ru": "Смена пароля не удалась",
+  "en": "Password change failed"
+ },
+ "v3_3_9": {
+  "ru": "Смена пароля требует проверки",
+  "en": "Password change needs review"
+ },
+ "v3_3_10": {
+  "ru": "Пароль изменён",
+  "en": "Password changed"
+ },
+ "v3_3_11": {
+  "ru": "Смена пароля не подтверждена или не сохранена, проверьте перед экспортом",
+  "en": "Password change unconfirmed or not saved; verify before exporting"
+ },
+ "v3_3_12": {
+  "ru": "Результат смены пароля не подтверждён, экспорт не выполняется",
+  "en": "Password change result unconfirmed; export skipped"
+ },
+ "v3_3_13": {
+  "ru": "Отказаться",
+  "en": "Discard"
+ },
+ "v3_3_14": {
+  "ru": "Не удалось переключить дата-центр, повторите",
+  "en": "Data center switch failed; retry"
+ },
+ "v3_3_15": {
+  "ru": "Исключение при работе с базой данных",
+  "en": "Database operation exception"
+ },
+ "v3_3_16": {
+  "ru": "Исключение типа данных",
+  "en": "Data type exception"
+ },
+ "v3_3_17": {
+  "ru": "Количество",
+  "en": "Count"
+ },
+ "v3_3_18": {
+  "ru": "Общий процент успеха",
+  "en": "Overall success rate"
+ },
+ "v3_3_19": {
+  "ru": "Файл",
+  "en": "File"
+ },
+ "v3_3_20": {
+  "ru": "Файл не найден",
+  "en": "File not found"
+ },
+ "v3_3_21": {
+  "ru": "Имя файла",
+  "en": "File name"
+ },
+ "v3_3_22": {
+  "ru": "Файл слишком большой, превышен лимит загрузки бэкенда",
+  "en": "File too large, exceeds backend upload limit"
+ },
+ "v3_3_23": {
+  "ru": "Не удалось прочитать файл, выберите файл снова",
+  "en": "Failed to read file; choose the file again"
+ },
+ "v3_3_24": {
+  "ru": "Преобразование файла",
+  "en": "File conversion"
+ },
+ "v3_3_25": {
+  "ru": "Очистка при обрыве",
+  "en": "Disconnect cleanup"
+ },
+ "v3_3_26": {
+  "ru": "Нет сессии",
+  "en": "No session"
+ },
+ "v3_3_27": {
+  "ru": "Не удалось загрузить данные: ",
+  "en": "Failed to load data: "
+ },
+ "v3_3_28": {
+  "ru": "Не распознано: это ни tdata, ни .session",
+  "en": "Unrecognized: neither tdata nor .session"
+ },
+ "v3_3_29": {
+  "ru": "Лог",
+  "en": "Log"
+ },
+ "v3_3_30": {
+  "ru": "Старый 2FA не совпадает: ",
+  "en": "Old 2FA mismatch: "
+ },
+ "v3_3_31": {
+  "ru": "Старый 2FA не совпадает: неверный текущий пароль {source}",
+  "en": "Old 2FA mismatch: current password for {source} is invalid"
+ },
+ "v3_3_32": {
+  "ru": "Старый 2FA отсутствует: у аккаунта включена 2FA, укажите текущий пароль",
+  "en": "Old 2FA missing: 2FA is enabled for this account; provide the current password"
+ },
+ "v3_3_33": {
+  "ru": "Старая авторизация завершена",
+  "en": "Old authorization signed out"
+ },
+ "v3_3_34": {
+  "ru": "Детали",
+  "en": "Details"
+ },
+ "v3_3_35": {
+  "ru": "Знак зодиака",
+  "en": "Zodiac sign"
+ },
+ "v3_3_36": {
+  "ru": "Умная настройка ожидания",
+  "en": "Smart wait adjustment"
+ },
+ "v3_3_37": {
+  "ru": "Умная настройка ожидания (оптимизация по успехам и кулдаунам)",
+  "en": "Smart wait adjustment (optimized by success and cooldown results)"
+ },
+ "v3_3_38": {
+  "ru": "Ещё",
+  "en": "More"
+ },
+ "v3_3_39": {
+  "ru": "Другие инструменты",
+  "en": "More tools"
+ },
+ "v3_3_40": {
+  "ru": "Другие параметры",
+  "en": "More options"
+ },
+ "v3_3_41": {
+  "ru": "Сменить прокси",
+  "en": "Change proxy"
+ },
+ "v3_3_42": {
+  "ru": "Сменить прокси выбранных аккаунтов",
+  "en": "Change proxy of selected accounts"
+ },
+ "v3_3_43": {
+  "ru": "Самая быстрая проверка активности: только проверка авторизации и один лёгкий запрос API, без чтения профиля.",
+  "en": "Fastest liveness check: verifies authorization and sends one lightweight API request, no profile read."
+ },
+ "v3_3_44": {
+  "ru": "За последние 10 минут код входа не найден. Запросите код в реальном клиенте TG и прочитайте позже.",
+  "en": "No login code found in the last 10 minutes. Request a code in a real TG client, then read again later."
+ },
+ "v3_3_45": {
+  "ru": "Недавно использованные",
+  "en": "Recently used"
+ },
+ "v3_3_46": {
+  "ru": "Есть ссылка для получения кода",
+  "en": "Has code-retrieval link"
+ },
+ "v3_3_47": {
+  "ru": "Есть ошибки",
+  "en": "Has failures"
+ },
+ "v3_3_48": {
+  "ru": "Есть имя пользователя",
+  "en": "Has username"
+ },
+ "v3_3_49": {
+  "ru": "Провайдер",
+  "en": "Provider"
+ },
+ "v3_3_50": {
+  "ru": "Внутренняя ошибка сервера",
+  "en": "Internal server error"
+ },
+ "v3_3_51": {
+  "ru": "Сервис завершает работу; чтобы запустить снова, выполните start.bat в исходном терминале",
+  "en": "Service is shutting down; to run again, execute start.bat from the original terminal"
+ },
+ "v3_3_52": {
+  "ru": "Сервер всё ещё работает на старой версии (405). Закройте старое окно, запустите start.bat снова, затем обновите страницу по Ctrl+F5",
+  "en": "Server is still running an old version (405). Close the old window, run start.bat again, then press Ctrl+F5 to refresh the page"
+ },
+ "v3_3_53": {
+  "ru": "Ошибка на сервере, подробности в логе сервера",
+  "en": "Server error; details are in the server log"
+ },
+ "v3_3_54": {
+  "ru": "Перезапуск сервиса прерван",
+  "en": "Service restart interrupted"
+ },
+ "v3_3_55": {
+  "ru": "Перезапуск сервиса прерван, проверьте состояние аккаунта и повторите",
+  "en": "Service restart interrupted; check the account status and retry"
+ },
+ "v3_3_56": {
+  "ru": "Текущий пароль аккаунта не сохранён (если 2FA не включена, оставьте пустым)",
+  "en": "Account's current password not saved (leave empty if 2FA is off)"
+ },
+ "v3_3_57": {
+  "ru": "Порт для проверки не указан",
+  "en": "No port to check specified"
+ },
+ "v3_3_58": {
+  "ru": "Не авторизован: отсутствует сессия",
+  "en": "Unauthorized: missing session"
+ },
+ "v3_3_59": {
+  "ru": "Не авторизован",
+  "en": "Unauthorized"
+ },
+ "v3_3_60": {
+  "ru": "Не подтверждено",
+  "en": "Unconfirmed"
+ },
+ "v3_3_61": {
+  "ru": "Локальный пароль не задан",
+  "en": "Local password not set"
+ },
+ "v3_3_62": {
+  "ru": "Не прошёл фильтр рабочих аккаунтов",
+  "en": "Failed the healthy-account filter"
+ },
+ "v3_3_63": {
+  "ru": "Локальный пароль",
+  "en": "Local password"
+ },
+ "v3_3_64": {
+  "ru": "Локальной сессии нет, требуется вход",
+  "en": "No local session, sign-in required"
+ },
+ "v3_3_65": {
+  "ru": "Локальная демо-конфигурация (в реальный .env не записана)",
+  "en": "Local demo config (not written to the real .env)"
+ },
+ "v3_3_66": {
+  "ru": "Запись",
+  "en": "Entry"
+ },
+ "v3_3_67": {
+  "ru": "Источник",
+  "en": "Source"
+ },
+ "v3_3_68": {
+  "ru": "Тип источника",
+  "en": "Source type"
+ },
+ "v3_3_69": {
+  "ru": "Посмотреть полный результат",
+  "en": "View full result"
+ },
+ "v3_3_70": {
+  "ru": "Проверить статус 2FA",
+  "en": "Check 2FA status"
+ },
+ "v3_3_71": {
+  "ru": "Интервал запроса, с",
+  "en": "Query interval (seconds)"
+ },
+ "v3_3_72": {
+  "ru": "Интервал запроса, с (для GetHTML минимум 60 с)",
+  "en": "Query interval (seconds; at least 60 for GetHTML)"
+ },
+ "v3_3_73": {
+  "ru": "Интервал запроса (с)",
+  "en": "Query interval (seconds)"
+ },
+ "v3_3_74": {
+  "ru": "Преобразование формата",
+  "en": "Format conversion"
+ },
+ "v3_3_75": {
+  "ru": "Проверить прокси выбранных аккаунтов",
+  "en": "Test proxy of selected accounts"
+ },
+ "v3_3_76": {
+  "ru": "Режим",
+  "en": "Mode"
+ },
+ "v3_3_77": {
+  "ru": "Запрос кода подтверждения",
+  "en": "Requesting verification code"
+ },
+ "v3_3_78": {
+  "ru": "Разбор аккаунтов и подсчёт глобальной ёмкости узлов…",
+  "en": "Parsing accounts and counting global node capacity…"
+ },
+ "v3_3_79": {
+  "ru": "Выход из старой сессии",
+  "en": "Signing out of the old session"
+ },
+ "v3_3_80": {
+  "ru": "Чтение официальных уведомлений через существующую сессию менеджера…",
+  "en": "Reading official notifications through the manager's existing session…"
+ },
+ "v3_3_81": {
+  "ru": "Проверка существующей сессии входа",
+  "en": "Verifying existing sign-in session"
+ },
+ "v3_3_82": {
+  "ru": "Глобальная ёмкость на узел (0 — без ограничений)",
+  "en": "Global capacity per node (0 = unlimited)"
+ },
+ "v3_3_83": {
+  "ru": "Распределение на узел (0=по кругу)",
+  "en": "Allocation per node (0=round-robin)"
+ },
+ "v3_3_84": {
+  "ru": "Каждая строка: телефон|ссылка для получения кода",
+  "en": "Per line: phone|code-retrieval link"
+ },
+ "v3_3_85": {
+  "ru": "Аккаунты для импорта не найдены.",
+  "en": "No accounts found to import."
+ },
+ "v3_3_86": {
+  "ru": "Нет совпадающих аккаунтов, операций или параметров.",
+  "en": "No matching accounts, actions, or settings."
+ },
+ "v3_3_87": {
+  "ru": "Нет аккаунтов для обработки",
+  "en": "No accounts to process"
+ },
+ "v3_3_88": {
+  "ru": "Нет ссылок для получения кода для экспорта",
+  "en": "No code-retrieval links to export"
+ },
+ "v3_3_89": {
+  "ru": "Нет подтверждённых аккаунтов для экспорта, результат сохранён",
+  "en": "No confirmed accounts to export; results kept"
+ },
+ "v3_3_90": {
+  "ru": "Нет незавершённых входов",
+  "en": "No pending sign-ins"
+ },
+ "v3_3_91": {
+  "ru": "Нет аккаунтов, ожидающих входа, или с ошибками",
+  "en": "No accounts pending sign-in or failed"
+ },
+ "v3_3_92": {
+  "ru": "Аккаунты не экспортированы (ошибок",
+  "en": "No accounts exported successfully (failed"
+ },
+ "v3_3_93": {
+  "ru": "Нет прав на файл",
+  "en": "No file permission"
+ },
+ "v3_3_94": {
+  "ru": "Локального пароля нет",
+  "en": "No local password"
+ },
+ "v3_3_95": {
+  "ru": "Нет целей, удовлетворяющих условиям",
+  "en": "No targets match the criteria"
+ },
+ "v3_3_96": {
+  "ru": "Не разобрано",
+  "en": "Not parsed"
+ },
+ "v3_3_97": {
+  "ru": "Аккаунты не выбраны",
+  "en": "No accounts selected"
+ },
+ "v3_3_98": {
+  "ru": "Удалить аккаунт TG",
+  "en": "Delete TG account"
+ },
+ "v3_3_99": {
+  "ru": "Сообщения и группы",
+  "en": "Messages and groups"
+ },
+ "v3_3_100": {
+  "ru": "Текст сообщения",
+  "en": "Message content"
+ },
+ "v3_3_101": {
+  "ru": "Добавление и импорт",
+  "en": "Add and import"
+ },
+ "v3_3_102": {
+  "ru": "Добавить один аккаунт",
+  "en": "Add single account"
+ },
+ "v3_3_103": {
+  "ru": "После очистки недействительных локальных сессий сразу выполняется повторный вход по ссылке для получения кода.",
+  "en": "Clears invalid local sessions, then signs in again immediately via the code-retrieval link."
+ },
+ "v3_3_104": {
+  "ru": "Сбросить все фильтры",
+  "en": "Clear all filters"
+ },
+ "v3_3_105": {
+  "ru": "Сбросить прежний выбор",
+  "en": "Clear previous selection"
+ },
+ "v3_3_106": {
+  "ru": "Сбросить прежний выбор и оставить только аккаунты с последней успешной сменой пароля в текущей области поиска",
+  "en": "Clear previous selection and keep only accounts whose password change succeeded most recently in the current search scope"
+ },
+ "v3_3_107": {
+  "ru": "Сбросить фильтры",
+  "en": "Clear filters"
+ },
+ "v3_3_108": {
+  "ru": "Нажмите, чтобы открыть подробности",
+  "en": "Click to open details"
+ },
+ "v3_3_109": {
+  "ru": "Нажмите, чтобы пропустить",
+  "en": "Click to skip"
+ },
+ "v3_3_110": {
+  "ru": "Перезагрузить бэкенд",
+  "en": "Hot reload backend"
+ },
+ "v3_3_111": {
+  "ru": "Статус · Ограничения · 2FA",
+  "en": "Status · Restrictions · 2FA"
+ },
+ "v3_3_112": {
+  "ru": "Статус",
+  "en": "Status is"
+ },
+ "v3_3_113": {
+  "ru": "Описание статуса",
+  "en": "Status description"
+ },
+ "v3_3_114": {
+  "ru": "Окружение · Зависимости · Ключи",
+  "en": "Environment · Dependencies · Keys"
+ },
+ "v3_3_115": {
+  "ru": "Для входа в клиент Telegram на телефоне или компьютере. Здесь читаются только официальные уведомления, полученные авторизованными аккаунтами менеджера: код не отправляется, выход и повторный вход не выполняются.",
+  "en": "Used to sign in on a mobile or desktop Telegram client. This only reads official notifications received by accounts already signed in to the manager: it does not send codes, sign out, or sign in again."
+ },
+ "v3_3_116": {
+  "ru": "Чтение кода входа реального клиента TG через авторизованную сессию",
+  "en": "Read a real TG client login code using a signed-in session"
+ },
+ "v3_3_117": {
+  "ru": "ID пользователя",
+  "en": "User ID"
+ },
+ "v3_3_118": {
+  "ru": "Пользователь остановил сервис TAO",
+  "en": "User stopped the TAO service"
+ },
+ "v3_3_119": {
+  "ru": "Имя пользователя, группа или канал не существуют либо нет прав",
+  "en": "Username, group, or channel does not exist, or no permission"
+ },
+ "v3_3_120": {
+  "ru": "Оставьте пустым, чтобы сохранить текущий пароль; старый пароль берётся из сохранённых записей или со страницы приёма кода",
+  "en": "Leave empty to keep the current password; the old password comes from saved records or the code-receiving page"
+ },
+ "v3_3_121": {
+  "ru": "Вход и приём кода",
+  "en": "Sign-in and code retrieval"
+ },
+ "v3_3_122": {
+  "ru": "Вход выполняется",
+  "en": "Signing in"
+ },
+ "v3_3_123": {
+  "ru": "Ошибка входа",
+  "en": "Sign-in failed"
+ },
+ "v3_3_124": {
+  "ru": "Ошибка входа: ",
+  "en": "Sign-in failed: "
+ },
+ "v3_3_125": {
+  "ru": "Состояние входа недействительно: в текущем процессе нет ожидающего сеанса кода, запросите код повторно",
+  "en": "Sign-in state expired: no pending code session in this process, request the code again"
+ },
+ "v3_3_126": {
+  "ru": "неверный текущий пароль",
+  "en": "current password is invalid"
+ },
+ "v3_3_127": {
+  "ru": "Аккаунтов на мониторинге",
+  "en": "Monitored accounts"
+ },
+ "v3_3_128": {
+  "ru": "Детали цели",
+  "en": "Target details"
+ },
+ "v3_3_129": {
+  "ru": "Формат не распознан, выберите исходный вариант ниже",
+  "en": "Format not recognized; choose the original entry below"
+ },
+ "v3_3_130": {
+  "ru": "Как это использовать",
+  "en": "See how to use"
+ },
+ "v3_3_131": {
+  "ru": "секунд до повторного запроса",
+  "en": "seconds until the next query"
+ },
+ "v3_3_132": {
+  "ru": "секунд до повтора",
+  "en": "seconds until retry"
+ },
+ "v3_3_133": {
+  "ru": "Ошибка поля программы",
+  "en": "Program field error"
+ },
+ "v3_3_134": {
+  "ru": "Порт или хост",
+  "en": "Port or host"
+ },
+ "v3_3_135": {
+  "ru": "Ожидание следующего запроса: ",
+  "en": "Waiting for the next query: "
+ },
+ "v3_3_136": {
+  "ru": "Ожидание следующего запроса: {remaining:.0f} с",
+  "en": "Waiting for the next query: {remaining:.0f} seconds"
+ },
+ "v3_3_137": {
+  "ru": "Ожидание",
+  "en": "Waiting"
+ },
+ "v3_3_138": {
+  "ru": "Повторить после ожидания",
+  "en": "Retry after waiting"
+ },
+ "v3_3_139": {
+  "ru": "Время ожидания должно быть 0-600 с, интервал запроса — 1-600 с",
+  "en": "Wait time must be 0-600 seconds, query interval must be 1-600 seconds"
+ },
+ "v3_3_140": {
+  "ru": "Тайм-аут ожидания действительного кода",
+  "en": "Timed out waiting for a valid code"
+ },
+ "v3_3_141": {
+  "ru": "Ожидание сброса",
+  "en": "Waiting for reset"
+ },
+ "v3_3_142": {
+  "ru": "Ожидание повтора",
+  "en": "Waiting to retry"
+ },
+ "v3_3_143": {
+  "ru": "Фильтр",
+  "en": "Filter"
+ },
+ "v3_3_144": {
+  "ru": "Фильтр задач",
+  "en": "Filter tasks"
+ },
+ "v3_3_145": {
+  "ru": "Системное исключение ввода-вывода",
+  "en": "System I/O exception"
+ },
+ "v3_3_146": {
+  "ru": "Версия системы",
+  "en": "System version"
+ },
+ "v3_3_147": {
+  "ru": "Всего успешно",
+  "en": "Total successful"
+ },
+ "v3_3_148": {
+  "ru": "Лиды",
+  "en": "Leads"
+ },
+ "v3_3_149": {
+  "ru": "Детали результата",
+  "en": "Result details"
+ },
+ "v3_3_150": {
+  "ru": "Обслуживание",
+  "en": "Maintenance"
+ },
+ "v3_3_151": {
+  "ru": "Номер",
+  "en": "No."
+ },
+ "v3_3_152": {
+  "ru": "Нет ссылки для получения кода",
+  "en": "Missing code-retrieval link"
+ },
+ "v3_3_153": {
+  "ru": "Отсутствуют обязательные параметры",
+  "en": "Missing required parameters"
+ },
+ "v3_3_154": {
+  "ru": "Отсутствует телефон, сессия или ссылка для получения кода",
+  "en": "Missing phone number, session, or code-retrieval link"
+ },
+ "v3_3_155": {
+  "ru": "Отсутствует телефон или ссылка для получения кода",
+  "en": "Missing phone number or code-retrieval link"
+ },
+ "v3_3_156": {
+  "ru": "Не удалось обратиться по сетевому адресу",
+  "en": "Network address access failed"
+ },
+ "v3_3_157": {
+  "ru": "Не удалось подключиться к сети",
+  "en": "Network connection failed"
+ },
+ "v3_3_158": {
+  "ru": "Сетевая ошибка",
+  "en": "Network error"
+ },
+ "v3_3_159": {
+  "ru": "Доступ к группе или каналу ограничен",
+  "en": "Group or channel access restricted"
+ },
+ "v3_3_160": {
+  "ru": "Длительность",
+  "en": "Duration"
+ },
+ "v3_3_161": {
+  "ru": "Длительность, с",
+  "en": "Duration (seconds)"
+ },
+ "v3_3_162": {
+  "ru": "Автообновление (каждые 10 с)",
+  "en": "Auto-refresh (every 10 seconds)"
+ },
+ "v3_3_163": {
+  "ru": "Настройки автоматического приёма кода",
+  "en": "Automatic code retrieval settings"
+ },
+ "v3_3_164": {
+  "ru": "Настройки повтора со сбросом других устройств",
+  "en": "Auto terminate-devices retry config"
+ },
+ "v3_3_165": {
+  "ru": "Число параллельных задач автовхода и пакетных задач",
+  "en": "Parallel count for auto sign-in and bulk tasks"
+ },
+ "v3_3_166": {
+  "ru": "Ёмкость узла",
+  "en": "Node capacity"
+ },
+ "v3_3_167": {
+  "ru": "Ёмкости узлов недостаточно, ни один аккаунт не изменён",
+  "en": "Insufficient node capacity, no accounts modified"
+ },
+ "v3_3_168": {
+  "ru": "Формат узла",
+  "en": "Node format"
+ },
+ "v3_3_169": {
+  "ru": "Неверный формат узла, используйте socks5/http URL",
+  "en": "Invalid node format, use socks5/http URL"
+ },
+ "v3_3_170": {
+  "ru": "Ошибка формата строки; исправьте и отправьте снова (ни одна строка не отброшена)",
+  "en": "Line format error; fix and resubmit (no lines were discarded)"
+ },
+ "v3_3_171": {
+  "ru": "Разобрано",
+  "en": "Parsed"
+ },
+ "v3_3_172": {
+  "ru": "Разблокировать аккаунт",
+  "en": "Unlock account"
+ },
+ "v3_3_173": {
+  "ru": "Сработало ограничение операций Telegram",
+  "en": "Telegram operation limit triggered"
+ },
+ "v3_3_174": {
+  "ru": "Сработало ограничение медленного режима",
+  "en": "Slow mode limit triggered"
+ },
+ "v3_3_175": {
+  "ru": "Модель устройства",
+  "en": "Device model"
+ },
+ "v3_3_176": {
+  "ru": "Код подтверждения устройства",
+  "en": "Device verification code"
+ },
+ "v3_3_177": {
+  "ru": "Параметр",
+  "en": "Setting"
+ },
+ "v3_3_178": {
+  "ru": "Токен доступа",
+  "en": "Access token"
+ },
+ "v3_3_179": {
+  "ru": "Результат распознавания",
+  "en": "Recognition result"
+ },
+ "v3_3_180": {
+  "ru": "У аккаунта уже есть задача входа, дождитесь её завершения",
+  "en": "This account already has a sign-in task; wait for it to finish"
+ },
+ "v3_3_181": {
+  "ru": "У аккаунта уже выполняется автовход",
+  "en": "Auto sign-in is already running for this account"
+ },
+ "v3_3_182": {
+  "ru": "У аккаунта не настроена ссылка для получения кода, выход не выполнен",
+  "en": "No code-retrieval link configured for this account; sign-out not performed"
+ },
+ "v3_3_183": {
+  "ru": "У аккаунта не настроен номер телефона, выход не выполнен",
+  "en": "No phone number configured for this account; sign-out not performed"
+ },
+ "v3_3_184": {
+  "ru": "Аккаунт входит в систему, дождитесь завершения и прочитайте",
+  "en": "This account is signing in; wait for it to finish, then read"
+ },
+ "v3_3_185": {
+  "ru": "Аккаунту нужен пароль двухфакторной аутентификации, заполните его и повторите",
+  "en": "This account requires a 2FA password; enter it and retry"
+ },
+ "v3_3_186": {
+  "ru": "Подробности",
+  "en": "Details"
+ },
+ "v3_3_187": {
+  "ru": "Подробности в исходных данных",
+  "en": "See the raw data for details"
+ },
+ "v3_3_188": {
+  "ru": "Загрузите ZIP-файл",
+  "en": "Upload a ZIP file"
+ },
+ "v3_3_189": {
+  "ru": "Сначала начните вход в реальном клиенте TG, затем нажмите «Чтение».",
+  "en": "Start signing in on a real TG client first, then click Read."
+ }
+}
