@@ -1,0 +1,762 @@
+{
+ "v3_1_0": {
+  "ru": "\">Обработать эту группу",
+  "en": "\">Process this group"
+ },
+ "v3_1_1": {
+  "ru": "Повтор через $1 с",
+  "en": "Retry in $1 s"
+ },
+ "v3_1_2": {
+  "ru": ".session · ZIP с tdata · список телефонов txt/csv, можно перетащить несколько сразу",
+  "en": ".session · zip of tdata · phone list txt/csv, drag in several at once"
+ },
+ "v3_1_3": {
+  "ru": "/ попытка",
+  "en": "/ attempt"
+ },
+ "v3_1_4": {
+  "ru": "Не удалось изменить 2FA",
+  "en": "Failed to change 2FA"
+ },
+ "v3_1_5": {
+  "ru": "2FA изменена",
+  "en": "2FA changed"
+ },
+ "v3_1_6": {
+  "ru": "Обработка 2FA",
+  "en": "Processing 2FA"
+ },
+ "v3_1_7": {
+  "ru": "2FA ожидает сверки",
+  "en": "2FA pending verification"
+ },
+ "v3_1_8": {
+  "ru": "2FA не совпадает",
+  "en": "2FA mismatch"
+ },
+ "v3_1_9": {
+  "ru": "2FA не совпадает: пароль 2FA со страницы ссылки недействителен",
+  "en": "2FA mismatch: the 2FA password from the link page is invalid"
+ },
+ "v3_1_10": {
+  "ru": "2FA изменена и сохранена",
+  "en": "2FA changed and saved"
+ },
+ "v3_1_11": {
+  "ru": "Ошибка 2FA: введённый пароль 2FA недействителен",
+  "en": "2FA error: the entered 2FA password is invalid"
+ },
+ "v3_1_12": {
+  "ru": "<div class=\"empty\">Записей комплексных задач нет</div>",
+  "en": "<div class=\"empty\">No one-stop task records yet</div>"
+ },
+ "v3_1_13": {
+  "ru": "<div class=\"muted\" style=\"margin-bottom:8px\">Эти инструменты работают с загруженными файлами и не используют отметки в списке аккаунтов. Разверните инструмент, чтобы начать.",
+  "en": "<div class=\"muted\" style=\"margin-bottom:8px\">These tools work on uploaded files and do not use the checkboxes in the account list. Expand a tool to begin."
+ },
+ "v3_1_14": {
+  "ru": "<div class=\"pal-empty\">Нет подходящих аккаунтов, действий или параметров.</div>",
+  "en": "<div class=\"pal-empty\">No matching accounts, actions or settings.</div>"
+ },
+ "v3_1_15": {
+  "ru": "<div class=\"tb-steps\">① Выберите аккаунты → ② Выберите инструмент и параметры → ③ Подтвердите запуск</div>",
+  "en": "<div class=\"tb-steps\">① Select accounts → ② Select tool and settings → ③ Confirm run</div>"
+ },
+ "v3_1_16": {
+  "ru": "<div class=\"tb-warning\">⚠ Эта операция изменит аккаунты или данные — перед запуском проверьте выбранные аккаунты; на следующем шаге будет ещё одно подтверждение.</div>",
+  "en": "<div class=\"tb-warning\">⚠ This operation changes accounts or data; check the selected accounts before running — you will confirm again on the next step.</div>"
+ },
+ "v3_1_17": {
+  "ru": "<h3>Записи комплексных задач · можно продолжить после обновления</h3><div class=\"body\">",
+  "en": "<h3>One-stop records · resumable after refresh</h3><div class=\"body\">"
+ },
+ "v3_1_18": {
+  "ru": "<p class=\"muted small\">Показаны только первые 200 записей, полный список — в представлении «Журнал операций».</p>",
+  "en": "<p class=\"muted small\">Only the first 200 entries are shown; the full log is in the “Operation log” view.</p>"
+ },
+ "v3_1_19": {
+  "ru": "<p class=\"muted small\">При смене инструмента обычные параметры сохраняются; пароль действует только в текущей форме и не сохраняется в браузере.</p>",
+  "en": "<p class=\"muted small\">Switching tools keeps regular settings; the password applies only to the current form and is not saved in the browser.</p>"
+ },
+ "v3_1_20": {
+  "ru": "<p class=\"muted\">Дополнительные параметры не нужны, можно оставить настройки по умолчанию.</p>",
+  "en": "<p class=\"muted\">No extra settings needed; the defaults are fine.</p>"
+ },
+ "v3_1_21": {
+  "ru": "<p class=\"muted\">У некоторых tdata задан локальный пароль: заполните «Локальный пароль passcode» и запустите диагностику ещё раз.</p>",
+  "en": "<p class=\"muted\">Some tdata has a local passcode: fill in “Local passcode” and run the check again.</p>"
+ },
+ "v3_1_22": {
+  "ru": "<p class=\"muted\">Первый аккаунт стартует сразу, остальные ждут случайно 80%–120% базового интервала.</p>",
+  "en": "<p class=\"muted\">The first account starts immediately; the rest wait a random 80%–120% of the base interval.</p>"
+ },
+ "v3_1_23": {
+  "ru": ">Только повторный экспорт",
+  "en": ">Re-export only"
+ },
+ "v3_1_24": {
+  "ru": ">Остановить очередь",
+  "en": ">Stop queue"
+ },
+ "v3_1_25": {
+  "ru": ">Закрыть",
+  "en": ">Close"
+ },
+ "v3_1_26": {
+  "ru": ">tdata и .session из архива распаковываются и импортируются по отдельности. Сначала проанализируйте, убедитесь, что всё в порядке, и импортируйте.",
+  "en": ">tdata and .session inside the archive are unpacked and imported separately. Analyze first, then import once everything looks right."
+ },
+ "v3_1_27": {
+  "ru": ">Импортировать смешанный архив",
+  "en": ">Import mixed archive"
+ },
+ "v3_1_28": {
+  "ru": ">Записей комплексных задач нет",
+  "en": ">No one-stop task records yet"
+ },
+ "v3_1_29": {
+  "ru": ">Список результатов",
+  "en": ">Result list"
+ },
+ "v3_1_30": {
+  "ru": ">Продолжить незавершённые",
+  "en": ">Resume unfinished"
+ },
+ "v3_1_31": {
+  "ru": ">Прогресс",
+  "en": ">Progress"
+ },
+ "v3_1_32": {
+  "ru": ">Повторить для неудачных аккаунтов",
+  "en": ">Retry failed accounts"
+ },
+ "v3_1_33": {
+  "ru": ">Первый аккаунт стартует сразу, остальные ждут случайно 80%–120% базового интервала.",
+  "en": ">The first account starts immediately; the rest wait a random 80%–120% of the base interval."
+ },
+ "v3_1_34": {
+  "ru": "? Неподтверждённые записи: ",
+  "en": "? Unconfirmed entries: "
+ },
+ "v3_1_35": {
+  "ru": "? Результат проверки не получен",
+  "en": "? No check result returned"
+ },
+ "v3_1_36": {
+  "ru": "Диалог с AI",
+  "en": "AI chat"
+ },
+ "v3_1_37": {
+  "ru": "Настройки AI",
+  "en": "AI settings"
+ },
+ "v3_1_38": {
+  "ru": "Незакрытая кавычка в CSV",
+  "en": "Unclosed quote in CSV"
+ },
+ "v3_1_39": {
+  "ru": "Массив JSON или текст через запятую",
+  "en": "JSON array or comma-separated text"
+ },
+ "v3_1_40": {
+  "ru": "Менеджер аккаунтов TAO · вернуться к списку аккаунтов",
+  "en": "TAO account manager · back to the account list"
+ },
+ "v3_1_41": {
+  "ru": "Ошибка API Telegram",
+  "en": "Telegram API error"
+ },
+ "v3_1_42": {
+  "ru": "Telegram ограничил частоту запросов, подождите",
+  "en": "Telegram rate limit, please wait"
+ },
+ "v3_1_43": {
+  "ru": "Telegram ограничил запросы, изменение не удалось — проверьте позже",
+  "en": "Telegram rate limit, change failed; verify later"
+ },
+ "v3_1_44": {
+  "ru": "Веб-сервис",
+  "en": "Web service"
+ },
+ "v3_1_45": {
+  "ru": "ZIP повреждён или не распаковывается",
+  "en": "ZIP is corrupted or cannot be unpacked"
+ },
+ "v3_1_46": {
+  "ru": "[вложенное содержимое — см. исходные данные]",
+  "en": "[nested content — see raw data]"
+ },
+ "v3_1_47": {
+  "ru": "[конфиденциальные данные скрыты, см. исходные данные]",
+  "en": "[sensitive data hidden, see raw data]"
+ },
+ "v3_1_48": {
+  "ru": "accounts аккаунты список",
+  "en": "accounts accounts list"
+ },
+ "v3_1_49": {
+  "ru": "add new добавить вручную",
+  "en": "add new add manual"
+ },
+ "v3_1_50": {
+  "ru": "check health проверить статус 2FA",
+  "en": "check health check status 2FA"
+ },
+ "v3_1_51": {
+  "ru": "collect speakers сбор участников группы",
+  "en": "collect speakers collect members groups"
+ },
+ "v3_1_52": {
+  "ru": "delete удалить локально",
+  "en": "delete delete local"
+ },
+ "v3_1_53": {
+  "ru": "doctor диагностика окружение зависимости",
+  "en": "doctor doctor environment dependencies"
+ },
+ "v3_1_54": {
+  "ru": "error log журнал ошибок отправка",
+  "en": "error log error log reporting"
+ },
+ "v3_1_55": {
+  "ru": "поле file обязательно",
+  "en": "file is a required field"
+ },
+ "v3_1_56": {
+  "ru": "help справка документация",
+  "en": "help help docs"
+ },
+ "v3_1_57": {
+  "ru": "history записи продолжить экспорт",
+  "en": "history records resume export"
+ },
+ "v3_1_58": {
+  "ru": "leads csv лиды экспорт",
+  "en": "leads csv leads export"
+ },
+ "v3_1_59": {
+  "ru": "leads лиды участники",
+  "en": "leads leads members"
+ },
+ "v3_1_60": {
+  "ru": "lock блокировка защита от удаления",
+  "en": "lock lock delete protection"
+ },
+ "v3_1_61": {
+  "ru": "login auto вход приём кода код",
+  "en": "login auto sign in code reception verification code"
+ },
+ "v3_1_62": {
+  "ru": "logs журнал записи",
+  "en": "logs log records"
+ },
+ "v3_1_63": {
+  "ru": "Не удалось установить opentele",
+  "en": "opentele install failed"
+ },
+ "v3_1_64": {
+  "ru": "opentele установлен, продолжаем экспорт",
+  "en": "opentele installed, continuing export"
+ },
+ "v3_1_65": {
+  "ru": "proxy audit прокси проверка обнаружение",
+  "en": "proxy audit proxy check detection"
+ },
+ "v3_1_66": {
+  "ru": "proxy replace прокси замена узел",
+  "en": "proxy replace proxy change node"
+ },
+ "v3_1_67": {
+  "ru": "refresh обновить перезагрузить",
+  "en": "refresh refresh reload"
+ },
+ "v3_1_68": {
+  "ru": "settings настройки параметры токен token подключение",
+  "en": "settings settings parameters token token connection"
+ },
+ "v3_1_69": {
+  "ru": "shutdown закрыть выйти остановить",
+  "en": "shutdown close exit stop"
+ },
+ "v3_1_70": {
+  "ru": "tag тег группировка",
+  "en": "tag tag grouping"
+ },
+ "v3_1_71": {
+  "ru": "tags должен быть массивом JSON или текстом через запятую",
+  "en": "tags must be a JSON array or comma-separated text"
+ },
+ "v3_1_72": {
+  "ru": "tags должен быть массивом строк",
+  "en": "tags must be an array of strings"
+ },
+ "v3_1_73": {
+  "ru": "tasks задачи рассылка сбор",
+  "en": "tasks tasks broadcast collection"
+ },
+ "v3_1_74": {
+  "ru": "Не удалось сохранить tdata",
+  "en": "Failed to save tdata"
+ },
+ "v3_1_75": {
+  "ru": "Проверка чтения tdata не пройдена, файл экспорта не выдан",
+  "en": "tdata read-back check failed; export file not delivered"
+ },
+ "v3_1_76": {
+  "ru": "Локальный пароль tdata (если есть)",
+  "en": "tdata local passcode (if any)"
+ },
+ "v3_1_77": {
+  "ru": "Каталогов tdata",
+  "en": "tdata directories"
+ },
+ "v3_1_78": {
+  "ru": "У tdata задан локальный пароль или пароль неверен",
+  "en": "tdata has a local passcode, or the passcode is wrong"
+ },
+ "v3_1_79": {
+  "ru": "не содержит",
+  "en": "has no"
+ },
+ "v3_1_80": {
+  "ru": "terminate kick сброс других устройств",
+  "en": "terminate kick terminate devices reset devices"
+ },
+ "v3_1_81": {
+  "ru": "theme dark light тема тёмная светлая ночная",
+  "en": "theme dark light theme dark light night"
+ },
+ "v3_1_82": {
+  "ru": "twofa смена пароля успех 2FA",
+  "en": "twofa password change success 2FA"
+ },
+ "v3_1_83": {
+  "ru": "· комплексная задача #",
+  "en": "· one-stop task #"
+ },
+ "v3_1_84": {
+  "ru": "· подробнее",
+  "en": "· view details"
+ },
+ "v3_1_85": {
+  "ru": "⚡ Быстрая проверка активности",
+  "en": "⚡ Quick liveness check"
+ },
+ "v3_1_86": {
+  "ru": "✓ Распознано как ",
+  "en": "✓ Recognized as "
+ },
+ "v3_1_87": {
+  "ru": "» фильтр\">",
+  "en": "” filter\">"
+ },
+ "v3_1_88": {
+  "ru": "» нужно сначала выбрать аккаунты в списке аккаунтов",
+  "en": "” you need to select accounts in the account list first"
+ },
+ "v3_1_89": {
+  "ru": "Комплексная задача #",
+  "en": "One-stop task #"
+ },
+ "v3_1_90": {
+  "ru": "Комплексная задача · импорт",
+  "en": "One-stop task · import"
+ },
+ "v3_1_91": {
+  "ru": "Номер комплексной задачи",
+  "en": "One-stop task ID"
+ },
+ "v3_1_92": {
+  "ru": "Комплексная обработка",
+  "en": "One-stop run"
+ },
+ "v3_1_93": {
+  "ru": "Соединение при проверке комплексной задачи прервано, проверьте сессию заново",
+  "en": "One-stop verification connection lost; check the session again"
+ },
+ "v3_1_94": {
+  "ru": "Записи комплексных задач / продолжить / экспорт",
+  "en": "One-stop records / resume / export"
+ },
+ "v3_1_95": {
+  "ru": "Записи комплексных задач · можно продолжить после обновления",
+  "en": "One-stop records · resumable after refresh"
+ },
+ "v3_1_96": {
+  "ru": "Загружаемый файл превышает",
+  "en": "Uploaded file exceeds"
+ },
+ "v3_1_97": {
+  "ru": "Руководство",
+  "en": "Getting started"
+ },
+ "v3_1_98": {
+  "ru": "Следующее время",
+  "en": "Next time"
+ },
+ "v3_1_99": {
+  "ru": "Больше не показывать",
+  "en": "Don't show again"
+ },
+ "v3_1_100": {
+  "ru": "Недоступно",
+  "en": "Unavailable"
+ },
+ "v3_1_101": {
+  "ru": "Неподдерживаемая операция инструментов",
+  "en": "Unsupported toolbox operation"
+ },
+ "v3_1_102": {
+  "ru": "Неподдерживаемая операция предпросмотра: ",
+  "en": "Unsupported preview operation: "
+ },
+ "v3_1_103": {
+  "ru": "не является допустимым",
+  "en": "is not a valid"
+ },
+ "v3_1_104": {
+  "ru": "Не нужно разбираться в форматах: перетащите файл или вставьте текст — я сам определю, что это.",
+  "en": "No need to know the format: drop the file here or paste the text, and I will detect it automatically."
+ },
+ "v3_1_105": {
+  "ru": "Режим сосредоточения",
+  "en": "Focus mode"
+ },
+ "v3_1_106": {
+  "ru": "Двухфакторная аутентификация",
+  "en": "Two-step verification"
+ },
+ "v3_1_107": {
+  "ru": "Неверный пароль двухфакторной аутентификации, введите снова",
+  "en": "Wrong two-step verification password, enter it again"
+ },
+ "v3_1_108": {
+  "ru": "Пароль двухфакторной аутентификации (необязательно)",
+  "en": "Two-step verification password (optional)"
+ },
+ "v3_1_109": {
+  "ru": "готово к импорту",
+  "en": "importable"
+ },
+ "v3_1_110": {
+  "ru": "аккаунтов онлайн",
+  "en": "accounts online"
+ },
+ "v3_1_111": {
+  "ru": "аккаунтов выполнят «отправка кода → автополучение кода → вход» (параллельно ",
+  "en": "accounts will run “send code → auto-retrieve code → sign in” (parallel "
+ },
+ "v3_1_112": {
+  "ru": "аккаунтов локальные старые сессии, затем повторный вход по номеру телефона и ссылке для получения кода. Если выход на стороне Telegram не удался, локальные сессии всё равно очищаются; при неудачном повторном входе старую сессию восстановить нельзя.",
+  "en": "accounts, then sign in again with the phone number and the code-retrieval link. If the remote sign-out fails, local sessions are still cleared; if re-sign-in fails, the old session cannot be restored."
+ },
+ "v3_1_113": {
+  "ru": "Не удалось записать во временный каталог",
+  "en": "Failed to write to the temp directory"
+ },
+ "v3_1_114": {
+  "ru": "Основная навигация",
+  "en": "Main navigation"
+ },
+ "v3_1_115": {
+  "ru": "Хост или порт",
+  "en": "Host or port"
+ },
+ "v3_1_116": {
+  "ru": "Пароль 2FA пуст",
+  "en": "2FA password is empty"
+ },
+ "v3_1_117": {
+  "ru": "Пароль 2FA не совпадает",
+  "en": "2FA password mismatch"
+ },
+ "v3_1_118": {
+  "ru": "Пароль 2FA (сохраняется в зашифрованном виде)",
+  "en": "2FA password (saved encrypted after import)"
+ },
+ "v3_1_119": {
+  "ru": "Экспортировать только номера телефонов и исходные ссылки для получения кода",
+  "en": "Export only phone numbers and raw code-retrieval links"
+ },
+ "v3_1_120": {
+  "ru": "Проверяется только авторизация сессии — самый быстрый результат, без чтения профиля и статуса 2FA",
+  "en": "Checks session authorization only — fastest result, without reading profile or 2FA status"
+ },
+ "v3_1_121": {
+  "ru": "Автоматически забирает код по ссылке и завершает вход.",
+  "en": "Automatically fetches the code from the link and completes sign-in."
+ },
+ "v3_1_122": {
+  "ru": "CSV прокси (необязательно; после загрузки объединяется и очищается от дублей)",
+  "en": "Proxy CSV (optional; merged and deduplicated after upload)"
+ },
+ "v3_1_123": {
+  "ru": "Прокси и баланс",
+  "en": "Proxy and balance"
+ },
+ "v3_1_124": {
+  "ru": "В содержимом прокси не найдено ни одного рабочего узла",
+  "en": "No valid nodes parsed from the proxy content"
+ },
+ "v3_1_125": {
+  "ru": "Проверка прокси",
+  "en": "Proxy check"
+ },
+ "v3_1_126": {
+  "ru": "Прокси, строки",
+  "en": "Proxy line"
+ },
+ "v3_1_127": {
+  "ru": "Управление прокси",
+  "en": "Proxy management"
+ },
+ "v3_1_128": {
+  "ru": "Узел прокси",
+  "en": "Proxy node"
+ },
+ "v3_1_129": {
+  "ru": "Пул узлов прокси (по одному в строке, необязательно)",
+  "en": "Proxy node pool (one per line, optional)"
+ },
+ "v3_1_130": {
+  "ru": "Прокси недоступен или не прошла аутентификация",
+  "en": "Cannot reach the proxy or authentication failed"
+ },
+ "v3_1_131": {
+  "ru": "Не удалось подключиться к прокси",
+  "en": "Proxy connection failed"
+ },
+ "v3_1_132": {
+  "ru": "Тайм-аут подключения к прокси",
+  "en": "Proxy connection timed out"
+ },
+ "v3_1_133": {
+  "ru": "Токен",
+  "en": "Token"
+ },
+ "v3_1_134": {
+  "ru": "Токен, автообновление, диагностика и управление службой",
+  "en": "Token, auto-refresh, doctor and service control"
+ },
+ "v3_1_135": {
+  "ru": "Неверный токен, проверьте TAM_WEB_TOKEN",
+  "en": "Invalid token, check TAM_WEB_TOKEN"
+ },
+ "v3_1_136": {
+  "ru": "чтобы разблокировать кнопку запуска",
+  "en": "to unlock the run button"
+ },
+ "v3_1_137": {
+  "ru": "Задача ещё выполняется, дождитесь завершения или остановите её перед экспортом",
+  "en": "Task is still running; wait or stop it before exporting"
+ },
+ "v3_1_138": {
+  "ru": "Задача отменена",
+  "en": "Task canceled"
+ },
+ "v3_1_139": {
+  "ru": "Соединение статуса задачи прервано, повтор через 3 с; фоновая задача не отменена.",
+  "en": "Task status connection lost, retrying in 3 s; the background task was not canceled."
+ },
+ "v3_1_140": {
+  "ru": "Тип задачи",
+  "en": "Task type"
+ },
+ "v3_1_141": {
+  "ru": "Номер задачи",
+  "en": "Task ID"
+ },
+ "v3_1_142": {
+  "ru": "Приоритет — сохранённый пароль 2FA каждого аккаунта; текущий пароль применяется только к аккаунтам без сохранённого. Пустой новый пароль = удалить",
+  "en": "Saved 2FA passwords of each account are used first; the current password applies only to accounts without one. Empty new password = remove"
+ },
+ "v3_1_143": {
+  "ru": "Неверный ключ сессии",
+  "en": "Invalid session key"
+ },
+ "v3_1_144": {
+  "ru": "Ключ сессии использован повторно",
+  "en": "Session key reused"
+ },
+ "v3_1_145": {
+  "ru": "Сессия недействительна",
+  "en": "Session expired"
+ },
+ "v3_1_146": {
+  "ru": "Сессия недействительна (ключ авторизации не зарегистрирован)",
+  "en": "Session expired (authorization key not registered)"
+ },
+ "v3_1_147": {
+  "ru": "Сессия недействительна, изменение не удалось",
+  "en": "Session expired, change failed"
+ },
+ "v3_1_148": {
+  "ru": "Сессия недействительна, требуется повторный вход",
+  "en": "Session expired, sign in again"
+ },
+ "v3_1_149": {
+  "ru": "Сессия недействительна: ключ авторизации Telegram отозван, войдите заново или импортируйте session",
+  "en": "Session expired: the Telegram authorization key was revoked; sign in again or import a session"
+ },
+ "v3_1_150": {
+  "ru": "Сессия авторизована",
+  "en": "Session authorized"
+ },
+ "v3_1_151": {
+  "ru": "Сессия отозвана",
+  "en": "Session revoked"
+ },
+ "v3_1_152": {
+  "ru": "Сессия истекла",
+  "en": "Session expired"
+ },
+ "v3_1_153": {
+  "ru": "Проверка авторизации сессии",
+  "en": "Session authorization check"
+ },
+ "v3_1_154": {
+  "ru": "Сессия не авторизована или недействительна",
+  "en": "Session unauthorized or expired"
+ },
+ "v3_1_155": {
+  "ru": "Сессия не авторизована, проверьте статус входа аккаунта",
+  "en": "Session unauthorized; check the account sign-in status first"
+ },
+ "v3_1_156": {
+  "ru": "Диагностика…",
+  "en": "Running doctor…"
+ },
+ "v3_1_157": {
+  "ru": "Диагностика завершена, пригодных tdata нет",
+  "en": "Doctor finished, no usable tdata"
+ },
+ "v3_1_158": {
+  "ru": "Номер задания",
+  "en": "Job ID"
+ },
+ "v3_1_159": {
+  "ru": "Справка",
+  "en": "Help"
+ },
+ "v3_1_160": {
+  "ru": "Сохранить 2FA",
+  "en": "Save 2FA"
+ },
+ "v3_1_161": {
+  "ru": "Записи исправлений: ",
+  "en": "Fix log: "
+ },
+ "v3_1_162": {
+  "ru": "Изменить 2FA",
+  "en": "Change 2FA"
+ },
+ "v3_1_163": {
+  "ru": "Изменение 2FA",
+  "en": "Changing 2FA"
+ },
+ "v3_1_164": {
+  "ru": "Сначала выберите ZIP с tdata",
+  "en": "Select a zip containing tdata first"
+ },
+ "v3_1_165": {
+  "ru": "Выбрать весь текущий список",
+  "en": "Select all in the current list"
+ },
+ "v3_1_166": {
+  "ru": "Все аккаунты",
+  "en": "All accounts"
+ },
+ "v3_1_167": {
+  "ru": "Остановить службу бэкенда, автоматического перезапуска не будет",
+  "en": "Stops the backend service; it will not restart automatically"
+ },
+ "v3_1_168": {
+  "ru": "Закрыть карту аккаунтов",
+  "en": "Close account map"
+ },
+ "v3_1_169": {
+  "ru": "Остановить проект",
+  "en": "Shut down project"
+ },
+ "v3_1_170": {
+  "ru": "Подготовка сервиса получения кода и подключение к Telegram",
+  "en": "Preparing the code service and connecting to Telegram"
+ },
+ "v3_1_171": {
+  "ru": "Проанализировать",
+  "en": "Analyze"
+ },
+ "v3_1_172": {
+  "ru": "Способ группировки",
+  "en": "Grouping"
+ },
+ "v3_1_173": {
+  "ru": "Переключить на светлую тему",
+  "en": "Switch to light theme"
+ },
+ "v3_1_174": {
+  "ru": "Переключить на тёмную тему",
+  "en": "Switch to dark theme"
+ },
+ "v3_1_175": {
+  "ru": "Переключить светлую/тёмную тему",
+  "en": "Toggle light/dark theme"
+ },
+ "v3_1_176": {
+  "ru": "Не удалось переключить блокировку: ",
+  "en": "Failed to toggle lock state: "
+ },
+ "v3_1_177": {
+  "ru": "Время создания",
+  "en": "Created at"
+ },
+ "v3_1_178": {
+  "ru": "Удалить или отозвать сообщение",
+  "en": "Delete or recall messages"
+ },
+ "v3_1_179": {
+  "ru": "Префикс метки",
+  "en": "Label prefix"
+ },
+ "v3_1_180": {
+  "ru": "Пора обрабатывать",
+  "en": "Due now"
+ },
+ "v3_1_181": {
+  "ru": "Не удалось обновить результат смены пароля, выбор не изменён: ",
+  "en": "Failed to refresh the password change result; selection unchanged: "
+ },
+ "v3_1_182": {
+  "ru": "Обновить данные",
+  "en": "Refresh data"
+ },
+ "v3_1_183": {
+  "ru": "Обновить (отбросить черновик)",
+  "en": "Refresh (discard draft)"
+ },
+ "v3_1_184": {
+  "ru": "Осталось других устройств",
+  "en": "Other devices remaining"
+ },
+ "v3_1_185": {
+  "ru": "Зашифровано",
+  "en": "Encrypted"
+ },
+ "v3_1_186": {
+  "ru": "Показать ещё (показано ",
+  "en": "Load more (showing "
+ },
+ "v3_1_187": {
+  "ru": "Действие",
+  "en": "Action"
+ },
+ "v3_1_188": {
+  "ru": "Действие: ",
+  "en": "Action: "
+ },
+ "v3_1_189": {
+  "ru": "Тайм-аут одного запроса (с)",
+  "en": "Single request timeout (s)"
+ }
+}

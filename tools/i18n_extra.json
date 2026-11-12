@@ -258,5 +258,285 @@
  "新建": {
   "ru": "Новых",
   "en": "New"
+ },
+ "账号维护与批量工具": {
+  "ru": "Инструменты обслуживания и массовых операций",
+  "en": "Maintenance and bulk tools"
+ },
+ "TAO · Telegram 多账号管理": {
+  "ru": "TAO · управление аккаунтами Telegram",
+  "en": "TAO · Telegram multi-account manager"
+ },
+ "选择账号": {
+  "ru": "Выбор аккаунтов",
+  "en": "Select accounts"
+ },
+ "去账号清单勾选": {
+  "ru": "Отметьте аккаунты в списке",
+  "en": "Tick accounts in the list"
+ },
+ "选择工具与参数": {
+  "ru": "Инструмент и параметры",
+  "en": "Tool and options"
+ },
+ "当前：⚡ 快速验活": {
+  "ru": "Выбрано: ⚡ быстрая проверка активности",
+  "en": "Selected: ⚡ quick liveness check"
+ },
+ "确认执行": {
+  "ru": "Подтвердить запуск",
+  "en": "Confirm run"
+ },
+ "执行前会再次确认": {
+  "ru": "Перед запуском спросим ещё раз",
+  "en": "We will ask again before running"
+ },
+ "选择工具": {
+  "ru": "Выбор инструмента",
+  "en": "Select a tool"
+ },
+ "无需额外填写参数，使用默认配置即可。": {
+  "ru": "Дополнительные параметры не нужны — хватит значений по умолчанию.",
+  "en": "No extra options needed — defaults are enough."
+ },
+ "高级设置 · 超时 / 数量 / 并发": {
+  "ru": "Дополнительно · таймаут / количество / параллельность",
+  "en": "Advanced · timeout / count / concurrency"
+ },
+ "切换工具保留普通参数；密码仅用于当前表单，不保存到浏览器。": {
+  "ru": "При смене инструмента обычные параметры сохраняются; пароль используется только в этой форме и не сохраняется в браузере.",
+  "en": "Switching tools keeps normal options; the password is used only in this form and is not stored in the browser."
+ },
+ "以下工具处理上传文件，不使用账号列表的勾选。展开一个工具即可开始。不碰库里已托管的号。结果拿完请点「用完删除」——号包是敏感物，不要长期赖在服务器上。": {
+  "ru": "Эти инструменты работают с загруженными файлами и не используют отметки в списке аккаунтов. Разверните инструмент, чтобы начать. Управляемые аккаунты не затрагиваются. Скачав результат, нажмите «Удалить после использования» — пакеты аккаунтов чувствительны, не храните их на сервере.",
+  "en": "These tools work on uploaded files and ignore account-list selection. Expand a tool to start. Managed accounts are not touched. After downloading the result, press “Delete after use” — account packs are sensitive, do not keep them on the server."
+ },
+ "有 %s 项参数未保存": {
+  "ru": "Не сохранено параметров: %s",
+  "en": "%s options not saved"
+ },
+ "管理、筛选与批量操作": {
+  "ru": "Управление, фильтры и массовые операции",
+  "en": "Manage, filter and batch"
+ },
+ "一键处理": {
+  "ru": "В один клик",
+  "en": "One-click"
+ },
+ "连接后端": {
+  "ru": "Подключить бэкенд",
+  "en": "Connect backend"
+ },
+ "启动 tam.cli serve，用它给的地址打开本页": {
+  "ru": "Запустите tam.cli serve и откройте страницу по выданному адресу",
+  "en": "Run tam.cli serve and open this page at the address it prints"
+ },
+ "导入第一个账号": {
+  "ru": "Импортируйте первый аккаунт",
+  "en": "Import the first account"
+ },
+ "拖入 session / tdata，或粘贴手机号": {
+  "ru": "Перетащите session / tdata или вставьте номер телефона",
+  "en": "Drop session / tdata or paste a phone number"
+ },
+ "点行内「登录」，或勾选后批量自动登录": {
+  "ru": "Нажмите «Войти» в строке или отметьте аккаунты и войдите пакетно",
+  "en": "Press “Sign in” in the row, or select accounts and sign in in bulk"
+ },
+ "做一次健康检查": {
+  "ru": "Выполните проверку работоспособности",
+  "en": "Run a health check"
+ },
+ "同步状态、二验和限制情况": {
+  "ru": "Синхронизирует статус, 2FA и ограничения",
+  "en": "Syncs status, 2FA and restrictions"
+ },
+ "星图 ↗": {
+  "ru": "Карта ↗",
+  "en": "Map ↗"
+ },
+ "%s 个账号在线": {
+  "ru": "%s аккаунтов онлайн",
+  "en": "%s accounts online"
+ },
+ "还没有账号 · 把 session、tdata 或手机号清单拖进来就能开始": {
+  "ru": "Аккаунтов пока нет · перетащите session, tdata или список номеров, чтобы начать",
+  "en": "No accounts yet · drop session, tdata or a phone list to start"
+ },
+ "查看进行中与历史任务": {
+  "ru": "Текущие и завершённые задачи",
+  "en": "Running and past tasks"
+ },
+ "发言人、群组与采集结果": {
+  "ru": "Авторы сообщений, группы и результаты сбора",
+  "en": "Posters, groups and collected results"
+ },
+ "运行日志": {
+  "ru": "Журнал работы",
+  "en": "Runtime log"
+ },
+ "错误、任务与系统事件": {
+  "ru": "Ошибки, задачи и системные события",
+  "en": "Errors, tasks and system events"
+ },
+ "系统设置": {
+  "ru": "Системные настройки",
+  "en": "System settings"
+ },
+ "连接、并发与界面偏好": {
+  "ru": "Подключение, параллельность и интерфейс",
+  "en": "Connection, concurrency and UI"
+ },
+ "搜索参数，例如「并发」「代理」「重试」": {
+  "ru": "Поиск параметра, например «параллельность», «прокси», «повтор»",
+  "en": "Search options, e.g. “concurrency”, “proxy”, “retry”"
+ },
+ "@aria-label: TAO Workspace · 回到账号清单": {
+  "ru": "TAO Workspace · к списку аккаунтов",
+  "en": "TAO Workspace · back to accounts"
+ },
+ "TAO Workspace · 回到账号清单": {
+  "ru": "TAO Workspace · к списку аккаунтов",
+  "en": "TAO Workspace · back to accounts"
+ },
+ "账号清单操作": {
+  "ru": "Действия со списком аккаунтов",
+  "en": "Account list actions"
+ },
+ "任务中心操作": {
+  "ru": "Действия с задачами",
+  "en": "Task actions"
+ },
+ "线索库操作": {
+  "ru": "Действия с лидами",
+  "en": "Lead actions"
+ },
+ "工具箱操作": {
+  "ru": "Действия с инструментами",
+  "en": "Toolbox actions"
+ },
+ "运行日志操作": {
+  "ru": "Действия с журналом",
+  "en": "Log actions"
+ },
+ "系统设置操作": {
+  "ru": "Действия с настройками",
+  "en": "Settings actions"
+ },
+ "在星图中查看全部账号": {
+  "ru": "Показать все аккаунты на карте",
+  "en": "Show all accounts on the map"
+ },
+ "已登录占比 %s%": {
+  "ru": "Доля авторизованных: %s%",
+  "en": "Signed-in share: %s%"
+ },
+ "已登录占比": {
+  "ru": "Доля авторизованных",
+  "en": "Signed-in share"
+ },
+ "搜索账号、手机号…": {
+  "ru": "Поиск аккаунта, номера…",
+  "en": "Search account, phone…"
+ },
+ "账号星图（G）": {
+  "ru": "Карта аккаунтов (G)",
+  "en": "Account map (G)"
+ },
+ "账号星图": {
+  "ru": "Карта аккаунтов",
+  "en": "Account map"
+ },
+ "工具分类": {
+  "ru": "Категории инструментов",
+  "en": "Tool categories"
+ },
+ "默认 5": {
+  "ru": "по умолчанию 5",
+  "en": "default 5"
+ },
+ "留空使用全局并发设置": {
+  "ru": "пусто = глобальная параллельность",
+  "en": "empty = global concurrency"
+ },
+ "想做什么？例如「登录所有未登录的账号」「添加账号」「+86」": {
+  "ru": "Что нужно? Например «войти во все неавторизованные аккаунты», «добавить аккаунт», «+86»",
+  "en": "What do you need? e.g. “sign in all unauthorized accounts”, “add account”, “+86”"
+ },
+ "搜索参数": {
+  "ru": "Поиск параметров",
+  "en": "Search options"
+ },
+ "添加账号（自动识别格式）": {
+  "ru": "Добавить аккаунт (формат определится сам)",
+  "en": "Add account (format auto-detected)"
+ },
+ "登录所有未登录的账号": {
+  "ru": "Войти во все неавторизованные аккаунты",
+  "en": "Sign in all unauthorized accounts"
+ },
+ "检查所有已登录账号": {
+  "ru": "Проверить все авторизованные аккаунты",
+  "en": "Check all signed-in accounts"
+ },
+ "选中所有封禁 / 冻结账号": {
+  "ru": "Выбрать все забаненные / замороженные",
+  "en": "Select all banned / frozen"
+ },
+ "界面": {
+  "ru": "Интерфейс",
+  "en": "Interface"
+ },
+ "专注模式：开 / 关装饰动效": {
+  "ru": "Режим фокуса: отключить декоративные эффекты",
+  "en": "Focus mode: turn off decorative effects"
+ },
+ "显示上手指南": {
+  "ru": "Показывать руководство",
+  "en": "Show onboarding guide"
+ },
+ "⚠ 退出并重登": {
+  "ru": "⚠ Выйти и войти заново",
+  "en": "⚠ Sign out and back in"
+ },
+ "⚠ 删除本地": {
+  "ru": "⚠ Удалить локально",
+  "en": "⚠ Delete locally"
+ },
+ "⚠ 注销 TG 账号": {
+  "ru": "⚠ Удалить аккаунт TG",
+  "en": "⚠ Delete TG account"
+ },
+ "⚠ 热重载后端": {
+  "ru": "⚠ Перезагрузить бэкенд",
+  "en": "⚠ Hot reload backend"
+ },
+ "⚠ 关闭项目": {
+  "ru": "⚠ Остановить сервис",
+  "en": "⚠ Stop the service"
+ },
+ "列出所有已登录账号": {
+  "ru": "Список всех авторизованных аккаунтов",
+  "en": "List all signed-in accounts"
+ },
+ "哪些账号被限制了？": {
+  "ru": "Какие аккаунты ограничены?",
+  "en": "Which accounts are restricted?"
+ },
+ "统计各国家账号数量": {
+  "ru": "Сколько аккаунтов по странам",
+  "en": "Account count by country"
+ },
+ "最近失败的任务是什么原因": {
+  "ru": "Почему последняя задача упала",
+  "en": "Why did the last task fail"
+ },
+ "%s · 连接状态与体检": {
+  "ru": "%s · статус подключения и диагностика",
+  "en": "%s · connection status and diagnostics"
+ },
+ "连接状态与体检": {
+  "ru": "Статус подключения и диагностика",
+  "en": "Connection status and diagnostics"
  }
 }

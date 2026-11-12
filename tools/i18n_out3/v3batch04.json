@@ -1,0 +1,690 @@
+{
+ "v3_4_0": {
+  "ru": "Заполните: ",
+  "en": "Fill in: "
+ },
+ "v3_4_1": {
+  "ru": "Проверьте сеть и повторите",
+  "en": "Check your network and retry"
+ },
+ "v3_4_2": {
+  "ru": "Запрос не выполнен",
+  "en": "Request failed"
+ },
+ "v3_4_3": {
+  "ru": "Проверьте у аккаунта настройку «циклический сброс устройств», иначе реальный клиент после входа будет выходить автоматически.",
+  "en": "Check the account’s “cyclic device reset” setting so a real client is not signed out automatically after signing in."
+ },
+ "v3_4_4": {
+  "ru": "Подтвердите: ",
+  "en": "Confirm: "
+ },
+ "v3_4_5": {
+  "ru": "Выделите код, чтобы скопировать вручную",
+  "en": "Select the code to copy it manually"
+ },
+ "v3_4_6": {
+  "ru": "Выберите файл .zip.",
+  "en": "Select a .zip file."
+ },
+ "v3_4_7": {
+  "ru": "Выберите аккаунт и заполните узел",
+  "en": "Select an account and fill in the node"
+ },
+ "v3_4_8": {
+  "ru": "Чтение / обновление",
+  "en": "Read / refresh"
+ },
+ "v3_4_9": {
+  "ru": "Ошибка чтения (",
+  "en": "Read failed ("
+ },
+ "v3_4_10": {
+  "ru": "Получить официальный код",
+  "en": "Read official code"
+ },
+ "v3_4_11": {
+  "ru": "Считать 2FA со страницы кодов",
+  "en": "Read 2FA from the code page"
+ },
+ "v3_4_12": {
+  "ru": "Аккаунт ограничен",
+  "en": "Account restricted"
+ },
+ "v3_4_13": {
+  "ru": "Аккаунт ещё не вступил в этот чат",
+  "en": "Account has not joined this chat"
+ },
+ "v3_4_14": {
+  "ru": "Аккаунт отключён",
+  "en": "Account disabled"
+ },
+ "v3_4_15": {
+  "ru": "Аккаунт отключён или забанен",
+  "en": "Account disabled or banned"
+ },
+ "v3_4_16": {
+  "ru": "Аккаунт уже вступил в этот чат",
+  "en": "Account has already joined this chat"
+ },
+ "v3_4_17": {
+  "ru": "Аккаунт уже существует",
+  "en": "Account already exists"
+ },
+ "v3_4_18": {
+  "ru": "У аккаунта уже есть задача",
+  "en": "Account already has a task"
+ },
+ "v3_4_19": {
+  "ru": "У аккаунта уже есть задача входа",
+  "en": "Account already has a sign-in task"
+ },
+ "v3_4_20": {
+  "ru": "Аккаунт удалён",
+  "en": "Account deleted"
+ },
+ "v3_4_21": {
+  "ru": "Аккаунт авторизован",
+  "en": "Account signed in"
+ },
+ "v3_4_22": {
+  "ru": "Аккаунт забанен Telegram",
+  "en": "Account banned by Telegram"
+ },
+ "v3_4_23": {
+  "ru": "Аккаунт разблокирован",
+  "en": "Account unlocked"
+ },
+ "v3_4_24": {
+  "ru": "Аккаунт заблокирован, удаление защищено",
+  "en": "Account locked, deletion protected"
+ },
+ "v3_4_25": {
+  "ru": "Аккаунт заблокирован, пропущен",
+  "en": "Account locked, skipped"
+ },
+ "v3_4_26": {
+  "ru": "Аккаунт заблокирован, сначала снимите блокировку, затем удаляйте",
+  "en": "Account locked: unlock it before deleting"
+ },
+ "v3_4_27": {
+  "ru": "Проверка аккаунтов",
+  "en": "Account check"
+ },
+ "v3_4_28": {
+  "ru": "Обзор аккаунтов",
+  "en": "Account overview"
+ },
+ "v3_4_29": {
+  "ru": "Список аккаунтов",
+  "en": "Account list"
+ },
+ "v3_4_30": {
+  "ru": "Фильтр по статусу аккаунта",
+  "en": "Filter by account status"
+ },
+ "v3_4_31": {
+  "ru": "Статистика аккаунтов",
+  "en": "Account stats"
+ },
+ "v3_4_32": {
+  "ru": "Аккаунт ограничен (Spam), часть функций недоступна",
+  "en": "Account restricted (Spam), some features unavailable"
+ },
+ "v3_4_33": {
+  "ru": "Ресурс не найден",
+  "en": "Resource not found"
+ },
+ "v3_4_34": {
+  "ru": "Таймаут",
+  "en": "Timeout"
+ },
+ "v3_4_35": {
+  "ru": "Таймаут, с",
+  "en": "Timeout, sec"
+ },
+ "v3_4_36": {
+  "ru": "Путь",
+  "en": "Path"
+ },
+ "v3_4_37": {
+  "ru": "Перейти",
+  "en": "Go to"
+ },
+ "v3_4_38": {
+  "ru": "Пропустить",
+  "en": "Skip"
+ },
+ "v3_4_39": {
+  "ru": "Причина пропуска",
+  "en": "Skip reason"
+ },
+ "v3_4_40": {
+  "ru": "Пропущено",
+  "en": "Skipped"
+ },
+ "v3_4_41": {
+  "ru": "Сброс других устройств",
+  "en": "Terminate other devices"
+ },
+ "v3_4_42": {
+  "ru": "Конвертировать в API",
+  "en": "Convert to API"
+ },
+ "v3_4_43": {
+  "ru": "Интервал опроса",
+  "en": "Polling interval"
+ },
+ "v3_4_44": {
+  "ru": "Резервная почта не подтверждена",
+  "en": "Recovery email not confirmed"
+ },
+ "v3_4_45": {
+  "ru": "Строк на входе",
+  "en": "Input rows"
+ },
+ "v3_4_46": {
+  "ru": "Вывод",
+  "en": "Output"
+ },
+ "v3_4_47": {
+  "ru": "Каталог вывода",
+  "en": "Output directory"
+ },
+ "v3_4_48": {
+  "ru": "Срок действия",
+  "en": "Expires at"
+ },
+ "v3_4_49": {
+  "ru": "Параметры запуска",
+  "en": "Run parameters"
+ },
+ "v3_4_50": {
+  "ru": "Ошибка выполнения",
+  "en": "Runtime error"
+ },
+ "v3_4_51": {
+  "ru": "Записей комплексных задач пока нет",
+  "en": "No one-stop records yet"
+ },
+ "v3_4_52": {
+  "ru": "Аккаунт занят другой задачей, повторите позже",
+  "en": "This account is in use by another task, try again later"
+ },
+ "v3_4_53": {
+  "ru": "У аккаунта не задана ссылка для получения кода",
+  "en": "This account has no code-retrieval link configured"
+ },
+ "v3_4_54": {
+  "ru": "У этой tdata задан локальный пароль",
+  "en": "This tdata has a local password set"
+ },
+ "v3_4_55": {
+  "ru": "Процент выполнения",
+  "en": "Progress percentage"
+ },
+ "v3_4_56": {
+  "ru": "2FA изменена на сервере, локальное сохранение не удалось: обновите локальную запись новым паролем, не меняйте повторно",
+  "en": "2FA changed remotely but the local save failed: update the local record with the new password and do not change it again"
+ },
+ "v3_4_57": {
+  "ru": "Таймаут подключения к Telegram: проверьте сеть или прокси",
+  "en": "Telegram connection timed out: check the network or proxy"
+ },
+ "v3_4_58": {
+  "ru": "Подключение к Telegram не удалось 3 раза подряд (",
+  "en": "Telegram connection failed 3 times in a row ("
+ },
+ "v3_4_59": {
+  "ru": "Подключение и токены",
+  "en": "Connection and tokens"
+ },
+ "v3_4_60": {
+  "ru": "Подключение и система",
+  "en": "Connection and system"
+ },
+ "v3_4_61": {
+  "ru": "Таймаут подключения или получения кода: проверьте прокси и настройки ожидания запроса",
+  "en": "Connection or code retrieval timed out: check the proxy and query wait settings"
+ },
+ "v3_4_62": {
+  "ru": "Сбой очистки подключения (проигнорирован, на готовые результаты не влияет)",
+  "en": "Connection cleanup error (ignored, does not affect completed results)"
+ },
+ "v3_4_63": {
+  "ru": "Состояние подключения и диагностика",
+  "en": "Connection status and health check"
+ },
+ "v3_4_64": {
+  "ru": "В соединении отказано",
+  "en": "Connection refused"
+ },
+ "v3_4_65": {
+  "ru": "Соединение сброшено",
+  "en": "Connection reset"
+ },
+ "v3_4_66": {
+  "ru": "Таймаут соединения",
+  "en": "Connection timed out"
+ },
+ "v3_4_67": {
+  "ru": "Выйти и войти снова",
+  "en": "Sign out and sign in again"
+ },
+ "v3_4_68": {
+  "ru": "Все выбранные аккаунты заблокированы, удаление не выполнено",
+  "en": "All selected accounts are locked; nothing was deleted"
+ },
+ "v3_4_69": {
+  "ru": "У выбранных аккаунтов нет доступной active-сессии",
+  "en": "Selected accounts have no available active session"
+ },
+ "v3_4_70": {
+  "ru": "Выберите инструмент, загрузите файл, скачайте результат",
+  "en": "Pick a tool, upload a file, download the result"
+ },
+ "v3_4_71": {
+  "ru": "Выберите аккаунты и перейдите к настройкам",
+  "en": "Select accounts, then go to settings"
+ },
+ "v3_4_72": {
+  "ru": "Выбрать",
+  "en": "Select"
+ },
+ "v3_4_73": {
+  "ru": "Детали по каждому получателю",
+  "en": "Per-target details"
+ },
+ "v3_4_74": {
+  "ru": "Обработка ключей доступа",
+  "en": "Passkey handling"
+ },
+ "v3_4_75": {
+  "ru": "Неверный формат почты",
+  "en": "Invalid email format"
+ },
+ "v3_4_76": {
+  "ru": "Часть аккаунтов уже не существует, обновите",
+  "en": "Some accounts no longer exist, refresh"
+ },
+ "v3_4_77": {
+  "ru": "Часть аккаунтов занята другими задачами, продолжите позже",
+  "en": "Some accounts are busy with other tasks, continue later"
+ },
+ "v3_4_78": {
+  "ru": "Конфигурация",
+  "en": "Configuration"
+ },
+ "v3_4_79": {
+  "ru": "Значение конфигурации",
+  "en": "Config value"
+ },
+ "v3_4_80": {
+  "ru": "Пресет конфигурации",
+  "en": "Config preset"
+ },
+ "v3_4_81": {
+  "ru": "Повторная аренда подключения",
+  "en": "Duplicate connection lease"
+ },
+ "v3_4_82": {
+  "ru": "Дубликаты",
+  "en": "Duplicates"
+ },
+ "v3_4_83": {
+  "ru": "Перевойти",
+  "en": "Sign in again"
+ },
+ "v3_4_84": {
+  "ru": "Повторить для неудачных аккаунтов",
+  "en": "Retry failed accounts"
+ },
+ "v3_4_85": {
+  "ru": "Ожидание перед повтором",
+  "en": "Retry wait"
+ },
+ "v3_4_86": {
+  "ru": "Ожидание повтора, с",
+  "en": "Retry wait, sec"
+ },
+ "v3_4_87": {
+  "ru": "Заблокировать аккаунт",
+  "en": "Lock account"
+ },
+ "v3_4_88": {
+  "ru": "Заблокированные аккаунты пропущены",
+  "en": "Locked accounts skipped"
+ },
+ "v3_4_89": {
+  "ru": "Детали ошибок: ",
+  "en": "Error details: "
+ },
+ "v3_4_90": {
+  "ru": "Код ошибки",
+  "en": "Error code"
+ },
+ "v3_4_91": {
+  "ru": "Записи ошибок",
+  "en": "Error log"
+ },
+ "v3_4_92": {
+  "ru": "Спросите что угодно об аккаунтах",
+  "en": "Ask me anything about accounts"
+ },
+ "v3_4_93": {
+  "ru": "Этап",
+  "en": "Stage"
+ },
+ "v3_4_94": {
+  "ru": "Статистика по этапам",
+  "en": "Stage stats"
+ },
+ "v3_4_95": {
+  "ru": "Этап: ",
+  "en": "Stage: "
+ },
+ "v3_4_96": {
+  "ru": "Сначала",
+  "en": "First"
+ },
+ "v3_4_97": {
+  "ru": "Сначала отметьте аккаунты",
+  "en": "Select accounts first"
+ },
+ "v3_4_98": {
+  "ru": "Требуется пароль 2FA",
+  "en": "2FA password required"
+ },
+ "v3_4_99": {
+  "ru": "Требуется локальный пароль",
+  "en": "Local password required"
+ },
+ "v3_4_100": {
+  "ru": "Нужно подождать $1 с",
+  "en": "Wait $1 sec"
+ },
+ "v3_4_101": {
+  "ru": "Проект закрыт. При необходимости запустите start.bat из исходного терминала.",
+  "en": "The project is closed. If needed, run start.bat from the original terminal."
+ },
+ "v3_4_102": {
+  "ru": "Проверка активности не пройдена",
+  "en": "Liveness check failed"
+ },
+ "v3_4_103": {
+  "ru": "Проверка активности пройдена",
+  "en": "Liveness check passed"
+ },
+ "v3_4_104": {
+  "ru": "Коды и приём кодов",
+  "en": "Codes and code retrieval"
+ },
+ "v3_4_105": {
+  "ru": "Код не указан",
+  "en": "Code is empty"
+ },
+ "v3_4_106": {
+  "ru": "Код отправлен, до первого запроса: ",
+  "en": "Code sent, first query in: "
+ },
+ "v3_4_107": {
+  "ru": "Код отправлен, до первого запроса: {delay:.0f} с",
+  "en": "Code sent, first query in {delay:.0f} sec"
+ },
+ "v3_4_108": {
+  "ru": "Код скопирован",
+  "en": "Code copied"
+ },
+ "v3_4_109": {
+  "ru": "Код истёк",
+  "en": "Code expired"
+ },
+ "v3_4_110": {
+  "ru": "Код истёк, запустите вход заново",
+  "en": "Code expired, restart sign-in"
+ },
+ "v3_4_111": {
+  "ru": "Код недействителен, новый код не получен",
+  "en": "Code invalid, no valid new code received"
+ },
+ "v3_4_112": {
+  "ru": "Код недействителен, ждём новый: ",
+  "en": "Code invalid, waiting for a new one: "
+ },
+ "v3_4_113": {
+  "ru": "Код недействителен, ждём новый: {remaining:.0f} с",
+  "en": "Code invalid, waiting for a new one: {remaining:.0f} sec"
+ },
+ "v3_4_114": {
+  "ru": "Неверный код",
+  "en": "Invalid code"
+ },
+ "v3_4_115": {
+  "ru": "Неверный или просроченный код",
+  "en": "Invalid or expired code"
+ },
+ "v3_4_116": {
+  "ru": "Длина кода",
+  "en": "Code length"
+ },
+ "v3_4_117": {
+  "ru": "(Бэкенд не отвечает: убедитесь, что запущен python -m tam.cli serve, и открыт его адрес, например http://127.0.0.1:8848)",
+  "en": "(Backend not responding: make sure python -m tam.cli serve is running and you opened its address, e.g. http://127.0.0.1:8848)"
+ },
+ "v3_4_118": {
+  "ru": "(Подсказка: больше 8 параллельных задач повышает риск лимитов, переиспользования прокси и блокировок аккаунтов)",
+  "en": "(Hint: more than 8 concurrent runs increase rate-limit, proxy-reuse and account-risk issues)"
+ },
+ "v3_4_119": {
+  "ru": "(Нет данных)",
+  "en": "(No data returned)"
+ },
+ "v3_4_120": {
+  "ru": "(Нет детализации по элементам)",
+  "en": "(No per-item details)"
+ },
+ "v3_4_121": {
+  "ru": "(Пробный запуск, без записи)",
+  "en": "(Dry run, nothing written)"
+ },
+ "v3_4_122": {
+  "ru": "), контрольная точка задачи сохранена",
+  "en": "), task checkpoint preserved"
+ },
+ "v3_4_123": {
+  "ru": "), проверьте сеть и повторите",
+  "en": "), check the network and retry"
+ },
+ "v3_4_124": {
+  "ru": "), убедитесь, что сессия аккаунта действительна и прокси работает, затем повторите",
+  "en": "), confirm the account session is valid and the proxy is reachable, then retry"
+ },
+ "v3_4_125": {
+  "ru": "＋ Добавить аккаунт",
+  "en": "＋ Add account"
+ },
+ "v3_4_126": {
+  "ru": ", проверьте подключение, получение кода и настройки 2FA",
+  "en": ", check the connection, code retrieval and 2FA settings"
+ },
+ "v3_4_127": {
+  "ru": ", проверьте лимиты и срок действия ссылки",
+  "en": ", check rate limits and link validity"
+ },
+ "v3_4_128": {
+  "ru": ", заблокированные пропущены",
+  "en": ", locked skipped"
+ },
+ "v3_4_129": {
+  "ru": "Строка %s не распознана: №%s",
+  "en": "Line %s unrecognized: #%s"
+ },
+ "v3_4_130": {
+  "ru": "%s Введите целое число от %s до %s",
+  "en": "%s Enter an integer from %s to %s"
+ },
+ "v3_4_131": {
+  "ru": "%s: %s. Задача не создана.",
+  "en": "%s: %s. The task has not been created."
+ },
+ "v3_4_132": {
+  "ru": "%s: %s. Контрольная точка задачи сохранена, можно продолжить со страницы записей.",
+  "en": "%s: %s. Task checkpoint preserved; you can continue from the records page."
+ },
+ "v3_4_133": {
+  "ru": "%s: %s. Результаты импорта сохранены, но задача не создана. Сначала просмотрите результаты импорта, затем решайте о повторе.",
+  "en": "%s: %s. Import results saved, but the task was not created. Review the import results before retrying."
+ },
+ "v3_4_134": {
+  "ru": "%s: всего %s, успешно %s, ошибок %s, пропущено %s",
+  "en": "%s: total %s, succeeded %s, failed %s, skipped %s"
+ },
+ "v3_4_135": {
+  "ru": "· Свободная ёмкость %s",
+  "en": "· Remaining capacity %s"
+ },
+ "v3_4_136": {
+  "ru": "…ещё %s полей, подробности в исходных данных",
+  "en": "…%s more fields, see the raw data"
+ },
+ "v3_4_137": {
+  "ru": "…ещё %s записей, полная детализация в исходных данных",
+  "en": "…%s more rows, full details in the raw data"
+ },
+ "v3_4_138": {
+  "ru": "Комплексная задача #%s завершена, результат — в записях комплексных задач",
+  "en": "One-stop task #%s finished; results are in One-stop records"
+ },
+ "v3_4_139": {
+  "ru": "Комплексная задача%s · %s",
+  "en": "One-stop task%s · %s"
+ },
+ "v3_4_140": {
+  "ru": "Комплексная задача #%s создана, после обновления следите за ней в «Записях комплексных задач»",
+  "en": "One-stop task #%s created; after a refresh, follow it in “One-stop records”"
+ },
+ "v3_4_141": {
+  "ru": "Импорт загрузки: %s · успешно %s%s",
+  "en": "Upload import: %s · succeeded %s%s"
+ },
+ "v3_4_142": {
+  "ru": "Изменение 2FA: %s",
+  "en": "2FA change: %s"
+ },
+ "v3_4_143": {
+  "ru": "Показаны только %s записей; сводка по счётчикам сервера.",
+  "en": "Only %s rows returned; totals use server-side counts."
+ },
+ "v3_4_144": {
+  "ru": "Задача #%s скачана %s; фактическое число в summary.json внутри пакета",
+  "en": "Task #%s downloaded %s; the actual export count is in summary.json inside the package"
+ },
+ "v3_4_145": {
+  "ru": "Задача #%s: %s; контрольная точка на сервере сохранена, продолжайте из записей комплексных задач.",
+  "en": "Task #%s: %s; the server checkpoint is preserved — continue from One-stop records."
+ },
+ "v3_4_146": {
+  "ru": "Задач в списке %s: ",
+  "en": "Tasks in list %s: "
+ },
+ "v3_4_147": {
+  "ru": "Всего %s",
+  "en": "Total %s"
+ },
+ "v3_4_148": {
+  "ru": "Создано %s",
+  "en": "Created %s"
+ },
+ "v3_4_149": {
+  "ru": "Совпадений: %s",
+  "en": "Matched %s"
+ },
+ "v3_4_150": {
+  "ru": "С автосбросом других устройств · %s",
+  "en": "Auto-terminate other devices · %s"
+ },
+ "v3_4_151": {
+  "ru": "Импорт завершён: разобрано %s, добавлено %s, обновлено %s, дубликатов %s, уже есть %s, ошибок формата %s, нет места %s",
+  "en": "Import complete: parsed %s, added %s, updated %s, duplicates %s, already present %s, format errors %s, insufficient capacity %s"
+ },
+ "v3_4_152": {
+  "ru": "Будут экспортированы телефоны и ссылки для получения кода у %s выбранных аккаунтов.",
+  "en": "Phone numbers and code-retrieval links of %s selected accounts will be exported."
+ },
+ "v3_4_153": {
+  "ru": "Выбраны только %s аккаунтов с успешной сменой пароля (условия поиска сохранены), прежние отметки сброшены; можно экспортировать пакет аккаунтов или session",
+  "en": "Only %s accounts with a successful password change are selected (search filters kept); previous selections cleared. You can export an account pack or session"
+ },
+ "v3_4_154": {
+  "ru": "Файл прокси прочитан: %s (%s строк, при отправке дубликаты удаляются, занятость учитывается)",
+  "en": "Proxy file loaded: %s (%s lines; duplicates are removed and existing usage counted on submit)"
+ },
+ "v3_4_155": {
+  "ru": "Пропущено %s аккаунтов не в статусе active/неавторизованных",
+  "en": "Skipped %s non-active/unauthorized accounts"
+ },
+ "v3_4_156": {
+  "ru": "Текущих устройств входа %s: ",
+  "en": "Current sign-in devices %s: "
+ },
+ "v3_4_157": {
+  "ru": "Пока не удаётся получить прогресс задачи (%s/10), идёт автоповтор…",
+  "en": "Can’t read task progress yet (%s/10), retrying automatically…"
+ },
+ "v3_4_158": {
+  "ru": "Обработано валидных %s, дубликатов %s, ошибок формата %s, нет места %s. Продолжить только с валидными аккаунтами?",
+  "en": "Valid processed %s, duplicates %s, format errors %s, insufficient capacity %s. Continue with valid accounts only?"
+ },
+ "v3_4_159": {
+  "ru": "валидных (из них %s со ссылкой для получения кода)` + (bad.length ? `, ",
+  "en": "valid (of which %s have a code-retrieval link)` + (bad.length ? `, "
+ },
+ "v3_4_160": {
+  "ru": "Время сообщения: %s. Введите в реальном клиенте; действительность определяется проверкой Telegram.",
+  "en": "Message time: %s. Enter it in a real client; validity is decided by Telegram’s check."
+ },
+ "v3_4_161": {
+  "ru": "Узлов: %s · аккаунтов закреплено: %s",
+  "en": "Nodes: %s · accounts assigned: %s"
+ },
+ "v3_4_162": {
+  "ru": "Предпросмотр разбора: <b>%s</b> валидных (из них %s со ссылкой для получения кода)",
+  "en": "Parse preview: <b>%s</b> valid (of which %s have a code-retrieval link)"
+ },
+ "v3_4_163": {
+  "ru": "Статистика аккаунтов: всего %s",
+  "en": "Account stats: %s total"
+ },
+ "v3_4_164": {
+  "ru": "Прогресс %s%",
+  "en": "Progress %s%"
+ },
+ "v3_4_165": {
+  "ru": "Выбрать %s",
+  "en": "Select %s"
+ },
+ "v3_4_166": {
+  "ru": "Результат проверки активности: %s",
+  "en": "Liveness check result: %s"
+ },
+ "v3_4_167": {
+  "ru": ", в работе %s",
+  "en": ", in progress %s"
+ },
+ "v3_4_168": {
+  "ru": ", в очереди %s",
+  "en": ", pending %s"
+ },
+ "v3_4_169": {
+  "ru": ", на проверке %s",
+  "en": ", to verify %s"
+ },
+ "v3_4_170": {
+  "ru": ", не подтверждено %s",
+  "en": ", unconfirmed %s"
+ },
+ "v3_4_171": {
+  "ru": "; ещё %s пунктов",
+  "en": "; %s more items"
+ }
+}
