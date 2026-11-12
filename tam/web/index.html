@@ -1620,6 +1620,16 @@ const MOCK = {
 
 /* ---------- 基础设施 ---------- */
 const tokenKey = 'tam_token';
+// ?token=... -> сохранить и убрать из адресной строки (удобно для ярлыка/киоска)
+try {
+  const urlToken = new URLSearchParams(location.search).get('token');
+  if (urlToken) {
+    localStorage.setItem(tokenKey, urlToken);
+    const u = new URL(location.href);
+    u.searchParams.delete('token');
+    history.replaceState(null, '', u.pathname + u.search + u.hash);
+  }
+} catch (e) { /* ignore */ }
 $('#token').value = localStorage.getItem(tokenKey) || '';
 async function applyToken() {
   const v = $('#token').value.trim();
