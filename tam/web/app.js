@@ -3846,19 +3846,43 @@ async function bulk(kind) {
 async function bulkWarmup() {
   const ids = [...sel];
   if (!ids.length) { toast('请先勾选账号', 'err'); return; }
-  if (!await uiConfirm({title:'养号', message:'将对选中的健康账号执行养号（保活在线 + 随机已读 + 账号互聊）。\n服务端批量执行，完成后统一返回结果。', okText:'开始'})) return;
-  const r = await withWaitProgress(
-    '养号 · ' + ids.length + ' 个号',
-    '服务端执行中（在线/已读/互聊），请稍候…',
-    () => api('/api/batch/warmup', {
-      method:'POST',
-      body: JSON.stringify({account_ids: ids, concurrency: 2, rounds: 1}),
-    })
-  );
-  out(r, true);
-  toast('养号任务完成', 'ok');
+  if (!await uiConfirm({title:'养号', message:'将对选中的健康账号执行养号（保活在线 + 随机已读 + 账号互聊）。\n任务会出现在「任务中心」，可以关掉页面。', okText:'开始'})) return;
+  // 异步作业：立刻返回 task id，后台跑；进度在任务中心和进度条里都能看
+  const created = await api('/api/batch/warmup?async=1', {
+    method:'POST',
+    body: JSON.stringify({account_ids: ids, concurrency: 3, rounds: 1}),
+  });
+  const taskId = (created.task && created.task.id) || created.job;
+  if (!taskId) throw new Error('未返回任务 id');
+  out(created, true);
+  toast('养号任务 #' + taskId + ' запущена в фоне', 'ok');
+  if (typeof loadTasks === 'function') loadTasks(true);
+  uiProgress({title:'养号 · ' + ids.length + ' 个号 · 任务 #' + taskId, current:0, total:ids.length, text:'запуск…'});
+  const terminal = {done:1, failed:1, stopped:1};
+  let lastDone = -1, stagnant = 0;
+  while (true) {
+    await new Promise(r => setTimeout(r, 2000));
+    let t;
+    try { t = await api('/api/tasks/' + taskId + '?target_limit=50'); } catch (e) { continue; }
+    const done = (t.ok_count || 0) + (t.fail_count || 0) + (t.skip_count || 0);
+    const total = t.total || ids.length;
+    const targets = t.targets || [];
+    const latest = targets.slice().reverse().find(x => x.status === 'ok' || x.status === 'fail' || x.status === 'running');
+    let detail = t.status_cn || t.status || '';
+    if (latest) {
+      const a = accounts.find(x => String(x.id) === String(latest.target));
+      detail = ((a && a.label) || ('#' + latest.target)) + ' · ' + (latest.status_cn || latest.status) + (latest.detail ? ' · ' + latest.detail : '');
+    }
+    if (done === lastDone) stagnant++; else { stagnant = 0; lastDone = done; }
+    uiProgress({title:'养号 · 任务 #' + taskId, current: done, total: total, detail: detail,
+      text: (t.percent != null ? t.percent + '%' : '') + ' успешно ' + (t.ok_count||0) + ' ошибок ' + (t.fail_count||0)
+        + (stagnant > 20 ? ' · идёт дольше обычного…' : '')});
+    if (terminal[t.status]) { uiClose(); break; }
+  }
+  toast('养号任务 #' + taskId + ' завершена', 'ok');
+  loadTasks(true);
   refresh();
-  return r;
+  return taskId;
 }
 async function proxyAudit() {
   const r = await withWaitProgress('代理体检', '正在探测各账号代理连通性…',

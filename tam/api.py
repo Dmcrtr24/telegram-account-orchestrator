@@ -7,6 +7,8 @@
 """
 from __future__ import annotations
 
+import random
+
 import asyncio
 import hashlib
 import os
@@ -1399,16 +1401,76 @@ async def autokick_set_retry(body: KickRetryIn) -> dict[str, Any]:
 
 
 @app.post("/api/batch/warmup", dependencies=[Depends(auth)])
-async def batch_warmup(body: WarmupIn) -> dict[str, Any]:
-    """养号：保活在线 + 随机已读 + 账号之间互聊。"""
-    from .warmup import warmup
+async def batch_warmup(body: WarmupIn, request: Request) -> dict[str, Any]:
+    """养号：保活在线 + 随机已读 + 账号之间互聊。
+
+    默认同步返回汇总；``?async=1`` 时创建任务中心条目并在后台执行，
+    前端轮询 ``GET /api/tasks/{id}`` 看进度。
+    """
+    import time as _time
+
+    from .warmup import chat_pair, keep_online, read_random, warmup
 
     ids = manager.healthy_ids(body.account_ids, body.tag)
     if not ids:
         raise HTTPException(400, "没有可用的健康账号（需 status=active 且不在 spam 封锁期）")
-    return await warmup(manager, ids, online=body.online, read=body.read,
-                        chat=body.chat, rounds=body.rounds,
-                        concurrency=body.concurrency)
+
+    want_async = (
+        (request.query_params.get("async") or "").strip().lower()
+        in {"1", "true", "yes"}
+    )
+    if not want_async:
+        return await warmup(manager, ids, online=body.online, read=body.read,
+                            chat=body.chat, rounds=body.rounds,
+                            concurrency=body.concurrency)
+
+    # ---- асинхронный режим: задача в центре задач ----
+    targets = [str(int(i)) for i in ids]
+    labels: dict[str, str] = {}
+    for aid in ids:
+        acc = db.get(int(aid))
+        if acc:
+            labels[str(int(aid))] = acc.label or f"#{aid}"
+    task = tasks.create(
+        "warmup",
+        f"养号 · {len(targets)} 个号",
+        targets,
+        params={
+            "online": body.online, "read": body.read, "chat": body.chat,
+            "rounds": body.rounds, "concurrency": body.concurrency,
+            "labels": labels,
+        },
+    )
+
+    async def handler(row: dict[str, Any]) -> dict[str, Any]:
+        aid = int(row["target"])
+        steps: list[str] = []
+        if body.online:
+            steps.append((await keep_online(manager, aid))["action"])
+        if body.read:
+            r = await read_random(manager, aid)
+            steps.append(r["action"] + f"({len(r.get('dialogs') or [])})")
+        db.update(aid, last_warm_at=_time.time())
+        if body.chat:
+            peers = [x for x in ids if int(x) != aid]
+            if peers:
+                peer = random.choice(peers)
+                try:
+                    await chat_pair(manager, aid, int(peer))
+                    steps.append(f"chat→#{peer}")
+                except Exception as exc:  # noqa: BLE001 —互聊失败不翻整号
+                    db.log(aid, "warmup_chat", False, repr(exc))
+                    steps.append("chat×")
+        db.log(aid, "warmup", True, ",".join(steps))
+        return {"account_id": aid, "detail": " · ".join(steps) or "ok"}
+
+    conc = max(1, min(8, int(body.concurrency or 2)))
+    runner.spawn(task.id, handler, concurrency=conc, delay=1.0, target_timeout=180.0)
+    t = tasks.get(task.id)
+    d = (t or task).public()
+    d["live"] = runner.is_running(task.id)
+    return {"ok": True, "async": True, "job": task.id,
+            "concurrency": conc, "task": d}
 
 
 @app.post("/api/batch/check", dependencies=[Depends(auth)])
