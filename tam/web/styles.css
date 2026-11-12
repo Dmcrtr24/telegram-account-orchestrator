@@ -1986,3 +1986,21 @@ html.fx-calm.fx-dragging body::after{display:grid}
 }
 .lang-sel select:focus-visible{outline:2px solid var(--focus);outline-offset:2px;border-radius:4px}
 .lang-sel option{color:var(--text);background:var(--glass-solid)}
+
+/* --- русские подписи длиннее китайских: не даём навигации сжиматься и наезжать --- */
+.pillnav{flex:0 1 auto;overflow:hidden}
+.pillnav .nav-item,.menu-trigger{flex:0 0 auto}
+[data-lang="ru"] .pillnav .nav-item,
+[data-lang="ru"] .menu-trigger{padding:0 13px;font-size:13px;gap:6px}
+[data-lang="ru"] .brand b{font-size:14px}
+@media (max-width:1500px){
+  [data-lang="ru"] .pillnav .nav-item,
+  [data-lang="ru"] .menu-trigger{padding:0 10px;font-size:12.5px}
+  .topbar{gap:8px;padding:10px 14px}
+}
+@media (max-width:1200px){
+  [data-lang="ru"] .pillnav .nav-item,
+  [data-lang="ru"] .menu-trigger{padding:0 8px;font-size:12px}
+}
+.ai-panel header h2{white-space:nowrap}
+.ai-panel header{flex-wrap:nowrap}

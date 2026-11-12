@@ -538,5 +538,17 @@
  "连接状态与体检": {
   "ru": "Статус подключения и диагностика",
   "en": "Connection status and diagnostics"
+ },
+ "AI 助手": {
+  "ru": "AI-помощник",
+  "en": "AI assistant"
+ },
+ "AI 助手（可拖动）": {
+  "ru": "AI-помощник (можно перетащить)",
+  "en": "AI assistant (draggable)"
+ },
+ "打开 AI 助手": {
+  "ru": "Открыть AI-помощника",
+  "en": "Open AI assistant"
  }
 }
