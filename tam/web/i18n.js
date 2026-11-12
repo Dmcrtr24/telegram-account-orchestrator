@@ -237,6 +237,11 @@
   function applyAll() {
     walk(document.body);
     title();
+    // после перевода подписи меняют ширину — просим приложение пересчитать
+    // «бегунок» навигации и отступы (иначе подсветка съезжает на соседний пункт)
+    try {
+      if (typeof TAO_FX !== 'undefined' && TAO_FX && typeof TAO_FX.syncNav === 'function') TAO_FX.syncNav();
+    } catch (e) { /* ignore */ }
   }
 
   function setLang(lang, silent) {

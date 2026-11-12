@@ -35,3 +35,7 @@ unpack/
 .vscode/
 
 # tam/web/index.html 是构建产物,但必须提交以便用户开箱即用
+
+# собранные ассеты релизной страницы нужны для работы index.min.html
+!tam/web/release/
+!tam/web/release/**

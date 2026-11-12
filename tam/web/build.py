@@ -258,8 +258,20 @@ def render_page(
 _BLOCK_RE = re.compile(r"<(script|style)(?P<attrs>[^>]*)>(?P<body>.*?)</\1\s*>", re.I | re.S)
 
 
+_CALC_RE = re.compile(r"calc\((?:[^()]|\([^()]*\))*\)")
+
+
+def _protect_calc(css: str) -> str:
+    """Спрятать пробелы внутри calc(): `+`/`-` в CSS требуют пробелов вокруг,
+    иначе объявление невалидно (calc(100%+24px) браузер выбрасывает)."""
+    def keep(m: re.Match) -> str:
+        return m.group(0).replace(" ", "\x00")
+    return _CALC_RE.sub(keep, css)
+
+
 def _minify_css(css: str) -> str:
     """Remove CSS comments and insignificant whitespace without reordering rules."""
+    css = _protect_calc(css)
     out: list[str] = []
     quote: str | None = None
     comment = False
@@ -314,7 +326,7 @@ def _minify_css(css: str) -> str:
                 out.pop()
         out.append(c)
         i += 1
-    return "".join(out).strip()
+    return "".join(out).replace("\x00", " ").strip()
 
 
 def _minify_html_shell(html: str) -> str:
