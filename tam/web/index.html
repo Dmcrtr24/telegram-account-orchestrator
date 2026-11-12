@@ -502,6 +502,12 @@ select.langsel:focus{outline:2px solid var(--blue);outline-offset:1px}
 [data-theme="dark"] ::-webkit-scrollbar{width:10px;height:10px}
 [data-theme="dark"] ::-webkit-scrollbar-thumb{background:#3a3936;border-radius:6px}
 [data-theme="dark"] ::-webkit-scrollbar-track{background:#141413}
+
+/* скроллбар самой страницы (html), а не только внутренних блоков */
+[data-theme="dark"]{scrollbar-color:#3a3936 #141413}
+[data-theme="dark"]::-webkit-scrollbar{width:10px;height:10px}
+[data-theme="dark"]::-webkit-scrollbar-thumb{background:#3a3936;border-radius:6px}
+[data-theme="dark"]::-webkit-scrollbar-track{background:#141413}
 </style>
 </head>
 <body>
