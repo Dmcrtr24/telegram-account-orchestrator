@@ -205,7 +205,10 @@
     pending.add(node);
     if (scheduled) return;
     scheduled = true;
-    (window.requestAnimationFrame || window.setTimeout)(flush, 0);
+    // микрозадача, а не rAF: перевод успевает до отрисовки кадра,
+    // иначе при переключении вида на полсекунды мелькает китайский
+    if (typeof queueMicrotask === 'function') queueMicrotask(flush);
+    else setTimeout(flush, 0);
   }
 
   var observer = null;
@@ -266,6 +269,14 @@
     if (sel) { sel.value = LANG; sel.addEventListener('change', function () { setLang(sel.value); }); }
     applyAll();
     startObserver();
+    // приложение перерисовывает статистику и виды асинхронно — переводим сразу
+    // после этих хуков, чтобы китайский не мелькал в кадре
+    try {
+      if (typeof TAO_HOOK !== 'undefined' && TAO_HOOK && typeof TAO_HOOK.after === 'function') {
+        TAO_HOOK.after('renderStats', function () { applyAll(); }, 'i18n:stats');
+        TAO_HOOK.after('applyView', function () { applyAll(); }, 'i18n:view');
+      }
+    } catch (e) { /* ignore */ }
     // поздние рендеры (асинхронные панели) тоже попадают под перевод
     setTimeout(applyAll, 60);
     setTimeout(applyAll, 400);
