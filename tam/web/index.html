@@ -531,7 +531,7 @@ body>.bar{position:fixed;top:0;left:0;right:0;height:2px;margin:0;border-radius:
 .ai-fab:hover:not(:disabled){background:var(--accent-2)}
 .ai-fab.dragging{cursor:grabbing;opacity:.92;transition:none}
 body:has(.bulk.on) .ai-fab{display:none}
-.ai-panel{position:fixed;z-index:130;top:12px;right:12px;bottom:12px;width:min(500px,calc(100vw - 24px));display:flex;flex-direction:column;background:var(--glass-solid);border:1px solid var(--line-strong);border-radius:var(--r-xl);box-shadow:var(--shadow-3);transform:translateX(calc(100% + 24px));transition:transform .24s cubic-bezier(.2,.8,.2,1);overflow:hidden}
+.ai-panel{position:fixed;z-index:130;top:calc(var(--topbar-h) + 8px);right:12px;bottom:12px;width:min(500px,calc(100vw - 24px));display:flex;flex-direction:column;background:var(--glass-solid);border:1px solid var(--line-strong);border-radius:var(--r-xl);box-shadow:var(--shadow-3);transform:translateX(calc(100% + 24px));transition:transform .24s cubic-bezier(.2,.8,.2,1);overflow:hidden}
 .ai-panel.on{transform:none}
 .ai-panel.resizing{transition:none;user-select:none}
 .ai-resize{position:absolute;left:0;top:0;bottom:0;width:8px;cursor:ew-resize;z-index:2}
@@ -2026,6 +2026,11 @@ html.fx-calm.fx-dragging body::after{display:grid}
 }
 .ai-panel header h2{white-space:nowrap}
 .ai-panel header{flex-wrap:nowrap}
+
+/* --- AI-панель не должна накрывать кнопки шапки (тема, язык): иначе «Закрыть»
+       оказывается ровно над переключателем темы и клик попадает не туда --- */
+.ai-panel{top:calc(var(--topbar-h) + 8px) !important;height:auto !important;bottom:12px !important}
+@media (max-width:720px){ .ai-panel{top:calc(var(--topbar-h) + 4px);right:8px;bottom:8px} }
 </style>
 </head>
 <body class="no-rail">
