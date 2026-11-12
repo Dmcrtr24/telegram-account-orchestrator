@@ -2326,5 +2326,25 @@
  "API ID 或 API Hash 无效": {
   "ru": "неверный API ID или API Hash",
   "en": "invalid API ID or API Hash"
+ },
+ " · 养号 %s": {
+  "ru": " · прогрев %s",
+  "en": " · warm-up %s"
+ },
+ "上次养号": {
+  "ru": "Последний прогрев",
+  "en": "Last warm-up"
+ },
+ "未养号": {
+  "ru": "не прогревался",
+  "en": "never warmed up"
+ },
+ "养号": {
+  "ru": "Прогрев",
+  "en": "Warm-up"
+ },
+ "养号中": {
+  "ru": "Идёт прогрев",
+  "en": "Warming up"
  }
 }

@@ -3049,6 +3049,7 @@ function openDrawer(id) {
       <span>本机接管</span><div>${a.adopted_at ? esc(fmt(a.adopted_at)) + '（' + esc(rel(a.adopted_at)) + '）' : '<span class=\'muted\'>未记录</span>'}</div>
       <span>会话创建</span><div>${a.login_at ? esc(fmt(a.login_at)) + '（' + esc(rel(a.login_at)) + '）<span class="muted"> · 服务端 date_created，仅供参考</span>' : '<span class=\'muted\'>未记录，点“查看设备”可从 Telegram 拉取</span>'}</div>
       <span>用户名</span><div>${a.username ? '@' + esc(a.username) : '—'}</div>
+      <span>上次养号</span><div>${a.last_warm_at ? esc(fmt(a.last_warm_at)) + '（' + esc(rel(a.last_warm_at)) + '）' : '<span class="muted">未养号</span>'}</div>
     </div>
     <label class="f"><span>别名</span><input id="eLabel" value="${esc(a.label)}" /></label>
     <label class="f"><span>手机号</span><input id="ePhone" value="${esc(a.phone || '')}" /></label>
@@ -9352,7 +9353,8 @@ const TAO_BE = (() => {
   const checkText = account => {
     if (!account || !account.last_check_at) return '尚未检查';
     const state = resultCn[account.last_check_result] || '待核对';
-    return '上次检查：' + agoText(account.last_check_at) + ' · ' + state + (account.last_check_error ? ' · ' + String(account.last_check_error).slice(0, 120) : '');
+    const warm = account.last_warm_at ? ' · 养号 ' + agoText(account.last_warm_at) : '';
+    return '上次检查：' + agoText(account.last_check_at) + ' · ' + state + warm + (account.last_check_error ? ' · ' + String(account.last_check_error).slice(0, 120) : '');
   };
   function decorateRows() {
     const body = document.querySelector('#tb');
