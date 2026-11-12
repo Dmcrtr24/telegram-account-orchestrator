@@ -12,15 +12,22 @@ whenToUse: перевод строк UI TAO, новые батчи i18n, про�
 ## Пайплайн
 
 ```bash
-python3 tools/i18n_extract.py     # раунд 1: литералы app.js/index.src.html + backend-строки
-python3 tools/i18n_extract2.py    # раунд 2: ast для python + HTML из шаблонов app.js (то, что пропустил раунд 1)
-# -> tools/i18n_src.json, tools/i18n_round2.json, батчи в tools/i18n_batches{,2}/
-# ... перевод в tools/i18n_out{,2}/batchNN.json ...
-python3 tools/i18n_validate.py    # id, пустые значения, %s, остатки CJK
-python3 tools/i18n_build.py       # -> tam/web/i18n.data.js (плюс tools/i18n_extra.json поверх)
-cd tam/web && python3 build.py    # -> tam/web/index.html
+python3 tools/i18n_extract.py     # литералы app.js/index.src.html + backend-строки
+python3 tools/i18n_extract2.py    # ast для python + HTML из шаблонов app.js
+#   -> tools/i18n_src.json, tools/i18n_round2.json; батчи в tools/i18n_batches3/
+# ... перевод в tools/i18n_out3/v3batchNN.json ...
+python3 tools/i18n_build.py       # seed + батчи3 + i18n_extra.json -> tam/web/i18n.data.js
+cd tam/web && python3 build.py && python3 build.py --release
 systemctl --user restart tgcrm
 ```
+
+Актуальная версия интерфейса — v0.3.2 («Workspace»). `build.py` сам вставляет
+`i18n.data.js` + `i18n.js` перед `app.js` и в `index.html`, и в `release/app.min.<hash>.js`
+(функция `_i18n_bundle()`), отдельного шага вставки нет.
+
+`tools/i18n_seed.json` — словарь предыдущей версии: при обновлении апстрима сначала вычитается
+из новых строк (`i18n_build.py` накладывает батчи поверх seed), поэтому переводить заново нужно
+только новое.
 
 ## Формат батча
 
