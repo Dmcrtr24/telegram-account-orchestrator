@@ -11,9 +11,9 @@ Self-hosted менеджер Telegram-аккаунтов: веб-консоль,
 [![Python](https://img.shields.io/badge/python-3.10%2B-blue.svg)](https://www.python.org/)
 [![Telethon](https://img.shields.io/badge/telethon-MTProto-2CA5E0.svg)](https://github.com/LonamiWebs/Telethon)
 
-<a href="docs/assets/demo.mp4"><img src="docs/assets/demo-poster.png" width="900" alt="Демо интерфейса TAO: аккаунты, инструменты, AI-помощник, смена темы"></a>
+<img src="docs/assets/demo.webp" width="900" alt="Демо интерфейса TAO: аккаунты, инструменты, AI-помощник, смена темы">
 
-▶ **[Демо интерфейса — 12 секунд, MP4 (3.9 МБ)](docs/assets/demo.mp4)** · [скриншот в полном размере](docs/assets/screenshot-dark-ru.png)
+Демо — 12 секунд: [MP4 1440×810, 3.9 МБ](docs/assets/demo.mp4) · [скриншот в полном размере](docs/assets/screenshot-dark-ru.png)
 
 ## Что это
 
