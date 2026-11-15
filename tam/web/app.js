@@ -2239,7 +2239,7 @@ function showConnError(e, unauth) {
 }
 function retryConnect() { probeMode(); refresh(); }
 const viewKey = 'tam.view';
-const VIEW_NAMES = {accounts:'账号清单', tasks:'任务中心', leads:'线索库', toolbox:'工具', logs:'日志', settings:'设置'};
+const VIEW_NAMES = {accounts:'账号清单', tasks:'任务中心', leads:'线索库', chats:'对话', toolbox:'工具', logs:'日志', settings:'设置'};
 let currentView = 'accounts';
 /* ======================================================================
  * 界面层（重构新增）：主题 · 弹出菜单 · 操作清单 + 命令面板 · 左栏统计
@@ -2688,6 +2688,7 @@ function applyView() {
     el.setAttribute('aria-hidden', on ? 'false' : 'true');
   });
   document.body.classList.toggle('accounts-workspace', currentView === 'accounts');
+  document.body.classList.toggle('chats-workspace', currentView === 'chats');
 }
 function switchView(view) {
   if (view === 'ziptools') view = 'toolbox';
@@ -2699,6 +2700,7 @@ function switchView(view) {
   if (view === 'tasks') loadTasks();
   if (view === 'leads') loadLeads();
   if (view === 'toolbox') { loadOps(); renderZt(); }
+  if (view === 'chats') chatOnView();
   if (view === 'settings') loadSettings();
   const ws = $('#workspace'); if (ws) { ws.scrollTop = 0; TAO_MOTION.view(ws,{defer:true}); }
 }
@@ -2992,6 +2994,19 @@ function render() {
   // 账号列表与导航徽标共用同一份内存数据；每次渲染同步更新，
   // 避免演示模式/快速刷新时导航仍显示旧的 0。
   updateNavBadges();
+  // Вид «对话» живёт на тех же данных: колонка аккаунтов перерисовывается
+  // только когда реально изменился список/статусы, чтобы не сбивать фокус.
+  if (currentView === 'chats') {
+    try {
+      const list = chatAccounts();
+      const sig = list.map(a => a.id + ':' + a.status + ':' + (a.authorized ? 1 : 0) + ':' + (a.label || '')).join('|');
+      if (CHAT.sig !== sig) {
+        CHAT.sig = sig;
+        if (!CHAT.acc && list.length) chatOnView();
+        else { chatFillAccountSelect(); chatRenderAccounts(); }
+      }
+    } catch (_) {}
+  }
 }
 
 function setFilter(k) { filter = k; tableLimit = 300; render(); }
@@ -3092,7 +3107,7 @@ function openDrawer(id) {
       <button class="fit write" data-onclick="spamCheck(${a.id})">限制检测</button>
       <button class="fit" data-onclick="twofaStatus(${a.id})" title="有无云密码、是否绑定辅助邮箱、重置等待期">二验状态</button>
       <button class="fit" data-onclick="devices(${a.id})">查看设备</button>
-      <button class="fit" data-onclick="dialogs(${a.id})">最近会话</button>
+      <button class="fit" data-onclick="openChats(${a.id})" title="打开该账号的对话与消息">对话</button>
       ${a.authorized ? `<button class="fit" data-onclick="openOfficialCode(${a.id})">官方验证码</button>` : ''}
     </div>
     <div class="row" style="margin-bottom:8px;flex-wrap:wrap">
@@ -9488,81 +9503,285 @@ const TAO_BE = (() => {
    不用 eval / new Function，所以页面可以开 script-src 不带 'unsafe-inline' 的严格 CSP。
    支持：调用 a.b(…)、成员链、= / += 赋值、!、return、字面量、this / event、.catch(e=>…) 箭头。 */
 /*@@LEX@@*/
-/* =================== 对话 / чаты аккаунта =================== */
-const CHAT = { acc: null, peer: null, rows: [] };
+/* =================== 对话 / чаты аккаунтов =================== */
+/* Один экран на всю функцию: колонка аккаунтов → диалоги выбранного аккаунта →
+   лента сообщений. На широком экране — три колонки, на узком — по шагам
+   (аккаунт → диалог → сообщения) с кнопкой «Назад». Выбранный аккаунт
+   запоминается (localStorage tam.chatAcc), поэтому окно не «висит» поверх
+   интерфейса и всегда понятно, чьи это диалоги. */
+const CHAT = {acc: null, peer: null, rows: [], want: null, key: 'tam.chatAcc', seq: 0};
 
-function openChats(id) {
-  CHAT.acc = id; CHAT.peer = null; CHAT.rows = [];
-  const who = document.getElementById('chatWho');
-  if (who) who.textContent = ' · ' + accLabel(id);
-  const peer = document.getElementById('chatPeer');
-  if (peer) peer.textContent = '选择一个对话';
+function chatAccounts() {
+  return (typeof accounts !== 'undefined' && Array.isArray(accounts) ? accounts : []).filter(a => a && a.id != null);
+}
+
+function chatTone(a) {
+  if (!a) return '';
+  // Локальная сессия может лежать в базе, но Telegram её уже не принимает —
+  // статус важнее флага authorized, иначе точка врёт «всё хорошо».
+  if (['unauthorized', 'error', 'banned', 'deleted', 'frozen', 'spam_block_perm'].indexOf(a.status) >= 0) return 'bad';
+  if (a.authorized || a.status === 'active') return 'ok';
+  return a.status === 'new' ? 'info' : 'warn';
+}
+
+function chatAgo(ts) {
+  if (!ts) return '';
+  const sec = Math.max(0, Math.round(Date.now() / 1000 - ts));
+  if (sec < 60) return '刚刚';
+  if (sec < 3600) return Math.floor(sec / 60) + ' 分钟前';
+  if (sec < 86400) return Math.floor(sec / 3600) + ' 小时前';
+  return Math.floor(sec / 86400) + ' 天前';
+}
+
+function chatErrText(e) {
+  const msg = String((e && e.message) || e || '');
+  // Ключ совпадает с тем, что уже отдаёт слой ошибок API, — одинаковый текст
+  // и одинаковая карточка перевода, без дублей в словаре.
+  if (/AuthKeyUnregistered|AUTH_KEY|not registered/i.test(msg)) return '会话已失效，需要重新登录';
+  if (/FLoodWait|FLOOD_WAIT|too many/i.test(msg)) return '请求太频繁，稍后再试';
+  return msg || '加载失败';
+}
+
+function chatNote(text, extra) {
+  return '<div class="chat-note muted' + (extra ? ' ' + extra : '') + '">' + text + '</div>';
+}
+
+/** Перевод строки, которую нельзя перевести на уровне DOM (префиксы тостов). */
+function chatT(text) {
+  try { return (window.tamI18n && tamI18n.t) ? tamI18n.t(String(text)) : String(text); }
+  catch (e) { return String(text); }
+}
+
+function chatRenderAccounts() {
+  const box = document.getElementById('chatAccs');
+  if (!box) return;
+  const list = chatAccounts();
+  if (!list.length) { box.innerHTML = chatNote('还没有账号'); return; }
+  box.innerHTML = list.map(a => {
+    const on = String(a.id) === String(CHAT.acc);
+    const side = (a.authorized && a.status === 'active') ? (a.username ? '@' + esc(a.username) : '') : '未登录';
+    return '<button type="button" class="chat-acc t-' + chatTone(a) + (on ? ' on' : '') + '"'
+      + ' data-onclick="chatPickAccount(' + a.id + ')" aria-pressed="' + (on ? 'true' : 'false') + '"'
+      + ' title="' + esc(accLabel(a.id)) + '">'
+      + '<i class="dot"></i><b>' + esc(accLabel(a.id)) + '</b><small>' + side + '</small></button>';
+  }).join('');
+}
+
+function chatFillAccountSelect() {
+  const sel = document.getElementById('chatAccSel');
+  if (!sel) return;
+  const list = chatAccounts();
+  sel.innerHTML = list.length
+    ? list.map(a => '<option value="' + a.id + '">' + esc(accLabel(a.id)) + '</option>').join('')
+    : '<option value="">还没有账号</option>';
+  sel.disabled = !list.length;
+  if (CHAT.acc != null && list.some(a => String(a.id) === String(CHAT.acc))) sel.value = String(CHAT.acc);
+  else if (list.length) sel.value = String(list[0].id);
+}
+
+function chatSetPeer(peer, name) {
+  CHAT.peer = peer == null ? null : String(peer);
+  const t = document.getElementById('chatPeer');
+  if (t) t.textContent = CHAT.peer ? (name || '#' + CHAT.peer) : '选择一个对话';
+  const body = document.getElementById('chatBody');
+  if (body) body.classList.toggle('has-peer', !!CHAT.peer);
+  // Без выбранного диалога отправлять некуда — не делаем вид, что можно.
+  const ta = document.getElementById('chatText');
+  if (ta) ta.disabled = !CHAT.peer;
+  const btn = document.querySelector('.chat-send .primary');
+  if (btn) btn.disabled = !CHAT.peer;
+}
+
+/* Вид открыт (переключение вкладки, возврат из карточки аккаунта). */
+function chatOnView() {
+  const body = document.getElementById('chatBody');
+  if (!body) return;
+  chatFillAccountSelect();
+  const want = CHAT.want;
+  CHAT.want = null;
+  if (want != null) { chatPickAccount(want); return; }
+  const list = chatAccounts();
+  if (!list.length) {
+    CHAT.acc = null;
+    chatRenderAccounts();
+    const box = document.getElementById('chatDlgs');
+    if (box) box.innerHTML = chatNote('还没有账号，先导入或登录一个');
+    return;
+  }
+  let id = CHAT.acc;
+  if (id == null || !list.some(a => String(a.id) === String(id))) {
+    let saved = null;
+    try { saved = localStorage.getItem(CHAT.key); } catch (e) {}
+    id = saved && list.some(a => String(a.id) === saved) ? Number(saved) : list[0].id;
+  }
+  CHAT.want = null;
+  if (String(id) !== String(CHAT.acc)) { chatPickAccount(id); return; }
+  chatRenderAccounts();
+  CHAT.seq++;
+  chatReload();
+}
+
+function chatPickAccount(value) {
+  const num = value === '' || value == null ? NaN : Number(value);
+  CHAT.acc = Number.isFinite(num) ? num : null;
+  CHAT.peer = null;
+  CHAT.rows = [];
+  CHAT.seq++;
+  if (CHAT.acc != null) { try { localStorage.setItem(CHAT.key, String(CHAT.acc)); } catch (e) {} }
+  const sel = document.getElementById('chatAccSel');
+  if (sel && CHAT.acc != null) sel.value = String(CHAT.acc);
+  chatRenderAccounts();
+  chatSetPeer(null);
   const msgs = document.getElementById('chatMsgs');
   if (msgs) msgs.innerHTML = '';
-  openModal('mChat');
   chatReload();
 }
 
 async function chatReload() {
   const box = document.getElementById('chatDlgs');
-  if (!box || !CHAT.acc) return;
-  box.innerHTML = '<span class="muted" style="padding:10px;display:block">加载中…</span>';
+  const hint = document.getElementById('chatHint');
+  if (!box) return;
+  if (CHAT.acc == null) { box.innerHTML = chatNote('先选择一个账号'); return; }
+  const seq = ++CHAT.seq;
+  if (hint) hint.textContent = '';
+  box.innerHTML = chatNote('加载中…');
   try {
-    const rows = await api('/api/accounts/' + CHAT.acc + '/dialogs?limit=80');
-    CHAT.rows = rows || [];
-    if (!CHAT.rows.length) { box.innerHTML = '<span class="muted" style="padding:10px;display:block">没有对话</span>'; return; }
-    box.innerHTML = CHAT.rows.map(d => {
-      const kind = d.is_group ? '群组' : d.is_channel ? '频道' : '对话';
-      const unread = d.unread ? ' · ' + d.unread + ' 未读' : '';
-      return '<button type="button" class="chat-dlg' + (String(d.id) === String(CHAT.peer) ? ' on' : '') + '" data-onclick="chatOpen(\'' + d.id + '\')">'
-        + '<b>' + esc(d.name || d.id) + '</b><small>' + kind + unread + '</small></button>';
-    }).join('');
+    const rows = await api('/api/accounts/' + CHAT.acc + '/dialogs?limit=100');
+    if (seq !== CHAT.seq) return;
+    CHAT.rows = Array.isArray(rows) ? rows : [];
+    chatRenderDialogs();
+    if (hint) hint.textContent = CHAT.rows.length ? CHAT.rows.length + ' 个对话' : '';
   } catch (e) {
-    box.innerHTML = '<span class="muted" style="padding:10px;display:block">' + esc(e.message) + '</span>';
+    if (seq !== CHAT.seq) return;
+    CHAT.rows = [];
+    if (hint) hint.textContent = '';
+    // Самая частая причина пустого списка — мёртвая сессия: сразу даём кнопку входа.
+    box.innerHTML = chatNote(esc(chatErrText(e)))
+      + '<div class="chat-note"><button type="button" class="sm fit write" data-onclick="startLogin(' + CHAT.acc + ')">登录</button></div>';
   }
 }
 
+function chatRenderDialogs() {
+  const box = document.getElementById('chatDlgs');
+  if (!box) return;
+  if (CHAT.acc == null) { box.innerHTML = chatNote('先选择一个账号'); return; }
+  const input = document.getElementById('chatSearch');
+  const q = String((input && input.value) || '').trim().toLowerCase();
+  const rows = CHAT.rows.filter(d => !q
+    || String(d.name || '').toLowerCase().includes(q)
+    || String(d.id) === q);
+  if (!rows.length) {
+    box.innerHTML = chatNote(CHAT.rows.length ? '没有匹配的对话' : '没有对话');
+    return;
+  }
+  box.innerHTML = rows.map(d => {
+    const kind = d.is_group ? '群组' : d.is_channel ? '频道' : '对话';
+    const meta = [kind];
+    if (d.unread) meta.push(d.unread + ' 未读');
+    if (d.date) meta.push(chatAgo(d.date));
+    const preview = d.preview ? String(d.preview).replace(/\s+/g, ' ').slice(0, 70) : '';
+    return '<button type="button" class="chat-dlg' + (String(d.id) === String(CHAT.peer) ? ' on' : '') + (d.unread ? ' unread' : '') + '"'
+      + ' data-onclick="chatOpen(' + d.id + ')" title="' + esc(d.name || '') + '">'
+      + '<b>' + esc(d.name || ('#' + d.id)) + '</b>'
+      + '<em>' + esc(meta.join(' · ')) + '</em>'
+      + (preview ? '<small>' + esc(preview) + '</small>' : '')
+      + '</button>';
+  }).join('');
+}
+
+function chatMsgHtml(m) {
+  const out = !!m.out;
+  const when = m.date ? new Date(m.date * 1000).toLocaleTimeString(uiLocale(), {hour: '2-digit', minute: '2-digit'}) : '';
+  const body = m.text || (m.media ? '[' + '媒体' + ']' : '');
+  const who = !out && m.sender_name ? '<u>' + esc(String(m.sender_name).slice(0, 40)) + '</u>' : '';
+  return '<div class="chat-msg' + (out ? ' out' : '') + '">' + who + esc(body) + '<time>' + esc(when) + '</time></div>';
+}
+
 async function chatOpen(peer) {
-  CHAT.peer = String(peer);
-  const title = document.getElementById('chatPeer');
+  if (peer == null || CHAT.acc == null) return;
+  const id = String(peer);
+  const row = CHAT.rows.find(x => String(x.id) === id);
+  CHAT.peer = id;
+  chatSetPeer(id, row && row.name);
   const box = document.getElementById('chatMsgs');
-  const d = CHAT.rows.find(x => String(x.id) === String(peer));
-  if (title) title.textContent = (d && d.name) || ('#' + peer);
-  if (box) box.innerHTML = '<span class="muted">加载中…</span>';
-  document.querySelectorAll('#chatDlgs .chat-dlg').forEach(b => b.classList.remove('on'));
+  if (box) box.innerHTML = chatNote('加载中…');
+  const seq = CHAT.seq;
   try {
-    const r = await api('/api/accounts/' + CHAT.acc + '/messages?peer=' + encodeURIComponent(peer) + '&limit=60');
+    const r = await api('/api/accounts/' + CHAT.acc + '/messages?peer=' + encodeURIComponent(id) + '&limit=60');
+    if (seq !== CHAT.seq || CHAT.peer !== id) return;
     const list = (r && r.messages) || [];
     if (!box) return;
-    if (!list.length) { box.innerHTML = '<span class="muted">Сообщений нет</span>'; return; }
-    box.innerHTML = list.map(m => {
-      const t = m.date ? new Date(m.date * 1000).toLocaleString(uiLocale(), {hour: '2-digit', minute: '2-digit'}) : '';
-      const body = m.text || (m.media ? '[' + 'медиа' + ']' : '');
-      return '<div class="chat-msg' + (m.out ? ' out' : '') + '">' + esc(body) + '<time>' + esc(t) + '</time></div>';
-    }).join('');
-    box.scrollTop = box.scrollHeight;
+    if (!list.length) box.innerHTML = chatNote('这个对话里还没有消息');
+    else { box.innerHTML = list.map(chatMsgHtml).join(''); box.scrollTop = box.scrollHeight; }
+    chatRenderDialogs();
+    chatMarkRead(id);
   } catch (e) {
-    if (box) box.innerHTML = '<span class="muted">' + esc(e.message) + '</span>';
+    if (seq !== CHAT.seq) return;
+    if (box) box.innerHTML = chatNote(esc(chatErrText(e)));
   }
+}
+
+function chatMarkRead(peer) {
+  if (CHAT.acc == null || peer == null) return;
+  api('/api/accounts/' + CHAT.acc + '/read?peer=' + encodeURIComponent(peer), {method: 'POST'})
+    .then(() => {
+      const row = CHAT.rows.find(x => String(x.id) === String(peer));
+      if (row && row.unread) { row.unread = 0; chatRenderDialogs(); }
+    })
+    .catch(() => {});
 }
 
 async function chatSend() {
   const input = document.getElementById('chatText');
-  if (!input || !CHAT.acc || !CHAT.peer) { toast('Сначала выберите диалог', 'err'); return; }
+  if (!input) return;
+  if (CHAT.acc == null || CHAT.peer == null) { toast('先选择账号和对话', 'err'); return; }
   const text = String(input.value || '').trim();
   if (!text) return;
-  input.value = '';
+  const btn = document.querySelector('.chat-send .primary');
+  if (btn) btn.disabled = true;
   try {
     await api('/api/accounts/' + CHAT.acc + '/message', {
       method: 'POST',
       body: JSON.stringify({peer: CHAT.peer, text: text}),
     });
-    toast('Отправлено', 'ok');
+    input.value = '';
     await chatOpen(CHAT.peer);
   } catch (e) {
-    toast('Ошибка отправки: ' + e.message, 'err');
+    toast(chatT('发送失败：') + chatT(chatErrText(e)), 'err');
+  } finally {
+    if (btn) btn.disabled = false;
+    try { input.focus(); } catch (_) {}
   }
 }
+
+function chatKey(e) {
+  if (e && e.key === 'Enter' && !e.shiftKey) { e.preventDefault(); chatSend(); }
+}
+
+function chatBack() {
+  const body = document.getElementById('chatBody');
+  if (body) body.classList.remove('has-peer');
+}
+
+/* Вход из карточки/строки аккаунта: открыть вид и сразу этот аккаунт. */
+function openChats(id) {
+  if (id != null) CHAT.want = Number(id);
+  try { closeAll(); } catch (_) {}
+  switchView('chats');
+}
+
+/* Enter — отправить, Shift+Enter — перенос строки (встроенный обработчик не
+   вешаем на data-onkeydown: CSP-переплетение поддерживает только click/change/input/load). */
+(function bindChatInput() {
+  const bind = () => {
+    const ta = document.getElementById('chatText');
+    if (!ta || ta.__taoChatKey) return;
+    ta.__taoChatKey = true;
+    ta.addEventListener('keydown', chatKey);
+  };
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', bind);
+  else bind();
+})();
 
 /* TAO_LEX_START */
 const __taoLexHas = new Set(["$", "DEMO", "TAO_MOTION", "TAO_KEYS", "MOCK", "tokenKey", "TAO_ERR", "TASK_KIND_CN", "TASK_TONE", "observedLoginTasks", "chatPicked", "ACTION_CN", "STATUS_CN", "cnStatus", "ERROR_CN", "KEY_CN", "isOk", "LOG_DETAIL_CN", "SUMMARY_LIMIT", "SUMMARY_SECRET", "DIAL", "nowMs", "KICK_SKIP_STATUS", "KICK_STATE_CN", "KICK_BASE_CN", "UI_TASKS", "saveKickRetry", "kickNow", "viewKey", "VIEW_NAMES", "themeKey", "ACTIONS", "PAL", "SET_ALIAS", "STAT_CN", "MORE_VIEWS", "twofaShown", "addAccount", "saveAccount", "check", "devices", "dialogs", "terminate", "logout", "delAccount", "verify", "doSend", "ONE_STOP_WATCHING", "doImport", "tdataBody", "TB_PRIV_KEYS", "TB_PRIV_VALS", "TB_GROUPS", "TB_DRAFTS", "AI_HIST_KEY", "AI_HIST_MAX", "TAO_HOOK", "TAO_DOM", "TAO_FX", "TAO_FX3", "TAO_FX4", "TAO_FX5", "TAO_FX8", "TAO_BE", "CHAT", "accounts", "stats", "sel", "filter", "loginId", "readonly", "accountsRevision", "visibleCache", "filterCountsCache", "kick", "busy", "taskTimer", "loginDetailTimer", "taskDetailVersion", "chatRows", "leadRows", "logPinned", "skewMs", "_uiResolver", "_uiMode", "_dialogEl", "_dialogReturnFocus", "_dialogKeyHandler", "_dialogTitleSeq", "UI_TASK_SEQ", "uiFilePending", "legacyProgressCard", "currentView", "MENU_OPEN", "quickFilter", "tableLimit", "accountRenderTimer", "qrLoginId", "qrWaitAbort", "officialCodeAccountId", "officialCodeRequest", "spinTimer", "proxyCapacityTimer", "timer", "stickyFrame", "TB_OPS", "TB_CUR", "TB_BUSY", "ZT_JOB", "ZT_MERGE_JOB", "ZT_MERGE_N", "AI_CFG", "AI_MSGS"]);

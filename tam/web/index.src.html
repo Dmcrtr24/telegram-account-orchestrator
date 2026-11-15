@@ -75,6 +75,7 @@
     <button type="button" class="nav-item active" data-nav="accounts" data-onclick="switchView('accounts')">账号<em id="navAccountCount">0</em></button>
     <button type="button" class="nav-item" data-nav="tasks" data-onclick="switchView('tasks')">任务<em id="navTaskCount">0</em></button>
     <button type="button" class="nav-item" data-nav="leads" data-onclick="switchView('leads')">线索</button>
+    <button type="button" class="nav-item" data-nav="chats" data-onclick="switchView('chats')">对话</button>
     <button type="button" class="nav-item" data-nav="toolbox" data-onclick="switchView('toolbox')">工具</button>
     <button type="button" class="nav-item" data-nav-group="more" data-onclick="toggleMenu(this,'moreMenu')" aria-haspopup="menu" aria-expanded="false">更多<svg class="i sm"><use href="#i-chevron"/></svg></button>
   </nav>
@@ -151,6 +152,29 @@
       <button class="sm fit write" data-onclick="newMessageTask()" title="支持富文本与可点击超链接">新建群发</button>
       <button class="sm fit" data-onclick="loadTasks(true)">刷新</button></h3>
     <div class="scroll" id="taskList"><span class="muted">还没有任务。可以先采集发言人，再对采集结果群发。</span></div>
+  </div>
+
+  <div class="card pane chatview" data-widget="chats" data-view="chats">
+    <h3>对话 <span class="muted" id="chatHint"></span>
+      <span class="sp" style="flex:1"></span>
+      <input id="chatSearch" class="chat-search" placeholder="搜索对话" data-oninput="chatRenderDialogs()" aria-label="搜索对话" autocomplete="off" />
+      <select id="chatAccSel" data-onchange="chatPickAccount(this.value)" aria-label="账号"></select>
+      <button class="sm fit" data-onclick="chatReload()">刷新</button></h3>
+    <div class="chat-body" id="chatBody">
+      <div class="chat-accs" id="chatAccs" aria-label="账号列表"></div>
+      <div class="chat-dlgs" id="chatDlgs"></div>
+      <div class="chat-pane">
+        <div class="chat-peer">
+          <button type="button" class="chat-back" data-onclick="chatBack()" aria-label="返回对话列表"><svg class="i sm"><use href="#i-chevron"/></svg>返回</button>
+          <span id="chatPeer">选择一个对话</span>
+        </div>
+        <div class="chat-msgs" id="chatMsgs"></div>
+        <div class="chat-send">
+          <textarea id="chatText" rows="1" placeholder="消息，Enter 发送" title="Enter 发送，Shift+Enter 换行"></textarea>
+          <button class="primary write" data-onclick="chatSend()">发送</button>
+        </div>
+      </div>
+    </div>
   </div>
 
   <div class="card pane" data-widget="leads" data-view="leads">
@@ -363,6 +387,7 @@
   <button type="button" class="nav-item active" data-nav="accounts" data-onclick="switchView('accounts')"><svg class="i"><use href="#i-accounts"/></svg>账号</button>
   <button type="button" class="nav-item" data-nav="tasks" data-onclick="switchView('tasks')"><svg class="i"><use href="#i-tasks"/></svg>任务</button>
   <button type="button" class="nav-item" data-nav="leads" data-onclick="switchView('leads')"><svg class="i"><use href="#i-leads"/></svg>线索</button>
+  <button type="button" class="nav-item" data-nav="chats" data-onclick="switchView('chats')"><svg class="i"><use href="#i-send"/></svg>对话</button>
   <button type="button" class="nav-item" data-nav="toolbox" data-onclick="switchView('toolbox')"><svg class="i"><use href="#i-tools"/></svg>工具</button>
   <button type="button" class="nav-item" data-nav-group="more" data-onclick="toggleMenu(this,'moreMenu')" aria-haspopup="menu" aria-expanded="false"><svg class="i"><use href="#i-more"/></svg>更多</button>
 </nav>
@@ -900,23 +925,6 @@ socks5://node-b:1080"></textarea></label>
     <button id="officialCodeRead" class="primary" data-onclick="readOfficialCode()">读取 / 刷新</button>
   </div>
 </div>
-<!-- диалоги / чаты аккаунта -->
-<div class="modal chat" id="mChat">
-  <h3>对话 <span class="muted" id="chatWho"></span><span class="sp"></span>
-    <button class="sm fit" data-onclick="chatReload()">刷新</button></h3>
-  <div class="chat-body">
-    <div class="chat-dlgs" id="chatDlgs"></div>
-    <div class="chat-pane">
-      <div class="chat-peer" id="chatPeer">选择一个对话</div>
-      <div class="chat-msgs" id="chatMsgs"></div>
-      <div class="chat-send">
-        <textarea id="chatText" rows="1" placeholder="输入消息，Enter — отправить"></textarea>
-        <button class="primary write" data-onclick="chatSend()">发送</button>
-      </div>
-    </div>
-  </div>
-</div>
-
 <div class="toasts" id="toasts"></div>
 
 <script>/* GSAP_PLACEHOLDER */

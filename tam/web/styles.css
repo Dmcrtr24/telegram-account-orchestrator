@@ -2028,3 +2028,52 @@ html.fx-calm.fx-dragging body::after{display:grid}
 .chat-send{display:flex;gap:8px;padding:10px 14px;border-top:1px solid var(--line);align-items:flex-end}
 .chat-send textarea{flex:1;min-height:40px;max-height:120px;resize:none;font-family:inherit;font-size:13px}
 @media (max-width:720px){ .chat-body{grid-template-columns:1fr;height:auto} .chat-dlgs{max-height:34vh;border-right:0;border-bottom:1px solid var(--line)} }
+
+/* --- 视图「对话」：账号 → 对话 → 消息（宽屏三栏，窄屏分步） --- */
+body.chats-workspace .content{overflow:hidden}
+body.chats-workspace .board{height:100%}
+.chatview{display:flex;flex-direction:column;flex:1;min-height:0;overflow:hidden}
+.chatview>h3{flex:none}
+.chatview h3 select{max-width:240px;min-height:34px;padding:4px 8px;font-size:13px}
+.chatview .chat-search{width:180px;min-height:34px;padding:4px 10px;font-size:13px}
+.chatview .chat-body{flex:1;min-height:0;height:auto;border-top:0;grid-template-columns:200px minmax(200px,300px) minmax(0,1fr)}
+.chatview .chat-dlgs{border-right:1px solid var(--line)}
+.chat-accs{display:flex;flex-direction:column;gap:2px;padding:6px;overflow:auto;border-right:1px solid var(--line);min-height:0}
+.chat-acc{display:flex;align-items:center;gap:8px;width:100%;min-width:0;border:0;background:transparent;color:var(--text);font:inherit;padding:8px 9px;border-radius:12px;cursor:pointer;text-align:left}
+.chat-acc:hover{background:var(--glass-2)}
+.chat-acc.on{background:var(--accent-soft)}
+.chat-acc .dot{width:7px;height:7px;border-radius:50%;flex:none;background:var(--muted)}
+.chat-acc.t-ok .dot{background:var(--ok)}
+.chat-acc.t-warn .dot{background:var(--warn)}
+.chat-acc.t-bad .dot{background:var(--bad)}
+.chat-acc.t-info .dot{background:var(--accent-2)}
+.chat-acc b{font-size:13px;font-weight:600;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;min-width:0}
+.chat-acc small{color:var(--muted);font-size:11px;margin-left:auto;flex:none}
+.chat-note{padding:12px;display:block;font-size:13px;line-height:1.5}
+.chat-dlg em{display:block;font-style:normal;color:var(--muted);font-size:11px;margin-top:1px}
+.chat-dlg small{display:block;color:var(--muted);font-size:12px;margin-top:2px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.chat-dlg.unread b{font-weight:700}
+.chat-msg u{display:block;font-style:normal;font-size:11px;color:var(--accent-text);margin-bottom:2px;text-decoration:none}
+.chat-peer{display:flex;align-items:center;gap:6px}
+.chat-peer #chatPeer{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.chat-back{display:none;align-items:center;gap:2px;border:0;background:transparent;color:var(--text);font:inherit;padding:2px 6px 2px 0;cursor:pointer}
+.chat-back svg{transform:rotate(90deg)}
+@media (min-width:1081px){
+  /* на широком экране аккаунт выбирается колонкой слева — дублирующий select прячем */
+  .chatview #chatAccSel{display:none}
+}
+@media (max-width:1080px){
+  .chatview .chat-body{grid-template-columns:minmax(190px,250px) minmax(0,1fr)}
+  .chat-accs{display:none}
+}
+@media (max-width:720px){
+  .chatview .chat-search{display:none}
+  .chatview .chat-body{grid-template-columns:minmax(0,1fr);grid-template-rows:minmax(0,1fr)}
+  .chatview .chat-dlgs{border-right:0;max-height:none}
+  .chatview .chat-body.has-peer .chat-dlgs{display:none}
+  /* пока диалог не выбран, лента и поле ввода не нужны — список получает весь экран */
+  .chatview .chat-body:not(.has-peer) .chat-pane{display:none}
+  .chat-back{display:none}
+  .chatview .chat-body.has-peer .chat-back{display:inline-flex}
+}
+

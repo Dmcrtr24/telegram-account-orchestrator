@@ -2442,5 +2442,77 @@
  "确认继续？": {
   "ru": "Продолжить?",
   "en": "Continue?"
+ },
+ "会话已失效，需要重新登录这个账号": {
+  "ru": "Сессия недействительна — войдите в этот аккаунт заново",
+  "en": "Session is invalid — sign in to this account again"
+ },
+ "还没有账号，先导入或登录一个": {
+  "ru": "Аккаунтов пока нет — импортируйте или войдите",
+  "en": "No accounts yet — import or sign in"
+ },
+ "先选择一个账号": {
+  "ru": "Сначала выберите аккаунт",
+  "en": "Pick an account first"
+ },
+ "没有匹配的对话": {
+  "ru": "Нет подходящих диалогов",
+  "en": "No matching chats"
+ },
+ "这个对话里还没有消息": {
+  "ru": "В этом диалоге пока нет сообщений",
+  "en": "No messages in this chat yet"
+ },
+ "先选择账号和对话": {
+  "ru": "Сначала выберите аккаунт и диалог",
+  "en": "Pick an account and a chat first"
+ },
+ "发送失败：": {
+  "ru": "Не отправлено: ",
+  "en": "Send failed: "
+ },
+ "加载失败": {
+  "ru": "Не удалось загрузить",
+  "en": "Failed to load"
+ },
+ "请求太频繁，稍后再试": {
+  "ru": "Слишком часто — попробуйте позже",
+  "en": "Too many requests — try again later"
+ },
+ "%s 个对话": {
+  "ru": "Диалогов: %s",
+  "en": "Chats: %s"
+ },
+ "个对话": {
+  "ru": "диалогов",
+  "en": "chats"
+ },
+ "%s 未读": {
+  "ru": "%s непрочит.",
+  "en": "%s unread"
+ },
+ "搜索对话": {
+  "ru": "Поиск диалогов",
+  "en": "Search chats"
+ },
+ "返回": {
+  "ru": "Назад",
+  "en": "Back"
+ },
+ "返回对话列表": {
+  "ru": "Назад к диалогам",
+  "en": "Back to the chat list"
+ },
+ "[媒体]": {
+  "ru": "[медиа]",
+  "en": "[media]"
+ },
+ "消息，Enter 发送": {
+  "ru": "Сообщение, Enter — отправить",
+  "en": "Message, Enter to send"
+ },
+ "Enter 发送，Shift+Enter 换行": {
+  "ru": "Enter — отправить, Shift+Enter — новая строка",
+  "en": "Enter to send, Shift+Enter for a new line"
  }
 }

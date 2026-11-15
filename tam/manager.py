@@ -1972,16 +1972,28 @@ class AccountManager:
         self.db.log(account_id, "health_check", False, reason)
 
     async def get_dialogs(self, account_id: int, limit: int = 30) -> list[dict[str, Any]]:
+        """Список диалогов аккаунта для веб-консоли.
+
+        Отдаём не только имя и непрочитанные, но и время последнего сообщения
+        и его превью — иначе список чатов нечитаемый: непонятно, где жизнь.
+        """
         self._require_session(account_id)
         async with self.session(account_id) as client:
             out = []
             async for d in client.iter_dialogs(limit=limit):
+                last = getattr(d, "message", None)
+                preview = ""
+                if last is not None:
+                    preview = (getattr(last, "message", None) or "")[:200]
                 out.append({
                     "id": d.id,
                     "name": d.name,
                     "unread": d.unread_count,
                     "is_group": d.is_group,
                     "is_channel": d.is_channel,
+                    "pinned": bool(getattr(d, "pinned", False)),
+                    "date": d.date.timestamp() if getattr(d, "date", None) else None,
+                    "preview": preview,
                 })
             return out
 
@@ -2003,12 +2015,20 @@ class AccountManager:
                 kwargs["offset_id"] = int(before_id)
             msgs = []
             async for m in client.iter_messages(ent, **kwargs):
+                sender = getattr(m, "sender", None)
+                sender_name = None
+                if sender is not None:
+                    sender_name = (getattr(sender, "title", None)
+                                   or " ".join(p for p in (getattr(sender, "first_name", None),
+                                                           getattr(sender, "last_name", None)) if p)
+                                   or getattr(sender, "username", None))
                 msgs.append({
                     "id": m.id,
                     "date": m.date.timestamp() if m.date else None,
                     "out": bool(m.out),
                     "text": m.message or "",
                     "sender_id": m.sender_id,
+                    "sender_name": sender_name,
                     "media": bool(m.media) and not m.message,
                     "reply_to": getattr(m, "reply_to_msg_id", None),
                 })
@@ -2022,6 +2042,17 @@ class AccountManager:
                 pass
             return {"peer": str(peer), "title": title, "messages": msgs,
                     "has_more": len(msgs) >= kwargs["limit"]}
+
+    async def mark_read(self, account_id: int, peer: str | int) -> dict[str, Any]:
+        """Отметить диалог прочитанным (как обычный клиент при открытии чата)."""
+        self._require_session(account_id)
+        entity: Any = peer
+        if isinstance(peer, str) and peer.lstrip('-').isdigit():
+            entity = int(peer)
+        async with self.session(account_id) as client:
+            ent = await client.get_entity(entity)
+            await client.send_read_acknowledge(ent)
+            return {"ok": True, "peer": str(peer)}
 
     async def list_groups(self, account_id: int, limit: int = 200,
                           kind: str = "group") -> dict[str, Any]:

@@ -894,6 +894,17 @@ async def messages(account_id: int, peer: str, limit: int = 50,
         raise HTTPException(400, str(exc)) from exc
 
 
+@app.post("/api/accounts/{account_id}/read", dependencies=[Depends(auth)])
+async def mark_read(account_id: int, peer: str) -> dict[str, Any]:
+    """Отметить диалог прочитанным (открыли чат в веб-консоли)."""
+    try:
+        return await manager.mark_read(account_id, peer)
+    except RuntimeError as exc:
+        raise HTTPException(400, str(exc)) from exc
+    except Exception as exc:  # noqa: BLE001
+        raise HTTPException(400, str(exc)) from exc
+
+
 @app.get("/api/accounts/{account_id}/devices", dependencies=[Depends(auth)])
 async def devices(account_id: int) -> list[dict[str, Any]]:
     try:
