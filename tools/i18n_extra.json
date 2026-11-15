@@ -2802,5 +2802,157 @@
  "一句话说明": {
   "ru": "Короткое описание",
   "en": "Short description"
+ },
+ "请在下方输入「%s」后确定：": {
+  "ru": "Введите ниже «%s», чтобы подтвердить действие:",
+  "en": "Type “%s” below to confirm:"
+ },
+ "输入 <b>%s</b> 以解锁执行按钮": {
+  "ru": "Введите <b>%s</b>, чтобы разблокировать кнопку",
+  "en": "Type <b>%s</b> to unlock the button"
+ },
+ "保存成功": {
+  "ru": "Сохранение выполнено успешно",
+  "en": "Saved"
+ },
+ "支持 .csv .txt": {
+  "ru": "Поддерживаются форматы .csv .txt",
+  "en": "Supports .csv .txt"
+ },
+ "支持 .zip · 可多选": {
+  "ru": "Поддерживается формат .zip · Можно выбрать несколько файлов",
+  "en": ".zip supported · Multiple selections allowed"
+ },
+ "支持 .session .zip · 可多选": {
+  "ru": "Поддерживаются файлы .session .zip · Можно выбрать несколько файлов",
+  "en": "Supports .session .zip · Multiple selections allowed"
+ },
+ "待登录 0": {
+  "ru": "Ожидает входа 0",
+  "en": "To be logged in 0"
+ },
+ "登录失败 5": {
+  "ru": "Не удалось войти в систему 5",
+  "en": "Login failed 5"
+ },
+ "有取码链接 0": {
+  "ru": "Ссылка для получения кода 0",
+  "en": "With Code Retrieval Link 0"
+ },
+ "缺取码链接 5": {
+  "ru": "Ссылка для получения кода 5",
+  "en": "Missing Code Link 5"
+ },
+ "有二验 0": {
+  "ru": "Два теста 0",
+  "en": "Two tests 0"
+ },
+ "二验未存 0": {
+  "ru": "Вторая проверка не сохранена 0",
+  "en": "Second test not saved 0"
+ },
+ "无代理 5": {
+  "ru": "Без агента 5",
+  "en": "No Agent 5"
+ },
+ "改密成功 0": {
+  "ru": "Пароль успешно изменен 0",
+  "en": "Password changed successfully 0"
+ },
+ "改密失败 0": {
+  "ru": "Не удалось изменить пароль 0",
+  "en": "Password change failed 0"
+ },
+ "改密待核对 0": {
+  "ru": "Изменение пароля ожидает проверки 0",
+  "en": "Password change pending verification 0"
+ },
+ "改密处理中 0": {
+  "ru": "Идет изменение пароля 0",
+  "en": "Password change in progress 0"
+ },
+ "warmup · 2.9 天前 ·": {
+  "ru": "warmup · 2,9 дня назад ·",
+  "en": "warmup · 2.9 days ago ·"
+ },
+ "用时 5 秒": {
+  "ru": "Заняло 5 секунд",
+  "en": "Takes 5 seconds"
+ },
+ "成功率": {
+  "ru": "Коэффициент успешности",
+  "en": "Success Rate"
+ },
+ "用时 2 秒": {
+  "ru": "Заняло 2 секунды",
+  "en": "Takes 2 seconds"
+ },
+ "开始 · ⚡ 快速验活": {
+  "ru": "Начать · ⚡ Быстрая проверка активности",
+  "en": "Get Started · ⚡ Quick Liveness Check"
+ },
+ "当前：⚠ 创建频道": {
+  "ru": "Текущее: ⚠ Создать канал",
+  "en": "Current: ⚠ Create Channel"
+ },
+ "⚠ 发起2FA重置": {
+  "ru": "⚠ Инициировать сброс 2FA",
+  "en": "⚠ Initiate 2FA Reset"
+ },
+ "⚠ 取消2FA重置": {
+  "ru": "⚠ Отменить сброс 2FA",
+  "en": "⚠ Cancel 2FA Reset"
+ },
+ "⚠ 清理会话": {
+  "ru": "⚠ Очистить переписку",
+  "en": "⚠ Clear Conversation"
+ },
+ "⚠ 防找回清理": {
+  "ru": "⚠ Очистка для предотвращения восстановления",
+  "en": "⚠ Anti-Recovery Cleanup"
+ },
+ "⚠ 踢掉其它设备": {
+  "ru": "⚠ Отключить другие устройства",
+  "en": "⚠ Kick other devices"
+ },
+ "⚠ 退出登录（作废 session）": {
+  "ru": "⚠ Выйти из системы (завершить сессию)",
+  "en": "⚠ Log out (invalidate session)"
+ },
+ "⚠ 注销 Telegram 账号": {
+  "ru": "⚠ Удаление аккаунта Telegram",
+  "en": "⚠ Deactivate Telegram Account"
+ },
+ "⚠ 发送文件/图片/视频": {
+  "ru": "⚠ Отправить файл/изображение/видео",
+  "en": "⚠ Send files/images/videos"
+ },
+ "⚠ 创建频道": {
+  "ru": "⚠ Создать канал",
+  "en": "Create Channels Roles"
+ },
+ "⚠ 设置用户名": {
+  "ru": "⚠ Установить имя пользователя",
+  "en": "Set the Username"
+ },
+ "⚠ 与机器人交互": {
+  "ru": "⚠ Взаимодействие с роботом",
+  "en": "⚠ Interacting with a chatbot"
+ },
+ "开始 · 创建频道": {
+  "ru": "Начало · Создать канал",
+  "en": "Get Started · Create a Channel"
+ },
+ "新建频道或群": {
+  "ru": "Создать канал или группу",
+  "en": "Create a new channel or group"
+ },
+ "Или ссылка / @用户名": {
+  "ru": "Или ссылка / @имя пользователя",
+  "en": "Or link / @username"
+ },
+ "删除本地记录（不影响 Telegram 账号本身），但本工具内会话将不可恢复。\n\n请在下方输入「确认」后确定：": {
+  "ru": "Удаление локальных записей (не влияет на сам аккаунт Telegram), но переписка в этом инструменте не будет восстановлена.\n\nВведите «Подтвердить» ниже, чтобы подтвердить:",
+  "en": "Deleting local records (without affecting the Telegram account itself) will make conversations within this tool unrecoverable.\n\nPlease enter \"Confirm\" below and then confirm:"
  }
 }

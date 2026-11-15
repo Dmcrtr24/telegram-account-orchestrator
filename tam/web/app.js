@@ -1539,6 +1539,17 @@ function trStr(text) {
   try { return (window.tamI18n && tamI18n.t) ? tamI18n.t(String(text)) : String(text); }
   catch (e) { return String(text); }
 }
+/** Совпадает ли введённое слово с подтверждением: принимаем оригинал и переводы (ru/en),
+ *  без учёта регистра и пробелов — иначе русский/английский ввод не проходил проверку. */
+function confirmWordMatch(typed, word) {
+  const norm = v => String(v == null ? '' : v).trim().toLowerCase();
+  const got = norm(typed);
+  if (!got) return false;
+  let list = [word];
+  try { if (window.tamI18n && tamI18n.variants) list = tamI18n.variants(word); } catch (e) {}
+  return list.some(w => norm(w) === got);
+}
+
 /** Шаблонный перевод: trf('成功 %s · 失败 %s', ok, fail) — для строк с числами. */
 function trf(tpl, ...vals) {
   let out = trStr(tpl), i = 0;
@@ -1778,7 +1789,7 @@ async function uiConfirmDanger(opts) {
     danger: true,
   });
   if (typed === null) return false;
-  if (String(typed).trim() !== word) {
+  if (!confirmWordMatch(typed, word)) {
     toast('未输入正确的确认词，已取消', 'err');
     return false;
   }
@@ -8321,7 +8332,7 @@ const TAO_FX5 = (() => {
       const w = document.createElement('div'); w.className = 'fx-word';
       w.innerHTML = '输入 <b>' + E(word) + '</b> 以解锁执行按钮';
       const wrap = document.getElementById('uiInputWrap'); if (wrap) wrap.before(w);
-      const chk = () => { const okNow = inp.value.trim() === word; ok.disabled = !okNow; w.classList.toggle('ok', okNow); };
+      const chk = () => { const okNow = confirmWordMatch(inp.value, word); ok.disabled = !okNow; w.classList.toggle('ok', okNow); };
       inp.addEventListener('input', chk); chk();
     }, 0);
     return p;

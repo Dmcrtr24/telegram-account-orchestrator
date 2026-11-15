@@ -181,39 +181,41 @@
       });
     }
     // иконка в начале («✓ 健康检查») не должна мешать поиску перевода
+    var out = null;      // частичный перевод словарными кусками
     var mi = /^([\u2713\u2717\u21b7\u2026!?\u2022]\s*)([\s\S]+)$/.exec(s);
     if (mi) {
       var rest = tr(mi[2], depth + 1);
-      if (rest !== mi[2]) return mi[1] + rest;
+      if (rest !== mi[2]) out = mi[1] + rest;
     }
     var seps = [' · ', '  '];   // ' · ' — склейка, '  ' — разделитель полей в логах
-    for (var si = 0; si < seps.length; si++) {
-      var sep = seps[si];
-      if (s.indexOf(sep) < 0) continue;
-      var parts = s.split(sep);
-      var changed = false;
-      var mapped = parts.map(function (p) {
-        var t = tr(p, depth + 1);
-        if (t !== p) changed = true;
-        return t;
-      });
-      if (changed) return mapped.join(sep);
-    }
-
-    // «下次 …（23.8 小时后）» — переводим то, что внутри скобок, сами скобки меняем на латинские
-    if (/[（(]/.test(s) && /[）)]/.test(s)) {
-      var parts = s.split(/([（）()])/);
-      var changed = false;
-      for (var pi = 0; pi < parts.length; pi++) {
-        if (parts[pi] === '（') { parts[pi] = '('; changed = true; continue; }
-        if (parts[pi] === '）') { parts[pi] = ')'; changed = true; continue; }
-        var tp = tr(parts[pi], depth + 1);
-        if (tp !== parts[pi]) { parts[pi] = tp; changed = true; }
+    if (out == null) {
+      for (var si = 0; si < seps.length; si++) {
+        var sep = seps[si];
+        if (s.indexOf(sep) < 0) continue;
+        var parts = s.split(sep);
+        var changed = false;
+        var mapped = parts.map(function (p) {
+          var t = tr(p, depth + 1);
+          if (t !== p) changed = true;
+          return t;
+        });
+        if (changed) { out = mapped.join(sep); break; }
       }
-      if (changed) return parts.join('');
+    }
+    // «下次 …（23.8 小时后）» — переводим то, что внутри скобок, сами скобки меняем на латинские
+    if (out == null && /[（(]/.test(s) && /[）)]/.test(s)) {
+      var bits = s.split(/([（）()])/);
+      var chg = false;
+      for (var pi = 0; pi < bits.length; pi++) {
+        if (bits[pi] === '（') { bits[pi] = '('; chg = true; continue; }
+        if (bits[pi] === '）') { bits[pi] = ')'; chg = true; continue; }
+        var tp = tr(bits[pi], depth + 1);
+        if (tp !== bits[pi]) { bits[pi] = tp; chg = true; }
+      }
+      if (chg) out = bits.join('');
     }
     // последняя попытка: по словам («Тип задачи=group 数量=2», «…  正常»)
-    if (/\s/.test(s)) {
+    if (out == null && /\s/.test(s)) {
       var toks = s.split(/(\s+)/);
       var hit = false;
       for (var ti = 0; ti < toks.length; ti++) {
@@ -221,13 +223,15 @@
         var tt = tr(toks[ti], depth + 1);
         if (tt !== toks[ti]) { toks[ti] = tt; hit = true; }
       }
-      if (hit) return toks.join('');
+      if (hit) out = toks.join('');
     }
-    // дошли сюда — словарь не знает строку целиком: машинный перевод как фолбэк
+    // Словарные куски дали перевод, но остался китайский (типичная склейка
+    // «删除本地记录（…）» из батча) — такой полуперевод хуже машинного цельного.
+    if (out != null && !ZH.test(out)) return out;
     var remote = remoteLookup(s);
     if (remote != null) return remote;
     if (depth === 0 && remoteOk(s)) enqueueRemote(s);
-    return s;
+    return out != null ? out : s;
   }
 
   /* Translate keeping leading/trailing whitespace of the original. */
@@ -419,7 +423,20 @@
 
   window.tamI18n = {
     t: tr, apply: applyAll, setLang: setLang, getLang: function () { return LANG; },
-    has: function (s) { return !!(DICT[LANG] || {})[s]; }
+    has: function (s) { return !!(DICT[LANG] || {})[s]; },
+    /* Все известные варианты строки (ru + en + оригинал). Нужно для проверок вида
+       «введите слово для подтверждения»: пользователь вправе написать любой перевод. */
+    variants: function (s) {
+      var src = String(s == null ? '' : s);
+      var out = [src];
+      ['ru', 'en'].forEach(function (lang) {
+        var bag = DICT[lang] || {};
+        var hit = bag[src];
+        if (hit == null) hit = bag[norm(src)];
+        if (hit && out.indexOf(hit) < 0) out.push(hit);
+      });
+      return out;
+    }
   };
 
   if (document.readyState === 'loading') {
