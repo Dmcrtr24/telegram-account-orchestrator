@@ -2954,5 +2954,9 @@
  "删除本地记录（不影响 Telegram 账号本身），但本工具内会话将不可恢复。\n\n请在下方输入「确认」后确定：": {
   "ru": "Удаление локальных записей (не влияет на сам аккаунт Telegram), но переписка в этом инструменте не будет восстановлена.\n\nВведите «Подтвердить» ниже, чтобы подтвердить:",
   "en": "Deleting local records (without affecting the Telegram account itself) will make conversations within this tool unrecoverable.\n\nPlease enter \"Confirm\" below and then confirm:"
+ },
+ "输入 %s 以解锁执行按钮": {
+  "ru": "Введите «%s», чтобы разблокировать «Выполнить»",
+  "en": "Type «%s» to unlock Confirm"
  }
 }

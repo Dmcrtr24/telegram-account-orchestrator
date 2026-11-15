@@ -8330,7 +8330,8 @@ const TAO_FX5 = (() => {
       const inp = document.getElementById('uiInput'), ok = document.getElementById('uiOk');
       if (!inp || !ok || !mUi.classList.contains('on')) return;
       const w = document.createElement('div'); w.className = 'fx-word';
-      w.innerHTML = '输入 <b>' + E(word) + '</b> 以解锁执行按钮';
+      // одна строка целиком (переводится как точный шаблон «%s»), слово — уже переведённое
+      w.innerHTML = '<span>' + esc(trf('输入 %s 以解锁执行按钮', trStr(word))) + '</span>';
       const wrap = document.getElementById('uiInputWrap'); if (wrap) wrap.before(w);
       const chk = () => { const okNow = confirmWordMatch(inp.value, word); ok.disabled = !okNow; w.classList.toggle('ok', okNow); };
       inp.addEventListener('input', chk); chk();
