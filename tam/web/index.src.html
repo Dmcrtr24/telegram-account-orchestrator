@@ -128,7 +128,8 @@
           <th>别名</th><th>手机号</th><th class="hide-s">国家/地区</th><th class="hide-s">用户名</th><th>状态</th>
           <th class="hide-s" title="两步验证密码；默认打码，点眼睛查看">二验</th>
           <th class="hide-s">代理</th><th class="hide-s">取码</th><th class="hide-s">标签</th>
-          <th class="hide-s" title="登录满设定时长后自动踢出其它设备">清设备</th><th>操作</th>
+          <th class="hide-s" title="登录满设定时长后自动踢出其它设备">清设备</th>
+          <th class="hide-s" title="Когда последний раз прогревали аккаунт">养号</th><th>操作</th>
         </tr></thead>
         <tbody id="tb"></tbody>
       </table>
@@ -899,6 +900,23 @@ socks5://node-b:1080"></textarea></label>
     <button id="officialCodeRead" class="primary" data-onclick="readOfficialCode()">读取 / 刷新</button>
   </div>
 </div>
+<!-- диалоги / чаты аккаунта -->
+<div class="modal chat" id="mChat">
+  <h3>对话 <span class="muted" id="chatWho"></span><span class="sp"></span>
+    <button class="sm fit" data-onclick="chatReload()">刷新</button></h3>
+  <div class="chat-body">
+    <div class="chat-dlgs" id="chatDlgs"></div>
+    <div class="chat-pane">
+      <div class="chat-peer" id="chatPeer">选择一个对话</div>
+      <div class="chat-msgs" id="chatMsgs"></div>
+      <div class="chat-send">
+        <textarea id="chatText" rows="1" placeholder="输入消息，Enter — отправить"></textarea>
+        <button class="primary write" data-onclick="chatSend()">发送</button>
+      </div>
+    </div>
+  </div>
+</div>
+
 <div class="toasts" id="toasts"></div>
 
 <script>/* GSAP_PLACEHOLDER */

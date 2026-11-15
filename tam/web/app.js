@@ -1580,6 +1580,12 @@ function kickPlan(a) {
   return {state: due * 1000 <= nowMs() ? 'due' : 'waiting', due_at: due,
           base_from: from, retrying: false, hours: hrs, loop: loop};
 }
+function warmCell(a) {
+  if (!a || !a.last_warm_at) return '<span class="muted">—</span>';
+  const age = Date.now() / 1000 - Number(a.last_warm_at);
+  const cls = age < 86400 ? 's-active' : '';
+  return '<span class="tag ' + cls + '" title="' + esc(fmt(a.last_warm_at)) + '">' + esc(rel(a.last_warm_at)) + '</span>';
+}
 function kickCell(a) {
   const p = kickPlan(a);
   if (p.state === 'waiting') return (p.retrying ? '重试 ' : '') + rel(p.due_at)
@@ -2889,7 +2895,7 @@ function emptyRowHtml() {
   } else {
     inner = '没有符合条件的账号';
   }
-  return '<tr><td colspan="12"><div class="empty">' + inner + '</div></td></tr>';
+  return '<tr><td colspan="13"><div class="empty">' + inner + '</div></td></tr>';
 }
 
 function setQuickFilter(k) {
@@ -2962,11 +2968,13 @@ function render() {
       <td class="hide-s">${a.code_url ? '✓' : '—'}</td>
       <td class="hide-s">${(a.tags || []).map(t => `<span class="tag">${esc(t)}</span>`).join(' ') || '—'}</td>
       <td class="hide-s muted">${esc(kickCell(a))}</td>
+      <td class="hide-s">${warmCell(a)}</td>
       <td class="account-action-cell" data-onclick="event.stopPropagation()">
         <button class="icon-btn lock-toggle ${a.locked ? 'is-locked' : ''}" data-onclick="toggleAccountLock(${a.id},${!a.locked})" title="${a.locked ? '解锁账号' : '锁定账号（防止删除）'}" aria-label="${a.locked ? '解锁账号' : '锁定账号'}"><svg class="i sm"><use href="#i-${a.locked ? 'lock' : 'unlock'}"/></svg></button>
         ${a.authorized ? '' : `<button class="sm write" data-onclick="startLogin(${a.id})">登录</button>`}
         <button class="sm write fit qr-login-btn" data-onclick="startQrLogin(${a.id})" title="手机 Telegram 扫码授权">扫码登录</button>
         <button class="sm" data-onclick="check(${a.id})">检查</button>
+        ${a.authorized ? `<button class="sm" data-onclick="openChats(${a.id})" title="查看该账号的对话与消息">对话</button>` : ''}
         ${a.authorized ? `<button class="sm official-code-btn" data-onclick="openOfficialCode(${a.id})" title="用已登录会话读取实体 TG 客户端登录验证码">官方验证码</button>` : ''}
       </td>
     </tr>`).join('') : emptyRowHtml();
@@ -9480,8 +9488,84 @@ const TAO_BE = (() => {
    不用 eval / new Function，所以页面可以开 script-src 不带 'unsafe-inline' 的严格 CSP。
    支持：调用 a.b(…)、成员链、= / += 赋值、!、return、字面量、this / event、.catch(e=>…) 箭头。 */
 /*@@LEX@@*/
+/* =================== 对话 / чаты аккаунта =================== */
+const CHAT = { acc: null, peer: null, rows: [] };
+
+function openChats(id) {
+  CHAT.acc = id; CHAT.peer = null; CHAT.rows = [];
+  const who = document.getElementById('chatWho');
+  if (who) who.textContent = ' · ' + accLabel(id);
+  const peer = document.getElementById('chatPeer');
+  if (peer) peer.textContent = '选择一个对话';
+  const msgs = document.getElementById('chatMsgs');
+  if (msgs) msgs.innerHTML = '';
+  openModal('mChat');
+  chatReload();
+}
+
+async function chatReload() {
+  const box = document.getElementById('chatDlgs');
+  if (!box || !CHAT.acc) return;
+  box.innerHTML = '<span class="muted" style="padding:10px;display:block">加载中…</span>';
+  try {
+    const rows = await api('/api/accounts/' + CHAT.acc + '/dialogs?limit=80');
+    CHAT.rows = rows || [];
+    if (!CHAT.rows.length) { box.innerHTML = '<span class="muted" style="padding:10px;display:block">没有对话</span>'; return; }
+    box.innerHTML = CHAT.rows.map(d => {
+      const kind = d.is_group ? '群组' : d.is_channel ? '频道' : '对话';
+      const unread = d.unread ? ' · ' + d.unread + ' 未读' : '';
+      return '<button type="button" class="chat-dlg' + (String(d.id) === String(CHAT.peer) ? ' on' : '') + '" data-onclick="chatOpen(\'' + d.id + '\')">'
+        + '<b>' + esc(d.name || d.id) + '</b><small>' + kind + unread + '</small></button>';
+    }).join('');
+  } catch (e) {
+    box.innerHTML = '<span class="muted" style="padding:10px;display:block">' + esc(e.message) + '</span>';
+  }
+}
+
+async function chatOpen(peer) {
+  CHAT.peer = String(peer);
+  const title = document.getElementById('chatPeer');
+  const box = document.getElementById('chatMsgs');
+  const d = CHAT.rows.find(x => String(x.id) === String(peer));
+  if (title) title.textContent = (d && d.name) || ('#' + peer);
+  if (box) box.innerHTML = '<span class="muted">加载中…</span>';
+  document.querySelectorAll('#chatDlgs .chat-dlg').forEach(b => b.classList.remove('on'));
+  try {
+    const r = await api('/api/accounts/' + CHAT.acc + '/messages?peer=' + encodeURIComponent(peer) + '&limit=60');
+    const list = (r && r.messages) || [];
+    if (!box) return;
+    if (!list.length) { box.innerHTML = '<span class="muted">Сообщений нет</span>'; return; }
+    box.innerHTML = list.map(m => {
+      const t = m.date ? new Date(m.date * 1000).toLocaleString(uiLocale(), {hour: '2-digit', minute: '2-digit'}) : '';
+      const body = m.text || (m.media ? '[' + 'медиа' + ']' : '');
+      return '<div class="chat-msg' + (m.out ? ' out' : '') + '">' + esc(body) + '<time>' + esc(t) + '</time></div>';
+    }).join('');
+    box.scrollTop = box.scrollHeight;
+  } catch (e) {
+    if (box) box.innerHTML = '<span class="muted">' + esc(e.message) + '</span>';
+  }
+}
+
+async function chatSend() {
+  const input = document.getElementById('chatText');
+  if (!input || !CHAT.acc || !CHAT.peer) { toast('Сначала выберите диалог', 'err'); return; }
+  const text = String(input.value || '').trim();
+  if (!text) return;
+  input.value = '';
+  try {
+    await api('/api/accounts/' + CHAT.acc + '/message', {
+      method: 'POST',
+      body: JSON.stringify({peer: CHAT.peer, text: text}),
+    });
+    toast('Отправлено', 'ok');
+    await chatOpen(CHAT.peer);
+  } catch (e) {
+    toast('Ошибка отправки: ' + e.message, 'err');
+  }
+}
+
 /* TAO_LEX_START */
-const __taoLexHas = new Set(["$", "DEMO", "TAO_MOTION", "TAO_KEYS", "MOCK", "tokenKey", "TAO_ERR", "TASK_KIND_CN", "TASK_TONE", "observedLoginTasks", "chatPicked", "ACTION_CN", "STATUS_CN", "cnStatus", "ERROR_CN", "KEY_CN", "isOk", "LOG_DETAIL_CN", "SUMMARY_LIMIT", "SUMMARY_SECRET", "DIAL", "nowMs", "KICK_SKIP_STATUS", "KICK_STATE_CN", "KICK_BASE_CN", "UI_TASKS", "saveKickRetry", "kickNow", "viewKey", "VIEW_NAMES", "themeKey", "ACTIONS", "PAL", "SET_ALIAS", "STAT_CN", "MORE_VIEWS", "twofaShown", "addAccount", "saveAccount", "check", "devices", "dialogs", "terminate", "logout", "delAccount", "verify", "doSend", "ONE_STOP_WATCHING", "doImport", "tdataBody", "TB_PRIV_KEYS", "TB_PRIV_VALS", "TB_GROUPS", "TB_DRAFTS", "AI_HIST_KEY", "AI_HIST_MAX", "TAO_HOOK", "TAO_DOM", "TAO_FX", "TAO_FX3", "TAO_FX4", "TAO_FX5", "TAO_FX8", "TAO_BE", "accounts", "stats", "sel", "filter", "loginId", "readonly", "accountsRevision", "visibleCache", "filterCountsCache", "kick", "busy", "taskTimer", "loginDetailTimer", "taskDetailVersion", "chatRows", "leadRows", "logPinned", "skewMs", "_uiResolver", "_uiMode", "_dialogEl", "_dialogReturnFocus", "_dialogKeyHandler", "_dialogTitleSeq", "UI_TASK_SEQ", "uiFilePending", "legacyProgressCard", "currentView", "MENU_OPEN", "quickFilter", "tableLimit", "accountRenderTimer", "qrLoginId", "qrWaitAbort", "officialCodeAccountId", "officialCodeRequest", "spinTimer", "proxyCapacityTimer", "timer", "stickyFrame", "TB_OPS", "TB_CUR", "TB_BUSY", "ZT_JOB", "ZT_MERGE_JOB", "ZT_MERGE_N", "AI_CFG", "AI_MSGS"]);
+const __taoLexHas = new Set(["$", "DEMO", "TAO_MOTION", "TAO_KEYS", "MOCK", "tokenKey", "TAO_ERR", "TASK_KIND_CN", "TASK_TONE", "observedLoginTasks", "chatPicked", "ACTION_CN", "STATUS_CN", "cnStatus", "ERROR_CN", "KEY_CN", "isOk", "LOG_DETAIL_CN", "SUMMARY_LIMIT", "SUMMARY_SECRET", "DIAL", "nowMs", "KICK_SKIP_STATUS", "KICK_STATE_CN", "KICK_BASE_CN", "UI_TASKS", "saveKickRetry", "kickNow", "viewKey", "VIEW_NAMES", "themeKey", "ACTIONS", "PAL", "SET_ALIAS", "STAT_CN", "MORE_VIEWS", "twofaShown", "addAccount", "saveAccount", "check", "devices", "dialogs", "terminate", "logout", "delAccount", "verify", "doSend", "ONE_STOP_WATCHING", "doImport", "tdataBody", "TB_PRIV_KEYS", "TB_PRIV_VALS", "TB_GROUPS", "TB_DRAFTS", "AI_HIST_KEY", "AI_HIST_MAX", "TAO_HOOK", "TAO_DOM", "TAO_FX", "TAO_FX3", "TAO_FX4", "TAO_FX5", "TAO_FX8", "TAO_BE", "CHAT", "accounts", "stats", "sel", "filter", "loginId", "readonly", "accountsRevision", "visibleCache", "filterCountsCache", "kick", "busy", "taskTimer", "loginDetailTimer", "taskDetailVersion", "chatRows", "leadRows", "logPinned", "skewMs", "_uiResolver", "_uiMode", "_dialogEl", "_dialogReturnFocus", "_dialogKeyHandler", "_dialogTitleSeq", "UI_TASK_SEQ", "uiFilePending", "legacyProgressCard", "currentView", "MENU_OPEN", "quickFilter", "tableLimit", "accountRenderTimer", "qrLoginId", "qrWaitAbort", "officialCodeAccountId", "officialCodeRequest", "spinTimer", "proxyCapacityTimer", "timer", "stickyFrame", "TB_OPS", "TB_CUR", "TB_BUSY", "ZT_JOB", "ZT_MERGE_JOB", "ZT_MERGE_N", "AI_CFG", "AI_MSGS"]);
 function __taoLexGet(n) { switch (n) {
   case '$': return $;
   case 'DEMO': return DEMO;
@@ -9547,6 +9631,7 @@ function __taoLexGet(n) { switch (n) {
   case 'TAO_FX5': return TAO_FX5;
   case 'TAO_FX8': return TAO_FX8;
   case 'TAO_BE': return TAO_BE;
+  case 'CHAT': return CHAT;
   case 'accounts': return accounts;
   case 'stats': return stats;
   case 'sel': return sel;

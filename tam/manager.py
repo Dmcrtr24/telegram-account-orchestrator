@@ -1985,6 +1985,44 @@ class AccountManager:
                 })
             return out
 
+    async def get_messages(self, account_id: int, peer: str | int,
+                           limit: int = 50, before_id: int | None = None) -> dict[str, Any]:
+        """Сообщения одного диалога — для просмотра чатов в веб-консоли.
+
+        peer: id диалога (из /dialogs), @username или номер.
+        before_id: подгрузить более старые (id последнего загруженного сообщения).
+        """
+        self._require_session(account_id)
+        entity = peer
+        if isinstance(peer, str) and peer.lstrip('-').isdigit():
+            entity = int(peer)
+        async with self.session(account_id) as client:
+            ent = await client.get_entity(entity)
+            kwargs: dict[str, Any] = {"limit": max(1, min(200, limit))}
+            if before_id:
+                kwargs["offset_id"] = int(before_id)
+            msgs = []
+            async for m in client.iter_messages(ent, **kwargs):
+                msgs.append({
+                    "id": m.id,
+                    "date": m.date.timestamp() if m.date else None,
+                    "out": bool(m.out),
+                    "text": m.message or "",
+                    "sender_id": m.sender_id,
+                    "media": bool(m.media) and not m.message,
+                    "reply_to": getattr(m, "reply_to_msg_id", None),
+                })
+            msgs.reverse()
+            title = getattr(ent, "title", None) or getattr(ent, "username", None) or str(peer)
+            unread = 0
+            try:
+                if await client.get_messages(ent, limit=0) is not None:
+                    unread = 0
+            except Exception:
+                pass
+            return {"peer": str(peer), "title": title, "messages": msgs,
+                    "has_more": len(msgs) >= kwargs["limit"]}
+
     async def list_groups(self, account_id: int, limit: int = 200,
                           kind: str = "group") -> dict[str, Any]:
         """列出账号所在的群组/频道，给采集界面做可勾选清单。

@@ -2009,3 +2009,22 @@ html.fx-calm.fx-dragging body::after{display:grid}
        оказывается ровно над переключателем темы и клик попадает не туда --- */
 .ai-panel{top:calc(var(--topbar-h) + 8px) !important;height:auto !important;bottom:12px !important}
 @media (max-width:720px){ .ai-panel{top:calc(var(--topbar-h) + 4px);right:8px;bottom:8px} }
+
+/* --- диалоги / чаты аккаунта --- */
+.modal.chat{width:min(940px,94vw)}
+.chat-body{display:grid;grid-template-columns:minmax(180px,260px) 1fr;height:min(560px,70vh);border-top:1px solid var(--line);min-height:0}
+.chat-dlgs{overflow:auto;border-right:1px solid var(--line);min-height:0}
+.chat-dlg{display:block;width:100%;text-align:left;border:0;border-bottom:1px solid var(--line);background:transparent;color:var(--text);font:inherit;padding:9px 12px;cursor:pointer;border-radius:0}
+.chat-dlg:hover{background:var(--surface)}
+.chat-dlg.on{background:var(--accent-soft)}
+.chat-dlg b{display:block;font-size:13px;font-weight:600;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.chat-dlg small{color:var(--muted);font-size:11px}
+.chat-pane{display:flex;flex-direction:column;min-width:0;min-height:0}
+.chat-peer{padding:9px 14px;border-bottom:1px solid var(--line);font-weight:600;font-size:13px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.chat-msgs{flex:1;overflow:auto;padding:12px 14px;display:flex;flex-direction:column;gap:8px;min-height:0}
+.chat-msg{max-width:78%;padding:7px 11px;border-radius:12px;background:var(--surface);font-size:13px;line-height:1.45;white-space:pre-wrap;word-break:break-word;align-self:flex-start}
+.chat-msg.out{align-self:flex-end;background:var(--accent-soft)}
+.chat-msg time{display:block;font-size:10px;color:var(--muted);margin-top:3px}
+.chat-send{display:flex;gap:8px;padding:10px 14px;border-top:1px solid var(--line);align-items:flex-end}
+.chat-send textarea{flex:1;min-height:40px;max-height:120px;resize:none;font-family:inherit;font-size:13px}
+@media (max-width:720px){ .chat-body{grid-template-columns:1fr;height:auto} .chat-dlgs{max-height:34vh;border-right:0;border-bottom:1px solid var(--line)} }

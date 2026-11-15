@@ -882,6 +882,18 @@ async def dialogs(account_id: int, limit: int = 30) -> list[dict[str, Any]]:
         raise HTTPException(400, str(exc)) from exc
 
 
+@app.get("/api/accounts/{account_id}/messages", dependencies=[Depends(auth)])
+async def messages(account_id: int, peer: str, limit: int = 50,
+                   before_id: int | None = None) -> dict[str, Any]:
+    """Сообщения одного диалога (для просмотра чатов в консоли)."""
+    try:
+        return await manager.get_messages(account_id, peer, limit=limit, before_id=before_id)
+    except RuntimeError as exc:
+        raise HTTPException(400, str(exc)) from exc
+    except Exception as exc:  # noqa: BLE001
+        raise HTTPException(400, str(exc)) from exc
+
+
 @app.get("/api/accounts/{account_id}/devices", dependencies=[Depends(auth)])
 async def devices(account_id: int) -> list[dict[str, Any]]:
     try:
