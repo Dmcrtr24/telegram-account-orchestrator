@@ -1534,6 +1534,16 @@ function countryOf(phone) {
 }
 function esc(s) { return String(s ?? '').replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c])); }
 function uiLocale() { try { return (window.tamI18n && tamI18n.getLang() === 'en') ? 'en-GB' : 'ru-RU'; } catch (e) { return 'ru-RU'; } }
+/** Строка интерфейса в текущем языке (для текстов, которые не переводит DOM-обходчик). */
+function trStr(text) {
+  try { return (window.tamI18n && tamI18n.t) ? tamI18n.t(String(text)) : String(text); }
+  catch (e) { return String(text); }
+}
+/** Шаблонный перевод: trf('成功 %s · 失败 %s', ok, fail) — для строк с числами. */
+function trf(tpl, ...vals) {
+  let out = trStr(tpl), i = 0;
+  return String(out).replace(/%s/g, () => (i < vals.length ? String(vals[i++]) : ''));
+}
 function fmt(ts) { return ts ? new Date(ts * 1000).toLocaleString(uiLocale(), {hour12:false}) : '—'; }
 /* 服务端与本机的时钟差（毫秒）。本机时间不准时，相对时间会算出很离谱的值，所以统一以服务端为准 */
 let skewMs = 0;
@@ -3878,9 +3888,9 @@ async function bulkWarmup() {
   const taskId = (created.task && created.task.id) || created.job;
   if (!taskId) throw new Error('未返回任务 id');
   out(created, true);
-  toast('养号任务 #' + taskId + ' запущена в фоне', 'ok');
+  toast(trf('养号任务 #%s 已在后台运行', taskId), 'ok');
   if (typeof loadTasks === 'function') loadTasks(true);
-  uiProgress({title:'养号 · ' + ids.length + ' 个号 · 任务 #' + taskId, current:0, total:ids.length, text:'запуск…'});
+  uiProgress({title: trf('养号 · %s 个号 · 任务 #%s', ids.length, taskId), current:0, total:ids.length, text: trStr('启动中…')});
   const terminal = {done:1, failed:1, stopped:1};
   let lastDone = -1, stagnant = 0;
   while (true) {
@@ -3897,12 +3907,12 @@ async function bulkWarmup() {
       detail = ((a && a.label) || ('#' + latest.target)) + ' · ' + (latest.status_cn || latest.status) + (latest.detail ? ' · ' + latest.detail : '');
     }
     if (done === lastDone) stagnant++; else { stagnant = 0; lastDone = done; }
-    uiProgress({title:'养号 · 任务 #' + taskId, current: done, total: total, detail: detail,
-      text: (t.percent != null ? t.percent + '%' : '') + ' успешно ' + (t.ok_count||0) + ' ошибок ' + (t.fail_count||0)
-        + (stagnant > 20 ? ' · идёт дольше обычного…' : '')});
+    uiProgress({title: trf('养号 · 任务 #%s', taskId), current: done, total: total, detail: detail,
+      text: (t.percent != null ? t.percent + '% · ' : '') + trf('成功 %s · 失败 %s', t.ok_count||0, t.fail_count||0)
+        + (stagnant > 20 ? ' · ' + trStr('比平常更久…') : '')});
     if (terminal[t.status]) { uiClose(); break; }
   }
-  toast('养号任务 #' + taskId + ' завершена', 'ok');
+  toast(trf('养号任务 #%s 已完成', taskId), 'ok');
   loadTasks(true);
   refresh();
   return taskId;
@@ -9590,6 +9600,13 @@ function chatSetPeer(peer, name) {
   if (ta) ta.disabled = !CHAT.peer;
   const btn = document.querySelector('.chat-send .primary');
   if (btn) btn.disabled = !CHAT.peer;
+  // шапка диалога: аватар, @username, тип, участники
+  const sub = document.getElementById('chatPeerSub');
+  if (sub) sub.textContent = '';
+  const ava = document.getElementById('chatPeerAva');
+  if (ava) { ava.src = ''; ava.className = 'chat-ava lg'; }
+  CHAT.info = null;
+  if (CHAT.peer != null) chatPeerHeader(CHAT.peer);
 }
 
 /* Вид открыт (переключение вкладки, возврат из карточки аккаунта). */
@@ -9682,11 +9699,13 @@ function chatRenderDialogs() {
     const preview = d.preview ? String(d.preview).replace(/\s+/g, ' ').slice(0, 70) : '';
     return '<button type="button" class="chat-dlg' + (String(d.id) === String(CHAT.peer) ? ' on' : '') + (d.unread ? ' unread' : '') + '"'
       + ' data-onclick="chatOpen(' + d.id + ')" title="' + esc(d.name || '') + '">'
-      + '<b>' + esc(d.name || ('#' + d.id)) + '</b>'
+      + '<span class="chat-ava-slot" data-peer="' + d.id + '" data-name="' + esc(d.name || '') + '"></span>'
+      + '<span class="t"><b>' + esc(d.name || ('#' + d.id)) + '</b>'
       + '<em>' + esc(meta.join(' · ')) + '</em>'
       + (preview ? '<small>' + esc(preview) + '</small>' : '')
-      + '</button>';
+      + '</span></button>';
   }).join('');
+  chatPaintAvas(box, 20);
 }
 
 function chatMsgHtml(m) {
@@ -9763,6 +9782,30 @@ function chatBack() {
   if (body) body.classList.remove('has-peer');
 }
 
+/** Шапка диалога: фото, @username, тип и число участников (запрос один на диалог). */
+async function chatPeerHeader(peer) {
+  const sub = document.getElementById('chatPeerSub');
+  const ava = document.getElementById('chatPeerAva');
+  const seq = CHAT.seq;
+  const info = await chatPeerInfo(peer).catch(() => null);
+  if (!info || seq !== CHAT.seq || String(CHAT.peer) !== String(peer)) return;
+  CHAT.info = info;
+  const bits = [];
+  if (info.username) bits.push('@' + info.username);
+  bits.push(info.kind === 'channel' ? '频道' : info.kind === 'group' ? '群组' : '用户');
+  if (info.participants_count != null) bits.push(info.participants_count + ' ' + trStr('成员'));
+  else if (info.last_seen) bits.push(trStr('最后上线') + ' ' + new Date(info.last_seen * 1000).toLocaleString(uiLocale()));
+  else if (info.online) bits.push(trStr('在线'));
+  if (sub) sub.textContent = bits.join(' · ');
+  if (ava) {
+    const url = await chatAvaFetch(peer);
+    const holder = document.createElement('span');
+    holder.innerHTML = chatAvaMarkup(url, info.name || peer, true);
+    const node = holder.firstElementChild;
+    if (node) { node.id = 'chatPeerAva'; ava.replaceWith(node); }
+  }
+}
+
 /* Вход из карточки/строки аккаунта: открыть вид и сразу этот аккаунт. */
 function openChats(id) {
   if (id != null) CHAT.want = Number(id);
@@ -9783,8 +9826,394 @@ function openChats(id) {
   else bind();
 })();
 
+/* =============== диалоги: аватары, карточка, шаблоны, каналы =============== */
+/* Всё, что касается одного диалога: фото профиля (через fetch с токеном —
+   <img src> не умеет Authorization), карточка контакта, шаблоны сообщений,
+   создание каналов/групп, поиск и вход в каналы и их обсуждения. */
+
+const CHAT_AVA = new Map();      // 'acc:peer' -> objectURL | null
+const CHAT_AVA_BUSY = new Set();
+
+function chatAvaKey(peer) { return CHAT.acc + ':' + String(peer); }
+function chatToken() {
+  const el = document.getElementById('token');
+  return (el && el.value) || '';
+}
+
+async function chatAvaFetch(peer) {
+  const key = chatAvaKey(peer);
+  if (CHAT_AVA.has(key)) return CHAT_AVA.get(key);
+  if (CHAT_AVA_BUSY.has(key)) return null;
+  CHAT_AVA_BUSY.add(key);
+  try {
+    const res = await fetch('/api/accounts/' + CHAT.acc + '/avatar?peer=' + encodeURIComponent(peer),
+      {headers: {'Authorization': 'Bearer ' + chatToken()}});
+    if (!res.ok || res.status === 204 || res.status === 404) {
+      CHAT_AVA.set(key, null);
+      return null;
+    }
+    const blob = await res.blob();
+    const url = URL.createObjectURL(blob);
+    CHAT_AVA.set(key, url);
+    return url;
+  } catch (e) {
+    CHAT_AVA.set(key, null);
+    return null;
+  } finally {
+    CHAT_AVA_BUSY.delete(key);
+  }
+}
+
+function chatAvaMarkup(url, name, big) {
+  const cls = 'chat-ava' + (big ? ' lg' : '');
+  if (url) return '<img class="' + cls + '" src="' + url + '" alt="" aria-hidden="true" />';
+  const letter = String(name || '?').trim().charAt(0).toUpperCase() || '?';
+  return '<span class="' + cls + ' chat-ava-ph" aria-hidden="true">' + esc(letter) + '</span>';
+}
+
+/* Заполняет слоты аватаров: сначала кэш, потом по 3 параллельных запроса. */
+async function chatPaintAvas(root, limit) {
+  const scope = root || document;
+  const slots = [...scope.querySelectorAll('.chat-ava-slot[data-peer]')]
+    .filter(s => !s.dataset.filled)
+    .slice(0, limit || 40);
+  let i = 0;
+  const worker = async () => {
+    while (i < slots.length) {
+      const slot = slots[i++];
+      const peer = slot.dataset.peer;
+      const name = slot.dataset.name || '';
+      const big = slot.dataset.big === '1';
+      let url = CHAT_AVA.get(chatAvaKey(peer));
+      if (url === undefined) url = await chatAvaFetch(peer);
+      slot.dataset.filled = '1';
+      slot.innerHTML = chatAvaMarkup(url || null, name, big);
+    }
+  };
+  await Promise.all([worker(), worker(), worker()]);
+}
+
+/* ---------------- карточка собеседника ---------------- */
+function chatPeerInfo(peer) {
+  return api('/api/accounts/' + CHAT.acc + '/peer?peer=' + encodeURIComponent(peer));
+}
+
+async function chatPeerCard() {
+  if (CHAT.acc == null || CHAT.peer == null) { toast(trStr('先打开一个对话'), 'err'); return; }
+  const body = document.getElementById('cpBody');
+  if (body) body.innerHTML = '<span class="muted">' + trStr('加载中…') + '</span>';
+  openModal('mChatPeer');
+  try {
+    const info = await chatPeerInfo(CHAT.peer);
+    chatPeerRender(info);
+  } catch (e) {
+    if (body) body.innerHTML = '<div class="chat-note muted">' + esc(chatErrText(e)) + '</div>';
+  }
+}
+
+function chatPeerRender(info) {
+  const body = document.getElementById('cpBody');
+  if (!body) return;
+  const kind = info.kind === 'channel' ? '频道' : info.kind === 'group' ? '群组' : '用户';
+  const rows = [];
+  rows.push(['类型', kind]);
+  if (info.username) rows.push(['用户名', '@' + info.username]);
+  rows.push(['ID', String(info.id || '—')]);
+  if (info.participants_count != null) rows.push(['成员数', String(info.participants_count)]);
+  if (info.common_chats != null) rows.push(['共同群组', String(info.common_chats)]);
+  if (info.last_seen) rows.push(['最后上线', new Date(info.last_seen * 1000).toLocaleString(uiLocale())]);
+  if (info.bot) rows.push(['机器人', '是']);
+  if (info.verified) rows.push(['已验证', '是']);
+  if (info.restricted) rows.push(['受限', '是']);
+  const actions = [];
+  if (info.kind !== 'user') {
+    actions.push('<button class="sm fit write" data-onclick="chatOpenInvite(' + JSON.stringify(String(CHAT.peer)) + ')">' + trStr('邀请成员') + '</button>');
+  }
+  if (info.kind === 'channel' && info.linked_chat_id) {
+    actions.push('<button class="sm fit write" data-onclick="chatJoinLinked()">' + trStr('进入评论区') + '</button>');
+  }
+  body.innerHTML = '<div class="cp-head">'
+    + '<span class="chat-ava-slot" data-peer="' + esc(String(CHAT.peer)) + '" data-name="' + esc(info.name || '') + '" data-big="1"></span>'
+    + '<div><b style="font-size:15px">' + esc(info.name || ('#' + CHAT.peer)) + '</b>'
+    + (info.username ? '<div class="muted">@' + esc(info.username) + '</div>' : '')
+    + '</div></div>'
+    + (info.bio ? '<div class="cp-bio">' + esc(info.bio) + '</div>' : '')
+    + '<div class="cp-grid" style="margin-top:10px">'
+    + rows.map(([k, v]) => '<b>' + esc(k) + '</b><span>' + esc(v) + '</span>').join('')
+    + '</div>'
+    + (actions.length ? '<div class="row" style="gap:8px;margin-top:12px;flex-wrap:wrap">' + actions.join('') + '</div>' : '');
+  chatPaintAvas(body, 4);
+}
+
+/* ---------------- создание канала / группы ---------------- */
+function chatCreateOpen() {
+  if (CHAT.acc == null) { toast(trStr('先选择一个账号'), 'err'); return; }
+  const hint = document.getElementById('ccHint');
+  if (hint) hint.textContent = trStr('以所选账号身份创建');
+  const t = document.getElementById('ccTitle');
+  if (t) t.value = '';
+  const a = document.getElementById('ccAbout');
+  if (a) a.value = '';
+  const u = document.getElementById('ccUsername');
+  if (u) u.value = '';
+  const m = document.getElementById('ccMembers');
+  if (m) m.value = '';
+  const k = document.getElementById('ccKind');
+  if (k) k.value = 'channel';
+  chatCreateKind();
+  openModal('mChatCreate');
+}
+
+function chatCreateKind() {
+  const sel = document.getElementById('ccKind');
+  const kind = sel ? sel.value : 'channel';
+  const userRow = document.getElementById('ccUsernameRow');
+  const membersRow = document.getElementById('ccMembersRow');
+  if (userRow) userRow.style.display = kind === 'channel' ? '' : 'none';
+  if (membersRow) membersRow.style.display = kind === 'group' ? '' : 'none';
+}
+
+async function chatCreateRun() {
+  if (CHAT.acc == null) return;
+  const kind = (document.getElementById('ccKind') || {}).value || 'channel';
+  const title = String((document.getElementById('ccTitle') || {}).value || '').trim();
+  if (!title) { toast(trStr('请填写标题'), 'err'); return; }
+  const about = String((document.getElementById('ccAbout') || {}).value || '').trim();
+  const username = String((document.getElementById('ccUsername') || {}).value || '').trim().replace(/^@/, '');
+  const members = String((document.getElementById('ccMembers') || {}).value || '').trim();
+  const btn = document.querySelector('#mChatCreate .primary');
+  if (btn) btn.disabled = true;
+  try {
+    const op = kind === 'channel' ? 'create_channel' : 'create_group';
+    const params = kind === 'channel'
+      ? {title: title, about: about, username: username}
+      : {title: title, about: about, megagroup: true, users: members};
+    const r = await api('/api/accounts/' + CHAT.acc + '/toolbox/' + op, {
+      method: 'POST', body: JSON.stringify({params: params}),
+    });
+    const res = (r && r.result) || {};
+    toast(trf('创建成功：%s', res.title || title), 'ok');
+    closeAll();
+    await chatReload();
+    if (res.id != null) { chatOpen(res.id); }
+  } catch (e) {
+    toast(trf('创建失败：%s', chatErrText(e)), 'err');
+  } finally {
+    if (btn) btn.disabled = false;
+  }
+}
+
+/* ---------------- поиск / вход в каналы ---------------- */
+function chatFindOpen() {
+  if (CHAT.acc == null) { toast(trStr('先选择一个账号'), 'err'); return; }
+  const box = document.getElementById('cfResults');
+  if (box) box.innerHTML = '<span class="muted">' + trStr('输入关键词或链接') + '</span>';
+  openModal('mChatFind');
+}
+
+async function chatFindRun() {
+  if (CHAT.acc == null) return;
+  const q = String((document.getElementById('cfQuery') || {}).value || '').trim();
+  const box = document.getElementById('cfResults');
+  if (!q) { toast(trStr('请填写关键词'), 'err'); return; }
+  if (box) box.innerHTML = '<span class="muted">' + trStr('加载中…') + '</span>';
+  try {
+    const r = await api('/api/accounts/' + CHAT.acc + '/toolbox/search_public', {
+      method: 'POST', body: JSON.stringify({params: {query: q, limit: 20}}),
+    });
+    const chats = ((r && r.result && r.result.chats) || []);
+    if (!chats.length) { if (box) box.innerHTML = '<span class="muted">' + trStr('没有找到频道，换个关键词或粘贴链接') + '</span>'; return; }
+    if (box) box.innerHTML = chats.map(c => {
+      const kind = c.broadcast ? '频道' : c.megagroup ? '群组' : '群聊';
+      const meta = [kind];
+      if (c.participants_count != null) meta.push(c.participants_count + ' ' + trStr('成员'));
+      if (c.username) meta.push('@' + c.username);
+      const target = c.username ? c.username : String(c.id);
+      return '<div class="chat-found-row">'
+        + '<div class="t"><b>' + esc(c.title || ('#' + c.id)) + '</b><small>' + esc(meta.join(' · ')) + '</small></div>'
+        + '<button class="sm fit write" data-onclick="chatJoinTarget(' + JSON.stringify(target).replace(/"/g, '&quot;') + ',false)">' + trStr('加入') + '</button>'
+        + (c.broadcast ? '<button class="sm fit write" data-onclick="chatJoinTarget(' + JSON.stringify(target).replace(/"/g, '&quot;') + ',true)">' + trStr('评论区') + '</button>' : '')
+        + '</div>';
+    }).join('');
+  } catch (e) {
+    if (box) box.innerHTML = '<div class="chat-note muted">' + esc(chatErrText(e)) + '</div>';
+  }
+}
+
+function chatJoinDirect(withComments) {
+  const t = String((document.getElementById('cfTarget') || {}).value || '').trim();
+  if (!t) { toast(trStr('请填写 @用户名或链接'), 'err'); return; }
+  chatJoinTarget(t, withComments);
+}
+
+async function chatJoinTarget(target, withComments) {
+  if (CHAT.acc == null || !target) return;
+  try {
+    const r = await api('/api/accounts/' + CHAT.acc + '/toolbox/join_chat', {
+      method: 'POST', body: JSON.stringify({params: {target: target}}),
+    });
+    const res = (r && r.result) || {};
+    toast(trf('已加入：%s', res.title || target), 'ok');
+    if (withComments) {
+      try {
+        const c = await api('/api/accounts/' + CHAT.acc + '/toolbox/join_linked_chat', {
+          method: 'POST', body: JSON.stringify({params: {target: target}}),
+        });
+        const cr = (c && c.result) || {};
+        toast(trf('已进入评论区：%s', cr.title || ''), 'ok');
+      } catch (e2) {
+        toast(trf('频道已加入，评论区：%s', chatErrText(e2)), 'err');
+      }
+    }
+    chatReload();
+  } catch (e) {
+    toast(trf('加入失败：%s', chatErrText(e)), 'err');
+  }
+}
+
+async function chatJoinLinked() {
+  if (CHAT.acc == null || CHAT.peer == null) return;
+  try {
+    const r = await api('/api/accounts/' + CHAT.acc + '/toolbox/join_linked_chat', {
+      method: 'POST', body: JSON.stringify({params: {target: CHAT.peer}}),
+    });
+    const res = (r && r.result) || {};
+    toast(trf('已进入评论区：%s', res.title || ''), 'ok');
+    closeAll();
+    chatReload();
+  } catch (e) {
+    toast(trf('评论区：%s', chatErrText(e)), 'err');
+  }
+}
+
+/* ---------------- приглашение участников ---------------- */
+function chatOpenInvite(target) {
+  const t = document.getElementById('ciTarget');
+  if (t) t.value = target || (CHAT.peer != null ? String(CHAT.peer) : '');
+  const u = document.getElementById('ciUsers');
+  if (u) u.value = '';
+  openModal('mChatInvite');
+}
+
+async function chatInviteRun() {
+  if (CHAT.acc == null) return;
+  const target = String((document.getElementById('ciTarget') || {}).value || '').trim();
+  const users = String((document.getElementById('ciUsers') || {}).value || '').trim();
+  if (!target || !users) { toast(trStr('请填写群和用户列表'), 'err'); return; }
+  const btn = document.querySelector('#mChatInvite .primary');
+  if (btn) btn.disabled = true;
+  try {
+    const r = await api('/api/accounts/' + CHAT.acc + '/toolbox/invite_members', {
+      method: 'POST', body: JSON.stringify({params: {target: target, users: users}}),
+    });
+    const res = (r && r.result) || {};
+    const failed = (res.failed || []).length;
+    toast(trf('邀请 %s，失败 %s', res.invited_count || 0, failed), failed ? 'warn' : 'ok');
+    closeAll();
+  } catch (e) {
+    toast(trf('邀请失败：%s', chatErrText(e)), 'err');
+  } finally {
+    if (btn) btn.disabled = false;
+  }
+}
+
+/* ---------------- шаблоны сообщений ---------------- */
+let CHAT_TPLS = [];
+
+function chatTplOpen() {
+  const list = document.getElementById('ctList');
+  if (list) list.innerHTML = '<span class="muted">' + trStr('加载中…') + '</span>';
+  openModal('mChatTpl');
+  chatTplLoad();
+}
+
+async function chatTplLoad() {
+  try {
+    const r = await api('/api/templates');
+    CHAT_TPLS = (r && r.templates) || [];
+    chatTplRender();
+  } catch (e) {
+    const list = document.getElementById('ctList');
+    if (list) list.innerHTML = '<div class="chat-note muted">' + esc(chatErrText(e)) + '</div>';
+  }
+}
+
+function chatTplRender() {
+  const list = document.getElementById('ctList');
+  if (!list) return;
+  if (!CHAT_TPLS.length) { list.innerHTML = '<span class="muted">' + trStr('还没有模板') + '</span>'; return; }
+  list.innerHTML = CHAT_TPLS.map(t => '<div class="chat-tpl">'
+    + '<b>' + esc(t.title || '—') + '</b>'
+    + '<p>' + esc(String(t.text || '').slice(0, 240)) + '</p>'
+    + '<div class="row">'
+    + '<button class="sm fit" data-onclick="chatTplInsert(' + JSON.stringify(t.id).replace(/"/g, '&quot;') + ')">' + trStr('插入') + '</button>'
+    + '<button class="sm fit write" data-onclick="chatTplEdit(' + JSON.stringify(t.id).replace(/"/g, '&quot;') + ')">' + trStr('编辑') + '</button>'
+    + '<button class="sm fit danger" data-onclick="chatTplDelete(' + JSON.stringify(t.id).replace(/"/g, '&quot;') + ')">' + trStr('删除') + '</button>'
+    + '</div></div>').join('');
+}
+
+function chatTplInsert(id) {
+  const tpl = CHAT_TPLS.find(t => t.id === id);
+  if (!tpl) return;
+  const ta = document.getElementById('chatText');
+  if (!ta) return;
+  ta.value = ta.value ? (ta.value + '\n' + tpl.text) : tpl.text;
+  ta.focus();
+  closeAll();
+  toast(trStr('模板已插入'), 'ok');
+}
+
+function chatTplEdit(id) {
+  const tpl = CHAT_TPLS.find(t => t.id === id);
+  if (!tpl) return;
+  const title = document.getElementById('ctTitle');
+  const text = document.getElementById('ctText');
+  if (title) title.value = tpl.title || '';
+  if (text) text.value = tpl.text || '';
+  if (text) text.focus();
+}
+
+function chatTplSaveCurrent() {
+  const ta = document.getElementById('chatText');
+  const text = String((ta && ta.value) || '').trim();
+  if (!text) { toast(trStr('输入框为空'), 'err'); return; }
+  const title = document.getElementById('ctTitle');
+  if (title && !title.value) title.value = text.split('\n')[0].slice(0, 40);
+  const body = document.getElementById('ctText');
+  if (body) body.value = text;
+  chatTplSave();
+}
+
+async function chatTplSave() {
+  const title = String((document.getElementById('ctTitle') || {}).value || '').trim();
+  const text = String((document.getElementById('ctText') || {}).value || '').trim();
+  if (!text) { toast(trStr('请填写模板内容'), 'err'); return; }
+  try {
+    await api('/api/templates', {method: 'POST', body: JSON.stringify({title: title, text: text})});
+    toast(trStr('模板已保存'), 'ok');
+    const t2 = document.getElementById('ctTitle');
+    const b2 = document.getElementById('ctText');
+    if (t2) t2.value = '';
+    if (b2) b2.value = '';
+    chatTplLoad();
+  } catch (e) {
+    toast(trf('保存失败：%s', chatErrText(e)), 'err');
+  }
+}
+
+async function chatTplDelete(id) {
+  if (!await uiConfirm({title: trStr('删除模板'), message: trStr('模板将被永久删除。'), danger: true, okText: trStr('删除')})) return;
+  try {
+    await api('/api/templates/' + encodeURIComponent(id), {method: 'DELETE'});
+    CHAT_TPLS = CHAT_TPLS.filter(t => t.id !== id);
+    chatTplRender();
+  } catch (e) {
+    toast(trf('删除失败：%s', chatErrText(e)), 'err');
+  }
+}
+
 /* TAO_LEX_START */
-const __taoLexHas = new Set(["$", "DEMO", "TAO_MOTION", "TAO_KEYS", "MOCK", "tokenKey", "TAO_ERR", "TASK_KIND_CN", "TASK_TONE", "observedLoginTasks", "chatPicked", "ACTION_CN", "STATUS_CN", "cnStatus", "ERROR_CN", "KEY_CN", "isOk", "LOG_DETAIL_CN", "SUMMARY_LIMIT", "SUMMARY_SECRET", "DIAL", "nowMs", "KICK_SKIP_STATUS", "KICK_STATE_CN", "KICK_BASE_CN", "UI_TASKS", "saveKickRetry", "kickNow", "viewKey", "VIEW_NAMES", "themeKey", "ACTIONS", "PAL", "SET_ALIAS", "STAT_CN", "MORE_VIEWS", "twofaShown", "addAccount", "saveAccount", "check", "devices", "dialogs", "terminate", "logout", "delAccount", "verify", "doSend", "ONE_STOP_WATCHING", "doImport", "tdataBody", "TB_PRIV_KEYS", "TB_PRIV_VALS", "TB_GROUPS", "TB_DRAFTS", "AI_HIST_KEY", "AI_HIST_MAX", "TAO_HOOK", "TAO_DOM", "TAO_FX", "TAO_FX3", "TAO_FX4", "TAO_FX5", "TAO_FX8", "TAO_BE", "CHAT", "accounts", "stats", "sel", "filter", "loginId", "readonly", "accountsRevision", "visibleCache", "filterCountsCache", "kick", "busy", "taskTimer", "loginDetailTimer", "taskDetailVersion", "chatRows", "leadRows", "logPinned", "skewMs", "_uiResolver", "_uiMode", "_dialogEl", "_dialogReturnFocus", "_dialogKeyHandler", "_dialogTitleSeq", "UI_TASK_SEQ", "uiFilePending", "legacyProgressCard", "currentView", "MENU_OPEN", "quickFilter", "tableLimit", "accountRenderTimer", "qrLoginId", "qrWaitAbort", "officialCodeAccountId", "officialCodeRequest", "spinTimer", "proxyCapacityTimer", "timer", "stickyFrame", "TB_OPS", "TB_CUR", "TB_BUSY", "ZT_JOB", "ZT_MERGE_JOB", "ZT_MERGE_N", "AI_CFG", "AI_MSGS"]);
+const __taoLexHas = new Set(["$", "DEMO", "TAO_MOTION", "TAO_KEYS", "MOCK", "tokenKey", "TAO_ERR", "TASK_KIND_CN", "TASK_TONE", "observedLoginTasks", "chatPicked", "ACTION_CN", "STATUS_CN", "cnStatus", "ERROR_CN", "KEY_CN", "isOk", "LOG_DETAIL_CN", "SUMMARY_LIMIT", "SUMMARY_SECRET", "DIAL", "nowMs", "KICK_SKIP_STATUS", "KICK_STATE_CN", "KICK_BASE_CN", "UI_TASKS", "saveKickRetry", "kickNow", "viewKey", "VIEW_NAMES", "themeKey", "ACTIONS", "PAL", "SET_ALIAS", "STAT_CN", "MORE_VIEWS", "twofaShown", "addAccount", "saveAccount", "check", "devices", "dialogs", "terminate", "logout", "delAccount", "verify", "doSend", "ONE_STOP_WATCHING", "doImport", "tdataBody", "TB_PRIV_KEYS", "TB_PRIV_VALS", "TB_GROUPS", "TB_DRAFTS", "AI_HIST_KEY", "AI_HIST_MAX", "TAO_HOOK", "TAO_DOM", "TAO_FX", "TAO_FX3", "TAO_FX4", "TAO_FX5", "TAO_FX8", "TAO_BE", "CHAT", "CHAT_AVA", "CHAT_AVA_BUSY", "accounts", "stats", "sel", "filter", "loginId", "readonly", "accountsRevision", "visibleCache", "filterCountsCache", "kick", "busy", "taskTimer", "loginDetailTimer", "taskDetailVersion", "chatRows", "leadRows", "logPinned", "skewMs", "_uiResolver", "_uiMode", "_dialogEl", "_dialogReturnFocus", "_dialogKeyHandler", "_dialogTitleSeq", "UI_TASK_SEQ", "uiFilePending", "legacyProgressCard", "currentView", "MENU_OPEN", "quickFilter", "tableLimit", "accountRenderTimer", "qrLoginId", "qrWaitAbort", "officialCodeAccountId", "officialCodeRequest", "spinTimer", "proxyCapacityTimer", "timer", "stickyFrame", "TB_OPS", "TB_CUR", "TB_BUSY", "ZT_JOB", "ZT_MERGE_JOB", "ZT_MERGE_N", "AI_CFG", "AI_MSGS", "CHAT_TPLS"]);
 function __taoLexGet(n) { switch (n) {
   case '$': return $;
   case 'DEMO': return DEMO;
@@ -9851,6 +10280,8 @@ function __taoLexGet(n) { switch (n) {
   case 'TAO_FX8': return TAO_FX8;
   case 'TAO_BE': return TAO_BE;
   case 'CHAT': return CHAT;
+  case 'CHAT_AVA': return CHAT_AVA;
+  case 'CHAT_AVA_BUSY': return CHAT_AVA_BUSY;
   case 'accounts': return accounts;
   case 'stats': return stats;
   case 'sel': return sel;
@@ -9899,6 +10330,7 @@ function __taoLexGet(n) { switch (n) {
   case 'ZT_MERGE_N': return ZT_MERGE_N;
   case 'AI_CFG': return AI_CFG;
   case 'AI_MSGS': return AI_MSGS;
+  case 'CHAT_TPLS': return CHAT_TPLS;
 } }
 function __taoLexSet(n, v) { switch (n) {
   case 'accounts': accounts = v; return true;
@@ -9949,6 +10381,7 @@ function __taoLexSet(n, v) { switch (n) {
   case 'ZT_MERGE_N': ZT_MERGE_N = v; return true;
   case 'AI_CFG': AI_CFG = v; return true;
   case 'AI_MSGS': AI_MSGS = v; return true;
+  case 'CHAT_TPLS': CHAT_TPLS = v; return true;
 } return false; }
 /* TAO_LEX_END */
 const TAO_ACT = (() => {

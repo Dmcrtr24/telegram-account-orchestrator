@@ -2361,7 +2361,7 @@
  },
  "养号 · 任务 #%s": {
   "ru": "Прогрев · задача #%s",
-  "en": "Warm-up · task #%s"
+  "en": "Warmup · task #%s"
  },
  "запуск…": {
   "ru": "запуск…",
@@ -2518,5 +2518,289 @@
  "输入消息": {
   "ru": "Сообщение",
   "en": "Message"
+ },
+ "⚠ 此操作会更改账号或数据，执行前请核对所选账号；下一步会再次确认。": {
+  "ru": "⚠ Операция изменит аккаунт или данные — проверьте выбранные аккаунты; на следующем шаге будет подтверждение.",
+  "en": "⚠ This changes accounts or data — check the selected accounts; you will confirm on the next step."
+ },
+ "否": {
+  "ru": "Нет",
+  "en": "No"
+ },
+ "Telegram 限流": {
+  "ru": "Лимиты Telegram",
+  "en": "Telegram rate limit"
+ },
+ "新2FA": {
+  "ru": "Новый 2FA",
+  "en": "New 2FA"
+ },
+ "将对选中的健康账号执行养号（保活在线 + 随机已读 + 账号互聊）。\n任务会出现在「任务中心」，可以关掉页面。": {
+  "ru": "Для выбранных здоровых аккаунтов запустится прогрев (онлайн + случайные прочтения + переписка между аккаунтами).\nЗадача появится в «Центре задач», страницу можно закрыть.",
+  "en": "Warmup will run for the selected healthy accounts (stay online + random reads + chatting between accounts).\nThe task appears in Tasks and you may close the page."
+ },
+ "一条龙 · %s/8 %s": {
+  "ru": "В один клик · %s/8 %s",
+  "en": "One-stop · %s/8 %s"
+ },
+ "范围 %s–%s": {
+  "ru": "диапазон %s–%s",
+  "en": "range %s–%s"
+ },
+ "进度 %s/%s · 成功 %s · 失败 %s · 跳过 %s": {
+  "ru": "Прогресс %s/%s · успешно %s · ошибок %s · пропущено %s",
+  "en": "Progress %s/%s · ok %s · failed %s · skipped %s"
+ },
+ "养号任务 #%s 已在后台运行": {
+  "ru": "Задача прогрева #%s запущена в фоне",
+  "en": "Warmup task #%s is running in the background"
+ },
+ "养号任务 #%s 已完成": {
+  "ru": "Задача прогрева #%s завершена",
+  "en": "Warmup task #%s finished"
+ },
+ "养号 · %s 个号 · 任务 #%s": {
+  "ru": "Прогрев · %s акк. · задача #%s",
+  "en": "Warmup · %s accounts · task #%s"
+ },
+ "成功 %s · 失败 %s": {
+  "ru": "успешно %s · ошибок %s",
+  "en": "ok %s · failed %s"
+ },
+ "启动中…": {
+  "ru": "запуск…",
+  "en": "starting…"
+ },
+ "比平常更久…": {
+  "ru": "идёт дольше обычного…",
+  "en": "taking longer than usual…"
+ },
+ "先打开一个对话": {
+  "ru": "Сначала откройте диалог",
+  "en": "Open a chat first"
+ },
+ "成员数": {
+  "ru": "Участников",
+  "en": "Members"
+ },
+ "共同群组": {
+  "ru": "Общих чатов",
+  "en": "Common chats"
+ },
+ "已验证": {
+  "ru": "Подтверждён",
+  "en": "Verified"
+ },
+ "成员": {
+  "ru": "участников",
+  "en": "members"
+ },
+ "在线": {
+  "ru": "онлайн",
+  "en": "online"
+ },
+ "邀请成员": {
+  "ru": "Пригласить участников",
+  "en": "Invite members"
+ },
+ "进入评论区": {
+  "ru": "Войти в комментарии",
+  "en": "Open the comment chat"
+ },
+ "以所选账号身份创建": {
+  "ru": "Создаётся от имени выбранного аккаунта",
+  "en": "Created on behalf of the selected account"
+ },
+ "请填写标题": {
+  "ru": "Заполните название",
+  "en": "Fill in the title"
+ },
+ "创建成功：%s": {
+  "ru": "Создано: %s",
+  "en": "Created: %s"
+ },
+ "创建失败：%s": {
+  "ru": "Не создано: %s",
+  "en": "Create failed: %s"
+ },
+ "请填写关键词": {
+  "ru": "Заполните ключевое слово",
+  "en": "Enter a keyword"
+ },
+ "没有找到频道，换个关键词或粘贴链接": {
+  "ru": "Каналы не найдены — другой запрос или вставьте ссылку",
+  "en": "No channels found — try another query or paste a link"
+ },
+ "加入": {
+  "ru": "Вступить",
+  "en": "Join"
+ },
+ "评论区": {
+  "ru": "Комментарии",
+  "en": "Comments"
+ },
+ "已加入：%s": {
+  "ru": "Вступили: %s",
+  "en": "Joined: %s"
+ },
+ "已进入评论区：%s": {
+  "ru": "Комментарии доступны: %s",
+  "en": "Comment chat joined: %s"
+ },
+ "频道已加入，评论区：%s": {
+  "ru": "Канал добавлен, комментарии: %s",
+  "en": "Channel joined, comments: %s"
+ },
+ "加入失败：%s": {
+  "ru": "Не удалось вступить: %s",
+  "en": "Join failed: %s"
+ },
+ "评论区：%s": {
+  "ru": "Комментарии: %s",
+  "en": "Comments: %s"
+ },
+ "请填写群和用户列表": {
+  "ru": "Заполните чат и список пользователей",
+  "en": "Fill in the chat and the user list"
+ },
+ "邀请 %s，失败 %s": {
+  "ru": "Приглашено %s, ошибок %s",
+  "en": "Invited %s, failed %s"
+ },
+ "邀请失败：%s": {
+  "ru": "Не приглашено: %s",
+  "en": "Invite failed: %s"
+ },
+ "还没有模板": {
+  "ru": "Шаблонов пока нет",
+  "en": "No templates yet"
+ },
+ "插入": {
+  "ru": "Вставить",
+  "en": "Insert"
+ },
+ "编辑": {
+  "ru": "В редактор",
+  "en": "Edit"
+ },
+ "模板已插入": {
+  "ru": "Шаблон вставлен",
+  "en": "Template inserted"
+ },
+ "输入框为空": {
+  "ru": "Поле ввода пустое",
+  "en": "The input is empty"
+ },
+ "请填写模板内容": {
+  "ru": "Введите текст шаблона",
+  "en": "Enter the template text"
+ },
+ "模板已保存": {
+  "ru": "Шаблон сохранён",
+  "en": "Template saved"
+ },
+ "保存失败：%s": {
+  "ru": "Не сохранено: %s",
+  "en": "Not saved: %s"
+ },
+ "删除模板": {
+  "ru": "Удалить шаблон",
+  "en": "Delete template"
+ },
+ "模板将被永久删除。": {
+  "ru": "Шаблон будет удалён безвозвратно.",
+  "en": "The template will be deleted permanently."
+ },
+ "删除失败：%s": {
+  "ru": "Не удалено: %s",
+  "en": "Not deleted: %s"
+ },
+ "输入关键词或链接": {
+  "ru": "Введите ключевое слово или ссылку",
+  "en": "Enter a keyword or a link"
+ },
+ "新建频道 / 群": {
+  "ru": "Новый канал / группа",
+  "en": "New channel / group"
+ },
+ "初始成员（每行一个 @ 或 ID，可选）": {
+  "ru": "Начальные участники (по одному в строке, необязательно)",
+  "en": "Initial members (one per line, optional)"
+ },
+ "搜索频道并加入": {
+  "ru": "Поиск каналов и вступление",
+  "en": "Find channels and join"
+ },
+ "搜索": {
+  "ru": "Искать",
+  "en": "Search"
+ },
+ "或链接 / @用户名": {
+  "ru": "Или ссылка / @username",
+  "en": "Or a link / @username"
+ },
+ "加入 + 评论区": {
+  "ru": "Вступить + комментарии",
+  "en": "Join + comments"
+ },
+ "联系信息": {
+  "ru": "Контактная информация",
+  "en": "Contact info"
+ },
+ "邀请进群": {
+  "ru": "Пригласить в чат",
+  "en": "Invite to a chat"
+ },
+ "群或频道": {
+  "ru": "Чат или канал",
+  "en": "Chat or channel"
+ },
+ "邀请谁（每行一个）": {
+  "ru": "Кого пригласить (по одному в строке)",
+  "en": "Who to invite (one per line)"
+ },
+ "邀请": {
+  "ru": "Пригласить",
+  "en": "Invite"
+ },
+ "需要该账号是管理员并有邀请权限。": {
+  "ru": "Нужны права администратора чата с возможностью приглашать.",
+  "en": "The account must be a chat admin allowed to invite."
+ },
+ "模板消息": {
+  "ru": "Шаблоны сообщений",
+  "en": "Message templates"
+ },
+ "保存模板": {
+  "ru": "Сохранить шаблон",
+  "en": "Save template"
+ },
+ "从输入框保存": {
+  "ru": "Сохранить из поля ввода",
+  "en": "Save from the message box"
+ },
+ "例如：问候语": {
+  "ru": "например: приветствие",
+  "en": "e.g. greeting"
+ },
+ "模板文本，可含 {a|b}": {
+  "ru": "Текст шаблона, можно с {a|b}",
+  "en": "Template text, may contain {a|b}"
+ },
+ "例如：крипто, новости": {
+  "ru": "например: крипто, новости",
+  "en": "e.g. crypto, news"
+ },
+ "@channel 或 https://t.me/+invite": {
+  "ru": "@channel или https://t.me/+invite",
+  "en": "@channel or https://t.me/+invite"
+ },
+ "我的频道": {
+  "ru": "Мой канал",
+  "en": "My channel"
+ },
+ "一句话说明": {
+  "ru": "Короткое описание",
+  "en": "Short description"
  }
 }

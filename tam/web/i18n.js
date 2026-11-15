@@ -40,6 +40,104 @@
   PATS.ru = compileSorted(DATA.pat && DATA.pat.ru);
   PATS.en = compileSorted(DATA.pat && DATA.pat.en);
 
+  /* ---- машинный перевод того, чего нет в словаре ----------------------------
+     Строки, появляющиеся только в рантайме (склейки, тексты бэкенда), уходят
+     на /api/i18n/translate: провайдеры бесплатные, результат кэшируется на
+     сервере (data/i18n_cache.json) и в localStorage. */
+  var REMOTE_KEY = 'tam.i18n.remote';
+  var REMOTE = { ru: {}, en: {} };
+  try {
+    var savedRemote = JSON.parse(localStorage.getItem(REMOTE_KEY) || 'null');
+    if (savedRemote && typeof savedRemote === 'object') {
+      if (savedRemote.ru) REMOTE.ru = savedRemote.ru;
+      if (savedRemote.en) REMOTE.en = savedRemote.en;
+    }
+  } catch (e) { /* private mode */ }
+  var REMOTE_MAX = 900;
+  var remoteTried = {};
+  var remoteQueue = [];
+  var remoteTimer = 0;
+
+  function persistRemote() {
+    try {
+      ['ru', 'en'].forEach(function (lang) {
+        var bag = REMOTE[lang] || {};
+        var keys = Object.keys(bag);
+        if (keys.length > REMOTE_MAX) {
+          var drop = keys.slice(0, keys.length - REMOTE_MAX);
+          for (var i = 0; i < drop.length; i++) delete bag[drop[i]];
+        }
+      });
+      localStorage.setItem(REMOTE_KEY, JSON.stringify(REMOTE));
+    } catch (e) { /* переполнение хранилища — не критично */ }
+  }
+
+  function remoteLookup(s) {
+    var bag = REMOTE[LANG];
+    if (!bag) return null;
+    var hit = bag[s];
+    if (hit == null) hit = bag[norm(s)];
+    return hit == null ? null : hit;
+  }
+
+  // что вообще имеет смысл отправлять в переводчик: текст, не разметка и не код
+  function remoteOk(s) {
+    if (!s || s.length < 2 || s.length > 240) return false;
+    if (/[<>{}`|]|=>|::|https?:\/\//.test(s)) return false;
+    if (/^[\s\d\p{P}\p{S}]+$/u.test(s)) return false;
+    return ZH.test(s);
+  }
+
+  function authToken() {
+    var el = document.getElementById('token');
+    return (el && el.value) || '';
+  }
+
+  function enqueueRemote(s) {
+    var key = LANG + '|' + s;
+    if (remoteTried[key]) return;
+    remoteTried[key] = 1;
+    remoteQueue.push(s);
+    if (remoteTimer) return;
+    remoteTimer = setTimeout(flushRemote, 400);
+  }
+
+  function flushRemote() {
+    remoteTimer = 0;
+    if (!remoteQueue.length) return;
+    var batch = remoteQueue.splice(0, 40);
+    var lang = LANG;
+    var payload = JSON.stringify({ texts: batch, to: lang });
+    var headers = { 'Content-Type': 'application/json' };
+    var token = authToken();
+    if (token) headers['Authorization'] = 'Bearer ' + token;
+    var retry = function (ms) {
+      if (remoteQueue.length && !remoteTimer) remoteTimer = setTimeout(flushRemote, ms);
+    };
+    try {
+      fetch('/api/i18n/translate', { method: 'POST', headers: headers, body: payload })
+        .then(function (r) { return r.ok ? r.json() : null; })
+        .then(function (data) {
+          if (!data || !data.map) { retry(4000); return; }
+          var changed = false;
+          for (var zh in data.map) {
+            if (!Object.prototype.hasOwnProperty.call(data.map, zh)) continue;
+            var val = data.map[zh];
+            if (val && val !== zh && ZH.test(zh)) {
+              REMOTE[lang][zh] = val;
+              changed = true;
+            }
+          }
+          if (changed) {
+            persistRemote();
+            if (LANG === lang) applyAll();
+          }
+          retry(250);
+        })
+        .catch(function () { retry(6000); });
+    } catch (e) { /* offline */ }
+  }
+
   var LANG = 'ru';
   try {
     var savedLang = localStorage.getItem(LANG_KEY);
@@ -125,6 +223,10 @@
       }
       if (hit) return toks.join('');
     }
+    // дошли сюда — словарь не знает строку целиком: машинный перевод как фолбэк
+    var remote = remoteLookup(s);
+    if (remote != null) return remote;
+    if (depth === 0 && remoteOk(s)) enqueueRemote(s);
     return s;
   }
 

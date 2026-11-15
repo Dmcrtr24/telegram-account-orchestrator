@@ -12,6 +12,7 @@ import asyncio
 from contextvars import ContextVar
 import os
 import time
+from pathlib import Path
 from dataclasses import dataclass
 from typing import Any, Callable, Awaitable
 from urllib.parse import urlparse
@@ -1996,6 +1997,109 @@ class AccountManager:
                     "preview": preview,
                 })
             return out
+
+    async def get_peer_info(self, account_id: int, peer: str | int) -> dict[str, Any]:
+        """Карточка собеседника/чата: имя, @username, био, участники, чат обсуждений."""
+        from telethon.tl.functions.channels import GetFullChannelRequest
+        from telethon.tl.functions.users import GetFullUserRequest
+        from telethon.tl.types import User
+
+        self._require_session(account_id)
+        entity: Any = peer
+        if isinstance(peer, str) and peer.lstrip("-").isdigit():
+            entity = int(peer)
+        async with self.session(account_id) as client:
+            ent = await client.get_entity(entity)
+            out: dict[str, Any] = {
+                "id": getattr(ent, "id", None),
+                "username": getattr(ent, "username", None),
+                "kind": "user",
+                "name": getattr(ent, "first_name", None) or getattr(ent, "title", None) or "",
+                "bio": "",
+                "verified": bool(getattr(ent, "verified", False)),
+                "bot": bool(getattr(ent, "bot", False)),
+                "premium": bool(getattr(ent, "premium", False)),
+                "scam": bool(getattr(ent, "scam", False)),
+                "fake": bool(getattr(ent, "fake", False)),
+                "restricted": bool(getattr(ent, "restricted", False)),
+                "has_photo": bool(getattr(ent, "photo", None)),
+                "phone": None,
+            }
+            status = getattr(ent, "status", None)
+            if status is not None:
+                name = type(status).__name__
+                if name == "UserStatusOnline":
+                    out["online"] = True
+                elif name == "UserStatusOffline":
+                    was = getattr(status, "was_online", None)
+                    out["last_seen"] = was.timestamp() if was else None
+                elif name == "UserStatusRecently":
+                    out["last_seen_recent"] = True
+            try:
+                if isinstance(ent, User):
+                    full = await client(GetFullUserRequest(ent))
+                    fu = full.full_user
+                    out["bio"] = getattr(fu, "about", "") or ""
+                    out["common_chats"] = getattr(fu, "common_chats_count", None)
+                    out["phone"] = getattr(ent, "phone", None) if getattr(ent, "mutual_contact", False) else None
+                    out["name"] = " ".join(p for p in (getattr(ent, "first_name", ""),
+                                                       getattr(ent, "last_name", "")) if p) or out["name"]
+                else:
+                    broadcast = bool(getattr(ent, "broadcast", False))
+                    out["kind"] = "channel" if broadcast else "group"
+                    out["broadcast"] = broadcast
+                    out["megagroup"] = bool(getattr(ent, "megagroup", False))
+                    full = await client(GetFullChannelRequest(channel=ent))
+                    fc = full.full_chat
+                    out["bio"] = getattr(fc, "about", "") or ""
+                    out["participants_count"] = getattr(fc, "participants_count", None)
+                    out["linked_chat_id"] = getattr(fc, "linked_chat_id", None)
+                    out["name"] = getattr(ent, "title", None) or out["name"]
+            except Exception:  # noqa: BLE001 — карточка не должна падать из-за прав/флуда
+                pass
+            return out
+
+    async def get_peer_photo(self, account_id: int, peer: str | int) -> bytes | None:
+        """Фото профиля (JPEG) с дисковым кэшем на 6 часов, включая «фото нет»."""
+        import io as _io
+
+        cache_dir = Path(self.s.data_dir) / "avatars"
+        cache_dir.mkdir(parents=True, exist_ok=True)
+        key = str(peer).replace("/", "_").replace(" ", "_")
+        path = cache_dir / f"{account_id}_{key}.jpg"
+        miss = cache_dir / f"{account_id}_{key}.none"
+        fresh = 6 * 3600
+        now = time.time()
+        if path.exists() and now - path.stat().st_mtime < fresh:
+            return path.read_bytes()
+        if miss.exists() and now - miss.stat().st_mtime < fresh:
+            return None
+        self._require_session(account_id)
+        entity: Any = peer
+        if isinstance(peer, str) and peer.lstrip("-").isdigit():
+            entity = int(peer)
+        data = b""
+        async with self.session(account_id) as client:
+            ent = await client.get_entity(entity)
+            buf = _io.BytesIO()
+            try:
+                await client.download_profile_photo(ent, file=buf)
+            except Exception:  # noqa: BLE001
+                data = b""
+            data = buf.getvalue()
+        if data:
+            try:
+                path.write_bytes(data)
+                if miss.exists():
+                    miss.unlink(missing_ok=True)
+            except OSError:
+                pass
+            return data
+        try:
+            miss.write_bytes(b"1")
+        except OSError:
+            pass
+        return None
 
     async def get_messages(self, account_id: int, peer: str | int,
                            limit: int = 50, before_id: int | None = None) -> dict[str, Any]:

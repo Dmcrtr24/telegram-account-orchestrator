@@ -30,6 +30,7 @@ from fastapi.staticfiles import StaticFiles
 from .config import Settings
 from .db import Account, Database
 from .leads import LeadStore
+from .msg_templates import TemplateStore
 from .manager import AccountManager
 from .tasks import TaskRunner, TaskStore
 from .tools import ToolContext, call_tool, list_tools
@@ -42,6 +43,7 @@ db = Database(settings.db_path)
 manager = AccountManager(settings, db)
 tasks = TaskStore(db.conn)
 leads = LeadStore(db.conn)
+templates = TemplateStore(settings.data_dir / "message_templates.json")
 runner = TaskRunner(tasks)
 app = FastAPI(
     title="Telegram 账号管理器",
@@ -880,6 +882,30 @@ async def dialogs(account_id: int, limit: int = 30) -> list[dict[str, Any]]:
         return await manager.get_dialogs(account_id, limit)
     except RuntimeError as exc:
         raise HTTPException(400, str(exc)) from exc
+
+
+@app.get("/api/accounts/{account_id}/peer", dependencies=[Depends(auth)])
+async def peer_info(account_id: int, peer: str) -> dict[str, Any]:
+    """Карточка собеседника/чата: имя, @username, био, участники, обсуждения."""
+    try:
+        return await manager.get_peer_info(account_id, peer)
+    except RuntimeError as exc:
+        raise HTTPException(400, str(exc)) from exc
+    except Exception as exc:  # noqa: BLE001
+        raise HTTPException(400, f"{type(exc).__name__}: {exc}") from exc
+
+
+@app.get("/api/accounts/{account_id}/avatar", dependencies=[Depends(auth)])
+async def peer_avatar(account_id: int, peer: str) -> Response:
+    """Фото профиля (JPEG). Нет фото — 204, чтобы фронт не рисовал битую картинку."""
+    try:
+        data = await manager.get_peer_photo(account_id, peer)
+    except Exception as exc:  # noqa: BLE001
+        raise HTTPException(400, f"{type(exc).__name__}: {exc}") from exc
+    if not data:
+        return Response(status_code=204, headers={"Cache-Control": "private, max-age=600"})
+    return Response(content=data, media_type="image/jpeg",
+                    headers={"Cache-Control": "private, max-age=3600"})
 
 
 @app.get("/api/accounts/{account_id}/messages", dependencies=[Depends(auth)])
@@ -3620,6 +3646,71 @@ def _coerce_setting(key: str, kind: str, raw: Any) -> str:
         return s
 
     return str(raw).strip()
+
+
+class I18nIn(BaseModel):
+    texts: list[str] = Field(default_factory=list)
+    to: str = "ru"
+
+
+@app.post("/api/i18n/translate", dependencies=[Depends(auth)])
+async def i18n_translate(body: I18nIn) -> dict[str, Any]:
+    """Машинный перевод строк интерфейса, которых нет в словаре.
+
+    Нужен для текстов, появляющихся только в рантайме (склейки, ответы бэкенда).
+    Переводы кэшируются на диске (`data/i18n_cache.json`), провайдеры бесплатные.
+    """
+    from . import i18n_remote  # noqa: PLC0415
+
+    target = "en" if str(body.to).lower().startswith("en") else "ru"
+    texts = [str(t)[:400] for t in (body.texts or [])[:60] if str(t).strip()]
+    if not texts:
+        return {"map": {}, "to": target}
+    out = await asyncio.to_thread(i18n_remote.translate_many, texts, target, limit=40)
+    return {"map": out, "to": target}
+
+
+class TemplateIn(BaseModel):
+    title: str = ""
+    text: str = ""
+
+
+class TemplatePatch(BaseModel):
+    title: str | None = None
+    text: str | None = None
+
+
+@app.get("/api/templates", dependencies=[Depends(auth)])
+async def templates_list() -> dict[str, Any]:
+    """Шаблоны сообщений (общие для консоли, хранятся рядом с базой)."""
+    return {"templates": templates.list()}
+
+
+@app.post("/api/templates", dependencies=[Depends(auth)])
+async def templates_add(body: TemplateIn) -> dict[str, Any]:
+    try:
+        item = templates.add(body.title, body.text)
+    except ValueError as exc:
+        raise HTTPException(400, str(exc)) from exc
+    return {"ok": True, "template": item}
+
+
+@app.patch("/api/templates/{tid}", dependencies=[Depends(auth)])
+async def templates_patch(tid: str, body: TemplatePatch) -> dict[str, Any]:
+    try:
+        item = templates.update(tid, body.title, body.text)
+    except ValueError as exc:
+        raise HTTPException(400, str(exc)) from exc
+    if item is None:
+        raise HTTPException(404, "模板不存在")
+    return {"ok": True, "template": item}
+
+
+@app.delete("/api/templates/{tid}", dependencies=[Depends(auth)])
+async def templates_delete(tid: str) -> dict[str, Any]:
+    if not templates.delete(tid):
+        raise HTTPException(404, "模板不存在")
+    return {"ok": True}
 
 
 @app.get("/api/settings", response_model=SettingsOut, dependencies=[Depends(auth)])

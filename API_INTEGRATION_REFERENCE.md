@@ -141,6 +141,13 @@
 ### 工具、系统、设置与 AI
 
 - 工具：`GET /api/tools`、`POST /api/tools/call`、`GET /api/toolbox/ops`、`POST /api/accounts/{id}/toolbox/{op}`、`POST /api/toolbox/{op}/batch`。
+- 对话（本分支新增）：`GET /api/accounts/{id}/dialogs?limit=`、`GET /api/accounts/{id}/messages?peer=&limit=&before_id=`、`POST /api/accounts/{id}/message`、`POST /api/accounts/{id}/read?peer=`、`GET /api/accounts/{id}/peer?peer=`、`GET /api/accounts/{id}/avatar?peer=`（JPEG，204=нет фото）。
+
+  `dialogs` отдаёт `{id,name,unread,is_group,is_channel,pinned,date,preview}`; `messages` — `{peer,title,messages[{id,date,out,text,sender_id,sender_name,media,reply_to}],has_more}`;
+  `peer` — `{id,name,username,kind,bio,has_photo,participants_count,linked_chat_id,common_chats,last_seen,online,verified,bot,premium,scam}`.
+- Шаблоны сообщений：`GET /api/templates`、`POST /api/templates {title,text}`、`PATCH /api/templates/{id}`、`DELETE /api/templates/{id}`; хранятся в `data/message_templates.json`.
+- Машинный перевод UI：`POST /api/i18n/translate {texts[],to:"ru"|"en"}` → `{map:{zh:перевод}}`; провайдеры бесплатные, кэш `data/i18n_cache.json`.
+- Новые op'ы тулбокса：`invite_members` (`target`,`users`)、`join_linked_chat` (`target`) — приглашение в существующий чат и вход в чат обсуждений канала (комментарии).
 - 系统：`GET /api/logs`、`GET /api/doctor`、`POST /api/doctor/fix`、`GET /api/system/opentele`、`POST /api/system/install-opentele`、`GET/POST/DELETE /api/system/errors`、`GET /api/system/errors/export`、`POST /api/system/restart`、`GET /api/system/status`、`POST /api/system/shutdown`、`GET /api/stats`。
 - 设置：`GET/POST /api/settings`、`POST /api/settings/reset`。
 - AI：`GET/PUT /api/ai/config`、`POST /api/ai/chat`。

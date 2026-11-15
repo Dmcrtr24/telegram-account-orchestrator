@@ -730,6 +730,81 @@ async def op_join_chat(client: Any, p: dict) -> dict:
     }
 
 
+async def op_invite_members(client: Any, p: dict) -> dict:
+    """Пригласить пользователей в существующий чат/канал (нужны права админа)."""
+    from telethon.tl.functions.channels import InviteToChannelRequest
+    from telethon.tl.functions.messages import AddChatUserRequest
+
+    target = str(p.get("target") or "").strip()
+    if not target:
+        raise ToolboxError("请填写群/频道 @用户名、链接或 ID")
+    raw_users = p.get("users") or ""
+    if isinstance(raw_users, list):
+        user_list = [str(x).strip() for x in raw_users if str(x).strip()]
+    else:
+        user_list = [x.strip() for x in re.split(r"[\s,;]+", str(raw_users)) if x.strip()]
+    if not user_list:
+        raise ToolboxError("请填写要邀请的用户（@用户名 / ID / 手机号，每行一个）")
+    entity = await client.get_entity(_resolve_entity(client, target))
+    entities, failed = [], []
+    for u in user_list[:100]:
+        try:
+            entities.append(await client.get_entity(u.lstrip("@")))
+        except Exception as exc:  # noqa: BLE001
+            failed.append({"user": u, "error": f"{type(exc).__name__}: {exc}"})
+    if not entities:
+        raise ToolboxError("没有找到可邀请的用户，检查用户名/ID")
+    try:
+        if entity.__class__.__name__ == "Chat":
+            # базовые (не супер) группы приглашают через messages.AddChatUser
+            for ent in entities:
+                await client(AddChatUserRequest(chat_id=entity.id, user_id=ent, fwd_limit=50))
+        else:
+            await client(InviteToChannelRequest(entity, entities))
+    except Exception as exc:  # noqa: BLE001
+        raise ToolboxError(f"邀请失败：{type(exc).__name__}: {exc}") from exc
+    return {
+        "ok": True,
+        "target": target,
+        "chat_id": getattr(entity, "id", None),
+        "title": getattr(entity, "title", None),
+        "invited": [getattr(e, "id", None) for e in entities],
+        "invited_count": len(entities),
+        "failed": failed,
+    }
+
+
+async def op_join_linked_chat(client: Any, p: dict) -> dict:
+    """Войти в привязанный чат обсуждений канала (чтобы писать комментарии)."""
+    from telethon.tl.functions.channels import GetFullChannelRequest, JoinChannelRequest
+    from telethon.tl.types import PeerChannel
+
+    target = str(p.get("target") or "").strip()
+    if not target:
+        raise ToolboxError("请填写频道 @用户名 / 链接 / ID")
+    entity = await client.get_entity(_resolve_entity(client, target))
+    if not getattr(entity, "broadcast", False) and not getattr(entity, "megagroup", False):
+        raise ToolboxError("это не канал и не супергруппа")
+    full = await client(GetFullChannelRequest(channel=entity))
+    linked = getattr(full.full_chat, "linked_chat_id", None)
+    if not linked:
+        raise ToolboxError("у канала нет привязанного чата обсуждений")
+    chat = await client.get_entity(PeerChannel(int(linked)))
+    was_member = not bool(getattr(chat, "left", False))
+    if not was_member:
+        await client(JoinChannelRequest(chat))
+    full_chat = await client(GetFullChannelRequest(channel=chat))
+    return {
+        "ok": True,
+        "channel": getattr(entity, "title", None),
+        "chat_id": getattr(chat, "id", None),
+        "title": getattr(chat, "title", None),
+        "username": getattr(chat, "username", None),
+        "participants_count": getattr(full_chat.full_chat, "participants_count", None),
+        "was_member": was_member,
+    }
+
+
 async def op_list_members(client: Any, p: dict) -> dict:
     """浏览群/频道成员（需有权限；大群可能受限制）。"""
     target = str(p.get("target") or "").strip()
@@ -1321,6 +1396,13 @@ OP_SPECS: list[dict[str, Any]] = [
     {"op": "join_chat", "label": "加入群/频道", "danger": True,
      "desc": "加入公开 @群 或 t.me 邀请链接",
      "params": [{"name": "target", "type": "str", "label": "@用户名或邀请链接", "required": True}]},
+    {"op": "invite_members", "label": "邀请进群/频道", "danger": True,
+     "desc": "把用户拉进已有的群或频道（需要该号是管理员并有邀请权限）",
+     "params": [{"name": "target", "type": "str", "label": "群/频道 @或ID", "required": True},
+                {"name": "users", "type": "textarea", "label": "邀请谁（每行一个 @/ID）", "required": True}]},
+    {"op": "join_linked_chat", "label": "进入频道评论区", "danger": True,
+     "desc": "进入频道绑定的讨论群，用于在帖子下留言评论",
+     "params": [{"name": "target", "type": "str", "label": "频道 @或链接", "required": True}]},
     {"op": "list_members", "label": "群成员列表", "danger": False,
      "desc": "浏览群/频道成员（受账号权限与群设置限制）",
      "params": [{"name": "target", "type": "str", "label": "群 @用户名或ID", "required": True},
@@ -1428,6 +1510,8 @@ OPS: dict[str, Callable[[Any, dict], Awaitable[dict]]] = {
     "leave_chat": op_leave_chat,
     "search_public": op_search_public,
     "join_chat": op_join_chat,
+    "invite_members": op_invite_members,
+    "join_linked_chat": op_join_linked_chat,
     "list_members": op_list_members,
     "read_messages": op_read_messages,
     "block_users": op_block_users,

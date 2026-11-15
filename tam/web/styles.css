@@ -2073,11 +2073,42 @@ body.chats-workspace .chat-send{padding-right:82px}
   .chatview .chat-search{display:none}
   .chatview .chat-body{grid-template-columns:minmax(0,1fr);grid-template-rows:minmax(0,1fr)}
   .chatview .chat-dlgs{border-right:0;max-height:none}
-  .chatview .chat-body.has-peer .chat-dlgs{display:none}
-  /* пока диалог не выбран, лента и поле ввода не нужны — список получает весь экран */
+  /* один шаг за раз: список диалогов ИЛИ лента сообщений */
+  .chatview .chat-body.has-peer .chat-col{display:none}
   .chatview .chat-body:not(.has-peer) .chat-pane{display:none}
   .chat-back{display:none}
   .chatview .chat-body.has-peer .chat-back{display:inline-flex}
   body.chats-workspace .chat-send{padding-right:72px}
 }
 
+
+/* --- диалоги: аватары, панель инструментов, поиск каналов, шаблоны, карточка --- */
+.chat-col{display:flex;flex-direction:column;min-height:0;border-right:1px solid var(--line)}
+.chat-tools{display:flex;align-items:center;gap:2px;padding:4px 6px;border-bottom:1px solid var(--line);flex:none}
+.chat-tools .icon-btn{width:30px;height:30px}
+.chat-col .chat-dlgs{flex:1;min-height:0;border-right:0}
+.chatview .chat-dlgs{border-right:0}
+.chat-ava{width:34px;height:34px;border-radius:50%;object-fit:cover;flex:none;background:var(--glass-2);border:1px solid var(--line);display:inline-block}
+.chat-ava.lg{width:40px;height:40px}
+.chat-ava-ph{display:inline-flex;align-items:center;justify-content:center;font:600 13px/1 var(--font-num);color:var(--muted);text-transform:uppercase}
+.chat-ava-slot{width:34px;height:34px;flex:none;display:inline-block}
+.chat-peer-txt{display:flex;flex-direction:column;min-width:0;line-height:1.25}
+.chat-peer-txt b{font-size:13px;font-weight:600;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.chat-peer-txt small{font-size:11px;color:var(--muted);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.chat-dlg{display:flex;gap:8px;align-items:center}
+.chat-dlg .t{flex:1;min-width:0}
+.chat-found{display:flex;flex-direction:column;gap:6px;max-height:46vh;overflow:auto;margin-top:10px}
+.chat-found-row{display:flex;gap:8px;align-items:center;padding:8px;border:1px solid var(--line);border-radius:12px}
+.chat-found-row .t{flex:1;min-width:0}
+.chat-found-row b{display:block;font-size:13px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.chat-found-row small{color:var(--muted);font-size:11px}
+.chat-tpls{display:flex;flex-direction:column;gap:6px;max-height:38vh;overflow:auto;margin-top:10px}
+.chat-tpl{border:1px solid var(--line);border-radius:12px;padding:8px 10px}
+.chat-tpl b{display:block;font-size:13px}
+.chat-tpl p{margin:4px 0 8px;font-size:12px;color:var(--muted);white-space:pre-wrap;max-height:70px;overflow:hidden}
+.cp-head{display:flex;gap:12px;align-items:center;margin-bottom:8px}
+.cp-head .chat-ava,.cp-head .chat-ava-slot{width:56px;height:56px}
+.cp-grid{display:grid;grid-template-columns:auto 1fr;gap:5px 12px;font-size:13px}
+.cp-grid b{color:var(--muted);font-weight:400}
+.cp-bio{white-space:pre-wrap;font-size:13px;margin:8px 0 0;padding:8px 10px;border-radius:10px;background:var(--glass-2)}
+@media (max-width:720px){ .chat-col{border-right:0} }

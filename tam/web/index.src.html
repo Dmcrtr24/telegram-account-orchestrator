@@ -162,11 +162,23 @@
       <button class="sm fit" data-onclick="chatReload()">刷新</button></h3>
     <div class="chat-body" id="chatBody">
       <div class="chat-accs" id="chatAccs" aria-label="账号列表"></div>
-      <div class="chat-dlgs" id="chatDlgs"></div>
+      <div class="chat-col">
+        <div class="chat-tools">
+          <button type="button" class="icon-btn" data-onclick="chatCreateOpen()" title="新建频道或群" aria-label="新建频道或群"><svg class="i sm"><use href="#i-plus"/></svg></button>
+          <button type="button" class="icon-btn" data-onclick="chatFindOpen()" title="搜索频道并加入" aria-label="搜索频道并加入"><svg class="i sm"><use href="#i-search"/></svg></button>
+          <button type="button" class="icon-btn" data-onclick="chatTplOpen()" title="模板消息" aria-label="模板消息"><svg class="i sm"><use href="#i-file"/></svg></button>
+        </div>
+        <div class="chat-dlgs" id="chatDlgs"></div>
+      </div>
       <div class="chat-pane">
         <div class="chat-peer">
           <button type="button" class="chat-back" data-onclick="chatBack()" aria-label="返回对话列表"><svg class="i sm"><use href="#i-chevron"/></svg>返回</button>
-          <span id="chatPeer">选择一个对话</span>
+          <img class="chat-ava lg" id="chatPeerAva" alt="" aria-hidden="true" />
+          <div class="chat-peer-txt">
+            <b id="chatPeer">选择一个对话</b>
+            <small id="chatPeerSub"></small>
+          </div>
+          <button type="button" class="icon-btn" data-onclick="chatPeerCard()" title="联系信息" aria-label="联系信息"><svg class="i sm"><use href="#i-more"/></svg></button>
         </div>
         <div class="chat-msgs" id="chatMsgs"></div>
         <div class="chat-send">
@@ -925,6 +937,81 @@ socks5://node-b:1080"></textarea></label>
     <button id="officialCodeRead" class="primary" data-onclick="readOfficialCode()">读取 / 刷新</button>
   </div>
 </div>
+<!-- 对话：新建频道/群 · 搜索频道 · 联系信息 · 邀请 · 模板消息 -->
+<div class="modal" id="mChatCreate" role="dialog" aria-modal="true">
+  <h3>新建频道 / 群</h3>
+  <div class="body">
+    <label class="f"><span>类型</span>
+      <select id="ccKind" data-onchange="chatCreateKind()">
+        <option value="channel">频道</option>
+        <option value="group">群组</option>
+      </select></label>
+    <label class="f"><span>标题</span><input id="ccTitle" placeholder="我的频道" /></label>
+    <label class="f"><span>简介</span><input id="ccAbout" placeholder="一句话说明" /></label>
+    <label class="f" id="ccUsernameRow"><span>公开用户名（可选）</span><input id="ccUsername" placeholder="my_channel" /></label>
+    <label class="f" id="ccMembersRow"><span>初始成员（每行一个 @ 或 ID，可选）</span>
+      <textarea id="ccMembers" rows="3" placeholder="@user1&#10;@user2"></textarea></label>
+    <p class="muted" id="ccHint"></p>
+  </div>
+  <div class="foot">
+    <button data-onclick="closeAll()">取消</button>
+    <button class="primary write" data-onclick="chatCreateRun()">创建</button>
+  </div>
+</div>
+
+<div class="modal modal-wide" id="mChatFind" role="dialog" aria-modal="true">
+  <h3>搜索频道并加入</h3>
+  <div class="body">
+    <div class="row" style="gap:8px;align-items:flex-end;flex-wrap:wrap">
+      <label class="f" style="flex:1;min-width:200px"><span>关键词</span>
+        <input id="cfQuery" placeholder="例如：крипто, новости" /></label>
+      <button class="fit" data-onclick="chatFindRun()">搜索</button>
+    </div>
+    <div class="row" style="gap:8px;align-items:flex-end;flex-wrap:wrap;margin-top:8px">
+      <label class="f" style="flex:1;min-width:200px"><span>Или ссылка / @用户名</span>
+        <input id="cfTarget" placeholder="@channel 或 https://t.me/+invite" /></label>
+      <button class="fit write" data-onclick="chatJoinDirect(false)">加入</button>
+      <button class="fit write" data-onclick="chatJoinDirect(true)">加入 + 评论区</button>
+    </div>
+    <div id="cfResults" class="chat-found"><span class="muted">Введите ключевое слово или ссылку</span></div>
+  </div>
+  <div class="foot"><button data-onclick="closeAll()">关闭</button></div>
+</div>
+
+<div class="modal" id="mChatPeer" role="dialog" aria-modal="true">
+  <h3>联系信息</h3>
+  <div class="body" id="cpBody"></div>
+  <div class="foot"><button data-onclick="closeAll()">关闭</button></div>
+</div>
+
+<div class="modal" id="mChatInvite" role="dialog" aria-modal="true">
+  <h3>邀请进群</h3>
+  <div class="body">
+    <label class="f"><span>群或频道</span><input id="ciTarget" placeholder="@chat" /></label>
+    <label class="f"><span>邀请谁（每行一个）</span>
+      <textarea id="ciUsers" rows="5" placeholder="@user1&#10;123456789"></textarea></label>
+    <p class="muted">需要该账号是管理员并有邀请权限。</p>
+  </div>
+  <div class="foot">
+    <button data-onclick="closeAll()">取消</button>
+    <button class="primary write" data-onclick="chatInviteRun()">邀请</button>
+  </div>
+</div>
+
+<div class="modal" id="mChatTpl" role="dialog" aria-modal="true">
+  <h3>模板消息</h3>
+  <div class="body">
+    <label class="f"><span>名称</span><input id="ctTitle" placeholder="例如：问候语" /></label>
+    <label class="f"><span>内容</span><textarea id="ctText" rows="4" placeholder="模板文本，可含 {a|b}"></textarea></label>
+    <div class="row" style="gap:8px;flex-wrap:wrap">
+      <button class="sm fit" data-onclick="chatTplSave()">保存模板</button>
+      <button class="sm fit" data-onclick="chatTplSaveCurrent()">从输入框保存</button>
+    </div>
+    <div id="ctList" class="chat-tpls"><span class="muted">Читаю шаблоны…</span></div>
+  </div>
+  <div class="foot"><button data-onclick="closeAll()">关闭</button></div>
+</div>
+
 <div class="toasts" id="toasts"></div>
 
 <script>/* GSAP_PLACEHOLDER */
