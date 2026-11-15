@@ -2514,5 +2514,9 @@
  "Enter 发送，Shift+Enter 换行": {
   "ru": "Enter — отправить, Shift+Enter — новая строка",
   "en": "Enter to send, Shift+Enter for a new line"
+ },
+ "输入消息": {
+  "ru": "Сообщение",
+  "en": "Message"
  }
 }

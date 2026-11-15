@@ -2058,6 +2058,9 @@ body.chats-workspace .board{height:100%}
 .chat-peer #chatPeer{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 .chat-back{display:none;align-items:center;gap:2px;border:0;background:transparent;color:var(--text);font:inherit;padding:2px 6px 2px 0;cursor:pointer}
 .chat-back svg{transform:rotate(90deg)}
+/* плавающая кнопка AI (#aiFab) висит поверх правого нижнего угла — оставляем ей место,
+   иначе она перекрывает «Отправить» */
+body.chats-workspace .chat-send{padding-right:82px}
 @media (min-width:1081px){
   /* на широком экране аккаунт выбирается колонкой слева — дублирующий select прячем */
   .chatview #chatAccSel{display:none}
@@ -2075,5 +2078,6 @@ body.chats-workspace .board{height:100%}
   .chatview .chat-body:not(.has-peer) .chat-pane{display:none}
   .chat-back{display:none}
   .chatview .chat-body.has-peer .chat-back{display:inline-flex}
+  body.chats-workspace .chat-send{padding-right:72px}
 }
 
